@@ -1,0 +1,288 @@
+{
+  "week_ending": "2026-05-15",
+  "summary": "Heavy commercialization week across bio and AI infrastructure. In bio: Isomorphic Labs closed a $2.1B Series B led by Thrive Capital — one of the largest private AI-drug-discovery rounds on record — while Intellia opened a rolling BLA for lonvo-z (first-ever in vivo CRISPR product, US launch tracking H1 2027), Editas reported >=90% LDL-C reduction in NHPs for EDIT-401 at ASGCT, Viking presented 12.2% 13-week weight loss for oral VK2735 at ECO 2026, and Neuralink signaled a next-gen 'whole-brain' surgical robot. In AI/robotics: Waymo expanded to 1,400 sq mi across 11 metros (FIFA World Cup readiness), Figure ran a full 8-hour fully autonomous package-sorting shift on Helix-02, China's ROBOTERA closed >$200M led by SF Group, and Google launched Gemini Intelligence as an OS-level agent for Android. Energy/quantum: CATL announced a 40 GWh sodium-ion expansion, BNEF confirmed energy storage entered the '100 GW era' in 2025, Ford launched a 20 GWh/yr LFP grid-storage subsidiary, IonQ shareholders approved the $1.8B SkyWater acquisition, and Google added Marvell as a third TPU partner targeting ~2M inference MPUs. Agent D flagged three adjacencies: Archer's UAE Restricted Type Certificate path (first eVTOL on this pathway), the EU AI Act omnibus simplification (and nudification ban), and an HKU ultra-stainless-steel claim that could cut seawater-electrolysis structural costs ~40x.",
+  "highlights": [
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Waymo expands robotaxi coverage to 1,400 sq mi across 11 US cities",
+      "detail": "On May 13, 2026, Waymo announced a 20%+ expansion of service area to over 1,400 square miles across 11 US cities, rolling out from Miami to Austin, Atlanta, Houston and the SF Bay Area, timed to FIFA World Cup readiness.",
+      "source_urls": [
+        "https://waymo.com/blog/shorts/growing-to-1400-sqm/",
+        "https://electrek.co/2026/05/13/waymo-expands-coverage-1400-square-miles-11-cities/"
+      ],
+      "payload": {
+        "field": "Waymo service area",
+        "new_value": "1,400 sq mi across 11 cities (May 13, 2026)",
+        "previous_value": "~1,100 sq mi across the same metros"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Figure Helix-02 runs full 8-hour autonomous package-sorting shift",
+      "detail": "On May 13, 2026, Figure AI demonstrated Helix-02-equipped humanoids sustaining a continuous 8-hour package-sorting shift at near-human throughput (~3 sec/package), claimed to be the first eight-hour fully autonomous humanoid factory shift.",
+      "source_urls": [
+        "https://interestingengineering.com/ai-robotics/figure-helix02-humanoid-robots-8-hour-shifts",
+        "https://www.techtimes.com/articles/316632/20260514/figure-ais-helix-02-robots-complete-full-8-hour-autonomous-shifts-humanoid-race-intensifies.htm"
+      ],
+      "payload": {
+        "field": "Figure Helix-02 longest autonomous run",
+        "new_value": "Full 8-hour autonomous factory shift at near-human throughput (~3 sec/package)",
+        "previous_value": "Multi-task demos and ~1-hour package-sorting runs"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "ROBOTERA closes >$200M led by SF Group, HSG, IDG to scale humanoid fleet",
+      "detail": "On May 8, 2026, Chinese humanoid maker ROBOTERA closed >$200M (SF Group, HSG, IDG Capital, Hillhouse, Alibaba, Geely, Lenovo, etc.) after Q2 thousand-unit deliveries and 300%+ growth in logistics deployments.",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/robotera-raises-over-usd-200-million-in-new-round-led-by-sf-group-hsg-and-idg-capital-302766752.html",
+        "https://theaiinsider.tech/2026/05/08/chinas-humanoid-robot-maker-robotera-raises-over-usd-200m-in-new-funding-round/"
+      ],
+      "payload": {
+        "name": "ROBOTERA",
+        "org": "ROBOTERA (Beijing)",
+        "type": "STARTUP",
+        "why": "China's leading commercial humanoid; logistics product-market fit with China Post and SF Group; >95% of core components developed in-house",
+        "funding": ">$200M (May 8, 2026) led by SF Group, HSG, IDG Capital",
+        "source_url": "https://www.prnewswire.com/news-releases/robotera-raises-over-usd-200-million-in-new-round-led-by-sf-group-hsg-and-idg-capital-302766752.html"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Google launches Gemini Intelligence as an OS-level agentic layer on Android",
+      "detail": "At the Android Show on May 12, 2026, Google unveiled Gemini Intelligence, an agentic layer that reads on-screen context and executes cross-app, multi-step tasks (shopping, forms, dictation, vibe-coded widgets) on Pixel and Galaxy devices starting summer 2026.",
+      "source_urls": [
+        "https://blog.google/security/android-gemini-intelligence-security-privacy/",
+        "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/"
+      ],
+      "payload": {
+        "name": "OS-native agentic AI layer",
+        "description": "A device-level agent that understands screen context, moves across apps and the browser, and completes multi-step tasks with the user in the loop — turning the smartphone OS itself into the agent surface.",
+        "examples": [
+          "Google Gemini Intelligence for Android (May 12, 2026)",
+          "Gemini in Chrome (June 2026)",
+          "Gboard Rambler dictation agent"
+        ],
+        "source_url": "https://blog.google/security/android-gemini-intelligence-security-privacy/"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Isomorphic Labs raises $2.1B Series B for AI drug-design engine",
+      "detail": "On May 12, 2026, Alphabet-backed Isomorphic Labs announced a $2.1B Series B led by Thrive Capital (with Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund) to scale IsoDDE and push its in-house pipeline toward the clinic.",
+      "source_urls": [
+        "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round",
+        "https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html"
+      ],
+      "payload": {
+        "claim": "Isomorphic Labs closed a $2.1B Series B on May 12, 2026 (Thrive Capital lead) to fund IsoDDE deployment and clinical pipeline acceleration — one of the largest private AI-drug-discovery financings on record.",
+        "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Intellia initiates rolling BLA for lonvo-z after Phase 3 HAELO data",
+      "detail": "In Q1 2026 results released May 11, Intellia confirmed Phase 3 HAELO topline for in vivo CRISPR therapy lonvo-z showed 87% reduction in HAE attacks vs placebo over six months with 62% attack-free/therapy-free patients; rolling BLA initiated with submission completion targeted H2 2026 and potential US launch H1 2027.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/05/11/3291773/0/en/Intellia-Therapeutics-Announces-First-Quarter-2026-Financial-Results-and-Business-Updates.html",
+        "https://ir.intelliatx.com/news-releases/news-release-details/intellia-therapeutics-announces-first-quarter-2026-financial"
+      ],
+      "payload": {
+        "field": "lonvo-z regulatory status",
+        "new_value": "Rolling BLA initiated April 2026; submission completion targeted H2 2026; potential US launch H1 2027 (first-ever in vivo CRISPR product)",
+        "previous_value": "Phase 3 HAELO topline announced April 27, 2026; BLA path not yet initiated"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Editas EDIT-401 hits >=90% LDL-C reduction in NHPs at ASGCT 2026",
+      "detail": "On May 14, 2026, Editas reported at ASGCT 2026 that a single dose of in vivo gene-editing candidate EDIT-401 achieved >=90% mean LDL-C reduction across dose groups in non-human primates via LDLR upregulation; first-in-human in HeFH planned later this year with early human PoC by year-end.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/05/14/3294685/0/en/editas-medicine-reports-new-preclinical-data-demonstrating-progress-of-edit-401-as-potential-treatment-for-hyperlipidemia-at-the-american-society-of-gene-and-cell-therapy-2026-annu.html",
+        "https://ir.editasmedicine.com/news-releases/news-release-details/editas-medicine-nominates-edit-401-ldlr-targeted-medicine-lead"
+      ],
+      "payload": {
+        "name": "EDIT-401 (LDLR upregulation, in vivo gene editing)",
+        "org": "Editas Medicine",
+        "type": "STARTUP",
+        "why": "Lead in vivo program targeting hyperlipidemia/HeFH; >=90% LDL-C lowering in NHPs; FIH expected 2026 with human PoC by year-end; positions Editas as direct competitor to Verve/Lilly in cardiovascular gene editing.",
+        "funding": "Public (NASDAQ: EDIT)",
+        "source_url": "https://www.globenewswire.com/news-release/2026/05/14/3294685/0/en/editas-medicine-reports-new-preclinical-data-demonstrating-progress-of-edit-401-as-potential-treatment-for-hyperlipidemia-at-the-american-society-of-gene-and-cell-therapy-2026-annu.html"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Viking VK2735 oral hits 12.2% weight loss at 13 weeks (ECO 2026)",
+      "detail": "At the European Congress on Obesity in Istanbul on May 12, 2026, Viking presented Phase 2 VENTURE-Oral 13-week data showing oral VK2735 delivered up to 12.2% mean weight loss with no plateau, 97% of treated patients hitting >=5% weight loss vs 10% placebo; subcutaneous Phase 3 VANQUISH-1 trial design also presented.",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/viking-therapeutics-presents-data-from-its-13-week-phase-2-venture-oral-dosing-trial-of-vk2735-at-european-congress-on-obesity-eco-2026-302768959.html"
+      ],
+      "payload": {
+        "field": "VK2735 oral 13-week weight loss",
+        "new_value": "12.2% mean weight loss at 13 weeks (Phase 2, highest dose), 97% >=5%, 80% >=10% — ECO 2026 (May 12, 2026)",
+        "previous_value": "Earlier Phase 2 readouts; Phase 3 VANQUISH-1 still enrolling"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "Neuralink unveils next-gen surgical robot for whole-brain access",
+      "detail": "On May 7-8, 2026, Elon Musk announced Neuralink is developing a next-generation surgical robot designed to implant electrode threads in any region of the brain with high precision, signaling a push beyond motor cortex into Parkinson's, epilepsy, and sensory disorders and toward high-volume implant production in 2026.",
+      "source_urls": [
+        "https://www.foxnews.com/health/elon-musk-shares-plan-mass-produce-brain-implants-paralysis-neurological-disease",
+        "https://yourstory.com/2026/05/neuralink-surgical-robot-brain-interface-2026"
+      ],
+      "payload": {
+        "claim": "Neuralink is developing a next-generation surgical robot capable of implanting threads in any brain region, paired with a 2026 push to high-volume implant manufacturing.",
+        "source_url": "https://www.foxnews.com/health/elon-musk-shares-plan-mass-produce-brain-implants-paralysis-neurological-disease"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Casgevy hits $43M Q1 revenue with 500+ patients initiated",
+      "detail": "CRISPR Therapeutics Q1 2026 results (released early May) showed Casgevy revenue of $43.0M with over 500 patients initiated globally, marking continued ramp of the first commercial CRISPR therapy; company holds $2.44B cash with multiple in vivo CRISPR INDs (CTX310, CTX460, CTX340) advancing.",
+      "source_urls": [
+        "https://www.stocktitan.net/news/CRSP/crispr-therapeutics-provides-business-update-and-reports-first-sdrpmbu7dwil.html",
+        "https://ir.crisprtx.com/"
+      ],
+      "payload": {
+        "field": "Casgevy commercialization (Q1 2026)",
+        "new_value": "$43.0M Q1 2026 revenue; >500 patients initiated globally",
+        "previous_value": "Earlier ramp with lower per-quarter revenue and fewer patients initiated"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IonQ-SkyWater $1.8B merger clears shareholder vote",
+      "detail": "SkyWater Technology stockholders approved IonQ's ~$1.8B cash-and-stock acquisition at a May 8, 2026 special meeting (32.6M for, 405K against). Deal makes IonQ the only vertically integrated full-stack quantum platform with an in-house US semiconductor fab; closing expected Q2-Q3 2026 pending regulatory approval.",
+      "source_urls": [
+        "https://www.businesswire.com/news/home/20260508584062/en/SkyWater-Technology-Stockholders-Approve-Merger-Agreement-with-IonQ",
+        "https://thequantuminsider.com/2026/05/09/skywater-technology-stockholders-approve-merger-agreement-with-ionq/"
+      ],
+      "payload": {
+        "field": "IonQ–SkyWater acquisition status",
+        "new_value": "Shareholder-approved May 8, 2026; ~$1.8B; closing expected Q2-Q3 2026",
+        "previous_value": "Announced merger, pending shareholder approval"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "CATL announces 40 GWh sodium-ion battery capacity expansion",
+      "detail": "On May 9, 2026, CATL disclosed via Ningde environmental authorities a 5B yuan ($735M) investment to add 40 GWh/year of sodium-ion power battery capacity at its Fuding Shidai subsidiary (24-month build); follows CATL's April three-year, 60 GWh sodium-ion supply contract with HyperStrong.",
+      "source_urls": [
+        "https://cnevpost.com/2026/05/09/catl-plans-40-gwh-sodium-battery-capacity-expansion/"
+      ],
+      "payload": {
+        "field": "CATL sodium-ion capacity",
+        "new_value": "40 GWh/year sodium-ion expansion announced May 9, 2026 ($735M)",
+        "previous_value": "Sodium-ion mass production planned Q4 2026, no dedicated 40 GWh capacity"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "BNEF: global energy storage installs hit '100 GW era' in 2025",
+      "detail": "BloombergNEF's 1H 2026 Energy Storage Market Outlook (May 11, 2026) confirmed 112 GW / 307 GWh of new storage installed globally in 2025 — a 48% YoY jump and the first time the industry crossed 100 GW/year. BNEF forecasts 158 GW / 459 GWh in 2026 (+41%), with long-duration (6h+) storage additions set to quadruple to ~2 GW.",
+      "source_urls": [
+        "https://about.bnef.com/insights/clean-energy/energy-storage-enters-the-100-gigawatt-era-three-things-to-know/",
+        "https://www.pv-magazine.com/2026/05/11/bloombergnef-confirms-energy-storage-has-reached-the-100-gw-era/"
+      ],
+      "payload": {
+        "field": "Global energy storage 2025 installs (BNEF)",
+        "new_value": "112 GW / 307 GWh installed in 2025; 158 GW / 459 GWh forecast for 2026",
+        "previous_value": "~76 GW / 208 GWh in 2024"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Ford launches Ford Energy BESS subsidiary, 20 GWh/yr target",
+      "detail": "On May 11, 2026, Ford launched 'Ford Energy,' a US battery-energy-storage subsidiary repurposing the dissolved BlueOval SK plant in Glendale, KY to build LFP grid-scale storage for utilities, data centers, and industrial customers. Flagship FE-250 (2-hr) and FE-450 (4-hr) DC blocks use 512 Ah LFP prismatic cells; first deliveries late 2027; Lisa Drake named president.",
+      "source_urls": [
+        "https://electrek.co/2026/05/11/ford-energy-launches-battery-storage-subsidiary-20gwh-bess/",
+        "https://www.energy-storage.news/ford-officially-launches-us-stationary-energy-storage-subsidiary-deliveries-to-begin-in-2027/"
+      ],
+      "payload": {
+        "name": "Ford Energy",
+        "org": "Ford Motor Company",
+        "type": "STARTUP",
+        "why": "US-assembled LFP BESS at 20 GWh/year scale targeting utilities, data centers, and industrial customers; repurposes the Kentucky EV-battery plant from the dissolved BlueOval SK JV; Lisa Drake named president.",
+        "funding": "Internal Ford-funded subsidiary, leveraging existing Glendale KY plant capex",
+        "source_url": "https://electrek.co/2026/05/11/ford-energy-launches-battery-storage-subsidiary-20gwh-bess/"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Google adds Marvell as third TPU partner for inference + MPU",
+      "detail": "Reports on May 13, 2026 detailed Google co-developing two custom chips with Marvell: a memory processing unit (MPU) to pair with existing TPUs, and a next-gen inference-optimized TPU. Google plans nearly 2M MPUs, with design finalization expected in 2027 — diversifying beyond Broadcom and bringing MediaTek + Marvell into a four-partner TPU stack to challenge NVIDIA on inference economics.",
+      "source_urls": [
+        "https://thenextweb.com/news/google-marvell-ai-chips-inference-tpu-broadcom",
+        "https://the-decoder.com/google-plans-nearly-two-million-new-ai-chips-as-it-turns-to-marvell-for-custom-designs/"
+      ],
+      "payload": {
+        "name": "Google four-partner inference TPU supply chain",
+        "description": "Google diversifying custom AI silicon by adding Marvell (memory processing unit + next-gen inference TPU) alongside Broadcom and MediaTek, signaling hyperscaler push to commoditize inference accelerators and reduce NVIDIA dependence.",
+        "examples": [
+          "Marvell-designed MPU paired with TPU",
+          "Inference-only TPU separate from training-focused TPUs",
+          "~2M MPU production target"
+        ],
+        "source_url": "https://thenextweb.com/news/google-marvell-ai-chips-inference-tpu-broadcom"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Archer Midnight enters UAE Restricted Type Certificate path (first eVTOL on RTC)",
+      "detail": "On May 7-8, 2026, the UAE GCAA and Archer Aviation agreed to transition Midnight onto a Restricted Type Certificate (RTC) program, making Archer the first eVTOL maker on this streamlined pathway and opening the door to limited commercial air-taxi operations in Abu Dhabi.",
+      "source_urls": [
+        "https://investors.archer.com/news/news-details/2026/UAE-Regulator-And-Archer-Move-To-Streamlined-Approach-for-Certifying-Midnight-in-the-UAE/default.aspx",
+        "https://www.flightglobal.com/airframers/2026/05/archers-uae-restricted-type-certificate-plan-poses-questions-over-operational-limitations/"
+      ],
+      "payload": {
+        "candidate_area": "eVTOL / urban air mobility regulation",
+        "source_url": "https://investors.archer.com/news/news-details/2026/UAE-Regulator-And-Archer-Move-To-Streamlined-Approach-for-Certifying-Midnight-in-the-UAE/default.aspx"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "EU agrees AI Act 'omnibus' simplification; nudification ban added",
+      "detail": "On May 7, 2026 the Council and Parliament reached political agreement on the AI Act omnibus, delaying national sandbox deadlines to August 2027, shortening transparency grace periods, and adding a ban on 'nudification' apps. Commission followed May 8 with draft transparency guidelines — reshaping the EU AI governance timeline before the August 2026 GPAI enforcement date.",
+      "source_urls": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+        "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines"
+      ],
+      "payload": {
+        "candidate_area": "AI regulation / EU AI Act",
+        "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "HKU 'SS-H2' super-stainless steel could cut green-H2 structural costs ~40x",
+      "detail": "Reported May 10-11, 2026: a University of Hong Kong team led by Mingxin Huang published a 'sequential dual-passivation' stainless steel (SS-H2) that resists corrosion at ultra-high potentials in seawater electrolysis, potentially replacing titanium components and slashing structural costs ~40-fold for seawater green-hydrogen.",
+      "source_urls": [
+        "https://www.sciencedaily.com/releases/2026/05/260510030950.htm",
+        "https://fuelcellsworks.com/2026/05/11/clean-energy/cannot-be-explained-new-ultra-stainless-steel-stuns-researchers"
+      ],
+      "payload": {
+        "candidate_area": "Green hydrogen / materials science",
+        "source_url": "https://fuelcellsworks.com/2026/05/11/clean-energy/cannot-be-explained-new-ultra-stainless-steel-stuns-researchers"
+      }
+    }
+  ]
+}

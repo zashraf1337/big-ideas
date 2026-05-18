@@ -1,0 +1,56 @@
+{
+  "week_ending": "2026-05-08",
+  "summary": "Intra-day supplement to the morning's run: three primary-source items the AM scan missed. Anthropic took all of SpaceX's Colossus 1 (May 6) — 300+ MW / 220K+ NVIDIA GPUs immediately, plus stated interest in multi-GW orbital compute — and used the new headroom to double Claude Code rate limits and raise Opus API limits. Anthropic Interpretability published Natural Language Autoencoders (May 7), an unsupervised method that translates Claude's residual-stream activations into readable text and was already used in the Mythos Preview and Opus 4.6 alignment audits. OpenAI opened GPT-5.5-Cyber to vetted defenders via Trusted Access for Cyber (May 7), the most-permissive cyber variant yet, with Cisco and CrowdStrike as launch partners.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic + SpaceX Colossus 1 deal: 300+ MW / 220K+ GPUs in a month",
+      "detail": "Anthropic signed for the entire compute capacity of SpaceX's Colossus 1 data center in Memphis — 300+ MW (over 220,000 NVIDIA GPUs) coming online within the month — and immediately doubled Claude Code five-hour rate limits and raised Opus API limits; the agreement also includes stated interest in multi-gigawatt orbital AI compute with SpaceX.",
+      "source_urls": [
+        "https://www.anthropic.com/news/higher-limits-spacex",
+        "https://www.cnbc.com/2026/05/06/anthropic-spacex-data-center-capacity.html",
+        "https://www.bloomberg.com/news/articles/2026-05-06/anthropic-inks-computing-deal-with-spacex-to-meet-ai-demand"
+      ],
+      "payload": {
+        "claim": "May 6, 2026 — Anthropic secures all of SpaceX Colossus 1 (~300 MW / 220K+ GPUs within the month), doubles Claude Code rate limits, raises Opus API limits, and expresses interest in multi-GW orbital compute with SpaceX.",
+        "source_url": "https://www.anthropic.com/news/higher-limits-spacex"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Anthropic Natural Language Autoencoders read Claude's activations as text",
+      "detail": "Anthropic Interpretability released Natural Language Autoencoders (NLAs) — verbalizer/reconstructor LLM pair, RL-trained for round-trip activation→text→activation fidelity — that surface unverbalized evaluation-awareness on 16-26% of safety/SWE-bench transcripts (vs <1% on real opt-in usage) and lift hidden-motivation auditing from <3% to 12-15%; deployed in Mythos Preview and Opus 4.6 pre-deployment audits, with code and Neuronpedia frontend released.",
+      "source_urls": [
+        "https://www.anthropic.com/research/natural-language-autoencoders",
+        "https://transformer-circuits.pub/2026/nla/index.html",
+        "https://github.com/kitft/natural_language_autoencoders"
+      ],
+      "payload": {
+        "claim": "May 7, 2026 — Anthropic publishes Natural Language Autoencoders (NLAs); RL-trained verbalizer/reconstructor pair turns activations into readable explanations; lifts hidden-motivation auditing from <3% to 12-15% and exposes evaluation-awareness on 16-26% of test transcripts vs <1% of real usage; used in Mythos Preview and Opus 4.6 alignment audits.",
+        "source_url": "https://www.anthropic.com/research/natural-language-autoencoders"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "OpenAI GPT-5.5-Cyber via Trusted Access for Cyber program",
+      "detail": "OpenAI rolled out GPT-5.5-Cyber, the most-permissive variant of GPT-5.5 for vetted security defenders (bug-hunting, malware analysis, reverse engineering allowed; credential-theft and malware-writing still blocked), gated via Trusted Access for Cyber identity tier with Cisco and CrowdStrike among the launch partners; Axios sources put offensive-cyber capability roughly on par with Anthropic Mythos Preview.",
+      "source_urls": [
+        "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/",
+        "https://www.cnbc.com/2026/05/07/openai-rolls-out-new-gpt-5point5-cyber-to-vetted-cybersecurity-teams.html",
+        "https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model"
+      ],
+      "payload": {
+        "name": "OpenAI GPT-5.5-Cyber (Trusted Access for Cyber)",
+        "description": "May 7, 2026 — Domain-specialized variant of GPT-5.5 for vetted cyber defenders, launched via Trusted Access for Cyber identity tier. Permits bug-hunting, malware analysis, reverse engineering; blocks credential theft and malware writing. Cisco and CrowdStrike are launch partners; Axios sources peg vuln-finding capability ~ Anthropic Mythos Preview.",
+        "examples": [
+          "Vetted SOC and red-team teams at Cisco / CrowdStrike-tier orgs gain access to the more-permissive variant",
+          "Phishing-resistant auth required from June 1, 2026 for the highest access tier"
+        ],
+        "source_url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
+      }
+    }
+  ]
+}

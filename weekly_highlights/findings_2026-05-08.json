@@ -1,0 +1,258 @@
+{
+  "week_ending": "2026-05-08",
+  "summary": "Heavy week across AI infra, AI hardware, quantum, and bio. OpenAI shipped GPT-5.5 Instant (52.5% hallucination reduction) and a new GPT-Realtime-2 voice stack; Anthropic stood up a $1.5B enterprise-AI JV with Blackstone, H&F, and Goldman; Allen Institute released MolmoAct2 (open bimanual VLA) and Figure ramped Figure 03 to roughly 1 robot/hour. Cerebras filed for a $26.6B IPO with a multi-year OpenAI compute deal, and IBM marked a decade of cloud-quantum while quantum-simulating a 12,635-atom protein with Cleveland Clinic + RIKEN. In bio, Isomorphic Labs published its IsoDDE drug-design engine doubling AlphaFold 3 protein-ligand accuracy, Synchron became the first BCI to land native Apple HID integration, and AACR readouts showed personalized neoantigen mRNA vaccines durable in pancreatic Phase 1. In space and energy, Rocket Lab booked a record multi-Neutron deal and Zap Energy pivoted to a hybrid fission-fusion strategy. Agent D's broad scan returned a Joby Manhattan eVTOL demo and Fervo's $1.33B geothermal IPO filing.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "OpenAI GPT-5.5 Instant: 52.5% hallucination reduction",
+      "detail": "OpenAI released GPT-5.5 Instant on May 5 as the new default ChatGPT model with personalized search; benchmarks show 52.5% fewer hallucinated claims than GPT-5.3 Instant on medicine, law, and finance prompts.",
+      "source_urls": [
+        "https://openai.com/index/gpt-5-5-instant/"
+      ],
+      "payload": {
+        "claim": "GPT-5.5 Instant produces 52.5% fewer hallucinated claims than GPT-5.3 Instant on high-stakes prompts in medicine, law, and finance (OpenAI release notes, May 5 2026).",
+        "source_url": "https://openai.com/index/gpt-5-5-instant/"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "OpenAI Realtime-2 voice stack: GPT-5-class reasoning over audio",
+      "detail": "OpenAI launched three audio models on May 7: GPT-Realtime-2 (GPT-5-class voice reasoning, +15.2% on Big Bench Audio), GPT-Realtime-Translate (70+ languages), and GPT-Realtime-Whisper (streaming transcription).",
+      "source_urls": [
+        "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
+      ],
+      "payload": {
+        "name": "GPT-Realtime-2 voice stack",
+        "description": "Native real-time voice agent stack with GPT-5-class reasoning, 70+ language live translation, and streaming Whisper transcription, exposed via the OpenAI API.",
+        "examples": [
+          "Real-time voice agent with reasoning + tool use",
+          "Live multilingual translation in 70+ languages",
+          "Streaming low-latency transcription"
+        ],
+        "source_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic + Blackstone/H&F/Goldman launch $1.5B enterprise-AI JV",
+      "detail": "Anthropic announced (May 4) a $1.5B-capitalized joint venture with Blackstone, Hellman & Friedman, and Goldman Sachs to build a services company embedding Claude in mid-market enterprises.",
+      "source_urls": [
+        "https://www.anthropic.com/news/enterprise-ai-services-company"
+      ],
+      "payload": {
+        "name": "Anthropic enterprise-AI JV",
+        "org": "Anthropic / Blackstone / Hellman & Friedman / Goldman Sachs",
+        "type": "STARTUP",
+        "why": "First services-led commercialization vehicle for a frontier-lab model; converts mid-market deployments from pure API consumption to verticalized AI services.",
+        "funding": "$1.5B initial capitalization; backed by Blackstone, H&F, Goldman Sachs",
+        "source_url": "https://www.anthropic.com/news/enterprise-ai-services-company"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "TraceLift: executor-grounded reasoning rewards via downstream uplift",
+      "detail": "arXiv 2605.03862 (May 5) proposes TraceLift, which scores reasoning traces by both rubric-based reward-model quality and measured uplift on frozen downstream executors, crediting traces that are useful, not just well-formed.",
+      "source_urls": [
+        "https://arxiv.org/abs/2605.03862"
+      ],
+      "payload": {
+        "claim": "TraceLift multiplies rubric-based Reasoning Reward Model scores by measured uplift on frozen executors, crediting reasoning traces that are useful to downstream consumers (arXiv 2605.03862).",
+        "source_url": "https://arxiv.org/abs/2605.03862"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Allen Institute MolmoAct2: open bimanual VLA model",
+      "detail": "AI2 released MolmoAct2 (May 5) - an open-source Vision-Language-Action model trained on 720 hours of bimanual teleoperation, reporting 87.1% success on real-world DROID tasks with unseen objects and ~37x faster inference than its predecessor.",
+      "source_urls": [
+        "https://allenai.org/blog/molmoact2",
+        "https://arxiv.org/abs/2605.02881"
+      ],
+      "payload": {
+        "name": "MolmoAct2 (open VLA)",
+        "description": "Open-weight Vision-Language-Action foundation model for bimanual humanoid manipulation, trained on 720 h of teleoperation, with public weights, dataset, and eval code.",
+        "examples": [
+          "87.1% real-world DROID success with unseen objects",
+          "~37x faster inference vs MolmoAct1",
+          "Open weights + 720 h dataset released"
+        ],
+        "source_url": "https://allenai.org/blog/molmoact2"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Figure 03 production hits 1 robot/hour, Helix S0 ditches teleop",
+      "detail": "Figure AI announced (May 1) ramping Figure 03 to ~1 robot/hour (vs 1/day four months prior); 350+ units produced and Helix S0 now handles stairs and uneven terrain without teleoperation.",
+      "source_urls": [
+        "https://www.figure.ai/news/ramping-figure-03-production",
+        "https://theaiinsider.tech/2026/05/01/figure-ai-ramps-up-production-to-one-humanoid-robot-per-hour/"
+      ],
+      "payload": {
+        "name": "Figure 03 production scale-up",
+        "org": "Figure AI",
+        "type": "STARTUP",
+        "why": "First humanoid OEM to credibly hit hourly production cadence with autonomous (non-teleop) locomotion on uneven terrain - a leading indicator of commercial humanoid roll-out.",
+        "funding": "Series C+; ~$39B reported valuation",
+        "source_url": "https://www.figure.ai/news/ramping-figure-03-production"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Isomorphic Labs IsoDDE doubles AlphaFold 3 on protein-ligand prediction",
+      "detail": "Isomorphic Labs published the Isomorphic Drug Design Engine (IsoDDE), reporting ~50% accuracy on hard low-sequence-identity protein-ligand cases vs ~23% for AlphaFold 3, plus prediction of cryptic binding sites and small-molecule affinities.",
+      "source_urls": [
+        "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
+      ],
+      "payload": {
+        "claim": "IsoDDE roughly doubles AlphaFold 3 accuracy on protein-ligand structures at <20% sequence identity and predicts novel cryptic binding sites from sequence alone (Isomorphic Labs).",
+        "source_url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "Synchron is first BCI with native Apple HID input integration",
+      "detail": "Synchron announced native integration with Apple's BCI HID profile, becoming the first BCI company recognized as a native Apple input category - enabling hands-free device control for ALS and spinal-cord-injury patients.",
+      "source_urls": [
+        "https://www.medicaleconomics.com/view/synchron-first-to-integrate-brain-computer-interface-with-apple-devices"
+      ],
+      "payload": {
+        "claim": "Synchron's Stentrode is the first BCI integrated with Apple's BCI HID profile as a native input category, enabling hands-free Apple-device control for paralysis patients.",
+        "source_url": "https://www.medicaleconomics.com/view/synchron-first-to-integrate-brain-computer-interface-with-apple-devices"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "AACR 2026: personalized neoantigen mRNA vaccines hit ~90% survival in pancreatic Phase 1",
+      "detail": "AACR May 2026 readouts and a Mount Sinai review highlighted personalized neoantigen mRNA vaccines: autogene cevumeran (BioNTech/Roche) showing ~90% 6-year survival in pancreatic Phase 1 with checkpoint inhibitor; mRNA-4157 (Moderna/Merck) advancing in Phase 3.",
+      "source_urls": [
+        "https://www.mountsinai.org/about/newsroom/2026/mount-sinai-review-maps-the-path-forward-for-cancer-vaccines-highlighting-promise-of-personalized-and-combination-approaches"
+      ],
+      "payload": {
+        "name": "Personalized neoantigen mRNA cancer vaccines",
+        "description": "Patient-specific mRNA vaccines encoding tumor-derived neoantigens, paired with checkpoint inhibitors and standard-of-care chemo, now showing durable Phase 1 benefit and progressing to Phase 3.",
+        "examples": [
+          "Autogene cevumeran (BioNTech/Roche) ~90% 6-yr survival in pancreatic Phase 1",
+          "mRNA-4157 (Moderna/Merck) in multi-indication Phase 3"
+        ],
+        "source_url": "https://www.mountsinai.org/about/newsroom/2026/mount-sinai-review-maps-the-path-forward-for-cancer-vaccines-highlighting-promise-of-personalized-and-combination-approaches"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IBM + Cleveland Clinic + RIKEN simulate 12,635-atom protein on quantum hardware",
+      "detail": "IBM, Cleveland Clinic, and RIKEN announced (May 5) a quantum-centric supercomputing simulation of trypsin (12,635 atoms) using 156-qubit Heron processors - a ~40x increase in simulated system size in six months.",
+      "source_urls": [
+        "https://newsroom.ibm.com/2026-05-05-cleveland-clinic,-riken,-and-ibm-model-a-12,635-atom-protein-the-largest-known-to-be-simulated-with-quantum-computers"
+      ],
+      "payload": {
+        "field": "largest_quantum_simulated_protein",
+        "new_value": "12,635 atoms (trypsin); IBM Heron 156q",
+        "previous_value": "~300 atoms six months prior",
+        "source_url": "https://newsroom.ibm.com/2026-05-05-cleveland-clinic,-riken,-and-ibm-model-a-12,635-atom-protein-the-largest-known-to-be-simulated-with-quantum-computers"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IBM marks 10 years of cloud-accessible quantum computing",
+      "detail": "IBM (May 4) marked the decade since the first cloud-accessible quantum processor, now operating 156-qubit Heron systems with ~1.17e-3 median two-qubit error rate.",
+      "source_urls": [
+        "https://newsroom.ibm.com/2026-05-04-ibm-a-decade-of-quantum-on-the-cloud"
+      ],
+      "payload": {
+        "field": "ibm_cloud_quantum_milestone",
+        "new_value": "10 years; 156q Heron at ~1.17e-3 two-qubit error",
+        "previous_value": "May 2016 cloud launch with early-stage processors",
+        "source_url": "https://newsroom.ibm.com/2026-05-04-ibm-a-decade-of-quantum-on-the-cloud"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Cerebras files $3.5B IPO at $26.6B with multi-year OpenAI compute deal",
+      "detail": "Cerebras filed its S-1 (May 4) targeting $115-125/share at a ~$26.6B valuation, anchored by a $20B+ multi-year OpenAI co-design and inference compute deal; FY25 revenue $510M (+76% YoY).",
+      "source_urls": [
+        "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/",
+        "https://www.cnbc.com/2026/05/04/cerebras-ipo-ai-chipmaker.html"
+      ],
+      "payload": {
+        "claim": "Cerebras' $3.5B IPO at ~$26.6B valuation, anchored by a $20B+ OpenAI compute deal, validates wafer-scale silicon as a credible alternative to GPU dominance for AI inference.",
+        "source_url": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Rocket Lab books multi-Neutron deal; backlog past $2.2B",
+      "detail": "Rocket Lab (May 7) reported Q1 2026 revenue +63.5% YoY to $200M and announced a confidential customer's multi-launch Neutron + Electron deal; backlog now exceeds $2.2B with Neutron's Q4 2026 debut on track.",
+      "source_urls": [
+        "https://spaceflightnow.com/2026/05/07/rocket-lab-announces-five-launch-neutron-deal-as-it-continues-aiming-for-late-2026-debut/",
+        "https://www.globenewswire.com/news-release/2026/05/07/3290605/0/en/rocket-lab-s-biggest-launch-deal-yet-confidential-customer-books-multiple-neutron-and-electron-launches.html"
+      ],
+      "payload": {
+        "name": "Rocket Lab Neutron",
+        "org": "Rocket Lab USA (RKLB)",
+        "type": "STARTUP",
+        "why": "Most credible Falcon 9 alternative for medium-lift reusable launch (~13t reusable / 15t expendable, 9 Archimedes engines); growing backlog signals real demand pull, not just announcements.",
+        "funding": "Public (RKLB); $2.2B+ backlog",
+        "source_url": "https://spaceflightnow.com/2026/05/07/rocket-lab-announces-five-launch-neutron-deal-as-it-continues-aiming-for-late-2026-debut/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "Zap Energy announces industry-first hybrid fission-fusion strategy",
+      "detail": "Zap Energy (May 5) announced plans to develop small-scale nuclear fission alongside its z-pinch fusion platform - an industry first - and named Zabrina Johal as CEO; ranked #16 on TIME/Statista GreenTech 2026.",
+      "source_urls": [
+        "https://www.nucnet.org/news/in-an-industry-first-zap-energy-adds-fusion-to-traditional-fission-lineup-5-5-2026",
+        "https://www.realclearenergy.org/articles/2026/05/04/zap_energy_the_first_fission-fusion_company_1180637.html"
+      ],
+      "payload": {
+        "field": "zap_energy_strategy",
+        "new_value": "Hybrid fission-fusion company strategy; Zabrina Johal named CEO (May 5)",
+        "previous_value": "Pure-play z-pinch fusion startup",
+        "source_url": "https://www.nucnet.org/news/in-an-industry-first-zap-energy-adds-fusion-to-traditional-fission-lineup-5-5-2026"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Joby flies passenger-style eVTOL demo over Manhattan at 45 dB cruise",
+      "detail": "Joby Aviation (May 1) ran a public eVTOL demo at NYC's East 34th Street Heliport, flying a passenger-style sortie at ~45 dB cruise noise and proving urban-infrastructure compatibility for sub-10-minute cross-city hops.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/05/01/3286156/0/en/VertiPorts-by-Atlantic-Hosts-Electric-Air-Taxi-Demonstration-by-Joby-Aviation-at-New-York-City-s-East-34th-Street-Heliport.html"
+      ],
+      "payload": {
+        "candidate_area": "eVTOL / urban air mobility",
+        "claim": "Joby demonstrated all-electric eVTOL flight over Manhattan at ~45 dB cruise noise, with sub-10-minute heliport-to-heliport hops on existing infrastructure (May 1 2026).",
+        "source_url": "https://www.globenewswire.com/news-release/2026/05/01/3286156/0/en/VertiPorts-by-Atlantic-Hosts-Electric-Air-Taxi-Demonstration-by-Joby-Aviation-at-New-York-City-s-East-34th-Street-Heliport.html",
+        "why_potentially_big": "First credible operational eVTOL demo on existing US heliport infrastructure - closes the gap from FAA certification toward revenue service."
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Fervo Energy files $1.33B IPO; Cape Station EGS targeting 500 MW by 2028",
+      "detail": "Fervo Energy filed for a $1.33B IPO (May 4) with its Cape Station enhanced-geothermal plant tracking first-power in October 2026 and a 500 MW build-out by 2028, at ~$7k/kW capex (target $3k/kW).",
+      "source_urls": [
+        "https://www.bloomberg.com/news/articles/2026-05-04/geothermal-energy-developer-fervo-seeks-1-33-billion-in-us-ipo"
+      ],
+      "payload": {
+        "candidate_area": "Enhanced geothermal",
+        "claim": "Fervo Energy filed a $1.33B IPO; Cape Station enhanced-geothermal plant on track for first power Oct 2026, 500 MW by 2028.",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-05-04/geothermal-energy-developer-fervo-seeks-1-33-billion-in-us-ipo",
+        "why_potentially_big": "First commercial-scale enhanced geothermal IPO - a credible firm clean baseload competitor to natural gas if capex curve continues bending."
+      }
+    }
+  ]
+}

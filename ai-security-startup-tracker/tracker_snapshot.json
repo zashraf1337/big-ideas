@@ -1962,6 +1962,328 @@
         "Sorenson Capital (lead), Recall Capital",
         "LLM-native email security platform; proprietary TRACE (Threat Reasoning AI Correlation Engine) orchestrates multiple AI engines for expert-level threat analysis. Detects AI-generated phishing, BEC, zero-day campaigns.",
         "Emerged from stealth Jul 2025 with $5.2M seed. Founders ex-Proofpoint, FireEye, Mandiant, Google, McAfee. Has reportedly detected 3.9M fake company websites; positions against legacy email security stacks (Proofpoint, Mimecast) and the Abnormal Security AI-native incumbent."
+      ],
+      [
+        133,
+        "Security Superintelligence Labs (SSIL)",
+        "USA",
+        2025,
+        "Joshua Saxe (co-founder/CTO)",
+        "AI security research / agentic AI security",
+        "Stealth",
+        "n/d",
+        "n/d",
+        "n/d",
+        "Building security tooling and research for the superintelligence / agentic AI era. Domain: ssil.ai.",
+        "Co-founded by Joshua Saxe (ex-Cisco Foundation AI, ex-Robust Intelligence, ex-Sophos). Very early; few public details. Adjacent to Anthropic's CISO function and Helmet's MCP-security framing."
+      ],
+      [
+        134,
+        "Surf AI",
+        "Tel Aviv, Israel",
+        2024,
+        "n/d",
+        "AI-SOC",
+        "Series A",
+        "n/d",
+        57,
+        "Accel, Cyberstarts, Boldstart Ventures",
+        "Agentic security operations platform that unifies data from identity, cloud, HR and IT into a context graph to prioritize risks and automate remediation.",
+        "Emerged from stealth March 17, 2026 with $57M led by Accel. Founded September 2024. Competes with Torq, Tenex, Dropzone."
+      ],
+      [
+        135,
+        "RunSybil",
+        "San Francisco, USA",
+        2024,
+        "Dane Stuckey (OpenAI's first security hire)",
+        "Autonomous Pentest",
+        "Series A",
+        "n/d",
+        40,
+        "Khosla Ventures, S32, Anthology Fund (Anthropic+Menlo), Conviction, Elad Gil",
+        "AI agents that automatically hack company software to find security weaknesses, founded by OpenAI's first security hire.",
+        "Raised $40M led by Khosla Ventures in March 2026 with angels including Nikesh Arora, Jeff Dean. Competes with XBOW, Armadin."
+      ],
+      [
+        136,
+        "Above Security",
+        "Tel Aviv, Israel",
+        2025,
+        "Aviv Nahum (CEO), Amir Boldo (CPTO)",
+        "AI-SOC / Insider Risk",
+        "Series A",
+        "n/d",
+        50,
+        "Ballistic Ventures, Merlin Ventures, Norwest",
+        "AI-native agentic managed insider threat platform for SaaS-forward environments.",
+        "Emerged from stealth March 23, 2026; founded by Unit 8200 vets with prior exits. Eight months old at launch with 10 employees."
+      ],
+      [
+        137,
+        "Gambit Security",
+        "Tel Aviv, Israel",
+        2025,
+        "n/d",
+        "Cyber Resilience / AI",
+        "Series A",
+        "n/d",
+        61,
+        "Cyberstarts, Kleiner Perkins, Spark Capital",
+        "AI-powered resilience platform that maps environments, security products, and backup tools to uncover gaps and validate recovery paths in real time.",
+        "Emerged from stealth in 2026 with $61M Seed+A from top-tier funds."
+      ],
+      [
+        138,
+        "Lema AI",
+        "Tel Aviv, Israel",
+        2023,
+        "Eddie Dovzhik, Omer Yehudai, Tomer Roizman",
+        "AI GRC / Third-Party Risk",
+        "Series A",
+        "n/d",
+        24,
+        "Team8, F2 Venture Capital, Salesforce Ventures",
+        "Agentic AI for enterprise supply chain security; replaces manual vendor questionnaires with continuous AI-driven analysis of vendor behavior and risk.",
+        "Emerged from stealth February 2026 with $24M Seed + Series A."
+      ],
+      [
+        139,
+        "Capsule Security",
+        "Israel/US",
+        2025,
+        "Naor Paz, Lidan Hazout",
+        "Agentic AI Security / MCP",
+        "Seed",
+        "n/d",
+        7,
+        "Lama Partners, Forgepoint Capital International",
+        "Runtime platform (ClawGuard) that continuously monitors AI agents to prevent prompt injection, manipulation, abnormal behavior, and data exfiltration.",
+        "Emerged from stealth April 2026 with $7M seed."
+      ],
+      [
+        140,
+        "Native",
+        "Tel Aviv, Israel / Seattle, USA",
+        2024,
+        "Amit Megiddo (CEO, ex-AWS GuardDuty), Gal Ordo (CPO, ex-AWS Security Hub), Eyal Faingold (CTO, ex-Check Point)",
+        "Cloud + Runtime AI",
+        "Series A",
+        "n/d",
+        42,
+        "Ballistic Ventures, General Catalyst, YL Ventures, Merlin Ventures",
+        "Multi-cloud security control plane enforcing 'security-by-design' policies across AWS, Azure, GCP, Oracle and AI infrastructure.",
+        "Emerged from stealth March 19, 2026 with $42M (Series A $31M). Phil Venables (ex-Google Cloud CISO) on board."
+      ],
+      [
+        141,
+        "imper.ai",
+        "Brooklyn, USA",
+        2024,
+        "Noam Awadish (CEO), Anatoly Blighovsky, Rom Dudkiewicz",
+        "Deepfake Defense",
+        "Seed",
+        "n/d",
+        28,
+        "Redpoint Ventures, Battery Ventures, Maple VC, Vessy VC, Cerca Partners",
+        "Real-time impersonation risk monitoring and deepfake detection across Zoom, Teams, Slack, WhatsApp etc. Analyzes 'digital breadcrumbs' rather than content.",
+        "Launched December 2025 with $28M. Founders are Unit 8200 veterans. Competes with Doppel, GetReal, Reality Defender."
+      ],
+      [
+        142,
+        "AegisAI",
+        "USA",
+        2025,
+        "Cy Khormaee, Ryan Luo (ex-Google Safe Browsing/reCAPTCHA)",
+        "AI-Native Email Security",
+        "Seed",
+        "n/d",
+        13,
+        "Accel, Foundation Capital",
+        "Autonomous AI agents that stop phishing, malware, and BEC before they reach user inboxes.",
+        "Emerged from stealth September 2025 with $13M led by Accel and Foundation; competes with Abnormal, Material."
+      ],
+      [
+        143,
+        "Aisy",
+        "n/d",
+        2025,
+        "n/d",
+        "AI Code Security / Vulnerability Management",
+        "Seed",
+        "n/d",
+        2.3,
+        "Flying Fish Ventures, Osney Capital, 6DC",
+        "AI-native vulnerability management using an attacker's mindset to prioritize the endless ticket storm in security.",
+        "Emerged from stealth January 2026 with $2.3M seed."
+      ],
+      [
+        144,
+        "Asymmetric Security",
+        "London, UK / San Francisco, USA",
+        2025,
+        "Alumni from Oxford, Stanford, Cambridge, RAND, Palo Alto Networks, CrowdStrike",
+        "AI-driven DFIR",
+        "Pre-seed",
+        "n/d",
+        4.2,
+        "Susa Ventures, Halcyon Ventures, Overlook Ventures",
+        "AI automation for digital forensics and incident response, speeding investigations and reducing manual effort.",
+        "Emerged from stealth January 2026 with $4.2M oversubscribed pre-seed."
+      ],
+      [
+        145,
+        "Ciphero",
+        "New York, USA",
+        2025,
+        "Saoud Khalifah, Rob Gross (ex-Fakespot)",
+        "AI Governance / Verification",
+        "Pre-seed",
+        "n/d",
+        2.5,
+        "Sovereign's Capital, Chingona Ventures",
+        "AI verification layer to capture, check, and govern all human and agentic AI interactions to prevent data loss and attacks.",
+        "Emerged from stealth December 2025 with $2.5M pre-seed. Founders previously sold Fakespot to Mozilla."
+      ],
+      [
+        146,
+        "Cydelphi",
+        "Dallas, USA",
+        2025,
+        "n/d",
+        "AI-native DFIR",
+        "Seed",
+        "n/d",
+        3,
+        "n/d",
+        "AI-native digital forensics and incident response platform enabling recovery from catastrophic breaches in days rather than months.",
+        "Emerged from stealth 2026 with $3M seed; Dallas-based."
+      ],
+      [
+        147,
+        "Zenyard",
+        "Tel Aviv, Israel",
+        2025,
+        "n/d",
+        "AI Security Tooling / Reverse Engineering",
+        "Pre-seed",
+        "n/d",
+        "n/d",
+        "Mindset Ventures, TAU Ventures, Zuk Avraham, Raanan Raz",
+        "Purpose-built AI agent for software reverse engineering, deployed by leading security and threat intelligence teams.",
+        "Emerged from stealth February 2026 with undisclosed pre-seed."
+      ],
+      [
+        148,
+        "NeuralTrust",
+        "Barcelona, Spain",
+        2022,
+        "Joan Vendrell Farreny, Victor Garcia",
+        "GenAI Firewall / Runtime AI",
+        "Seed",
+        "n/d",
+        "n/d",
+        "EU Grant (June 2025)",
+        "Generative Application Firewall protecting every layer of the LLM stack from prompt inputs to network; <10ms latency, 20,000+ RPS.",
+        "Recognized as Representative Vendor in Gartner Market Guide for Guardian Agents 2026. Notable European competitor to Lakera/Prompt."
+      ],
+      [
+        149,
+        "Hex Security",
+        "USA",
+        2025,
+        "n/d",
+        "Autonomous Pentest",
+        "Seed",
+        "n/d",
+        "n/d",
+        "Y Combinator W26",
+        "AI agents running continuous penetration tests against apps and infrastructure to find and verify critical vulnerabilities.",
+        "YC W26 standout, reached $1M ARR within 8 weeks of demo day."
+      ],
+      [
+        150,
+        "SpartanX",
+        "Boston, USA",
+        2024,
+        "n/d",
+        "AI Red Teaming / Autonomous Pentest",
+        "Seed",
+        "n/d",
+        "n/d",
+        "Venture Guides",
+        "Fully autonomous full-stack red teaming platform powered by 500+ AI agents across web, APIs, network, cloud, identity, and AI environments.",
+        "Closed seed round in 2026 led by Venture Guides; established Boston HQ, appointed new president/COO."
+      ],
+      [
+        151,
+        "Qevlar AI",
+        "Paris, France",
+        2023,
+        "n/d",
+        "AI-SOC",
+        "Series A",
+        "n/d",
+        30,
+        "n/d",
+        "Autonomous SOC AI agents for triage and investigation; customers include Mercedes-Benz, Sodexo, Orange Cyberdefense.",
+        "Raised $30M in 2026 with notable enterprise traction in Europe."
+      ],
+      [
+        152,
+        "Brinker",
+        "Israel",
+        2023,
+        "n/d",
+        "Deepfake Defense / Disinformation",
+        "Seed",
+        "n/d",
+        "n/d",
+        "Mercer Ventures, Tachles VC, Cervin Ventures",
+        "Malicious intent-based deepfake detection; evaluates content across sentiment, alignment with risk, coherence, and corroboration rather than just digital forensics.",
+        "Launched novel detection capability April 2026; named 'Narrative Intelligence Solution of the Year 2026'."
+      ],
+      [
+        153,
+        "SurePath AI",
+        "USA",
+        2023,
+        "n/d",
+        "DSPM for AI / Governance",
+        "Seed",
+        "n/d",
+        6.27,
+        "n/d",
+        "Enterprise GenAI adoption platform with intent-based governance to safely enable productivity AI.",
+        "Selected for 2026 CrowdStrike/AWS/NVIDIA Cybersecurity Startup Accelerator."
+      ],
+      [
+        154,
+        "Twine Security",
+        "n/d",
+        2024,
+        "n/d",
+        "AI-SOC",
+        "Seed",
+        "n/d",
+        12,
+        "Ignite DeepTech, AWS & CrowdStrike Cybersecurity Accelerator, Dell Technologies Capital",
+        "AI digital workforce for security operations.",
+        "Raised $12M; participant in AWS/CrowdStrike accelerator."
+      ],
+      [
+        155,
+        "Complyance",
+        "USA",
+        2024,
+        "n/d",
+        "AI Governance / GRC",
+        "Series A",
+        "n/d",
+        20,
+        "GV (Google Ventures)",
+        "AI-native GRC platform that automates governance, risk, and compliance tasks for enterprises.",
+        "Raised $20M Series A led by GV in 2026."
       ]
     ]
   },
@@ -2476,6 +2798,156 @@
         "Sorenson Capital",
         "AI-native email security",
         "Stealth emergence; LLM-native email security challenging Proofpoint/Mimecast + competing with Abnormal Security."
+      ],
+      [
+        "2025-11",
+        "Doppel",
+        "Series C",
+        70,
+        600,
+        "Bessemer Venture Partners",
+        "Deepfake Defense / Social Engineering",
+        "Brings total to $124M; George Kurtz (CrowdStrike CEO) joined as new investor."
+      ],
+      [
+        "2025-12",
+        "Resemble AI",
+        "Strategic",
+        13,
+        "n/d",
+        "Sony Innovation Fund / Google AI Futures Fund / Okta Ventures",
+        "Deepfake Defense",
+        "Brings total to $25M; Wa'ed (Aramco) added in March 2026."
+      ],
+      [
+        "2026-01",
+        "Torq",
+        "Series D",
+        140,
+        1200,
+        "Merlin Ventures",
+        "AI-SOC",
+        "Unicorn round; ~300% revenue growth in 2025."
+      ],
+      [
+        "2026-01",
+        "Aikido Security",
+        "Series B",
+        60,
+        1000,
+        "DST Global",
+        "AI Code Security",
+        "Belgium-based; reached unicorn status."
+      ],
+      [
+        "2026-01",
+        "Upwind",
+        "Series B",
+        250,
+        1500,
+        "Bessemer Venture Partners",
+        "Cloud + Runtime AI",
+        "Total to $430M; unicorn-tier cloud runtime security."
+      ],
+      [
+        "2026-01",
+        "Novee",
+        "Series A",
+        51.5,
+        "n/d",
+        "YL Ventures, Canaan Partners, Zeev Ventures",
+        "Autonomous Pentest",
+        "AI penetration testing; one of the fastest stealth-to-Series A trajectories in offensive security."
+      ],
+      [
+        "2026-01",
+        "Dropzone AI",
+        "Series B",
+        37,
+        "n/d",
+        "n/d",
+        "AI-SOC",
+        "Brings total to ~$57.4M."
+      ],
+      [
+        "2026-02",
+        "GitGuardian",
+        "Series C",
+        50,
+        "n/d",
+        "Insight Partners",
+        "Non-Human Identity",
+        "Expansion into NHI and AI agent secrets management."
+      ],
+      [
+        "2026-02",
+        "Geordie AI",
+        "Seed",
+        5,
+        "n/d",
+        "Ten Eleven Ventures, General Catalyst",
+        "Agentic AI Security",
+        "Existing tracker company; second seed brings total to $12M."
+      ],
+      [
+        "2026-03",
+        "Oasis Security",
+        "Series B",
+        120,
+        "n/d",
+        "n/d",
+        "Non-Human Identity",
+        "Existing tracker company; expansion across NHI lifecycle including AI agents."
+      ],
+      [
+        "2026-03",
+        "XBOW",
+        "Series C",
+        120,
+        1000,
+        "DFJ Growth, Northzone",
+        "Autonomous Pentest",
+        "Existing tracker company; unicorn round. Added $35M strategic from NVIDIA, Accenture, Samsung, SentinelOne in May 2026."
+      ],
+      [
+        "2026-03",
+        "Tenex.AI",
+        "Series B",
+        250,
+        1000,
+        "Crosspoint Capital",
+        "AI-SOC / MDR",
+        "Existing tracker company; reached unicorn ~1 year after launch."
+      ],
+      [
+        "2026-04",
+        "Anecdotes",
+        "Series B (tranche 2)",
+        30,
+        "n/d",
+        "n/d",
+        "AI Governance / GRC",
+        "Existing tracker company; round total reaches $55M, cumulative $85M."
+      ],
+      [
+        "2026-04",
+        "Artemis",
+        "Seed + Series A",
+        70,
+        "n/d",
+        "n/d",
+        "AI-powered Defense",
+        "Existing tracker company; emerged from stealth six months after founding with $70M."
+      ],
+      [
+        "2026-05",
+        "XBOW",
+        "Series C extension",
+        35,
+        1000,
+        "NVIDIA, Accenture, Samsung, SentinelOne (strategic)",
+        "Autonomous Pentest",
+        "Brings Series C to $155M total."
       ]
     ]
   },
@@ -2680,6 +3152,70 @@
         "100-130 (est.)",
         "Data security for AI / Data lake for AI agents",
         "Cyera's 4th acquisition in 5 years; Israeli startup with automated data lake for enterprises deploying AI agents \u2014 adds traceable data access for agentic workloads to Cyera's $9B-valuation DSPM stack."
+      ],
+      [
+        "2025-11",
+        "Prompt Security",
+        "SentinelOne",
+        250,
+        "GenAI Firewall / Runtime AI",
+        "Cash-and-stock deal; integrated into Singularity platform for endpoint/runtime AI security."
+      ],
+      [
+        "2025-12",
+        "Cyata, Cyclops, Rotate (3 startups)",
+        "Check Point",
+        150,
+        "AI Agent Security / CAASM",
+        "Trio of Israeli acquisitions; Cyata for AI agent discovery/governance, Cyclops for CAASM, Rotate team for MSP scaling."
+      ],
+      [
+        "2025-12",
+        "Lakera",
+        "Check Point",
+        300,
+        "GenAI Firewall / Runtime AI",
+        "Existing tracker company exit; sub-50ms LLM runtime guardrail platform."
+      ],
+      [
+        "2026-01",
+        "SGNL",
+        "CrowdStrike",
+        740,
+        "Identity Security",
+        "Identity management for zero-trust and AI agent access."
+      ],
+      [
+        "2026-02",
+        "CyberArk",
+        "Palo Alto Networks",
+        25000,
+        "Identity Security",
+        "Mega-deal closed February 11, 2026; ~$25B equity value extending Palo Alto into identity for the AI era."
+      ],
+      [
+        "2026-03",
+        "Tromzo",
+        "Checkmarx",
+        "n/d",
+        "AI Code Security",
+        "AI-native autonomous security agents folded into Checkmarx One."
+      ],
+      [
+        "2026-04",
+        "Fabrix Security",
+        "Silverfort",
+        "n/d",
+        "AI-Native Identity",
+        "Tens of millions of dollars; brings AI-driven runtime access decisioning for humans, machines, and AI agents."
+      ],
+      [
+        "2026-05",
+        "Astrix Security",
+        "Cisco",
+        400,
+        "Non-Human Identity / AI Agents",
+        "Existing tracker company exit; integrates into Cisco Identity Intelligence and Duo for AI agent governance."
       ]
     ]
   },
@@ -3221,6 +3757,15 @@
         "n/a",
         "METHODOLOGY GAP CALLED OUT BY USER: 'AI code remediation' was represented by only Corgea (#82). Root cause: (1) the theme description in Themes tab listed Pixee/Aikido/Ghost as 'representative players' but they were never added as Company rows; (2) the weekly funding scan keyed off NEW rounds, so historical seed rounds (Pixee May 2024, Mobb Apr 2023) were never backfilled; (3) we conflated AI code remediation (fix source) with AI vulnerability remediation (fix CVEs/infra) into one bucket and missed the second category entirely (Cogent, AISLE, Zafran, Astelia, Maze). FIX: (a) split into two themes; (b) audit every 'representative players' string in Themes against Companies; (c) add YC F24/W25/S25 batch scan to weekly run; (d) maintain a separate competitive-context list for incumbents (Copilot Autofix, Snyk Agent Fix, Veracode Fix, Checkmarx AI) so we don't lose sight of them.",
         "No new ideas in this entry (methodology fix run). Candidate idea queued: 'Trust-and-verify layer for AI code patches' \u2014 independent eval/regression service that scores Copilot/Snyk/Mobb/Pixee fix PRs against the customer's tests and license/SBOM policies."
+      ],
+      [
+        "2026-05-18 (deep dive)",
+        "15 new (catch-up sweep): includes Upwind $250M Series B (Bessemer), Torq Series D $140M, Aikido $60M Series B, Doppel $70M Series C, Surf AI $57M Series A, Armadin ~$190M stealth (Kevin Mandia/Mandiant), Kai $125M stealth, RunSybil $40M (Khosla), GitGuardian $50M Series C, Resemble AI strategic round, Dropzone $37M Series B.",
+        "8 catch-up: Cisco\u2192Astrix $400M (NHI/AI agents); CrowdStrike\u2192SGNL $740M; Palo Alto\u2192CyberArk $25B; Check Point spree (Lakera $300M, plus Cyata+Cyclops+Rotate ~$150M); SentinelOne\u2192Prompt Security $250M; Checkmarx\u2192Tromzo; Silverfort\u2192Fabrix; major AI-security platform consolidation.",
+        "23 new entrants (including Security Superintelligence Labs \u2014 Joshua Saxe): Surf AI, RunSybil, Armadin, Kai, Above Security, Gambit, Lema AI, Capsule Security, Native, imper.ai + others.",
+        "n/d \u2014 no new public shutdowns in window.",
+        "Theme acceleration: 'Agentic SOC' is now its own crowded category (Kai, Surf AI, Above, plus existing AI-SOC players). NHI/agent identity is being acquired at top of market (Astrix\u2192Cisco). AI-native email security continues (StrongestLayer added). MCP-specific security gaining (Helmet, Capsule).",
+        "10 new voices added including Simon Willison, Johann Rehberger (Embrace the Red), Kevin Mandia (Armadin), Vijay Bolina (ex-DeepMind CISO), Phil Venables, Nathan Hamiel, George Kurtz, Nadav Zafrir, Tal Eliyahu, Natalie Isak."
       ]
     ]
   },
@@ -3625,6 +4170,11 @@
         "Veracode Fix overview",
         "https://www.veracode.com/security/what-is-ai-code-remediation/",
         "Incumbent fix feature"
+      ],
+      [
+        "Deep retrospective sweep \u2014 May 2026",
+        "internal: tools/tmp_deep_sweep.json",
+        "One-time catch-up sweep covering Nov 2025\u2013May 2026: 22 companies, 15 funding rounds, 8 exits/M&A, 10 people added."
       ]
     ]
   },
@@ -3644,13 +4194,13 @@
       [
         1,
         "Joshua Saxe",
-        "Twelve (founder); ex-Meta, ex-Sophos",
+        "Security Superintelligence Labs (SSIL \u2014 co-founder, CTO); ex-Cisco Foundation AI, ex-Robust Intelligence, ex-Sophos",
         "Founder / AI security researcher",
         "ML for security, GenAI defense, adversarial ML",
         "Twitter threads; conference talks; ex-Meta AI security org leadership",
         "@joshua_saxe",
         "joshuasaxe",
-        "One of the most-cited voices on practical ML-for-security. Recently focused on agent security."
+        "Co-founded SSIL (ssil.ai). Held senior roles across Cisco, Robust Intelligence, Sophos, Endgame. One of the most-cited voices on practical ML-for-security. Writes 'AI security notes' on Substack/LinkedIn."
       ],
       [
         2,
@@ -3838,6 +4388,116 @@
         "@hlntnr",
         "helen-toner",
         "Influential on Washington's view of AI risk and governance."
+      ],
+      [
+        19,
+        "Simon Willison",
+        "Independent",
+        "Researcher / Writer",
+        "Prompt injection, LLM security, the 'lethal trifecta'",
+        "simonwillison.net blog (high frequency), Lenny's Newsletter guest appearances, podcasts",
+        "@simonw",
+        "n/d",
+        "Coined 'prompt injection' (2022) and 'lethal trifecta' (June 2025). Continues as the most widely cited independent voice on agentic AI security risk in 2026."
+      ],
+      [
+        20,
+        "Johann Rehberger",
+        "Independent ('Embrace the Red')",
+        "Security Researcher",
+        "Prompt injection, AI agent vulnerabilities, cross-agent privilege escalation",
+        "embracethered.com blog, daily vuln disclosures (Aug 2025), conference talks",
+        "@wunderwuzzi23",
+        "n/d",
+        "Coined 'Cross-Agent Privilege Escalation'. Published a series of daily AI tool vulnerability reports in late 2025 establishing him as the most prolific bug-finder in agentic AI."
+      ],
+      [
+        21,
+        "Vijay Bolina",
+        "Stealth frontier AI lab (formerly Google DeepMind CISO)",
+        "CISO / Head of Cybersecurity Research",
+        "Frontier AI offense/defense, national security, agentic AI safety",
+        "Black Hat USA 2026 AI Summit speaker; led BIGSLEEP & CODEMENDOR research at DeepMind",
+        "n/d",
+        "vijaybolina",
+        "Left Google DeepMind to lead security at a stealth frontier lab; one of the highest-profile AI lab CISOs in 2026."
+      ],
+      [
+        22,
+        "Nathan Hamiel",
+        "Kudelski Security",
+        "Senior Director of Research",
+        "Emerging tech, AI/ML safety and security",
+        "Black Hat AI/ML/Data Science track lead; Black Hat and DEF CON keynotes",
+        "@nathanhamiel",
+        "n/d",
+        "Veteran Black Hat review board member and AI track lead; widely quoted on AI red-teaming methodology in 2026."
+      ],
+      [
+        23,
+        "Phil Venables",
+        "Native (board), independent advisor",
+        "Board Director / Advisor",
+        "Cloud security, AI infrastructure governance",
+        "Substack 'Risk & Cybersecurity', board roles across cyber unicorns",
+        "@philvenables",
+        "philvenables",
+        "Departed Google Cloud CISO role; became a high-frequency Substack/blog voice on AI security strategy and board oversight in late 2025/2026."
+      ],
+      [
+        24,
+        "Tal Eliyahu",
+        "Independent",
+        "Researcher / Newsletter Author",
+        "AI security research curation, adversarial AI",
+        "Monthly AI Security Newsletter (GitHub, Medium); 'Awesome-AI-Security' repo",
+        "@Eliyahu_Tal_",
+        "in/adgnji/",
+        "Operates the most widely-followed monthly AI Security Digest, now reaching tens of thousands of practitioners."
+      ],
+      [
+        25,
+        "Kevin Mandia",
+        "Armadin",
+        "Founder / CEO",
+        "AI red teaming, autonomous offensive security",
+        "Press circuit, RSAC 2026 keynote",
+        "n/d",
+        "kevinmandia",
+        "Mandiant founder re-emerged in 2026 with Armadin (~$190M stealth raise) and is now the highest-profile operator-turned-founder in autonomous red-teaming."
+      ],
+      [
+        26,
+        "George Kurtz",
+        "CrowdStrike (CEO); Doppel (investor)",
+        "CEO / Angel",
+        "AI-driven endpoint security, social engineering defense",
+        "RSAC 2026 keynote; participated in Doppel Series C as angel",
+        "@George_Kurtz",
+        "n/d",
+        "Notable for personally investing in Doppel's Series C (Nov 2025) and pushing the agentic SOC narrative at every 2026 cyber event."
+      ],
+      [
+        27,
+        "Nadav Zafrir",
+        "Check Point (CEO)",
+        "CEO",
+        "AI security strategy, M&A",
+        "Three-way Israeli AI startup acquisition announcement; quarterly investor strategy memos",
+        "n/d",
+        "nadavzafrir",
+        "Pivoted Check Point's strategy explicitly to 'securing customers' AI transformation' via three Israeli AI security acquisitions in late 2025."
+      ],
+      [
+        28,
+        "Natalie Isak",
+        "Microsoft",
+        "Researcher",
+        "Enterprise AI security architecture gaps",
+        "[un]prompted 2026 talk on structural enterprise AI security gaps",
+        "n/d",
+        "n/d",
+        "Co-presented prominent research at [un]prompted 2026 mapping structural gaps in enterprise AI security."
       ]
     ]
   }

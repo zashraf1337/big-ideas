@@ -1948,6 +1948,20 @@
         "SYN Ventures, WhiteRabbit Ventures",
         "Agentic AI security platform \u2014 finds, manages, and monitors MCP (Model Context Protocol) servers and connections. Integrates with existing EDR for installation-free visibility into agent communication.",
         "Emerged from stealth Dec 2025 with $9M seed. Founder Kneip previously built CyberGRX (acquired by ProcessUnity/Marlin). One of the earliest MCP-focused security platforms."
+      ],
+      [
+        132,
+        "StrongestLayer",
+        "USA",
+        2024,
+        "Muhammad Rizwan, Joshua Bass, Alan LeFort",
+        "AI-native email security",
+        "Seed",
+        "n/d",
+        5.2,
+        "Sorenson Capital (lead), Recall Capital",
+        "LLM-native email security platform; proprietary TRACE (Threat Reasoning AI Correlation Engine) orchestrates multiple AI engines for expert-level threat analysis. Detects AI-generated phishing, BEC, zero-day campaigns.",
+        "Emerged from stealth Jul 2025 with $5.2M seed. Founders ex-Proofpoint, FireEye, Mandiant, Google, McAfee. Has reportedly detected 3.9M fake company websites; positions against legacy email security stacks (Proofpoint, Mimecast) and the Abnormal Security AI-native incumbent."
       ]
     ]
   },
@@ -2452,6 +2466,16 @@
         "SYN Ventures, WhiteRabbit Ventures",
         "Agentic AI security / MCP security",
         "Stealth emergence; product = MCP server discovery + governance integrated with EDR."
+      ],
+      [
+        "2025-07",
+        "StrongestLayer",
+        "Seed",
+        5.2,
+        "n/d",
+        "Sorenson Capital",
+        "AI-native email security",
+        "Stealth emergence; LLM-native email security challenging Proofpoint/Mimecast + competing with Abnormal Security."
       ]
     ]
   },
@@ -2734,7 +2758,7 @@
       [
         "AI-native email & social engineering",
         "Behavioral detection of BEC, phishing, QR-phishing, deepfake voice calls, Slack/Teams abuse.",
-        "Abnormal, Material, Adaptive, Tessian (now Proofpoint)",
+        "Abnormal, Material, Adaptive, Tessian (now Proofpoint), StrongestLayer",
         "Abnormal's scale shows durable pricing power; attackers use LLMs to author phish at scale.",
         "Gmail/Microsoft 365 native defenses improving; AI-phish defense must span collab, voice, SMS."
       ],

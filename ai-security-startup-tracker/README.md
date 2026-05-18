@@ -7,5 +7,4 @@ and security.
 
 Published outputs (regenerated weekly by an autonomous Claude research task):
 - `index.html` / `ai_security_dashboard.html` — interactive dashboard
-- `AI_Security_Landscape_Report.html` — narrative report (browsable)
-- `AI_Security_Landscape_Report.pdf` — narrative report (download)
+- `AI_Security_Landscape_Report.pdf` — narrative report

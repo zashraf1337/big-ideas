@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
+    color-scheme: light dark;
+    /* Default (dark) palette */
     --bg: #0b0d10; --bg-2: #11151a; --bg-3: #161b22;
     --border: #232a33; --border-strong: #30363d;
     --text: #e6edf3; --text-dim: #8b949e; --text-muted: #6e7681;
@@ -13,6 +15,20 @@
     --green: #3fb950; --orange: #d29922; --red: #f85149;
     --purple: #bc8cff; --pink: #ff7b72; --cyan: #56d4dd;
     --chip-bg: #1f2933;
+    --modal-backdrop: rgba(0, 0, 0, 0.7);
+  }
+  /* Auto-light when the user's OS is in light mode */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff; --bg-2: #f6f8fa; --bg-3: #eef2f6;
+      --border: #d0d7de; --border-strong: #afb8c1;
+      --text: #1f2328; --text-dim: #57606a; --text-muted: #6e7781;
+      --accent: #0969da; --accent-2: #0550ae;
+      --green: #1a7f37; --orange: #9a6700; --red: #cf222e;
+      --purple: #6639ba; --pink: #bc4c00; --cyan: #0e6e6f;
+      --chip-bg: #ffffff;
+      --modal-backdrop: rgba(15, 20, 25, 0.45);
+    }
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -106,7 +122,7 @@
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   }
   .modal-backdrop {
-    position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7);
+    position: fixed; inset: 0; background: var(--modal-backdrop);
     display: none; align-items: flex-start; justify-content: center;
     z-index: 100; overflow-y: auto; padding: 40px 16px;
   }
@@ -199,6 +215,7 @@
     <button data-tab="weekly">Weekly Highlights</button>
     <button data-tab="people">Key People</button>
     <button data-tab="watch">Watch List</button>
+    <button data-tab="voices">Voices</button>
   </nav>
   <div id="view-overview">
     <div class="filters" id="overview-filters">
@@ -285,6 +302,26 @@
       </table>
     </div>
   </div>
+  <div id="view-voices" style="display:none">
+    <div class="filters">
+      <span class="label">Tag:</span>
+      <span class="chip" data-vfilter="tag" data-val="AI">AI</span>
+      <span class="chip" data-vfilter="tag" data-val="BIO">Bio</span>
+      <span class="chip" data-vfilter="tag" data-val="ENERGY">Energy</span>
+      <span class="chip" data-vfilter="tag" data-val="SPACE">Space</span>
+      <span class="chip" data-vfilter="tag" data-val="QUANTUM">Quantum</span>
+      <span class="chip" data-vfilter="tag" data-val="ROBOTICS">Robotics</span>
+      <span class="chip" data-vfilter="tag" data-val="HARDWARE">Hardware</span>
+      <span class="sep"></span>
+      <span class="chip" data-vfilter="agentic" data-val="agentic">Agentic</span>
+      <span class="sep"></span>
+      <input type="text" class="search" id="voices-search" placeholder="Search voices…">
+      <button class="reset" id="reset-voices">Reset</button>
+    </div>
+    <div class="count-bar" id="voices-count"></div>
+    <div class="grid" id="voices-grid"></div>
+  </div>
+
   <div class="modal-backdrop" id="modal"><div class="modal" id="modal-body"></div></div>
   <footer class="app">
     Built from primary sources (arxiv, Nature, Science, FDA, BloombergNEF, company engineering blogs).
@@ -295,7 +332,7 @@
 const STATE = {
  "meta": {
   "title": "10 Tech Breakthroughs of 2021-2026",
-  "last_updated": "2026-05-15T12:24:06.631755+00:00",
+  "last_updated": "2026-05-18T14:42:55.004586+00:00",
   "as_of_date": "2026-05-15",
   "domains": [
    "AI",
@@ -312,7 +349,7 @@ const STATE = {
    "GOVERNMENT_LAB",
    "CROSS"
   ],
-  "schema_version": 2
+  "schema_version": 3
  },
  "breakthroughs": [
   {
@@ -5622,6 +5659,288 @@ const STATE = {
    },
    "as_of_date": "2026-05-15",
    "generated_at": "2026-05-15T12:24:06.631737+00:00"
+  },
+  {
+   "week_ending": "2026-05-18",
+   "kind": "BASE_RUN",
+   "summary": "Seeded 'voices' section with 16 curated thinkers across AI, bio, energy, space, and macro tech.",
+   "highlights": [],
+   "additions": {
+    "voices_seeded": [
+     "Andrej Karpathy",
+     "Yann LeCun",
+     "François Chollet",
+     "Jim Fan",
+     "Chris Olah",
+     "Sebastian Raschka",
+     "Dwarkesh Patel",
+     "Patrick Hsu",
+     "Eric Topol",
+     "Derek Lowe",
+     "Casey Handmer",
+     "Eli Dourado",
+     "Tyler Cowen",
+     "Patrick Collison",
+     "Azeem Azhar",
+     "Ben Thompson"
+    ]
+   },
+   "as_of_date": "2026-05-18",
+   "generated_at": "2026-05-18T14:42:55.004563+00:00"
+  }
+ ],
+ "voices": [
+  {
+   "name": "Andrej Karpathy",
+   "role": "Independent AI researcher · formerly OpenAI, Tesla, Stanford",
+   "focus": "Education, agentic systems, the AI-doing-AI-research thesis (autoresearch)",
+   "follow_url": "https://karpathy.ai/",
+   "twitter": "https://x.com/karpathy",
+   "youtube": "https://youtube.com/@AndrejKarpathy",
+   "notes": "Most influential AI educator alive. nanoGPT and his lecture series shaped how a generation learns transformers. Now publicly pushing the autoresearch thesis — AI agents that run their own ML experiments.",
+   "tags": [
+    "AI",
+    "agentic"
+   ],
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Yann LeCun",
+   "role": "Founder, AMI Labs · Professor, NYU · Turing Award 2018",
+   "focus": "World models, JEPA, the case against pure-LLM AGI",
+   "follow_url": "https://yann.lecun.com/",
+   "twitter": "https://x.com/ylecun",
+   "notes": "Loudest critic of the LLM-only path to AGI. JEPA / V-JEPA papers are the alternative-architecture thesis to watch.",
+   "tags": [
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "François Chollet",
+   "role": "ARC Prize co-founder · creator of Keras",
+   "focus": "ARC-AGI benchmark, abstract reasoning, what current LLMs can't do",
+   "follow_url": "https://fchollet.com/",
+   "twitter": "https://x.com/fchollet",
+   "notes": "ARC-AGI is the most-discussed benchmark for testing whether reasoning models can generalize. Recent shift from pure skeptic to acknowledging o3-class progress.",
+   "tags": [
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Jim Fan",
+   "role": "Senior Research Scientist, NVIDIA · GEAR Lab co-lead",
+   "focus": "Embodied AI, agents in simulation (Voyager, Eureka), GR00T",
+   "follow_url": "https://jimfan.me/",
+   "twitter": "https://x.com/DrJimFan",
+   "notes": "Best lay explainer of physical AI / world models / humanoid VLAs. Translates cutting-edge papers into Twitter threads same-day.",
+   "tags": [
+    "AI",
+    "ROBOTICS"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Chris Olah",
+   "role": "Co-founder, Anthropic · interpretability lead",
+   "focus": "Mechanistic interpretability — opening up the black box",
+   "follow_url": "https://www.anthropic.com/research",
+   "twitter": "https://x.com/ch402",
+   "notes": "Defined modern circuits / features / superposition framing for understanding LLM internals. Anthropic's interpretability publications are the rosetta stone.",
+   "tags": [
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Sebastian Raschka",
+   "role": "AI researcher · author of Build a Large Language Model (From Scratch)",
+   "focus": "Practical implementation of LLMs, RAG, fine-tuning",
+   "follow_url": "https://magazine.sebastianraschka.com/",
+   "twitter": "https://x.com/rasbt",
+   "notes": "Ahead of the Curve newsletter is one of the cleanest weekly summaries of LLM research. Strong hands-on, reproducible-notebook ethos.",
+   "tags": [
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Dwarkesh Patel",
+   "role": "Host, Dwarkesh Podcast",
+   "focus": "Long-form interviews with AI researchers, bio scientists, macro thinkers",
+   "follow_url": "https://dwarkesh.com/",
+   "twitter": "https://x.com/dwarkesh_sp",
+   "notes": "The best long-form AI interview show. Talks to Hassabis, Karpathy, Sutskever, Patrick Hsu, etc., with technical depth and good follow-up questions.",
+   "tags": [
+    "AI",
+    "BIO"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Patrick Hsu",
+   "role": "Co-founder, Arc Institute · Investigator, Innovative Genomics Institute",
+   "focus": "AI + biology, foundation models for genomics, autonomous experiments",
+   "follow_url": "https://arcinstitute.org/",
+   "twitter": "https://x.com/pdhsu",
+   "notes": "Arc Institute is the lab to watch for AI-native drug discovery. Hsu's Evo / Evo-2 DNA foundation models and the Arc 'self-driving lab' thesis sit right next to Karpathy's autoresearch idea, but for wet bio.",
+   "tags": [
+    "BIO",
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Eric Topol",
+   "role": "Founder & Director, Scripps Research Translational Institute",
+   "focus": "AI in medicine, GLP-1 effects, longevity",
+   "follow_url": "https://erictopol.substack.com/",
+   "twitter": "https://x.com/EricTopol",
+   "notes": "Ground Truths newsletter is the most-read weekly AI-in-medicine review. Authoritative on GLP-1, BCI, mRNA cancer vaccine readouts.",
+   "tags": [
+    "BIO"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Derek Lowe",
+   "role": "Author, In the Pipeline (Science magazine blog)",
+   "focus": "Drug discovery, biotech pipeline analysis, debunking hype",
+   "follow_url": "https://www.science.org/blogs/pipeline",
+   "notes": "30+ years of medicinal chemistry experience. The skeptical-but-fair voice on every biotech announcement — useful counterweight to investor optimism.",
+   "tags": [
+    "BIO"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "twitter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Casey Handmer",
+   "role": "Founder & CEO, Terraform Industries",
+   "focus": "Cheap solar + atmospheric CO2 → synthetic natural gas; energy abundance",
+   "follow_url": "https://caseyhandmer.wordpress.com/",
+   "twitter": "https://x.com/CHandmer",
+   "notes": "Most rigorous techno-optimist on energy. Long blog posts on solar cost curves, why energy abundance changes everything. Terraform is the company.",
+   "tags": [
+    "ENERGY"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Eli Dourado",
+   "role": "Chief Economist, Abundance Institute · senior research fellow",
+   "focus": "Energy, transportation, supersonics, regulatory unblocking",
+   "follow_url": "https://www.elidourado.com/",
+   "twitter": "https://x.com/elidourado",
+   "notes": "Best policy-meets-tech writer on geothermal, nuclear, supersonic flight. Pragmatic on what regulation actually does to deployment timelines.",
+   "tags": [
+    "ENERGY",
+    "SPACE"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Tyler Cowen",
+   "role": "Professor of Economics, George Mason University · Marginal Revolution",
+   "focus": "Macro economics, the economic implications of AI, science funding",
+   "follow_url": "https://marginalrevolution.com/",
+   "twitter": "https://x.com/tylercowen",
+   "notes": "Marginal Revolution is daily reading for cross-cutting tech + econ. Co-runs Emergent Ventures fellowships funding many of the people in this tracker.",
+   "tags": [
+    "AI",
+    "BIO",
+    "ENERGY"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Patrick Collison",
+   "role": "Co-founder & CEO, Stripe · co-author Fast Grants",
+   "focus": "Science funding, scientific progress studies, Stripe + economic infrastructure",
+   "follow_url": "https://patrickcollison.com/",
+   "twitter": "https://x.com/patrickc",
+   "notes": "His personal site is a curated reading list on what makes science go fast. Co-founded Arc Institute; influential on how mid-funded ambitious bio gets done.",
+   "tags": [
+    "BIO",
+    "AI"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Azeem Azhar",
+   "role": "Founder, Exponential View",
+   "focus": "Macro tech trends, exponential change, weekly synthesis across all of tech",
+   "follow_url": "https://www.exponentialview.co/",
+   "twitter": "https://x.com/azeem",
+   "notes": "Best weekly newsletter that covers everything in this tracker simultaneously — AI, bio, energy, space, geopolitics — with one synthesis. Closest to the editorial voice of your own tracker.",
+   "tags": [
+    "AI",
+    "BIO",
+    "ENERGY",
+    "SPACE"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
+  },
+  {
+   "name": "Ben Thompson",
+   "role": "Founder, Stratechery",
+   "focus": "Strategy, business models, why AI is reshaping tech industry structure",
+   "follow_url": "https://stratechery.com/",
+   "twitter": "https://x.com/benthompson",
+   "notes": "Daily Update is the most-cited strategy newsletter in tech. Best at connecting AI tech to platform economics — NVIDIA vs hyperscalers, OpenAI vs Anthropic dynamics.",
+   "tags": [
+    "AI",
+    "HARDWARE"
+   ],
+   "youtube": null,
+   "newsletter": null,
+   "added_by": "base_run",
+   "added_at": "2026-05-18"
   }
  ]
 };
@@ -5638,6 +5957,7 @@ document.querySelectorAll('nav.tabs button').forEach(btn => {
     document.getElementById('view-weekly').style.display = tab === 'weekly' ? '' : 'none';
     document.getElementById('view-people').style.display = tab === 'people' ? '' : 'none';
     document.getElementById('view-watch').style.display = tab === 'watch' ? '' : 'none';
+    document.getElementById('view-voices').style.display = tab === 'voices' ? '' : 'none';
   });
 });
 
@@ -5877,6 +6197,8 @@ function highlightKindBadge(k) {
     NEW_PERSON: 'background:rgba(63,185,80,0.18);color:var(--green);',
     UPDATED_FACT: 'background:rgba(210,153,34,0.20);color:var(--orange);',
     BROAD_SCAN: 'background:rgba(255,255,255,0.10);color:var(--text);border:1px dashed var(--border-strong);',
+    NEW_VOICE: 'background:rgba(86,212,221,0.18);color:var(--cyan);',
+    TRENDING_IDEA: 'background:rgba(255,255,255,0.08);color:var(--accent-2);border:1px dotted var(--accent);',
     BASE: 'background:rgba(110,118,129,0.20);color:var(--text-dim);',
   };
   return `<span style="display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:600;letter-spacing:0.04em;${colorMap[k] || colorMap.BASE}">${k.replace('_', ' ')}</span>`;
@@ -5925,10 +6247,73 @@ function renderWeekly() {
   }).join('');
 }
 
+// --- Voices view ---
+const allVoices = STATE.voices || [];
+const voicesFilter = { tag: new Set(), agentic: false, q: '' };
+function renderVoices() {
+  const grid = document.getElementById('voices-grid');
+  const cnt = document.getElementById('voices-count');
+  const q = voicesFilter.q.toLowerCase().trim();
+  const filtered = allVoices.filter(v => {
+    const tags = (v.tags || []).map(t => t.toUpperCase());
+    if (voicesFilter.tag.size && !tags.some(t => voicesFilter.tag.has(t))) return false;
+    if (voicesFilter.agentic) {
+      const blob = ((v.focus || '') + ' ' + (v.notes || '')).toLowerCase();
+      if (!blob.includes('agent') && !blob.includes('autoresearch')) return false;
+    }
+    if (q) {
+      const hay = ((v.name||'')+' '+(v.role||'')+' '+(v.focus||'')+' '+(v.notes||'')+' '+tags.join(' ')).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  cnt.textContent = `${filtered.length} of ${allVoices.length} voices · use 'Search voices…' or tag chips to filter`;
+  grid.innerHTML = filtered.map(v => {
+    const tags = (v.tags || []).map(t => `<span class="pill" style="background:rgba(88,166,255,0.10);color:var(--text-dim);margin-right:4px;">${escapeHtml(t)}</span>`).join('');
+    const links = [
+      v.twitter ? `<a href="${v.twitter}" target="_blank" rel="noopener">𝕏</a>` : null,
+      v.youtube ? `<a href="${v.youtube}" target="_blank" rel="noopener">YouTube</a>` : null,
+      v.newsletter ? `<a href="${v.newsletter}" target="_blank" rel="noopener">Newsletter</a>` : null,
+      v.follow_url ? `<a href="${v.follow_url}" target="_blank" rel="noopener">Home</a>` : null,
+    ].filter(Boolean).join(' · ');
+    return `
+      <div class="card" style="cursor:default">
+        <h3 style="margin-bottom:2px;">${escapeHtml(v.name)}</h3>
+        <div style="color:var(--text-dim);font-size:11.5px;margin-bottom:6px;">${escapeHtml(v.role || '')}</div>
+        <div style="font-size:12px;color:var(--accent-2);font-weight:500;margin-bottom:6px;">${escapeHtml(v.focus || '')}</div>
+        <div style="font-size:11.5px;color:var(--text);line-height:1.5;margin-bottom:8px;">${escapeHtml(v.notes || '')}</div>
+        <div style="margin-bottom:6px;">${tags}</div>
+        <div style="font-size:11px;font-family:ui-monospace,monospace;color:var(--text-muted);padding-top:8px;border-top:1px solid var(--border);">${links}</div>
+      </div>`;
+  }).join('') || '<div class="empty">No voices match these filters.</div>';
+}
+document.querySelectorAll('[data-vfilter]').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const f = chip.dataset.vfilter, v = chip.dataset.val;
+    if (f === 'agentic') {
+      voicesFilter.agentic = !voicesFilter.agentic;
+      chip.classList.toggle('active', voicesFilter.agentic);
+    } else {
+      const set = voicesFilter[f];
+      if (set.has(v)) { set.delete(v); chip.classList.remove('active'); }
+      else { set.add(v); chip.classList.add('active'); }
+    }
+    renderVoices();
+  });
+});
+document.getElementById('voices-search').addEventListener('input', e => { voicesFilter.q = e.target.value; renderVoices(); });
+document.getElementById('reset-voices').addEventListener('click', () => {
+  voicesFilter.tag.clear(); voicesFilter.agentic = false; voicesFilter.q = '';
+  document.getElementById('voices-search').value = '';
+  document.querySelectorAll('[data-vfilter].active').forEach(c => c.classList.remove('active'));
+  renderVoices();
+});
+
 renderCards();
 renderWeekly();
 renderPeople();
 renderWatch();
+renderVoices();
 </script>
 </body>
 </html>

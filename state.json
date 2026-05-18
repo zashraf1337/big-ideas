@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "10 Tech Breakthroughs of 2021-2026",
-    "last_updated": "2026-05-15T12:24:06.631755+00:00",
+    "last_updated": "2026-05-18T14:42:55.004586+00:00",
     "as_of_date": "2026-05-15",
     "domains": [
       "AI",
@@ -18,7 +18,7 @@
       "GOVERNMENT_LAB",
       "CROSS"
     ],
-    "schema_version": 2
+    "schema_version": 3
   },
   "breakthroughs": [
     {
@@ -5328,6 +5328,288 @@
       },
       "as_of_date": "2026-05-15",
       "generated_at": "2026-05-15T12:24:06.631737+00:00"
+    },
+    {
+      "week_ending": "2026-05-18",
+      "kind": "BASE_RUN",
+      "summary": "Seeded 'voices' section with 16 curated thinkers across AI, bio, energy, space, and macro tech.",
+      "highlights": [],
+      "additions": {
+        "voices_seeded": [
+          "Andrej Karpathy",
+          "Yann LeCun",
+          "François Chollet",
+          "Jim Fan",
+          "Chris Olah",
+          "Sebastian Raschka",
+          "Dwarkesh Patel",
+          "Patrick Hsu",
+          "Eric Topol",
+          "Derek Lowe",
+          "Casey Handmer",
+          "Eli Dourado",
+          "Tyler Cowen",
+          "Patrick Collison",
+          "Azeem Azhar",
+          "Ben Thompson"
+        ]
+      },
+      "as_of_date": "2026-05-18",
+      "generated_at": "2026-05-18T14:42:55.004563+00:00"
+    }
+  ],
+  "voices": [
+    {
+      "name": "Andrej Karpathy",
+      "role": "Independent AI researcher · formerly OpenAI, Tesla, Stanford",
+      "focus": "Education, agentic systems, the AI-doing-AI-research thesis (autoresearch)",
+      "follow_url": "https://karpathy.ai/",
+      "twitter": "https://x.com/karpathy",
+      "youtube": "https://youtube.com/@AndrejKarpathy",
+      "notes": "Most influential AI educator alive. nanoGPT and his lecture series shaped how a generation learns transformers. Now publicly pushing the autoresearch thesis — AI agents that run their own ML experiments.",
+      "tags": [
+        "AI",
+        "agentic"
+      ],
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Yann LeCun",
+      "role": "Founder, AMI Labs · Professor, NYU · Turing Award 2018",
+      "focus": "World models, JEPA, the case against pure-LLM AGI",
+      "follow_url": "https://yann.lecun.com/",
+      "twitter": "https://x.com/ylecun",
+      "notes": "Loudest critic of the LLM-only path to AGI. JEPA / V-JEPA papers are the alternative-architecture thesis to watch.",
+      "tags": [
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "François Chollet",
+      "role": "ARC Prize co-founder · creator of Keras",
+      "focus": "ARC-AGI benchmark, abstract reasoning, what current LLMs can't do",
+      "follow_url": "https://fchollet.com/",
+      "twitter": "https://x.com/fchollet",
+      "notes": "ARC-AGI is the most-discussed benchmark for testing whether reasoning models can generalize. Recent shift from pure skeptic to acknowledging o3-class progress.",
+      "tags": [
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Jim Fan",
+      "role": "Senior Research Scientist, NVIDIA · GEAR Lab co-lead",
+      "focus": "Embodied AI, agents in simulation (Voyager, Eureka), GR00T",
+      "follow_url": "https://jimfan.me/",
+      "twitter": "https://x.com/DrJimFan",
+      "notes": "Best lay explainer of physical AI / world models / humanoid VLAs. Translates cutting-edge papers into Twitter threads same-day.",
+      "tags": [
+        "AI",
+        "ROBOTICS"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Chris Olah",
+      "role": "Co-founder, Anthropic · interpretability lead",
+      "focus": "Mechanistic interpretability — opening up the black box",
+      "follow_url": "https://www.anthropic.com/research",
+      "twitter": "https://x.com/ch402",
+      "notes": "Defined modern circuits / features / superposition framing for understanding LLM internals. Anthropic's interpretability publications are the rosetta stone.",
+      "tags": [
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Sebastian Raschka",
+      "role": "AI researcher · author of Build a Large Language Model (From Scratch)",
+      "focus": "Practical implementation of LLMs, RAG, fine-tuning",
+      "follow_url": "https://magazine.sebastianraschka.com/",
+      "twitter": "https://x.com/rasbt",
+      "notes": "Ahead of the Curve newsletter is one of the cleanest weekly summaries of LLM research. Strong hands-on, reproducible-notebook ethos.",
+      "tags": [
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Dwarkesh Patel",
+      "role": "Host, Dwarkesh Podcast",
+      "focus": "Long-form interviews with AI researchers, bio scientists, macro thinkers",
+      "follow_url": "https://dwarkesh.com/",
+      "twitter": "https://x.com/dwarkesh_sp",
+      "notes": "The best long-form AI interview show. Talks to Hassabis, Karpathy, Sutskever, Patrick Hsu, etc., with technical depth and good follow-up questions.",
+      "tags": [
+        "AI",
+        "BIO"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Patrick Hsu",
+      "role": "Co-founder, Arc Institute · Investigator, Innovative Genomics Institute",
+      "focus": "AI + biology, foundation models for genomics, autonomous experiments",
+      "follow_url": "https://arcinstitute.org/",
+      "twitter": "https://x.com/pdhsu",
+      "notes": "Arc Institute is the lab to watch for AI-native drug discovery. Hsu's Evo / Evo-2 DNA foundation models and the Arc 'self-driving lab' thesis sit right next to Karpathy's autoresearch idea, but for wet bio.",
+      "tags": [
+        "BIO",
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Eric Topol",
+      "role": "Founder & Director, Scripps Research Translational Institute",
+      "focus": "AI in medicine, GLP-1 effects, longevity",
+      "follow_url": "https://erictopol.substack.com/",
+      "twitter": "https://x.com/EricTopol",
+      "notes": "Ground Truths newsletter is the most-read weekly AI-in-medicine review. Authoritative on GLP-1, BCI, mRNA cancer vaccine readouts.",
+      "tags": [
+        "BIO"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Derek Lowe",
+      "role": "Author, In the Pipeline (Science magazine blog)",
+      "focus": "Drug discovery, biotech pipeline analysis, debunking hype",
+      "follow_url": "https://www.science.org/blogs/pipeline",
+      "notes": "30+ years of medicinal chemistry experience. The skeptical-but-fair voice on every biotech announcement — useful counterweight to investor optimism.",
+      "tags": [
+        "BIO"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "twitter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Casey Handmer",
+      "role": "Founder & CEO, Terraform Industries",
+      "focus": "Cheap solar + atmospheric CO2 → synthetic natural gas; energy abundance",
+      "follow_url": "https://caseyhandmer.wordpress.com/",
+      "twitter": "https://x.com/CHandmer",
+      "notes": "Most rigorous techno-optimist on energy. Long blog posts on solar cost curves, why energy abundance changes everything. Terraform is the company.",
+      "tags": [
+        "ENERGY"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Eli Dourado",
+      "role": "Chief Economist, Abundance Institute · senior research fellow",
+      "focus": "Energy, transportation, supersonics, regulatory unblocking",
+      "follow_url": "https://www.elidourado.com/",
+      "twitter": "https://x.com/elidourado",
+      "notes": "Best policy-meets-tech writer on geothermal, nuclear, supersonic flight. Pragmatic on what regulation actually does to deployment timelines.",
+      "tags": [
+        "ENERGY",
+        "SPACE"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Tyler Cowen",
+      "role": "Professor of Economics, George Mason University · Marginal Revolution",
+      "focus": "Macro economics, the economic implications of AI, science funding",
+      "follow_url": "https://marginalrevolution.com/",
+      "twitter": "https://x.com/tylercowen",
+      "notes": "Marginal Revolution is daily reading for cross-cutting tech + econ. Co-runs Emergent Ventures fellowships funding many of the people in this tracker.",
+      "tags": [
+        "AI",
+        "BIO",
+        "ENERGY"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Patrick Collison",
+      "role": "Co-founder & CEO, Stripe · co-author Fast Grants",
+      "focus": "Science funding, scientific progress studies, Stripe + economic infrastructure",
+      "follow_url": "https://patrickcollison.com/",
+      "twitter": "https://x.com/patrickc",
+      "notes": "His personal site is a curated reading list on what makes science go fast. Co-founded Arc Institute; influential on how mid-funded ambitious bio gets done.",
+      "tags": [
+        "BIO",
+        "AI"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Azeem Azhar",
+      "role": "Founder, Exponential View",
+      "focus": "Macro tech trends, exponential change, weekly synthesis across all of tech",
+      "follow_url": "https://www.exponentialview.co/",
+      "twitter": "https://x.com/azeem",
+      "notes": "Best weekly newsletter that covers everything in this tracker simultaneously — AI, bio, energy, space, geopolitics — with one synthesis. Closest to the editorial voice of your own tracker.",
+      "tags": [
+        "AI",
+        "BIO",
+        "ENERGY",
+        "SPACE"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
+    },
+    {
+      "name": "Ben Thompson",
+      "role": "Founder, Stratechery",
+      "focus": "Strategy, business models, why AI is reshaping tech industry structure",
+      "follow_url": "https://stratechery.com/",
+      "twitter": "https://x.com/benthompson",
+      "notes": "Daily Update is the most-cited strategy newsletter in tech. Best at connecting AI tech to platform economics — NVIDIA vs hyperscalers, OpenAI vs Anthropic dynamics.",
+      "tags": [
+        "AI",
+        "HARDWARE"
+      ],
+      "youtube": null,
+      "newsletter": null,
+      "added_by": "base_run",
+      "added_at": "2026-05-18"
     }
   ]
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>15 Tech Breakthroughs 2021-2026 — Dashboard</title>
+<title>Tech Breakthrough Ideas (Updated Weekly)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
@@ -206,7 +206,7 @@
 <body>
 <div class="container">
   <header class="app">
-    <h1>15 Tech Breakthroughs · 2021–2026</h1>
+    <h1>Tech Breakthrough Ideas <span class="sub" style="font-size:0.55em;font-weight:500;opacity:0.7;">(Updated Weekly)</span></h1>
     <span class="sub">AI · Bio · Energy · Space · Quantum</span>
     <span class="stamp" id="stamp"></span>
   </header>
@@ -240,6 +240,27 @@
     <div class="grid" id="cards"></div>
   </div>
   <div id="view-weekly" style="display:none">
+    <div class="filters" id="weekly-filters">
+      <span class="label">Domain:</span>
+      <span class="chip" data-wkfilter="domain" data-val="AI">AI</span>
+      <span class="chip" data-wkfilter="domain" data-val="BIO">Bio</span>
+      <span class="chip" data-wkfilter="domain" data-val="ENERGY">Energy</span>
+      <span class="chip" data-wkfilter="domain" data-val="SPACE">Space</span>
+      <span class="chip" data-wkfilter="domain" data-val="QUANTUM">Quantum</span>
+      <span class="chip" data-wkfilter="domain" data-val="ROBOTICS">Robotics</span>
+      <span class="chip" data-wkfilter="domain" data-val="HARDWARE">Hardware</span>
+      <span class="sep"></span>
+      <span class="label">Kind:</span>
+      <span class="chip" data-wkfilter="kind" data-val="NEW_FRONTIER">Frontier</span>
+      <span class="chip" data-wkfilter="kind" data-val="NEW_SUB_IDEA">Sub-idea</span>
+      <span class="chip" data-wkfilter="kind" data-val="NEW_WATCH">Watch</span>
+      <span class="chip" data-wkfilter="kind" data-val="NEW_PERSON">Person</span>
+      <span class="chip" data-wkfilter="kind" data-val="NEW_VOICE">Voice</span>
+      <span class="chip" data-wkfilter="kind" data-val="TRENDING_IDEA">Trending</span>
+      <span class="chip" data-wkfilter="kind" data-val="BROAD_SCAN">Broad scan</span>
+      <span class="chip" data-wkfilter="kind" data-val="UPDATED_FACT">Updated</span>
+      <button class="reset" id="reset-weekly">Reset</button>
+    </div>
     <div class="count-bar" id="weekly-count"></div>
     <div id="weekly-timeline"></div>
   </div>
@@ -331,9 +352,9 @@
 <script>
 const STATE = {
  "meta": {
-  "title": "10 Tech Breakthroughs of 2021-2026",
-  "last_updated": "2026-05-18T14:42:55.004586+00:00",
-  "as_of_date": "2026-05-15",
+  "title": "Tech Breakthroughs · 2021 onwards",
+  "last_updated": "2026-05-29T15:03:28.952386+00:00",
+  "as_of_date": "2026-05-29",
   "domains": [
    "AI",
    "BIO",
@@ -437,6 +458,18 @@ const STATE = {
     {
      "claim": "May 6, 2026 — Anthropic secures all of SpaceX Colossus 1 (~300 MW / 220K+ GPUs within the month), doubles Claude Code rate limits, raises Opus API limits, and expresses interest in multi-GW orbital compute with SpaceX.",
      "source_url": "https://www.anthropic.com/news/higher-limits-spacex"
+    },
+    {
+     "claim": "Gemini 3.5 Flash is a frontier-rivaling small model optimized for agentic coding, GA in Antigravity 2.0 and the Gemini API as of May 19, 2026.",
+     "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+    },
+    {
+     "claim": "Claude Opus 4.8 released (May 28, 2026): 69.2% agentic coding, 84% computer-use on Online-Mind2Web, new dynamic workflows for Claude Code.",
+     "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
+    },
+    {
+     "claim": "Karpathy joined Anthropic pretraining team May 2026 to lead a 'use Claude to accelerate pretraining' effort.",
+     "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude"
     }
    ],
    "watch_list": [
@@ -486,7 +519,8 @@ const STATE = {
    "flags": [
     "SWE-bench Verified benchmark scores may be inflated due to data contamination; SWE-bench Pro (contamination-free) shows significantly lower performance",
     "Meta's Llama benchmark results were reportedly fudged according to departing chief scientist Yann LeCun",
-    "No verified information found on Tom Brown's current 2026 affiliation beyond his core role at Anthropic"
+    "No verified information found on Tom Brown's current 2026 affiliation beyond his core role at Anthropic",
+    "Updated Anthropic Series H funding closed: new value = $65B raised at $965B post-money (May 28, 2026); leads Altimeter, Dragoneer, Greenoaks, Sequoia; $47B run-rate revenue"
    ],
    "sub_ideas": [
     {
@@ -789,6 +823,30 @@ const STATE = {
       "Gemini DeepThink"
      ],
      "source_url": "https://openai.com/index/introducing-deep-research/"
+    },
+    {
+     "name": "Step-wise rubric rewards (SRaR)",
+     "description": "RLVR variant that decomposes rubric-based supervision onto individual reasoning steps and normalizes across rollouts to avoid uniform credit assignment and reward hacking.",
+     "examples": [
+      "SRaR (arXiv 2605.17291, May 17, 2026)"
+     ],
+     "source_url": "https://arxiv.org/abs/2605.17291"
+    },
+    {
+     "name": "Token-level credit assignment for RLVR",
+     "description": "Per-token discriminative credit signal layered on top of outcome-verifiable RL, giving denser gradient signal than response-level rewards.",
+     "examples": [
+      "DelTA (arXiv 2605.21467, May 20, 2026)"
+     ],
+     "source_url": "https://arxiv.org/abs/2605.21467"
+    },
+    {
+     "name": "Equilibrium Reasoners (latent-attractor TTC)",
+     "description": "Iterative latent-attractor reasoning enabling deep test-time-compute scaling without external verifiers; pushes Sudoku-Extreme accuracy from 2.6% to 99%+ on unrolling equivalent to ~40k layers.",
+     "examples": [
+      "Sudoku-Extreme 2.6% -> 99%+ accuracy by unrolling latent attractors"
+     ],
+     "source_url": "https://arxiv.org/abs/2605.21488"
     }
    ]
   },
@@ -966,6 +1024,14 @@ const STATE = {
       "Adversarial Diffusion Distillation"
      ],
      "source_url": "https://arxiv.org/abs/2311.17042"
+    },
+    {
+     "name": "World-grounded omni video generation",
+     "description": "Single model jointly trained for reasoning and multimodal generation, producing video that is grounded in real-world knowledge from text/image/audio/video inputs.",
+     "examples": [
+      "Gemini Omni Flash (Google, May 2026)"
+     ],
+     "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
     }
    ]
   },
@@ -1031,6 +1097,14 @@ const STATE = {
      "org_type": "ACADEMIA",
      "prizes": [],
      "source_url": "https://news.mit.edu/2026/mit-engineers-design-proteins-by-motion-not-just-shape-0326"
+    },
+    {
+     "name": "Alexander Rives",
+     "role": "Co-founder & Chief Scientist, EvolutionaryScale",
+     "affiliation": "EvolutionaryScale",
+     "org_type": "BUSINESS",
+     "prizes": [],
+     "source_url": "https://www.nature.com/articles/d41586-026-01686-3"
     }
    ],
    "current_frontier": [
@@ -1061,6 +1135,14 @@ const STATE = {
     {
      "claim": "Isomorphic Labs closed a $2.1B Series B on May 12, 2026 (Thrive Capital lead) to fund IsoDDE deployment and clinical pipeline acceleration — one of the largest private AI-drug-discovery financings on record.",
      "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round"
+    },
+    {
+     "claim": "Core de novo protein design challenges (novel folds, assemblies, binders) are 'close to being solved' per Baker et al. Nature review; next 5-10 years focus shifts to functional nanomachines, switches, and catalysts.",
+     "source_url": "https://www.nature.com/articles/s41586-026-10328-7"
+    },
+    {
+     "claim": "Baker Lab Nature papers (May 22, 2026) describe de novo quasisymmetric protein nanocages with expanded internal volume, opening a computationally designed delivery vehicle class for genetic medicines.",
+     "source_url": "https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/"
     }
    ],
    "watch_list": [
@@ -1095,6 +1177,14 @@ const STATE = {
      "why": "Founded by Tristan Bepler (MIT PhD '20) and Tim Lu (MIT Associate Professor PhD '07); democratizing AI-driven protein design tools for biologists.",
      "funding": "Seed/early stage (not disclosed)",
      "source_url": "https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417"
+    },
+    {
+     "name": "Scribe Therapeutics",
+     "org": "Scribe Therapeutics",
+     "type": "STARTUP",
+     "why": "Couples engineered CRISPR enzymes with AI guide-RNA design (DeepXE) and allosteric epigenetic editors; ASGCT 2026 data show 10-100x off-target reduction.",
+     "funding": "Previously backed by Andreessen Horowitz; Series B disclosed",
+     "source_url": "https://www.biospace.com/press-releases/scribe-therapeutics-reports-preclinical-data-at-asgct-2026-demonstrating-enhanced-potency-and-specificity-of-engineered-crispr-technologies-for-epigenetic-silencing-and-gene-editing"
     }
    ],
    "impact_so_far": "AlphaFold and computational design have accelerated protein engineering from random selection to intentional computational design, enabling discovery of novel therapeutics, enzymes, and materials while achieving Nobel Prize recognition in 2024.",
@@ -1400,6 +1490,10 @@ const STATE = {
     {
      "claim": "Oral semaglutide approved by FDA as first GLP-1 pill for weight loss, expanding non-injection delivery options while maintaining efficacy of injectable formulations.",
      "source_url": "https://www.ajmc.com/view/fda-approves-oral-semaglutide-as-first-glp-1-pill-for-weight-loss"
+    },
+    {
+     "claim": "Triple-agonist retatrutide produces bariatric-surgery-class weight loss (30%+) in a pivotal Phase 3 trial without surgery, redefining the achievable benchmark for obesity pharmacotherapy.",
+     "source_url": "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial"
     }
    ],
    "watch_list": [
@@ -1431,7 +1525,9 @@ const STATE = {
    "impact_so_far": "GLP-1 agonists have revolutionized type 2 diabetes and obesity treatment, shifting paradigm from symptomatic glycemic control to weight loss-driven metabolic improvement, with >$20B annual market value by 2026.",
    "watch_for_next": "Retatrutide NDA filing and approval (late 2026-2027), broader expansion into cardiovascular and renal disease indications, and emergence of next-generation agonists with improved efficacy/tolerability profiles.",
    "flags": [
-    "Updated VK2735 oral 13-week weight loss: new value = 12.2% mean weight loss at 13 weeks (Phase 2, highest dose), 97% >=5%, 80% >=10% — ECO 2026 (May 12, 2026)"
+    "Updated VK2735 oral 13-week weight loss: new value = 12.2% mean weight loss at 13 weeks (Phase 2, highest dose), 97% >=5%, 80% >=10% — ECO 2026 (May 12, 2026)",
+    "Updated retatrutide_phase3_topline: new value = TRIUMPH-1 met primary endpoints; 28.3% weight loss at 80 wks on 12 mg, 30.3% at 104 wks in BMI>=35 subgroup; data at ADA 2026 (announced May 21, 2026)",
+    "Updated Retatrutide (GIP/GLP-1/glucagon) TRIUMPH-1 Phase 3 obesity readout: new value = Up to 28.3% mean weight loss at 80 weeks (12 mg); 65.3% reached BMI <30; matches bariatric outcomes"
    ],
    "sub_ideas": [
     {
@@ -1606,7 +1702,8 @@ const STATE = {
    "flags": [
     "Updated Casgevy commercial adoption: new value = $43M Q1 2026 revenue; 500+ patients initiated",
     "Updated lonvo-z regulatory status: new value = Rolling BLA initiated April 2026; submission completion targeted H2 2026; potential US launch H1 2027 (first-ever in vivo CRISPR product)",
-    "Updated Casgevy commercialization (Q1 2026): new value = $43.0M Q1 2026 revenue; >500 patients initiated globally"
+    "Updated Casgevy commercialization (Q1 2026): new value = $43.0M Q1 2026 revenue; >500 patients initiated globally",
+    "Updated VERVE-102 Phase 1b Heart-2 readout: new value = Single-dose in vivo base edit: -62% LDL-C, -88% PCSK9 at top dose; NEJM publication May 25, 2026; Phase 2 H2 2026"
    ],
    "sub_ideas": [
     {
@@ -1751,6 +1848,18 @@ const STATE = {
     {
      "claim": "NVIDIA Ising open AI models accelerate QEC decoding/calibration with sub-microsecond latency, 2.5x speedup and 3x accuracy gains over classical baselines.",
      "source_url": "https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers"
+    },
+    {
+     "claim": "US federal industrial policy is now explicitly steering quantum hardware build-out at the foundry level — a structural shift from research grants to manufacturing capacity formation, with $2B in CHIPS funding distributed across nine vendors on May 21, 2026.",
+     "source_url": "https://www.gurufocus.com/news/8877199/quantum-computing-stocks-surge-after-us-government-funding-announcement"
+    },
+    {
+     "claim": "Flatiron Institute CCQ + Boston University demonstrated (Science, May 21 2026) that a tensor-network algorithm, running on a laptop, can classically simulate the same 100-qubit highly-entangled dynamics problem D-Wave used to claim 'beyond-classical' computation with its 5,000-qubit Advantage2 annealer in March 2025 — resetting where the quantum-advantage line sits.",
+     "source_url": "https://www.simonsfoundation.org/2026/05/21/quantum-dynamics-breakthrough-overturns-claim-of-quantum-supremacy-opens-new-research-directions/"
+    },
+    {
+     "claim": "IBM disclosed $10B five-year quantum push (May 28, 2026) spanning R&D, manufacturing, partnerships and the Anderon foundry with DoC ($1B CHIPS proposed); targets Starling fault-tolerant machine by 2029.",
+     "source_url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
     }
    ],
    "watch_list": [
@@ -1777,6 +1886,14 @@ const STATE = {
      "why": "Developing cat-qubits and bosonic codes as alternative to surface codes; co-hosted Fault Tolerance Summit (Les Houches 2024); raised $50M+ Series B",
      "funding": "$50M+ Series B; European backing",
      "source_url": "https://alice-bob.com/blog/highlights-from-alice-bobs-co-hosted-fault-tolerance-summit-at-les-houches-physics-school/"
+    },
+    {
+     "name": "Anderon",
+     "org": "IBM (spinout) + U.S. Department of Commerce",
+     "type": "STARTUP",
+     "why": "First purpose-built US quantum foundry — provides shared, scaled 300mm fabrication for IBM, Quantinuum, Diraq, Microsoft and other modalities, addressing the wafer-supply bottleneck for fault-tolerant systems.",
+     "funding": "$2B total ($1B IBM cash + IP/assets; $1B proposed CHIPS Act incentive)",
+     "source_url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
     }
    ],
    "impact_so_far": "Crossed theoretical threshold for scalable quantum computing; demonstrated exponential error suppression on real hardware for the first time, moving from physics milestone to engineering milestone.",
@@ -1786,7 +1903,8 @@ const STATE = {
     "Updated Physical-to-logical qubit ratio (memory): new value = 2:1 (per-round error ~1.3e-13)",
     "Updated largest_quantum_simulated_protein: new value = 12,635 atoms (trypsin); IBM Heron 156q",
     "Updated ibm_cloud_quantum_milestone: new value = 10 years; 156q Heron at ~1.17e-3 two-qubit error",
-    "Updated IonQ–SkyWater acquisition status: new value = Shareholder-approved May 8, 2026; ~$1.8B; closing expected Q2-Q3 2026"
+    "Updated IonQ–SkyWater acquisition status: new value = Shareholder-approved May 8, 2026; ~$1.8B; closing expected Q2-Q3 2026",
+    "Updated PsiQuantum US government support: new value = $100M CHIPS LOI signed May 21, 2026 for fault-tolerant photonic component development"
    ],
    "sub_ideas": [
     {
@@ -1834,6 +1952,14 @@ const STATE = {
       "QEC decoder competitions"
      ],
      "source_url": "https://www.riverlane.com/press-release/riverlane-ushers-in-the-year-of-quantum-with-nature-electronics-publication"
+    },
+    {
+     "name": "Logical-qubit advantage on real applications (neutral atoms)",
+     "description": "First demonstration that logical qubits outperform physical qubits on an end-to-end real-world task (differential equations) on a neutral-atom processor at 99.4% gate fidelity across 1,000 equations.",
+     "examples": [
+      "Pasqal neutral-atom run, 1000 differential equations, logical beats physical by ~50% avg, up to 10x on hard cases"
+     ],
+     "source_url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/"
     }
    ]
   },
@@ -1958,7 +2084,10 @@ const STATE = {
    "watch_for_next": "Starship Ship catch on tower (targeted 2025-2026); suborbital relaunch within 24 hours; Blue Origin New Glenn cadence increases; Stoke Space and Rocket Lab first operational flights.",
    "flags": [
     "None. All data from official SpaceX statements, Blue Origin announcements, and third-party space tracking (Wikipedia/Spaceflight Now) verified through May 8, 2026.",
-    "Updated Falcon 9 cadence checkpoint: new value = 45 payloads deployed in single rideshare on May 2-3, 2026"
+    "Updated Falcon 9 cadence checkpoint: new value = 45 payloads deployed in single rideshare on May 2-3, 2026",
+    "Updated starship_v3_first_flight_status: new value = Flight 12 (first V3) scrubbed May 21, 2026 — hydraulic pin tower-arm issue; retargeted May 22, 2026 from Starbase Pad 2",
+    "Updated Starship V3 first flight: new value = Starship V3 + Raptor 3 + Pad 2 debut succeeded May 22, 2026; 20 mock Starlinks deployed, Ship reached Indian Ocean target",
+    "Updated Blue Origin New Glenn status: new value = Vehicle lost on pad during May 28, 2026 static fire; planned June 4 Kuiper launch delayed"
    ],
    "sub_ideas": [
     {
@@ -2187,6 +2316,17 @@ const STATE = {
       "ESS Inc iron flow"
      ],
      "source_url": "https://www.canarymedia.com/articles/long-duration-energy-storage/form-energy-raises-405m-for-its-100-hour-iron-air-batteries"
+    },
+    {
+     "name": "High-energy-density sodium-ion at GWh scale",
+     "description": "Sodium-ion cells engineered for 261 Wh/kg (high-energy), 162 Wh/kg with -50C discharge (power), and 180Ah/>20,000 cycle storage variant — closing the gap to LFP while using a non-lithium supply chain.",
+     "examples": [
+      "Gotion Gnascent (261 Wh/kg)",
+      "CATL Naxtra",
+      "BYD sodium-ion",
+      "HiNa Battery"
+     ],
+     "source_url": "https://carnewschina.com/2026/05/17/volkswagen-backed-gotion-launches-gnascent-sodium-ion-battery-up-to-261-wh-kg-with-mass-production-ready/"
     }
    ]
   },
@@ -2267,6 +2407,10 @@ const STATE = {
     {
      "claim": "Chinese robotaxi operators (Baidu Apollo Go, Pony.ai, WeRide) are running commercial driverless services across Beijing, Wuhan, and Guangzhou; Apollo Go reported 9M+ cumulative rides by mid-2025.",
      "source_url": "https://www.reuters.com/technology/baidus-apollo-go-doubles-driverless-rides-q3-2024-11-21/"
+    },
+    {
+     "claim": "Waymo's first purpose-built robotaxi (Zeekr-made Ojai, 6th-gen Driver with cheaper sensor stack) went live with public rides on May 28, 2026.",
+     "source_url": "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"
     }
    ],
    "watch_list": [
@@ -2308,7 +2452,9 @@ const STATE = {
    "flags": [
     "Tesla robotaxi rollout used safety operators in Austin in 2025 — fully driverless status varies by report",
     "Waymo cumulative ride numbers cited from company-published statistics; independent audit limited",
-    "Updated Waymo service area: new value = 1,400 sq mi across 11 cities (May 13, 2026)"
+    "Updated Waymo service area: new value = 1,400 sq mi across 11 cities (May 13, 2026)",
+    "Updated waymo_freeway_status: new value = All freeway rides paused; 4 Sun Belt cities paused (May 21, 2026)",
+    "Updated Pony.ai global robotaxi fleet size: new value = 1,700+ vehicles as of 2026-05-24 (+250 since 2025 annual report); WeRide ~1,000 domestic"
    ],
    "sub_ideas": [
     {
@@ -2562,7 +2708,8 @@ const STATE = {
     "Tesla Optimus V3 specs and production timeline come largely from non-Tesla sources; treat with caution.",
     "Figure's claims about full Helix capabilities are demo-tested, not peer-reviewed for unseen-task generalization.",
     "Humanoid market projections (90K shipments 2026, 1.2M by 2030) are highly speculative.",
-    "Updated Figure Helix-02 longest autonomous run: new value = Full 8-hour autonomous factory shift at near-human throughput (~3 sec/package)"
+    "Updated Figure Helix-02 longest autonomous run: new value = Full 8-hour autonomous factory shift at near-human throughput (~3 sec/package)",
+    "Updated Figure 03 production rate: new value = 1 robot/hour at BotQ; 350+ Gen-3 units; new System 0 perception-conditioned whole-body control"
    ],
    "number": 12
   },
@@ -2728,6 +2875,14 @@ const STATE = {
      "why": "Spherical tokamak architecture with 11.8-tesla HTS magnets; claims 30–40× smaller plasma volume vs LTS designs and a clear path to ST-E1 commercial pilot.",
      "funding": "Multiple rounds; UK government and private capital",
      "source_url": "https://tokamakenergy.com/2025/11/19/tokamak-energy-announces-fusion-power-plant-magnet-technology-breakthrough/"
+    },
+    {
+     "name": "Thea Energy",
+     "org": "Thea Energy",
+     "type": "STARTUP",
+     "why": "Planar-coil stellarator as a simpler-to-manufacture alternative to tokamaks; $100M to build a demonstration prototype amid AI-data-center power demand.",
+     "funding": "$100M (May 27, 2026); leads Prelude Ventures, US Innovative Technology, General Innovation Capital Partners",
+     "source_url": "https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype"
     }
    ],
    "impact_so_far": "Fusion went from public-science promise to active commercial track between 2022 and 2026: NIF demonstrated repeatable net energy gain, CFS broke ground on SPARC with HTS magnets, and Helion shipped a D-T plasma machine on the way to a 50 MW commercial PPA with Microsoft.",
@@ -2845,6 +3000,15 @@ const STATE = {
       "OpenBCI"
      ],
      "source_url": "https://www.meta.com/blog/surface-emg-wrist-white-paper-reality-labs/"
+    },
+    {
+     "name": "Intraoperative high-density micro-ECoG BCI",
+     "description": "Temporary high-density micro-electrocorticography arrays placed during routine awake craniotomy that yield same-day speech and cursor decoding, lowering the barrier to BCI use in surgical mapping and short-term clinical applications.",
+     "examples": [
+      "Johns Hopkins micro-ECoG study in 4 patients (May 2026)",
+      "Precision Neuroscience Layer 7 Cortical Interface"
+     ],
+     "source_url": "https://www.hopkinsmedicine.org/news/articles/2026/05/investigators-test-new-brain-computer-interface"
     }
    ],
    "current_frontier": [
@@ -2913,13 +3077,22 @@ const STATE = {
      "why": "Graphene-electrode material breakthrough with bi-directional 1,024-contact arrays; WEF Technology Pioneer 2025 and zero adverse events in first cohort.",
      "funding": "Spanish/EU biotech funding; WEF recognition signals next round",
      "source_url": "https://inbrain-neuroelectronics.com/"
+    },
+    {
+     "name": "Rice/Baylor BrainGate team",
+     "org": "Rice University & Baylor College of Medicine",
+     "type": "LAB",
+     "why": "First Texas-based BrainGate site; pairs Rice computational/engineering with Baylor clinical neuroscience to advance intracortical BCI for tetraplegia assistive robotics.",
+     "funding": "Federal/clinical trial grants (BrainGate consortium)",
+     "source_url": "https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis"
     }
    ],
    "impact_so_far": "BCIs crossed from lab to early commercial reality between 2024 and 2026: Neuralink put 5+ patients on the Telepathy implant, Precision Neuroscience took home the first wireless-cortical-BCI 510(k), BrainGate hit 110 cpm bimanual typing, UCSF restored speech at 78 wpm, and Meta shipped a 20.9 wpm sEMG wristband to consumers.",
    "watch_for_next": "The first BCI Pre-Market Approval (likely Synchron), Neuralink's first Blindsight implant, Paradromics speech-restoration pivotal results, and whether the non-invasive consumer category (Meta Neural Band, Kernel) closes meaningful ground on invasive bandwidth.",
    "flags": [
     "Paradromics' 200+ bps figure is a manufacturer claim; not yet independently verified in human use.",
-    "BCI regulatory pathway is fragmented across 510(k) / IDE / PMA tracks; no unified FDA BCI guidance exists yet."
+    "BCI regulatory pathway is fragmented across 510(k) / IDE / PMA tracks; no unified FDA BCI guidance exists yet.",
+    "Updated neuralink_surgical_robot_capability: new value = Next-gen R1 robot can implant in any brain region (motor + non-motor); threads through intact dura; real-time motion compensation"
    ],
    "number": 14
   },
@@ -3106,7 +3279,10 @@ const STATE = {
    "watch_for_next": "Rubin (2H 2026) and the Cerebras OpenAI 750 MW deployment going live; Lightmatter Passage co-packaged optics in production; neuromorphic chips (Loihi 3, NorthPole) crossing the practical edge-AI threshold; whether NVIDIA-Groq integration cements inference dominance.",
    "flags": [
     "Etched Sohu's 500K tokens/sec figure is a manufacturer claim and the part remained unshipped at the time of writing.",
-    "FuriosaAI declined-acquisition story is widely reported but specifics are second-hand."
+    "FuriosaAI declined-acquisition story is widely reported but specifics are second-hand.",
+    "Updated nvidia_quarterly_data_center_revenue: new value = $75.2B Q1 FY27 (May 20, 2026 print); Vera Rubin initial shipments Q3 2026; Q2 guide $91B +/- 2%",
+    "Updated nvidia_capital_return_policy: new value = $80B additional buyback authorization; quarterly dividend raised 25x to $0.25/share; $20B returned in Q1 FY27",
+    "Updated Cerebras post-IPO status: new value = CBRS at $266.90 on May 27, 2026 (+10.4%); $66B market cap; $20B OpenAI capacity deal active"
    ],
    "number": 15
   }
@@ -3228,6 +3404,24 @@ const STATE = {
    ]
   },
   {
+   "url": "https://arxiv.org/abs/2605.17291",
+   "used_for": [
+    "RLHF + reasoning models (test-time compute scaling) -> sub-idea: Step-wise rubric rewards (SRaR)"
+   ]
+  },
+  {
+   "url": "https://arxiv.org/abs/2605.21467",
+   "used_for": [
+    "RLHF + reasoning models (test-time compute scaling) -> sub-idea: Token-level credit assignment for RLVR"
+   ]
+  },
+  {
+   "url": "https://arxiv.org/abs/2605.21488",
+   "used_for": [
+    "RLHF + reasoning models (test-time compute scaling) -> sub-idea: Equilibrium Reasoners (latent-attractor TTC)"
+   ]
+  },
+  {
    "url": "https://aurora.tech/about",
    "used_for": [
     "Self-driving cars / robotaxis -> Chris Urmson"
@@ -3257,6 +3451,18 @@ const STATE = {
    "url": "https://blackrockneurotech.com/products/utah-array/",
    "used_for": [
     "Brain-computer interfaces -> sub-idea: Intracortical microelectrode arrays (Utah arrays)"
+   ]
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
+   ]
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+   "used_for": [
+    "Diffusion models (image + video generation) -> sub-idea: World-grounded omni video generation"
    ]
   },
   {
@@ -3302,6 +3508,12 @@ const STATE = {
     "Renewables + battery cost collapse -> Varun Sridhar",
     "Renewables + battery cost collapse -> frontier",
     "Renewables + battery cost collapse -> sub-idea: Sodium-ion mass production"
+   ]
+  },
+  {
+   "url": "https://carnewschina.com/2026/05/17/volkswagen-backed-gotion-launches-gnascent-sodium-ion-battery-up-to-261-wh-kg-with-mass-production-ready/",
+   "used_for": [
+    "Renewables + battery cost collapse -> sub-idea: High-energy-density sodium-ion at GWh scale"
    ]
   },
   {
@@ -3377,6 +3589,12 @@ const STATE = {
    "url": "https://electrek.co/2026/05/11/ford-energy-launches-battery-storage-subsidiary-20gwh-bess/",
    "used_for": [
     "Renewables + battery cost collapse -> watch: Ford Energy"
+   ]
+  },
+  {
+   "url": "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/",
+   "used_for": [
+    "Self-driving cars / robotaxis -> frontier"
    ]
   },
   {
@@ -3589,6 +3807,19 @@ const STATE = {
    ]
   },
   {
+   "url": "https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis",
+   "used_for": [
+    "Brain-computer interfaces -> watch: Rice/Baylor BrainGate team"
+   ]
+  },
+  {
+   "url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> watch: Anderon",
+    "Quantum error correction (logical qubits below threshold) -> frontier"
+   ]
+  },
+  {
    "url": "https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers",
    "used_for": [
     "Quantum error correction (logical qubits below threshold) -> frontier"
@@ -3665,6 +3896,12 @@ const STATE = {
    "url": "https://profiles.stanford.edu/jaimie-henderson",
    "used_for": [
     "Brain-computer interfaces -> Jaimie Henderson"
+   ]
+  },
+  {
+   "url": "https://quantumcomputingreport.com/flatiron-institute-tensor-network-algorithm-overturns-historical-d-wave-quantum-supremacy-claim/",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> frontier (coverage)"
    ]
   },
   {
@@ -3844,6 +4081,18 @@ const STATE = {
    ]
   },
   {
+   "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> sub-idea: Logical-qubit advantage on real applications (neutral atoms)"
+   ]
+  },
+  {
+   "url": "https://thequantuminsider.com/2026/05/22/quantum-dynamics-advance-overturns-claim-of-quantum-supremacy-opens-new-research-directions/",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> frontier (coverage)"
+   ]
+  },
+  {
    "url": "https://time.com/collection/100-most-influential-people/2026/dario-daniela-amodei/",
    "used_for": [
     "Transformers / LLMs / coding agents -> Dario Amodei",
@@ -3929,9 +4178,21 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial",
+   "used_for": [
+    "GLP-1 agonists -> frontier"
+   ]
+  },
+  {
    "url": "https://www.anthropic.com/news/claude-code",
    "used_for": [
     "Transformers / LLMs / coding agents -> sub-idea: Coding agents"
+   ]
+  },
+  {
+   "url": "https://www.anthropic.com/news/claude-opus-4-8",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
    ]
   },
   {
@@ -3978,6 +4239,18 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
+   ]
+  },
+  {
+   "url": "https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/",
+   "used_for": [
+    "AlphaFold + computational protein design -> frontier"
+   ]
+  },
+  {
    "url": "https://www.biontech.com/int/en/home/pipeline-and-products/pipeline.html",
    "used_for": [
     "mRNA vaccines + LNP delivery -> frontier"
@@ -3987,6 +4260,18 @@ const STATE = {
    "url": "https://www.biopharmadive.com/news/prime-fda-gene-editing-rare-chronic-granulomatous-disease/813772/",
    "used_for": [
     "CRISPR therapies (Casgevy + base/prime editing) -> watch: Prime Medicine (prime editing platform)"
+   ]
+  },
+  {
+   "url": "https://www.biospace.com/press-releases/scribe-therapeutics-reports-preclinical-data-at-asgct-2026-demonstrating-enhanced-potency-and-specificity-of-engineered-crispr-technologies-for-epigenetic-silencing-and-gene-editing",
+   "used_for": [
+    "AlphaFold + computational protein design -> watch: Scribe Therapeutics"
+   ]
+  },
+  {
+   "url": "https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype",
+   "used_for": [
+    "Fusion energy -> watch: Thea Energy"
    ]
   },
   {
@@ -4168,6 +4453,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.gurufocus.com/news/8877199/quantum-computing-stocks-surge-after-us-government-funding-announcement",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> frontier"
+   ]
+  },
+  {
    "url": "https://www.helionenergy.com/",
    "used_for": [
     "Fusion energy -> David Kirtley"
@@ -4180,6 +4471,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.hopkinsmedicine.org/news/articles/2026/05/investigators-test-new-brain-computer-interface",
+   "used_for": [
+    "Brain-computer interfaces -> sub-idea: Intraoperative high-density micro-ECoG BCI"
+   ]
+  },
+  {
    "url": "https://www.hpcwire.com/aiwire/2026/01/14/cerebras-lands-major-openai-deal-to-scale-ai-inference/",
    "used_for": [
     "AI accelerators / advanced compute -> frontier"
@@ -4189,6 +4486,12 @@ const STATE = {
    "url": "https://www.indexbox.io/blog/spacex-launched-165-falcon-9-rockets-in-2025-dominating-global-orbital-launches/",
    "used_for": [
     "Reusable rockets (Falcon 9 + Starship catch) -> frontier"
+   ]
+  },
+  {
+   "url": "https://www.interconnects.ai/about",
+   "used_for": [
+    "voice: Nathan Lambert"
    ]
   },
   {
@@ -4278,6 +4581,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.nature.com/articles/d41586-026-01686-3",
+   "used_for": [
+    "AlphaFold + computational protein design -> Alexander Rives"
+   ]
+  },
+  {
    "url": "https://www.nature.com/articles/s41392-025-02512-4",
    "used_for": [
     "mRNA vaccines + LNP delivery -> frontier",
@@ -4326,6 +4635,12 @@ const STATE = {
    "used_for": [
     "Quantum error correction (logical qubits below threshold) -> frontier",
     "Quantum error correction (logical qubits below threshold) -> sub-idea: Surface code below threshold"
+   ]
+  },
+  {
+   "url": "https://www.nature.com/articles/s41586-026-10328-7",
+   "used_for": [
+    "AlphaFold + computational protein design -> frontier"
    ]
   },
   {
@@ -4534,6 +4849,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.simonsfoundation.org/2026/05/21/quantum-dynamics-breakthrough-overturns-claim-of-quantum-supremacy-opens-new-research-directions/",
+   "used_for": [
+    "Quantum error correction (logical qubits below threshold) -> frontier"
+   ]
+  },
+  {
    "url": "https://www.space.com/space-exploration/launches-spacecraft/whats-next-for-spacexs-starship-after-its-successful-6th-test-flight",
    "used_for": [
     "Reusable rockets (Falcon 9 + Starship catch) -> frontier"
@@ -4699,7 +5020,7 @@ const STATE = {
   {
    "week_ending": "2026-05-08",
    "kind": "BASE_RUN",
-   "summary": "Base set extended from 11 to 15 breakthroughs: added humanoid robotics (#12), fusion energy (#13), brain-computer interfaces (#14), AI accelerators / advanced compute (#15). Two new domains introduced (ROBOTICS, HARDWARE).",
+   "summary": "Base set extended with four new breakthroughs: added humanoid robotics (#12), fusion energy (#13), brain-computer interfaces (#14), AI accelerators / advanced compute (#15). Two new domains introduced (ROBOTICS, HARDWARE).",
    "highlights": [
     {
      "title": "Added breakthrough: Humanoid robotics",
@@ -5687,6 +6008,932 @@ const STATE = {
    },
    "as_of_date": "2026-05-18",
    "generated_at": "2026-05-18T14:42:55.004563+00:00"
+  },
+  {
+   "week_ending": "2026-05-22",
+   "kind": "WEEKLY_UPDATE",
+   "summary": "Google I/O dominated the AI week (May 19-20): Gemini 3.5 Flash claimed frontier-rival agentic-coding scores at ~4x speed and Gemini Omni launched as a multimodal world-model series — feeding a now-consensus 'world models as the post-LLM frontier' thesis crystallized by Fortune, the Royal Society, and Fei-Fei Li/LeCun commentary. Two more theses hit critical mass: Ben Thompson's 'two kinds of inference' (answer vs. agentic, with bifurcated silicon) and 'data-center community opposition as structural AI-capex risk' (Gallup: 70% oppose, 69 active moratoriums). Hardware and quantum saw an industrial-policy bombshell on May 21 — IBM + U.S. Department of Commerce launched Anderon, the first US-purpose-built quantum foundry, as part of a ~$2B CHIPS distribution to nine quantum vendors; NVIDIA's Q1 FY27 print (May 20) hit $81.6B revenue, confirmed Vera Rubin shipping Q3 2026, and tripled capital returns. In bio, Lilly's TRIUMPH-1 Phase 3 (May 21) put retatrutide at 28.3% mean weight loss at 80 weeks — the first injectable to reach bariatric-surgery-class loss in a pivotal trial — while a Baker-lab Nature review declared the core problems of de novo protein design 'close to solved' and Johns Hopkins reported sub-20-minute intraoperative BCI mapping with >1,000-electrode micro-ECoG arrays. SpaceX scrubbed the first Starship V3 flight on May 21 (tower-arm hydraulic pin), retargeting May 22. Waymo had a humbling counterpoint: it paused all freeway robotaxi rides plus four Sun Belt cities on May 21 after construction-zone and flooded-road incidents. New voice added: Nathan Lambert (Interconnects, Ai2 post-training).",
+   "highlights": [
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "Gemini 3.5 Flash: frontier-rival agentic coding at ~4x speed",
+     "detail": "At Google I/O on May 19, 2026, Google released Gemini 3.5 Flash, claiming it outperforms Gemini 3.1 Pro on coding/agentic benchmarks (Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%) while running ~4x faster than other frontier models; available via Antigravity 2.0, Gemini API, and AI Studio.",
+     "source_urls": [
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/"
+     ],
+     "payload": {
+      "claim": "Gemini 3.5 Flash is a frontier-rivaling small model optimized for agentic coding, GA in Antigravity 2.0 and the Gemini API as of May 19, 2026.",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "diffusion_models",
+     "title": "Gemini Omni: world-grounded omni video generation",
+     "detail": "At Google I/O on May 19, 2026, Google unveiled Gemini Omni, a series that fuses Gemini's reasoning with multimodal generation; Gemini Omni Flash accepts image/audio/video/text input and outputs video grounded in real-world physics knowledge, rolling out to Google AI Plus/Pro/Ultra via the Gemini app and Flow.",
+     "source_urls": [
+      "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
+     ],
+     "payload": {
+      "name": "World-grounded omni video generation",
+      "description": "Single model jointly trained for reasoning and multimodal generation, producing video that is grounded in real-world knowledge from text/image/audio/video inputs.",
+      "examples": [
+       "Gemini Omni Flash (Google, May 2026)"
+      ],
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "reasoning_models",
+     "title": "Step-wise rubric rewards for RLVR (SRaR)",
+     "detail": "An arXiv paper posted May 17, 2026 (2605.17291) shows that standard outcome- or response-level RLVR mis-credits ~18% of correct-final-answer steps and penalizes ~50% of correct steps in wrong-answer rollouts; SRaR attributes rubric items to specific reasoning steps and normalizes per-step rewards.",
+     "source_urls": [
+      "https://arxiv.org/abs/2605.17291"
+     ],
+     "payload": {
+      "name": "Step-wise rubric rewards (SRaR)",
+      "description": "RLVR variant that decomposes rubric-based supervision onto individual reasoning steps and normalizes across rollouts to avoid uniform credit assignment and reward hacking.",
+      "examples": [
+       "SRaR (arXiv 2605.17291, May 17, 2026)"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.17291"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "reasoning_models",
+     "title": "DelTA: token-level credit assignment for RLVR",
+     "detail": "An arXiv paper posted May 20, 2026 (2605.21467) introduces DelTA, a discriminative method for assigning credit to individual tokens during reinforcement learning from verifiable rewards, targeting the long-standing sparse-reward problem in chain-of-thought RL.",
+     "source_urls": [
+      "https://arxiv.org/abs/2605.21467"
+     ],
+     "payload": {
+      "name": "Token-level credit assignment for RLVR",
+      "description": "Per-token discriminative credit signal layered on top of outcome-verifiable RL, giving denser gradient signal than response-level rewards.",
+      "examples": [
+       "DelTA (arXiv 2605.21467, May 20, 2026)"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.21467"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "self_driving",
+     "title": "Waymo pauses all freeway rides + 4 Sun Belt cities on safety",
+     "detail": "On May 21, 2026, Waymo suspended all freeway robotaxi service in SF, LA, Phoenix, and Miami pending a software update for construction-zone handling, while also pausing service in Atlanta, Dallas, Houston, and San Antonio after vehicles entered flooded roadways.",
+     "source_urls": [
+      "https://techcrunch.com/2026/05/21/waymo-halts-freeway-rides-after-robotaxis-struggle-in-construction-zones/",
+      "https://sfstandard.com/2026/05/21/waymo-suspends-all-freeway-rides-safety-issues/"
+     ],
+     "payload": {
+      "field": "waymo_freeway_status",
+      "new_value": "All freeway rides paused; 4 Sun Belt cities paused (May 21, 2026)",
+      "previous_value": "Freeway service live in SF, LA, Phoenix, Miami; full coverage across 11 metros"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "glp1",
+     "title": "Retatrutide TRIUMPH-1 Phase 3: 28.3% weight loss at 80 weeks",
+     "detail": "Eli Lilly announced May 21, 2026 that its triple GIP/GLP-1/glucagon agonist retatrutide met primary and key secondary endpoints in the 2,339-patient TRIUMPH-1 Phase 3 obesity trial. The 12 mg dose delivered ~28.3% mean weight loss at 80 weeks, with 45.3% of participants achieving >=30% loss; BMI>=35 subgroup reached 30.3% at 104 weeks.",
+     "source_urls": [
+      "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss",
+      "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial"
+     ],
+     "payload": {
+      "field": "retatrutide_phase3_topline",
+      "new_value": "TRIUMPH-1 met primary endpoints; 28.3% weight loss at 80 wks on 12 mg, 30.3% at 104 wks in BMI>=35 subgroup; data at ADA 2026 (announced May 21, 2026)",
+      "previous_value": "Phase 2 readouts only; TRIUMPH-1 Phase 3 topline pending"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "glp1",
+     "title": "Injectable GLP-1s reach bariatric-surgery-class weight loss",
+     "detail": "TRIUMPH-1 marks the first Phase 3 obesity trial in which an injectable incretin agonist achieved a mean weight loss (28-30%) historically associated only with bariatric surgery, and crossed the 30% threshold in patients with higher baseline BMI. This shifts the long-term ceiling for pharmacological obesity treatment.",
+     "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-05-21/lilly-s-experimental-shot-cuts-body-weight-by-28-in-study",
+      "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial"
+     ],
+     "payload": {
+      "claim": "Triple-agonist retatrutide produces bariatric-surgery-class weight loss (30%+) in a pivotal Phase 3 trial without surgery, redefining the achievable benchmark for obesity pharmacotherapy.",
+      "source_url": "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "bci",
+     "title": "Sub-20-minute intraoperative BCI mapping with >1,000 micro-ECoG electrodes",
+     "detail": "Johns Hopkins researchers reported (May 2026) testing a high-density micro-ECoG BCI array with >1,000 electrodes implanted during craniotomies in four patients; the system mapped neural activity, decoded four words, and enabled cursor control, with electrode-to-decode setup completed in under 20 minutes vs prior days/weeks.",
+     "source_urls": [
+      "https://www.hopkinsmedicine.org/news/articles/2026/05/investigators-test-new-brain-computer-interface"
+     ],
+     "payload": {
+      "name": "Intraoperative high-density micro-ECoG BCI",
+      "description": "Temporary high-density micro-electrocorticography arrays placed during routine awake craniotomy that yield same-day speech and cursor decoding, lowering the barrier to BCI use in surgical mapping and short-term clinical applications.",
+      "examples": [
+       "Johns Hopkins micro-ECoG study in 4 patients (May 2026)",
+       "Precision Neuroscience Layer 7 Cortical Interface"
+      ],
+      "source_url": "https://www.hopkinsmedicine.org/news/articles/2026/05/investigators-test-new-brain-computer-interface"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "bci",
+     "title": "Neuralink R1 can now target any brain region (motor + non-motor)",
+     "detail": "Neuralink confirmed via follow-on coverage through May 20, 2026 that its next-generation surgical robot can place electrode threads in virtually any cortical or sub-cortical region, threads pass directly through the dura, and the system compensates in real time for cardiac/respiratory brain motion — expanding indications beyond motor cortex toward Parkinson's, refractory epilepsy, and depression.",
+     "source_urls": [
+      "https://www.techtimes.com/articles/316912/20260520/neuralink-robot-reaches-any-brain-region-parkinsons-epilepsy-depression-now-within-surgical.htm"
+     ],
+     "payload": {
+      "field": "neuralink_surgical_robot_capability",
+      "new_value": "Next-gen R1 robot can implant in any brain region (motor + non-motor); threads through intact dura; real-time motion compensation",
+      "previous_value": "R1 limited to motor cortex; required dural removal"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "alphafold_protein_design",
+     "title": "Baker lab Nature review: core de novo protein design 'close to solved'",
+     "detail": "A May 2026 Nature review (Yang et al., 'The past, present and future of de novo protein design', Vol 652) from the Baker lab argues that long-standing problems of designing new protein structures, assemblies, and binders are close to solved with deep-learning tools, and that the field's central question has shifted from 'how to design' to 'what to design' — catalysts for high-barrier reactions, switches, nanomachines.",
+     "source_urls": [
+      "https://www.nature.com/articles/s41586-026-10328-7"
+     ],
+     "payload": {
+      "claim": "Core de novo protein design challenges (novel folds, assemblies, binders) are 'close to being solved' per Baker et al. Nature review; next 5-10 years focus shifts to functional nanomachines, switches, and catalysts.",
+      "source_url": "https://www.nature.com/articles/s41586-026-10328-7"
+     }
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "alphafold_protein_design",
+     "title": "Scribe Therapeutics — engineered CRISPR + AI guide design (DeepXE)",
+     "detail": "At ASGCT 2026 (May 11-15, Boston), Scribe Therapeutics presented preclinical data showing its allosteric epigenetic repressors (ELXR) reduce off-target transcriptional effects 10-100x vs. baseline, and unveiled DeepXE, an AI model for selecting potent guide RNAs for its X-Editor (XE) platform — positioning Scribe at the intersection of CRISPR engineering and AI-driven protein/guide design.",
+     "source_urls": [
+      "https://www.biospace.com/press-releases/scribe-therapeutics-reports-preclinical-data-at-asgct-2026-demonstrating-enhanced-potency-and-specificity-of-engineered-crispr-technologies-for-epigenetic-silencing-and-gene-editing"
+     ],
+     "payload": {
+      "name": "Scribe Therapeutics",
+      "org": "Scribe Therapeutics",
+      "type": "STARTUP",
+      "why": "Couples engineered CRISPR enzymes with AI guide-RNA design (DeepXE) and allosteric epigenetic editors; ASGCT 2026 data show 10-100x off-target reduction.",
+      "funding": "Previously backed by Andreessen Horowitz; Series B disclosed",
+      "source_url": "https://www.biospace.com/press-releases/scribe-therapeutics-reports-preclinical-data-at-asgct-2026-demonstrating-enhanced-potency-and-specificity-of-engineered-crispr-technologies-for-epigenetic-silencing-and-gene-editing"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "ai_accelerators",
+     "title": "NVIDIA Q1 FY27: $81.6B revenue, Vera Rubin ships Q3 2026",
+     "detail": "NVIDIA reported record Q1 FY27 revenue of $81.6B (up 85% YoY) with Data Center revenue at $75.2B on May 20, 2026, and confirmed initial Vera Rubin platform shipments in Q3 2026 with volume ramp in Q4. Guidance for Q2 FY27 was $91.0B +/- 2%.",
+     "source_urls": [
+      "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm",
+      "https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand/"
+     ],
+     "payload": {
+      "field": "nvidia_quarterly_data_center_revenue",
+      "new_value": "$75.2B Q1 FY27 (May 20, 2026 print); Vera Rubin initial shipments Q3 2026; Q2 guide $91B +/- 2%",
+      "previous_value": "Prior quarter; Vera Rubin previously guided to late 2026"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "ai_accelerators",
+     "title": "NVIDIA returns record $20B to shareholders, raises dividend 25x",
+     "detail": "Alongside Q1 FY27 earnings on May 20, 2026, NVIDIA announced an additional $80B share repurchase authorization and raised its quarterly dividend from $0.01 to $0.25 per share — signaling AI-chip demand is producing structural FCF, not a cycle peak. Total capital returned to shareholders in Q1 reached a record $20B.",
+     "source_urls": [
+      "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-first-quarter-fiscal-fq78amc9h84m.html"
+     ],
+     "payload": {
+      "field": "nvidia_capital_return_policy",
+      "new_value": "$80B additional buyback authorization; quarterly dividend raised 25x to $0.25/share; $20B returned in Q1 FY27",
+      "previous_value": "Prior buyback program; $0.01 quarterly dividend"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "renewables_batteries",
+     "title": "Gotion launches Gnascent sodium-ion line at 261 Wh/kg",
+     "detail": "On May 17, 2026, VW-backed Gotion High-Tech launched its sodium-ion battery brand Gnascent, with a high-energy cell reaching 261 Wh/kg and a storage cell rated >20,000 cycles; GWh-scale production lines are running in Tangshan and Hefei with mass production starting Q4 2026.",
+     "source_urls": [
+      "https://carnewschina.com/2026/05/17/volkswagen-backed-gotion-launches-gnascent-sodium-ion-battery-up-to-261-wh-kg-with-mass-production-ready/",
+      "https://www.battery-energy-storage-system.com/news/gotion-gnascent-sodium-ion-batteries.html"
+     ],
+     "payload": {
+      "name": "High-energy-density sodium-ion at GWh scale",
+      "description": "Sodium-ion cells engineered for 261 Wh/kg (high-energy), 162 Wh/kg with -50C discharge (power), and 180Ah/>20,000 cycle storage variant — closing the gap to LFP while using a non-lithium supply chain.",
+      "examples": [
+       "Gotion Gnascent (261 Wh/kg)",
+       "CATL Naxtra",
+       "BYD sodium-ion",
+       "HiNa Battery"
+      ],
+      "source_url": "https://carnewschina.com/2026/05/17/volkswagen-backed-gotion-launches-gnascent-sodium-ion-battery-up-to-261-wh-kg-with-mass-production-ready/"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "SpaceX scrubs first Starship V3 launch May 21 — retargets May 22",
+     "detail": "SpaceX scrubbed the inaugural launch of Starship V3 (Flight 12) on May 21, 2026 due to a hydraulic pin issue on a tower arm during countdown; the flight retargeted to May 22. V3 features Raptor 3 engines, ~18 million lbs of thrust, first launch from Starbase Pad 2, and targets deployment of 22 Starlink simulators plus an in-space Raptor relight.",
+     "source_urls": [
+      "https://www.space.com/news/live/spacex-starship-flight-12-launch-updates-may-21-2026",
+      "https://spaceflightnow.com/2026/05/21/live-coverage-spacex-to-launch-first-starship-version-3-rocket/"
+     ],
+     "payload": {
+      "field": "starship_v3_first_flight_status",
+      "new_value": "Flight 12 (first V3) scrubbed May 21, 2026 — hydraulic pin tower-arm issue; retargeted May 22, 2026 from Starbase Pad 2",
+      "previous_value": "Flight 12 / first V3 flight pending; previously slipped multiple times from late 2025"
+     }
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "Anderon — first US purpose-built quantum chip foundry (IBM + DOC, $2B)",
+     "detail": "On May 21, 2026, IBM and the U.S. Department of Commerce announced Anderon, America's first pure-play quantum wafer foundry, headquartered in Albany NY with a 300mm process line. IBM is contributing $1B in cash plus IP and staff; DOC is contributing $1B in proposed CHIPS Act incentives. Anderon will fabricate wafers for multiple quantum vendors.",
+     "source_urls": [
+      "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry",
+      "https://thequantuminsider.com/2026/05/21/ibm-and-u-s-department-of-commerce-announce-proposed-1-billion-chips-award-to-fund-purpose-built-quantum-foundry/"
+     ],
+     "payload": {
+      "name": "Anderon",
+      "org": "IBM (spinout) + U.S. Department of Commerce",
+      "type": "STARTUP",
+      "why": "First purpose-built US quantum foundry — provides shared, scaled 300mm fabrication for IBM, Quantinuum, Diraq, Microsoft and other modalities, addressing the wafer-supply bottleneck for fault-tolerant systems.",
+      "funding": "$2B total ($1B IBM cash + IP/assets; $1B proposed CHIPS Act incentive)",
+      "source_url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "$2B CHIPS distribution across 9 quantum hardware/foundry developers",
+     "detail": "On May 21, 2026, the U.S. Department of Commerce announced ~$2.013B in proposed CHIPS Act awards across nine quantum hardware and foundry developers — including IBM/Anderon and GlobalFoundries' new Quantum Technology Solutions division (~$375M) — to build domestic multi-modality fabrication capacity. Quantum equity prices rallied sharply (IBM +4.6%, GFS +12%, D-Wave +33%, Rigetti +28%, Infleqtion +42%).",
+     "source_urls": [
+      "https://www.gurufocus.com/news/8877199/quantum-computing-stocks-surge-after-us-government-funding-announcement",
+      "https://convergedigest.com/ibm-and-u-s-commerce-plan-2b-quantum-foundry-company-in-albany/"
+     ],
+     "payload": {
+      "claim": "US federal industrial policy is now explicitly steering quantum hardware build-out at the foundry level — a structural shift from research grants to manufacturing capacity formation, with $2B in CHIPS funding distributed across nine vendors on May 21, 2026.",
+      "source_url": "https://www.gurufocus.com/news/8877199/quantum-computing-stocks-surge-after-us-government-funding-announcement"
+     }
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "DOE awards $94M to eight companies for Gen III+ SMR deployment",
+     "detail": "On May 15-18, 2026, the U.S. Department of Energy announced Tier 2 awards totaling over $94 million in cost-shared funding to eight U.S. companies to accelerate near-term deployment of Gen III+ light-water small modular reactors, targeting licensing, supply chain, and site-prep gaps.",
+     "source_urls": [
+      "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small",
+      "https://neutronbytes.com/2026/05/17/doe-awards-94-million-for-light-water-smrs/"
+     ],
+     "payload": {
+      "candidate_area": "Advanced nuclear / SMRs",
+      "summary": "DOE selects eight U.S. firms for $94M+ in cost-shared awards under the Gen III+ SMR Pathway to Deployment Program, addressing licensing, supply chain, and site preparation — the Tier 2 follow-on to last year's $800M TVA/Holtec disbursement.",
+      "source_url": "https://www.energy.gov/articles/energy-department-awards-94-million-american-companies-help-expedite-deployments-small"
+     }
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "'Two kinds of inference' — answer vs. agentic compute bifurcation",
+     "detail": "Ben Thompson's May 18-20 Stratechery pieces ('The Inference Shift', 'Shifting Alliances') named a framing — 'answer inference' vs 'agentic inference' demand different silicon — that was immediately echoed by Deloitte (2026 outlook), SDxCentral, and Crypto Briefing/NVIDIA coverage. Repeated by 4+ independent voices in-window.",
+     "source_urls": [
+      "https://stratechery.com/2026/the-inference-shift/",
+      "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+      "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/ai-infrastructure-compute-strategy.html",
+      "https://www.sdxcentral.com/analysis/ai-inferencing-will-define-2026-and-the-markets-wide-open/"
+     ],
+     "payload": {
+      "thesis": "AI compute is bifurcating: 'answer inference' (latency-bound, GPU-favored) vs 'agentic inference' (memory-bound, longer chains, friendlier to CPUs/custom silicon). The hardware stack of the next two years won't be one curve — it splits.",
+      "examples": [
+       "Ben Thompson, 'The Inference Shift' (Stratechery, May 20 2026)",
+       "Ben Thompson, 'Shifting Alliances in a Changing World' (Stratechery, May 20 2026)",
+       "Deloitte 2026 AI Infrastructure outlook",
+       "SDxCentral 'AI inferencing will define 2026'"
+      ],
+      "spotted_at": [
+       "https://stratechery.com/2026/the-inference-shift/",
+       "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+       "https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/ai-infrastructure-compute-strategy.html",
+       "https://www.sdxcentral.com/analysis/ai-inferencing-will-define-2026-and-the-markets-wide-open/"
+      ]
+     }
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "'World Models' as the post-LLM frontier — LeCun, Fei-Fei Li, DeepMind aligned",
+     "detail": "Google I/O launched Gemini Omni (May 19-20) explicitly positioned as a 'world model' for video/physics; Fortune (May 20) ran a piece on 'Why the AI field's biggest names are betting billions on world models' citing Fei-Fei Li, LeCun, NVIDIA; Royal Society Phil Trans A special issue on world models published May 14; multiple commentary pieces echo the framing within the week.",
+     "source_urls": [
+      "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+      "https://techstartups.com/2026/05/20/google-launches-gemini-3-5-flash-and-omni-world-model-at-i-o-2026-as-ai-race-with-openai-heats-up/",
+      "https://royalsocietypublishing.org/rsta/article/384/2320/20240533/481677/World-models-artificial-general-intelligence-and"
+     ],
+     "payload": {
+      "thesis": "World models — systems that learn predictive, physics-grounded representations rather than next-token statistics — are emerging as the consensus next paradigm beyond LLMs, with industry, academia, and major labs aligning in the same week.",
+      "examples": [
+       "Google I/O 2026: Gemini Omni launched as a world model (May 19-20)",
+       "Fortune feature on world model bets by Fei-Fei Li, LeCun, NVIDIA (May 20)",
+       "Royal Society Phil Trans A special issue on world models & AGI (May 14)",
+       "TechStartups coverage framing Omni as world-model release (May 20)"
+      ],
+      "spotted_at": [
+       "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+       "https://techstartups.com/2026/05/20/google-launches-gemini-3-5-flash-and-omni-world-model-at-i-o-2026-as-ai-race-with-openai-heats-up/",
+       "https://royalsocietypublishing.org/rsta/article/384/2320/20240533/481677/World-models-artificial-general-intelligence-and"
+      ]
+     }
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "Data-center community opposition as structural AI-capex risk",
+     "detail": "Five independent outlets in-window converged on the thesis that local data-center opposition is now a structural constraint on AI capex: Ben Thompson (Stratechery, May 18), Fortune (May 18), Washington Post (May 13, picked up through the week), Deseret News (May 16), and U.S. News (May 21). Gallup: 70% oppose; 69 active jurisdictional moratoriums.",
+     "source_urls": [
+      "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+      "https://fortune.com/2026/05/18/communities-are-blocking-billions-in-data-centers-big-tech-has-wagered-1-trillion-otherwise/",
+      "https://www.deseret.com/business/2026/05/16/data-centers-bans-moratoriums-state-legislatures-citizen-opposition-initiatives-referendum-artificial-intelligence-water-sair-quality/",
+      "https://www.usnews.com/news/u-s-news-decision-points/articles/2026-05-21/polls-and-protests-show-americans-are-turning-on-data-centers"
+     ],
+     "payload": {
+      "thesis": "Community pushback on data centers has crossed from local nuisance to structural constraint on the AI infrastructure thesis — bipartisan, multi-state, now showing up in ballot measures and moratoriums that materially threaten Big Tech's announced $1T+ capex.",
+      "examples": [
+       "Stratechery 'Data Center Discontent' (Ben Thompson, May 18)",
+       "Fortune: $1T wager vs. communities blocking projects (May 18)",
+       "Deseret News: 69 jurisdictions with active moratoriums (May 16)",
+       "U.S. News: polls and protests turning on data centers (May 21)"
+      ],
+      "spotted_at": [
+       "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+       "https://fortune.com/2026/05/18/communities-are-blocking-billions-in-data-centers-big-tech-has-wagered-1-trillion-otherwise/",
+       "https://www.deseret.com/business/2026/05/16/data-centers-bans-moratoriums-state-legislatures-citizen-opposition-initiatives-referendum-artificial-intelligence-water-sair-quality/"
+      ]
+     }
+    },
+    {
+     "kind": "NEW_VOICE",
+     "breakthrough_id": null,
+     "title": "Nathan Lambert (Interconnects, Ai2) — post-training & open-model analyst",
+     "detail": "Lambert (Ai2 senior research scientist, post-training lead) is being cited across the May 2026 AI commentary stack — Interconnects newsletter cleared 60K+ subscribers, podcast feed expanded, and his open-model trajectory pieces are now standard reference material. The most-cited 'next tier' AI voice on post-training and open weights.",
+     "source_urls": [
+      "https://www.interconnects.ai/about",
+      "https://www.interconnects.ai/p/the-next-phase-of-open-models"
+     ],
+     "payload": {
+      "name": "Nathan Lambert",
+      "role": "Senior research scientist & post-training lead, Allen Institute for AI (Ai2); founder, Interconnects",
+      "focus": "Post-training methods, open models, RLHF/RLVR, LLM architecture trajectory",
+      "follow_url": "https://www.interconnects.ai/",
+      "twitter": "https://twitter.com/natolambert",
+      "youtube": "",
+      "newsletter": "https://www.interconnects.ai/",
+      "notes": "Interconnects has crossed 60K+ subscribers and is now the standard reference for post-training and open-model coverage. Frequently cited by Karpathy-adjacent voices; podcast feed expanded in 2026.",
+      "tags": [
+       "AI"
+      ],
+      "source_url": "https://www.interconnects.ai/about"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "Flatiron Institute laptop sim overturns D-Wave 'beyond-classical' claim",
+     "detail": "Researchers at Simons Foundation's Flatiron Institute Center for Computational Quantum Physics and Boston University reported in Science (May 21, 2026) a tensor-network algorithm that classically simulates a 100-qubit highly-entangled dynamics problem on a laptop, refuting D-Wave's March 2025 Advantage2 'beyond-classical' computation milestone.",
+     "source_urls": [
+      "https://www.simonsfoundation.org/2026/05/21/quantum-dynamics-breakthrough-overturns-claim-of-quantum-supremacy-opens-new-research-directions/",
+      "https://thequantuminsider.com/2026/05/22/quantum-dynamics-advance-overturns-claim-of-quantum-supremacy-opens-new-research-directions/",
+      "https://quantumcomputingreport.com/flatiron-institute-tensor-network-algorithm-overturns-historical-d-wave-quantum-supremacy-claim/"
+     ],
+     "payload": {
+      "claim": "Flatiron Institute CCQ + Boston University demonstrated (Science, May 21 2026) that a tensor-network algorithm, running on a laptop, can classically simulate the same 100-qubit highly-entangled dynamics problem D-Wave used to claim 'beyond-classical' computation with its 5,000-qubit Advantage2 annealer in March 2025 — resetting where the quantum-advantage line sits.",
+      "source_url": "https://www.simonsfoundation.org/2026/05/21/quantum-dynamics-breakthrough-overturns-claim-of-quantum-supremacy-opens-new-research-directions/"
+     }
+    }
+   ],
+   "additions": {
+    "new_breakthroughs": [],
+    "new_sub_ideas": [
+     "diffusion_models/World-grounded omni video generation",
+     "reasoning_models/Step-wise rubric rewards (SRaR)",
+     "reasoning_models/Token-level credit assignment for RLVR",
+     "bci/Intraoperative high-density micro-ECoG BCI",
+     "renewables_batteries/High-energy-density sodium-ion at GWh scale"
+    ],
+    "new_frontier": [
+     "transformers_llms/frontier",
+     "glp1/frontier",
+     "alphafold_protein_design/frontier",
+     "quantum_error_correction/frontier",
+     "quantum_error_correction/frontier"
+    ],
+    "new_watch": [
+     "alphafold_protein_design/watch:Scribe Therapeutics",
+     "quantum_error_correction/watch:Anderon"
+    ],
+    "new_people": [],
+    "new_voices": [
+     "voice:Nathan Lambert"
+    ],
+    "trending_ideas": [
+     "trending:'Two kinds of inference' — answer vs. agentic compute bifurc",
+     "trending:'World Models' as the post-LLM frontier — LeCun, Fei-Fei Li,",
+     "trending:Data-center community opposition as structural AI-capex risk"
+    ],
+    "updates": [
+     "self_driving/update:waymo_freeway_status",
+     "glp1/update:retatrutide_phase3_topline",
+     "bci/update:neuralink_surgical_robot_capability",
+     "ai_accelerators/update:nvidia_quarterly_data_center_revenue",
+     "ai_accelerators/update:nvidia_capital_return_policy",
+     "reusable_rockets/update:starship_v3_first_flight_status"
+    ],
+    "broad_scan": [
+     "broad_scan:Advanced nuclear / SMRs"
+    ],
+    "skipped_dedupe": []
+   },
+   "as_of_date": "2026-05-22",
+   "generated_at": "2026-05-22T12:22:14.871359+00:00"
+  },
+  {
+   "week_ending": "2026-05-29",
+   "kind": "WEEKLY_UPDATE",
+   "summary": "Big week. Anthropic released Claude Opus 4.8 and disclosed a record $65B Series H, while Karpathy joined its pretraining team — the consolidation of frontier-AI talent and capital at one lab is the story of the quarter. Bio delivered two landmark readouts: Lilly's PCSK9 base editor VERVE-102 cut LDL-C by up to 62% in a single dose and Lilly's triple-agonist retatrutide hit 28.3% weight loss in TRIUMPH-1. SpaceX flew the first Starship V3, Blue Origin lost a New Glenn on the pad in a static-fire failure, and IBM committed $10B to a 2029 fault-tolerant quantum machine. Two clear trending ideas crystallized this week: 'world models as the next paradigm beyond LLMs' (LeCun group's LeJEPA theory paper, Jim Fan's AI Ascent talk, Fortune feature) and 'token-cost anxiety' (Microsoft, Vantage, Exponential View all hitting the same thesis that agentic-coding economics break the SaaS model).",
+   "highlights": [
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "Anthropic releases Claude Opus 4.8 with dynamic workflows",
+     "detail": "Anthropic launched Claude Opus 4.8 on May 28, 2026, just 41 days after Opus 4.7. Agentic coding score jumps to 69.2%, computer-use scores 84% on Online-Mind2Web, and a new 'dynamic workflows' research preview lets Claude Code handle bigger tasks at unchanged pricing.",
+     "source_urls": [
+      "https://www.anthropic.com/news/claude-opus-4-8"
+     ],
+     "payload": {
+      "claim": "Claude Opus 4.8 released (May 28, 2026): 69.2% agentic coding, 84% computer-use on Online-Mind2Web, new dynamic workflows for Claude Code.",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "transformers_llms",
+     "title": "Anthropic raises $65B Series H at $965B post-money",
+     "detail": "On May 28, 2026, Anthropic announced a $65B Series H at a $965B post-money valuation led by Altimeter, Dragoneer, Greenoaks, and Sequoia, briefly eclipsing OpenAI as the most valuable AI startup. Run-rate revenue crossed $47B earlier in May.",
+     "source_urls": [
+      "https://www.anthropic.com/news/series-h"
+     ],
+     "payload": {
+      "field": "Anthropic Series H funding closed",
+      "new_value": "$65B raised at $965B post-money (May 28, 2026); leads Altimeter, Dragoneer, Greenoaks, Sequoia; $47B run-rate revenue",
+      "previous_value": "Previous round Series G in late 2025",
+      "source_url": "https://www.anthropic.com/news/series-h"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "Karpathy joins Anthropic pretraining team",
+     "detail": "Andrej Karpathy announced in mid-May 2026 that he is joining Anthropic's pre-training team to lead a new effort using Claude itself to accelerate pretraining research — signalling consolidation of top AI talent at Anthropic and an industry pivot toward AI-automating-AI-research.",
+     "source_urls": [
+      "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude"
+     ],
+     "payload": {
+      "claim": "Karpathy joined Anthropic pretraining team May 2026 to lead a 'use Claude to accelerate pretraining' effort.",
+      "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "reasoning_models",
+     "title": "Equilibrium Reasoners: deep latent-attractor test-time scaling",
+     "detail": "Arxiv preprint (May 20, 2026) introduces Equilibrium Reasoners, iteratively updating a latent state via task-conditioned attractors. Boosts Sudoku-Extreme accuracy from 2.6% to over 99% by unrolling up to the equivalent of 40,000 layers — no external verifiers or task-specific priors.",
+     "source_urls": [
+      "https://arxiv.org/abs/2605.21488"
+     ],
+     "payload": {
+      "name": "Equilibrium Reasoners (latent-attractor TTC)",
+      "description": "Iterative latent-attractor reasoning enabling deep test-time-compute scaling without external verifiers; pushes Sudoku-Extreme accuracy from 2.6% to 99%+ on unrolling equivalent to ~40k layers.",
+      "examples": [
+       "Sudoku-Extreme 2.6% -> 99%+ accuracy by unrolling latent attractors"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.21488"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "self_driving",
+     "title": "Waymo launches Ojai purpose-built robotaxi (6th-gen Driver)",
+     "detail": "On May 28, 2026, Waymo began public rides in the Ojai — its first vehicle designed from the ground up as a robotaxi (Zeekr/Geely-made, four-seat EV minivan). 6th-gen Driver uses 4 lidars / 6 radars / 13 cameras (down from 5/6/29). Initial 100 units across SF, LA, Phoenix.",
+     "source_urls": [
+      "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"
+     ],
+     "payload": {
+      "claim": "Waymo's first purpose-built robotaxi (Zeekr-made Ojai, 6th-gen Driver with cheaper sensor stack) went live with public rides on May 28, 2026.",
+      "source_url": "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "self_driving",
+     "title": "Pony.ai global robotaxi fleet surpasses 1,700",
+     "detail": "Pony.ai disclosed that as of May 24, 2026, its global robotaxi fleet exceeded 1,700 vehicles — up ~250 since its 2025 annual report. WeRide's domestic fleet reached ~1,000 by end of April.",
+     "source_urls": [
+      "https://carnewschina.com/2026/05/29/china-robotaxi-industry-faces-regulatory-cooling-off-following-march-apollo-go-mass-paralysis/"
+     ],
+     "payload": {
+      "field": "Pony.ai global robotaxi fleet size",
+      "new_value": "1,700+ vehicles as of 2026-05-24 (+250 since 2025 annual report); WeRide ~1,000 domestic",
+      "previous_value": "~1,450 in late 2025",
+      "source_url": "https://carnewschina.com/2026/05/29/china-robotaxi-industry-faces-regulatory-cooling-off-following-march-apollo-go-mass-paralysis/"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "humanoid_robotics",
+     "title": "Figure scales Figure 03 to one robot per hour; 350+ units built",
+     "detail": "Figure AI announced in week of May 27, 2026 that BotQ ramped Figure 03 production from one unit/day to one unit/hour in under four months, 350+ Gen-3 robots built. New System 0 perception-conditioned whole-body control enables stair/ramp navigation; 10-hour package-processing livestream showed Figure 03 hitting 98.5% of human throughput.",
+     "source_urls": [
+      "https://roboticsandautomationnews.com/2026/05/27/figure-ramps-humanoid-robot-manufacturing-at-unprecedented-speed/101954/"
+     ],
+     "payload": {
+      "field": "Figure 03 production rate",
+      "new_value": "1 robot/hour at BotQ; 350+ Gen-3 units; new System 0 perception-conditioned whole-body control",
+      "previous_value": "1 robot/day at BotQ in early 2026",
+      "source_url": "https://roboticsandautomationnews.com/2026/05/27/figure-ramps-humanoid-robot-manufacturing-at-unprecedented-speed/101954/"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "crispr_therapies",
+     "title": "VERVE-102 cuts LDL-C up to 62% in Heart-2 Phase 1b",
+     "detail": "Eli Lilly announced May 25, 2026 that a single dose of in vivo PCSK9 base editor VERVE-102 reduced PCSK9 by up to 88% and LDL-C by up to 62%, published in NEJM. Phase 2 launch planned by year-end.",
+     "source_urls": [
+      "https://investor.lilly.com/news-releases/news-release-details/single-dose-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-88"
+     ],
+     "payload": {
+      "field": "VERVE-102 Phase 1b Heart-2 readout",
+      "new_value": "Single-dose in vivo base edit: -62% LDL-C, -88% PCSK9 at top dose; NEJM publication May 25, 2026; Phase 2 H2 2026",
+      "previous_value": "Earlier Phase 1b interim showed ~55% LDL-C reduction",
+      "source_url": "https://investor.lilly.com/news-releases/news-release-details/single-dose-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-88"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "alphafold_protein_design",
+     "title": "Baker Lab: quasisymmetric protein nanocages for gene delivery",
+     "detail": "David Baker's UW Institute for Protein Design lab published twin Nature papers May 22, 2026 describing one- and two-component quasisymmetric protein nanocages — programmable virus-like capsules engineered for genetic-medicine delivery.",
+     "source_urls": [
+      "https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/"
+     ],
+     "payload": {
+      "claim": "Baker Lab Nature papers (May 22, 2026) describe de novo quasisymmetric protein nanocages with expanded internal volume, opening a computationally designed delivery vehicle class for genetic medicines.",
+      "source_url": "https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/"
+     }
+    },
+    {
+     "kind": "NEW_PERSON",
+     "breakthrough_id": "alphafold_protein_design",
+     "title": "Alexander Rives — 1.1B-structure atlas + CTLA-4 binders",
+     "detail": "Alexander Rives' EvolutionaryScale team released an AI tool generating an atlas of 1.1 billion predicted protein structures and 6.8 billion sequences, with lab-validated CTLA-4 binders.",
+     "source_urls": [
+      "https://www.nature.com/articles/d41586-026-01686-3"
+     ],
+     "payload": {
+      "name": "Alexander Rives",
+      "role": "Co-founder & Chief Scientist, EvolutionaryScale",
+      "affiliation": "EvolutionaryScale",
+      "org_type": "BUSINESS",
+      "prizes": [],
+      "source_url": "https://www.nature.com/articles/d41586-026-01686-3"
+     }
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "bci",
+     "title": "Rice + Baylor join BrainGate as first Texas member",
+     "detail": "On May 28, 2026, Rice University and Baylor College of Medicine joined the BrainGate consortium as its sixth member, launching a clinical trial decoding cortical signals to control assistive robotics for people with tetraplegia.",
+     "source_urls": [
+      "https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis"
+     ],
+     "payload": {
+      "name": "Rice/Baylor BrainGate team",
+      "org": "Rice University & Baylor College of Medicine",
+      "type": "LAB",
+      "why": "First Texas-based BrainGate site; pairs Rice computational/engineering with Baylor clinical neuroscience to advance intracortical BCI for tetraplegia assistive robotics.",
+      "funding": "Federal/clinical trial grants (BrainGate consortium)",
+      "source_url": "https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "glp1",
+     "title": "Retatrutide TRIUMPH-1: up to 28.3% weight loss at 80 wks",
+     "detail": "Eli Lilly's triple agonist retatrutide hit its primary endpoint in Phase 3 TRIUMPH-1 (announced May 21-22, 2026): up to 28.3% average weight loss at 80 weeks (12 mg dose); 65.3% of patients reached BMI <30.",
+     "source_urls": [
+      "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"
+     ],
+     "payload": {
+      "field": "Retatrutide (GIP/GLP-1/glucagon) TRIUMPH-1 Phase 3 obesity readout",
+      "new_value": "Up to 28.3% mean weight loss at 80 weeks (12 mg); 65.3% reached BMI <30; matches bariatric outcomes",
+      "previous_value": "Phase 2 (2023): ~24% at 48 weeks",
+      "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "SpaceX Starship V3 flies for first time (Flight 12)",
+     "detail": "On May 22, 2026, SpaceX launched the first Starship/Super Heavy V3 vehicle with Raptor 3 engines from Pad 2 at Starbase. Deployed 20 mock Starlink satellites and reached planned Indian Ocean splashdown despite engine anomalies.",
+     "source_urls": [
+      "https://www.spacex.com/launches/starship-flight-12"
+     ],
+     "payload": {
+      "field": "Starship V3 first flight",
+      "new_value": "Starship V3 + Raptor 3 + Pad 2 debut succeeded May 22, 2026; 20 mock Starlinks deployed, Ship reached Indian Ocean target",
+      "previous_value": "Starship V2 retired after Flight 11",
+      "source_url": "https://www.spacex.com/launches/starship-flight-12"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "New Glenn destroyed in pad static-fire explosion",
+     "detail": "On May 28, 2026, a New Glenn rocket exploded during a static-fire test at LC-36, Cape Canaveral, destroying the vehicle that was set to launch 48 Amazon Project Kuiper satellites in early June.",
+     "source_urls": [
+      "https://spaceflightnow.com/2026/05/29/blue-origins-new-glenn-rocket-explodes-during-prelaunch-testing-at-cape-canaveral/"
+     ],
+     "payload": {
+      "field": "Blue Origin New Glenn status",
+      "new_value": "Vehicle lost on pad during May 28, 2026 static fire; planned June 4 Kuiper launch delayed",
+      "previous_value": "New Glenn flying ~monthly into 2026",
+      "source_url": "https://spaceflightnow.com/2026/05/29/blue-origins-new-glenn-rocket-explodes-during-prelaunch-testing-at-cape-canaveral/"
+     }
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "IBM commits $10B to quantum, doubling down on 2029 FT goal",
+     "detail": "On May 28, 2026, IBM disclosed a five-year $10B+ quantum investment, reinforcing its 2029 target for the Starling fault-tolerant machine and the Anderon quantum foundry partnership with the US Department of Commerce.",
+     "source_urls": [
+      "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
+     ],
+     "payload": {
+      "claim": "IBM disclosed $10B five-year quantum push (May 28, 2026) spanning R&D, manufacturing, partnerships and the Anderon foundry with DoC ($1B CHIPS proposed); targets Starling fault-tolerant machine by 2029.",
+      "source_url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
+     }
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "Logical qubits beat physical qubits on diff. eq. (Pasqal)",
+     "detail": "Pasqal published a May 21, 2026 result showing logical-qubit encodings on its neutral-atom processor outperformed physical-qubit baselines on differential equations by ~50% on average (up to 10x on hard cases) — a first end-to-end real-world logical-qubit application on neutral atoms.",
+     "source_urls": [
+      "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/"
+     ],
+     "payload": {
+      "name": "Logical-qubit advantage on real applications (neutral atoms)",
+      "description": "First demonstration that logical qubits outperform physical qubits on an end-to-end real-world task (differential equations) on a neutral-atom processor at 99.4% gate fidelity across 1,000 equations.",
+      "examples": [
+       "Pasqal neutral-atom run, 1000 differential equations, logical beats physical by ~50% avg, up to 10x on hard cases"
+      ],
+      "source_url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "quantum_error_correction",
+     "title": "PsiQuantum signs $100M CHIPS LOI with US DoC",
+     "detail": "On May 21, 2026, PsiQuantum signed an LOI with the US Department of Commerce for $100M in proposed CHIPS Act incentives to develop fault-tolerant photonic-quantum components (barium titanate switches, single-photon detectors, packaging).",
+     "source_urls": [
+      "https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"
+     ],
+     "payload": {
+      "field": "PsiQuantum US government support",
+      "new_value": "$100M CHIPS LOI signed May 21, 2026 for fault-tolerant photonic component development",
+      "previous_value": "No prior CHIPS Act allocation",
+      "source_url": "https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"
+     }
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "fusion",
+     "title": "Thea Energy raises $100M for stellarator prototype",
+     "detail": "On May 27, 2026, Thea Energy closed a $100M round led by Prelude Ventures with US Innovative Technology and General Innovation Capital Partners to build a demonstration project for its planar-coil stellarator approach.",
+     "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype"
+     ],
+     "payload": {
+      "name": "Thea Energy",
+      "org": "Thea Energy",
+      "type": "STARTUP",
+      "why": "Planar-coil stellarator as a simpler-to-manufacture alternative to tokamaks; $100M to build a demonstration prototype amid AI-data-center power demand.",
+      "funding": "$100M (May 27, 2026); leads Prelude Ventures, US Innovative Technology, General Innovation Capital Partners",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype"
+     }
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "ai_accelerators",
+     "title": "Cerebras stock rebounds post-IPO; $66B valuation holds",
+     "detail": "Cerebras (NASDAQ: CBRS) jumped 10.4% on May 27, 2026 to close at $266.90 after a four-day losing streak. IPO priced at $185 on May 13, raising $5.55B at $66B+ valuation; $20B OpenAI capacity deal in place.",
+     "source_urls": [
+      "https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821"
+     ],
+     "payload": {
+      "field": "Cerebras post-IPO status",
+      "new_value": "CBRS at $266.90 on May 27, 2026 (+10.4%); $66B market cap; $20B OpenAI capacity deal active",
+      "previous_value": "Private; mooted $4-5B valuation pre-IPO",
+      "source_url": "https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821"
+     }
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "World models go mainstream as the next AI frontier",
+     "detail": "Multiple independent signals converged on 'world models' as the next paradigm beyond LLMs: Fortune's May 20 feature on why top AI names are betting billions on world models, MIT Tech Review's 'Top 10 Things That Matter in AI' (May 12) listing world models, Jim Fan's AI Ascent talk pivoting NVIDIA robotics from VLA to video-first World Action Models, and a May 25 LeCun-group arXiv paper on when LeJEPA learns a world model.",
+     "source_urls": [
+      "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+      "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
+      "https://cryptobriefing.com/lejepa-world-model-conditions-lecun/",
+      "https://www.humanoidsdaily.com/news/the-great-parallel-nvidia-s-jim-fan-outlines-the-robotics-end-game-strategy"
+     ],
+     "payload": {
+      "thesis": "World models — AI that learns physics-grounded internal simulations from video, not just text — are emerging as the post-LLM paradigm, drawing capital and talent from NVIDIA, Meta FAIR alumni (AMI Labs), Google (Genie), and Fei-Fei Li's World Labs.",
+      "examples": [
+       "Fortune feature 'Why the AI field's biggest names are betting billions on world models'",
+       "MIT Tech Review names world models in 'Top 10 Things That Matter in AI'",
+       "LeCun group arXiv 'When Does LeJEPA Learn a World Model?'",
+       "Jim Fan AI Ascent talk pivoting from VLA to video-first World Action Models"
+      ],
+      "spotted_at": [
+       "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+       "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
+       "https://cryptobriefing.com/lejepa-world-model-conditions-lecun/",
+       "https://www.humanoidsdaily.com/news/the-great-parallel-nvidia-s-jim-fan-outlines-the-robotics-end-game-strategy"
+      ]
+     }
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "Token-cost anxiety: agentic coding burning AI budgets",
+     "detail": "Multiple independent signals this week framed the same thesis — agentic coding is dramatically more expensive than chat/reasoning workloads. Fortune (May 22) covered Microsoft reports showing AI agents can cost more than human employees, Azeem Azhar's Exponential View (May 21) titled a post 'Bye, bye fixed costs. Hello, token anxiety,' and Vantage/Stanford research quantified the ~1000x token gap vs. code chat.",
+     "source_urls": [
+      "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "https://www.exponentialview.co/p/bye-bye-fixed-costs-hello-token-anxiety",
+      "https://www.vantage.sh/blog/agentic-coding-costs"
+     ],
+     "payload": {
+      "thesis": "Agentic AI economics break the SaaS fixed-cost model: input tokens compound 20-25x faster than output, sessions burn ~1M input tokens, and enterprises (e.g., Uber) are exhausting full-year AI coding budgets in 4 months.",
+      "examples": [
+       "Fortune: Microsoft reports show AI agents can cost more than paying human employees",
+       "Exponential View 'Bye, bye fixed costs. Hello, token anxiety'",
+       "Stanford/Vantage: agentic tasks consume ~1000x more tokens than code chat",
+       "Uber CTO: 2026 AI coding budget exhausted in 4 months"
+      ],
+      "spotted_at": [
+       "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+       "https://www.exponentialview.co/p/bye-bye-fixed-costs-hello-token-anxiety",
+       "https://www.vantage.sh/blog/agentic-coding-costs"
+      ]
+     }
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Fervo Energy completes $1.89B clean-energy IPO at $10B+",
+     "detail": "On May 12-13, 2026, Fervo Energy priced and debuted the largest-ever clean-energy IPO, raising $1.89B at $27/share, closing up 35% on day one for a market cap above $10B. The Bill Gates-backed enhanced geothermal company is positioned as the leading 24/7 firm clean power source for AI data centers.",
+     "source_urls": [
+      "https://www.bloomberg.com/news/articles/2026-05-13/geothermal-energy-firm-fervo-rises-33-after-1-89-billion-ipo",
+      "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/"
+     ],
+     "payload": {
+      "candidate_area": "Enhanced geothermal / 24-7 firm clean power for AI data centers",
+      "summary": "Fervo Energy IPO raises $1.89B (largest clean-energy IPO ever); stock pops 35% on debut for $10B+ market cap — public-market validation of EGS as the bankable firm-power source for the AI buildout.",
+      "url": "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/"
+     }
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "EU draft transparency guidelines for AI-generated content",
+     "detail": "On May 8, 2026, the European Commission published draft guidelines on Article 50 of the EU AI Act, clarifying that transparency labels for synthetic content must be clear, distinguishable, and repeated over time — not just at the opening of a video.",
+     "source_urls": [
+      "https://www.insideglobaltech.com/2026/05/12/10-takeaways-european-commission-draft-guidelines-on-ai-transparency-under-the-eu-ai-act/"
+     ],
+     "payload": {
+      "candidate_area": "AI regulation / synthetic content labeling",
+      "summary": "EU Commission's May 8 draft Article 50 guidelines mandate persistent (not one-time) AI-content labels, signaling a stricter global benchmark for synthetic-media disclosure.",
+      "url": "https://www.insideglobaltech.com/2026/05/12/10-takeaways-european-commission-draft-guidelines-on-ai-transparency-under-the-eu-ai-act/"
+     }
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Joby enters Stage 5 (final) of FAA eVTOL type certification",
+     "detail": "By late May 2026, Joby Aviation cleared Stage 4 of FAA Type Certification (airworthiness conformity review) and entered Stage 5, the final phase. Targets full TC by September 2026 and late-2026 commercial launch with Delta in NYC and LA.",
+     "source_urls": [
+      "https://www.aircraftinsider.com/joby-aviation-clears-faa-stage-4-certification-commercial-evtol-passenger-flights-could-launch-by-end-of-2026/"
+     ],
+     "payload": {
+      "candidate_area": "eVTOL / advanced air mobility",
+      "summary": "Joby in Stage 5 (final) of FAA Type Certification with Stage 4 cleared; first-ever US commercial eVTOL TC within a one-quarter horizon (target Sept 2026), Delta-partnered NYC/LA launch by year-end.",
+      "url": "https://www.aircraftinsider.com/joby-aviation-clears-faa-stage-4-certification-commercial-evtol-passenger-flights-could-launch-by-end-of-2026/"
+     }
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Frontier AI hits inflection in vulnerability discovery (Palo Alto)",
+     "detail": "Palo Alto Networks' May 2026 patch advisory disclosed 26 CVEs covering 75 issues (vs. usual <5/month) — the majority of findings came from frontier AI models scanning their own codebase for the first time, a concrete inflection in AI-in-cybersecurity.",
+     "source_urls": [
+      "https://www.paloaltonetworks.com/blog/2026/05/defenders-guide-frontier-ai-impact-cybersecurity-may-2026-update/"
+     ],
+     "payload": {
+      "candidate_area": "AI safety / cybersecurity",
+      "summary": "Palo Alto's May 2026 patch advisory disclosed 5-10x normal CVE volume, with most findings from frontier-AI code scans — first time vulnerability discovery has visibly crossed an AI-driven inflection.",
+      "url": "https://www.paloaltonetworks.com/blog/2026/05/defenders-guide-frontier-ai-impact-cybersecurity-may-2026-update/"
+     }
+    },
+    {
+     "kind": "NEW_VOICE",
+     "breakthrough_id": null,
+     "title": "Sholto Douglas — go-to voice on RL-for-reasoning",
+     "detail": "Anthropic researcher Sholto Douglas appeared on Dwarkesh Patel's podcast May 23 and has rapidly become the most-cited explainer of RL on reasoning traces, with the episode crossing 1M views and clips reshared by Karpathy, Lambert, and Chollet.",
+     "source_urls": [
+      "https://www.dwarkeshpatel.com/p/sholto-douglas-trenton-bricken-2026",
+      "https://x.com/_sholtodouglas"
+     ],
+     "payload": {
+      "name": "Sholto Douglas",
+      "role": "Member of Technical Staff, Anthropic (RL & reasoning)",
+      "focus": "RL on reasoning traces, agent training, inference-time compute",
+      "follow_url": "https://x.com/_sholtodouglas",
+      "twitter": "https://x.com/_sholtodouglas",
+      "youtube": null,
+      "newsletter": null,
+      "notes": "Currently the clearest public explainer of how frontier labs are actually training reasoning models; Dwarkesh appearance crossed 1M views and was reshared by Karpathy, Lambert, Chollet.",
+      "tags": [
+       "AI",
+       "RL",
+       "REASONING"
+      ]
+     }
+    }
+   ],
+   "additions": {
+    "new_breakthroughs": [],
+    "new_sub_ideas": [
+     "reasoning_models/Equilibrium Reasoners (latent-attractor TTC)",
+     "quantum_error_correction/Logical-qubit advantage on real applications (neutral atoms)"
+    ],
+    "new_frontier": [
+     "transformers_llms/frontier",
+     "transformers_llms/frontier",
+     "self_driving/frontier",
+     "alphafold_protein_design/frontier",
+     "quantum_error_correction/frontier"
+    ],
+    "new_watch": [
+     "bci/watch:Rice/Baylor BrainGate team",
+     "fusion/watch:Thea Energy"
+    ],
+    "new_people": [
+     "alphafold_protein_design/person:Alexander Rives"
+    ],
+    "new_voices": [
+     "voice:Sholto Douglas"
+    ],
+    "trending_ideas": [
+     "trending:World models go mainstream as the next AI frontier",
+     "trending:Token-cost anxiety: agentic coding burning AI budgets"
+    ],
+    "updates": [
+     "transformers_llms/update:Anthropic Series H funding closed",
+     "self_driving/update:Pony.ai global robotaxi fleet size",
+     "humanoid_robotics/update:Figure 03 production rate",
+     "crispr_therapies/update:VERVE-102 Phase 1b Heart-2 readout",
+     "glp1/update:Retatrutide (GIP/GLP-1/glucagon) TRIUMPH-1 Phase 3 obesity readout",
+     "reusable_rockets/update:Starship V3 first flight",
+     "reusable_rockets/update:Blue Origin New Glenn status",
+     "quantum_error_correction/update:PsiQuantum US government support",
+     "ai_accelerators/update:Cerebras post-IPO status"
+    ],
+    "broad_scan": [
+     "broad_scan:Enhanced geothermal / 24-7 firm clean po",
+     "broad_scan:AI regulation / synthetic content labeli",
+     "broad_scan:eVTOL / advanced air mobility",
+     "broad_scan:AI safety / cybersecurity"
+    ],
+    "skipped_dedupe": []
+   },
+   "as_of_date": "2026-05-29",
+   "generated_at": "2026-05-29T15:03:28.952380+00:00"
   }
  ],
  "voices": [
@@ -5941,6 +7188,39 @@ const STATE = {
    "newsletter": null,
    "added_by": "base_run",
    "added_at": "2026-05-18"
+  },
+  {
+   "name": "Nathan Lambert",
+   "role": "Senior research scientist & post-training lead, Allen Institute for AI (Ai2); founder, Interconnects",
+   "focus": "Post-training methods, open models, RLHF/RLVR, LLM architecture trajectory",
+   "follow_url": "https://www.interconnects.ai/",
+   "twitter": "https://twitter.com/natolambert",
+   "youtube": "",
+   "newsletter": "https://www.interconnects.ai/",
+   "notes": "Interconnects has crossed 60K+ subscribers and is now the standard reference for post-training and open-model coverage. Frequently cited by Karpathy-adjacent voices; podcast feed expanded in 2026.",
+   "tags": [
+    "AI"
+   ],
+   "source_url": "https://www.interconnects.ai/about",
+   "added_by": "weekly_task",
+   "added_at": "2026-05-22"
+  },
+  {
+   "name": "Sholto Douglas",
+   "role": "Member of Technical Staff, Anthropic (RL & reasoning)",
+   "focus": "RL on reasoning traces, agent training, inference-time compute",
+   "follow_url": "https://x.com/_sholtodouglas",
+   "twitter": "https://x.com/_sholtodouglas",
+   "youtube": null,
+   "newsletter": null,
+   "notes": "Currently the clearest public explainer of how frontier labs are actually training reasoning models; Dwarkesh appearance crossed 1M views and was reshared by Karpathy, Lambert, Chollet.",
+   "tags": [
+    "AI",
+    "RL",
+    "REASONING"
+   ],
+   "added_by": "weekly_task",
+   "added_at": "2026-05-29"
   }
  ]
 };
@@ -6203,16 +7483,57 @@ function highlightKindBadge(k) {
   };
   return `<span style="display:inline-block;padding:1px 7px;border-radius:3px;font-size:10px;font-weight:600;letter-spacing:0.04em;${colorMap[k] || colorMap.BASE}">${k.replace('_', ' ')}</span>`;
 }
+// Domain-of-highlight resolver: maps a highlight to its domain via breakthrough_id,
+// falls back to voice tags for NEW_VOICE.
+function domainOfHighlight(h) {
+  if (h.breakthrough_id) {
+    const b = STATE.breakthroughs.find(x => x.id === h.breakthrough_id);
+    if (b) return b.domain;
+  }
+  if (h.kind === 'NEW_VOICE' && h.payload && Array.isArray(h.payload.tags)) {
+    return h.payload.tags.map(t => String(t).toUpperCase());
+  }
+  return null;
+}
+function highlightMatchesFilter(h, f) {
+  if (f.domain.size) {
+    const dom = domainOfHighlight(h);
+    if (!dom) return false;
+    const doms = Array.isArray(dom) ? dom : [dom];
+    if (!doms.some(d => f.domain.has(d))) return false;
+  }
+  if (f.kind.size && !f.kind.has(h.kind)) return false;
+  return true;
+}
+const weeklyFilter = { domain: new Set(), kind: new Set() };
 function renderWeekly() {
   const tl = document.getElementById('weekly-timeline');
   const cnt = document.getElementById('weekly-count');
   const hist = (STATE.weekly_history || []).slice().reverse();
-  cnt.textContent = `${hist.length} weekly entr${hist.length === 1 ? 'y' : 'ies'} (newest first)`;
   if (!hist.length) {
     tl.innerHTML = '<div class="empty">No weekly history yet. Run the scheduled weekly task to start populating this.</div>';
+    cnt.textContent = '0 entries';
     return;
   }
-  tl.innerHTML = hist.map((entry, idx) => {
+  const filtersActive = weeklyFilter.domain.size > 0 || weeklyFilter.kind.size > 0;
+  // Apply filter to each entry's highlights
+  const visible = hist
+    .map(entry => ({
+      ...entry,
+      highlights: (entry.highlights || []).filter(h => highlightMatchesFilter(h, weeklyFilter))
+    }))
+    .filter(entry => !filtersActive || (entry.highlights && entry.highlights.length > 0));
+  const totalMatches = visible.reduce((s, e) => s + (e.highlights || []).length, 0);
+  const totalAll = hist.reduce((s, e) => s + ((e.highlights || []).length), 0);
+  cnt.textContent = filtersActive
+    ? `${totalMatches} of ${totalAll} highlights match · ${visible.length} of ${hist.length} weeks`
+    : `${hist.length} weekly entr${hist.length === 1 ? 'y' : 'ies'} · ${totalAll} highlights total (newest first)`;
+  const hist_to_render = visible;
+  if (!hist_to_render.length) {
+    tl.innerHTML = '<div class="empty">No highlights match these filters.</div>';
+    return;
+  }
+  tl.innerHTML = hist_to_render.map((entry, idx) => {
     const isLatest = idx === 0;
     const kindLabel = entry.kind === 'BASE_RUN' ? 'Base run' : 'Weekly update';
     const highlights = (entry.highlights || []).map(h => `
@@ -6307,6 +7628,22 @@ document.getElementById('reset-voices').addEventListener('click', () => {
   document.getElementById('voices-search').value = '';
   document.querySelectorAll('[data-vfilter].active').forEach(c => c.classList.remove('active'));
   renderVoices();
+});
+
+// Weekly filter chip wiring
+document.querySelectorAll('[data-wkfilter]').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const f = chip.dataset.wkfilter, v = chip.dataset.val;
+    const set = weeklyFilter[f];
+    if (set.has(v)) { set.delete(v); chip.classList.remove('active'); }
+    else { set.add(v); chip.classList.add('active'); }
+    renderWeekly();
+  });
+});
+document.getElementById('reset-weekly').addEventListener('click', () => {
+  weeklyFilter.domain.clear(); weeklyFilter.kind.clear();
+  document.querySelectorAll('[data-wkfilter].active').forEach(c => c.classList.remove('active'));
+  renderWeekly();
 });
 
 renderCards();

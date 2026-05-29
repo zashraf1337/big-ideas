@@ -7638,12 +7638,14 @@ document.querySelectorAll('[data-wkfilter]').forEach(chip => {
     if (set.has(v)) { set.delete(v); chip.classList.remove('active'); }
     else { set.add(v); chip.classList.add('active'); }
     renderWeekly();
+    updateUrl();
   });
 });
 document.getElementById('reset-weekly').addEventListener('click', () => {
   weeklyFilter.domain.clear(); weeklyFilter.kind.clear();
   document.querySelectorAll('[data-wkfilter].active').forEach(c => c.classList.remove('active'));
   renderWeekly();
+  updateUrl();
 });
 
 renderCards();
@@ -7651,6 +7653,129 @@ renderWeekly();
 renderPeople();
 renderWatch();
 renderVoices();
+
+// =====================================================================
+// URL ROUTING — share direct links to a tab + filter combination
+// e.g. #weekly?domain=AI       (Weekly tab, only AI highlights)
+//      #weekly?domain=AI,BIO&kind=NEW_FRONTIER
+//      #voices?tag=AI
+//      #people
+// =====================================================================
+const URL_TABS = ['overview', 'weekly', 'people', 'watch', 'voices'];
+
+function _switchTab(tabName) {
+  if (!URL_TABS.includes(tabName)) tabName = 'overview';
+  document.querySelectorAll('nav.tabs button').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === tabName));
+  URL_TABS.forEach(t =>
+    document.getElementById('view-' + t).style.display = (t === tabName) ? '' : 'none');
+}
+
+function _setChipsFromState(selector, stateSet) {
+  document.querySelectorAll(selector).forEach(chip => {
+    chip.classList.toggle('active', stateSet.has(chip.dataset.val));
+  });
+}
+
+function updateUrl() {
+  const activeTab = document.querySelector('nav.tabs button.active')?.dataset.tab || 'overview';
+  const params = new URLSearchParams();
+  if (activeTab === 'weekly') {
+    if (weeklyFilter.domain.size) params.set('domain', [...weeklyFilter.domain].join(','));
+    if (weeklyFilter.kind.size)   params.set('kind',   [...weeklyFilter.kind].join(','));
+  } else if (activeTab === 'voices') {
+    if (voicesFilter.tag.size) params.set('tag', [...voicesFilter.tag].join(','));
+    if (voicesFilter.agentic)  params.set('agentic', '1');
+    if (voicesFilter.q)        params.set('q', voicesFilter.q);
+  } else if (activeTab === 'people') {
+    if (peopleFilter.orgtype.size) params.set('orgtype', [...peopleFilter.orgtype].join(','));
+    if (peopleFilter.domain.size)  params.set('domain',  [...peopleFilter.domain].join(','));
+    if (peopleFilter.q)            params.set('q', peopleFilter.q);
+  } else if (activeTab === 'watch') {
+    if (watchFilter.type.size)   params.set('type',   [...watchFilter.type].join(','));
+    if (watchFilter.domain.size) params.set('domain', [...watchFilter.domain].join(','));
+    if (watchFilter.q)           params.set('q', watchFilter.q);
+  } else if (activeTab === 'overview') {
+    if (filterState.domain.size)  params.set('domain',  [...filterState.domain].join(','));
+    if (filterState.orgtype.size) params.set('orgtype', [...filterState.orgtype].join(','));
+    if (filterState.watchonly)    params.set('watchonly', '1');
+  }
+  const qs = params.toString();
+  const newHash = '#' + activeTab + (qs ? '?' + qs : '');
+  if (window.location.hash !== newHash) {
+    history.replaceState(null, '', newHash);
+  }
+}
+
+function applyUrlState() {
+  const raw = window.location.hash.replace(/^#/, '');
+  if (!raw) { _switchTab('overview'); return; }
+  const [tab, qstr] = raw.split('?');
+  _switchTab(tab);
+  const params = new URLSearchParams(qstr || '');
+  const splitCSV = k => (params.get(k) || '').split(',').filter(Boolean);
+
+  if (tab === 'weekly') {
+    weeklyFilter.domain.clear(); weeklyFilter.kind.clear();
+    splitCSV('domain').forEach(v => weeklyFilter.domain.add(v));
+    splitCSV('kind').forEach(v => weeklyFilter.kind.add(v));
+    _setChipsFromState('[data-wkfilter="domain"]', weeklyFilter.domain);
+    _setChipsFromState('[data-wkfilter="kind"]',   weeklyFilter.kind);
+    renderWeekly();
+  } else if (tab === 'voices') {
+    voicesFilter.tag.clear(); voicesFilter.agentic = false; voicesFilter.q = params.get('q') || '';
+    splitCSV('tag').forEach(v => voicesFilter.tag.add(v));
+    if (params.get('agentic') === '1') voicesFilter.agentic = true;
+    _setChipsFromState('[data-vfilter="tag"]', voicesFilter.tag);
+    const agChip = document.querySelector('[data-vfilter="agentic"]');
+    if (agChip) agChip.classList.toggle('active', voicesFilter.agentic);
+    const vs = document.getElementById('voices-search'); if (vs) vs.value = voicesFilter.q;
+    renderVoices();
+  } else if (tab === 'people') {
+    peopleFilter.orgtype.clear(); peopleFilter.domain.clear(); peopleFilter.q = params.get('q') || '';
+    splitCSV('orgtype').forEach(v => peopleFilter.orgtype.add(v));
+    splitCSV('domain').forEach(v  => peopleFilter.domain.add(v));
+    _setChipsFromState('[data-pfilter="orgtype"]', peopleFilter.orgtype);
+    _setChipsFromState('[data-pfilter="domain"]',  peopleFilter.domain);
+    const ps = document.getElementById('people-search'); if (ps) ps.value = peopleFilter.q;
+    renderPeople();
+  } else if (tab === 'watch') {
+    watchFilter.type.clear(); watchFilter.domain.clear(); watchFilter.q = params.get('q') || '';
+    splitCSV('type').forEach(v   => watchFilter.type.add(v));
+    splitCSV('domain').forEach(v => watchFilter.domain.add(v));
+    _setChipsFromState('[data-wfilter="type"]',   watchFilter.type);
+    _setChipsFromState('[data-wfilter="domain"]', watchFilter.domain);
+    const ws = document.getElementById('watch-search'); if (ws) ws.value = watchFilter.q;
+    renderWatch();
+  } else if (tab === 'overview') {
+    filterState.domain.clear(); filterState.orgtype.clear(); filterState.watchonly = false;
+    splitCSV('domain').forEach(v  => filterState.domain.add(v));
+    splitCSV('orgtype').forEach(v => filterState.orgtype.add(v));
+    if (params.get('watchonly') === '1') filterState.watchonly = true;
+    _setChipsFromState('#overview-filters [data-filter="domain"]',  filterState.domain);
+    _setChipsFromState('#overview-filters [data-filter="orgtype"]', filterState.orgtype);
+    const woChip = document.querySelector('#overview-filters [data-filter="watchonly"]');
+    if (woChip) woChip.classList.toggle('active', filterState.watchonly);
+    renderCards();
+  }
+}
+
+// Tab clicks now also update the URL
+document.querySelectorAll('nav.tabs button').forEach(btn => {
+  btn.addEventListener('click', () => updateUrl());
+});
+
+// Wire other tabs' filter chips and search boxes to updateUrl too
+document.querySelectorAll('[data-pfilter], [data-wfilter], [data-vfilter], #overview-filters .chip').forEach(el => {
+  el.addEventListener('click', () => setTimeout(updateUrl, 0));
+});
+['people-search', 'watch-search', 'voices-search'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', () => setTimeout(updateUrl, 0));
+});
+
+window.addEventListener('hashchange', applyUrlState);
+applyUrlState();
 </script>
 </body>
 </html>

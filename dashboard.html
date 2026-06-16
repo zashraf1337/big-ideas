@@ -71,8 +71,8 @@
   }
   .chip:hover { color: var(--text); border-color: var(--border-strong); }
   .chip.active {
-    background: rgba(88, 166, 255, 0.15); color: var(--accent-2);
-    border-color: rgba(88, 166, 255, 0.4);
+    background: var(--accent); color: #fff;
+    border-color: var(--accent); font-weight: 600;
   }
   .filters .sep { width: 1px; align-self: stretch; background: var(--border); margin: 0 6px; }
   .filters input.search {
@@ -210,6 +210,23 @@
   .th-items { display: flex; flex-direction: column; gap: 2px; padding: 1px 0 4px 30px; }
   .th-item { font-size: 11px; color: var(--accent); text-decoration: none; line-height: 1.3; }
   .th-item:hover { text-decoration: underline; }
+  .search-wrap { margin-left: auto; position: relative; }
+  #globalsearch { background: var(--bg-2); border: 1px solid var(--border); color: var(--text);
+    border-radius: 6px; padding: 5px 10px; font-size: 12px; width: 220px; }
+  #globalsearch:focus { outline: none; border-color: var(--accent); width: 300px; }
+  .search-results { position: absolute; top: 120%; right: 0; width: 480px; max-height: 64vh; overflow: auto;
+    background: var(--bg-2); border: 1px solid var(--border-strong); border-radius: 8px; z-index: 60;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4); display: none; }
+  .sr-row { display: grid; grid-template-columns: 88px 1fr auto; gap: 8px; align-items: baseline;
+    padding: 6px 10px; border-top: 1px solid var(--border); cursor: pointer; font-size: 12px; }
+  .sr-row:first-child { border-top: none; }
+  .sr-row:hover { background: var(--bg-3); }
+  .sr-type { font-size: 9px; font-weight: 700; letter-spacing: .04em; color: var(--text-muted); text-transform: uppercase; }
+  .sr-sub { color: var(--text-dim); font-size: 10px; text-align: right; }
+  .sr-empty { padding: 10px; color: var(--text-dim); font-size: 12px; }
+  .new-badge { font-size: 8px; font-weight: 700; letter-spacing: .04em; color: var(--green);
+    border: 1px solid var(--green); border-radius: 3px; padding: 0 3px; margin-left: 6px; vertical-align: middle; }
+  .cov-spark { vertical-align: middle; margin-left: 6px; }
   footer.app {
     margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--border);
     color: var(--text-muted); font-size: 11px; text-align: center;
@@ -222,6 +239,7 @@
     <h1>Tech Breakthrough Ideas <span class="sub" style="font-size:0.55em;font-weight:500;opacity:0.7;">(Updated Weekly)</span></h1>
     <span class="sub">AI · Bio · Energy · Space · Quantum</span>
     <span class="stamp" id="stamp"></span>
+    <span class="search-wrap"><input id="globalsearch" type="search" placeholder="Search everything…" autocomplete="off"><div class="search-results" id="search-results"></div></span>
   </header>
   <nav class="tabs">
     <button data-tab="overview" class="active">Overview</button>
@@ -256,6 +274,7 @@
   <div id="view-overview">
     <div class="filters" id="overview-filters">
       <span class="label">Domain:</span>
+      <span class="chip" id="ov-all-domains">All</span>
       <span class="chip" data-filter="domain" data-val="AI">AI</span>
       <span class="chip" data-filter="domain" data-val="BIO">Bio</span>
       <span class="chip" data-filter="domain" data-val="ENERGY">Energy</span>
@@ -12014,6 +12033,72 @@ const STATE = {
   "note": "Themes are the board's spine; breakthroughs are the items nested under sub-themes via maps_to. status='gap' sub-themes are active-in-field coverage targets the weekly run fills in. Auto-expanded sub-themes get status='proposed'."
  }
 };
+const COVERAGE_HISTORY = [
+  {
+    "date": "2026-06-16",
+    "as_of": "2026-06-16",
+    "domains": {
+      "AI": {
+        "coverage": 0.6,
+        "active": 24,
+        "gap": 16,
+        "proposed": 0,
+        "total": 40
+      },
+      "BIO": {
+        "coverage": 0.6,
+        "active": 15,
+        "gap": 10,
+        "proposed": 0,
+        "total": 25
+      },
+      "ENERGY": {
+        "coverage": 0.467,
+        "active": 7,
+        "gap": 8,
+        "proposed": 0,
+        "total": 15
+      },
+      "SPACE": {
+        "coverage": 0.4,
+        "active": 4,
+        "gap": 6,
+        "proposed": 0,
+        "total": 10
+      },
+      "QUANTUM": {
+        "coverage": 0.333,
+        "active": 4,
+        "gap": 8,
+        "proposed": 0,
+        "total": 12
+      },
+      "HARDWARE": {
+        "coverage": 0.308,
+        "active": 4,
+        "gap": 9,
+        "proposed": 0,
+        "total": 13
+      },
+      "ROBOTICS": {
+        "coverage": 0.308,
+        "active": 4,
+        "gap": 9,
+        "proposed": 0,
+        "total": 13
+      }
+    },
+    "totals": {
+      "active": 62,
+      "gap": 66,
+      "proposed": 0
+    }
+  }
+];
+// "new this week" = touched in the most recent weekly_history entry
+const _lastWk = (STATE.weekly_history || []).slice(-1)[0] || {};
+const NEW_SUB = new Set((_lastWk.additions && _lastWk.additions.routed_subthemes) || []);
+const NEW_BT = new Set(((_lastWk.highlights) || []).map(h => h.breakthrough_id).filter(Boolean));
 const stamp = document.getElementById('stamp');
 const lu = new Date(STATE.meta.last_updated);
 stamp.textContent = 'last updated ' + lu.toISOString().replace('T', ' ').replace(/\..+/, 'Z');
@@ -12038,7 +12123,11 @@ function renderCards() {
     if (filterState.watchonly && b.watch_list.length === 0) return false;
     return true;
   });
-  count.textContent = `${filtered.length} of ${STATE.breakthroughs.length} breakthroughs`;
+  const _anyF = filterState.domain.size || filterState.orgtype.size || filterState.watchonly;
+  const _domLbl = filterState.domain.size ? [...filterState.domain].join(', ') : 'all domains';
+  count.textContent = _anyF
+    ? `${filtered.length} of ${STATE.breakthroughs.length} breakthroughs · ${_domLbl}`
+    : `All ${STATE.breakthroughs.length} breakthroughs · all domains`;
   cards.innerHTML = filtered.map(b => {
     const watchPick = b.watch_list[0] ? b.watch_list[0].name : '—';
     const subs = (b.sub_ideas || []);
@@ -12048,7 +12137,7 @@ function renderCards() {
     return `
       <div class="card" data-id="${b.id}">
         <div class="num">#${String(b.number).padStart(2, '0')}</div>
-        <h3>${escapeHtml(b.title)}</h3>
+        <h3>${escapeHtml(b.title)}${NEW_BT.has(b.id) ? '<span class="new-badge">NEW</span>' : ''}</h3>
         <span class="domain-tag domain-${b.domain}">${b.domain}</span>
         ${subList}
         <div class="impact">${escapeHtml(b.impact_so_far)}</div>
@@ -12078,6 +12167,11 @@ document.querySelectorAll('#overview-filters .chip').forEach(chip => {
 document.getElementById('reset-overview').addEventListener('click', () => {
   filterState.domain.clear(); filterState.orgtype.clear(); filterState.watchonly = false;
   document.querySelectorAll('#overview-filters .chip.active').forEach(c => c.classList.remove('active'));
+  renderCards();
+});
+document.getElementById('ov-all-domains').addEventListener('click', () => {
+  filterState.domain.clear();
+  document.querySelectorAll('#overview-filters [data-filter="domain"].active').forEach(c => c.classList.remove('active'));
   renderCards();
 });
 
@@ -12482,7 +12576,7 @@ function renderThemes() {
         const itemsBlock = items ? `<div class="th-items">${items}</div>` : '';
         return `<div class="th-subwrap"><div class="th-sub"${click}>
             <span style="display:inline-flex;gap:7px;align-items:center;">${_statusDot(st.status)} ${_trackBadge(st.track)}</span>
-            <span class="th-sub-name">${escapeHtml(st.name)}</span>
+            <span class="th-sub-name">${escapeHtml(st.name)}${NEW_SUB.has(st.id) ? '<span class="new-badge">NEW</span>' : ''}</span>
             <span class="th-sub-meta">${cntTxt} ${link}</span>
           </div>${itemsBlock}</div>`;
       }).join('');
@@ -12493,7 +12587,7 @@ function renderThemes() {
     html += `<section class="th-domain"><div class="th-domain-h"><span class="domain-tag domain-${d.domain}">${d.domain}</span></div>
         <div class="th-themes">${themesHtml}</div></section>`;
   });
-  cnt.innerHTML = `${nShown} of ${nSub} sub-themes shown · <span style="color:var(--orange)">${nGap} gaps</span> · <span style="color:var(--purple)">${nProp} proposed</span> · ● tracked ○ gap ◆ proposed`;
+  cnt.innerHTML = `${nShown} of ${nSub} sub-themes shown · <span style="color:var(--orange)">${nGap} gaps</span> · <span style="color:var(--purple)">${nProp} proposed</span> · ● tracked ○ gap ◆ proposed ${covSparkline()}`;
   body.innerHTML = html || '<div class="empty">No sub-themes match these filters.</div>';
   body.querySelectorAll('.th-sub[data-bt]').forEach(el => el.addEventListener('click', () => openModal(el.dataset.bt)));
 }
@@ -12503,15 +12597,80 @@ document.querySelectorAll('[data-thfilter]').forEach(chip => {
     const v = chip.dataset.val;
     if (set.has(v)) { set.delete(v); chip.classList.remove('active'); }
     else { set.add(v); chip.classList.add('active'); }
-    renderThemes();
+    renderThemes(); updateUrl();
   });
 });
 document.getElementById('reset-themes').addEventListener('click', () => {
   themesFilter.domain.clear(); themesFilter.track.clear(); themesFilter.status.clear();
   document.querySelectorAll('[data-thfilter].active').forEach(c => c.classList.remove('active'));
-  renderThemes();
+  renderThemes(); updateUrl();
 });
 renderThemes();
+
+// --- Coverage sparkline (lag-watch trend from coverage_history.json) ---
+function covSparkline() {
+  const h = COVERAGE_HISTORY || [];
+  if (h.length < 2) return '';
+  const gaps = h.map(s => (s.totals ? s.totals.gap : 0));
+  const max = Math.max(...gaps), min = Math.min(...gaps), W = 84, H = 16;
+  const pts = gaps.map((g, i) => {
+    const x = (gaps.length === 1 ? 0 : i / (gaps.length - 1) * W);
+    const y = H - ((g - min) / ((max - min) || 1)) * H;
+    return x.toFixed(1) + ',' + y.toFixed(1);
+  }).join(' ');
+  const trend = gaps[gaps.length - 1] - gaps[0];
+  const col = trend <= 0 ? 'var(--green)' : 'var(--orange)';
+  return `<svg class="cov-spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.5"/></svg><span style="color:${col};font-size:10px">gaps ${gaps[gaps.length-1]} ${trend<=0?'▼':'▲'}${Math.abs(trend)}</span>`;
+}
+
+// Navigate to a sub-theme in the Themes tab (filtered to its domain) and highlight it.
+function gotoTheme(domain, subName) {
+  _switchTab('themes');
+  themesFilter.domain.clear(); themesFilter.track.clear(); themesFilter.status.clear();
+  themesFilter.domain.add(domain);
+  document.querySelectorAll('[data-thfilter].active').forEach(c => c.classList.remove('active'));
+  _setChipsFromState('[data-thfilter="domain"]', themesFilter.domain);
+  renderThemes(); updateUrl();
+  setTimeout(() => {
+    const node = [...document.querySelectorAll('#themes-body .th-sub-name')]
+      .find(n => n.textContent.replace(/NEW$/, '').trim() === subName);
+    const hl = node ? (node.closest('.th-subwrap') || node.closest('.th-sub')) : null;
+    if (hl) { hl.scrollIntoView({ block: 'center' }); hl.style.outline = '2px solid var(--accent)'; setTimeout(() => hl.style.outline = '', 1800); }
+  }, 40);
+}
+
+// --- Global search across breakthroughs, people, watch, voices, theme items ---
+function globalSearch(q) {
+  q = (q || '').trim().toLowerCase();
+  const box = document.getElementById('search-results');
+  if (q.length < 2) { box.style.display = 'none'; box.innerHTML = ''; return; }
+  const res = [];
+  STATE.breakthroughs.forEach(b => {
+    const hay = (b.title + ' ' + (b.sub_ideas || []).map(s => s.name).join(' ')).toLowerCase();
+    if (hay.includes(q)) res.push({ t: 'Breakthrough', l: b.title, s: b.domain, act: () => { _switchTab('overview'); openModal(b.id); } });
+    (b.people || []).forEach(p => { if ((p.name || '').toLowerCase().includes(q)) res.push({ t: 'Person', l: p.name, s: p.affiliation || b.title, act: () => { _switchTab('overview'); openModal(b.id); } }); });
+    (b.watch_list || []).forEach(w => { if (((w.name || '') + ' ' + (w.org || '')).toLowerCase().includes(q)) res.push({ t: 'Watch', l: w.name, s: w.org || b.title, act: () => { _switchTab('watch'); const ws = document.getElementById('watch-search'); if (ws) { ws.value = w.name; watchFilter.q = w.name; renderWatch(); } } }); });
+  });
+  (STATE.voices || []).forEach(v => { if (((v.name || '') + ' ' + (v.role || '')).toLowerCase().includes(q)) res.push({ t: 'Voice', l: v.name, s: v.role || '', act: () => { _switchTab('voices'); const vs = document.getElementById('voices-search'); if (vs) { vs.value = v.name; voicesFilter.q = v.name; renderVoices(); } } }); });
+  (STATE.taxonomy ? STATE.taxonomy.domains : []).forEach(d => d.themes.forEach(th => th.subthemes.forEach(st => {
+    if ((st.name || '').toLowerCase().includes(q)) res.push({ t: 'Sub-theme', l: st.name, s: d.domain + ' · ' + th.name, act: () => gotoTheme(d.domain, st.name) });
+    (st.recent_items || []).forEach(it => { if ((it.title || '').toLowerCase().includes(q)) res.push({ t: 'Theme item', l: it.title, s: d.domain + ' · ' + st.name, act: () => gotoTheme(d.domain, st.name) }); });
+  })));
+  const rows = res.slice(0, 40).map((r, i) => `<div class="sr-row" data-idx="${i}"><span class="sr-type">${r.t}</span><span>${escapeHtml(r.l)}</span><span class="sr-sub">${escapeHtml(r.s || '')}</span></div>`).join('');
+  box.innerHTML = res.length ? rows : '<div class="sr-empty">No matches</div>';
+  box.style.display = 'block';
+  box.querySelectorAll('.sr-row').forEach(el => el.addEventListener('click', () => {
+    box.style.display = 'none'; document.getElementById('globalsearch').value = ''; res[+el.dataset.idx].act();
+  }));
+}
+const _gs = document.getElementById('globalsearch');
+if (_gs) {
+  _gs.addEventListener('input', e => globalSearch(e.target.value));
+  _gs.addEventListener('keydown', e => { if (e.key === 'Escape') { _gs.value = ''; globalSearch(''); } });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search-wrap')) { const b = document.getElementById('search-results'); if (b) b.style.display = 'none'; }
+  });
+}
 
 // =====================================================================
 // URL ROUTING — share direct links to a tab + filter combination
@@ -12537,9 +12696,13 @@ function _setChipsFromState(selector, stateSet) {
 }
 
 function updateUrl() {
-  const activeTab = document.querySelector('nav.tabs button.active')?.dataset.tab || 'overview';
+  const activeTab = document.querySelector('nav.tabs button.active')?.dataset.tab || 'themes';
   const params = new URLSearchParams();
-  if (activeTab === 'weekly') {
+  if (activeTab === 'themes') {
+    if (themesFilter.domain.size) params.set('domain', [...themesFilter.domain].join(','));
+    if (themesFilter.track.size)  params.set('track',  [...themesFilter.track].join(','));
+    if (themesFilter.status.size) params.set('status', [...themesFilter.status].join(','));
+  } else if (activeTab === 'weekly') {
     if (weeklyFilter.domain.size) params.set('domain', [...weeklyFilter.domain].join(','));
     if (weeklyFilter.kind.size)   params.set('kind',   [...weeklyFilter.kind].join(','));
   } else if (activeTab === 'voices') {
@@ -12568,13 +12731,22 @@ function updateUrl() {
 
 function applyUrlState() {
   const raw = window.location.hash.replace(/^#/, '');
-  if (!raw) { _switchTab('overview'); return; }
+  if (!raw) { _switchTab('themes'); renderThemes(); return; }
   const [tab, qstr] = raw.split('?');
   _switchTab(tab);
   const params = new URLSearchParams(qstr || '');
   const splitCSV = k => (params.get(k) || '').split(',').filter(Boolean);
 
-  if (tab === 'weekly') {
+  if (tab === 'themes') {
+    themesFilter.domain.clear(); themesFilter.track.clear(); themesFilter.status.clear();
+    splitCSV('domain').forEach(v => themesFilter.domain.add(v));
+    splitCSV('track').forEach(v  => themesFilter.track.add(v));
+    splitCSV('status').forEach(v => themesFilter.status.add(v));
+    _setChipsFromState('[data-thfilter="domain"]', themesFilter.domain);
+    _setChipsFromState('[data-thfilter="track"]',  themesFilter.track);
+    _setChipsFromState('[data-thfilter="status"]', themesFilter.status);
+    renderThemes();
+  } else if (tab === 'weekly') {
     weeklyFilter.domain.clear(); weeklyFilter.kind.clear();
     splitCSV('domain').forEach(v => weeklyFilter.domain.add(v));
     splitCSV('kind').forEach(v => weeklyFilter.kind.add(v));

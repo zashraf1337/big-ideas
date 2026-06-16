@@ -1,0 +1,268 @@
+{
+  "week_ending": "2026-06-05",
+  "summary": "ADA 2026 and Computex dominated the week. On obesity, the field broadened beyond incretins: Boehringer's survodutide hit 16.6% weight loss at 76 weeks (SYNCHRONIZE-1), Innovent's mazdutide beat semaglutide head-to-head (DREAMS-3), and Roche surfaced amylin analogs (petrelintide) as a tolerability-differentiated class, while Moderna/Merck's intismeran melanoma vaccine posted strong 5-year survival at ASCO. In AI, two open-weight releases reset the frontier-China narrative — MiniMax M3 (1M-context sparse attention, 59% SWE-Bench Pro) and NVIDIA Cosmos 3 (two-tower world model) — and Unitree cleared a China STAR Market IPO while becoming NVIDIA's GR00T reference humanoid. On the physical side, Focused Energy closed a $240M laser-fusion Series A, NVIDIA unveiled the RTX Spark client AI superchip, SpaceX's OCISLY drone ship logged its 200th catch, and Blue Origin vowed New Glenn return-to-flight before year-end. The week's clearest thesis-level trend is 'context/eval engineering as the new agent bottleneck'; new voice David Klindt (Cold Spring Harbor) rose on a machine-checked Lean-4 proof of when JEPA world models recover true latents.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "MiniMax M3: open-weight, 1M-context sparse attention, 59% SWE-Bench Pro",
+      "detail": "MiniMax released M3 on June 1, 2026 with a new MiniMax Sparse Attention (MSA) architecture giving a 1M-token context at ~1/20th the per-token compute of M2 (>9x prefill, >15x decode speedup), scoring 59.0% on SWE-Bench Pro (surpassing GPT-5.5 and Gemini 3.1 Pro) with native image/video input and computer use. Open weights + technical report committed within 10 days.",
+      "source_urls": ["https://www.minimax.io/blog/minimax-m3", "https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/"],
+      "payload": {
+        "claim": "MiniMax M3 (June 1, 2026): open-weight model with 1M-token context via MiniMax Sparse Attention, 59.0% SWE-Bench Pro (beats GPT-5.5 and Gemini 3.1 Pro, approaches Opus 4.7), native multimodality and computer use; weights+report within 10 days.",
+        "source_url": "https://www.minimax.io/blog/minimax-m3"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "Long-horizon autonomous agentic runs as a reasoning benchmark",
+      "detail": "MiniMax documented M3 running fully autonomous multi-hour engineering loops: ~12h reproducing an ICLR 2025 paper (18 commits, 23 figures) and ~24h optimizing an FP8 GEMM CUDA kernel over 147 benchmark submissions / 1,959 tool calls, lifting Hopper FP8 peak utilization from 7.6% to 71.3%. Frames test-time compute as sustained autonomous iteration rather than single-turn chain-of-thought.",
+      "source_urls": ["https://www.minimax.io/blog/minimax-m3"],
+      "payload": {
+        "name": "Long-horizon autonomous agentic reasoning",
+        "description": "Evaluating reasoning models by their ability to run unattended for many hours through plan-execute-diagnose-iterate loops on real research and systems tasks, measured by submissions/tool-calls/commits and end-state performance rather than single-pass accuracy.",
+        "examples": ["MiniMax M3 reproducing an ICLR 2025 paper autonomously over ~12h (18 commits, 23 figures)", "MiniMax M3 optimizing an FP8 GEMM kernel on NVIDIA Hopper over ~24h (147 submissions, 1,959 tool calls), 7.6%->71.3% peak utilization"],
+        "source_url": "https://www.minimax.io/blog/minimax-m3"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "diffusion_models",
+      "title": "NVIDIA Cosmos 3: two-tower MoT world model unifying reasoning, video gen, action",
+      "detail": "NVIDIA released Cosmos 3 (May 31, 2026), an open omnimodal world-model family pairing an autoregressive VLM reasoner tower with a diffusion-based generator tower (initialized from Qwen3-VL) for physics-aware video, sound, and action generation. Ships Nano (16B) and Super (64B) checkpoints under OpenMDW-1.1, reporting open-source SOTA on R-Bench and leading Artificial Analysis text-to-image and image-to-video.",
+      "source_urls": ["https://huggingface.co/collections/nvidia/cosmos3", "https://www.marktechpost.com/2026/06/03/nvidia-releases-cosmos-3-a-two-tower-mixture-of-transformers-foundation-model-unifying-physical-reasoning-world-generation-and-action-generation/"],
+      "payload": {
+        "claim": "NVIDIA Cosmos 3 (May 31, 2026): open Mixture-of-Transformers world-model family unifying physical reasoning (autoregressive VLM tower) and diffusion-based world/action generation; Nano (16B) and Super (64B) checkpoints, open-source SOTA on R-Bench, leading Artificial Analysis text-to-image and image-to-video.",
+        "source_url": "https://huggingface.co/collections/nvidia/cosmos3"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Unitree clears China STAR Market IPO; named NVIDIA GR00T reference humanoid",
+      "detail": "On June 1, 2026 Unitree Robotics cleared the Shanghai Stock Exchange listing-committee review (first 'embodied AI' company approved for China's A-share market, ~$6.2B target, ~4.2B yuan raise), and NVIDIA named Unitree's H2 Plus body as the hardware foundation for its open Isaac GR00T Reference Humanoid platform with Jetson Thor compute.",
+      "source_urls": ["https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-NVIDIA-Isaac-GR00T-Reference-Humanoid-Robot-for-Academic-Research/default.aspx", "https://www.techtimes.com/articles/317632/20260602/unitree-ipo-cleared-agibot-hits-10000-units-china-humanoid-robot-duopoly-takes-shape.htm"],
+      "payload": {
+        "name": "Unitree Robotics",
+        "org": "Unitree Robotics",
+        "type": "STARTUP",
+        "why": "First embodied-AI company cleared for a China A-share (STAR Market) IPO and chosen as the hardware base for NVIDIA's open Isaac GR00T Reference Humanoid; 2025 revenue 1.699B yuan at ~60% gross margins, but carries U.S. national-security/legislative risk.",
+        "funding": "Targeting ~$6.2B valuation, raising ~4.2B yuan (~$616M) via STAR Market IPO; backers include Meituan, Sequoia China, Tencent, Alibaba, Ant Group",
+        "source_url": "https://www.techtimes.com/articles/317632/20260602/unitree-ipo-cleared-agibot-hits-10000-units-china-humanoid-robot-duopoly-takes-shape.htm"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Tesla Robotaxi covers all of Austin metro, but active fleet ~20 vehicles",
+      "detail": "On June 3, 2026 Tesla said its unsupervised Robotaxi service now covers the entire Austin metro area, but the active unsupervised fleet has shrunk to ~20 vehicles (peaked at 25 in late April), with Dallas/Houston at 3 and 6. Waymo runs ~3,000 robotaxis and 500K+ paid weekly trips; meaningful ramp is tied to the FSD v15 rewrite (late 2026/early 2027).",
+      "source_urls": ["https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/"],
+      "payload": {
+        "field": "Tesla Robotaxi Austin status (geofence vs active fleet)",
+        "new_value": "Entire Austin metro geofence as of June 3, 2026, but only ~20 active unsupervised vehicles (down from 25 late-April peak); Dallas 3, Houston 6; fleet ramp deferred to late 2026/early 2027 pending FSD v15",
+        "previous_value": "Service limited to part of South Austin with a peak of ~25 cumulative unsupervised vehicles",
+        "source_url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "Intismeran + Keytruda: 5-yr melanoma data, 49% lower recurrence",
+      "detail": "At ASCO 2026 (May 29-June 2) Moderna/Merck reported 5-year KEYNOTE-942 data for intismeran autogene (mRNA-4157) plus pembrolizumab: 49% reduction in recurrence/death, 59% reduction in distant metastasis/death, and ~53% OS benefit vs Keytruda alone in resected stage III/IV melanoma. Published simultaneously in JCO.",
+      "source_urls": ["https://www.merck.com/news/moderna-and-merck-present-5-year-data-for-intismeran-autogene-in-combination-with-keytruda-pembrolizumab-in-patients-with-high-risk-stage-iii-iv-melanoma-following-complete-resection-at-the-20/", "https://www.biospace.com/drug-development/asco-modernas-mrna-based-melanoma-vaccine-shows-encouraging-5-year-survival"],
+      "payload": {
+        "field": "intismeran autogene (mRNA-4157) KEYNOTE-942 long-term efficacy",
+        "new_value": "5-year follow-up: 49% reduction in recurrence/death, 59% reduction in distant metastasis/death, ~53% OS benefit vs pembrolizumab monotherapy",
+        "previous_value": "~3-year data (~44% RFS benefit) previously reported; 5-year readout not yet available",
+        "source_url": "https://www.merck.com/news/moderna-and-merck-present-5-year-data-for-intismeran-autogene-in-combination-with-keytruda-pembrolizumab-in-patients-with-high-risk-stage-iii-iv-melanoma-following-complete-resection-at-the-20/"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "glp1",
+      "title": "Amylin analogs emerge as a tolerability-differentiated obesity class",
+      "detail": "Roche's June 1, 2026 ADA curtain-raiser unveiled late-breaking Phase 2 ZUPREME-1 data for petrelintide, a long-acting amylin analog positioned for a 'compelling tolerability profile,' alongside enicepatide (CT-388) dual GLP-1/GIP data; Roche is advancing a fixed-dose amylin+incretin combination trial mid-2026.",
+      "source_urls": ["https://www.biospace.com/press-releases/roche-to-present-new-data-advancing-its-obesity-portfolio-at-the-american-diabetes-associations-2026-scientific-sessions"],
+      "payload": {
+        "name": "Amylin analogs as next-wave obesity therapeutics",
+        "description": "Amylin-receptor agonists (e.g. petrelintide) restore leptin sensitivity to induce satiety with markedly better GI tolerability than incretins, enabling co-formulation with GLP-1/GIP agonists like enicepatide.",
+        "examples": ["petrelintide (Roche/Zealand) ZUPREME-1 Phase 2", "enicepatide (CT-388) GLP-1/GIP Phase 2", "petrelintide + enicepatide fixed-dose combo Phase 2 (mid-2026)"],
+        "source_url": "https://www.biospace.com/press-releases/roche-to-present-new-data-advancing-its-obesity-portfolio-at-the-american-diabetes-associations-2026-scientific-sessions"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Mazdutide beats semaglutide head-to-head; GLORY-2 9mg data at ADA",
+      "detail": "Innovent's ADA 2026 presentations include the GCG/GLP-1 dual agonist mazdutide's head-to-head DREAMS-3 win over semaglutide (48.0% vs 21.0% achieving HbA1c<7% plus >=10% weight loss) plus Phase 3 GLORY-2 9mg obesity data in Chinese adults.",
+      "source_urls": ["https://www.biospace.com/press-releases/innovents-mazdutide-shows-superiority-in-glycemic-control-with-weight-loss-over-semaglutide-in-a-head-to-head-phase-3-clinical-trial-dreams-3", "https://www.prnewswire.com/news-releases/innovent-to-present-multiple-clinical-and-preclinical-results-of-mazdutide-and-next-generation-obesity--metabolic-pipeline-at-the-2026-ada-scientific-sessions-302769630.html"],
+      "payload": {
+        "field": "mazdutide (GCG/GLP-1) vs semaglutide head-to-head (DREAMS-3)",
+        "new_value": "48.0% of mazdutide vs 21.0% of semaglutide patients achieved HbA1c<7.0% plus >=10% weight loss; full data presented ADA 2026",
+        "previous_value": "DREAMS-3 topline disclosed late 2025; full ADA presentation and GLORY-2 9mg data not yet public",
+        "source_url": "https://www.biospace.com/press-releases/innovents-mazdutide-shows-superiority-in-glycemic-control-with-weight-loss-over-semaglutide-in-a-head-to-head-phase-3-clinical-trial-dreams-3"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Survodutide SYNCHRONIZE-1 full Phase 3 data at ADA 2026",
+      "detail": "Boehringer Ingelheim's glucagon/GLP-1 dual agonist survodutide presented full Phase 3 SYNCHRONIZE-1 data at ADA 2026: up to 16.6% mean weight loss at 76 weeks vs 3.2% placebo, with up to 85.1% achieving >=5% loss.",
+      "source_urls": ["https://www.boehringer-ingelheim.com/us/human-health/metabolic-diseases/results-phase-iii-synchronize-1-obesity-trial"],
+      "payload": {
+        "field": "survodutide SYNCHRONIZE-1 full Phase 3 efficacy",
+        "new_value": "Full data at ADA 2026: 16.6% mean weight loss at 76 weeks vs 3.2% placebo; up to 85.1% achieved >=5% reduction",
+        "previous_value": "Topline only (April 28, 2026 release); full data not yet presented",
+        "source_url": "https://www.boehringer-ingelheim.com/us/human-health/metabolic-diseases/results-phase-iii-synchronize-1-obesity-trial"
+      }
+    },
+    {
+      "kind": "NEW_PERSON",
+      "breakthrough_id": "glp1",
+      "title": "Ania Jastreboff — lead investigator, retatrutide TRIUMPH-1",
+      "detail": "Ania M. Jastreboff (Yale) presented the full pivotal Phase 3 TRIUMPH-1 retatrutide obesity results in the ADA 2026 late-breaking symposium, cementing her as the leading academic investigator across the triple-agonist obesity trials.",
+      "source_urls": ["https://www.adameetingnews.org/experts-to-reveal-results-of-retatrutide-trials-transcend-t2d-1-and-triumph-1/"],
+      "payload": {
+        "name": "Ania M. Jastreboff",
+        "role": "Professor of Medicine; Director, Yale Y-Weight Obesity Research Center; lead investigator, retatrutide TRIUMPH-1",
+        "affiliation": "Yale University School of Medicine",
+        "org_type": "ACADEMIA",
+        "prizes": [],
+        "source_url": "https://www.adameetingnews.org/experts-to-reveal-results-of-retatrutide-trials-transcend-t2d-1-and-triumph-1/"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "fusion",
+      "title": "Focused Energy — direct-drive laser fusion startup raises $240M Series A",
+      "detail": "Germany/Austin-based Focused Energy closed an oversubscribed $240M Series A (June 2, 2026), bringing total to ~$300M private + $200M grants; lead investor RWE. The direct-drive (no hohlraum) design targets ~10 shots/sec at a decommissioned RWE fission site ('Lighthouse'); NIF target designer Debbie Callahan joined as CSO in Dec 2025.",
+      "source_urls": ["https://techcrunch.com/2026/06/02/focused-energy-raises-whopping-240m-series-a-for-laser-powered-fusion-tech/"],
+      "payload": {
+        "name": "Focused Energy",
+        "org": "Focused Energy GmbH (Germany / Austin, TX)",
+        "type": "STARTUP",
+        "why": "Now one of the most heavily funded fusion startups; inertial-confinement laser fusion using direct-drive targets at high rep-rate, building a 'Lighthouse' demo at a former RWE nuclear site.",
+        "funding": "$240M Series A (June 2026) led by RWE; ~$300M private + $200M grants total",
+        "source_url": "https://techcrunch.com/2026/06/02/focused-energy-raises-whopping-240m-series-a-for-laser-powered-fusion-tech/"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_accelerators",
+      "title": "NVIDIA RTX Spark (N1X): Arm CPU + Blackwell GPU client AI superchip",
+      "detail": "At Computex 2026 (May 31-June 2) NVIDIA unveiled the RTX Spark Superchip (N1X), a Windows-on-Arm platform pairing an Arm CPU with a Blackwell GPU and up to 128GB unified memory, claiming ~1 petaflop AI and the ability to run 120B-parameter LLMs locally with up to 1M-token context. Ships fall 2026 in laptops/mini-desktops from Microsoft, Dell, HP, ASUS, Lenovo, MSI.",
+      "source_urls": ["https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark", "https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory"],
+      "payload": {
+        "name": "NVIDIA RTX Spark (N1X) client AI superchip",
+        "description": "Arm-CPU + Blackwell-GPU SoC with 128GB unified memory bringing data-center-class local AI inference (120B-param LLMs, 1M-token context) to consumer Windows PCs.",
+        "examples": ["RTX Spark Superchip / N1X", "Windows-on-Arm agentic AI laptops from Dell/HP/Microsoft/ASUS/Lenovo/MSI"],
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "SpaceX drone ship OCISLY notches 200th booster catch; B1088 flies 16th",
+      "detail": "On June 3, 2026 (Starlink 17-47 from Vandenberg), the drone ship 'Of Course I Still Love You' reached its 200th successful booster landing — the first drone ship ever to 200 — marking SpaceX's 619th total booster recovery. Booster B1088 flew its 16th mission.",
+      "source_urls": ["https://www.techtimes.com/articles/317678/20260603/spacex-drone-ship-targets-200th-catch-falcon-9-booster-b1088-makes-16th-flight-today.htm"],
+      "payload": {
+        "field": "SpaceX total booster recoveries / single-drone-ship landings",
+        "new_value": "619th total recovery; OCISLY reaches 200 catches (June 3, 2026)",
+        "previous_value": "617th total recovery as of May 30, 2026 (OCISLY at 199)",
+        "source_url": "https://www.techtimes.com/articles/317678/20260603/spacex-drone-ship-targets-200th-catch-falcon-9-booster-b1088-makes-16th-flight-today.htm"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Blue Origin targets New Glenn return-to-flight before end of 2026",
+      "detail": "Following the May 28 static-fire explosion that wrecked the Cape Canaveral pad, Blue Origin CEO Dave Limp said (June 2-3, 2026) the company aims to fly New Glenn again before year's end, reporting pad infrastructure, a flown booster and three upper stages 'look good' — far more aggressive than industry assumptions of 2027+.",
+      "source_urls": ["https://spaceflightnow.com/2026/06/03/blue-origin-vows-to-resume-new-glenn-flights-by-years-end/", "https://techcrunch.com/2026/06/02/blue-origin-plans-to-launch-new-glenn-again-this-year-after-explosion/"],
+      "payload": {
+        "field": "Blue Origin New Glenn return-to-flight target",
+        "new_value": "Before end of 2026 (per CEO Dave Limp, June 2026)",
+        "previous_value": "Indeterminate after May 28 static-fire explosion (industry est. 2027+)",
+        "source_url": "https://spaceflightnow.com/2026/06/03/blue-origin-vows-to-resume-new-glenn-flights-by-years-end/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "CATL confirms sodium-ion manufacturing solved, mass production in 2026",
+      "detail": "On May 30, 2026, CATL chief scientist Wu Kai confirmed manufacturing bottlenecks are resolved and a series of mass-produced Naxtra sodium-ion products will ship in 2026 across passenger EVs, fleets, swapping networks and stationary storage. First passenger EV (Changan Nevo A06) launches mid-2026; cells at 175 Wh/kg, 400+ km range, operating to -40C.",
+      "source_urls": ["https://carnewschina.com/2026/05/30/catl-to-mass-produce-sodium-ion-batteries-in-2026-targets-600-km-range/"],
+      "payload": {
+        "field": "CATL sodium-ion (Naxtra) production status",
+        "new_value": "Manufacturing bottlenecks solved; mass production confirmed for 2026 (May 30, 2026)",
+        "previous_value": "Announced/sampling with mass production planned but unconfirmed",
+        "source_url": "https://carnewschina.com/2026/05/30/catl-to-mass-produce-sodium-ion-batteries-in-2026-targets-600-km-range/"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Lean-4 proof of when JEPA world models recover true latents",
+      "detail": "LeCun, David Klindt (Cold Spring Harbor) and Randall Balestriero (Brown) posted 'When Does LeJEPA Learn a World Model?' (arXiv 2605.26379, submitted May 25, 2026), proving in Lean 4 the exact conditions (isotropic-Gaussian latents, stationary additive-noise dynamics) under which LeJEPA linearly recovers a world's true hidden variables, with a paired benchmark showing current models remain brittle outside those conditions.",
+      "source_urls": ["https://arxiv.org/abs/2605.26379", "https://klindtlab.github.io/lejepa-identifiability/"],
+      "payload": {
+        "claim": "Self-supervised world-model learning now has a machine-checkable (Lean 4) identifiability guarantee: LeJEPA provably recovers a world's true latent variables iff the latents are Gaussian and evolve under stationary additive-noise dynamics (arXiv 2605.26379, May 2026).",
+        "source_url": "https://arxiv.org/abs/2605.26379"
+      }
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "David Klindt — formal-identifiability theorist for world models",
+      "detail": "Cold Spring Harbor Laboratory researcher who co-authored (with LeCun and Balestriero) the viral May 2026 Lean-4-formalized proof on when JEPA-style world models recover true latents, releasing accompanying identifiability simulations and proofs on GitHub.",
+      "source_urls": ["https://klindtlab.github.io/lejepa-identifiability/", "https://github.com/klindtlab/lejepa-identifiability"],
+      "payload": {
+        "name": "David Klindt",
+        "role": "Researcher, Cold Spring Harbor Laboratory (klindtlab)",
+        "focus": "Identifiability theory and formal (Lean 4) guarantees for self-supervised / world-model representation learning",
+        "follow_url": "https://klindtlab.github.io/lejepa-identifiability/",
+        "twitter": "",
+        "youtube": "",
+        "newsletter": "",
+        "notes": "Lead theorist behind 'When Does LeJEPA Learn a World Model?' (arXiv 2605.26379), bringing machine-checked proofs into the world-models debate. A formal-rigor counterweight to the world-models hype cycle.",
+        "tags": ["world-models", "identifiability", "self-supervised-learning", "formal-methods"]
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Context engineering and evals are the new agent bottleneck",
+      "detail": "Multiple independent sources argue the limiting factor for agentic AI has shifted from model capability to (a) supplying the right context at the right time and (b) the cost/latency of evaluation, reframing 'eval engineering' and 'context engineering' as first-class disciplines.",
+      "source_urls": ["https://thenewstack.io/context-is-ai-codings-real-bottleneck-in-2026/", "https://huggingface.co/blog/evaleval/eval-costs-bottleneck", "https://siliconangle.com/2026/05/17/eval-engineering-missing-piece-agentic-ai-governance/"],
+      "payload": {
+        "thesis": "With frontier models 'good enough,' the binding constraint on agentic systems is no longer the model but the surrounding engineering: getting correct context to the right agent at the right time, and the compute/latency cost of running evals and validators to govern agent behavior.",
+        "examples": ["The New Stack: 'Context is AI coding's real bottleneck in 2026'", "Hugging Face: 'AI evals are becoming the new compute bottleneck'", "SiliconANGLE: 'Eval engineering: the missing piece of agentic AI governance'"],
+        "spotted_at": ["https://thenewstack.io/context-is-ai-codings-real-bottleneck-in-2026/", "https://huggingface.co/blog/evaleval/eval-costs-bottleneck", "https://siliconangle.com/2026/05/17/eval-engineering-missing-piece-agentic-ai-governance/"]
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Deep Fission's mile-deep borehole SMR enters construction",
+      "detail": "Day & Zimmermann and Deep Fission announced a June 2, 2026 partnership to build the 'Gravity' pressurized-water SMR one mile underground in a borehole, with first criticality targeted for July 4, 2026 in Parsons, Kansas. Deep-borehole siting uses rock overburden for passive containment — a distinct architecture from surface SMRs.",
+      "source_urls": ["https://www.prnewswire.com/news-releases/day--zimmermann-deep-fission-partner-to-build-underground-small-modular-reactor-302788879.html", "https://deepfission.com/deep-fission-unveils-the-name-of-its-deep-borehole-reactor-gravity/"],
+      "payload": {
+        "candidate_area": "advanced nuclear / deep-borehole SMR siting",
+        "why": "A fundamentally different SMR deployment model (1-mile-deep boreholes for passive containment and rapid siting) moving from design to construction with a near-term criticality target.",
+        "source_url": "https://www.prnewswire.com/news-releases/day--zimmermann-deep-fission-partner-to-build-underground-small-modular-reactor-302788879.html"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Growth-factor-loaded cellulose scaffolds cut cultivated-meat cost ~10x",
+      "detail": "Hebrew University of Jerusalem researchers (reported June 2026) bound growth factors directly onto directionally-frozen plant-cellulose scaffolds rather than dispersing them in media, supporting bovine stem-cell growth with up to 10x fewer expensive factors and yielding pan-fried constructs with sirloin-like texture.",
+      "source_urls": ["https://phys.org/news/2026-06-friendly-lab-grown-steak-realistic.html"],
+      "payload": {
+        "candidate_area": "cultivated meat / cellular agriculture cost reduction",
+        "why": "Growth-factor cost is the dominant barrier to cultivated-meat economics; a scaffold-binding approach giving ~10x factor efficiency plus realistic texture attacks the core unit-economics problem.",
+        "source_url": "https://phys.org/news/2026-06-friendly-lab-grown-steak-realistic.html"
+      }
+    }
+  ]
+}

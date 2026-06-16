@@ -1,0 +1,83 @@
+{
+  "week_ending": "2026-06-12",
+  "summary": "BACKFILL / catch-up batch: five high-traction research directions that the weekly scan should have surfaced earlier on traction grounds (citations, paper-club selection, follow-on work), flagged after a YC Paper Club review (François Chaubard) highlighted them. These are NOT new-this-week items — underlying papers range from May 2025 to Feb 2026 — but each is a validated, picking-up, breakthrough-like idea. Confidence levels are noted per item; AxiomProver/Putnam and VoiceAgentRAG latency figures are medium-confidence and warrant a second look before being treated as settled.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Scaling laws may not cleanly hold for protein language models",
+      "detail": "'Scaling and Data Saturation in Protein Language Models' (Align to Innovate) finds that, unlike NLP, adding more UniRef sequence data gives non-monotonic / flat downstream gains — effective diversity, not token count, drives protein-LM progress. [confidence: high]",
+      "source_urls": ["https://arxiv.org/abs/2507.22210", "https://alignbio.org/blog/do-scaling-laws-hold-for-protein-language-models/", "https://github.com/Align-to-Innovate/data-saturation-and-scaling"],
+      "payload": {
+        "claim": "NLP-style scaling laws do not reliably transfer to protein language models; data growth on UniRef yielded non-monotonic and sometimes worse variant-effect prediction, implying effective diversity (not token count) drives biology foundation models. [BACKFILL, arXiv Jul 2025, traction: dedicated Align blog + GitHub + active debate vs ProGen3's 'biology has scaling laws' claim]",
+        "source_url": "https://arxiv.org/abs/2507.22210"
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "AlphaZero-style self-play to train LLM reasoning with zero human data",
+      "detail": "'Absolute Zero: Reinforced Self-play Reasoning with Zero Data' trains a model that proposes its own tasks and solves them against a code-executor reward, hitting SOTA math+coding reasoning with no human-curated data; follow-on 'Propose, Solve, Verify' extends it with formal verification. [confidence: high]",
+      "source_urls": ["https://arxiv.org/abs/2505.03335", "https://andrewzh112.github.io/absolute-zero-reasoner/", "https://arxiv.org/abs/2512.18160"],
+      "payload": {
+        "thesis": "LLMs can self-improve at reasoning AlphaZero-style — generating their own problems and learning purely from automatically verifiable signals (code execution, formal proofs) with zero human-labeled data.",
+        "examples": ["Absolute Zero Reasoner (arXiv 2505.03335, NeurIPS 2025 spotlight): self-proposed code-reasoning tasks, SOTA in zero-data setting", "Propose, Solve, Verify (arXiv 2512.18160): proposer/solver self-play via formal verification (Verus), up to 9.6x pass@1 gain"],
+        "spotted_at": ["https://arxiv.org/abs/2505.03335", "https://arxiv.org/abs/2512.18160"]
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Streaming / predictive RAG to kill latency in real-time voice agents",
+      "detail": "'VoiceAgentRAG' (Salesforce AI Research) splits retrieval into a background 'Slow Thinker' that pre-fetches predicted topics into a semantic cache and a foreground 'Fast Talker' reading from cache; Amazon-style 'Stream RAG' predicts tool/retrieval queries before the user stops speaking. [confidence: medium — 316x latency figure not independently re-verified]",
+      "source_urls": ["https://arxiv.org/abs/2603.02206", "https://github.com/SalesforceAIResearch/VoiceAgentRAG", "https://arxiv.org/abs/2510.02044"],
+      "payload": {
+        "name": "Streaming / predictive RAG for voice agents",
+        "description": "Decouple retrieval from generation so the vector-DB round-trip never blocks speech: a background agent anticipates likely queries and pre-fetches into a fast cache while the speaking agent reads only from cache (or retrieves in parallel with user speech).",
+        "examples": ["VoiceAgentRAG dual-agent 'Slow Thinker'/'Fast Talker' memory router (arXiv 2603.02206)", "Stream RAG streaming tool-call prediction during user speech (arXiv 2510.02044)"],
+        "source_url": "https://arxiv.org/abs/2603.02206"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Lean formal verification to make AI math/code provably correct",
+      "detail": "AxiomProver (Axiom Math) is an autonomous multi-agent prover emitting Lean 4 / Mathlib-checked proofs; reported a perfect Putnam 2025 score and Lean-verified proofs of previously open problems, positioning formal verification as the antidote to LLM hallucination. [confidence: medium — perfect-Putnam claim warrants a second look]",
+      "source_urls": ["https://github.com/AxiomMath/putnam2025", "https://arxiv.org/abs/2602.05095", "https://arxiv.org/abs/2602.05090"],
+      "payload": {
+        "claim": "Pairing LLMs with the Lean 4 proof assistant turns AI math/code outputs from plausible-but-unverified into machine-checked-correct; AxiomProver autonomously generated Lean/Mathlib-verified proofs (Axiom Math raised a $200M Series A led by Menlo Ventures). [BACKFILL, arXiv Feb 2026]",
+        "source_url": "https://github.com/AxiomMath/putnam2025"
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Programming with AI agents is like playing a real-time strategy game",
+      "detail": "The 'agent orchestration as RTS' framing — human as commander dispatching parallel agents, 'macro' strategy vs 'micro' execution, compute/time as finite resources — is spreading from David Hoang's essay to Claude Code's creator running ~5 parallel agents 'like a fleet commander' and products like AgentCraft. [confidence: medium on attribution]",
+      "source_urls": ["https://www.proofofconcept.pub/p/real-time-strategy-games-and-ai-interfaces", "https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are", "https://www.getagentcraft.com/"],
+      "payload": {
+        "thesis": "Coding with AI agents resembles a real-time strategy game: the human plays commander, dispatching multiple autonomous agents in parallel at 'macro' altitude while agents handle 'micro' execution, with compute/bandwidth/time as the new finite resources to allocate.",
+        "examples": ["David Hoang essay 'Real-Time Strategy games and AI interfaces' (Proof of Concept)", "Claude Code creator Boris Cherny running parallel agents as a 'fleet commander' (VentureBeat)", "AgentCraft: an explicit RTS-style interface for orchestrating agents"],
+        "spotted_at": ["https://www.proofofconcept.pub/p/real-time-strategy-games-and-ai-interfaces", "https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are"]
+      }
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "François Chaubard / YC Paper Club — curation signal for rising AI papers",
+      "detail": "François Chaubard runs YC's Paper Club, a biweekly research review whose selections are a high-signal leading indicator of which papers are gaining traction across the field — a useful curation feed to monitor (alongside arxiv/HN traction), not a primary source itself.",
+      "source_urls": ["https://www.youtube.com/watch?v=3rWSvrFahIY"],
+      "payload": {
+        "name": "François Chaubard (YC Paper Club)",
+        "role": "Host, Y Combinator Paper Club",
+        "focus": "Curated biweekly reviews of rising AI/ML and bio research papers",
+        "follow_url": "https://www.youtube.com/watch?v=3rWSvrFahIY",
+        "twitter": null,
+        "youtube": "https://www.youtube.com/@ycombinator",
+        "newsletter": null,
+        "notes": "Tracked as a CURATION SIGNAL: paper-club selections flag traction-gaining work to feed into the normal verification pipeline. Added after this batch was missed by the text-only weekly scan.",
+        "tags": ["curation-signal", "ai-research", "paper-club", "new-voice"]
+      }
+    }
+  ]
+}

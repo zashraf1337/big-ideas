@@ -1,0 +1,158 @@
+{
+  "week_ending": "2026-06-05",
+  "summary": "Structural addition (not a weekly diff): created breakthrough #16 'AI dev ecosystem & agent primitives' to track the recurring wave of new developer primitives in the agent stack — MCP -> Agent Skills -> subagents -> agent-orchestration apps -> agent SDKs/evals. This category captures successful/trending tooling (e.g. Conductor) that the paper/product-focused pipeline was missing.",
+  "highlights": [
+    {
+      "kind": "NEW_BREAKTHROUGH",
+      "breakthrough_id": null,
+      "title": "AI dev ecosystem & agent primitives",
+      "detail": "New tracked category for the fast-moving layer of agent developer primitives: MCP, Agent Skills, subagents, agent-orchestration apps (Conductor, Intent), agent SDKs, and context-engineering/evals.",
+      "source_urls": ["https://www.anthropic.com/news/model-context-protocol"],
+      "payload": {
+        "id": "ai_dev_ecosystem",
+        "number": 16,
+        "title": "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration)",
+        "domain": "AI",
+        "people": [
+          {
+            "name": "David Soria Parra",
+            "role": "Member of Technical Staff; co-creator of the Model Context Protocol (MCP)",
+            "affiliation": "Anthropic",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://a16z.com/podcast/mcp-co-creator-on-the-next-wave-of-llm-innovation/"
+          },
+          {
+            "name": "Justin Spahr-Summers",
+            "role": "Engineer; co-creator of the Model Context Protocol (MCP)",
+            "affiliation": "Anthropic",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://a16z.com/podcast/mcp-co-creator-on-the-next-wave-of-llm-innovation/"
+          },
+          {
+            "name": "Charlie Holtz",
+            "role": "Co-founder & CEO of Conductor (parallel coding-agent orchestration app); previously growth at Replicate",
+            "affiliation": "Conductor (Melty Labs), YC S24",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://www.ycombinator.com/companies/conductor"
+          },
+          {
+            "name": "Jackson de Campos",
+            "role": "Co-founder of Conductor; 'the human interface to AI organizations'",
+            "affiliation": "Conductor (Melty Labs), YC S24",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://www.ycombinator.com/companies/conductor"
+          },
+          {
+            "name": "Harrison Chase",
+            "role": "Founder & CEO of LangChain; creator of LangChain framework and the LangGraph agent-orchestration runtime",
+            "affiliation": "LangChain",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/"
+          },
+          {
+            "name": "Amelia Wattenberger",
+            "role": "Product Lead for Intent (Augment Code agent-orchestration workspace); Partner, Sutter Hill Ventures; ex-GitHub Next",
+            "affiliation": "Augment Code / Sutter Hill Ventures",
+            "org_type": "BUSINESS",
+            "prizes": [],
+            "source_url": "https://www.augmentcode.com/blog/intent-a-workspace-for-agent-orchestration"
+          }
+        ],
+        "sub_ideas": [
+          {
+            "name": "Model Context Protocol (MCP)",
+            "description": "An open standard giving AI assistants a universal two-way way to connect to external data and tools, replacing per-integration connectors with one protocol.",
+            "examples": ["Pre-built MCP servers (Drive, Slack, GitHub, Postgres)", "Early adopters Block and Apollo", "Donated to the Linux Foundation's Agentic AI Foundation (Dec 2025)"],
+            "source_url": "https://www.anthropic.com/news/model-context-protocol"
+          },
+          {
+            "name": "Agent Skills (Claude Skills / portable skills)",
+            "description": "Modular folders (a SKILL.md plus scripts and resources) that agents discover and load on demand via progressive disclosure to specialize at tasks.",
+            "examples": ["PDF/Excel/PowerPoint/Word document skills", "skill-creator skill", "Open cross-platform standard at agentskills.io (Dec 2025)"],
+            "source_url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+          },
+          {
+            "name": "Subagents / multi-agent orchestration in coding agents",
+            "description": "Specialized sub-agents that each run in their own context window with custom prompts, tools, and permissions, letting a primary agent delegate and preserve its main context.",
+            "examples": ["Claude Code Explore/Plan/general-purpose subagents", "Custom subagents in ~/.claude", "Subagents in the Claude Agent SDK"],
+            "source_url": "https://docs.claude.com/en/docs/claude-code/sub-agents"
+          },
+          {
+            "name": "Agent-orchestration desktop/cloud apps",
+            "description": "Standalone workspaces to run and coordinate multiple coding agents in parallel across isolated git worktrees, then review and merge their work from one interface.",
+            "examples": ["Conductor (run a team of coding agents on your Mac)", "Augment Code's Intent (coordinator/implementor/verifier teams)", "Zed / Codex parallel agents"],
+            "source_url": "https://www.augmentcode.com/blog/intent-a-workspace-for-agent-orchestration"
+          },
+          {
+            "name": "Agent SDKs / frameworks",
+            "description": "Libraries and runtimes for building, orchestrating, and deploying multi-agent workflows programmatically.",
+            "examples": ["Claude Agent SDK", "OpenAI Agents SDK (Responses API)", "LangChain LangGraph"],
+            "source_url": "https://openai.com/index/new-tools-for-building-agents/"
+          },
+          {
+            "name": "Context engineering & evals / agent governance",
+            "description": "An emerging discipline focused on curating what enters an agent's context window and on systematically evaluating, grading, and governing agent behavior for production reliability.",
+            "examples": ["OpenAI Evals for Agents (trace grading, prompt optimization)", "OpenAI Guardrails + Connector Registry", "LangChain context-engineering framing"],
+            "source_url": "https://openai.com/index/introducing-agentkit/"
+          }
+        ],
+        "current_frontier": [
+          {
+            "claim": "MCP went from an Anthropic experiment (announced Nov 25, 2024) to a cross-industry standard; in Dec 2025 Anthropic donated MCP to the Agentic AI Foundation, a Linux Foundation directed fund co-founded with Block and OpenAI.",
+            "source_url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+          },
+          {
+            "claim": "Anthropic launched Agent Skills on Oct 16, 2025 across Claude apps, Claude Code, the Agent SDK and the API, then on Dec 18, 2025 published Skills as an open cross-platform standard (agentskills.io).",
+            "source_url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+          },
+          {
+            "claim": "OpenAI released the Responses API and open-source Agents SDK in March 2025, then at DevDay (Oct 6, 2025) launched AgentKit — Agent Builder, ChatKit, Connector Registry and expanded Evals — to move agents from prototype to production.",
+            "source_url": "https://openai.com/index/introducing-agentkit/"
+          },
+          {
+            "claim": "Conductor, the parallel coding-agent desktop app (YC S24), reports use at companies including Linear, Vercel, Notion and Stripe and announced a Series A on Mar 30, 2026.",
+            "source_url": "https://www.ycombinator.com/companies/conductor"
+          },
+          {
+            "claim": "LangChain, maker of the LangGraph agent-orchestration runtime, reached unicorn status with a $125M Series B at a $1.25B valuation in Oct 2025, led by IVP with CapitalG and Sapphire Ventures.",
+            "source_url": "https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/"
+          }
+        ],
+        "watch_list": [
+          {
+            "name": "Conductor",
+            "org": "Conductor (Melty Labs)",
+            "type": "STARTUP",
+            "why": "Pioneer of the 'run a team of coding agents on your Mac' category; parallel agents in isolated worktrees, adopted at Linear, Vercel, Notion, Stripe.",
+            "funding": "YC Summer 2024; Series A announced Mar 30, 2026 (amount not confirmed in primary source)",
+            "source_url": "https://www.ycombinator.com/companies/conductor"
+          },
+          {
+            "name": "Augment Code (Intent)",
+            "org": "Augment Code",
+            "type": "STARTUP",
+            "why": "Intent is a 'post-IDE' agent-orchestration workspace using coordinator/implementor/verifier agent teams over a shared living spec; bring-your-own-agent (Claude Code, Codex, OpenCode).",
+            "funding": "Augment backed by ~$472M total (incl. Sutter Hill Ventures); Intent in public beta",
+            "source_url": "https://www.augmentcode.com/blog/intent-a-workspace-for-agent-orchestration"
+          },
+          {
+            "name": "LangChain",
+            "org": "LangChain",
+            "type": "STARTUP",
+            "why": "Most widely adopted open-source agent framework; LangGraph is a leading multi-agent orchestration/memory runtime and LangSmith leads agent evals/observability.",
+            "funding": "$125M Series B at $1.25B valuation (Oct 2025), led by IVP",
+            "source_url": "https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/"
+          }
+        ],
+        "impact_so_far": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise, subagents and orchestration apps for parallel work, and SDKs plus evals for governance — now backed by both major labs and a wave of well-funded startups.",
+        "watch_for_next": "Watch for consolidation around open standards (MCP and Skills now under foundation/shared governance), multi-agent 'post-IDE' orchestration workspaces becoming the default interface, and evals/agent governance maturing into a required production discipline.",
+        "flags": ["Conductor Series A dollar amount unverified against a primary source (YC page confirms the round exists, dated Mar 30, 2026, but not the amount).", "MCP co-creator attributions sourced from the a16z 'MCP co-creator' podcast; the official Anthropic MCP announcement does not name individuals."]
+      }
+    }
+  ]
+}

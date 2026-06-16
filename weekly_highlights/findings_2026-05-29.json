@@ -1,0 +1,379 @@
+{
+  "week_ending": "2026-05-29",
+  "summary": "Big week. Anthropic released Claude Opus 4.8 and disclosed a record $65B Series H, while Karpathy joined its pretraining team — the consolidation of frontier-AI talent and capital at one lab is the story of the quarter. Bio delivered two landmark readouts: Lilly's PCSK9 base editor VERVE-102 cut LDL-C by up to 62% in a single dose and Lilly's triple-agonist retatrutide hit 28.3% weight loss in TRIUMPH-1. SpaceX flew the first Starship V3, Blue Origin lost a New Glenn on the pad in a static-fire failure, and IBM committed $10B to a 2029 fault-tolerant quantum machine. Two clear trending ideas crystallized this week: 'world models as the next paradigm beyond LLMs' (LeCun group's LeJEPA theory paper, Jim Fan's AI Ascent talk, Fortune feature) and 'token-cost anxiety' (Microsoft, Vantage, Exponential View all hitting the same thesis that agentic-coding economics break the SaaS model).",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic releases Claude Opus 4.8 with dynamic workflows",
+      "detail": "Anthropic launched Claude Opus 4.8 on May 28, 2026, just 41 days after Opus 4.7. Agentic coding score jumps to 69.2%, computer-use scores 84% on Online-Mind2Web, and a new 'dynamic workflows' research preview lets Claude Code handle bigger tasks at unchanged pricing.",
+      "source_urls": ["https://www.anthropic.com/news/claude-opus-4-8"],
+      "payload": {
+        "claim": "Claude Opus 4.8 released (May 28, 2026): 69.2% agentic coding, 84% computer-use on Online-Mind2Web, new dynamic workflows for Claude Code.",
+        "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic raises $65B Series H at $965B post-money",
+      "detail": "On May 28, 2026, Anthropic announced a $65B Series H at a $965B post-money valuation led by Altimeter, Dragoneer, Greenoaks, and Sequoia, briefly eclipsing OpenAI as the most valuable AI startup. Run-rate revenue crossed $47B earlier in May.",
+      "source_urls": ["https://www.anthropic.com/news/series-h"],
+      "payload": {
+        "field": "Anthropic Series H funding closed",
+        "new_value": "$65B raised at $965B post-money (May 28, 2026); leads Altimeter, Dragoneer, Greenoaks, Sequoia; $47B run-rate revenue",
+        "previous_value": "Previous round Series G in late 2025",
+        "source_url": "https://www.anthropic.com/news/series-h"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Karpathy joins Anthropic pretraining team",
+      "detail": "Andrej Karpathy announced in mid-May 2026 that he is joining Anthropic's pre-training team to lead a new effort using Claude itself to accelerate pretraining research — signalling consolidation of top AI talent at Anthropic and an industry pivot toward AI-automating-AI-research.",
+      "source_urls": ["https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude"],
+      "payload": {
+        "claim": "Karpathy joined Anthropic pretraining team May 2026 to lead a 'use Claude to accelerate pretraining' effort.",
+        "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "Equilibrium Reasoners: deep latent-attractor test-time scaling",
+      "detail": "Arxiv preprint (May 20, 2026) introduces Equilibrium Reasoners, iteratively updating a latent state via task-conditioned attractors. Boosts Sudoku-Extreme accuracy from 2.6% to over 99% by unrolling up to the equivalent of 40,000 layers — no external verifiers or task-specific priors.",
+      "source_urls": ["https://arxiv.org/abs/2605.21488"],
+      "payload": {
+        "name": "Equilibrium Reasoners (latent-attractor TTC)",
+        "description": "Iterative latent-attractor reasoning enabling deep test-time-compute scaling without external verifiers; pushes Sudoku-Extreme accuracy from 2.6% to 99%+ on unrolling equivalent to ~40k layers.",
+        "examples": ["Sudoku-Extreme 2.6% -> 99%+ accuracy by unrolling latent attractors"],
+        "source_url": "https://arxiv.org/abs/2605.21488"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "self_driving",
+      "title": "Waymo launches Ojai purpose-built robotaxi (6th-gen Driver)",
+      "detail": "On May 28, 2026, Waymo began public rides in the Ojai — its first vehicle designed from the ground up as a robotaxi (Zeekr/Geely-made, four-seat EV minivan). 6th-gen Driver uses 4 lidars / 6 radars / 13 cameras (down from 5/6/29). Initial 100 units across SF, LA, Phoenix.",
+      "source_urls": ["https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"],
+      "payload": {
+        "claim": "Waymo's first purpose-built robotaxi (Zeekr-made Ojai, 6th-gen Driver with cheaper sensor stack) went live with public rides on May 28, 2026.",
+        "source_url": "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Pony.ai global robotaxi fleet surpasses 1,700",
+      "detail": "Pony.ai disclosed that as of May 24, 2026, its global robotaxi fleet exceeded 1,700 vehicles — up ~250 since its 2025 annual report. WeRide's domestic fleet reached ~1,000 by end of April.",
+      "source_urls": ["https://carnewschina.com/2026/05/29/china-robotaxi-industry-faces-regulatory-cooling-off-following-march-apollo-go-mass-paralysis/"],
+      "payload": {
+        "field": "Pony.ai global robotaxi fleet size",
+        "new_value": "1,700+ vehicles as of 2026-05-24 (+250 since 2025 annual report); WeRide ~1,000 domestic",
+        "previous_value": "~1,450 in late 2025",
+        "source_url": "https://carnewschina.com/2026/05/29/china-robotaxi-industry-faces-regulatory-cooling-off-following-march-apollo-go-mass-paralysis/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Figure scales Figure 03 to one robot per hour; 350+ units built",
+      "detail": "Figure AI announced in week of May 27, 2026 that BotQ ramped Figure 03 production from one unit/day to one unit/hour in under four months, 350+ Gen-3 robots built. New System 0 perception-conditioned whole-body control enables stair/ramp navigation; 10-hour package-processing livestream showed Figure 03 hitting 98.5% of human throughput.",
+      "source_urls": ["https://roboticsandautomationnews.com/2026/05/27/figure-ramps-humanoid-robot-manufacturing-at-unprecedented-speed/101954/"],
+      "payload": {
+        "field": "Figure 03 production rate",
+        "new_value": "1 robot/hour at BotQ; 350+ Gen-3 units; new System 0 perception-conditioned whole-body control",
+        "previous_value": "1 robot/day at BotQ in early 2026",
+        "source_url": "https://roboticsandautomationnews.com/2026/05/27/figure-ramps-humanoid-robot-manufacturing-at-unprecedented-speed/101954/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "VERVE-102 cuts LDL-C up to 62% in Heart-2 Phase 1b",
+      "detail": "Eli Lilly announced May 25, 2026 that a single dose of in vivo PCSK9 base editor VERVE-102 reduced PCSK9 by up to 88% and LDL-C by up to 62%, published in NEJM. Phase 2 launch planned by year-end.",
+      "source_urls": ["https://investor.lilly.com/news-releases/news-release-details/single-dose-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-88"],
+      "payload": {
+        "field": "VERVE-102 Phase 1b Heart-2 readout",
+        "new_value": "Single-dose in vivo base edit: -62% LDL-C, -88% PCSK9 at top dose; NEJM publication May 25, 2026; Phase 2 H2 2026",
+        "previous_value": "Earlier Phase 1b interim showed ~55% LDL-C reduction",
+        "source_url": "https://investor.lilly.com/news-releases/news-release-details/single-dose-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-88"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Baker Lab: quasisymmetric protein nanocages for gene delivery",
+      "detail": "David Baker's UW Institute for Protein Design lab published twin Nature papers May 22, 2026 describing one- and two-component quasisymmetric protein nanocages — programmable virus-like capsules engineered for genetic-medicine delivery.",
+      "source_urls": ["https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/"],
+      "payload": {
+        "claim": "Baker Lab Nature papers (May 22, 2026) describe de novo quasisymmetric protein nanocages with expanded internal volume, opening a computationally designed delivery vehicle class for genetic medicines.",
+        "source_url": "https://www.bakerlab.org/2026/05/22/programming-proteins-with-viral-geometry/"
+      }
+    },
+    {
+      "kind": "NEW_PERSON",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Alexander Rives — 1.1B-structure atlas + CTLA-4 binders",
+      "detail": "Alexander Rives' EvolutionaryScale team released an AI tool generating an atlas of 1.1 billion predicted protein structures and 6.8 billion sequences, with lab-validated CTLA-4 binders.",
+      "source_urls": ["https://www.nature.com/articles/d41586-026-01686-3"],
+      "payload": {
+        "name": "Alexander Rives",
+        "role": "Co-founder & Chief Scientist, EvolutionaryScale",
+        "affiliation": "EvolutionaryScale",
+        "org_type": "BUSINESS",
+        "prizes": [],
+        "source_url": "https://www.nature.com/articles/d41586-026-01686-3"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "bci",
+      "title": "Rice + Baylor join BrainGate as first Texas member",
+      "detail": "On May 28, 2026, Rice University and Baylor College of Medicine joined the BrainGate consortium as its sixth member, launching a clinical trial decoding cortical signals to control assistive robotics for people with tetraplegia.",
+      "source_urls": ["https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis"],
+      "payload": {
+        "name": "Rice/Baylor BrainGate team",
+        "org": "Rice University & Baylor College of Medicine",
+        "type": "LAB",
+        "why": "First Texas-based BrainGate site; pairs Rice computational/engineering with Baylor clinical neuroscience to advance intracortical BCI for tetraplegia assistive robotics.",
+        "funding": "Federal/clinical trial grants (BrainGate consortium)",
+        "source_url": "https://news.rice.edu/news/2026/clinical-trial-seeks-advance-intuitive-assistive-robotics-people-paralysis"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Retatrutide TRIUMPH-1: up to 28.3% weight loss at 80 wks",
+      "detail": "Eli Lilly's triple agonist retatrutide hit its primary endpoint in Phase 3 TRIUMPH-1 (announced May 21-22, 2026): up to 28.3% average weight loss at 80 weeks (12 mg dose); 65.3% of patients reached BMI <30.",
+      "source_urls": ["https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"],
+      "payload": {
+        "field": "Retatrutide (GIP/GLP-1/glucagon) TRIUMPH-1 Phase 3 obesity readout",
+        "new_value": "Up to 28.3% mean weight loss at 80 weeks (12 mg); 65.3% reached BMI <30; matches bariatric outcomes",
+        "previous_value": "Phase 2 (2023): ~24% at 48 weeks",
+        "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "SpaceX Starship V3 flies for first time (Flight 12)",
+      "detail": "On May 22, 2026, SpaceX launched the first Starship/Super Heavy V3 vehicle with Raptor 3 engines from Pad 2 at Starbase. Deployed 20 mock Starlink satellites and reached planned Indian Ocean splashdown despite engine anomalies.",
+      "source_urls": ["https://www.spacex.com/launches/starship-flight-12"],
+      "payload": {
+        "field": "Starship V3 first flight",
+        "new_value": "Starship V3 + Raptor 3 + Pad 2 debut succeeded May 22, 2026; 20 mock Starlinks deployed, Ship reached Indian Ocean target",
+        "previous_value": "Starship V2 retired after Flight 11",
+        "source_url": "https://www.spacex.com/launches/starship-flight-12"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "New Glenn destroyed in pad static-fire explosion",
+      "detail": "On May 28, 2026, a New Glenn rocket exploded during a static-fire test at LC-36, Cape Canaveral, destroying the vehicle that was set to launch 48 Amazon Project Kuiper satellites in early June.",
+      "source_urls": ["https://spaceflightnow.com/2026/05/29/blue-origins-new-glenn-rocket-explodes-during-prelaunch-testing-at-cape-canaveral/"],
+      "payload": {
+        "field": "Blue Origin New Glenn status",
+        "new_value": "Vehicle lost on pad during May 28, 2026 static fire; planned June 4 Kuiper launch delayed",
+        "previous_value": "New Glenn flying ~monthly into 2026",
+        "source_url": "https://spaceflightnow.com/2026/05/29/blue-origins-new-glenn-rocket-explodes-during-prelaunch-testing-at-cape-canaveral/"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IBM commits $10B to quantum, doubling down on 2029 FT goal",
+      "detail": "On May 28, 2026, IBM disclosed a five-year $10B+ quantum investment, reinforcing its 2029 target for the Starling fault-tolerant machine and the Anderon quantum foundry partnership with the US Department of Commerce.",
+      "source_urls": ["https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"],
+      "payload": {
+        "claim": "IBM disclosed $10B five-year quantum push (May 28, 2026) spanning R&D, manufacturing, partnerships and the Anderon foundry with DoC ($1B CHIPS proposed); targets Starling fault-tolerant machine by 2029.",
+        "source_url": "https://newsroom.ibm.com/ibm-and-u-s-department-of-commerce-announce-americas-first-purpose-built-quantum-foundry"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "Logical qubits beat physical qubits on diff. eq. (Pasqal)",
+      "detail": "Pasqal published a May 21, 2026 result showing logical-qubit encodings on its neutral-atom processor outperformed physical-qubit baselines on differential equations by ~50% on average (up to 10x on hard cases) — a first end-to-end real-world logical-qubit application on neutral atoms.",
+      "source_urls": ["https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/"],
+      "payload": {
+        "name": "Logical-qubit advantage on real applications (neutral atoms)",
+        "description": "First demonstration that logical qubits outperform physical qubits on an end-to-end real-world task (differential equations) on a neutral-atom processor at 99.4% gate fidelity across 1,000 equations.",
+        "examples": ["Pasqal neutral-atom run, 1000 differential equations, logical beats physical by ~50% avg, up to 10x on hard cases"],
+        "source_url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "PsiQuantum signs $100M CHIPS LOI with US DoC",
+      "detail": "On May 21, 2026, PsiQuantum signed an LOI with the US Department of Commerce for $100M in proposed CHIPS Act incentives to develop fault-tolerant photonic-quantum components (barium titanate switches, single-photon detectors, packaging).",
+      "source_urls": ["https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"],
+      "payload": {
+        "field": "PsiQuantum US government support",
+        "new_value": "$100M CHIPS LOI signed May 21, 2026 for fault-tolerant photonic component development",
+        "previous_value": "No prior CHIPS Act allocation",
+        "source_url": "https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "fusion",
+      "title": "Thea Energy raises $100M for stellarator prototype",
+      "detail": "On May 27, 2026, Thea Energy closed a $100M round led by Prelude Ventures with US Innovative Technology and General Innovation Capital Partners to build a demonstration project for its planar-coil stellarator approach.",
+      "source_urls": ["https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype"],
+      "payload": {
+        "name": "Thea Energy",
+        "org": "Thea Energy",
+        "type": "STARTUP",
+        "why": "Planar-coil stellarator as a simpler-to-manufacture alternative to tokamaks; $100M to build a demonstration prototype amid AI-data-center power demand.",
+        "funding": "$100M (May 27, 2026); leads Prelude Ventures, US Innovative Technology, General Innovation Capital Partners",
+        "source_url": "https://www.bloomberg.com/news/articles/2026-05-27/fusion-startup-thea-raises-100-million-to-build-prototype"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Cerebras stock rebounds post-IPO; $66B valuation holds",
+      "detail": "Cerebras (NASDAQ: CBRS) jumped 10.4% on May 27, 2026 to close at $266.90 after a four-day losing streak. IPO priced at $185 on May 13, raising $5.55B at $66B+ valuation; $20B OpenAI capacity deal in place.",
+      "source_urls": ["https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821"],
+      "payload": {
+        "field": "Cerebras post-IPO status",
+        "new_value": "CBRS at $266.90 on May 27, 2026 (+10.4%); $66B market cap; $20B OpenAI capacity deal active",
+        "previous_value": "Private; mooted $4-5B valuation pre-IPO",
+        "source_url": "https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821"
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "World models go mainstream as the next AI frontier",
+      "detail": "Multiple independent signals converged on 'world models' as the next paradigm beyond LLMs: Fortune's May 20 feature on why top AI names are betting billions on world models, MIT Tech Review's 'Top 10 Things That Matter in AI' (May 12) listing world models, Jim Fan's AI Ascent talk pivoting NVIDIA robotics from VLA to video-first World Action Models, and a May 25 LeCun-group arXiv paper on when LeJEPA learns a world model.",
+      "source_urls": [
+        "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+        "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
+        "https://cryptobriefing.com/lejepa-world-model-conditions-lecun/",
+        "https://www.humanoidsdaily.com/news/the-great-parallel-nvidia-s-jim-fan-outlines-the-robotics-end-game-strategy"
+      ],
+      "payload": {
+        "thesis": "World models — AI that learns physics-grounded internal simulations from video, not just text — are emerging as the post-LLM paradigm, drawing capital and talent from NVIDIA, Meta FAIR alumni (AMI Labs), Google (Genie), and Fei-Fei Li's World Labs.",
+        "examples": [
+          "Fortune feature 'Why the AI field's biggest names are betting billions on world models'",
+          "MIT Tech Review names world models in 'Top 10 Things That Matter in AI'",
+          "LeCun group arXiv 'When Does LeJEPA Learn a World Model?'",
+          "Jim Fan AI Ascent talk pivoting from VLA to video-first World Action Models"
+        ],
+        "spotted_at": [
+          "https://fortune.com/2026/05/20/physical-ai-world-models-research-nvidia-google-fei-fei-li-yann-lecun/",
+          "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
+          "https://cryptobriefing.com/lejepa-world-model-conditions-lecun/",
+          "https://www.humanoidsdaily.com/news/the-great-parallel-nvidia-s-jim-fan-outlines-the-robotics-end-game-strategy"
+        ]
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Token-cost anxiety: agentic coding burning AI budgets",
+      "detail": "Multiple independent signals this week framed the same thesis — agentic coding is dramatically more expensive than chat/reasoning workloads. Fortune (May 22) covered Microsoft reports showing AI agents can cost more than human employees, Azeem Azhar's Exponential View (May 21) titled a post 'Bye, bye fixed costs. Hello, token anxiety,' and Vantage/Stanford research quantified the ~1000x token gap vs. code chat.",
+      "source_urls": [
+        "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+        "https://www.exponentialview.co/p/bye-bye-fixed-costs-hello-token-anxiety",
+        "https://www.vantage.sh/blog/agentic-coding-costs"
+      ],
+      "payload": {
+        "thesis": "Agentic AI economics break the SaaS fixed-cost model: input tokens compound 20-25x faster than output, sessions burn ~1M input tokens, and enterprises (e.g., Uber) are exhausting full-year AI coding budgets in 4 months.",
+        "examples": [
+          "Fortune: Microsoft reports show AI agents can cost more than paying human employees",
+          "Exponential View 'Bye, bye fixed costs. Hello, token anxiety'",
+          "Stanford/Vantage: agentic tasks consume ~1000x more tokens than code chat",
+          "Uber CTO: 2026 AI coding budget exhausted in 4 months"
+        ],
+        "spotted_at": [
+          "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+          "https://www.exponentialview.co/p/bye-bye-fixed-costs-hello-token-anxiety",
+          "https://www.vantage.sh/blog/agentic-coding-costs"
+        ]
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Fervo Energy completes $1.89B clean-energy IPO at $10B+",
+      "detail": "On May 12-13, 2026, Fervo Energy priced and debuted the largest-ever clean-energy IPO, raising $1.89B at $27/share, closing up 35% on day one for a market cap above $10B. The Bill Gates-backed enhanced geothermal company is positioned as the leading 24/7 firm clean power source for AI data centers.",
+      "source_urls": [
+        "https://www.bloomberg.com/news/articles/2026-05-13/geothermal-energy-firm-fervo-rises-33-after-1-89-billion-ipo",
+        "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/"
+      ],
+      "payload": {
+        "candidate_area": "Enhanced geothermal / 24-7 firm clean power for AI data centers",
+        "summary": "Fervo Energy IPO raises $1.89B (largest clean-energy IPO ever); stock pops 35% on debut for $10B+ market cap — public-market validation of EGS as the bankable firm-power source for the AI buildout.",
+        "url": "https://fortune.com/2026/05/14/fervo-clean-energy-biggest-ipo-10b-valuation-powered-earths-heat-ai-hunger/"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "EU draft transparency guidelines for AI-generated content",
+      "detail": "On May 8, 2026, the European Commission published draft guidelines on Article 50 of the EU AI Act, clarifying that transparency labels for synthetic content must be clear, distinguishable, and repeated over time — not just at the opening of a video.",
+      "source_urls": [
+        "https://www.insideglobaltech.com/2026/05/12/10-takeaways-european-commission-draft-guidelines-on-ai-transparency-under-the-eu-ai-act/"
+      ],
+      "payload": {
+        "candidate_area": "AI regulation / synthetic content labeling",
+        "summary": "EU Commission's May 8 draft Article 50 guidelines mandate persistent (not one-time) AI-content labels, signaling a stricter global benchmark for synthetic-media disclosure.",
+        "url": "https://www.insideglobaltech.com/2026/05/12/10-takeaways-european-commission-draft-guidelines-on-ai-transparency-under-the-eu-ai-act/"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Joby enters Stage 5 (final) of FAA eVTOL type certification",
+      "detail": "By late May 2026, Joby Aviation cleared Stage 4 of FAA Type Certification (airworthiness conformity review) and entered Stage 5, the final phase. Targets full TC by September 2026 and late-2026 commercial launch with Delta in NYC and LA.",
+      "source_urls": [
+        "https://www.aircraftinsider.com/joby-aviation-clears-faa-stage-4-certification-commercial-evtol-passenger-flights-could-launch-by-end-of-2026/"
+      ],
+      "payload": {
+        "candidate_area": "eVTOL / advanced air mobility",
+        "summary": "Joby in Stage 5 (final) of FAA Type Certification with Stage 4 cleared; first-ever US commercial eVTOL TC within a one-quarter horizon (target Sept 2026), Delta-partnered NYC/LA launch by year-end.",
+        "url": "https://www.aircraftinsider.com/joby-aviation-clears-faa-stage-4-certification-commercial-evtol-passenger-flights-could-launch-by-end-of-2026/"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Frontier AI hits inflection in vulnerability discovery (Palo Alto)",
+      "detail": "Palo Alto Networks' May 2026 patch advisory disclosed 26 CVEs covering 75 issues (vs. usual <5/month) — the majority of findings came from frontier AI models scanning their own codebase for the first time, a concrete inflection in AI-in-cybersecurity.",
+      "source_urls": [
+        "https://www.paloaltonetworks.com/blog/2026/05/defenders-guide-frontier-ai-impact-cybersecurity-may-2026-update/"
+      ],
+      "payload": {
+        "candidate_area": "AI safety / cybersecurity",
+        "summary": "Palo Alto's May 2026 patch advisory disclosed 5-10x normal CVE volume, with most findings from frontier-AI code scans — first time vulnerability discovery has visibly crossed an AI-driven inflection.",
+        "url": "https://www.paloaltonetworks.com/blog/2026/05/defenders-guide-frontier-ai-impact-cybersecurity-may-2026-update/"
+      }
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Sholto Douglas — go-to voice on RL-for-reasoning",
+      "detail": "Anthropic researcher Sholto Douglas appeared on Dwarkesh Patel's podcast May 23 and has rapidly become the most-cited explainer of RL on reasoning traces, with the episode crossing 1M views and clips reshared by Karpathy, Lambert, and Chollet.",
+      "source_urls": [
+        "https://www.dwarkeshpatel.com/p/sholto-douglas-trenton-bricken-2026",
+        "https://x.com/_sholtodouglas"
+      ],
+      "payload": {
+        "name": "Sholto Douglas",
+        "role": "Member of Technical Staff, Anthropic (RL & reasoning)",
+        "focus": "RL on reasoning traces, agent training, inference-time compute",
+        "follow_url": "https://x.com/_sholtodouglas",
+        "twitter": "https://x.com/_sholtodouglas",
+        "youtube": null,
+        "newsletter": null,
+        "notes": "Currently the clearest public explainer of how frontier labs are actually training reasoning models; Dwarkesh appearance crossed 1M views and was reshared by Karpathy, Lambert, Chollet.",
+        "tags": ["AI", "RL", "REASONING"]
+      }
+    }
+  ]
+}

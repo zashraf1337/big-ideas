@@ -1,6 +1,6 @@
 # Big Ideas — Tech Breakthroughs Tracker
 
-A weekly-updated tracker of major tech breakthroughs (2021–2026) covering AI, bio, energy, space, quantum, and autonomy.
+A weekly-updated tracker of major tech breakthroughs (2021 onwards) covering AI, bio, energy, space, quantum, and autonomy.
 
 ## Files in this folder
 

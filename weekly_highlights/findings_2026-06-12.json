@@ -1,0 +1,268 @@
+{
+  "week_ending": "2026-06-12",
+  "summary": "The week was dominated by AI: Anthropic released Claude Fable 5 (the public face of its new 'Mythos-class' tier), which immediately set off a field-wide controversy after its system card disclosed covert response-degradation ('sandbagging') for frontier-AI research tasks — a policy Anthropic reversed within days. That episode crystallized a trending thesis, voiced by Nathan Lambert and rising policy analyst Dean Ball among others, that lab 'safety' moves are increasingly seen as cover for anti-competitive behavior. Biology's news clustered at ADA 2026, where Lilly's retatrutide hit 28.3% weight loss in Phase 3 and its oral orforglipron beat oral semaglutide head-to-head, while amylin agonism and muscle-preservation emerged as the post-GLP-1 frontier. On the physical side, the Quantinuum/Microsoft 800x logical-qubit result was formally published in Nature, IQM unveiled qLDPC 'barbell codes,' Falcon 9 booster B1067 flew a record 35th time, and the US DOE released its finalized national fusion roadmap targeting commercial power in the mid-2030s.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic releases Claude Fable 5, first general-release Mythos-class model",
+      "detail": "Anthropic released Claude Fable 5 (Jun 9), the publicly accessible version of its new 'Mythos-class' tier above Opus, describing it as state-of-the-art on nearly all capability benchmarks with safeguards that fall back to Opus 4.8 on cyber/bio queries.",
+      "source_urls": ["https://www.anthropic.com/news/claude-fable-5-mythos-5", "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/"],
+      "payload": {
+        "claim": "Claude Fable 5, a new 'Mythos-class' tier sitting above Opus, is now generally available and described by Anthropic as SOTA on nearly all tested AI-capability benchmarks, with classifier fallback to Opus 4.8 on cyber/bio/distillation queries.",
+        "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "Mythos 5 generates novel scientific hypotheses autonomously",
+      "detail": "Anthropic's Mythos 5 (the safeguard-lifted twin of Fable 5) is described as its first model to consistently generate novel, compelling scientific hypotheses; scientists preferred its molecular-biology hypotheses ~80% of the time in blinded comparisons.",
+      "source_urls": ["https://www.anthropic.com/news/claude-fable-5-mythos-5"],
+      "payload": {
+        "name": "Autonomous scientific hypothesis generation",
+        "description": "Frontier reasoning models running long autonomous research loops (protein design, genomics) that propose and validate novel hypotheses at or above expert level — test-time/agentic compute applied to open-ended science.",
+        "examples": ["Mythos 5 preferred ~80% in blinded molecular-biology hypothesis comparisons", "Mythos 5 trained a single-cell genomics model that beat a Science-published model while ~100x smaller", "Mythos 5 accelerated internal protein/drug design ~10x"],
+        "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "NEURA Robotics opens Series C of up to $1.4B for physical AI",
+      "detail": "Germany's NEURA Robotics said (Jun 10) its Series C could reach $1.4B, led by Tether with Qualcomm, Amazon, NVIDIA, Bosch, Schaeffler and the EIB; it claims an orderbook over $1B and targets millions of robots by 2030 via its 'Neuraverse' platform.",
+      "source_urls": ["https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/"],
+      "payload": {
+        "name": "NEURA Robotics",
+        "org": "NEURA Robotics GmbH",
+        "type": "STARTUP",
+        "why": "One of the largest robotics/physical-AI rounds on record; positions a European player against US/China humanoid leaders with a shared-learning 'Neuraverse' and 4NE1 humanoid.",
+        "funding": "Series C of up to $1.4B (led by Tether; Qualcomm, Amazon, NVIDIA, Bosch, Schaeffler, EIB)",
+        "source_url": "https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Theker raises $85M, billed as Europe's largest robotics Series A",
+      "detail": "Barcelona's Theker raised $85M (Jun 11) led by CRV with Samsung and LVMH-linked Aglaé Ventures to build reconfigurable (non-fixed-form) industrial robots whose hands/arms can be swapped per task; Inditex (Zara) is an early backer.",
+      "source_urls": ["https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/"],
+      "payload": {
+        "name": "Theker",
+        "org": "Theker",
+        "type": "STARTUP",
+        "why": "Reconfigurable-form factory robots as an alternative to fixed humanoids; strategic backing from Samsung, LVMH's Aglaé, and Inditex signals manufacturing/retail pull.",
+        "funding": "$85M Series A (led by CRV; Samsung, Aglaé Ventures)",
+        "source_url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Coinbase ships MCP server for agentic trading and x402 payments",
+      "detail": "Coinbase launched 'Coinbase for Agents' (Jun 11) as an MCP server (works in ChatGPT/Claude) and CLI that lets agents trade, pay, and buy premium data/compute via the open x402 payment protocol without logins or subscriptions.",
+      "source_urls": ["https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/"],
+      "payload": {
+        "name": "Agentic commerce via MCP + x402",
+        "description": "Exposing financial accounts and pay-per-use data/compute to LLM agents through an MCP server plus the x402 micropayment standard, letting agents transact autonomously within user-set limits.",
+        "examples": ["Coinbase for Agents MCP server usable in ChatGPT and Claude", "x402 used to pay for premium research APIs and on-demand compute without login", "x402 standard backed by AWS, Anthropic, Circle, Near"],
+        "source_url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Waymo launches 'Waymo Premier' loyalty subscription",
+      "detail": "Waymo introduced Waymo Premier (Jun 11), an invite-only $29.99/month membership in SF, LA, and Phoenix offering priority pickups, 10% Waymo Cash back, free cancellations, and early access to new cities — its first robotaxi loyalty/subscription product.",
+      "source_urls": ["https://waymo.com/blog/2026/06/waymo-premier/", "https://techcrunch.com/2026/06/11/waymo-launches-a-loyalty-program-with-10-cash-back-and-free-cancellations/"],
+      "payload": {
+        "field": "Waymo consumer monetization model",
+        "new_value": "Waymo Premier, an invite-only $29.99/mo subscription (priority pickups, 10% cash back, free cancellations), launched in SF, LA, Phoenix on Jun 11, 2026",
+        "previous_value": "Per-ride pricing only, no robotaxi subscription/loyalty tier",
+        "source_url": "https://waymo.com/blog/2026/06/waymo-premier/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Retatrutide hits 28.3% weight loss at 80wk in Phase 3 TRIUMPH-1 (ADA 2026)",
+      "detail": "Lilly's triple GLP-1/GIP/glucagon agonist retatrutide delivered 28.3% mean weight loss at 80 weeks (30.3% at 104 weeks) in the 2,339-patient Phase 3 TRIUMPH-1 obesity trial, with 45.3% reaching ≥30% loss; full data at ADA 2026.",
+      "source_urls": ["https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-drove-substantial-improvements-in-weight-a1c-knee-osteoarthritis-pain-and-obstructive-sleep-apnea-demonstrating-its-remarkable-potential-to-treat-obesity-and-its-complications-302793169.html", "https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial"],
+      "payload": {
+        "field": "retatrutide Phase 3 TRIUMPH-1 mean weight loss (12mg, 80wk)",
+        "new_value": "28.3% (30.3% at 104 weeks); 45.3% achieved ≥30% loss",
+        "previous_value": "Phase 2: ~24% at 48 weeks (2023)",
+        "source_url": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-drove-substantial-improvements-in-weight-a1c-knee-osteoarthritis-pain-and-obstructive-sleep-apnea-demonstrating-its-remarkable-potential-to-treat-obesity-and-its-complications-302793169.html"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Oral GLP-1 orforglipron beats oral semaglutide head-to-head (ACHIEVE-3)",
+      "detail": "Lilly's small-molecule oral GLP-1 Foundayo (orforglipron) drove 57.1% greater relative A1C reduction and 73.6% greater relative weight loss vs oral semaglutide in Phase 3 ACHIEVE-3; three ACHIEVE trials presented at ADA 2026 (Jun 8).",
+      "source_urls": ["https://www.prnewswire.com/news-releases/lillys-oral-glp-1-foundayo-orforglipron-delivered-superior-a1c-control-and-weight-loss-in-three-pivotal-type-2-diabetes-trials-302793407.html", "https://investor.lilly.com/news-releases/news-release-details/lillys-oral-glp-1-foundayo-orforglipron-delivered-superior-a1c"],
+      "payload": {
+        "field": "orforglipron (Foundayo) vs oral semaglutide head-to-head (ACHIEVE-3)",
+        "new_value": "57.1% greater relative A1C reduction, 73.6% greater relative weight loss vs oral sema 14mg",
+        "previous_value": "earlier head-to-head superiority reported in Lancet (out of window)",
+        "source_url": "https://www.prnewswire.com/news-releases/lillys-oral-glp-1-foundayo-orforglipron-delivered-superior-a1c-control-and-weight-loss-in-three-pivotal-type-2-diabetes-trials-302793407.html"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Pfizer monthly GLP-1 berobenatide: up to 15.9% weight loss in Phase 2b",
+      "detail": "Pfizer reported Phase 2b VESPER data (Jun 5) for berobenatide, a first-in-class monthly-dosed GLP-1 peptide, showing up to ~15.9% weight loss with no plateau at 32 weeks; Pfizer plans 10 Phase 3 studies in 2026.",
+      "source_urls": ["https://www.pfizer.com/news/press-release/press-release-detail/robust-phase-2b-efficacy-and-favorable-tolerability-support", "https://www.businesswire.com/news/home/20260605120877/en/Robust-Phase-2b-Efficacy-and-Favorable-Tolerability-Support-Monthly-Dosing-for-Pfizers-GLP-1-RA-Berobenatide"],
+      "payload": {
+        "field": "berobenatide (monthly GLP-1) Phase 2b weight loss",
+        "new_value": "up to ~15.9% (VESPER-1, non-placebo-adjusted, 32wk); advancing to 10 Phase 3 studies",
+        "previous_value": "n/a (new Phase 2b readout)",
+        "source_url": "https://www.businesswire.com/news/home/20260605120877/en/Robust-Phase-2b-Efficacy-and-Favorable-Tolerability-Support-Monthly-Dosing-for-Pfizers-GLP-1-RA-Berobenatide"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "glp1",
+      "title": "Amylin agonists + muscle-preserving combos emerge as next obesity frontier",
+      "detail": "ADA 2026 (Jun 5-8) crystallized a shift beyond pure GLP-1s toward amylin-pathway agonists and muscle-sparing combinations, with multiple companies showing strong amylin/combination data and myostatin-inhibitor approaches to limit lean-mass loss.",
+      "source_urls": ["https://www.biospace.com/drug-development/muscle-preservation-tolerability-and-alternative-administration-routes-define-obesitys-drug-future", "https://www.biospace.com/drug-development/obesity-space-abuzz-with-oral-amylin-assets-as-momentum-rides-into-2026"],
+      "payload": {
+        "name": "Amylin agonism and muscle-preserving obesity combinations",
+        "description": "Beyond GLP-1: selective amylin receptor agonists and combos engineered to preserve lean mass (e.g., GLP-1 + myostatin inhibition) became a dominant ADA 2026 theme, addressing the lean-mass-loss limitation of incretins.",
+        "examples": ["Lilly eloralintide (selective amylin agonist) + tirzepatide", "Novo CagriSema and amycretin/zenagamtide", "Roche petrelintide amylin analog", "semaglutide + bimagrumab (myostatin) lowering lean-mass loss fraction"],
+        "source_url": "https://www.biospace.com/drug-development/muscle-preservation-tolerability-and-alternative-administration-routes-define-obesitys-drug-future"
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "glp1",
+      "title": "Roche enters obesity race with amylin analog petrelintide (ADA 2026)",
+      "detail": "Roche presented Phase 2 data during ADA 2026 sessions (Jun 5-8) on amylin analog petrelintide as monotherapy and combined with enicepatide, signaling a serious new big-pharma entrant in the post-GLP-1 obesity space.",
+      "source_urls": ["https://www.roche.com/media/releases/med-cor-2026-06-01", "https://www.biospace.com/drug-development/obesity-davids-and-goliaths-face-off-at-ada-2026"],
+      "payload": {
+        "name": "Roche obesity portfolio (petrelintide + enicepatide)",
+        "org": "Roche",
+        "type": "LAB",
+        "why": "Major new entrant validating the amylin pathway; petrelintide Phase 2 data positioned as a core asset alongside enicepatide combinations at ADA 2026.",
+        "funding": "Roche internal R&D (large pharma); petrelintide via Carmot acquisition",
+        "source_url": "https://www.roche.com/media/releases/med-cor-2026-06-01"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "Trapped-ion QEC achieves 11x-800x logical error reduction, published in Nature",
+      "detail": "The Quantinuum/Microsoft demonstration is now formally peer-reviewed in Nature (vol 654): two ion-trap codes — a 12-qubit Knill-inspired code and a 16-qubit tesseract colour code — plus scalable error detection achieve logical error reductions from 11x up to 800x over physical baselines.",
+      "source_urls": ["https://www.nature.com/articles/s41586-026-10628-y", "https://www.quantinuum.com/blog/quantinuums-fault-tolerance-advantage-turning-quantum-reliability-into-commercial-usefulness"],
+      "payload": {
+        "claim": "On a trapped-ion QCCD processor, two optimized QEC code constructions (12-qubit Knill-inspired and 16-qubit tesseract colour code) combined with scalable error detection achieve logical error rates 11x to 800x lower than physical-circuit baselines; now published in Nature (vol 654, pp 349-355, 2026).",
+        "source_url": "https://www.nature.com/articles/s41586-026-10628-y"
+      }
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IQM 'barbell codes' — qLDPC codes with ~1000x lower logical error",
+      "detail": "On Jun 9 IQM unveiled 'barbell codes', a family of quantum low-density parity-check codes tailored to its Constellation processor, claiming up to three orders of magnitude lower logical error rates than the surface code while using up to 8x fewer physical qubits.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260609533201/en/IQM-Announces-Novel-Quantum-Error-Correction-Approach-Toward-Fault-Tolerant-Quantum-Computing", "https://thequantuminsider.com/2026/06/09/iqm-announces-novel-quantum-error-correction-approach-toward-fault-tolerant-quantum-computing/"],
+      "payload": {
+        "name": "Barbell codes (qLDPC)",
+        "description": "A new family of quantum low-density parity-check error-correcting codes designed for IQM's superconducting Constellation processor, reducing logical error rates and physical-qubit overhead versus the surface code.",
+        "examples": ["IQM barbell codes on the Constellation processor"],
+        "source_url": "https://www.businesswire.com/news/home/20260609533201/en/IQM-Announces-Novel-Quantum-Error-Correction-Approach-Toward-Fault-Tolerant-Quantum-Computing"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Falcon 9 booster B1067 sets reuse record with 35th flight",
+      "detail": "On Jun 7-8 SpaceX flew and landed Falcon 9 booster B1067 for a record 35th time (Starlink 10-35), the most flights of any orbital-class booster in history and closing in on the Space Shuttle orbiter's 39-flight mark.",
+      "source_urls": ["https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/", "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-10-35-b1067-ccsfs-asog"],
+      "payload": {
+        "field": "Falcon 9 single-booster reuse record",
+        "new_value": "35 flights (booster B1067), achieved 2026-06-07/08",
+        "previous_value": "34 flights (prior record)",
+        "source_url": "https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/"
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "fusion",
+      "title": "Avalanche desktop-scale reactor reaches ~11 million degrees C",
+      "detail": "On Jun 10 Avalanche Energy reported its sub-5-inch 'Jyn' orbitrap device heated plasma to ~11 million degrees C (>1 keV ion temperature) on under $50M of venture funding — a notable proof point for compact, magnet-light fusion architectures.",
+      "source_urls": ["https://techcrunch.com/2026/06/10/avalanches-desktop-fusion-reactor-delivers-blistering-hot-plasma/", "https://www.avalanchefusion.com/news"],
+      "payload": {
+        "claim": "A desktop-scale (sub-5-inch) electrostatic/magnetic 'orbitrap' fusion device heated plasma to roughly 11 million degrees C (above 1 keV apparent ion temperature) on less than $50M of investment, demonstrating a compact path toward fusion conditions.",
+        "source_url": "https://techcrunch.com/2026/06/10/avalanches-desktop-fusion-reactor-delivers-blistering-hot-plasma/"
+      }
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "US DOE releases finalized national Fusion S&T Roadmap",
+      "detail": "On Jun 9 the DOE published its finalized Fusion Science & Technology Roadmap, developed with 800+ scientists, 15+ private firms, 10+ national labs and 70+ universities, targeting commercial fusion power in the mid-2030s via a new DOE Office of Fusion.",
+      "source_urls": ["https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate", "https://www.ans.org/news/2026-06-10/article-8112/does-latest-fusion-strategy-aims-for-commercial-energy-by-the-2030s/"],
+      "payload": {
+        "field": "US federal fusion commercialization strategy",
+        "new_value": "Finalized DOE Fusion S&T Roadmap published 2026-06-09 targeting commercial fusion in the mid-2030s, implemented via a new Office of Fusion",
+        "previous_value": "No single finalized national fusion roadmap; fragmented FES program guidance",
+        "source_url": "https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate"
+      }
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Dean W. Ball — AI policy analyst driving 'secret sabotage' critique of labs",
+      "detail": "Ball (Foundation for American Innovation; ex-White House OSTP) coined 'secret sabotage' for Anthropic's covert model sandbagging this week and argued it raises the status of the view that AI safety has been hype used to justify monopolistic lab behavior. His Hyperdimensional newsletter is now a central node in the safety-vs-capture debate.",
+      "source_urls": ["https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/", "https://www.hyperdimensional.co/"],
+      "payload": {
+        "name": "Dean W. Ball",
+        "role": "Senior Fellow, Foundation for American Innovation; former White House OSTP advisor",
+        "focus": "AI governance, regulation, frontier-model policy, regulatory capture",
+        "follow_url": "https://www.hyperdimensional.co/",
+        "twitter": "https://x.com/deanwball",
+        "youtube": null,
+        "newsletter": "https://www.hyperdimensional.co/ (Hyperdimensional)",
+        "notes": "Not on the tracked big-voice list. Rising as the go-to policy critic of lab behavior; quoted across Fortune/Wired coverage of the Fable 5 episode.",
+        "tags": ["ai-policy", "regulatory-capture", "ai-safety", "new-voice"]
+      }
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "'AI safety as cover for monopoly / anti-science' thesis surges this week",
+      "detail": "After Claude Fable 5 was found to covertly degrade outputs for frontier-AI research tasks, multiple independent voices reframed lab 'safety' moves as anti-competitive and anti-science — spreading fast enough to force Anthropic to reverse and make the safeguards visible.",
+      "source_urls": ["https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/", "https://natolambert.substack.com/p/anthropic-walks-back-silently-nerfing", "https://decrypt.co/370688/internet-furious-anthropic-claude-mythos-fable-5"],
+      "payload": {
+        "thesis": "Frontier labs are increasingly accused of using 'AI safety' to justify monopolistic, anti-science behavior — covertly nerfing models for competitors/researchers rather than for genuine risk reduction.",
+        "examples": ["Nathan Lambert (Interconnects) calling covert sandbagging 'appalling' and 'anti-science'", "Dean Ball (Hyperdimensional) coining 'secret sabotage'", "Broad community furor (Decrypt: 'The Internet Is Furious at Anthropic') forcing a policy reversal"],
+        "spotted_at": ["https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/", "https://natolambert.substack.com/p/anthropic-walks-back-silently-nerfing", "https://decrypt.co/370688/internet-furious-anthropic-claude-mythos-fable-5"]
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Quantum sensing crosses to field-deployable products (clocks, magnetometers)",
+      "detail": "Coverage this period reports atomic clocks, magnetometers and gravimeters reaching TRL 7-8 and moving from lab to procured defense products — including Aquark's AQlock atomic clock validated in UK Royal Navy sea trials — enabling GPS-denied navigation. Adjacent to tracked areas.",
+      "source_urls": ["https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/", "https://www.idtechex.com/en/research-report/quantum-sensors-market/1118"],
+      "payload": {
+        "candidate_area": "Quantum sensing / GPS-denied navigation",
+        "detail": "Atomic clocks, magnetometers, gravimeters at TRL 7-8 entering defense procurement; maritime atomic-clock sea trials (Aquark AQlock) demonstrate real-world operation. Distinct from quantum error correction.",
+        "source_url": "https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/"
+      }
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Cultivated meat approvals broaden; costs approaching parity",
+      "detail": "Mid-2026 roundups note cultivated meat now approved in Israel, Netherlands, Switzerland and Japan with UK/Canada/Australia pending, and leading producers claiming sub-$10/lb chicken — nearing food-service competitiveness. A synthetic-biology adjacent area not yet tracked.",
+      "source_urls": ["https://sciencestimes.ca/lab-grown-cultivated-meat-regulatory-approval-global-2026/", "https://www.foodnavigator-usa.com/Article/2026/02/18/cultivated-meat-regulation-where-countries-stand-in-2026/"],
+      "payload": {
+        "candidate_area": "Synthetic biology / cultivated meat (regulatory shift)",
+        "detail": "Expanding multi-country approvals (Israel, Netherlands, Switzerland, Japan) plus cost claims below $10/lb for chicken signal approach toward food-service parity.",
+        "source_url": "https://sciencestimes.ca/lab-grown-cultivated-meat-regulatory-approval-global-2026/"
+      }
+    }
+  ]
+}

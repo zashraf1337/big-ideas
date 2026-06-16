@@ -1,0 +1,42 @@
+{
+  "week_ending": "2026-06-16",
+  "summary": "Ad-hoc placement of two Transformer Lab items: the fused-INT8 diffusion-kernel paper (a quantization/efficiency result on consumer GPUs) and Transformer Lab itself (lab.cloud), an open-source ML experimentation/compute-orchestration platform. Both multi-labelled into existing categories.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "diffusion_models",
+      "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
+      "detail": "Transformer Lab's fused INT8 GEMM kernel realizes native integer-tensor-core compute for a diffusion transformer, taking INT8 from slowest to fastest variant and fitting 1024px generation on one consumer 24GB GPU (~9.5% end-to-end vs FP8, consumer-Ampere only; honest about the ceiling). Paper arXiv 2606.14598.",
+      "source_urls": ["https://arxiv.org/abs/2606.14598", "https://x.com/transformerlab/status/2066596062270525732"],
+      "payload": {
+        "claim": "Fused INT8 Triton kernel realizes native integer compute for diffusion transformers, enabling 1024px single-RTX-3090 generation (~9.5% end-to-end vs FP8; consumer-Ampere only). arXiv 2606.14598.",
+        "source_url": "https://arxiv.org/abs/2606.14598",
+        "subtheme_ids": [
+          "ai__architecture_efficiency__quantization_custom_kernels",
+          "ai__architecture_efficiency__small_on_device_edge_models",
+          "ai__multimodal_generative_media__diffusion_transformers_image"
+        ]
+      }
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Transformer Lab — open-source ML experimentation & compute-orchestration platform",
+      "detail": "lab.cloud / Transformer Lab is an open-source platform for ML researchers to request local/cloud compute nodes, submit ML jobs, and track experiments and artifacts in one place; a 'for-teams' tier targets collaborative clusters. Notable for reproducible, honest quantization research (fused INT8 work).",
+      "source_urls": ["https://lab.cloud/for-teams", "https://arxiv.org/abs/2606.14598"],
+      "payload": {
+        "name": "Transformer Lab",
+        "org": "Transformer Lab (lab.cloud)",
+        "type": "STARTUP",
+        "why": "Open-source MLOps/experimentation layer (compute orchestration, training, eval, quantization) with a teams tier; a credible primary-source research shop on efficiency/quantization to track for the edge/efficiency lane.",
+        "funding": "Not disclosed (open-source platform; for-teams commercial tier)",
+        "source_url": "https://lab.cloud/for-teams",
+        "subtheme_ids": [
+          "ai__frontier_platforms_applied_ai_economics__ai_data_infra_security_products",
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+          "ai__architecture_efficiency__quantization_custom_kernels"
+        ]
+      }
+    }
+  ]
+}

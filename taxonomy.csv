@@ -1,32 +1,32 @@
 domain,theme,subtheme,track,status,item_count,mapped_breakthroughs,example,source_url
-AI,Reasoning & test-time compute,RL with verifiable rewards & self-play,RND,active,2,reasoning_models,Absolute Zero (zero-data self-play),https://arxiv.org/abs/2505.03335
-AI,Reasoning & test-time compute,Test-time / inference compute scaling,RND,active,1,reasoning_models,OpenAI o-series; entropy-gated sparse policy,https://arxiv.org/abs/2412.16720
-AI,Reasoning & test-time compute,Formal verification & provable reasoning,RND,active,2,reasoning_models,AxiomProver (Lean 4 / Mathlib),https://github.com/AxiomMath/putnam2025
-AI,Reasoning & test-time compute,Agentic reasoning & long-horizon autonomy,BOTH,active,1,reasoning_models,Long-horizon agentic benchmarks,https://arxiv.org/abs/2603.25681
+AI,Reasoning & test-time compute,RL with verifiable rewards & self-play,RND,active,3,reasoning_models,Absolute Zero (zero-data self-play),https://arxiv.org/abs/2505.03335
+AI,Reasoning & test-time compute,Test-time / inference compute scaling,RND,active,2,reasoning_models,OpenAI o-series; entropy-gated sparse policy,https://arxiv.org/abs/2412.16720
+AI,Reasoning & test-time compute,Formal verification & provable reasoning,RND,active,3,reasoning_models,AxiomProver (Lean 4 / Mathlib),https://github.com/AxiomMath/putnam2025
+AI,Reasoning & test-time compute,Agentic reasoning & long-horizon autonomy,BOTH,active,3,reasoning_models,Long-horizon agentic benchmarks,https://arxiv.org/abs/2603.25681
 AI,Architecture & efficiency,"MoE, sparse attention & long context",BOTH,active,1,transformers_llms,MiniMax M3 (1M-context sparse attention),https://arxiv.org/abs/2506.13585
 AI,Architecture & efficiency,State-space models & attention alternatives,RND,gap,0,,Mamba-3 / hybrid SSM-attention,https://arxiv.org/pdf/2603.15569
-AI,Architecture & efficiency,Quantization & custom kernels,BOTH,gap,0,,Transformer Lab fused INT8 for diffusion (RTX 3090),https://arxiv.org/abs/2606.14598
-AI,Architecture & efficiency,Small / on-device / edge models,BOTH,gap,0,,Phi / Qwen3-8B; >2B phones running local SLMs,https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/
+AI,Architecture & efficiency,Quantization & custom kernels,BOTH,active,2,,Transformer Lab fused INT8 for diffusion (RTX 3090),https://arxiv.org/abs/2606.14598
+AI,Architecture & efficiency,Small / on-device / edge models,BOTH,active,1,,Phi / Qwen3-8B; >2B phones running local SLMs,https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/
 AI,Architecture & efficiency,Diffusion language models,RND,gap,0,,Survey on parallel text generation,https://arxiv.org/abs/2508.08712
-AI,Multimodal & generative media,Diffusion transformers (image),BOTH,active,1,diffusion_models,Ideogram / Midjourney / Imagen,https://arxiv.org/abs/2212.09748
+AI,Multimodal & generative media,Diffusion transformers (image),BOTH,active,2,diffusion_models,Ideogram / Midjourney / Imagen,https://arxiv.org/abs/2212.09748
 AI,Multimodal & generative media,Video generation,BOTH,active,1,diffusion_models,Runway Gen-4.5; Sora 2,https://runwayml.com/research
 AI,Multimodal & generative media,World models / neural simulation,RND,active,1,diffusion_models,NVIDIA Cosmos 3; Google Genie 3,https://www.nvidia.com/en-us/ai/cosmos/
 AI,Multimodal & generative media,One-step / real-time generation,RND,active,1,diffusion_models,Consistency/distillation samplers,https://arxiv.org/abs/2303.01469
 AI,"Data, memory & evaluation foundations",Memory & continual learning,RND,gap,0,,MemoryAgentBench (ICLR 2026),https://arxiv.org/abs/2605.06716
 AI,"Data, memory & evaluation foundations",Synthetic data & curation,RND,gap,0,,Demystifying synthetic pretraining data,https://arxiv.org/pdf/2510.01631
-AI,"Data, memory & evaluation foundations",Evaluation science & benchmark saturation,RND,gap,0,,Humanity's Last Exam; benchmark-saturation study,https://arxiv.org/pdf/2602.16763
+AI,"Data, memory & evaluation foundations",Evaluation science & benchmark saturation,RND,active,1,,Humanity's Last Exam; benchmark-saturation study,https://arxiv.org/pdf/2602.16763
 AI,"Data, memory & evaluation foundations",RL environments as infrastructure,RND,gap,0,,Scale — RL environments,https://scale.com/blog/rl-environments
 AI,"Safety, interpretability & governance",Mechanistic interpretability,RND,gap,0,,Anthropic interpretability program,https://www.anthropic.com/research/team/interpretability
 AI,"Safety, interpretability & governance","Alignment & oversight (RLHF→Constitutional, scheming)",BOTH,active,1,reasoning_models,Stress-testing deliberative alignment,https://arxiv.org/pdf/2509.15541
-AI,"Safety, interpretability & governance",AI governance & safety incidents,BOTH,gap,0,,International AI Safety Report 2026,https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+AI,"Safety, interpretability & governance",AI governance & safety incidents,BOTH,active,1,,International AI Safety Report 2026,https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
 AI,"Safety, interpretability & governance",AI for cybersecurity (offense/defense),RND,gap,0,,Industrialization of cyber offense,https://arxiv.org/html/2605.06713v1
-AI,AI for science,Autonomous research & hypothesis generation,RND,active,2,reasoning_models,Mythos autonomous hypotheses,https://www.anthropic.com/news/claude-fable-5-mythos-5
+AI,AI for science,Autonomous research & hypothesis generation,RND,active,3,reasoning_models,Mythos autonomous hypotheses,https://www.anthropic.com/news/claude-fable-5-mythos-5
 AI,AI for science,"Scientific foundation models (materials, climate)",RND,gap,0,,GNoME materials; NeuralGCM weather,https://hai.stanford.edu/ai-index/2026-ai-index-report/science
 AI,Agents & developer ecosystem,Coding agents,PRODUCT,active,2,transformers_llms,Cursor; Cognition/Devin,https://www.cursor.com/
-AI,Agents & developer ecosystem,"Agent primitives (MCP, Skills, SDKs)",PRODUCT,active,1,ai_dev_ecosystem,Model Context Protocol; Agent Skills,https://modelcontextprotocol.io/
-AI,Agents & developer ecosystem,Multi-agent orchestration,BOTH,active,2,ai_dev_ecosystem,Conductor; LangGraph,https://www.langchain.com/
-AI,Agents & developer ecosystem,Agentic commerce,PRODUCT,active,2,ai_dev_ecosystem,Coinbase MCP + x402,https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/
-AI,"Frontier platforms, applied AI & economics",Frontier model tiers & price wars,PRODUCT,active,2,transformers_llms,Claude Opus/Fable; GPT-5.5; Gemini 3.5,https://www.anthropic.com/news/claude-fable-5-mythos-5
+AI,Agents & developer ecosystem,"Agent primitives (MCP, Skills, SDKs)",PRODUCT,active,5,ai_dev_ecosystem,Model Context Protocol; Agent Skills,https://modelcontextprotocol.io/
+AI,Agents & developer ecosystem,Multi-agent orchestration,BOTH,active,4,ai_dev_ecosystem,Conductor; LangGraph,https://www.langchain.com/
+AI,Agents & developer ecosystem,Agentic commerce,PRODUCT,active,3,ai_dev_ecosystem,Coinbase MCP + x402,https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/
+AI,"Frontier platforms, applied AI & economics",Frontier model tiers & price wars,PRODUCT,active,3,transformers_llms,Claude Opus/Fable; GPT-5.5; Gemini 3.5,https://www.anthropic.com/news/claude-fable-5-mythos-5
 AI,"Frontier platforms, applied AI & economics",Open-weight models,BOTH,active,1,transformers_llms,MiniMax M3; DeepSeek; MolmoAct2,https://huggingface.co/
 AI,"Frontier platforms, applied AI & economics","Vertical AI (legal, health, finance)",PRODUCT,gap,0,,Harvey (legal); Abridge (clinical scribe),https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html
 AI,"Frontier platforms, applied AI & economics",Enterprise agentic platforms,PRODUCT,gap,0,,Salesforce Agentforce; Glean,https://www.salesforce.com/agentforce/
@@ -34,13 +34,11 @@ AI,"Frontier platforms, applied AI & economics",Customer-support & CX automation
 AI,"Frontier platforms, applied AI & economics",AI search / answer engines,PRODUCT,gap,0,,Perplexity,https://www.perplexity.ai/
 AI,"Frontier platforms, applied AI & economics",AI advertising & recommendation,PRODUCT,gap,0,,Meta Andromeda/GEM,https://www.emarketer.com/learningcenter/guides/meta-to-surpass-google-in-digital-ad-revenues-for-first-time-ever/
 AI,"Frontier platforms, applied AI & economics",Defense & government AI,PRODUCT,gap,0,,Palantir; Anduril,https://www.anduril.com/
-AI,"Frontier platforms, applied AI & economics",AI data infra & security products,PRODUCT,gap,0,,Langfuse/Braintrust; agentic security,https://www.bvp.com/atlas/ai-infrastructure-roadmap-five-frontiers-for-2026
+AI,"Frontier platforms, applied AI & economics",AI data infra & security products,PRODUCT,active,1,,Langfuse/Braintrust; agentic security,https://www.bvp.com/atlas/ai-infrastructure-roadmap-five-frontiers-for-2026
 AI,"Frontier platforms, applied AI & economics",AI compute economics,PRODUCT,gap,0,,Bloomberg — AI circular deals,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
 AI,"Frontier platforms, applied AI & economics",Consumer AI assistants & companions,PRODUCT,gap,0,,ChatGPT 1B MAU; Character.AI,https://www.sensortower.com/
 AI,Autonomy & embodiment (AI),Self-driving / robotaxis,PRODUCT,active,2,self_driving,Waymo; Tesla; Chinese operators,https://waymo.com/
-AI,Autonomy & embodiment (AI),Vision-Language-Action (VLA) models,RND,active,3,humanoid_robotics,Physical Intelligence pi0; Gemini Robotics,https://www.physicalintelligence.company/
-AI,Emerging & cross-cutting,AI dev ecosystem & agent primitives,BOTH,proposed,1,,AI dev ecosystem & agent primitives,https://www.anthropic.com/news/model-context-protocol
-AI,Emerging & cross-cutting,'AI safety as cover for monopoly / anti-science' thesis surges this week,RND,proposed,1,,'AI safety as cover for monopoly / anti-science' thesis surges this week,https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/
+AI,Autonomy & embodiment (AI),Vision-Language-Action (VLA) models,RND,active,2,humanoid_robotics,Physical Intelligence pi0; Gemini Robotics,https://www.physicalintelligence.company/
 BIO,Computational protein & biomolecule design,Structure prediction & complexes,BOTH,active,2,alphafold_protein_design,AlphaFold 3,https://www.nature.com/articles/s41586-024-07487-w
 BIO,Computational protein & biomolecule design,Generative de novo design,RND,active,1,alphafold_protein_design,RFdiffusion2; AlphaDesign,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10468394/
 BIO,Computational protein & biomolecule design,Atomistic binder design at scale,RND,gap,0,,Scaling Atomistic Protein Binder Design (2026),https://arxiv.org/pdf/2603.27950
@@ -52,10 +50,10 @@ BIO,Genetic medicine: in vivo & next-gen editing,Epigenome editing,RND,gap,0,,Tu
 BIO,RNA & nucleic-acid therapeutics,Prophylactic mRNA vaccines,PRODUCT,active,1,mrna_vaccines,COVID mRNA platforms,https://pmc.ncbi.nlm.nih.gov/articles/PMC12686599/
 BIO,RNA & nucleic-acid therapeutics,Personalized mRNA cancer vaccines,BOTH,active,1,mrna_vaccines,mRNA-4157/V940 + Keytruda,https://www.merck.com/news/
 BIO,RNA & nucleic-acid therapeutics,LNP & delivery engineering,RND,active,1,mrna_vaccines,Sphingomyelin LNPs beyond liver,https://www.cell.com/molecular-therapy-family/advances/fulltext/S2329-0501(25)00031-2
-BIO,Metabolic & incretin therapeutics,Injectable multi-agonists,PRODUCT,active,3,glp1,Retatrutide (triple agonist); CagriSema,https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial
-BIO,Metabolic & incretin therapeutics,Oral small-molecule GLP-1,PRODUCT,active,2,glp1,Orforglipron (Foundayo),https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898445/
+BIO,Metabolic & incretin therapeutics,Injectable multi-agonists,PRODUCT,active,5,glp1,Retatrutide (triple agonist); CagriSema,https://www.ajmc.com/view/retatrutide-achieves-up-to-30-3-average-weight-loss-in-phase-3-triumph-1-trial
+BIO,Metabolic & incretin therapeutics,Oral small-molecule GLP-1,PRODUCT,active,6,glp1,Orforglipron (Foundayo),https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898445/
 BIO,Metabolic & incretin therapeutics,Amylin & muscle-preserving combos,BOTH,active,3,glp1,Eloralintide; petrelintide,https://www.biospace.com/drug-development/muscle-preservation-tolerability-and-alternative-administration-routes-define-obesitys-drug-future
-BIO,Metabolic & incretin therapeutics,Indication expansion,BOTH,active,1,glp1,CV/cardiometabolic outcomes,https://pmc.ncbi.nlm.nih.gov/articles/PMC12668848/
+BIO,Metabolic & incretin therapeutics,Indication expansion,BOTH,active,6,glp1,CV/cardiometabolic outcomes,https://pmc.ncbi.nlm.nih.gov/articles/PMC12668848/
 BIO,Neurotech & brain-computer interfaces,High-bandwidth cortical implants,BOTH,active,1,bci,"Neuralink N1 (1,024 threads)",https://www.nature.com/articles/d41586-025-03849-0
 BIO,Neurotech & brain-computer interfaces,Minimally-invasive / endovascular BCI,BOTH,active,1,bci,Synchron Stentrode,https://www.technologyreview.com/2025/04/01/1114009/brain-computer-interfaces-10-breakthrough-technologies-2025/
 BIO,Neurotech & brain-computer interfaces,Speech neuroprosthesis,RND,active,1,bci,Paradromics FDA speech trial,https://www.statnews.com/2025/11/20/fda-approves-paradromics-bci-trial-for-speech-restoration/
@@ -71,28 +69,28 @@ ENERGY,Battery cost collapse & cell chemistry,Sodium-ion at scale,BOTH,gap,0,,CA
 ENERGY,Battery cost collapse & cell chemistry,Solid-state & next-gen anodes,RND,gap,0,,CATL solid-state development,https://eu.36kr.com/en/p/3645721778524036
 ENERGY,Renewable generation frontier,Perovskite-silicon tandem solar,BOTH,active,1,renewables_batteries,Oxford PV tandems; LONGi 34.85% cell,https://www.oxfordpv.com/press-releases/oxford-pv-solar-energy-innovation
 ENERGY,Renewable generation frontier,Solar deployment / LCOE leadership,PRODUCT,active,1,renewables_batteries,2025 solar cost/deployment review,https://undecidedmf.com/how-solar-changed-in-2025-and-whats-next/
-ENERGY,Fusion energy,Magnetic confinement (tokamak) scale-up,RND,active,1,fusion,CFS SPARC (first plasma 2026),https://cfs.energy/technology/sparc/
+ENERGY,Fusion energy,Magnetic confinement (tokamak) scale-up,RND,active,3,fusion,CFS SPARC (first plasma 2026),https://cfs.energy/technology/sparc/
 ENERGY,Fusion energy,Alternative confinement & direct electricity,RND,active,1,fusion,Helion (Microsoft offtake 2028),https://pdpspectra.com/blog/fusion-energy-2026-commonwealth-helion/
-ENERGY,Fusion energy,Compact / inertial & novel approaches,RND,active,2,fusion,Avalanche ~11M C; Focused Energy,https://techcrunch.com/2026/06/10/avalanches-desktop-fusion-reactor-delivers-blistering-hot-plasma/
-ENERGY,Fusion energy,Fusion commercialization & offtake,PRODUCT,active,2,fusion,DOE Fusion S&T Roadmap (2026),https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate
+ENERGY,Fusion energy,Compact / inertial & novel approaches,RND,active,3,fusion,Avalanche ~11M C; Focused Energy,https://techcrunch.com/2026/06/10/avalanches-desktop-fusion-reactor-delivers-blistering-hot-plasma/
+ENERGY,Fusion energy,Fusion commercialization & offtake,PRODUCT,active,3,fusion,DOE Fusion S&T Roadmap (2026),https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate
 ENERGY,Long-duration & grid-scale storage,Iron-air / metal-air batteries,BOTH,gap,0,,Form Energy Great River pilot,https://www.utilitydive.com/news/long-duration-energy-storage-deployments-rose-49-in-2025-woodmac/814336/
 ENERGY,Long-duration & grid-scale storage,LDES market scale-up,PRODUCT,gap,0,,WoodMac: LDES +49% in 2025,https://www.utilitydive.com/news/long-duration-energy-storage-deployments-rose-49-in-2025-woodmac/814336/
 ENERGY,Advanced nuclear & geothermal,Small modular reactors (SMRs),BOTH,gap,0,,NuScale NRC approval; X-energy/Amazon,https://www.wwt.com/blog/big-techs-nuclear-bet-key-small-modular-reactors-for-cloud-power
 ENERGY,Advanced nuclear & geothermal,Enhanced geothermal (EGS),BOTH,gap,0,,Fervo Cape Station,https://fervoenergy.com/fervo-secures-new-financing-to-accelerate-development/
 ENERGY,Grid intelligence & clean fuels,Virtual power plants (VPPs),PRODUCT,gap,0,,NA VPP capacity 37.5 GW (2025),https://rmi.org/how-virtual-power-plants-can-help-the-united-states-win-the-ai-race
 ENERGY,Grid intelligence & clean fuels,Green hydrogen & electrolyzers,BOTH,gap,0,,IEA Global Hydrogen Review 2025,https://www.iea.org/reports/global-hydrogen-review-2025/executive-summary
-SPACE,Reusable launch,Full-reuse heavy-lift (Starship-class),RND,active,1,reusable_rockets,Starship V3 flight test,https://spaceflightnow.com/2026/05/21/live-coverage-spacex-to-launch-first-starship-version-3-rocket/
+SPACE,Reusable launch,Full-reuse heavy-lift (Starship-class),RND,active,2,reusable_rockets,Starship V3 flight test,https://spaceflightnow.com/2026/05/21/live-coverage-spacex-to-launch-first-starship-version-3-rocket/
 SPACE,Reusable launch,Operational partial reuse (Falcon-class),PRODUCT,active,2,reusable_rockets,Falcon 9 B1067 35th flight,https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/
 SPACE,Reusable launch,Booster catch & orbital refueling,RND,gap,0,,Starship propellant-transfer demo,https://en.wikipedia.org/wiki/Starship_Propellant_Transfer_Demonstration
-SPACE,Satellite mega-constellations & connectivity,Mega-constellation deployment,PRODUCT,gap,0,,"Starlink 1,500th sat of 2026",https://www.techtimes.com/articles/318494/20260616/spacex-hits-1500th-starlink-satellite-2026-its-first-launch-public-company.htm
+SPACE,Satellite mega-constellations & connectivity,Mega-constellation deployment,PRODUCT,active,1,,"Starlink 1,500th sat of 2026",https://www.techtimes.com/articles/318494/20260616/spacex-hits-1500th-starlink-satellite-2026-its-first-launch-public-company.htm
 SPACE,Satellite mega-constellations & connectivity,Direct-to-cell / direct-to-device,PRODUCT,gap,0,,T-Mobile T-Satellite,https://www.nextbigfuture.com/2025/09/spacex-15000-v3-starlink-direct-to-cellphone-satellites.html
 SPACE,In-space manufacturing & orbital economy,Microgravity pharma manufacturing,BOTH,gap,0,,Varda W-5 reentry,https://techcrunch.com/2025/11/30/varda-says-it-has-proven-space-manufacturing-works-now-it-wants-to-make-it-boring/
 SPACE,In-space manufacturing & orbital economy,Reentry & hypersonics-as-a-service,BOTH,gap,0,,Varda vertically-integrated bus,https://www.prnewswire.com/news-releases/varda-space-industries-successfully-executes-w-5-mission-reentry-debuting-vertically-integrated-satellite-bus-302674203.html
 SPACE,Lunar & cislunar,Commercial lunar landers (CLPS),BOTH,gap,0,,Rocket Lab Pioneer / CLPS,https://seekingalpha.com/pr/20035201-rocket-lab-s-pioneer-spacecraft-successfully-deployed-to-orbit-powering-varda-space
 SPACE,Earth observation & space data,Earth observation constellations,PRODUCT,gap,0,,Constellation-scale EO/comms,https://www.teslarati.com/starlink-achieves-major-milestones-in-2025-progress-report/
-SPACE,Earth observation & space data,Space-based resilient PNT,RND,gap,0,,Vector Atomic on X-37B,https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/
+SPACE,Earth observation & space data,Space-based resilient PNT,RND,active,1,,Vector Atomic on X-37B,https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/
 QUANTUM,Error correction & logical qubits,Below-threshold codes,RND,active,3,quantum_error_correction,Google Willow (below threshold),https://www.nature.com/articles/s41586-024-08449-y
-QUANTUM,Error correction & logical qubits,Logical-qubit scaling & efficient encoding,RND,active,1,quantum_error_correction,Quantinuum Helios 48 logical; IQM barbell codes,https://www.nature.com/articles/s41586-026-10628-y
+QUANTUM,Error correction & logical qubits,Logical-qubit scaling & efficient encoding,RND,active,3,quantum_error_correction,Quantinuum Helios 48 logical; IQM barbell codes,https://www.nature.com/articles/s41586-026-10628-y
 QUANTUM,Error correction & logical qubits,Real-time decoding,RND,gap,0,,Google real-time decoder,https://research.google/blog/making-quantum-error-correction-work/
 QUANTUM,Qubit-modality race,Neutral-atom arrays,BOTH,gap,0,,"QuEra; Harvard 3,000-atom array",https://finance.yahoo.com/news/quera-computing-marks-record-2025-140000924.html
 QUANTUM,Qubit-modality race,Trapped-ion systems,BOTH,gap,0,,Quantinuum Helios,https://en.wikipedia.org/wiki/Quantinuum
@@ -100,8 +98,8 @@ QUANTUM,Qubit-modality race,Superconducting qubits,BOTH,gap,0,,Google Willow,htt
 QUANTUM,Algorithms & hybrid computing,Quantum-classical hybrid algorithms,RND,gap,0,,NERSC quantum-workload roadmap,https://arxiv.org/pdf/2509.09882
 QUANTUM,Algorithms & hybrid computing,Advantage benchmarking,RND,gap,0,,Capability-assessment (2026),https://arxiv.org/pdf/2604.04761
 QUANTUM,Quantum networking,Quantum repeaters,RND,gap,0,,Fraunhofer QR.N project,https://www.hhi.fraunhofer.de/en/press/news/2025/quantum-repeaters-for-secure-quantum-networks-fraunhofer-hhi-launches-qrn-project.html
-QUANTUM,Quantum sensing & metrology,Atomic & optical clocks,PRODUCT,gap,0,,Quantum clocks at TRL 7-8,https://thequantuminsider.com/2026/03/02/understanding-quantum-sensing-industrial-potential/
-QUANTUM,Quantum sensing & metrology,Gravimeters & magnetometers,BOTH,gap,0,,Q-CTRL gravimeter sea trials,https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/
+QUANTUM,Quantum sensing & metrology,Atomic & optical clocks,PRODUCT,active,1,,Quantum clocks at TRL 7-8,https://thequantuminsider.com/2026/03/02/understanding-quantum-sensing-industrial-potential/
+QUANTUM,Quantum sensing & metrology,Gravimeters & magnetometers,BOTH,active,1,,Q-CTRL gravimeter sea trials,https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/
 QUANTUM,Post-quantum security,PQC standards & migration,PRODUCT,gap,0,,NIST FIPS 203/204/205,https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization
 HARDWARE,AI accelerators,Merchant training/inference GPUs,PRODUCT,active,1,ai_accelerators,NVIDIA Rubin; AMD MI400,https://nvidianews.nvidia.com/news
 HARDWARE,AI accelerators,Hyperscaler custom silicon,PRODUCT,active,1,ai_accelerators,Google TPU v7; AWS Trainium3,https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html
@@ -116,7 +114,7 @@ HARDWARE,Interconnect & networking,Scale-up/scale-out fabric,PRODUCT,gap,0,,NVLi
 HARDWARE,AI datacenter power & cooling,Liquid cooling,BOTH,gap,0,,Direct-to-chip standard; GB300 ~163kW,https://www.tomshardware.com/pc-components/cooling/the-data-center-cooling-state-of-play-2025-liquid-cooling-is-on-the-rise
 HARDWARE,AI datacenter power & cooling,Datacenter power & energy density,PRODUCT,gap,0,,300kW racks (2026) trend,https://www.coresite.com/blog/data-center-outlook-2026-power-and-cooling-challenges-and-solutions-are-top-of-mind
 HARDWARE,Edge & on-device silicon,Consumer NPUs,PRODUCT,gap,0,,Qualcomm Hexagon; Apple Neural Engine,https://www.qualcomm.com/processors/ai-engine
-ROBOTICS,Humanoid robots,Industrial/commercial humanoids,PRODUCT,active,1,humanoid_robotics,Figure 03 at BMW Spartanburg,https://newmarketpitch.com/blogs/news/humanoid-robotics-optimus-deployment-tracker
+ROBOTICS,Humanoid robots,Industrial/commercial humanoids,PRODUCT,active,2,humanoid_robotics,Figure 03 at BMW Spartanburg,https://newmarketpitch.com/blogs/news/humanoid-robotics-optimus-deployment-tracker
 ROBOTICS,Humanoid robots,Low-cost / research humanoids,PRODUCT,active,1,humanoid_robotics,Unitree G1 ($16K),https://lumichats.com/blog/humanoid-robots-2026-tesla-optimus-figure-ai-unitree-complete-guide
 ROBOTICS,Humanoid robots,Locomotion & whole-body control,RND,active,1,humanoid_robotics,Boston Dynamics electric Atlas,https://newmarketpitch.com/blogs/news/humanoid-robotics-optimus-deployment-tracker
 ROBOTICS,Robot foundation models,Vision-Language-Action policies,BOTH,active,1,humanoid_robotics,Physical Intelligence pi0/pi0.5,https://github.com/lucidrains/pi-zero-pytorch
@@ -129,5 +127,3 @@ ROBOTICS,Robot learning data & simulation,Teleoperation data collection,RND,gap,
 ROBOTICS,Mobile manipulators & logistics,Warehouse / logistics robots,PRODUCT,gap,0,,Agility Digit 100K-tote milestone,https://roboticsandautomationnews.com/2025/11/24/agility-robotics-digit-humanoid-passes-100000-tote-milestone-in-live-gxo-implementation/96877/
 ROBOTICS,Field & specialized robotics,Surgical robotics,PRODUCT,gap,0,,Medtronic Hugo (FDA urology),https://www.massdevice.com/medtronic-fda-nod-hugo-surgical-robot-urology/
 ROBOTICS,Field & specialized robotics,Agricultural robotics & drones,PRODUCT,gap,0,,John Deere autonomy; DJI Agras,https://www.deere.com/en/news/all-news/autonomous-9RX/
-CROSS,Emerging & cross-cutting,"Quantum sensing crosses to field-deployable products (clocks, magnetometers)",BOTH,proposed,1,,"Quantum sensing crosses to field-deployable products (clocks, magnetometers)",https://aerospaceamerica.aiaa.org/year-in-review/a-year-of-acceleration-and-the-rise-of-quantum-sensing/
-CROSS,Emerging & cross-cutting,Cultivated meat approvals broaden; costs approaching parity,BOTH,proposed,1,,Cultivated meat approvals broaden; costs approaching parity,https://sciencestimes.ca/lab-grown-cultivated-meat-regulatory-approval-global-2026/

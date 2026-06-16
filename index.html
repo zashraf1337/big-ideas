@@ -207,6 +207,9 @@
   .th-sub:hover { background: var(--bg-3); }
   .th-sub-name { flex: 1; font-size: 12px; }
   .th-sub-meta { display: inline-flex; gap: 7px; align-items: center; white-space: nowrap; }
+  .th-items { display: flex; flex-direction: column; gap: 2px; padding: 1px 0 4px 30px; }
+  .th-item { font-size: 11px; color: var(--accent); text-decoration: none; line-height: 1.3; }
+  .th-item:hover { text-decoration: underline; }
   footer.app {
     margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--border);
     color: var(--text-muted); font-size: 11px; text-align: center;
@@ -231,7 +234,15 @@
   </nav>
   <div id="view-themes" style="display:none">
     <div class="filters" id="themes-filters">
-      <span class="label">Track:</span>
+      <span class="label">Domain:</span>
+      <button class="chip" data-thfilter="domain" data-val="AI">AI</button>
+      <button class="chip" data-thfilter="domain" data-val="BIO">Bio</button>
+      <button class="chip" data-thfilter="domain" data-val="ENERGY">Energy</button>
+      <button class="chip" data-thfilter="domain" data-val="SPACE">Space</button>
+      <button class="chip" data-thfilter="domain" data-val="QUANTUM">Quantum</button>
+      <button class="chip" data-thfilter="domain" data-val="HARDWARE">Hardware</button>
+      <button class="chip" data-thfilter="domain" data-val="ROBOTICS">Robotics</button>
+      <span class="label" style="margin-left:10px">Track:</span>
       <button class="chip" data-thfilter="track" data-val="RND">R&amp;D</button>
       <button class="chip" data-thfilter="track" data-val="PRODUCT">Products</button>
       <span class="label" style="margin-left:10px">Status:</span>
@@ -400,8 +411,8 @@
 const STATE = {
  "meta": {
   "title": "Tech Breakthroughs · 2021 onwards",
-  "last_updated": "2026-06-16T21:06:07.099647+00:00",
-  "as_of_date": "2026-06-12",
+  "last_updated": "2026-06-16T21:28:36.004666+00:00",
+  "as_of_date": "2026-06-16",
   "domains": [
    "AI",
    "BIO",
@@ -1091,6 +1102,10 @@ const STATE = {
     {
      "claim": "NVIDIA Cosmos 3 (May 31, 2026): open Mixture-of-Transformers world-model family unifying physical reasoning (autoregressive VLM tower) and diffusion-based world/action generation; Nano (16B) and Super (64B) checkpoints, open-source SOTA on R-Bench, leading Artificial Analysis text-to-image and image-to-video.",
      "source_url": "https://huggingface.co/collections/nvidia/cosmos3"
+    },
+    {
+     "claim": "Fused INT8 Triton kernel realizes native integer compute for diffusion transformers, enabling 1024px single-RTX-3090 generation (~9.5% end-to-end vs FP8; consumer-Ampere only). arXiv 2606.14598.",
+     "source_url": "https://arxiv.org/abs/2606.14598"
     }
    ],
    "watch_list": [
@@ -4020,6 +4035,19 @@ const STATE = {
      "why": "Most widely adopted open-source agent framework; LangGraph is a leading multi-agent orchestration/memory runtime and LangSmith leads agent evals/observability.",
      "funding": "$125M Series B at $1.25B valuation (Oct 2025), led by IVP",
      "source_url": "https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/"
+    },
+    {
+     "name": "Transformer Lab",
+     "org": "Transformer Lab (lab.cloud)",
+     "type": "STARTUP",
+     "why": "Open-source MLOps/experimentation layer (compute orchestration, training, eval, quantization) with a teams tier; a credible primary-source research shop on efficiency/quantization to track for the edge/efficiency lane.",
+     "funding": "Not disclosed (open-source platform; for-teams commercial tier)",
+     "source_url": "https://lab.cloud/for-teams",
+     "subtheme_ids": [
+      "ai__frontier_platforms_applied_ai_economics__ai_data_infra_security_products",
+      "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+      "ai__architecture_efficiency__quantization_custom_kernels"
+     ]
     }
    ],
    "impact_so_far": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise, subagents and orchestration apps for parallel work, and SDKs plus evals for governance — now backed by both major labs and a wave of well-funded startups.",
@@ -4207,6 +4235,12 @@ const STATE = {
    "url": "https://arxiv.org/abs/2605.26379",
    "used_for": [
     "RLHF + reasoning models (test-time compute scaling) -> frontier"
+   ]
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.14598",
+   "used_for": [
+    "Diffusion models (image + video generation) -> frontier"
    ]
   },
   {
@@ -4547,6 +4581,12 @@ const STATE = {
    "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-demonstrated-significant-reductions-in-a1c-and-weight-in-first-phase-3-trial-for-treatment-of-type-2-diabetes",
    "used_for": [
     "GLP-1 agonists -> frontier"
+   ]
+  },
+  {
+   "url": "https://lab.cloud/for-teams",
+   "used_for": [
+    "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> watch: Transformer Lab"
    ]
   },
   {
@@ -9020,6 +9060,82 @@ const STATE = {
    },
    "as_of_date": "2026-06-12",
    "generated_at": "2026-06-12T16:24:30.841880+00:00"
+  },
+  {
+   "week_ending": "2026-06-16",
+   "kind": "WEEKLY_UPDATE",
+   "summary": "Ad-hoc placement of two Transformer Lab items: the fused-INT8 diffusion-kernel paper (a quantization/efficiency result on consumer GPUs) and Transformer Lab itself (lab.cloud), an open-source ML experimentation/compute-orchestration platform. Both multi-labelled into existing categories.",
+   "highlights": [
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "diffusion_models",
+     "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
+     "detail": "Transformer Lab's fused INT8 GEMM kernel realizes native integer-tensor-core compute for a diffusion transformer, taking INT8 from slowest to fastest variant and fitting 1024px generation on one consumer 24GB GPU (~9.5% end-to-end vs FP8, consumer-Ampere only; honest about the ceiling). Paper arXiv 2606.14598.",
+     "source_urls": [
+      "https://arxiv.org/abs/2606.14598",
+      "https://x.com/transformerlab/status/2066596062270525732"
+     ],
+     "payload": {
+      "claim": "Fused INT8 Triton kernel realizes native integer compute for diffusion transformers, enabling 1024px single-RTX-3090 generation (~9.5% end-to-end vs FP8; consumer-Ampere only). arXiv 2606.14598.",
+      "source_url": "https://arxiv.org/abs/2606.14598",
+      "subtheme_ids": [
+       "ai__architecture_efficiency__quantization_custom_kernels",
+       "ai__architecture_efficiency__small_on_device_edge_models",
+       "ai__multimodal_generative_media__diffusion_transformers_image"
+      ]
+     }
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "ai_dev_ecosystem",
+     "title": "Transformer Lab — open-source ML experimentation & compute-orchestration platform",
+     "detail": "lab.cloud / Transformer Lab is an open-source platform for ML researchers to request local/cloud compute nodes, submit ML jobs, and track experiments and artifacts in one place; a 'for-teams' tier targets collaborative clusters. Notable for reproducible, honest quantization research (fused INT8 work).",
+     "source_urls": [
+      "https://lab.cloud/for-teams",
+      "https://arxiv.org/abs/2606.14598"
+     ],
+     "payload": {
+      "name": "Transformer Lab",
+      "org": "Transformer Lab (lab.cloud)",
+      "type": "STARTUP",
+      "why": "Open-source MLOps/experimentation layer (compute orchestration, training, eval, quantization) with a teams tier; a credible primary-source research shop on efficiency/quantization to track for the edge/efficiency lane.",
+      "funding": "Not disclosed (open-source platform; for-teams commercial tier)",
+      "source_url": "https://lab.cloud/for-teams",
+      "subtheme_ids": [
+       "ai__frontier_platforms_applied_ai_economics__ai_data_infra_security_products",
+       "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+       "ai__architecture_efficiency__quantization_custom_kernels"
+      ]
+     }
+    }
+   ],
+   "additions": {
+    "new_breakthroughs": [],
+    "new_sub_ideas": [],
+    "new_frontier": [
+     "diffusion_models/frontier"
+    ],
+    "new_watch": [
+     "ai_dev_ecosystem/watch:Transformer Lab"
+    ],
+    "new_people": [],
+    "new_voices": [],
+    "trending_ideas": [],
+    "updates": [],
+    "broad_scan": [],
+    "skipped_dedupe": [],
+    "routed_subthemes": [
+     "ai__architecture_efficiency__quantization_custom_kernels",
+     "ai__architecture_efficiency__small_on_device_edge_models",
+     "ai__multimodal_generative_media__diffusion_transformers_image",
+     "ai__frontier_platforms_applied_ai_economics__ai_data_infra_security_products",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+     "ai__architecture_efficiency__quantization_custom_kernels"
+    ],
+    "auto_expanded_subthemes": []
+   },
+   "as_of_date": "2026-06-16",
+   "generated_at": "2026-06-16T21:28:36.004660+00:00"
   }
  ],
  "voices": [
@@ -9528,26 +9644,45 @@ const STATE = {
         "name": "Quantization & custom kernels",
         "track": "BOTH",
         "desc": "Low-precision formats + fused GPU kernels to realize real speedups, esp. consumer HW.",
-        "status": "gap",
+        "status": "active",
         "maps_to": {
          "breakthroughs": []
         },
         "example": "Transformer Lab fused INT8 for diffusion (RTX 3090)",
         "source_url": "https://arxiv.org/abs/2606.14598",
-        "item_count": 0
+        "item_count": 2,
+        "recent_items": [
+         {
+          "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://arxiv.org/abs/2606.14598"
+         },
+         {
+          "title": "Transformer Lab — open-source ML experimentation & compute-orchestration platform",
+          "kind": "NEW_WATCH",
+          "source_url": "https://lab.cloud/for-teams"
+         }
+        ]
        },
        {
         "id": "ai__architecture_efficiency__small_on_device_edge_models",
         "name": "Small / on-device / edge models",
         "track": "BOTH",
         "desc": "Sub-10B and on-device models that run locally; the 'efficiency era' axis.",
-        "status": "gap",
+        "status": "active",
         "maps_to": {
          "breakthroughs": []
         },
         "example": "Phi / Qwen3-8B; >2B phones running local SLMs",
         "source_url": "https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/",
-        "item_count": 0
+        "item_count": 1,
+        "recent_items": [
+         {
+          "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://arxiv.org/abs/2606.14598"
+         }
+        ]
        },
        {
         "id": "ai__architecture_efficiency__diffusion_language_models",
@@ -9582,7 +9717,14 @@ const STATE = {
         },
         "example": "Ideogram / Midjourney / Imagen",
         "source_url": "https://arxiv.org/abs/2212.09748",
-        "item_count": 1
+        "item_count": 2,
+        "recent_items": [
+         {
+          "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://arxiv.org/abs/2606.14598"
+         }
+        ]
        },
        {
         "id": "ai__multimodal_generative_media__video_generation",
@@ -9852,7 +9994,7 @@ const STATE = {
         },
         "example": "Model Context Protocol; Agent Skills",
         "source_url": "https://modelcontextprotocol.io/",
-        "item_count": 4,
+        "item_count": 5,
         "recent_items": [
          {
           "title": "AI dev ecosystem & agent primitives",
@@ -9868,6 +10010,11 @@ const STATE = {
           "title": "Programming with AI agents is like playing a real-time strategy game",
           "kind": "TRENDING_IDEA",
           "source_url": "https://www.proofofconcept.pub/p/real-time-strategy-games-and-ai-interfaces"
+         },
+         {
+          "title": "Transformer Lab — open-source ML experimentation & compute-orchestration platform",
+          "kind": "NEW_WATCH",
+          "source_url": "https://lab.cloud/for-teams"
          }
         ]
        },
@@ -10062,13 +10209,20 @@ const STATE = {
         "name": "AI data infra & security products",
         "track": "PRODUCT",
         "desc": "Observability, eval, vector/memory, and agent-security tooling.",
-        "status": "gap",
+        "status": "active",
         "maps_to": {
          "breakthroughs": []
         },
         "example": "Langfuse/Braintrust; agentic security",
         "source_url": "https://www.bvp.com/atlas/ai-infrastructure-roadmap-five-frontiers-for-2026",
-        "item_count": 0
+        "item_count": 1,
+        "recent_items": [
+         {
+          "title": "Transformer Lab — open-source ML experimentation & compute-orchestration platform",
+          "kind": "NEW_WATCH",
+          "source_url": "https://lab.cloud/for-teams"
+         }
+        ]
        },
        {
         "id": "ai__frontier_platforms_applied_ai_economics__ai_compute_economics",
@@ -12282,7 +12436,7 @@ renderWatch();
 renderVoices();
 
 // --- Themes view (taxonomy: domain -> theme -> sub-theme, R&D vs Products) ---
-const themesFilter = { track: new Set(), status: new Set() };
+const themesFilter = { domain: new Set(), track: new Set(), status: new Set() };
 const DOMAIN_ORDER = ['AI','BIO','ENERGY','SPACE','QUANTUM','HARDWARE','ROBOTICS','CROSS'];
 function _trackBadge(t) {
   const m = { RND: ['R&D','rgba(88,166,255,0.14)','var(--accent-2)'],
@@ -12307,7 +12461,9 @@ function renderThemes() {
   const cnt = document.getElementById('themes-count');
   const tax = STATE.taxonomy;
   if (!tax || !tax.domains) { body.innerHTML = '<div class="empty">No taxonomy in state.json.</div>'; return; }
-  const doms = [...tax.domains].sort((a,b) => DOMAIN_ORDER.indexOf(a.domain) - DOMAIN_ORDER.indexOf(b.domain));
+  const doms = [...tax.domains]
+    .filter(d => !themesFilter.domain.size || themesFilter.domain.has(d.domain))
+    .sort((a,b) => DOMAIN_ORDER.indexOf(a.domain) - DOMAIN_ORDER.indexOf(b.domain));
   let nSub = 0, nGap = 0, nProp = 0, nShown = 0, html = '';
   doms.forEach(d => {
     let themesHtml = '';
@@ -12321,11 +12477,14 @@ function renderThemes() {
         const cntTxt = st.item_count ? `<span style="color:var(--text-muted);font-size:10px">${st.item_count} item${st.item_count>1?'s':''}</span>` : '';
         const link = st.source_url ? srcLink(st.source_url) : '';
         const click = mapped.length ? ` data-bt="${mapped[0]}" style="cursor:pointer"` : '';
-        return `<div class="th-sub"${click}>
+        const items = (st.recent_items || []).map(it =>
+          `<a class="th-item" href="${it.source_url || '#'}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(it.title)}</a>`).join('');
+        const itemsBlock = items ? `<div class="th-items">${items}</div>` : '';
+        return `<div class="th-subwrap"><div class="th-sub"${click}>
             <span style="display:inline-flex;gap:7px;align-items:center;">${_statusDot(st.status)} ${_trackBadge(st.track)}</span>
             <span class="th-sub-name">${escapeHtml(st.name)}</span>
             <span class="th-sub-meta">${cntTxt} ${link}</span>
-          </div>`;
+          </div>${itemsBlock}</div>`;
       }).join('');
       themesHtml += `<div class="th-theme"><div class="th-theme-h">${escapeHtml(th.name)}</div>
           <div class="th-theme-scope">${escapeHtml(th.scope || '')}</div>${rows}</div>`;
@@ -12348,7 +12507,7 @@ document.querySelectorAll('[data-thfilter]').forEach(chip => {
   });
 });
 document.getElementById('reset-themes').addEventListener('click', () => {
-  themesFilter.track.clear(); themesFilter.status.clear();
+  themesFilter.domain.clear(); themesFilter.track.clear(); themesFilter.status.clear();
   document.querySelectorAll('[data-thfilter].active').forEach(c => c.classList.remove('active'));
   renderThemes();
 });

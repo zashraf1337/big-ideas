@@ -12148,6 +12148,12 @@ const filterState = { domain: new Set(), orgtype: new Set(), watchonly: false };
 function escapeHtml(s) {
   return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
+// Only allow http(s)/mailto and neutralize quotes, so a scraped URL can't break
+// out of an href attribute or smuggle a javascript: scheme.
+function safeUrl(u) {
+  u = (u || '').trim();
+  return /^(https?:|mailto:)/i.test(u) ? u.replace(/"/g, '%22') : '#';
+}
 function renderCards() {
   const cards = document.getElementById('cards');
   const count = document.getElementById('overview-count');
@@ -12216,7 +12222,7 @@ function srcLink(url) {
   if (!url) return '';
   let host = '';
   try { host = new URL(url).hostname.replace(/^www\./, ''); } catch (e) { host = 'src'; }
-  return `<a class="source-link" href="${url}" target="_blank" rel="noopener">[${host}]</a>`;
+  return `<a class="source-link" href="${safeUrl(url)}" target="_blank" rel="noopener">[${escapeHtml(host)}]</a>`;
 }
 function openModal(id) {
   const b = STATE.breakthroughs.find(x => x.id === id);
@@ -12504,10 +12510,10 @@ function renderVoices() {
   grid.innerHTML = filtered.map(v => {
     const tags = (v.tags || []).map(t => `<span class="pill" style="background:rgba(88,166,255,0.10);color:var(--text-dim);margin-right:4px;">${escapeHtml(t)}</span>`).join('');
     const links = [
-      v.twitter ? `<a href="${v.twitter}" target="_blank" rel="noopener">𝕏</a>` : null,
-      v.youtube ? `<a href="${v.youtube}" target="_blank" rel="noopener">YouTube</a>` : null,
-      v.newsletter ? `<a href="${v.newsletter}" target="_blank" rel="noopener">Newsletter</a>` : null,
-      v.follow_url ? `<a href="${v.follow_url}" target="_blank" rel="noopener">Home</a>` : null,
+      v.twitter ? `<a href="${safeUrl(v.twitter)}" target="_blank" rel="noopener">𝕏</a>` : null,
+      v.youtube ? `<a href="${safeUrl(v.youtube)}" target="_blank" rel="noopener">YouTube</a>` : null,
+      v.newsletter ? `<a href="${safeUrl(v.newsletter)}" target="_blank" rel="noopener">Newsletter</a>` : null,
+      v.follow_url ? `<a href="${safeUrl(v.follow_url)}" target="_blank" rel="noopener">Home</a>` : null,
     ].filter(Boolean).join(' · ');
     return `
       <div class="card" style="cursor:default">
@@ -12609,7 +12615,7 @@ function renderThemes() {
         const link = st.source_url ? srcLink(st.source_url) : '';
         const click = mapped.length ? ` data-bt="${mapped[0]}" style="cursor:pointer"` : '';
         const items = (st.recent_items || []).map(it =>
-          `<a class="th-item" href="${it.source_url || '#'}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(it.title)}</a>`).join('');
+          `<a class="th-item" href="${safeUrl(it.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(it.title)}</a>`).join('');
         const itemsBlock = items ? `<div class="th-items">${items}</div>` : '';
         return `<div class="th-subwrap"><div class="th-sub"${click}>
             <span style="display:inline-flex;gap:7px;align-items:center;">${_statusDot(st.status)} ${_trackBadge(st.track)}</span>

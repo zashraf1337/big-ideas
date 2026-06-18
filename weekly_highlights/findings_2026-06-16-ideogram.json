@@ -1,0 +1,40 @@
+{
+  "week_ending": "2026-06-16",
+  "summary": "Capture Ideogram as a tracked text-to-image player (previously only referenced incidentally via the Transformer Lab kernel paper): a NEW_WATCH for the company and a NEW_FRONTIER for the Ideogram 4.0 open-weight 9.3B diffusion-transformer release (Jun 3, 2026).",
+  "highlights": [
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "diffusion_models",
+      "title": "Ideogram — text-to-image player (best-in-class text rendering, open-weight 4.0)",
+      "detail": "Ideogram (Toronto, ~70 staff) is a leading text-to-image company known for best-in-class text rendering; it has raised $96.5M over two rounds (incl. a16z) and in Jun 2026 shipped Ideogram 4.0 as an open-weight frontier model. Previously absent from the board's diffusion watch-list alongside Midjourney/Runway/Stability.",
+      "source_urls": ["https://ideogram.ai/news/ideogram-4.0/", "https://en.wikipedia.org/wiki/Ideogram_(text-to-image_model)"],
+      "payload": {
+        "name": "Ideogram",
+        "org": "Ideogram AI (Toronto)",
+        "type": "STARTUP",
+        "why": "Leading text-to-image model (best-in-class text rendering); its open-weight 4.0 release closes the gap between proprietary and open image models — a notable omission next to Midjourney/Runway/Stability.",
+        "funding": "$96.5M total over 2 rounds (incl. $80M Series A, Feb 2024, Andreessen Horowitz)",
+        "source_url": "https://ideogram.ai/news/ideogram-4.0/",
+        "subtheme_ids": [
+          "ai__multimodal_generative_media__diffusion_transformers_image",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+        ]
+      }
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "diffusion_models",
+      "title": "Ideogram 4.0: open-weight 9.3B single-stream diffusion transformer",
+      "detail": "On Jun 3, 2026 Ideogram released 4.0 — described as the first open-weight text-to-image model trained from scratch at this scale (9.3B single-stream DiT, commercial license), explicitly aiming to close the quality gap between proprietary frontier image models and the open ecosystem.",
+      "source_urls": ["https://ideogram.ai/news/ideogram-4.0/"],
+      "payload": {
+        "claim": "Ideogram 4.0 (Jun 3, 2026): open-weight 9.3B single-stream diffusion-transformer text-to-image foundation model (commercial license), positioned as closing the proprietary-vs-open image-model gap.",
+        "source_url": "https://ideogram.ai/news/ideogram-4.0/",
+        "subtheme_ids": [
+          "ai__multimodal_generative_media__diffusion_transformers_image",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+        ]
+      }
+    }
+  ]
+}

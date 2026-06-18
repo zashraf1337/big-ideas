@@ -8,7 +8,7 @@ AI,Architecture & efficiency,State-space models & attention alternatives,RND,gap
 AI,Architecture & efficiency,Quantization & custom kernels,BOTH,active,2,,Transformer Lab fused INT8 for diffusion (RTX 3090),https://arxiv.org/abs/2606.14598
 AI,Architecture & efficiency,Small / on-device / edge models,BOTH,active,1,,Phi / Qwen3-8B; >2B phones running local SLMs,https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/
 AI,Architecture & efficiency,Diffusion language models,RND,gap,0,,Survey on parallel text generation,https://arxiv.org/abs/2508.08712
-AI,Multimodal & generative media,Diffusion transformers (image),BOTH,active,2,diffusion_models,Ideogram / Midjourney / Imagen,https://arxiv.org/abs/2212.09748
+AI,Multimodal & generative media,Diffusion transformers (image),BOTH,active,4,diffusion_models,Ideogram / Midjourney / Imagen,https://arxiv.org/abs/2212.09748
 AI,Multimodal & generative media,Video generation,BOTH,active,1,diffusion_models,Runway Gen-4.5; Sora 2,https://runwayml.com/research
 AI,Multimodal & generative media,World models / neural simulation,RND,active,1,diffusion_models,NVIDIA Cosmos 3; Google Genie 3,https://www.nvidia.com/en-us/ai/cosmos/
 AI,Multimodal & generative media,One-step / real-time generation,RND,active,1,diffusion_models,Consistency/distillation samplers,https://arxiv.org/abs/2303.01469
@@ -27,7 +27,7 @@ AI,Agents & developer ecosystem,"Agent primitives (MCP, Skills, SDKs)",PRODUCT,a
 AI,Agents & developer ecosystem,Multi-agent orchestration,BOTH,active,4,ai_dev_ecosystem,Conductor; LangGraph,https://www.langchain.com/
 AI,Agents & developer ecosystem,Agentic commerce,PRODUCT,active,3,ai_dev_ecosystem,Coinbase MCP + x402,https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/
 AI,"Frontier platforms, applied AI & economics",Frontier model tiers & price wars,PRODUCT,active,3,transformers_llms,Claude Opus/Fable; GPT-5.5; Gemini 3.5,https://www.anthropic.com/news/claude-fable-5-mythos-5
-AI,"Frontier platforms, applied AI & economics",Open-weight models,BOTH,active,1,transformers_llms,MiniMax M3; DeepSeek; MolmoAct2,https://huggingface.co/
+AI,"Frontier platforms, applied AI & economics",Open-weight models,BOTH,active,3,transformers_llms,MiniMax M3; DeepSeek; MolmoAct2,https://huggingface.co/
 AI,"Frontier platforms, applied AI & economics","Vertical AI (legal, health, finance)",PRODUCT,gap,0,,Harvey (legal); Abridge (clinical scribe),https://www.cnbc.com/2026/03/25/legal-ai-startup-harvey-raises-200-million-at-11-billion-valuation.html
 AI,"Frontier platforms, applied AI & economics",Enterprise agentic platforms,PRODUCT,gap,0,,Salesforce Agentforce; Glean,https://www.salesforce.com/agentforce/
 AI,"Frontier platforms, applied AI & economics",Customer-support & CX automation,PRODUCT,gap,0,,Sierra; Decagon,https://sierra.ai/

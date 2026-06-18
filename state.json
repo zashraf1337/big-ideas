@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tech Breakthroughs · 2021 onwards",
-    "last_updated": "2026-06-16T21:28:36.004666+00:00",
+    "last_updated": "2026-06-18T21:14:25.451678+00:00",
     "as_of_date": "2026-06-16",
     "domains": [
       "AI",
@@ -696,6 +696,10 @@
         {
           "claim": "Fused INT8 Triton kernel realizes native integer compute for diffusion transformers, enabling 1024px single-RTX-3090 generation (~9.5% end-to-end vs FP8; consumer-Ampere only). arXiv 2606.14598.",
           "source_url": "https://arxiv.org/abs/2606.14598"
+        },
+        {
+          "claim": "Ideogram 4.0 (Jun 3, 2026): open-weight 9.3B single-stream diffusion-transformer text-to-image foundation model (commercial license), positioned as closing the proprietary-vs-open image-model gap.",
+          "source_url": "https://ideogram.ai/news/ideogram-4.0/"
         }
       ],
       "watch_list": [
@@ -730,6 +734,18 @@
           "why": "V7 complete rebuild with improved coherence and speed; pioneering personalization efficiency (5 minutes vs. 200 images); video generation features under development.",
           "funding": "Profitable; Series D, $1B+ valuation estimates",
           "source_url": "https://www.aitoolanalysis.com/midjourney-review/"
+        },
+        {
+          "name": "Ideogram",
+          "org": "Ideogram AI (Toronto)",
+          "type": "STARTUP",
+          "why": "Leading text-to-image model (best-in-class text rendering); its open-weight 4.0 release closes the gap between proprietary and open image models — a notable omission next to Midjourney/Runway/Stability.",
+          "funding": "$96.5M total over 2 rounds (incl. $80M Series A, Feb 2024, Andreessen Horowitz)",
+          "source_url": "https://ideogram.ai/news/ideogram-4.0/",
+          "subtheme_ids": [
+            "ai__multimodal_generative_media__diffusion_transformers_image",
+            "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+          ]
         }
       ],
       "impact_so_far": "Diffusion transformers have democratized high-quality image and video generation, enabling consumer-accessible creative tools that generate photorealistic content at scale while emerging world models show potential for physics-aware simulation applicable to autonomous systems and robotics.",
@@ -4132,6 +4148,13 @@
     {
       "url": "https://huggingface.co/collections/nvidia/cosmos3",
       "used_for": [
+        "Diffusion models (image + video generation) -> frontier"
+      ]
+    },
+    {
+      "url": "https://ideogram.ai/news/ideogram-4.0/",
+      "used_for": [
+        "Diffusion models (image + video generation) -> watch: Ideogram",
         "Diffusion models (image + video generation) -> frontier"
       ]
     },
@@ -8726,6 +8749,77 @@
       },
       "as_of_date": "2026-06-16",
       "generated_at": "2026-06-16T21:28:36.004660+00:00"
+    },
+    {
+      "week_ending": "2026-06-16",
+      "kind": "WEEKLY_UPDATE",
+      "summary": "Capture Ideogram as a tracked text-to-image player (previously only referenced incidentally via the Transformer Lab kernel paper): a NEW_WATCH for the company and a NEW_FRONTIER for the Ideogram 4.0 open-weight 9.3B diffusion-transformer release (Jun 3, 2026).",
+      "highlights": [
+        {
+          "kind": "NEW_WATCH",
+          "breakthrough_id": "diffusion_models",
+          "title": "Ideogram — text-to-image player (best-in-class text rendering, open-weight 4.0)",
+          "detail": "Ideogram (Toronto, ~70 staff) is a leading text-to-image company known for best-in-class text rendering; it has raised $96.5M over two rounds (incl. a16z) and in Jun 2026 shipped Ideogram 4.0 as an open-weight frontier model. Previously absent from the board's diffusion watch-list alongside Midjourney/Runway/Stability.",
+          "source_urls": [
+            "https://ideogram.ai/news/ideogram-4.0/",
+            "https://en.wikipedia.org/wiki/Ideogram_(text-to-image_model)"
+          ],
+          "payload": {
+            "name": "Ideogram",
+            "org": "Ideogram AI (Toronto)",
+            "type": "STARTUP",
+            "why": "Leading text-to-image model (best-in-class text rendering); its open-weight 4.0 release closes the gap between proprietary and open image models — a notable omission next to Midjourney/Runway/Stability.",
+            "funding": "$96.5M total over 2 rounds (incl. $80M Series A, Feb 2024, Andreessen Horowitz)",
+            "source_url": "https://ideogram.ai/news/ideogram-4.0/",
+            "subtheme_ids": [
+              "ai__multimodal_generative_media__diffusion_transformers_image",
+              "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+            ]
+          }
+        },
+        {
+          "kind": "NEW_FRONTIER",
+          "breakthrough_id": "diffusion_models",
+          "title": "Ideogram 4.0: open-weight 9.3B single-stream diffusion transformer",
+          "detail": "On Jun 3, 2026 Ideogram released 4.0 — described as the first open-weight text-to-image model trained from scratch at this scale (9.3B single-stream DiT, commercial license), explicitly aiming to close the quality gap between proprietary frontier image models and the open ecosystem.",
+          "source_urls": [
+            "https://ideogram.ai/news/ideogram-4.0/"
+          ],
+          "payload": {
+            "claim": "Ideogram 4.0 (Jun 3, 2026): open-weight 9.3B single-stream diffusion-transformer text-to-image foundation model (commercial license), positioned as closing the proprietary-vs-open image-model gap.",
+            "source_url": "https://ideogram.ai/news/ideogram-4.0/",
+            "subtheme_ids": [
+              "ai__multimodal_generative_media__diffusion_transformers_image",
+              "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+            ]
+          }
+        }
+      ],
+      "additions": {
+        "new_breakthroughs": [],
+        "new_sub_ideas": [],
+        "new_frontier": [
+          "diffusion_models/frontier"
+        ],
+        "new_watch": [
+          "diffusion_models/watch:Ideogram"
+        ],
+        "new_people": [],
+        "new_voices": [],
+        "trending_ideas": [],
+        "updates": [],
+        "broad_scan": [],
+        "skipped_dedupe": [],
+        "routed_subthemes": [
+          "ai__multimodal_generative_media__diffusion_transformers_image",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+          "ai__multimodal_generative_media__diffusion_transformers_image",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+        ],
+        "auto_expanded_subthemes": []
+      },
+      "as_of_date": "2026-06-16",
+      "generated_at": "2026-06-18T21:14:25.451663+00:00"
     }
   ],
   "voices": [
@@ -9307,12 +9401,22 @@
                 },
                 "example": "Ideogram / Midjourney / Imagen",
                 "source_url": "https://arxiv.org/abs/2212.09748",
-                "item_count": 2,
+                "item_count": 4,
                 "recent_items": [
                   {
                     "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://arxiv.org/abs/2606.14598"
+                  },
+                  {
+                    "title": "Ideogram — text-to-image player (best-in-class text rendering, open-weight 4.0)",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://ideogram.ai/news/ideogram-4.0/"
+                  },
+                  {
+                    "title": "Ideogram 4.0: open-weight 9.3B single-stream diffusion transformer",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://ideogram.ai/news/ideogram-4.0/"
                   }
                 ]
               },
@@ -9714,7 +9818,19 @@
                 },
                 "example": "MiniMax M3; DeepSeek; MolmoAct2",
                 "source_url": "https://huggingface.co/",
-                "item_count": 1
+                "item_count": 3,
+                "recent_items": [
+                  {
+                    "title": "Ideogram — text-to-image player (best-in-class text rendering, open-weight 4.0)",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://ideogram.ai/news/ideogram-4.0/"
+                  },
+                  {
+                    "title": "Ideogram 4.0: open-weight 9.3B single-stream diffusion transformer",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://ideogram.ai/news/ideogram-4.0/"
+                  }
+                ]
               },
               {
                 "id": "ai__frontier_platforms_applied_ai_economics__vertical_ai_legal_health_finance",

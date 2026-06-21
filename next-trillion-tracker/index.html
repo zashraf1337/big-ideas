@@ -51,6 +51,14 @@ a:hover{text-decoration:underline}
 .hero .meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;font-size:12.5px}
 .hero .meta span{background:rgba(255,255,255,.14);padding:5px 11px;border-radius:999px;backdrop-filter:blur(4px)}
 
+/* Pull quote */
+.pullquote{margin:18px 0 0;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent-2);border-radius:var(--radius);padding:22px 28px;box-shadow:var(--shadow)}
+.pullquote .mark{font-size:42px;line-height:.6;color:var(--accent-2);font-weight:800;font-family:Georgia,serif}
+.pullquote blockquote{margin:8px 0 0;font-size:18px;line-height:1.5;font-weight:600;color:#1b1f2a;letter-spacing:-.01em}
+.pullquote .attr{margin-top:13px;font-size:12.5px;color:var(--muted);font-weight:700}
+.pullquote .attr span{font-weight:500;font-style:italic}
+@media(min-width:760px){.pullquote blockquote{font-size:20px}}
+
 /* Stat strip */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 6px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
@@ -155,6 +163,13 @@ footer{margin-top:36px;font-size:12px;color:var(--muted);text-align:center;line-
       <span>8 categories ranked</span>
       <span>Lens: builder / founder</span>
     </div>
+  </div>
+
+  <!-- PULL QUOTE -->
+  <div class="pullquote">
+    <div class="mark">&ldquo;</div>
+    <blockquote>The next trillion-dollar idea won't come from a problem someone assigns you. It'll come from chasing something completely unobvious that technology just made possible &mdash; where you're one of only four teams in the world crazy enough to try.</blockquote>
+    <div class="attr">Sam Altman's message to founders <span>&mdash; paraphrased</span></div>
   </div>
 
   <!-- STAT STRIP -->

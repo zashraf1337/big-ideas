@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Next OpenAI — Trillion-Dollar Idea Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-jZvDSsmGB9oGGT/4l9bHXGoAv1OxvG/cFmSo0dZaSqmBgvQTKDBFAMftlXTmMbNW" crossorigin="anonymous">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --ink:#10131c;
+  --ink-soft:#414655;
+  --muted:#5b6172;
+  --line:#e6e8f0;
+  --accent:#4f46e5;
+  --accent-2:#0ea5a4;
+  --accent-3:#db2777;
+  --warn:#b45309;
+  --good:#15803d;
+  --chip:#eef0fb;
+  --shadow:0 1px 2px rgba(16,19,28,.04),0 8px 24px rgba(16,19,28,.06);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header */
+.hero{
+  background:linear-gradient(135deg,#1e1b4b 0%,#3730a3 48%,#0e7490 100%);
+  color:#fff;border-radius:var(--radius);padding:30px 30px 26px;box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.07)}
+.hero .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;opacity:.85}
+.hero h1{margin:8px 0 6px;font-size:30px;line-height:1.15;font-weight:800}
+.hero p{margin:0;max-width:760px;font-size:15px;opacity:.93}
+.hero .meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;font-size:12.5px}
+.hero .meta span{background:rgba(255,255,255,.14);padding:5px 11px;border-radius:999px;backdrop-filter:blur(4px)}
+
+/* Stat strip */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 6px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.stat .n{font-size:21px;font-weight:800;color:var(--accent)}
+.stat .l{font-size:12px;color:var(--muted);margin-top:3px}
+
+/* Section */
+.section{margin-top:34px}
+.section h2{font-size:19px;font-weight:800;margin:0 0 4px;letter-spacing:-.01em}
+.section .sub{color:var(--muted);font-size:13.5px;margin:0 0 16px}
+
+/* Thesis callout */
+.callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.callout p{margin:0 0 10px;font-size:14.5px;color:#23262f}
+.callout p:last-child{margin-bottom:0}
+.callout strong{color:var(--ink)}
+
+/* Charts */
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.panel h3{margin:0 0 2px;font-size:15px;font-weight:700}
+.panel .h-sub{margin:0 0 12px;font-size:12px;color:var(--muted)}
+.chart-box{position:relative;height:300px}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card .top{display:flex;align-items:flex-start;gap:12px}
+.rank{flex:0 0 auto;width:34px;height:34px;border-radius:10px;background:var(--accent);color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.card h3{margin:0;font-size:17px;font-weight:800;letter-spacing:-.01em}
+.card .tag{margin:3px 0 0;font-size:13px;color:var(--muted);font-style:italic}
+.score-pill{margin-left:auto;text-align:center;flex:0 0 auto}
+.score-pill .v{font-size:20px;font-weight:800;color:var(--accent-2)}
+.score-pill .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.card .thesis{margin:13px 0 14px;font-size:13.5px;color:#23262f}
+.kv{font-size:12.5px;margin:0 0 9px}
+.kv .lab{font-weight:700;color:var(--ink);display:block;margin-bottom:2px;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.kv .lab.market{color:var(--good)}
+.kv .lab.players{color:var(--accent)}
+.kv .lab.entry{color:var(--accent-3)}
+.kv .lab.signals{color:var(--warn)}
+.kv .val{color:#33384a}
+.bars{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
+.bar-row{font-size:11px}
+.bar-row .bl{display:flex;justify-content:space-between;color:var(--muted);margin-bottom:3px}
+.track{height:6px;background:var(--chip);border-radius:999px;overflow:hidden}
+.fill{height:100%;border-radius:999px;background:var(--accent)}
+.fill.a2{background:var(--accent-2)}
+.fill.a3{background:var(--accent-3)}
+.fill.warn{background:var(--warn)}
+.horizon-chip{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--accent);margin-top:2px}
+
+/* Table */
+#table-mount{margin-top:4px}
+.gridjs-wrapper{box-shadow:none;border-radius:12px}
+table.gridjs-table{font-size:13px}
+
+/* Signals / methodology */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.note-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);font-size:13.5px;color:#2a2e3a}
+.note-card h3{margin:0 0 8px;font-size:14px}
+.note-card ul{margin:0;padding-left:18px}
+.note-card li{margin-bottom:6px}
+
+/* Methodology (expandable) */
+.method{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.method summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;align-items:center;gap:12px;font-weight:700;color:var(--ink)}
+.method summary::-webkit-details-marker{display:none}
+.method summary:before{content:"+";display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:var(--chip);color:var(--accent);font-weight:800;flex:0 0 auto;font-size:16px}
+.method[open] summary:before{content:"\2212"}
+.method summary:hover{background:#fafbff}
+.method .m-title{font-size:15px}
+.method .m-hint{margin-left:auto;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.method[open] .m-hint{display:none}
+.method-body{padding:4px 20px 20px;border-top:1px solid var(--line)}
+.method-body p{font-size:13.5px;color:#2a2e3a;margin:13px 0 0;line-height:1.55}
+.method-body strong{color:var(--ink)}
+#method-updated{color:var(--muted);font-style:italic}
+
+footer{margin-top:36px;font-size:12px;color:var(--muted);text-align:center;line-height:1.7}
+.src-list{font-size:11.5px;color:var(--muted);line-height:1.9;margin-top:8px}
+.src-list a{color:var(--muted);text-decoration:underline}
+
+@media (max-width:820px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .chart-grid,.cards,.two-col{grid-template-columns:1fr}
+  .hero h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="eyebrow">Builder's Field Guide</div>
+    <h1>The Next OpenAI: Trillion-Dollar Idea Tracker</h1>
+    <p>Sam Altman's bet is that AI now lets tiny teams build enormous companies — he's predicted the first <strong>one-person, billion-dollar company</strong>. This board maps the categories being built <em>today</em> that could compound into OpenAI-scale platforms over the next decade, scored through a <strong>founder's lens</strong>: where can a small team actually start?</p>
+    <div class="meta">
+      <span id="updated">Updated —</span>
+      <span>Refreshes monthly</span>
+      <span>8 categories ranked</span>
+      <span>Lens: builder / founder</span>
+    </div>
+  </div>
+
+  <!-- STAT STRIP -->
+  <div class="stats" id="stats"></div>
+
+  <!-- THESIS -->
+  <div class="section">
+    <h2>The premise</h2>
+    <p class="sub">Why "the next OpenAI" is a real question, not hype.</p>
+    <div class="callout">
+      <p>OpenAI is steering toward a reported <strong>~$1 trillion valuation</strong> roughly a decade after starting as a research lab. Altman's broader thesis: AI tools won't just make existing companies more efficient — they'll <strong>unlock entirely new kinds of businesses</strong>, run by very small, very high-talent teams. (OpenAI built GPT-4 with ~250 people.)</p>
+      <p>For a builder, the interesting question isn't "what's already huge" — it's <strong>where the wedge is open right now</strong>. The categories below are ranked by a <strong>Builder Opportunity Score</strong>: a weighted blend of market size, how accessible the entry point is to a small team, whether the timing window is open, and how capital-efficient the path is. The biggest prizes (fusion, quantum) score lower here not because they're small, but because a newcomer can't easily start one in a garage.</p>
+    </div>
+  </div>
+
+  <!-- METHODOLOGY (collapsed by default) -->
+  <div class="section">
+    <details class="method">
+      <summary>
+        <span class="m-title">Methodology — how these ideas are found &amp; kept current</span>
+        <span class="m-hint">Click to expand</span>
+      </summary>
+      <div class="method-body">
+        <p><strong>The question.</strong> Anchored on Sam Altman's framing that OpenAI became a roughly $1 trillion company in about a decade, plus his bet that AI now lets tiny teams build enormous businesses — he's predicted the first one-person, billion-dollar company. We look for categories being built <em>today</em> that could compound to that scale by the mid-2030s.</p>
+        <p><strong>How candidates are gathered.</strong> We cast a wide net across frontier tech — AI, robotics, biotech &amp; longevity, energy &amp; fusion, space, quantum, defense, fintech and more — using multi-source web research, then narrow to the strongest eight categories where the thesis is concrete and real capital is already flowing.</p>
+        <p><strong>How they're scored (builder lens).</strong> Each category is rated 1–5 on four axes that combine into the Builder Opportunity Score: <strong>Market</strong> (25%), <strong>Accessibility</strong> (30% — weighted highest, because the lens is "can a small team start now?"), <strong>Timing</strong> (25%), and <strong>Capital-efficiency</strong> (20%). The board re-ranks itself from these scores, so the biggest prizes that a newcomer can't realistically start (fusion, quantum) sit lower here by design.</p>
+        <p><strong>Verification.</strong> Every notable figure — valuations, funding rounds, market sizes — is cross-checked against at least two reputable sources; anything that can't be corroborated is dropped. The scores are an editorial framework, not a forecast, and nothing here is investment advice.</p>
+        <p><strong>How it stays current.</strong> An automated task re-runs this research on a monthly cadence (it fires on the 1st and retries over the next three days if the computer is asleep, then catches up the following month). Each run refreshes the figures, scores and sources, can swap in a newly-emerged category, updates this dashboard, and pushes the new version to the Big-Ideas GitHub repo so the live page stays fresh. <span id="method-updated"></span></p>
+      </div>
+    </details>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="section">
+    <h2>Where to point a small team</h2>
+    <p class="sub">Left: opportunity score by category. Right: the founder's map — up and to the left is most buildable today. Bubble size = market size.</p>
+    <div class="chart-grid">
+      <div class="panel">
+        <h3>Builder Opportunity Score</h3>
+        <p class="h-sub">Weighted: accessibility 30% · market 25% · timing 25% · capital-efficiency 20% (1–5 scale)</p>
+        <div class="chart-box"><canvas id="scoreChart"></canvas></div>
+      </div>
+      <div class="panel">
+        <h3>Accessibility vs. time-to-scale</h3>
+        <p class="h-sub">Y: how open the entry point is · X: years to meaningful scale · size: market</p>
+        <div class="chart-box"><canvas id="mapChart"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="section">
+    <h2>The candidates</h2>
+    <p class="sub">Ranked by Builder Opportunity Score. Each card: the thesis, who's already building, and the wedge a newcomer could take.</p>
+    <div class="cards" id="cards"></div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="section">
+    <h2>Compare &amp; re-rank</h2>
+    <p class="sub">Sort by any column to apply your own lens — e.g. sort by Market for an investor's view, or by Capital-eff if you're bootstrapping.</p>
+    <div id="table-mount"></div>
+  </div>
+
+  <!-- METHOD + REFRESH -->
+  <div class="section">
+    <div class="two-col">
+      <div class="note-card">
+        <h3>How this is scored</h3>
+        <p>Each category is rated 1–5 on four axes, then combined into the Builder Opportunity Score:</p>
+        <ul>
+          <li><strong>Market (25%)</strong> — size of the prize if it works.</li>
+          <li><strong>Accessibility (30%)</strong> — can a small team plausibly start <em>now</em>? Weighted highest for the founder lens.</li>
+          <li><strong>Timing (25%)</strong> — is the window open today, or years out?</li>
+          <li><strong>Capital-efficiency (20%)</strong> — how far you get before needing mega-capital.</li>
+        </ul>
+        <p style="margin-top:10px">Scores are an editorial framework, not a forecast. Figures are sourced below and refreshed monthly.</p>
+      </div>
+      <div class="note-card">
+        <h3>Signals this board is tracking</h3>
+        <ul>
+          <li>Agentic AI moving from pilots (~11% in production) to default infrastructure.</li>
+          <li>Stablecoin circulation crossing the <strong>$1T</strong> mark.</li>
+          <li>First clinical readouts from AI-discovered drugs.</li>
+          <li>Robot foundation models generalizing across tasks &amp; bodies.</li>
+          <li>Inference cost-per-token and the power bottleneck for AI.</li>
+          <li>Fusion net-energy-gain (SPARC, late 2026/early 2027).</li>
+        </ul>
+        <p style="margin-top:10px">This dashboard re-runs the underlying research monthly and updates the numbers and rankings automatically.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="section">
+    <h2>Sources</h2>
+    <div class="src-list" id="sources"></div>
+  </div>
+
+  <footer>
+    Built as a living research board · scores are a founder-lens framework, not investment advice · figures reflect public reporting as of the update date.<br>
+    Do your own diligence before acting on anything here.
+  </footer>
+
+</div>
+
+<script>
+/* ---------- DATA (edit here on monthly refresh) ---------- */
+const LAST_UPDATED = "June 20, 2026";
+
+const STATS = [
+  {n:"~$765B", l:"AI infrastructure capex in 2026 (Goldman Sachs)"},
+  {n:"$33T", l:"Annual stablecoin transaction volume"},
+  {n:"$2.3T", l:"SpaceX valuation at its June 2026 IPO"},
+  {n:"$60B", l:"Price SpaceX paid for AI-coding leader Cursor"}
+];
+
+/* scores: 1-5. capital = capital-EFFICIENCY (5 = very capital-light) */
+const CATS = [
+  {
+    name:"AI Agents & Autonomous Software Labor",
+    tag:"Software that doesn't assist — it does the job.",
+    color:"#4f46e5",
+    horizon:"Now–2 yrs", years:1.5,
+    thesis:"The largest market on earth is human labor. Agents that complete real work — coding, support, ops, analysis — convert wages into software spend. This is exactly where Altman's 'one-person, billion-dollar company' lives.",
+    market:"Agentic AI ~$9–11B and AI-coding tools ~$12.8B in 2026; agentic AI projected to ~$139B by 2034 (40%+ CAGR). Underlying labor TAM is in the trillions.",
+    players:"Cursor / Anysphere (~$2B+ ARR, bought by SpaceX at $60B), Cognition / Devin ($26B), Salesforce Agentforce ($1.4B ARR), plus Claude Code, OpenAI & 400+ agent startups.",
+    entry:"Own one painful vertical workflow end-to-end (claims, medical billing, legal intake, bookkeeping, SDR). Price on outcomes, not seats. The moat is proprietary workflow data + distribution — not the model.",
+    signals:"Share of enterprises running agents in production (≈11% now vs ≈79% piloting); shift to outcome-based pricing; Gartner's 40%-of-apps-with-agents by end-2026.",
+    s:{market:5,access:5,timing:5,capital:4}
+  },
+  {
+    name:"Stablecoins & Programmable Money",
+    tag:"Money that moves like email — instant, global, programmable.",
+    color:"#0ea5a4",
+    horizon:"Now–3 yrs", years:2,
+    thesis:"Payments is a multi-trillion-dollar toll booth. Stablecoins strip cost and latency out of it. With regulatory clarity arriving, the rails are now investable infrastructure rather than a speculative crypto bet.",
+    market:"~$300B in circulation early 2026, projected >$1T by year-end; ~$33T annual transaction volume; cross-border B2B alone forecast at ~$5T by 2035.",
+    players:"Circle / USDC, Tether, with Visa, BlackRock and Stripe building on the rails; a16z and Bessemer publicly thesis-backing the category.",
+    entry:"Build the application layer on top of rails — payroll, merchant checkout, treasury, emerging-market FX, or compliance/orchestration. You don't issue a coin; you need a wedge use case and clean UX.",
+    signals:"Market cap crossing $1T; bank & fintech integrations; regulatory frameworks; non-crypto merchant adoption.",
+    s:{market:5,access:4,timing:5,capital:4}
+  },
+  {
+    name:"AI Infrastructure & Energy",
+    tag:"Sell picks and shovels in the compute gold rush.",
+    color:"#7c3aed",
+    horizon:"Now–3 yrs", years:2,
+    thesis:"Every AI dollar rests on compute and electricity. Capex is running ~$765B/yr and climbing toward $1.6T. The hyperscale layer is closed to newcomers — but inference, efficiency, cooling and power-software niches are wide open.",
+    market:"2026 AI capex ~$765B (Goldman); cloud capex ~$830B; data-center spend ~$788B (Gartner); ~$5.2T data-center buildout by 2030 and ~156 GW of capacity (McKinsey).",
+    players:"NVIDIA and the hyperscalers (Microsoft, Google, Amazon, Meta), plus inference/silicon challengers like Groq and Cerebras.",
+    entry:"Don't out-capex a hyperscaler. Win a niche with software margins on an infrastructure tailwind: inference cost reduction, model-serving/orchestration, GPU utilization, data-center cooling/power software, or financing/marketplace layers.",
+    signals:"Inference cost-per-token decline; power becoming the binding constraint (PPA deals); custom-silicon share vs NVIDIA; utilization breakthroughs.",
+    s:{market:5,access:3,timing:5,capital:2}
+  },
+  {
+    name:"Physical AI: Robot Foundation Models",
+    tag:"The brain for every robot — not the body.",
+    color:"#2563eb",
+    horizon:"3–7 yrs", years:5,
+    thesis:"Humanoids get the headlines, but the durable, software-margin prize is the general-purpose policy (vision-language-action) that can control any robot. Own the 'robot brain' and you own the platform.",
+    market:"Figure $39B; 1X ~$5B (OpenAI-backed); Physical Intelligence & Skild raising hundreds of millions; Unitree shipped 5,500+ units in 2025; Tesla targeting $20–30K/unit Optimus.",
+    players:"Physical Intelligence (π0, flow-matching), Skild AI (omni-bodied 'Skild Brain'), Figure, 1X, Tesla Optimus, Agility, NVIDIA (Isaac).",
+    entry:"Compete on the model/data layer or a narrow embodiment (one task, one form factor) where you can collect proprietary interaction data — or build the data/sim/eval tooling the whole field needs. Hardware is a capital trap; intelligence and data are the wedge.",
+    signals:"VLA generalization benchmarks; cost-per-unit curves; real deployments (BMW/Figure, Toyota/Agility); data-collection breakthroughs (human video, sim).",
+    s:{market:5,access:3,timing:4,capital:2}
+  },
+  {
+    name:"AI-Native Drug Discovery & Longevity",
+    tag:"Turn biology into an engineering problem.",
+    color:"#db2777",
+    horizon:"3–7 yrs", years:5,
+    thesis:"If AI compresses the time and cost of finding drugs, the prize is the pharma value chain plus longer healthspan. Foundation models for proteins and cells are the new platform layer.",
+    market:"Mega-rounds: Isomorphic Labs $2.1B (2026), Xaira ~$1.3B raised at $4B, Eikon IPO (~$381M). Pharma R&D + longevity is a multi-trillion-dollar market.",
+    players:"Isomorphic Labs, Xaira, Recursion (+Exscientia), Insilico (Phase 2 readout), insitro, Eikon, Generate:Biomedicines, Iambic, Chai.",
+    entry:"Don't try to be full-stack pharma. Build the tool/model/data layer — a better protein or cell model, lab-automation software, or a specific disease vertical — and partner for clinical. The capital-light wedge is software + data, not trials.",
+    signals:"Clinical readouts from AI-discovered molecules; foundation-model accuracy milestones; big-pharma platform deals; FDA stance on AI-derived candidates.",
+    s:{market:5,access:3,timing:4,capital:2}
+  },
+  {
+    name:"Autonomy Beyond the Car",
+    tag:"Self-driving was the proof. Now autonomize everything else.",
+    color:"#0891b2",
+    horizon:"2–6 yrs", years:4,
+    thesis:"The autonomy stack proven in robotaxis is spreading to defense, maritime, logistics and aviation — often with better margins and less regulatory friction than passenger cars.",
+    market:"Waymo $126B valuation ($16B round); Anduril $61B; Helsing ~$18B; Shield AI $12.7B; Saronic $9.25B. Defense-tech funding hit $14.6B in just the first 5 months of 2026.",
+    players:"Waymo (robotaxi); Anduril, Helsing, Shield AI, Saronic (defense & maritime); plus logistics and aviation autonomy startups.",
+    entry:"Pick an under-served domain — warehouse/yard, inspection, agriculture, maritime, middle-mile — and own the full autonomy + ops stack. Defense rewards relationships and patient capital; commercial niches reward focus.",
+    signals:"Government autonomy contracts (e.g. Anduril's ~$20B Army deal); Waymo's 20-city expansion; safety-mile milestones; new-domain commercial pilots.",
+    s:{market:4,access:3,timing:4,capital:2}
+  },
+  {
+    name:"Frontier Moonshots: Quantum · BCI · Space",
+    tag:"Decade-long bets with civilization-scale payoffs.",
+    color:"#9333ea",
+    horizon:"5–10+ yrs", years:8,
+    thesis:"Quantum, brain-computer interfaces and space are where today's deep-tech billions could compound into tomorrow's trillion-dollar platforms — if the science lands. Mostly capital- and talent-gated, with narrow software/application wedges.",
+    market:"PsiQuantum $7B; IonQ first quantum firm past $100M revenue; Neuralink ~$9B (12 patients); Merge Labs $850M (OpenAI/Altman-backed); SpaceX IPO'd at $2.3T.",
+    players:"Quantum — PsiQuantum, IonQ, Quantinuum (48 logical qubits). BCI — Neuralink, Synchron, Merge Labs, Precision. Space — SpaceX/Starlink, plus new entrants.",
+    entry:"The hardware frontiers are largely closed, but application/software layers are open: quantum error-correction & algorithms-as-a-service, BCI clinical software, and space data/analytics riding cheap launch + Starlink.",
+    signals:"Logical-qubit scaling & error rates; BCI patient counts and FDA clearances; launch-cost curve; Starlink/space-data platform openings.",
+    s:{market:5,access:2,timing:1,capital:1}
+  },
+  {
+    name:"Fusion & Next-Gen Energy",
+    tag:"Cheap, clean, limitless power — the ultimate enabler.",
+    color:"#ea580c",
+    horizon:"5–10 yrs", years:8,
+    thesis:"AI's appetite for electricity makes power the bottleneck of the decade. Fusion is the moonshot; the broader bet is any firm clean power (SMRs, geothermal, grid) that can plug into data centers.",
+    market:"Helion $15.5B valuation (>$1.5B raised); Commonwealth Fusion $3B; 17 startups have each raised >$100M; >$13B total private investment. Global energy is a tens-of-trillions market.",
+    players:"Commonwealth Fusion (SPARC net-gain target late 2026; Google ARC 200MW deal), Helion (Microsoft 2028 deal; Polaris hit 150M°C), TAE, Pacific Fusion.",
+    entry:"Pure fusion is closed to newcomers (billions + deep physics). Accessible adjacent plays: grid/interconnection software, data-center power procurement, geothermal, SMR components, and efficiency tooling.",
+    signals:"SPARC net-energy-gain result (late 2026/early 2027); first grid-connected demos; data-center clean-firm PPAs; SMR approvals.",
+    s:{market:5,access:1,timing:2,capital:1}
+  }
+];
+
+const SOURCES = [
+  ["Sam Altman — one-person billion-dollar company","https://www.startupbell.net/post/the-rise-of-the-one-person-billion-dollar-company-sam-altman-s-take"],
+  ["Agentic AI market size & forecast (Fortune Business Insights)","https://www.fortunebusinessinsights.com/agentic-ai-market-114233"],
+  ["Cursor / Anysphere valuation & ARR (Value Add VC)","https://valueaddvc.com/blog/cursor-ai-valuation-how-a-code-editor-became-a-9b-company"],
+  ["SpaceX to acquire Cursor for $60B (CNBC)","https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"],
+  ["Cognition raises $1B at $26B (TNW)","https://thenextweb.com/news/cognition-just-raised-1-billion-at-a-26-billion-valuation-and-90-of-its-own-code-is-written-by-its-ai"],
+  ["Stablecoin trends 2026 (a16z crypto)","https://a16zcrypto.com/posts/article/trends-stablecoins-rwa-tokenization-payments-finance/"],
+  ["Stablecoins as financial infrastructure (Bessemer)","https://www.bvp.com/atlas/stablecoins-from-defi-primitive-to-global-financial-infrastructure"],
+  ["AI build-out capex (Goldman Sachs)","https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out"],
+  ["Big Tech's $700B+ AI spending (Fortune)","https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/"],
+  ["Figure AI $39B & humanoid landscape (KraneShares)","https://kraneshares.com/humanoid-robotics-in-2026-the-race-from-pilot-to-platform/"],
+  ["Physical Intelligence robot foundation models (The Robot Report)","https://www.therobotreport.com/physical-intelligence-raises-600m-advance-robot-foundation-models/"],
+  ["Isomorphic Labs $2.1B raise (Bloomberg)","https://www.bloomberg.com/news/articles/2026-05-08/google-s-isomorphic-labs-to-raise-over-2-billion-in-new-funding"],
+  ["AI drug discovery capital stack 2026 (On Healthcare)","https://www.onhealthcare.tech/p/the-ai-drug-discovery-capital-stack"],
+  ["Waymo $16B round at $126B (TechCrunch)","https://techcrunch.com/2026/02/02/waymo-raises-16-billion-round-to-scale-robotaxi-fleet-london-tokyo/"],
+  ["Anduril $5B Series H at $61B (Crunchbase News)","https://news.crunchbase.com/defense-tech/anduril-5b-valuation-vc-funding-record-data/"],
+  ["Defense-tech funding $14.6B (TechTimes)","https://www.techtimes.com/articles/318372/20260615/defense-tech-funding-smashes-records-autonomous-weapons-startups-raise-146b.htm"],
+  ["Helion $15.5B valuation (GeekWire)","https://www.geekwire.com/2026/helion-hits-15-5b-valuation-with-465m-in-new-cash-to-commercialize-fusion-this-decade/"],
+  ["Commonwealth Fusion & Google ARC deal (ENR)","https://www.enr.com/articles/61369-fusion-energy-pioneer-gains-863m-in-private-funds-to-advance-commercial-reactor"],
+  ["PsiQuantum valuation & funding (Sacra)","https://sacra.com/c/psiquantum/"],
+  ["Neuralink valuation & Merge Labs (Sacra)","https://sacra.com/c/neuralink/"],
+  ["SpaceX IPO & Starlink financials (CNBC)","https://www.cnbc.com/2026/05/21/spacex-starlink-growth-profit-nasdaq-ipo.html"]
+];
+
+/* ---------- SCORING ---------- */
+const W = {market:0.25, access:0.30, timing:0.25, capital:0.20};
+function score(c){ return c.s.market*W.market + c.s.access*W.access + c.s.timing*W.timing + c.s.capital*W.capital; }
+CATS.forEach(c=> c.score = score(c));
+CATS.sort((a,b)=> b.score - a.score);
+CATS.forEach((c,i)=> c.rank = i+1);
+
+/* ---------- RENDER ---------- */
+document.getElementById("updated").textContent = "Updated " + LAST_UPDATED;
+const _mu = document.getElementById("method-updated"); if(_mu) _mu.textContent = "Last refreshed: " + LAST_UPDATED + ".";
+
+document.getElementById("stats").innerHTML = STATS.map(s=>
+  `<div class="stat"><div class="n">${s.n}</div><div class="l">${s.l}</div></div>`).join("");
+
+function barRow(label, val, cls){
+  return `<div class="bar-row"><div class="bl"><span>${label}</span><span>${val}/5</span></div>
+    <div class="track"><div class="fill ${cls}" style="width:${val/5*100}%"></div></div></div>`;
+}
+document.getElementById("cards").innerHTML = CATS.map(c=>`
+  <div class="card">
+    <div class="top">
+      <div class="rank" style="background:${c.color}">${c.rank}</div>
+      <div>
+        <h3>${c.name}</h3>
+        <div class="tag">${c.tag}</div>
+        <span class="horizon-chip" style="color:${c.color};background:${c.color}1a">${c.horizon}</span>
+      </div>
+      <div class="score-pill"><div class="v" style="color:${c.color}">${c.score.toFixed(2)}</div><div class="k">score</div></div>
+    </div>
+    <div class="thesis">${c.thesis}</div>
+    <div class="kv"><span class="lab market">Market</span><span class="val">${c.market}</span></div>
+    <div class="kv"><span class="lab players">Who's building it</span><span class="val">${c.players}</span></div>
+    <div class="kv"><span class="lab entry">Builder's wedge</span><span class="val">${c.entry}</span></div>
+    <div class="kv"><span class="lab signals">Signals to watch</span><span class="val">${c.signals}</span></div>
+    <div class="bars">
+      ${barRow("Market", c.s.market, "")}
+      ${barRow("Accessibility", c.s.access, "a2")}
+      ${barRow("Timing", c.s.timing, "a3")}
+      ${barRow("Capital-eff", c.s.capital, "warn")}
+    </div>
+  </div>`).join("");
+
+document.getElementById("sources").innerHTML = SOURCES.map(s=>`<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join(" &nbsp;·&nbsp; ");
+
+/* ---------- CHARTS ---------- */
+function shorten(n){ return n.replace(" & "," &\n").replace(": "," ").replace(/ \(.*\)/,""); }
+window.addEventListener("DOMContentLoaded", ()=>{
+  const labels = CATS.map(c=> c.name.replace("Frontier Moonshots: Quantum · BCI · Space","Frontier Moonshots").replace("AI-Native Drug Discovery & Longevity","AI Drug Discovery").replace("AI Agents & Autonomous Software Labor","AI Agents / Labor").replace("Stablecoins & Programmable Money","Stablecoins").replace("Physical AI: Robot Foundation Models","Robot Foundation Models").replace("AI Infrastructure & Energy","AI Infra & Energy").replace("Autonomy Beyond the Car","Autonomy (non-car)").replace("Fusion & Next-Gen Energy","Fusion / Energy"));
+  const colors = CATS.map(c=> c.color);
+
+  new Chart(document.getElementById("scoreChart"), {
+    type:"bar",
+    data:{ labels, datasets:[{ label:"Builder Opportunity Score", data:CATS.map(c=>+c.score.toFixed(2)), backgroundColor:colors, borderRadius:6, maxBarThickness:26 }] },
+    options:{ indexAxis:"y", responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{callbacks:{label:ctx=>`Score ${ctx.parsed.x} / 5`}} },
+      scales:{ x:{ min:0, max:5, grid:{color:"#eef0f6"}, ticks:{color:"#5b6172"} }, y:{ grid:{display:false}, ticks:{color:"#23262f",font:{size:11}} } }
+    }
+  });
+
+  new Chart(document.getElementById("mapChart"), {
+    type:"bubble",
+    data:{ datasets: CATS.map(c=>({
+      label:c.name,
+      data:[{x:c.years, y:c.s.access, r:6+c.s.market*3}],
+      backgroundColor:c.color+"cc", borderColor:c.color, borderWidth:1
+    })) },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false},
+        tooltip:{callbacks:{ title:items=> CATS[items[0].datasetIndex].name,
+          label:ctx=>`~${ctx.raw.x} yrs to scale · accessibility ${ctx.raw.y}/5` }} },
+      scales:{
+        x:{ title:{display:true,text:"Years to meaningful scale →",color:"#5b6172"}, min:0, max:10, grid:{color:"#eef0f6"}, ticks:{color:"#5b6172"} },
+        y:{ title:{display:true,text:"Builder accessibility →",color:"#5b6172"}, min:0, max:6, grid:{color:"#eef0f6"}, ticks:{color:"#5b6172",stepSize:1} }
+      }
+    }
+  });
+
+  /* ---------- TABLE ---------- */
+  new gridjs.Grid({
+    columns:[
+      {name:"#", width:"50px"},
+      {name:"Category", width:"230px"},
+      {name:"Horizon", width:"110px"},
+      {name:"Market", sort:true, width:"90px"},
+      {name:"Access", sort:true, width:"90px"},
+      {name:"Timing", sort:true, width:"90px"},
+      {name:"Capital-eff", sort:true, width:"110px"},
+      {name:"Score", sort:true, width:"90px"}
+    ],
+    data: CATS.map(c=>[c.rank, c.name, c.horizon, c.s.market, c.s.access, c.s.timing, c.s.capital, +c.score.toFixed(2)]),
+    sort:true, search:false, pagination:false,
+    style:{ table:{"font-size":"13px"}, th:{"background":"#f1f2f8","padding":"9px 10px"}, td:{"padding":"8px 10px"} }
+  }).render(document.getElementById("table-mount"));
+});
+</script>
+</body>
+</html>

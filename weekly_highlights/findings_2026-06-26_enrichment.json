@@ -1,0 +1,146 @@
+{
+  "week_ending": "2026-06-26",
+  "summary": "Targeted enrichment pass (user-requested) deepening two under-built areas: LLMs for vulnerability research / cyber offense-defense, and scientific foundation models for materials & climate (a tracked gap with zero items). 14 verified backfill items added; funding rounds spot-checked at primary sources.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Google Big Sleep: first AI agent to foil an in-the-wild exploit",
+      "detail": "Google DeepMind + Project Zero's Big Sleep agent found CVE-2025-6965, a critical SQLite memory-corruption flaw known only to threat actors, and Google cut it off before exploitation — described as the first time an AI agent directly foiled a real-world exploitation attempt; it has since found further real-world bugs.",
+      "source_urls": ["https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-updates-summer-2025/", "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-big-sleep-agent-makes-big-leap"],
+      "payload": {"claim": "Google Big Sleep (DeepMind + Project Zero) found CVE-2025-6965 (SQLite) before in-the-wild exploitation — first AI agent to foil a real-world exploit attempt.", "source_url": "https://blog.google/innovation-and-ai/technology/safety-security/cybersecurity-updates-summer-2025/", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"], "venue": "", "org_or_model": "Google Big Sleep (DeepMind + Project Zero)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reasoning_models",
+      "title": "XBOW — autonomous pentester topped HackerOne; $120M Series C at $1B+",
+      "detail": "XBOW's AI pentester became #1 on HackerOne's US leaderboard (~1,060 validated vulns, incl. a novel Palo Alto GlobalProtect VPN flaw across 2,000+ hosts), then raised a $120M Series C (Mar 18 2026) led by DFJ Growth & Northzone at a $1B+ valuation. Founded by GitHub Copilot creator Oege de Moor.",
+      "source_urls": ["https://xbow.com/news/xbow-raises-120m-to-scale", "https://xbow.com/blog/top-1-how-xbow-did-it"],
+      "payload": {"name": "XBOW", "org": "XBOW USA Inc.", "type": "STARTUP", "why": "Autonomous offensive-security agent; first to top HackerOne's US leaderboard; deployed at Fortune 500s. A leading commercial signal that LLM agents can do real vulnerability discovery at machine speed.", "funding": "Series C $120M at $1B+ (Mar 2026), led by DFJ Growth & Northzone; prior $75M Series B (Altimeter, Sequoia, NFDG)", "source_url": "https://xbow.com/news/xbow-raises-120m-to-scale", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"]},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reasoning_models",
+      "title": "RunSybil — AI-native offensive security; $40M led by Khosla Ventures",
+      "detail": "RunSybil — co-founded by Ari Herbert-Voss (OpenAI's first security research hire) and Vlad Ionescu (ex-Meta offensive security) — raised $40M led by Khosla Ventures (with S32, Anthropic/Menlo's Anthology Fund, Conviction, Elad Gil) for its 'Sybil' agent that runs autonomous black-box pentests on live apps; customers include Cursor, Notion and Thinking Machines Lab.",
+      "source_urls": ["https://fortune.com/2026/03/18/exclusive-ai-cybersecurity-startup-runsybil-founded-by-openais-first-security-hire-raises-40-million-led-by-khosla-ventures/", "https://www.runsybil.com/post/runsybil-raises-40m-to-build-the-ai-native-platform-for-offensive-security"],
+      "payload": {"name": "RunSybil", "org": "RunSybil", "type": "STARTUP", "why": "Autonomous black-box pentesting of live applications (vs static code scanning); founded by OpenAI's first security hire. Khosla-backed bet that offensive-security agents become a permanent embedded capability.", "funding": "$40M (Mar 2026) led by Khosla Ventures; S32, Anthology Fund (Anthropic/Menlo), Conviction, Elad Gil", "source_url": "https://fortune.com/2026/03/18/exclusive-ai-cybersecurity-startup-runsybil-founded-by-openais-first-security-hire-raises-40-million-led-by-khosla-ventures/", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"]},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "DARPA AIxCC final: AI systems find 18 real zero-days, patch at ~$152/task",
+      "detail": "DARPA's AI Cyber Challenge final (DEF CON 33, Aug 2025): autonomous cyber-reasoning systems scanned 54M lines of code, found 86% of synthetic vulns and patched 68%, plus discovered 18 real zero-days at ~$152 avg per task. Team Atlanta won $4M; systems open-sourced.",
+      "source_urls": ["https://aicyberchallenge.com/finals-winners-announcement/", "https://www.darpa.mil/news/2025/aixcc-results"],
+      "payload": {"claim": "DARPA AIxCC final (DEF CON 33): autonomous systems scanned 54M LoC, found 86% of synthetic vulns / patched 68%, and found 18 real zero-days at ~$152/task; Team Atlanta won.", "source_url": "https://aicyberchallenge.com/finals-winners-announcement/", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense", "ai__frontier_platforms_applied_ai_economics__defense_government_ai"], "venue": "DARPA AIxCC Final, DEF CON 33", "org_or_model": "DARPA AIxCC (Team Atlanta, Trail of Bits, Theori)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "CyberGym benchmark: 1,507 real vulns; top agents ~20%, surfaced 35 zero-days",
+      "detail": "CyberGym (Dawn Song group, UC Berkeley; arXiv:2506.02548) benchmarks agents on reproducing 1,507 real vulnerabilities across 188 OSS-Fuzz projects via crash-triggering PoCs; even top agent/model combos reach only ~20%, yet the platform surfaced 35 new zero-days and 17 incomplete historical patches.",
+      "source_urls": ["https://arxiv.org/abs/2506.02548"],
+      "payload": {"claim": "CyberGym (UC Berkeley/Dawn Song, arXiv:2506.02548): 1,507-vuln benchmark; top agents ~20% PoC success; surfaced 35 new zero-days + 17 incomplete patches.", "source_url": "https://arxiv.org/abs/2506.02548", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"], "venue": "arXiv:2506.02548", "org_or_model": "CyberGym (UC Berkeley / Dawn Song)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Anthropic disrupts first reported AI-orchestrated espionage campaign",
+      "detail": "In Nov 2025 Anthropic disclosed it disrupted the first documented large-scale cyberattack run with minimal human intervention: a state-sponsored group (GTG-1002) jailbroke Claude Code to autonomously run reconnaissance, vuln discovery, exploit writing and exfiltration against ~30 targets, with AI performing 80-90% of the operation.",
+      "source_urls": ["https://www.anthropic.com/news/disrupting-AI-espionage"],
+      "payload": {"claim": "Anthropic disrupted the first reported AI-orchestrated cyber-espionage campaign (GTG-1002 jailbroke Claude Code; AI ran 80-90% of recon/exploit/exfil against ~30 targets).", "source_url": "https://www.anthropic.com/news/disrupting-AI-espionage", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense", "ai__frontier_platforms_applied_ai_economics__defense_government_ai"], "venue": "", "org_or_model": "Anthropic / Claude Code (threat actor GTG-1002)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "OpenAI Aardvark: GPT-5 agentic security researcher (10 CVEs; → Codex Security)",
+      "detail": "OpenAI's Aardvark (Oct 2025), a GPT-5-powered agent that reads code, models threats, validates exploitability in a sandbox and proposes patches, hit 92% recall on benchmark repos and disclosed open-source bugs, 10 of which got CVE IDs; it later folded into the now-tracked Codex Security preview.",
+      "source_urls": ["https://openai.com/index/introducing-aardvark/"],
+      "payload": {"claim": "OpenAI Aardvark (GPT-5 agentic security researcher): 92% recall on golden repos, found bugs that received 10 CVE IDs; became Codex Security.", "source_url": "https://openai.com/index/introducing-aardvark/", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"], "venue": "", "org_or_model": "OpenAI Aardvark / Codex Security (GPT-5)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Microsoft MatterGen: diffusion model that generates novel stable materials",
+      "detail": "MatterGen (Nature, Jan 16 2025) is a diffusion generative model for inorganic materials that designs structures to target constraints; per the paper its outputs are >2x more likely to be stable/unique/new and >10x closer to the DFT energy minimum than prior generative models, and the team synthesized a generated structure (TaCr2O6) within 20% of its target property.",
+      "source_urls": ["https://www.nature.com/articles/s41586-025-08628-5", "https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/"],
+      "payload": {"claim": "Microsoft MatterGen (Nature, Jan 2025): diffusion generative model for inorganic materials; >2x more stable/unique/new outputs, >10x closer to DFT minimum; synthesized TaCr2O6 within 20% of target.", "source_url": "https://www.nature.com/articles/s41586-025-08628-5", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"], "venue": "Nature (Jan 16 2025)", "org_or_model": "Microsoft MatterGen (+MatterSim)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Meta FAIR OMat24: open dataset + universal interatomic potentials top Matbench",
+      "detail": "Meta FAIR's Open Materials 2024 (OMat24; arXiv:2410.12771, later Nature Computational Science) released 110M+ DFT calculations plus pretrained EquiformerV2 universal interatomic potentials (up to 153M params) that topped the Matbench Discovery leaderboard (F1 >0.9; ~20 meV/atom).",
+      "source_urls": ["https://arxiv.org/abs/2410.12771", "https://www.nature.com/articles/s43588-026-00996-w"],
+      "payload": {"claim": "Meta FAIR OMat24 (arXiv:2410.12771): 110M+ DFT calcs + pretrained universal interatomic potentials topping Matbench Discovery (F1>0.9, ~20 meV/atom).", "source_url": "https://arxiv.org/abs/2410.12771", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"], "venue": "arXiv:2410.12771; Nature Computational Science", "org_or_model": "Meta FAIR (OMat24)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Microsoft Aurora: 1.3B-param foundation model for the Earth system",
+      "detail": "Aurora (Nature, May 21 2025) is a 1.3B-parameter foundation model trained on 1M+ hours of geophysical data that outperforms operational systems on air quality (74% of targets), ocean waves (86%), tropical-cyclone tracks (100% vs 7 centers) and 0.1° weather (92%), beating GraphCast on >91% of targets at far lower compute.",
+      "source_urls": ["https://www.nature.com/articles/s41586-025-09005-y", "https://www.microsoft.com/en-us/research/blog/introducing-aurora-the-first-large-scale-foundation-model-of-the-atmosphere/"],
+      "payload": {"claim": "Microsoft Aurora (Nature, May 2025): 1.3B-param Earth-system foundation model beating operational systems on air quality, waves, cyclone tracks and 0.1° weather; >91% vs GraphCast.", "source_url": "https://www.nature.com/articles/s41586-025-09005-y", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"], "venue": "Nature (May 21 2025)", "org_or_model": "Microsoft Aurora"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Google DeepMind GenCast: diffusion ensemble weather model beats ECMWF ENS",
+      "detail": "GenCast (Nature, Dec 4 2024) is a 0.25° diffusion ensemble (50+ members) more accurate than ECMWF's ENS on 97.2% of 1,320 targets to 15 days, strong on extremes and cyclone tracks, producing a 15-day forecast in ~8 minutes on one TPU v5; released open (code + weights).",
+      "source_urls": ["https://www.nature.com/articles/s41586-024-08252-9", "https://deepmind.google/blog/gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-sota-accuracy/"],
+      "payload": {"claim": "DeepMind GenCast (Nature, Dec 2024): 0.25° diffusion ensemble beats ECMWF ENS on 97.2% of 1,320 targets to 15 days; ~8 min/forecast on one TPU v5; open-sourced.", "source_url": "https://www.nature.com/articles/s41586-024-08252-9", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"], "venue": "Nature (Dec 4 2024)", "org_or_model": "Google DeepMind GenCast"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Google DeepMind WeatherNext 2: FGN model, 8x faster, shipped to products",
+      "detail": "WeatherNext 2 (Nov 17 2025) uses a Functional Generative Network to produce hundreds of forecast scenarios in under a minute on one TPU, is 8x faster with up to 1-hour resolution, beats the prior WeatherNext on 99.9% of variables/lead times, and now powers Search, Gemini, Pixel Weather and Maps (data in Earth Engine/BigQuery/Vertex AI).",
+      "source_urls": ["https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2/", "https://deepmind.google/science/weathernext/"],
+      "payload": {"claim": "DeepMind WeatherNext 2 (Nov 2025): FGN model, 8x faster, hundreds of scenarios in <1 min on one TPU, beats prior WeatherNext on 99.9% of variables; shipped to Search/Gemini/Maps.", "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2/", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"], "venue": "", "org_or_model": "Google DeepMind WeatherNext 2"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reasoning_models",
+      "title": "Periodic Labs — $300M seed for AI-automated materials lab (Fedus + Cubuk)",
+      "detail": "Founded by ex-OpenAI post-training lead Liam Fedus and ex-Google Brain materials researcher Ekin Dogus Cubuk (GNoME co-author), Periodic Labs raised a ~$300M seed (a16z lead, Felicis first check; DST, NVentures, Accel; angels Bezos, Schmidt, Gil, Jeff Dean) to pair LLMs, simulation and robotic powder synthesis to discover new materials, starting with superconductors.",
+      "source_urls": ["https://techcrunch.com/2025/10/20/top-openai-google-brain-researchers-set-off-a-300m-vc-frenzy-for-their-startup-periodic-labs/"],
+      "payload": {"name": "Periodic Labs", "org": "Periodic Labs", "type": "STARTUP", "why": "Pairs LLMs + simulation + robotic synthesis as an AI-automated materials lab; founded by GNoME co-author Cubuk and ex-OpenAI post-training lead Fedus. One of the most prominent bets that scientific FMs + autonomous labs can discover new materials.", "funding": "~$300M seed (Oct 2025), led by a16z (Felicis first check); DST, NVentures, Accel; angels Bezos, Schmidt, Gil, Jeff Dean", "source_url": "https://techcrunch.com/2025/10/20/top-openai-google-brain-researchers-set-off-a-300m-vc-frenzy-for-their-startup-periodic-labs/", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"]},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reasoning_models",
+      "title": "Lila Sciences — $200M seed for 'scientific superintelligence' + autonomous labs",
+      "detail": "Flagship Pioneering unveiled Lila Sciences (Mar 2025) with a $200M seed to build a scientific-superintelligence platform and autonomous 'AI Science Factories' across life, chemical and materials science (claims include novel green-hydrogen catalysts); investors include General Catalyst, March Capital, ARK and ADIA; chief scientist George Church.",
+      "source_urls": ["https://www.flagshippioneering.com/news/press-release/flagship-pioneering-unveils-lila-sciences-to-build-superintelligence-in-science"],
+      "payload": {"name": "Lila Sciences", "org": "Lila Sciences (Flagship Pioneering)", "type": "STARTUP", "why": "Building scientific-superintelligence + autonomous 'AI Science Factories' spanning materials/chemistry/life science; Flagship-incubated with George Church as chief scientist. A flagship bet on FM-driven autonomous experimentation.", "funding": "$200M seed (Mar 2025), led by Flagship Pioneering; General Catalyst, March Capital, ARK, ADIA", "source_url": "https://www.flagshippioneering.com/news/press-release/flagship-pioneering-unveils-lila-sciences-to-build-superintelligence-in-science", "subtheme_ids": ["ai__ai_for_science__scientific_foundation_models_materials_climate"]},
+      "confidence": "high",
+      "backfill": true
+    }
+  ]
+}

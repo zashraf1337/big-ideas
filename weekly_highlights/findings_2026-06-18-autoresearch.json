@@ -1,0 +1,22 @@
+{
+  "week_ending": "2026-06-18",
+  "summary": "Capture Karpathy's autoresearch (released Mar 7, 2026) — an open-source harness + 'program.md' seed prompt that lets a bring-your-own coding agent (Claude/Codex) autonomously run single-GPU nanochat training experiments (edit train.py, train 5 min, keep/discard on val_bpb, repeat). ~66k+ GitHub stars; the concrete milestone that crystallized the 'AI-doing-AI-research' thesis.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Karpathy's autoresearch: agent-driven autonomous ML experimentation harness",
+      "detail": "Open-source repo (Mar 2026, MIT) where a bring-your-own agent autonomously edits a single nanochat train.py, runs fixed 5-min experiments, and keeps/discards on val_bpb — a minimal harness + 'program.md' prompt-as-skill, not a packaged agent. Reported runs: Shopify's Lütke +19% over 37 experiments overnight; Karpathy's 700-experiment run cut time-to-GPT-2 2.02h→1.80h.",
+      "source_urls": ["https://github.com/karpathy/autoresearch", "https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/"],
+      "payload": {
+        "claim": "Karpathy released 'autoresearch' (Mar 7, 2026, MIT, ~66k+ GitHub stars): a minimal single-GPU nanochat harness where a bring-your-own coding agent (Claude/Codex) autonomously edits train.py, runs fixed 5-min experiments, and keeps/discards on val_bpb — the concrete milestone crystallizing the AI-doing-AI-research thesis. Notable runs: Shopify +19% (37 experiments), Karpathy 700-experiment run (time-to-GPT-2 2.02h→1.80h).",
+        "source_url": "https://github.com/karpathy/autoresearch",
+        "subtheme_ids": [
+          "ai__ai_for_science__autonomous_research_hypothesis_generation",
+          "ai__data_memory_evaluation_foundations__rl_environments_as_infrastructure",
+          "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+        ]
+      }
+    }
+  ]
+}

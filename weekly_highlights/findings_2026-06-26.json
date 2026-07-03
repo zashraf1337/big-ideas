@@ -1,0 +1,276 @@
+{
+  "week_ending": "2026-06-26",
+  "summary": "Custom AI silicon was the week's biggest move: OpenAI and Broadcom unveiled 'Jalapeño', a reticle-sized inference ASIC taped out in ~9 months, while SK hynix sampled 12-high HBM4E — twin pressure points on the AI-compute/memory supply chain that three voices argued is now the real battleground. China's open-weight surge (GLM-5.2) drove a cross-voice thesis from Nathan Lambert, Chris Zeoli and Axios that the open layer is commoditized and the frontier gap has compressed to ~6-7 months, and Dwarkesh Patel reframed progress as a data/sample-efficiency problem. Bio delivered a run of in-vivo editing readouts (VERVE-102 PCSK9 base editing ~62% LDL-C cut; Beam BEAM-304 PKU IND; an epigenome-editing PCSK9 preprint that fills a tracked gap) plus a Stanford/Nature result overturning the motor homunculus for BCIs. Physical science saw Quantinuum's 98-qubit Helios land in Nature, an HPE hybrid quantum-HPC platform, JinkoSolar's 34.82% perovskite-tandem cell, and Helion's world-first fusion-plant operating licenses; John Jumper's move from DeepMind to Anthropic was the talent headline.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_accelerators",
+      "title": "OpenAI + Broadcom unveil 'Jalapeño' custom LLM-inference ASIC",
+      "detail": "OpenAI's June 24 release introduced Jalapeño, a reticle-sized inference accelerator co-developed with Broadcom from design to tape-out in ~9 months (claimed fastest-ever high-performance ASIC cycle, accelerated using OpenAI's own models); early data claims perf/watt 'substantially better' than state-of-the-art, with gigawatt-scale deployment alongside Microsoft from end-2026.",
+      "source_urls": ["https://openai.com/index/openai-broadcom-jalapeno-inference-chip/", "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor"],
+      "payload": {"claim": "OpenAI + Broadcom 'Jalapeño' reticle-sized inference ASIC, design-to-tape-out in ~9 months, perf/watt 'substantially better' than SoTA, gigawatt-scale with Microsoft from end-2026.", "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/", "subtheme_ids": ["hardware__ai_accelerators__inference_specialized_asics", "ai__frontier_platforms_applied_ai_economics__ai_compute_economics", "hardware__ai_datacenter_power_cooling__datacenter_power_energy_density"], "venue": "", "org_or_model": "OpenAI / Broadcom (Jalapeño)"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "OpenAI Daybreak: GPT-5.5-Cyber + Codex Security for automated patching",
+      "detail": "On June 22 OpenAI expanded Daybreak, releasing GPT-5.5-Cyber (85.6% on CyberGym vs 81.8% for GPT-5.5; 39.5% vs 25.95% on ExploitGym) plus a Codex Security plugin that has scanned 30M+ commits across 30K repos, shifting the bottleneck from finding to auto-patching vulnerabilities, with Trusted Access partnerships with multiple governments.",
+      "source_urls": ["https://openai.com/index/daybreak-securing-the-world/"],
+      "payload": {"claim": "OpenAI Daybreak releases GPT-5.5-Cyber (85.6% CyberGym) + Codex Security (30M+ commits / 30K repos scanned), with government Trusted Access partnerships.", "source_url": "https://openai.com/index/daybreak-securing-the-world/", "subtheme_ids": ["ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense", "ai__frontier_platforms_applied_ai_economics__defense_government_ai", "ai__agents_developer_ecosystem__coding_agents"], "venue": "", "org_or_model": "OpenAI (GPT-5.5-Cyber / Codex Security / Daybreak)"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_PERSON",
+      "breakthrough_id": "transformers_llms",
+      "title": "Nobel laureate John Jumper leaves Google DeepMind for Anthropic",
+      "detail": "On June 19-20 John Jumper — AlphaFold lead and 2024 Chemistry Nobel laureate — announced he is leaving Google DeepMind after ~9 years to join Anthropic, a high-profile talent move signaling intensifying competition for scientific-AI leadership.",
+      "source_urls": ["https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/", "https://x.com/JohnJumperSci/status/2068001285173834106"],
+      "payload": {"name": "John Jumper", "role": "Joining Anthropic (research) after ~9 years leading AlphaFold at Google DeepMind", "affiliation": "Anthropic", "org_type": "BUSINESS", "prizes": ["2024 Nobel Prize in Chemistry (AlphaFold)"], "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/", "subtheme_ids": ["ai__ai_for_science__autonomous_research_hypothesis_generation"]},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Agon: autonomous omnidisciplinary research orchestrator ('machine scales, human steers')",
+      "detail": "arXiv:2606.24177 (June 23, Youran Sun et al., Haizhao Yang group) presents Agon, a 'Prompt Economy' research orchestrator that ran 444 autonomous research loops across domains with no human-written experimental code, contributing a taxonomy separating failures the loop can self-fix from those needing human judgment.",
+      "source_urls": ["https://arxiv.org/abs/2606.24177"],
+      "payload": {"claim": "Agon (arXiv:2606.24177) autonomous research orchestrator ran 444 loops across domains with no human-written experimental code.", "source_url": "https://arxiv.org/abs/2606.24177", "subtheme_ids": ["ai__ai_for_science__autonomous_research_hypothesis_generation", "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"], "venue": "", "org_or_model": "Agon (Haizhao Yang et al.)"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Geometric Action Model (GAM) repurposes a 3D geometry foundation model for manipulation",
+      "detail": "arXiv:2606.17046 (June 15; ETH Zurich/KAIST incl. Marc Pollefeys, Marco Hutter) splits a pretrained geometric foundation model to do perception, future-latent prediction and action decoding in one backbone, reporting more accurate, robust, faster and lighter contact-rich manipulation than current VLA/world-action baselines.",
+      "source_urls": ["https://arxiv.org/abs/2606.17046"],
+      "payload": {"claim": "GAM (arXiv:2606.17046, ETH/KAIST) repurposes a 3D geometry foundation model for contact-rich manipulation, beating VLA/world-action baselines on accuracy, robustness, speed and size.", "source_url": "https://arxiv.org/abs/2606.17046", "subtheme_ids": ["robotics__dexterous_manipulation_tactile__contact_rich_manipulation_learning", "robotics__robot_foundation_models__vision_language_action_policies"], "venue": "", "org_or_model": "GAM (ETH Zurich / KAIST)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "NavWM: unified navigation world model for foresight-driven planning",
+      "detail": "arXiv:2606.24101 (June 23; CAS Institute of Automation + Beihang) proposes NavWM, unifying latent world reasoning, multimodal action prediction and controllable visual generation via 'latent world tokens' to combat myopic decisions and mode collapse in visual navigation.",
+      "source_urls": ["https://arxiv.org/abs/2606.24101"],
+      "payload": {"claim": "NavWM (arXiv:2606.24101, CAS/Beihang) unifies latent world reasoning, action prediction and controllable generation via 'latent world tokens' for visual navigation.", "source_url": "https://arxiv.org/abs/2606.24101", "subtheme_ids": ["robotics__robot_foundation_models__on_device_embodied_reasoning"], "venue": "", "org_or_model": "NavWM (CAS / Beihang)"},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Waymo registers German entity for European robotaxi expansion",
+      "detail": "Per Bloomberg (June 25), Waymo registered 'Waymo Germany GmbH' to offer autonomous ride-hailing — an explicit step toward European market entry beyond its US footprint and prior London/Tokyo signals.",
+      "source_urls": ["https://www.bloomberg.com/news/articles/2026-06-25/waymo-registers-german-entity-for-future-european-expansion"],
+      "payload": {"field": "Waymo geographic expansion", "new_value": "Registered Waymo Germany GmbH for EU robotaxi entry (June 25 2026)", "previous_value": "US-focused (~6 markets) plus prior intl. plans (London/Tokyo)", "source_url": "https://www.bloomberg.com/news/articles/2026-06-25/waymo-registers-german-entity-for-future-european-expansion"},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Beam's BEAM-304 in vivo base editor for PKU gets FDA IND clearance",
+      "detail": "On June 18 Beam Therapeutics announced FDA IND clearance for BEAM-304, a liver-targeted LNP adenine base editor correcting PAH mutations (starting with R408W) in phenylketonuria; preclinical data normalized plasma Phe in PKU mouse models, framed as a platform/bespoke-editor program.",
+      "source_urls": ["https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-clearance-investigational-new-drug-0"],
+      "payload": {"claim": "Beam BEAM-304 (in vivo LNP adenine base editor for PKU/PAH) cleared FDA IND June 18 2026; preclinical normalization of plasma Phe.", "source_url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-clearance-investigational-new-drug-0", "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__base_editing"], "venue": "", "org_or_model": "Beam Therapeutics (BEAM-304)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "Nature study upends motor homunculus: whole-body signals across motor cortex",
+      "detail": "A Stanford/Wu Tsai Neurosciences study (Nature, June 17; Deo, Willett, Henderson) recorded from 8 BCI-implanted participants performing 45 movements and found every motor-cortex region encodes whole-body movement, not just its canonical part — implying a single implant could control arms, communication devices and more.",
+      "source_urls": ["https://news.stanford.edu/stories/2026/06/how-brain-controls-movement-paralysis-research"],
+      "payload": {"claim": "Stanford/Nature (June 17): every motor-cortex region encodes whole-body movement (8 BCI participants, 45 movements), upending the motor homunculus and implying fewer implants for versatile BCI control.", "source_url": "https://news.stanford.edu/stories/2026/06/how-brain-controls-movement-paralysis-research", "subtheme_ids": ["bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"], "venue": "Nature", "org_or_model": "Stanford / Wu Tsai Neurosciences Institute (BrainGate2)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Dual CD19/BCMA CAR-T drives sustained remission in systemic sclerosis (EULAR)",
+      "detail": "At EULAR 2026, Yajing Zhang (Beijing GoBroad Boren Hospital) reported a dual-target CD19/BCMA CAR-T inducing sustained clinical remission in 11 refractory systemic sclerosis patients, targeting skin fibrosis and lung progression as an immune-reset strategy ahead of planned phase 2 — distinct from the tracked Autolus obe-cel lupus program.",
+      "source_urls": ["https://www.healio.com/news/rheumatology/20260615/dualtarget-car-tcell-therapy-exhibits-profound-remission-in-systemic-sclerosis"],
+      "payload": {"claim": "Dual CD19/BCMA CAR-T (Beijing GoBroad Boren) induced sustained remission in 11 refractory systemic-sclerosis patients (EULAR 2026).", "source_url": "https://www.healio.com/news/rheumatology/20260615/dualtarget-car-tcell-therapy-exhibits-profound-remission-in-systemic-sclerosis", "subtheme_ids": ["bio__engineered_cell_therapies__car_t_for_autoimmune_disease"], "venue": "EULAR 2026", "org_or_model": "Beijing GoBroad Boren Hospital (CD19/BCMA CAR-T)"},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "AlphaFold structure-mining uncovers VIPR, an ancestral pre-CRISPR system",
+      "detail": "Doudna lab (UC Berkeley) used AlphaFold to hunt RAMP-like folds encoded by unrelated sequences and discovered VIPR in bacteriophages (bioRxiv, April 26; Yoon et al.). VIPR is RNA-guided but silences rather than cuts DNA; ~180 aa (~1/8 of Cas9), small enough to multiplex within one AAV vector.",
+      "source_urls": ["https://www.biorxiv.org/content/10.64898/2026.04.26.720920v1", "https://www.worksinprogress.news/p/whats-new-in-biology-june-2026"],
+      "payload": {"claim": "Doudna lab used AlphaFold to discover VIPR, an RNA-guided gene-silencing system (~180 aa, ~1/8 of Cas9) in phages (bioRxiv, Yoon et al.).", "source_url": "https://www.biorxiv.org/content/10.64898/2026.04.26.720920v1", "subtheme_ids": ["bio__computational_protein_biomolecule_design__structure_prediction_complexes"], "venue": "", "org_or_model": "Doudna lab UC Berkeley (VIPR); AlphaFold"},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "VERVE-102 in vivo base editing: ~88% PCSK9 and ~62% LDL-C reduction (Heart-2)",
+      "detail": "Phase 1b Heart-2 results for VERVE-102 (Lilly/Verve), a GalNAc-LNP in vivo adenine base editor targeting PCSK9, in 35 adults: highest dose cut PCSK9 ~88% and LDL-C ~62%, durable >1 year, with no dose-limiting toxicities. Published in NEJM.",
+      "source_urls": ["https://www.nejm.org/doi/full/10.1056/NEJMoa2601283", "https://www.worksinprogress.news/p/whats-new-in-biology-june-2026"],
+      "payload": {"claim": "VERVE-102 (Verve/Lilly) in vivo base editing cut PCSK9 ~88% and LDL-C ~62% (n=35, Heart-2), durable >1yr, no dose-limiting toxicities (NEJM).", "source_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2601283", "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__base_editing"], "venue": "", "org_or_model": "Verve Therapeutics / Eli Lilly (VERVE-102)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "In vivo epigenome editing beats nucleases for durable PCSK9 silencing (preprint)",
+      "detail": "A bioRxiv preprint (March 20) reports targeted epigenetic modulation achieved the most efficient, sustained PCSK9 repression vs CRISPR/Cas9 nuclease, deaminase editing, and GalNAc-siRNA, using mRNA editors in Arcturus LUNAR LNPs in mice — flagging epigenome editing as a scarless durable in-vivo silencing route.",
+      "source_urls": ["https://www.biorxiv.org/content/10.64898/2026.03.20.713290v1"],
+      "payload": {"claim": "bioRxiv preprint: in vivo epigenome editing gave the most durable PCSK9 silencing vs nuclease/deaminase editing and siRNA (mRNA editors in Arcturus LUNAR LNPs, mice).", "source_url": "https://www.biorxiv.org/content/10.64898/2026.03.20.713290v1", "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__epigenome_editing"], "venue": "", "org_or_model": "bioRxiv preprint; Arcturus LUNAR LNP"},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "Sandia + Quantinuum publish 98-qubit Helios results in Nature",
+      "detail": "A peer-reviewed Nature paper (June 17) reports Quantinuum's 98-qubit trapped-ion Helios at 99.9975% single-qubit and 99.921% two-qubit fidelity plus 99.967% SPAM; Sandia certified it operates beyond classical simulation — a key step toward fault tolerance.",
+      "source_urls": ["https://www.nature.com/articles/s41586-026-10676-4", "https://thequantuminsider.com/2026/06/18/researchers-publish-peer-reviewed-results-on-quantinuums-helios-quantum-computer/", "https://newsreleases.sandia.gov/in-the-mountain-west-a-quantum-computing-collaboration-announces-major-results/"],
+      "payload": {"claim": "Quantinuum 98-qubit Helios (Nature, June 17): 99.9975% 1q / 99.921% 2q fidelity, 99.967% SPAM; Sandia certified beyond-classical operation.", "source_url": "https://www.nature.com/articles/s41586-026-10676-4", "subtheme_ids": ["quantum__qubit_modality_race__trapped_ion_systems", "quantum__algorithms_hybrid_computing__advantage_benchmarking"], "venue": "", "org_or_model": "Quantinuum / Sandia National Laboratories (Helios)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "HPE launches hybrid quantum-HPC platform integrating Quantinuum + IQM",
+      "detail": "At HPE Discover (June 15-18), HPE unveiled a hybrid classical-quantum platform integrating multiple qubit modalities with Cray supercomputing; Quantinuum announced a quantum-HPC collaboration and IQM (already tracked) contributed superconducting QPU tech live at Oak Ridge — pushing quantum-classical hybrid orchestration toward enterprise deployment.",
+      "source_urls": ["https://www.hpe.com/us/en/newsroom/press-release/2026/06/hpe-advances-quantum-computing-at-scale-with-expanded-industry-collaborations.html", "https://thequantuminsider.com/2026/06/22/iqm-named-among-quantum-collaborators-in-hpes-new-hybrid-quantum-hpc-platform/"],
+      "payload": {"claim": "HPE's hybrid quantum-HPC platform (HPE Discover, June 15-18) integrates Quantinuum + IQM QPUs with Cray supercomputing for enterprise quantum-classical workflows.", "source_url": "https://thequantuminsider.com/2026/06/22/iqm-named-among-quantum-collaborators-in-hpes-new-hybrid-quantum-hpc-platform/", "subtheme_ids": ["quantum__algorithms_hybrid_computing__quantum_classical_hybrid_algorithms"], "venue": "HPE Discover 2026", "org_or_model": "HPE / Quantinuum / IQM"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "renewables_batteries",
+      "title": "JinkoSolar hits certified 34.82% perovskite-silicon tandem cell",
+      "detail": "JinkoSolar announced (June 19) a 34.82% certified efficiency for an N-type TOPCon perovskite-silicon tandem cell (certified by SIMIT/Chinese Academy of Sciences), up from its own 34.76% and just behind LONGi's 34.85% record — continued tandem march past the single-junction limit.",
+      "source_urls": ["https://www.pv-magazine.com/2026/06/19/jinkosolar-achieves-34-82-efficiency-for-perovskite-silicon-tandem-solar-cell/"],
+      "payload": {"claim": "JinkoSolar: 34.82% certified perovskite-silicon tandem cell (SIMIT-certified), up from 34.76%, near LONGi's 34.85% record.", "source_url": "https://www.pv-magazine.com/2026/06/19/jinkosolar-achieves-34-82-efficiency-for-perovskite-silicon-tandem-solar-cell/", "subtheme_ids": ["energy__renewable_generation_frontier__perovskite_silicon_tandem_solar"], "venue": "", "org_or_model": "JinkoSolar"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "fusion",
+      "title": "Helion secures world-first regulatory licenses for a fusion power plant",
+      "detail": "Helion received what it calls the world's first regulatory licenses for a commercial fusion plant (Washington State radioactive-materials and air-emissions licenses, June 19-23), enabled by NRC's byproduct-material framework (2024 ADVANCE Act); clears earthwork on the Orion plant in Malaga, WA targeting 50 MW+ for Microsoft. Distinct from the tracked $465M Series G.",
+      "source_urls": ["https://www.helionenergy.com/newsroom/helion-clears-key-regulatory-milestone-on-the-path-to-building-and-operating-the-worlds-first-fusion-power-plant", "https://www.ans.org/news/2026-06-23/article-8140/helion-secures-new-licenses-from-washington/", "https://www.world-nuclear-news.org/articles/fusion-plant-clears-regulatory-milestone"],
+      "payload": {"claim": "Helion received world-first regulatory licenses (WA radioactive-materials + air-emissions) for its Orion commercial fusion plant; enabled by NRC byproduct-material framework (ADVANCE Act).", "source_url": "https://www.helionenergy.com/newsroom/helion-clears-key-regulatory-milestone-on-the-path-to-building-and-operating-the-worlds-first-fusion-power-plant", "subtheme_ids": ["energy__fusion_energy__fusion_commercialization_offtake", "energy__fusion_energy__alternative_confinement_direct_electricity"], "venue": "", "org_or_model": "Helion Energy (Orion plant)"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_accelerators",
+      "title": "SK hynix ships 12-layer HBM4E samples ahead of schedule",
+      "detail": "SK hynix (June 17) began sampling 12-high HBM4E to major customers: 16 Gbps/pin, 48 GB per stack, >20% better power efficiency and +17% heat resistance vs HBM4 — addressing the memory wall for next-gen AI accelerators (e.g., NVIDIA Vera Rubin class).",
+      "source_urls": ["https://news.skhynix.com/12-layer-hbm4e-sample/", "https://www.prnewswire.com/news-releases/sk-hynix-ships-samples-of-12-layer-next-gen-hbm4e-302803714.html"],
+      "payload": {"claim": "SK hynix sampling 12-high HBM4E (16 Gbps/pin, 48 GB/stack, >20% better power, +17% heat resistance vs HBM4) for next-gen AI accelerators.", "source_url": "https://news.skhynix.com/12-layer-hbm4e-sample/", "subtheme_ids": ["hardware__memory_advanced_packaging__hbm_the_memory_wall"], "venue": "", "org_or_model": "SK hynix (HBM4E)"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "fusion",
+      "title": "CFS publishes 5 peer-reviewed papers validating ARC power-plant physics",
+      "detail": "Commonwealth Fusion Systems (June 4) published five peer-reviewed papers in a special issue of the Journal of Plasma Physics laying out the physics basis for its ARC plant to deliver ~400 MW net electricity, building on SPARC learnings (grid electricity targeted early 2030s).",
+      "source_urls": ["https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-builds-on-learnings-from-sparc-to-publish-five-peer-reviewed-papers-validating-the-physics-of-the-arc-fusion-power-plant-302790590.html"],
+      "payload": {"claim": "CFS published 5 peer-reviewed papers (Journal of Plasma Physics) on the ARC plant's physics basis for ~400 MW net electricity.", "source_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-builds-on-learnings-from-sparc-to-publish-five-peer-reviewed-papers-validating-the-physics-of-the-arc-fusion-power-plant-302790590.html", "subtheme_ids": ["energy__fusion_energy__magnetic_confinement_tokamak_scale_up"], "venue": "Journal of Plasma Physics (special issue)", "org_or_model": "Commonwealth Fusion Systems"},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_PERSON",
+      "breakthrough_id": "fusion",
+      "title": "Type One Energy names ex-BP CEO Bernard Looney to board",
+      "detail": "Type One Energy (June 16) appointed former BP CEO Bernard Looney as an independent director as it closes its Series B and begins procurement for its Infinity One stellarator prototype at TVA's Bull Run site — bringing major-energy capital/project-delivery expertise to the stellarator race.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260616529841/en/Type-One-Energy-Appoints-Bernard-Looney-to-Board-of-Directors"],
+      "payload": {"name": "Bernard Looney", "role": "Independent director, Type One Energy (former CEO, BP)", "affiliation": "Type One Energy", "org_type": "BUSINESS", "prizes": [], "source_url": "https://www.businesswire.com/news/home/20260616529841/en/Type-One-Energy-Appoints-Bernard-Looney-to-Board-of-Directors", "subtheme_ids": ["energy__fusion_energy__alternative_confinement_direct_electricity"]},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "China's open-weight models have commoditized the open layer; frontier gap ~6-7 months",
+      "detail": "Three independent voices argued this week that GLM-5.2 marks an inflection: China supplies the majority of open-model tokens and the US-China lag has compressed to ~6-9 months, shifting strategic value from 'who trains the best model' to 'who supplies the tokens the world runs.'",
+      "source_urls": ["https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open", "https://www.datagravity.dev/p/chinas-open-weight-takeover", "https://www.axios.com/2026/06/23/china-us-ai-race-glm-anthropic"],
+      "payload": {"thesis": "Chinese open-weight models (GLM-5.2, Kimi, Qwen, DeepSeek) have commoditized the open-model layer and closed the gap to the closed frontier to ~6-7 months, shifting value to compute/memory and distribution rather than the model.", "examples": ["Nathan Lambert (Interconnects, Jun 22): GLM-5.2 is the first open-weight model that 'feels right' as a general coding agent; gap to Opus 4.5 ~204 days.", "Chris Zeoli (Data Gravity, Jun 24): Chinese open models ~61% of OpenRouter tokens by May 2026; 4 of top 5 used models are Chinese.", "Axios (Jun 23): GLM-5.2 reignited the China-gap debate; David Sacks cites a 6-9 month US lead."], "spotted_at": ["https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open", "https://www.datagravity.dev/p/chinas-open-weight-takeover", "https://www.axios.com/2026/06/23/china-us-ai-race-glm-anthropic"]},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Dwarkesh Patel: data, not algorithms, is the 'black hole' driving AI",
+      "detail": "In a widely shared June 19 essay, Patel argues the real driver of AI progress is a bespoke data engine (expert RL trajectories, rubrics), not architecture — which is why open labs catch up within months by distilling from APIs — and frames a ~million-fold human sample-efficiency gap that scaling alone cannot close.",
+      "source_urls": ["https://www.dwarkesh.com/p/the-sample-efficiency-black-hole"],
+      "payload": {"thesis": "Data (and the compute to generate/curate it) is the dominant driver of AI progress, not architecture; models remain thousands-to-millions of times less sample-efficient than humans and scaling parameters can't close that gap.", "examples": ["Open models lag closed by only ~4 months (Epoch) because data distills easily from public APIs.", "Humans see ~200M language tokens to adulthood vs tens of trillions for frontier models.", "Chinchilla math: infinite parameters cut required data only ~10x, far short of the human gap."], "spotted_at": ["https://www.dwarkesh.com/p/the-sample-efficiency-black-hole"]},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Chris Zeoli (Data Gravity) — infra-investor field maps that quantify the AI stack",
+      "detail": "Zeoli's June 24 'China's Open-Weight Takeover' is a rigorously sourced field map of the Chinese AI ecosystem (token share, lab valuations, HBM bottlenecks) that crystallized the week's biggest debate; he writes from an infra-investor lens on the economics layer of AI.",
+      "source_urls": ["https://www.datagravity.dev/p/chinas-open-weight-takeover"],
+      "payload": {"name": "Chris Zeoli", "role": "Infrastructure investor / writer (Data Gravity)", "focus": "AI infrastructure, compute/memory supply chains, model-market economics, China AI ecosystem", "follow_url": "https://www.datagravity.dev/", "twitter": "https://substack.com/@chriszeoli", "youtube": "", "newsletter": "https://www.datagravity.dev/", "notes": "Substack 'Data Gravity' — data-dense, well-cited analyses (OpenRouter token data, lab valuations, HBM constraints); strong on the economics layer rather than model research.", "tags": ["ai-infrastructure", "china", "open-models", "compute", "investing"]},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Duke & IonQ entangle three remote trapped-ion nodes (first multi-node GHZ)",
+      "detail": "On June 20 a Duke/IonQ team (Monroe group) demonstrated tripartite GHZ entanglement across three spatially separated barium-ion nodes linked by photonic interconnects, with no local two-qubit gates or post-selection, at 84-88% fidelity — a step toward modular, networked quantum computers (also closing a Mermin-test detection loophole).",
+      "source_urls": ["https://arxiv.org/abs/2606.17173"],
+      "payload": {"candidate_area": "quantum networking / modular quantum computing", "new_category": false, "source_url": "https://arxiv.org/abs/2606.17173"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "PNNL, Nvidia & Fervo to build a public AI 'digital twin' of geothermal reservoirs",
+      "detail": "Announced June 22, the partnership will train AI on Fervo's Nevada/Utah well data to build the Enhanced Geothermal System Twin — a public, real-time subsurface model (via Nvidia Omniverse) to optimize drilling and water injection and cut geothermal guesswork.",
+      "source_urls": ["https://www.geekwire.com/2026/building-a-digital-twin-10000-feet-underground-pnnl-nvidia-and-fervo-team-up-on-geothermal-ai/"],
+      "payload": {"candidate_area": "enhanced geothermal (EGS) + AI physical modeling", "new_category": false, "source_url": "https://www.geekwire.com/2026/building-a-digital-twin-10000-feet-underground-pnnl-nvidia-and-fervo-team-up-on-geothermal-ai/"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "JinkoSolar — tandem-cell record contender (entity reconciliation)",
+      "detail": "Top-tier Chinese PV manufacturer behind this week's 34.82% certified perovskite-silicon tandem cell; not previously tracked despite being a primary driver of the tandem-efficiency race alongside the tracked LONGi.",
+      "source_urls": ["https://www.pv-magazine.com/2026/06/19/jinkosolar-achieves-34-82-efficiency-for-perovskite-silicon-tandem-solar-cell/"],
+      "payload": {"name": "JinkoSolar", "org": "JinkoSolar Holding", "type": "PUBLIC_COMPANY", "why": "One of the world's largest solar manufacturers and a perovskite-silicon tandem record contender (34.82% certified, June 2026); key player pushing tandem cells past the single-junction limit toward mass production.", "funding": "Public (NYSE: JKS)", "source_url": "https://www.pv-magazine.com/2026/06/19/jinkosolar-achieves-34-82-efficiency-for-perovskite-silicon-tandem-solar-cell/", "subtheme_ids": ["energy__renewable_generation_frontier__perovskite_silicon_tandem_solar"]},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "fusion",
+      "title": "Type One Energy — stellarator commercialization player (entity reconciliation)",
+      "detail": "Stellarator fusion company building the Infinity One prototype at TVA's Bull Run site; just added ex-BP CEO Bernard Looney to its board and closing a Series B. Not previously tracked despite being a leading stellarator-path competitor.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260616529841/en/Type-One-Energy-Appoints-Bernard-Looney-to-Board-of-Directors"],
+      "payload": {"name": "Type One Energy", "org": "Type One Energy Group", "type": "STARTUP", "why": "Leading stellarator-path fusion developer (Infinity One prototype at TVA Bull Run, grid power targeted ~2034); closing Series B, recruiting major-energy leadership (Bernard Looney) — a key non-tokamak competitor to track.", "funding": "Series B (closing 2026)", "source_url": "https://www.businesswire.com/news/home/20260616529841/en/Type-One-Energy-Appoints-Bernard-Looney-to-Board-of-Directors", "subtheme_ids": ["energy__fusion_energy__alternative_confinement_direct_electricity"]},
+      "confidence": "medium",
+      "backfill": true
+    }
+  ]
+}

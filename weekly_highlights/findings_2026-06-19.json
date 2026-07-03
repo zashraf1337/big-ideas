@@ -1,0 +1,405 @@
+{
+  "week_ending": "2026-06-19",
+  "summary": "An exceptionally busy week. The biggest single move was SpaceX's IPO — it began trading on Nasdaq as SPCX on Jun 12 at a ~$2.1T valuation, the largest IPO in history. Biology delivered two genetic-medicine firsts: Intellia's lonvo-z became the first in vivo CRISPR therapy to win a positive pivotal Phase 3 (hereditary angioedema, 87% attack reduction, NEJM), and Prime Medicine secured the first-ever clinical authorization for an in vivo prime editor (PM577a, Wilson Disease) — alongside a 9-0 FDA adcomm for Moderna's mRNA seasonal flu vaccine and an independent at-home ALS speech BCI in Nature Medicine. In AI, Z.ai's open-weight GLM-5.2 became the first open model past 80% on Terminal-Bench 2.1, Google shipped the open text-diffusion DiffusionGemma, and 'world models, not LLM scaling, for embodied intelligence' emerged as the week's dominant cross-voice thesis (Jim Fan, LeCun, Fei-Fei Li), with NVIDIA's DreamZero as its falsifiable evidence and NYU/DeepMind's Sherry Yang added as a new voice. On the physical side, QuEra+AWS announced a 256-logical-qubit fault-tolerant system ('Libra') for 2028 and QuantumScape signed Honda as its second solid-state OEM. Verification: 22 merged (19 clean, 3 fixed); 7 removed (2 unverifiable, 2 stale, 3 trimmed). Entities: 3 untracked players added (Z.ai, QuantumScape, Autolus).",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "GLM-5.2: first open-weight model past 80% on Terminal-Bench 2.1",
+      "detail": "Z.ai released GLM-5.2 (744B-param MoE, 40B active, 1M context, MIT license) in mid-June 2026; reported as the first open-weight model to cross 80% on Terminal-Bench 2.1 (81.0) and 62.1 on SWE-bench Pro, beating GPT-5.5 (58.6) at roughly 1/6th the cost.",
+      "source_urls": ["https://huggingface.co/blog/zai-org/glm-52-blog", "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost"],
+      "payload": {
+        "claim": "Open-weight frontier coding/agentic model GLM-5.2 (744B MoE, MIT, 1M context) becomes first open model >80% on Terminal-Bench 2.1 (81.0) and 62.1 SWE-bench Pro, beating GPT-5.5 at ~1/6 cost.",
+        "source_url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models", "ai__agents_developer_ecosystem__coding_agents"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "IndexShare: shared sparse-attention indexer cuts per-token FLOPs 2.9x at 1M ctx",
+      "detail": "GLM-5.2 introduces IndexShare, reusing one indexer across every four sparse-attention layers to cut per-token FLOPs by 2.9x at 1M-token context — an attention-efficiency technique enabling cheap long-horizon agentic coding in an open-weight model.",
+      "source_urls": ["https://huggingface.co/blog/zai-org/glm-52-blog"],
+      "payload": {
+        "name": "IndexShare shared sparse-attention indexer",
+        "description": "A sparse-attention efficiency method that reuses a single indexer across groups of four attention layers, reducing per-token FLOPs by 2.9x at 1M context, demonstrated at frontier quality in GLM-5.2.",
+        "examples": ["GLM-5.2 (Z.ai, June 2026): 2.9x per-token FLOP reduction at 1M context via IndexShare"],
+        "source_url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+        "subtheme_ids": ["ai__architecture_efficiency__state_space_models_attention_alternatives"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "diffusion_models",
+      "title": "DiffusionGemma: Google open-weight text-diffusion LLM, 1000+ tok/s on one H100",
+      "detail": "Google DeepMind released DiffusionGemma (2026-06-10), a 26B-A4B MoE text-diffusion model (3.8B active) under Apache 2.0 that denoises a 256-token canvas in parallel for up to 4x faster generation (1000+ tok/s on one H100), with bidirectional self-correction and vLLM support.",
+      "source_urls": ["https://developers.googleblog.com/diffusiongemma-the-developer-guide/", "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"],
+      "payload": {
+        "claim": "Google's DiffusionGemma (26B-A4B MoE, Apache 2.0, 2026-06-10) is an open-weight discrete-diffusion language model that generates 256-token canvases in parallel for up to 4x faster decoding (1000+ tok/s on one H100) with bidirectional self-correction.",
+        "source_url": "https://developers.googleblog.com/diffusiongemma-the-developer-guide/",
+        "subtheme_ids": ["ai__architecture_efficiency__diffusion_language_models"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "self_driving",
+      "title": "Stellantis + Wayve + Uber sign MoU to scale L4 robotaxis globally",
+      "detail": "On 2026-06-17 Stellantis, Wayve and Uber signed a non-binding MoU to develop and deploy Level-4 robotaxis at global scale, pairing Stellantis 'L4-Ready Platforms', Wayve's mapless end-to-end AI Driver, and Uber's network across Europe and North America.",
+      "source_urls": ["https://www.stellantis.com/en/news/press-releases/2026/june/stellantis-wayve-and-uber-partner-to-scale-robotaxis-globally", "https://wayve.ai/press/stellantis-wayve-uber-robotaxi-partnership/"],
+      "payload": {
+        "name": "Stellantis x Wayve x Uber L4 robotaxi partnership",
+        "org": "Stellantis / Wayve / Uber",
+        "type": "STARTUP",
+        "why": "Three-way ecosystem (OEM platform + mapless embodied-AI driver + global ride network) to mass-produce and deploy L4 robotaxis without city-by-city mapping; signals convergence on Wayve's end-to-end approach.",
+        "funding": "Non-binding MoU; no financial terms disclosed",
+        "source_url": "https://www.stellantis.com/en/news/press-releases/2026/june/stellantis-wayve-and-uber-partner-to-scale-robotaxis-globally",
+        "subtheme_ids": ["ai__autonomy_embodiment_ai__self_driving_robotaxis"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Test-time-compute scaling fails for long-horizon coding agents; representation is the bottleneck",
+      "detail": "arxiv 2604.16529 ('Scaling Test-Time Compute for Agentic Coding', Kim et al., incl. Salakhutdinov/Synnaeve) reports standard test-time scaling (parallel sampling/best-of-N) does not transfer cleanly to long-horizon agents, identifying how to represent and reuse prior experience — not raw compute — as the central bottleneck. Surging on arxiv/alphaXiv.",
+      "source_urls": ["https://arxiv.org/abs/2604.16529"],
+      "payload": {
+        "claim": "For long-horizon agentic coding, standard test-time compute scaling does not transfer cleanly; the central bottleneck is representing and reusing prior agent experience rather than adding inference compute.",
+        "source_url": "https://arxiv.org/abs/2604.16529",
+        "subtheme_ids": ["ai__data_memory_evaluation_foundations__memory_continual_learning"]
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "MCP statelessness lands in 2026-07-28 spec RC; Claude gets enterprise-managed MCP + sandboxed agents",
+      "detail": "MCP statelessness changes landed in the MCP 2026-07-28 release candidate (published May 2026); Anthropic added enterprise-managed MCP connectors (Okta first, zero-touch on first login) and self-hosted sandboxes plus MCP tunnels that let managed agents reach private MCP servers.",
+      "source_urls": ["https://platform.claude.com/docs/en/managed-agents/multi-agent", "https://venturebeat.com/ai/claude-agents-can-finally-connect-to-enterprise-apis-without-leaking-credentials"],
+      "payload": {
+        "field": "MCP protocol + enterprise agent primitives status (mid-2026)",
+        "new_value": "MCP statelessness in the 2026-07-28 spec RC (published May 2026); Anthropic adds enterprise-managed MCP connectors (Okta first) and self-hosted sandboxes + MCP tunnels for private MCP server access from managed agents",
+        "previous_value": "Stateful MCP; no centralized enterprise connector provisioning; no sandboxed managed-agent access to private MCP servers",
+        "source_url": "https://platform.claude.com/docs/en/managed-agents/multi-agent",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__enterprise_agentic_platforms"]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Intellia lonvo-z: first positive pivotal Phase 3 for in vivo CRISPR (HAE), NEJM",
+      "detail": "At EAACI 2026 (Jun 13, 2026) and published in NEJM, Intellia's lonvoguran ziclumeran (lonvo-z), a single-dose LNP-delivered CRISPR therapy inactivating KLKB1 in the liver, cut mean monthly hereditary-angioedema attacks by 87% vs placebo (p<0.0001) with 62% of patients attack-free over 6 months (vs 11% placebo) — the first positive pivotal Phase 3 for an in vivo CRISPR therapy; rolling BLA targeting 1H 2027.",
+      "source_urls": ["https://www.stocktitan.net/news/NTLA/intellia-therapeutics-reports-additional-positive-phase-3-results-afks73wvycew.html", "https://ir.intelliatx.com/news-releases/news-release-details/intellia-therapeutics-report-additional-phase-3-haelo-data"],
+      "payload": {
+        "claim": "Intellia's lonvo-z became the first in vivo CRISPR therapy to win a positive pivotal Phase 3 (HAELO), cutting hereditary angioedema attacks 87% vs placebo (p<0.0001) with 62% attack-free over 6 months; NEJM-published, rolling BLA underway for 1H 2027 launch.",
+        "source_url": "https://www.stocktitan.net/news/NTLA/intellia-therapeutics-reports-additional-positive-phase-3-results-afks73wvycew.html",
+        "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "crispr_therapies",
+      "title": "First in vivo prime editing trial cleared: Prime Medicine PM577a for Wilson Disease",
+      "detail": "On Jun 18, 2026, Prime Medicine (Nasdaq: PRME) said New Zealand Medsafe cleared the CTA for PM577a, an LNP-delivered in vivo Prime Editor correcting the ATP7B H1069Q mutation in Wilson Disease — the first clinical authorization for an in vivo prime editing therapy; global Phase 1/2 starts 2H 2026.",
+      "source_urls": ["https://www.biospace.com/press-releases/prime-medicine-announces-new-zealand-clearance-of-clinical-trial-application-for-pm577a-in-h1069q-mutated-wilson-disease"],
+      "payload": {
+        "name": "In vivo prime editing reaches the clinic",
+        "description": "Prime Medicine's PM577a, an LNP-formulated prime editor delivered IV to hepatocytes, is the first in vivo prime editing therapy authorized for human trials, correcting the ATP7B H1069Q mutation in Wilson Disease.",
+        "examples": ["PM577a (ATP7B H1069Q, Wilson Disease)", "PM577 follow-on targeting R778L allele (preclinical)"],
+        "source_url": "https://www.biospace.com/press-releases/prime-medicine-announces-new-zealand-clearance-of-clinical-trial-application-for-pm577a-in-h1069q-mutated-wilson-disease",
+        "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__prime_editing"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "CAR-T for lupus: Autolus obe-cel CARLYSLE Phase 1 data at EULAR 2026",
+      "detail": "At EULAR 2026 (announced Jun 12, 2026 by UCL/UCLH), Autolus' fast-off-rate CD19 CAR-T obecabtagene autoleucel (obe-cel) showed that among 6 patients at the 50M target dose, 5/6 (83%) achieved remission per standard lupus criteria, with several reaching complete or partial renal responses, in severe refractory systemic lupus, with a favorable safety profile.",
+      "source_urls": ["https://www.uclb.com/2026/06/12/early-promise-reported-in-severe-lupus-for-autolus-therapeutics-car-t-therapy/", "https://www.ucl.ac.uk/news/2026/jun/car-t-cell-therapy-shows-early-promise-severe-lupus"],
+      "payload": {
+        "claim": "Autolus' fast-off-rate CD19 CAR-T obe-cel showed 83% (5/6) remission (per standard lupus criteria) at target dose, with several complete/partial renal responses, in severe refractory lupus in the Phase 1 CARLYSLE trial, presented at EULAR 2026.",
+        "source_url": "https://www.uclb.com/2026/06/12/early-promise-reported-in-severe-lupus-for-autolus-therapeutics-car-t-therapy/",
+        "subtheme_ids": ["bio__engineered_cell_therapies__car_t_for_autoimmune_disease"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "EvolutionaryScale/CZ Biohub protein LM beats AF-class on complexes; maps 6.8B sequences",
+      "detail": "A bioRxiv preprint (early June 2026) from Alexander Rives and the EvolutionaryScale/CZ Biohub team reports a protein language model that exceeds established methods on biomolecular complex / antibody-antigen prediction, designs nanomolar binders via simple search, and maps 6.8B sequences with 1.1B predicted structures.",
+      "source_urls": ["https://www.biorxiv.org/content/10.64898/2026.06.03.729735v1"],
+      "payload": {
+        "claim": "A new protein language model from EvolutionaryScale/CZ Biohub (Rives et al., bioRxiv Jun 2026) beats established methods on biomolecular complex/antibody-antigen structure prediction, designs nanomolar miniprotein and single-chain antibody binders via simple search, and maps 6.8B sequences with 1.1B predicted structures.",
+        "source_url": "https://www.biorxiv.org/content/10.64898/2026.06.03.729735v1",
+        "subtheme_ids": ["bio__ai_x_bio_convergence__biological_foundation_models", "bio__computational_protein_biomolecule_design__atomistic_binder_design_at_scale"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "Independent at-home speech+cursor BCI for ALS patient (UC Davis, Nature Medicine)",
+      "detail": "A Nature Medicine paper (published 15 June 2026) from UC Davis with Mass General Brigham reports a man with ALS using an intracortical BCI independently at home (3,800+ hours, without researcher support) for both speech-to-text (averaging 56 words/min) and cursor control — a key step from lab demo to durable self-administered assistive tech.",
+      "source_urls": ["https://www.nature.com/articles/s41591-026-04414-6", "https://health.ucdavis.edu/welcome/news/headlines/brain-computer-interface-enables-independent-accurate-communication-for-man-living-with-als/2026/06"],
+      "payload": {
+        "claim": "A UC Davis-led intracortical BCI (Nature Medicine, 15 June 2026) enabled a man with ALS to communicate independently at home via speech-to-text (averaging 56 words/min) and cursor control without researcher support over 3,800+ hours, demonstrating long-term self-administered use.",
+        "source_url": "https://www.nature.com/articles/s41591-026-04414-6",
+        "subtheme_ids": ["bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "FDA adcomm votes 9-0 for Moderna's mRNA seasonal flu vaccine (mFluvisa)",
+      "detail": "On Jun 18, 2026, the FDA's VRBPAC voted unanimously (9-0) in favor of Moderna's mRNA seasonal influenza vaccine (mRNA-1010, brand mFluvisa), backing full approval for adults 50-64 and accelerated approval for 65+ — the first mRNA-based seasonal flu vaccine to reach an FDA adcomm; decision expected Aug 5, 2026.",
+      "source_urls": ["https://www.biospace.com/fda/modernas-mrna-flu-shot-wins-unanimous-support-at-fda-adcomm-in-rebuke-of-former-leadership"],
+      "payload": {
+        "field": "mRNA seasonal flu vaccine regulatory status",
+        "new_value": "FDA VRBPAC voted 9-0 (Jun 18, 2026) for Moderna's mRNA-1010 (mFluvisa) seasonal flu vaccine (full approval 50-64; accelerated approval 65+); FDA decision expected Aug 5, 2026",
+        "previous_value": "mRNA flu vaccines still investigational; FDA refusal-to-file on Moderna's application in Feb 2026",
+        "source_url": "https://www.biospace.com/fda/modernas-mrna-flu-shot-wins-unanimous-support-at-fda-adcomm-in-rebuke-of-former-leadership",
+        "subtheme_ids": ["bio__rna_nucleic_acid_therapeutics__prophylactic_mrna_vaccines"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "QuEra + AWS unveil 'Libra' 256-logical-qubit fault-tolerant system for 2028",
+      "detail": "On 2026-06-15 AWS and QuEra announced Libra, a neutral-atom machine targeting over 256 error-corrected logical qubits, a 1e-6 logical error rate, and ~1M reliable logical operations, available via Amazon Braket by 2028.",
+      "source_urls": ["https://aws.amazon.com/blogs/quantum-computing/aws-deepens-strategic-collaboration-with-quera-to-bring-fault-tolerant-quantum-computing-to-amazon-braket/", "https://www.quera.com/press-releases/quera-announces-2028-fault-tolerant-quantum-computer-and-expanded-multi-year-strategic-collaboration-with-aws"],
+      "payload": {
+        "field": "QuEra fault-tolerant roadmap / cloud availability",
+        "new_value": "Libra: 256+ logical qubits, 1e-6 logical error rate, ~1M logical ops, on AWS Braket by 2028",
+        "previous_value": "QuEra neutral-atom roadmap with no committed fault-tolerant cloud system; Aquila 256-qubit analog Rydberg on Braket since 2022",
+        "source_url": "https://aws.amazon.com/blogs/quantum-computing/aws-deepens-strategic-collaboration-with-quera-to-bring-fault-tolerant-quantum-computing-to-amazon-braket/",
+        "subtheme_ids": ["quantum__qubit_modality_race__neutral_atom_arrays", "quantum__error_correction_logical_qubits__real_time_decoding"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "SpaceX completes IPO; SPCX debuts on Nasdaq at a ~$2.1T valuation",
+      "detail": "SpaceX priced its IPO on 2026-06-11 (555,555,555 shares @ $135) and began trading on Nasdaq under 'SPCX' on 2026-06-12, closing up ~19% at ~$161 for a roughly $2.1T valuation — the biggest IPO in history.",
+      "source_urls": ["https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf", "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html"],
+      "payload": {
+        "field": "SpaceX corporate/financial status",
+        "new_value": "Public company (Nasdaq: SPCX) as of 2026-06-12; IPO priced $135/share, closed ~$161 (+19%), ~$2.1T valuation at first close (largest IPO ever)",
+        "previous_value": "Privately held",
+        "source_url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf",
+        "subtheme_ids": ["space__reusable_launch__operational_partial_reuse_falcon_class"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "QuantumScape signs Honda as second OEM for solid-state batteries",
+      "detail": "On 2026-06-18 QuantumScape (NYSE: QS) announced a multi-year joint research/development agreement with Honda R&D for its solid-state lithium-metal platform, following Honda's completion of a technology evaluation; Honda is QS's second major OEM after Volkswagen/PowerCo.",
+      "source_urls": ["https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-agreement-honda-solid-state-battery", "https://electrek.co/2026/06/18/honda-quantumscape-qs-team-up-solid-state-batteries/"],
+      "payload": {
+        "field": "QuantumScape OEM partners",
+        "new_value": "Honda R&D added as second major OEM (multi-year joint development on solid-state lithium-metal cells & manufacturing), 2026-06-18",
+        "previous_value": "Volkswagen/PowerCo as flagship OEM partner",
+        "source_url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-agreement-honda-solid-state-battery",
+        "subtheme_ids": ["energy__battery_cost_collapse_cell_chemistry__solid_state_next_gen_anodes"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "D-Wave pivots to dual-rail gate-model FT roadmap (100 logical qubits by 2032)",
+      "detail": "On 2026-06-01 D-Wave (NYSE: QBTS), historically an annealing company, unveiled a superconducting gate-model fault-tolerant roadmap built on high-coherence dual-rail qubits (from its Jan-2026 acquisition of Quantum Circuits Inc.), targeting 10 logical qubits by 2030 and 100 logical qubits by 2032.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260601444734/en/D-Wave-Charts-a-New-Course-to-Fault-Tolerant-Quantum-Computing-with-Gate-Model-Roadmap", "https://thequantuminsider.com/2026/06/01/d-waves-new-gate-model-roadmap-puts-pin-in-2032-for-100-logical-qubit-system/"],
+      "payload": {
+        "name": "Dual-rail superconducting qubits for fault tolerance",
+        "description": "Erasure-biased dual-rail encoding (photon-loss/leakage detected as erasures) in superconducting circuits, now pursued by D-Wave via its Quantum Circuits Inc. acquisition as a lower-overhead route to logical qubits, distinct from transmon surface-code approaches.",
+        "examples": ["D-Wave gate-model roadmap: 17 physical qubits 2026 -> 181 by 2028 -> 10 logical 2030 -> 100 logical 2032", "Built on Quantum Circuits Inc. dual-rail tech (acquired Jan 2026)"],
+        "source_url": "https://www.businesswire.com/news/home/20260601444734/en/D-Wave-Charts-a-New-Course-to-Fault-Tolerant-Quantum-Computing-with-Gate-Model-Roadmap",
+        "subtheme_ids": ["quantum__qubit_modality_race__superconducting_qubits", "quantum__error_correction_logical_qubits__real_time_decoding"]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "Helion raises $465M Series G at $15.5B valuation",
+      "detail": "On 2026-06-04 Helion Energy closed a $465M Series G led by Thrive Capital (with Lux, Lightspeed, SoftBank Vision Fund 2 and others) at a $15.5B post-money valuation, bringing total raised to ~$1.5B as it builds its Polaris/Orion path to electricity.",
+      "source_urls": ["https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power", "https://www.businesswire.com/news/home/20260604740624/en/Helion-Raises-$465-Million-Series-G-Funding-Round-to-Meet-Surging-Global-Demand-for-Power"],
+      "payload": {
+        "field": "Helion Energy funding & valuation",
+        "new_value": "$465M Series G (2026-06-04), $15.5B post-money valuation, total raised ~$1.5B; led by Thrive Capital",
+        "previous_value": "~$5.4B valuation (Jan 2025 round)",
+        "source_url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power",
+        "subtheme_ids": ["energy__fusion_energy__compact_inertial_novel_approaches"]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Snap ships standalone Specs AR glasses ($2,195) — spatial-computing bet",
+      "detail": "On June 16 2026 Snap unveiled consumer Specs (announced at AWE): standalone AR glasses with two Snapdragon chips and a Niantic Spatial VPS-powered shared world map, shipping Fall 2026 in the US/UK/France; CEO Spiegel framed them as a post-smartphone computer.",
+      "source_urls": ["https://www.cnbc.com/2026/06/16/snap-unveils-2195-specs-ar-glasses-spiegel-bets-on-post-smartphone.html", "https://www.uploadvr.com/snap-specs-design-revealed-preorders-open-price/"],
+      "payload": {
+        "candidate_area": "AR/VR/spatial computing",
+        "detail": "Snap's June 16 2026 launch of standalone consumer Specs AR glasses ($2,195, Fall 2026 ship) with Niantic Spatial VPS integration marks a major spatial-computing push against Meta Ray-Ban Display.",
+        "source_url": "https://www.cnbc.com/2026/06/16/snap-unveils-2195-specs-ar-glasses-spiegel-bets-on-post-smartphone.html"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "World models, not LLM scaling, are the path to physical/embodied intelligence",
+      "detail": "A thesis surging across independent voices: pre-train on physical-world dynamics (a la transformers for text) to get embodied generalization. Jim Fan's 'Great Parallel,' LeCun's $1.03B AMI Labs (JEPA), Fei-Fei Li's World Labs, and NVIDIA's open Cosmos 3 all push it; a June 18 Fusion Fund critique argues the physical world has no 'universal token' so the analogy may not hold.",
+      "source_urls": ["https://www.techtimes.com/articles/318671/20260618/embodied-ai-world-models-attracted-6-billion-llm-parallel-may-not-hold.htm", "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-yann-lecun-llm-position-evolution-2026-06-16", "https://www.latent.space/p/ainews-yann-lecuns-ami-labs-launches"],
+      "payload": {
+        "thesis": "World models that learn physical-world dynamics (rather than next-token LLM scaling) are the route to embodied/robot generalization — 'The Great Parallel' to the transformer revolution — though critics argue the absence of a universal physical 'token' may prevent the same convergence.",
+        "examples": [
+          "Jim Fan (NVIDIA) 'The Great Parallel' thesis; ~$6B into world-model startups in early 2026",
+          "Yann LeCun's AMI Labs raises $1.03B (JEPA/world models)",
+          "Fei-Fei Li's World Labs building explicit-3D world models; NVIDIA Cosmos 3 open physical-AI omnimodel",
+          "Fusion Fund (June 18 2026) counter-analysis: no universal physical token, so competing architectures won't converge like transformers"
+        ],
+        "spotted_at": [
+          "https://www.techtimes.com/articles/318671/20260618/embodied-ai-world-models-attracted-6-billion-llm-parallel-may-not-hold.htm",
+          "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-yann-lecun-llm-position-evolution-2026-06-16",
+          "https://www.latent.space/p/ainews-yann-lecuns-ami-labs-launches"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Agentic AI reaches autonomous end-to-end clinical care (MIRA, AMIE in Nature)",
+      "detail": "Eric Topol (June 17 2026) unpacks two new Nature papers: MIRA (Ferber/Kather et al.) ran autonomous end-to-end ED workups across real cases at 87.8% diagnostic accuracy vs 78.1% for board-certified physicians; Google's AMIE managed longitudinal outpatient care non-inferior to 21 PCPs (simulated settings).",
+      "source_urls": ["https://erictopol.substack.com/p/agentic-ai-comes-to-medicine", "https://www.nature.com/articles/s41586-026-10675-5", "https://www.nature.com/articles/s41586-026-10764-5"],
+      "payload": {
+        "claim": "Two June 2026 Nature papers show agentic AI doing autonomous, multi-step, end-to-end clinical management at or above board-certified-physician performance in simulated settings — MIRA (ED, 87.8% vs 78.1% dx accuracy) and Google's AMIE (longitudinal outpatient, non-inferior to PCPs).",
+        "source_url": "https://erictopol.substack.com/p/agentic-ai-comes-to-medicine",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__vertical_ai_legal_health_finance"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "DreamZero: video-diffusion 'World Action Models' beat VLAs 2x on zero-shot robot tasks",
+      "detail": "NVIDIA GEAR's DreamZero (arXiv 2602.15922, 'World Action Models are Zero-shot Policies') is a 14B world-action model on a video-diffusion backbone delivering >2x zero-shot generalization over SOTA VLAs in real-robot tests, with real-time 7Hz closed-loop control and 30-min few-shot embodiment transfer. Surging on HF Papers/alphaXiv as falsifiable evidence behind the world-models-for-robotics thesis (Feb 2026; backfill).",
+      "source_urls": ["https://arxiv.org/abs/2602.15922", "https://huggingface.co/papers/2602.15922", "https://dreamzero0.github.io/"],
+      "payload": {
+        "claim": "DreamZero (NVIDIA GEAR, 14B World Action Model on a video-diffusion backbone) achieves >2x zero-shot generalization vs state-of-the-art VLAs in real-robot experiments, real-time 7Hz control, and few-shot embodiment transfer in 30 min of play data.",
+        "source_url": "https://arxiv.org/abs/2602.15922",
+        "subtheme_ids": ["robotics__robot_foundation_models__world_models_for_robotics", "robotics__robot_foundation_models__vision_language_action_policies"]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Sherry Yang — generative world models as the substrate for embodied agents",
+      "detail": "NYU Courant assistant professor and Google DeepMind staff research scientist anchoring the world-models-for-robotics thesis with primary work: WorldGym (world model as policy-eval environment), World-Gymnast (RL inside a world model improves real-robot VLA policies, Feb 2026), and a position paper 'World Models as an Intermediary between Agents and the Real World.'",
+      "source_urls": ["https://sherryy.github.io/", "https://arxiv.org/abs/2506.00613"],
+      "payload": {
+        "name": "Sherry Yang",
+        "role": "Assistant Professor, NYU Courant; Staff Research Scientist, Google DeepMind",
+        "focus": "Generative world models, RL, and decision-making for embodied agents and AI-for-science",
+        "follow_url": "https://sherryy.github.io/",
+        "twitter": "",
+        "youtube": "",
+        "newsletter": "",
+        "notes": "Rising primary-source voice behind the surging 'world models for robotics' thesis. 2026 outputs: WorldGym (arXiv 2506.00613), World-Gymnast (Feb 2026), position paper 'World Models as an Intermediary between Agents and the Real World.' PhD UC Berkeley (Abbeel), postdoc Stanford (Liang). Not previously on tracked-voices list.",
+        "tags": ["world-models", "embodied-AI", "reinforcement-learning", "robotics", "AI-for-science"]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "transformers_llms",
+      "title": "Z.ai (Zhipu AI) — open-weight frontier lab behind GLM-5.2",
+      "detail": "Entity capture: Z.ai (formerly Zhipu AI), one of China's leading frontier labs, is the maker of the GLM series; GLM-5.2 (mid-June 2026) is the first open-weight model past 80% on Terminal-Bench 2.1. Not previously tracked as a player despite the board following open-weight frontier models.",
+      "source_urls": ["https://huggingface.co/blog/zai-org/glm-52-blog"],
+      "payload": {
+        "name": "Z.ai (Zhipu AI)",
+        "org": "Z.ai / Zhipu AI",
+        "type": "LAB",
+        "why": "Leading Chinese open-weight frontier lab (GLM series); GLM-5.2 is the first open model >80% Terminal-Bench 2.1 and a credible MIT-licensed competitor to closed frontier coding models at ~1/6 cost.",
+        "funding": "Well-funded Chinese AI 'tiger' (multi-billion valuation; public-listing track)",
+        "source_url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "QuantumScape — solid-state lithium-metal battery leader (now 2 OEMs)",
+      "detail": "Entity capture: QuantumScape (NYSE: QS), the most prominent solid-state lithium-metal battery developer, added Honda as its second OEM on 2026-06-18 alongside Volkswagen/PowerCo. Not previously tracked despite opening the board's solid-state sub-theme.",
+      "source_urls": ["https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-agreement-honda-solid-state-battery"],
+      "payload": {
+        "name": "QuantumScape",
+        "org": "QuantumScape Corporation",
+        "type": "STARTUP",
+        "why": "Leading solid-state lithium-metal battery developer; anodeless ceramic-separator cells promise higher energy density and faster charging. Two major OEMs (VW/PowerCo, Honda) now validate its platform toward commercialization.",
+        "funding": "Public (NYSE: QS); backed by Volkswagen",
+        "source_url": "https://ir.quantumscape.com/news-releases/news-release-details/quantumscape-announces-agreement-honda-solid-state-battery",
+        "subtheme_ids": ["energy__battery_cost_collapse_cell_chemistry__solid_state_next_gen_anodes"]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Autolus Therapeutics — CD19 CAR-T player moving into autoimmune disease",
+      "detail": "Entity capture: Autolus Therapeutics (Nasdaq: AUTL), maker of the approved fast-off-rate CD19 CAR-T obe-cel (Aucatzyl, leukemia), is now generating early refractory-lupus data (CARLYSLE, EULAR 2026). Not previously tracked despite opening the board's CAR-T-for-autoimmune sub-theme.",
+      "source_urls": ["https://www.uclb.com/2026/06/12/early-promise-reported-in-severe-lupus-for-autolus-therapeutics-car-t-therapy/"],
+      "payload": {
+        "name": "Autolus Therapeutics",
+        "org": "Autolus Therapeutics plc",
+        "type": "STARTUP",
+        "why": "Commercial-stage CAR-T company (obe-cel/Aucatzyl approved in B-ALL) extending its fast-off-rate CD19 platform into autoimmune disease (lupus), a fast-emerging high-value indication for cell therapy.",
+        "funding": "Public (Nasdaq: AUTL)",
+        "source_url": "https://www.uclb.com/2026/06/12/early-promise-reported-in-severe-lupus-for-autolus-therapeutics-car-t-therapy/",
+        "subtheme_ids": ["bio__engineered_cell_therapies__car_t_for_autoimmune_disease"]
+      },
+      "confidence": "high",
+      "backfill": false
+    }
+  ]
+}

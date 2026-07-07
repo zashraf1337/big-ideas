@@ -1,6 +1,6 @@
 # Conference watch — 2026-07-03
 
-_Window: 2026-06-26 → 2026-07-03. RECENT/NOW = harvest proceedings, accepted-paper lists & best-paper awards; UPCOMING = pre-stage for next week. Log the PRIMARY paper/abstract URL (not the conference homepage) with `payload.venue` set._
+_Window: 2026-07-03 → 2026-07-03. RECENT/NOW = harvest proceedings, accepted-paper lists & best-paper awards; UPCOMING = pre-stage for next week. Log the PRIMARY paper/abstract URL (not the conference homepage) with `payload.venue` set._
 
 ## NOW — occurring / publishing this month (HARVEST)
 **Agent A · AI + Robotics**

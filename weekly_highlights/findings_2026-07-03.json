@@ -1,0 +1,449 @@
+{
+  "week_ending": "2026-07-03",
+  "summary": "Busy, well-sourced week led by frontier-model launches and unusually strong gap-filling across bio and the physical sciences. OpenAI opened a government-vetted limited preview of the GPT-5.6 family (Sol/Terra/Luna) and Anthropic shipped Claude Sonnet 5 at cut-rate pricing, while an LLM+Lean-4 loop (Claude Fable 5) produced the first machine-verified proof of the decade-old Farhi-Goldstone-Gutmann QAOA conjecture. Bio delivered Moderna's 5-year KEYNOTE-942 mRNA cancer-vaccine data, China's approval of the first commercial invasive BCI, and Grail's Galleri MCED trial missing its primary endpoint; physical-science items filled long-standing gaps (NASA CLPS lunar landers, SMRs, datacenter liquid cooling, direct-to-cell, PQC policy, quantum sensing). Three trending theses recurred (local open-weight coding agents, AI-monetization-beats-bubble data, and the frontier-access/monetization-window debate). Verification ran adversarially over 45 candidates (30 pass / 11 fix / 4 drop / 1 pre-tracked duplicate); entity reconciliation added 3 players; ~10 gap sub-themes flip to active.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "OpenAI opens government-gated preview of GPT-5.6 Sol/Terra/Luna",
+      "detail": "OpenAI began a limited preview of the GPT-5.6 family — Sol (flagship), Terra, and Luna — with Sol setting a new state of the art on Terminal-Bench 2.1 and priced $5/$30 per-M input/output tokens; broad release is gated by a US-government access process tied to a forthcoming cyber Executive Order framework.",
+      "source_urls": ["https://openai.com/index/previewing-gpt-5-6-sol/"],
+      "payload": {
+        "claim": "OpenAI limited-preview of GPT-5.6 Sol/Terra/Luna; Sol new SOTA on Terminal-Bench 2.1, $5/$30 per-M tokens; broad release gated by a US-government access process tied to a forthcoming cyber EO.",
+        "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars", "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense", "ai__safety_interpretability_governance__ai_governance_safety_incidents"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic ships Claude Sonnet 5 at cut-rate introductory pricing",
+      "detail": "Claude Sonnet 5 launched June 30 as the default for Free/Pro plans with introductory $2/$10 per-M input/output pricing (rising to $3/$15 after Aug 31); Anthropic reports gains on BrowseComp, OSWorld-Verified and Humanity's Last Exam and materially improved autonomous tool-use/agentic reasoning over Sonnet 4.6. (Corrected: earlier draft's '1M context' and 'GDPval-AA' claims were not in the source and were removed.)",
+      "source_urls": ["https://www.anthropic.com/news/claude-sonnet-5"],
+      "payload": {
+        "claim": "Claude Sonnet 5 (Jun 30) default for Free/Pro, intro $2/$10 per-M pricing (→$3/$15 after Aug 31); gains on BrowseComp, OSWorld-Verified, Humanity's Last Exam and improved agentic tool-use vs Sonnet 4.6.",
+        "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+        "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars", "ai__agents_developer_ecosystem__coding_agents"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "LLM + Lean-4 loop machine-verifies decade-old FGG QAOA conjecture",
+      "detail": "Uri Kol, Maor Ben-Shahar, Kfir Sulimany and Dirk Englund (MIT) report the first machine-verified resolution of the Farhi-Goldstone-Gutmann conjecture (that depth-p QAOA on the ring of disagrees attains ratio (2p+1)/(2p+2)); the proof was found by Claude Fable 5 in an agentic feedback loop and certified end-to-end in Lean 4 (arXiv 2606.29687, submitted Jun 29 2026).",
+      "source_urls": ["https://arxiv.org/abs/2606.29687"],
+      "payload": {
+        "claim": "First machine-verified proof of the decade-old FGG QAOA approximation-ratio conjecture, found by Claude Fable 5 and certified in Lean 4 (Kol/Ben-Shahar/Sulimany/Englund, MIT; arXiv 2606.29687).",
+        "source_url": "https://arxiv.org/abs/2606.29687",
+        "subtheme_ids": ["ai__reasoning_test_time_compute__formal_verification_provable_reasoning", "ai__ai_for_science__autonomous_research_hypothesis_generation", "quantum__algorithms_hybrid_computing__quantum_classical_hybrid_algorithms"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "XDOF launches with $70M to fix the robot teleoperation-data bottleneck",
+      "detail": "XDOF launched with $70M (Thrive Capital, Spark Capital, a16z, Lux Capital, WndrCo) and open-sourced ABC-130K, one of the largest open bimanual manipulation datasets (130K trajectories), targeting the teleoperation-data gap that constrains VLA/robot-foundation training.",
+      "source_urls": ["https://siliconangle.com/2026/06/17/robotic-teleoperation-data-startup-xdof-launches-70m-funding/", "https://www.xdof.ai/blog/abc-130k"],
+      "payload": {
+        "name": "XDOF",
+        "org": "XDOF (robot teleoperation data)",
+        "type": "STARTUP",
+        "why": "Fills the teleoperation-data-collection gap; open-sourced ABC-130K (130K bimanual trajectories); serves frontier-lab customers via GELLO-derived teleop hardware.",
+        "funding": "$70M launch round — Thrive Capital, Spark Capital, a16z, Lux Capital, WndrCo",
+        "source_url": "https://siliconangle.com/2026/06/17/robotic-teleoperation-data-startup-xdof-launches-70m-funding/",
+        "subtheme_ids": ["robotics__robot_learning_data_simulation__teleoperation_data_collection", "robotics__robot_foundation_models__vision_language_action_policies"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Ambi Robotics + Pickle Robot fully automate trailer-unload-to-palletize",
+      "detail": "Announced Jun 30, Pickle Robot's trailer-unloading arms feed Ambi's AmbiStack AI palletizer via conveyor for continuous scan-and-stack with no manual handoff at the dock door — a physical-AI logistics integration aimed at Fortune-500 retail/logistics.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260630502727/en/Ambi-Robotics-and-Pickle-Robot-Deliver-Integrated-Physical-AI-Solution-to-Fully-Automate-Inbound-Logistics"],
+      "payload": {
+        "name": "Ambi Robotics + Pickle Robot inbound-logistics automation",
+        "description": "Integrated trailer-unload (Pickle) to AI palletize (AmbiStack) with zero human handoff at the dock door.",
+        "examples": ["Pickle Robot trailer-unloading arms", "AmbiStack AI stacking"],
+        "source_url": "https://www.businesswire.com/news/home/20260630502727/en/Ambi-Robotics-and-Pickle-Robot-Deliver-Integrated-Physical-AI-Solution-to-Fully-Automate-Inbound-Logistics",
+        "subtheme_ids": ["robotics__mobile_manipulators_logistics__warehouse_logistics_robots"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "ICRA 2026 Best Paper (Medical Robotics): RCM-constraint surgical control",
+      "detail": "A TUM team (Li, Sadeghian, Haddadin et al.) won ICRA 2026's Best Paper Award in Medical Robotics for remote-center-of-motion constraint-consistent dynamic control of surgical robots — a standout in the surgical-robotics area the board doesn't yet track.",
+      "source_urls": ["https://2026.ieee-icra.org/awards/"],
+      "payload": {
+        "name": "RCM constraint-consistent dynamic control for surgical robots (ICRA 2026 Best Paper, Medical Robotics)",
+        "description": "Remote-center-of-motion constraint-consistent dynamic control; TUM / Haddadin lab.",
+        "examples": ["ICRA 2026 Best Paper in Medical Robotics"],
+        "source_url": "https://2026.ieee-icra.org/awards/",
+        "subtheme_ids": ["robotics__field_specialized_robotics__surgical_robotics"],
+        "venue": "ICRA 2026",
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "NVIDIA launches Halos for Robotics, a full-stack physical-AI safety system",
+      "detail": "NVIDIA extended its AV safety architecture to robots via IGX Thor compute, Halos OS and an accredited certification lab; Agility Robotics is the first adopter for factory/warehouse deployments (announced around Automate, Jun 22).",
+      "source_urls": ["https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai"],
+      "payload": {
+        "claim": "NVIDIA Halos for Robotics: full-stack physical-AI safety system (IGX Thor + Halos OS + certification lab); Agility Robotics first adopter.",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-halos-for-robotics-the-industrys-first-full-stack-safety-system-for-physical-ai",
+        "subtheme_ids": ["robotics__robot_foundation_models__on_device_embodied_reasoning", "robotics__humanoid_robots__industrial_commercial_humanoids"],
+        "venue": "Automate 2026",
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Local open-weight coding agents pitched as viable Claude Code / Codex alternative",
+      "detail": "Sebastian Raschka's 'Using Local Coding Agents' (Jun 27) shows a fully local stack (Qwen3.6, Cohere North Mini Code via Ollama) matching subscription coding-agent workflows, part of a broader push toward self-hosted agentic coding.",
+      "source_urls": ["https://magazine.sebastianraschka.com/p/using-local-coding-agents"],
+      "payload": {
+        "thesis": "Open-weight models run locally are now good enough to replace paid cloud coding-agent subscriptions for a meaningful share of tasks.",
+        "examples": ["https://magazine.sebastianraschka.com/p/using-local-coding-agents"],
+        "spotted_at": "2026-06-27",
+        "subtheme_ids": ["ai__agents_developer_ecosystem__coding_agents", "ai__frontier_platforms_applied_ai_economics__open_weight_models"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "First bottom-up data: AI quarterly revenue now exceeds capex depreciation",
+      "detail": "Exponential View's 'State of the AI Economy' (Jun 25) finds the deduplicated GenAI economy at ~$110B trailing-12-month sales (~$175B annualized run-rate), with Q1 2026 revenue surpassing quarterly infrastructure-depreciation costs for the first time — reframing the 'AI bubble' debate around monetization data.",
+      "source_urls": ["https://www.exponentialview.co/p/the-state-of-the-ai-economy"],
+      "payload": {
+        "thesis": "AI monetization is catching up to infrastructure spend faster than prior tech waves, undercutting simple 'AI is a bubble' narratives.",
+        "examples": ["https://www.exponentialview.co/p/the-state-of-the-ai-economy"],
+        "spotted_at": "2026-06-25",
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Dean Ball: frontier-access restraint squeezes labs' narrow monetization window",
+      "detail": "In '35 thoughts on what has happened and what America should do' (Jun 26), Dean Ball argues frontier labs have only months post-release to recoup training costs and that a near-global TAM is needed to justify the datacenter buildout — an argument against restrictive model-access policy (cited by Simon Willison the same day).",
+      "source_urls": ["https://www.hyperdimensional.co/p/what-should-be-done", "https://simonwillison.net/2026/Jun/26/dean-w-ball/"],
+      "payload": {
+        "thesis": "Restricting frontier-model access to a narrow allowlist undercuts the global-TAM economics labs and infrastructure investors depend on.",
+        "examples": ["https://www.hyperdimensional.co/p/what-should-be-done", "https://simonwillison.net/2026/Jun/26/dean-w-ball/"],
+        "spotted_at": "2026-06-26",
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "Moderna intismeran mRNA melanoma vaccine: 5-year KEYNOTE-942 data at ASCO",
+      "detail": "5-year follow-up of phase 2b KEYNOTE-942 shows the personalized mRNA neoantigen vaccine intismeran plus pembrolizumab sustains a 49% reduction in recurrence/death vs pembrolizumab alone in resected high-risk melanoma (68.8% vs 49.1% recurrence-free at 5 years); phase 3 ongoing.",
+      "source_urls": ["https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.9500"],
+      "payload": {
+        "field": "personalized mRNA cancer vaccine — long-term efficacy",
+        "new_value": "5-yr KEYNOTE-942: 49% relative reduction in recurrence/death, 68.8% vs 49.1% recurrence-free",
+        "previous_value": "earlier 2-3 year interim readouts only",
+        "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.9500",
+        "subtheme_ids": ["bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"],
+        "venue": "ASCO 2026",
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "China approves NEO, the first commercial invasive BCI (Neuracle / Tsinghua)",
+      "detail": "China's NMPA approved Neuracle's NEO epidural BCI for commercial use (this March) in spinal-cord-injury quadriplegia patients with residual arm function — the first invasive BCI approved for use outside clinical trials — and is assigning it a reimbursement code.",
+      "source_urls": ["https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/"],
+      "payload": {
+        "claim": "China (NMPA) approved Neuracle's NEO epidural BCI for commercial use — first invasive BCI approved outside clinical trials.",
+        "source_url": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/",
+        "subtheme_ids": ["bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Structure Therapeutics' oral GLP-1 aleniglipron: phase 2b in Nature Medicine",
+      "detail": "Once-daily oral small-molecule GLP-1 aleniglipron hit placebo-adjusted weight loss of 8.2/9.8/11.3% at 45/90/120 mg over 36 weeks (n=230, all p<0.0001), published in Nature Medicine Jun 5; phase 3 slated for Q3 2026.",
+      "source_urls": ["https://www.nature.com/articles/s41591-026-04476-6"],
+      "payload": {
+        "field": "oral small-molecule GLP-1 — phase 2b peer-reviewed",
+        "new_value": "Nature Medicine: up to 11.3% placebo-adjusted weight loss at 36 weeks (120 mg)",
+        "previous_value": "topline press-release data only",
+        "source_url": "https://www.nature.com/articles/s41591-026-04476-6",
+        "subtheme_ids": ["bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Anthropic launches Claude Science and enters in-house drug development",
+      "detail": "Anthropic said (Jun 30) it will develop its own drug candidates using its new Claude Science application, per head of life sciences Eric Kauderer-Abrams — an AI-native drug-discovery entrant (internal initiative, no separate funding round disclosed).",
+      "source_urls": ["https://www.statnews.com/2026/06/30/anthropic-ai-drug-development/"],
+      "payload": {
+        "name": "Anthropic — Claude Science / in-house drug development",
+        "org": "Anthropic",
+        "type": "LAB",
+        "why": "Frontier AI lab moving into AI-native drug discovery with an in-house pipeline; signals verticalization of AI-for-bio.",
+        "funding": "Internal initiative (no separate round disclosed)",
+        "source_url": "https://www.statnews.com/2026/06/30/anthropic-ai-drug-development/",
+        "subtheme_ids": ["bio__ai_x_bio_convergence__ai_native_drug_discovery"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Grail/NHS Galleri MCED randomized trial misses primary endpoint (ASCO)",
+      "detail": "The first randomized MCED trial (143,000 UK adults, 3 annual rounds) failed its primary endpoint of reducing combined stage 3/4 diagnoses, though it showed 52% PPV, quadrupled screen-detected cancers and a stage-4→stage-3 shift; presented by Charles Swanton (Francis Crick) at ASCO — a major nuanced signal for the MCED field.",
+      "source_urls": ["https://www.statnews.com/2026/06/04/grail-multi-cancer-early-detection-test-trial-results/"],
+      "payload": {
+        "candidate_area": "Molecular diagnostics — multi-cancer early detection (MCED)",
+        "detail": "First randomized MCED trial misses combined stage 3/4 reduction; 52% PPV, quadrupled screen-detected cancers.",
+        "source_url": "https://www.statnews.com/2026/06/04/grail-multi-cancer-early-detection-test-trial-results/",
+        "subtheme_ids": ["bio__molecular_diagnostics_early_detection__multi_cancer_early_detection_mced"],
+        "venue": "ASCO 2026",
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Natera Signatera: first blood-based MRD companion dx wins NCCN Category 1 (bladder)",
+      "detail": "NCCN updated bladder-cancer guidelines (Jun 23) to a Category 1 recommendation for Signatera-guided adjuvant atezolizumab in MRD-positive muscle-invasive bladder cancer (IMvigor011); Signatera CDx received FDA companion-diagnostic approval May 15 — the first blood-based MRD companion dx.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260623843077/en/NCCN-Recommends-ctDNA-MRD-Testing-Using-Signatera-Technology-in-Landmark-Bladder-Cancer-Guideline-Update", "https://www.natera.com/company/news/signatera-cdx-approved-by-the-fda-as-a-companion-diagnostic-in-muscle-invasive-bladder-cancer-mibc/"],
+      "payload": {
+        "candidate_area": "Molecular diagnostics — MRD / ctDNA monitoring (Natera Signatera)",
+        "detail": "NCCN Category 1 for Signatera-guided adjuvant therapy in MRD+ MIBC (Jun 23); FDA companion-dx approval May 15 (first blood-based MRD CDx).",
+        "source_url": "https://www.businesswire.com/news/home/20260623843077/en/NCCN-Recommends-ctDNA-MRD-Testing-Using-Signatera-Technology-in-Landmark-Bladder-Cancer-Guideline-Update",
+        "subtheme_ids": ["bio__molecular_diagnostics_early_detection__mrd_ctdna_monitoring"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IQM 'directional tile' codes cut logical error rate up to 1,000x on current hardware",
+      "detail": "IQM with academic partners published directional tile codes reaching up to 1,000x lower per-logical per-round error rates than the surface code at ~30 physical qubits per logical qubit, using only native nearest-neighbour iSWAP gates on existing IQM processors (arXiv 2606.19482, Jun 23).",
+      "source_urls": ["https://www.businesswire.com/news/home/20260623243333/en/IQM-achieves-milestone-in-quantum-error-correction-enabling-fault-tolerant-computing-in-the-near-term", "https://arxiv.org/abs/2606.19482"],
+      "payload": {
+        "claim": "IQM directional tile codes: up to 1,000x lower logical error rate vs surface code at ~30 physical qubits/logical, native iSWAP gates on existing hardware.",
+        "source_url": "https://www.businesswire.com/news/home/20260623243333/en/IQM-achieves-milestone-in-quantum-error-correction-enabling-fault-tolerant-computing-in-the-near-term",
+        "subtheme_ids": ["quantum__error_correction_logical_qubits__below_threshold_codes", "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reusable_rockets",
+      "title": "NASA awards ~$590M to Astrobotic, Firefly, Intuitive Machines for Moon Base landers",
+      "detail": "NASA selected Astrobotic ($297.9M, two deliveries), Firefly ($144.2M) and Intuitive Machines ($148.3M) for four CLPS lunar deliveries in late 2028 under the Moon Base program, using updated versions of already-flown lander designs (Jun 30).",
+      "source_urls": ["https://www.nasa.gov/news-release/nasa-awards-more-moon-base-science-previews-new-opportunities/"],
+      "payload": {
+        "claim": "NASA CLPS Moon Base awards: Astrobotic $297.9M, Firefly $144.2M, Intuitive Machines $148.3M for four lunar deliveries (~2028).",
+        "source_url": "https://www.nasa.gov/news-release/nasa-awards-more-moon-base-science-previews-new-opportunities/",
+        "subtheme_ids": ["space__lunar_cislunar__commercial_lunar_landers_clps"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "renewables_batteries",
+      "title": "HZB/Humboldt set 25.5% world record for perovskite-CIGS tandem solar cell",
+      "detail": "Helmholtz-Zentrum Berlin and Humboldt-Universität reported an ESTI-confirmed 25.5% perovskite-CIGS tandem cell (1 cm²), beating a May 2026 record of 25.17%; in-house designs have reportedly reached 27.5% (Jul 1).",
+      "source_urls": ["https://www.pv-magazine.com/2026/07/01/german-researchers-achieve-world-record-25-5-efficiency-for-perovskite-cigs-tandem-solar-cell/"],
+      "payload": {
+        "claim": "HZB/Humboldt ESTI-confirmed 25.5% perovskite-CIGS tandem cell (1 cm²), new world record.",
+        "source_url": "https://www.pv-magazine.com/2026/07/01/german-researchers-achieve-world-record-25-5-efficiency-for-perovskite-cigs-tandem-solar-cell/",
+        "subtheme_ids": ["energy__renewable_generation_frontier__perovskite_silicon_tandem_solar"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_accelerators",
+      "title": "NVIDIA rolls out fully liquid-cooled AI server design with near-zero water use",
+      "detail": "NVIDIA's newest AI servers use closed-loop liquid cooling at up to 45°C supply temperature, eliminating evaporative water use; NVIDIA estimates a 50 MW facility could save >$4M/year in cooling energy and water (Jun 22).",
+      "source_urls": ["https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/", "https://fortune.com/2026/06/22/nvidia-new-data-center-design-ai-water-problem-cooling/"],
+      "payload": {
+        "claim": "NVIDIA fully liquid-cooled AI server (closed-loop, 45°C supply, near-zero water); est. >$4M/yr savings at 50 MW.",
+        "source_url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+        "subtheme_ids": ["hardware__ai_datacenter_power_cooling__liquid_cooling"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reusable_rockets",
+      "title": "SpaceX signals consumer Starlink mobile service backed by $17B spectrum",
+      "detail": "At an IPO roadshow (Jun 26), SpaceX President Gwynne Shotwell told investors SpaceX plans a Starlink-branded consumer mobile service potentially building its own terrestrial network — leaning on its ~$17B EchoStar spectrum position — to challenge AT&T, Verizon and T-Mobile.",
+      "source_urls": ["https://www.techtimes.com/articles/319177/20260627/starlink-mobile-coming-t-verizon-spacex-has-spectrum-still-needs-towers.htm"],
+      "payload": {
+        "claim": "SpaceX plans consumer Starlink mobile service (direct-to-device + possible terrestrial network), leveraging ~$17B EchoStar spectrum (disclosed at IPO roadshow, Jun 26).",
+        "source_url": "https://www.techtimes.com/articles/319177/20260627/starlink-mobile-coming-t-verizon-spacex-has-spectrum-still-needs-towers.htm",
+        "subtheme_ids": ["space__satellite_mega_constellations_connectivity__direct_to_cell_direct_to_device"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Rolls-Royce SMR opens UK Pioneer Works, wins Sweden export deal",
+      "detail": "Rolls-Royce SMR opened its Pioneer Works manufacturing development centre in Derby (Jun 26-29) to de-risk fleet build for the UK/Czech/Sweden and was selected by a Swedish developer for a multibillion-pound SMR export deal — a concrete step toward fission SMR manufacturing at scale (an area the board does not yet track).",
+      "source_urls": ["https://www.rolls-royce-smr.com/"],
+      "payload": {
+        "candidate_area": "Advanced nuclear — small modular reactors (SMRs)",
+        "detail": "Rolls-Royce SMR opens Pioneer Works (Derby) + wins Sweden export deal; SMR manufacturing scale-up.",
+        "source_url": "https://www.rolls-royce-smr.com/",
+        "subtheme_ids": ["energy__advanced_nuclear_geothermal__small_modular_reactors_smrs"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Trump signs twin executive orders on quantum computing and PQC migration",
+      "detail": "On Jun 22 the President signed EO 14413 ('Ushering in the Next Frontier of Quantum Innovation'), directing a national push toward a scientifically useful quantum computer by 2028, plus a companion order accelerating federal post-quantum-cryptography migration (~2030-31).",
+      "source_urls": ["https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/"],
+      "payload": {
+        "candidate_area": "Quantum policy — national quantum initiative + PQC migration",
+        "detail": "EO 14413 (quantum innovation) + companion PQC-migration order (Jun 22). Corrected EO number (was mis-cited as 14411).",
+        "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/",
+        "subtheme_ids": ["quantum__post_quantum_security__pqc_standards_migration"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "EU Parliament adopts Digital Omnibus, delaying AI Act high-risk rules to Dec 2027",
+      "detail": "The European Parliament adopted the Digital Omnibus on AI (Jun 16), pushing Annex III high-risk obligations from Aug 2026 to Dec 2, 2027 and adding a ban on AI-generated non-consensual intimate imagery/CSAM; Council formal adoption expected shortly.",
+      "source_urls": ["https://datamatters.sidley.com/2026/06/22/eu-lawmakers-reach-provisional-agreement-to-delay-key-eu-ai-act-obligations/"],
+      "payload": {
+        "candidate_area": "AI regulation — EU AI Act (Digital Omnibus)",
+        "detail": "Parliament adopted Digital Omnibus (Jun 16); Annex III high-risk obligations delayed to Dec 2, 2027; Council adoption pending. (Corrected from 'Council formally adopts'.)",
+        "source_url": "https://datamatters.sidley.com/2026/06/22/eu-lawmakers-reach-provisional-agreement-to-delay-key-eu-ai-act-obligations/",
+        "subtheme_ids": ["ai__safety_interpretability_governance__ai_governance_safety_incidents"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Pickle Robot — trailer-unloading logistics robots (entity reconciliation)",
+      "detail": "Named in the Ambi integration, Pickle Robot builds AI trailer-unloading arms for dock-door automation and is pushing toward robotic coverage of large numbers of dock doors; a notable warehouse-logistics player the board wasn't tracking.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260630502727/en/Ambi-Robotics-and-Pickle-Robot-Deliver-Integrated-Physical-AI-Solution-to-Fully-Automate-Inbound-Logistics"],
+      "payload": {
+        "name": "Pickle Robot",
+        "org": "Pickle Robot Co.",
+        "type": "STARTUP",
+        "why": "Trailer-unloading manipulation for inbound logistics; core warehouse-logistics-robots player surfaced via the Ambi integration.",
+        "funding": "Venture-backed (see coverage)",
+        "source_url": "https://www.businesswire.com/news/home/20260630502727/en/Ambi-Robotics-and-Pickle-Robot-Deliver-Integrated-Physical-AI-Solution-to-Fully-Automate-Inbound-Logistics",
+        "subtheme_ids": ["robotics__mobile_manipulators_logistics__warehouse_logistics_robots"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "bci",
+      "title": "Neuracle Technology — maker of China's NEO invasive BCI (entity reconciliation)",
+      "detail": "Neuracle Technology (with Tsinghua) makes the NEO epidural BCI that became the first invasive BCI cleared for commercial use; a key implant player the board wasn't tracking.",
+      "source_urls": ["https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/"],
+      "payload": {
+        "name": "Neuracle Technology",
+        "org": "Neuracle Technology (with Tsinghua University)",
+        "type": "STARTUP",
+        "why": "Maker of NEO, the first invasive BCI approved for commercial use (China NMPA); direct competitor context for Neuralink/Synchron.",
+        "funding": "Private (China)",
+        "source_url": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/",
+        "subtheme_ids": ["bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"],
+        "new_category": false
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "glp1",
+      "title": "Structure Therapeutics — oral small-molecule GLP-1 developer (entity reconciliation)",
+      "detail": "Developer of aleniglipron, a once-daily oral small-molecule GLP-1 with phase 2b data now in Nature Medicine (up to 11.3% weight loss); a notable oral-GLP-1 player the board wasn't tracking as an entity.",
+      "source_urls": ["https://ir.structuretx.com/news-releases/news-release-details/structure-therapeutics-announces-publication-nature-medicine"],
+      "payload": {
+        "name": "Structure Therapeutics",
+        "org": "Structure Therapeutics (Nasdaq: GPCR)",
+        "type": "STARTUP",
+        "why": "Leading oral small-molecule GLP-1 developer (aleniglipron); phase 3 planned Q3 2026 — competitive with oral offerings from Lilly/Novo.",
+        "funding": "Public (Nasdaq: GPCR)",
+        "source_url": "https://ir.structuretx.com/news-releases/news-release-details/structure-therapeutics-announces-publication-nature-medicine",
+        "subtheme_ids": ["bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"],
+        "new_category": false
+      },
+      "confidence": "medium",
+      "backfill": true
+    }
+  ]
+}

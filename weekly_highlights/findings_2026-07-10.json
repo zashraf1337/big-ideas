@@ -1,0 +1,276 @@
+{
+  "week_ending": "2026-07-10",
+  "summary": "A dense, gap-filling week. Frontier AI shifted toward autonomous execution and new interfaces: OpenAI shipped GPT-Live (full-duplex voice), ICML/ACL 2026 handed out awards to reward-hacking/entropy-collapse work in RL, and a Berkeley/industry benchmark showed top agents averaging just 2.6% on hard real-work tasks even as a capex-vs-utilization debate split analysts. Physical sciences filled long-dormant gaps: ESS launched a sodium-ion BESS (~$1B demand signals), ComEd got Illinois' first VPP approved, Plug/Orica reached FID on Australia's largest green-hydrogen hub, EarthDaily's constellation hit commercial-ops threshold, and Realta demonstrated direct plasma-to-electricity conversion. Bio was carried by conference backfill: FDA expanded CASGEVY to children as young as 2, Lilly's oral orforglipron beat oral semaglutide head-to-head (ACHIEVE-3), and allogeneic/in-vivo cell engineering activated via Caribou CB-011 and an AstraZeneca CRISPR TCR-T solid-tumor signal.",
+  "highlights": [
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "1X ships 25-DoF tendon-driven tactile hands for NEO humanoid",
+      "detail": "1X unveiled a 25-DoF (22 actuated + 3 wrist) tendon-driven hand for its NEO humanoid with force-transparent joints, fingertip/palm tactile sensing for slip detection, and IP68 sealing; says it has capacity for 10,000 hands in 2026.",
+      "source_urls": ["https://www.1x.tech/discover/neos-hands"],
+      "payload": {"name": "1X NEO 25-DoF tendon-driven tactile hand", "description": "25-DoF (22 actuated + 3 wrist) tendon-driven hand with force-transparent joints, fingertip/palm tactile sensing for real-time slip detection, and IP68 sealing; 1X claims capacity to build 10,000 hands in 2026.", "examples": [], "source_url": "https://www.1x.tech/discover/neos-hands", "subtheme_ids": ["robotics__dexterous_manipulation_tactile__tactile_sensing_dexterous_hands"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "XAG launches autonomous drone+dock+refill farm-robotics system",
+      "detail": "XAG unveiled its X Series agricultural system (spray drone, XA1 auto-docking/recharge station, LM1 chemical mixing/refill unit) plus the RM80 unmanned mower on July 6 in Guangzhou, aiming for fully unmanned crop-protection workflows.",
+      "source_urls": ["https://www.chinadaily.com.cn/a/202607/07/WS6a4cf086a310986e2b463fec.html"],
+      "payload": {"name": "XAG X Series autonomous farm-robotics system", "description": "Spray drone + XA1 auto-docking/recharge station + LM1 mixing/refill unit + RM80 unmanned mower, launched July 6 in Guangzhou for fully unmanned crop-protection workflows.", "examples": [], "source_url": "https://www.chinadaily.com.cn/a/202607/07/WS6a4cf086a310986e2b463fec.html", "subtheme_ids": ["robotics__field_specialized_robotics__agricultural_robotics_drones"], "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "ICML 2026 honors deception probes that catch RLVR reward hacking",
+      "detail": "\"The Obfuscation Atlas\" won an ICML 2026 Outstanding Paper Honorable Mention, applying white-box linear deception probes in a reward-hacking-prone coding RL environment.",
+      "source_urls": ["https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/", "https://icml.cc/virtual/2026/oral/71065"],
+      "payload": {"name": "The Obfuscation Atlas (deception probes for RLVR reward hacking)", "description": "ICML 2026 Outstanding Paper Honorable Mention (Taufeeque, Heimersheim, Gleave, Cundy): white-box linear deception probes in a reward-hacking-prone coding RL environment; shows high KL regularization plus detector penalties mitigate the resulting alignment failures.", "examples": [], "source_url": "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/", "subtheme_ids": ["ai__safety_interpretability_governance__mechanistic_interpretability"], "venue": "ICML 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reasoning_models",
+      "title": "ACL 2026 Outstanding Paper tackles entropy collapse in RLVR",
+      "detail": "\"Rethinking Entropy Interventions in RLVR: An Entropy Change Perspective\" won an ACL 2026 Outstanding Paper award, reframing RLVR's entropy-collapse problem via an entropy-change lens.",
+      "source_urls": ["https://2026.aclweb.org/program/best_papers/"],
+      "payload": {"name": "Rethinking Entropy Interventions in RLVR", "description": "ACL 2026 Outstanding Paper (Hao, Wang, Liu et al.): reframes RLVR's entropy-collapse/exploration-loss problem via an entropy-change lens with a targeted intervention distinct from prior entropy-bonus/clipping approaches.", "examples": [], "source_url": "https://2026.aclweb.org/program/best_papers/", "subtheme_ids": ["ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"], "venue": "ACL 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Waymo goes driverless in 4 more US cities, tests Hyundai IONIQ 5",
+      "detail": "Waymo announced July 8 it will run fully autonomous employee rides in San Diego, Las Vegas, Tampa and Denver, while beginning specialist-aboard testing of its 6th-gen Driver on Hyundai IONIQ 5 vehicles.",
+      "source_urls": ["https://waymo.com/blog/shorts/ro-den-lv-sd-tmpa/", "https://www.cnbc.com/2026/07/08/waymo-starts-driverless-rides-in-san-diego-las-vegas-tampa-denver.html"],
+      "payload": {"field": "operating_cities", "new_value": "adds San Diego, Las Vegas, Tampa, Denver (employee driverless); 6th-gen Driver on Hyundai IONIQ 5", "previous_value": "10+ public-service cities", "source_url": "https://waymo.com/blog/shorts/ro-den-lv-sd-tmpa/", "subtheme_ids": ["ai__autonomy_embodiment_ai__self_driving_robotaxis"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Agility Robotics to go public via ~$2.5B SPAC, largest humanoid raise",
+      "detail": "Agility Robotics is merging with Churchill Capital Corp XI at a ~$2.5B valuation, raising >$620M; CEO Peggy Johnson cites >$300M booked RaaS revenue (~1,000 Digit units) with Amazon, Toyota and GXO.",
+      "source_urls": ["https://techcrunch.com/2026/07/05/this-humanoid-robotics-company-is-going-public-but-its-ceo-isnt-promising-a-robot-in-your-home-anytime-soon/"],
+      "payload": {"name": "Agility Robotics", "org": "Agility Robotics (Digit humanoid)", "type": "COMPANY", "why": "Going public via Churchill Capital Corp XI SPAC at ~$2.5B, raising >$620M (largest humanoid raise to date); >$300M booked robots-as-a-service revenue (~1,000 Digit units) with Amazon, Toyota and GXO Logistics.", "funding": "~$2.5B SPAC (Churchill Capital Corp XI), >$620M gross proceeds", "source_url": "https://techcrunch.com/2026/07/05/this-humanoid-robotics-company-is-going-public-but-its-ceo-isnt-promising-a-robot-in-your-home-anytime-soon/", "subtheme_ids": ["robotics__humanoid_robots__industrial_commercial_humanoids"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "OpenAI ships GPT-Live, full-duplex voice model replacing AVM",
+      "detail": "OpenAI's July 8 GPT-Live uses a full-duplex architecture that listens and speaks simultaneously (vs turn-based Advanced Voice Mode), delegating search/reasoning to GPT-5.5 in the background.",
+      "source_urls": ["https://openai.com/index/introducing-gpt-live/", "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/"],
+      "payload": {"name": "OpenAI GPT-Live (full-duplex voice)", "description": "Full-duplex voice model that listens and speaks simultaneously (vs turn-based Advanced Voice Mode), delegating search/reasoning to GPT-5.5 in the background; GPT-Live-1 becomes default ChatGPT Voice for Go/Plus/Pro, with new emotional-reliance/self-harm safety training.", "examples": [], "source_url": "https://openai.com/index/introducing-gpt-live/", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__consumer_ai_assistants_companions"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Berkeley 'Agents' Last Exam': frontier agents average just 2.6%",
+      "detail": "Agents' Last Exam (ALE), built with 250+ industry experts over 1,000+ real tasks across 55 industries, finds frontier agents average only 2.6% on its hardest tier despite Terminal-Bench scores up to 82%.",
+      "source_urls": ["https://arxiv.org/abs/2606.05405"],
+      "payload": {"claim": "Agents' Last Exam (ALE), built with 250+ industry experts over 1,000+ real economically-valuable tasks across 55 industries, finds frontier agents average only 2.6% on its hardest tier despite Terminal-Bench scores up to 82% — a large benchmark-vs-real-work gap.", "source_url": "https://arxiv.org/abs/2606.05405", "subtheme_ids": ["ai__agents_developer_ecosystem__coding_agents", "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"], "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "Sydney/IBM cut logical-qubit error via mid-circuit measurement fix",
+      "detail": "University of Sydney and IBM used a 156-qubit Heron r2 processor to show mid-circuit measurement idling noise is a dominant QEC error source, lifting logical qubit survival from under 90% to over 96% per cycle (Nature Communications, July 6, 2026).",
+      "source_urls": ["https://thequantuminsider.com/2026/07/06/university-of-sydney-and-ibm-identify-major-source-of-quantum-computing-errors/", "https://www.nature.com/articles/s41467-026-71773-6"],
+      "payload": {"claim": "University of Sydney + IBM (156-qubit Heron r2): mid-circuit measurement idling noise is a dominant QEC error source; addressing it lifts logical qubit survival from <90% to >96% per cycle (Nature Communications, July 6, 2026).", "source_url": "https://www.nature.com/articles/s41467-026-71773-6", "subtheme_ids": ["quantum__error_correction_logical_qubits__below_threshold_codes"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reusable_rockets",
+      "title": "EarthDaily Constellation hits commercial-ops threshold after Launch III",
+      "detail": "EarthDaily's EDC-08 launched July 7 on SpaceX Transporter-17; the company said July 9 this completes 'Launch III,' bringing its 16-imager, 22-spectral-band constellation to the count needed for daily global calibrated monitoring.",
+      "source_urls": ["https://www.globenewswire.com/news-release/2026/07/09/3324699/0/en/EarthDaily-Constellation-Entering-Commercial-Operations-with-Successful-Launch-III.html", "https://earthdaily.com/blog/earthdaily-constellation-entering-commercial-operations-with-successful-launch-iii"],
+      "payload": {"name": "EarthDaily Analytics", "org": "EarthDaily Constellation", "type": "COMPANY", "why": "EDC-08 (launched July 7 on SpaceX Transporter-17) completes 'Launch III,' bringing its 16-imager, 22-spectral-band constellation to the satellite count needed for daily global calibrated Earth monitoring; commercial ops expected later 2026.", "funding": "", "source_url": "https://www.globenewswire.com/news-release/2026/07/09/3324699/0/en/EarthDaily-Constellation-Entering-Commercial-Operations-with-Successful-Launch-III.html", "subtheme_ids": ["space__earth_observation_space_data__earth_observation_constellations"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "renewables_batteries",
+      "title": "ESS launches sodium-ion Bridge BESS for data centers, ~$1B demand",
+      "detail": "ESS Inc. introduced its Bridge BESS using Alsym Energy sodium-ion cells (1-16+ hour duration), its first non-iron-flow product, and said it has seen nearly $1B in demand signals for the sodium-ion line since the April 2026 Alsym partnership.",
+      "source_urls": ["https://pv-magazine-usa.com/2026/07/08/ess-introduces-sodium-ion-battery-targeted-at-data-centers-and-other-commercial-users/"],
+      "payload": {"name": "ESS Bridge sodium-ion BESS", "description": "ESS Inc.'s first non-iron-flow product: a Bridge BESS using Alsym Energy sodium-ion cells (1-16+ hour duration) for data-center/commercial storage; ~$1B in demand signals since the April 2026 Alsym partnership (report July 8, 2026).", "examples": [], "source_url": "https://pv-magazine-usa.com/2026/07/08/ess-introduces-sodium-ion-battery-targeted-at-data-centers-and-other-commercial-users/", "subtheme_ids": ["energy__battery_cost_collapse_cell_chemistry__sodium_ion_at_scale"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Plug wins 50MW electrolyzer order as Australia's largest H2 hub hits FID",
+      "detail": "Plug Power's 50MW GenEco PEM electrolyzers will supply Orica's Hunter Valley Hydrogen Hub (NSW), which reached FID July 7, 2026 as Australia's largest renewable-hydrogen project (~4,700 tonnes/yr).",
+      "source_urls": ["https://www.globenewswire.com/news-release/2026/07/07/3323027/9619/en/Plug-Wins-50MW-Electrolyzer-Order-as-Orica-s-Hunter-Valley-Hub-Becomes-the-Largest-Australian-Renewable-Hydrogen-Project-to-Reach-FID.html"],
+      "payload": {"name": "Plug Power / Orica Hunter Valley Hydrogen Hub", "org": "Plug Power (electrolyzers); Orica (offtake)", "type": "COMPANY", "why": "50MW GenEco PEM electrolyzer order for Orica's Hunter Valley Hydrogen Hub (NSW), which reached final investment decision July 7, 2026 as Australia's largest renewable-hydrogen project (~4,700 tonnes/yr).", "funding": "", "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323027/9619/en/Plug-Wins-50MW-Electrolyzer-Order-as-Orica-s-Hunter-Valley-Hub-Becomes-the-Largest-Australian-Renewable-Hydrogen-Project-to-Reach-FID.html", "subtheme_ids": ["energy__grid_intelligence_clean_fuels__green_hydrogen_electrolyzers"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Illinois approves ComEd's first virtual power plant program",
+      "detail": "The Illinois Commerce Commission approved ComEd's Scheduled Dispatch Virtual Power Plant on June 30, 2026, the state's first VPP under the new Clean and Reliable Grid Affordability Act, dispatching aggregated customer battery storage starting 2027.",
+      "source_urls": ["https://www.businesswire.com/news/home/20260630515242/en/ComEd-Receives-Approval-to-Launch-its-First-Virtual-Power-Plant-Program-for-Customers-in-2027", "https://www.utilitydive.com/news/illinois-approves-commonwealth-edison-vpp-under-new-clean-energy-law/824723/"],
+      "payload": {"name": "ComEd Scheduled Dispatch VPP", "org": "Commonwealth Edison (ComEd)", "type": "COMPANY", "why": "Illinois' first virtual power plant, approved by the ICC June 30, 2026 under the Clean and Reliable Grid Affordability Act; aggregates customer battery storage for grid dispatch starting 2027.", "funding": "", "source_url": "https://www.utilitydive.com/news/illinois-approves-commonwealth-edison-vpp-under-new-clean-energy-law/824723/", "subtheme_ids": ["energy__grid_intelligence_clean_fuels__virtual_power_plants_vpps"], "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "fusion",
+      "title": "Realta Fusion demos direct plasma-to-electricity conversion",
+      "detail": "Realta Fusion says it became the first commercial fusion company to demonstrate direct energy conversion, drawing multiple amps at ~100V from plasma kinetic energy on the WHAM magnetic-mirror machine at UW-Madison (June 29, 2026).",
+      "source_urls": ["https://www.prnewswire.com/news-releases/realta-fusion-becomes-first-commercial-fusion-company-to-convert-plasma-energy-into-electricity-302813632.html"],
+      "payload": {"claim": "Realta Fusion demonstrated direct energy conversion — drawing multiple amps at ~100V from plasma kinetic energy on the WHAM magnetic-mirror machine at UW-Madison (June 29, 2026); projects DEC could cut plant costs 10-20% vs thermal cycles.", "source_url": "https://www.prnewswire.com/news-releases/realta-fusion-becomes-first-commercial-fusion-company-to-convert-plasma-energy-into-electricity-302813632.html", "subtheme_ids": ["energy__fusion_energy__alternative_confinement_direct_electricity"], "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "ai_accelerators",
+      "title": "SambaNova raises $1B at $11B valuation, lands JPMorgan for inference",
+      "detail": "SambaNova closed the first tranche of a $1B Series F led by General Atlantic at an $11B valuation (July 8, 2026) and won JPMorgan Chase as an on-prem inference customer.",
+      "source_urls": ["https://www.cnbc.com/2026/07/08/sambanova-ai-chip-funding-valuation.html", "https://siliconangle.com/2026/07/08/inference-chip-startup-sambanova-valued-11b-1b-funding-round/"],
+      "payload": {"name": "SambaNova Systems", "org": "SambaNova (SN50 inference accelerators)", "type": "COMPANY", "why": "$1B Series F (first tranche) led by General Atlantic at an $11B valuation (July 8, 2026); won JPMorgan Chase as an on-prem inference customer — a notable enterprise inference-ASIC win vs NVIDIA.", "funding": "$1B Series F at $11B valuation, led by General Atlantic", "source_url": "https://www.cnbc.com/2026/07/08/sambanova-ai-chip-funding-valuation.html", "subtheme_ids": ["hardware__ai_accelerators__inference_specialized_asics"], "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "CASGEVY CRISPR therapy expanded to children as young as 2",
+      "detail": "FDA approved expanded use of Vertex's CASGEVY (exa-cel) to patients ages 2+; ~5,500 additional US children now eligible (approved July 1, 2026 via the Commissioner's National Priority Voucher).",
+      "source_urls": ["https://news.vrtx.com/news-releases/news-release-details/vertex-announces-us-fda-approval-expanded-use-casgevyr-treatment"],
+      "payload": {"field": "casgevy_eligible_age", "new_value": "ages 2 and older (July 1, 2026); ~5,500 more US children eligible", "previous_value": "ages 12 and older", "source_url": "https://news.vrtx.com/news-releases/news-release-details/vertex-announces-us-fda-approval-expanded-use-casgevyr-treatment", "subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__ex_vivo_edited_cell_therapies"], "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Allogeneic CRISPR CAR-T CB-011 shows 92% ORR, 91% MRD-neg in myeloma",
+      "detail": "Caribou Biosciences' CB-011, a CRISPR-edited allogeneic anti-BCMA CAR-T immune-cloaked via B2M-knockout/HLA-E-fusion, produced 92% ORR, 83% CR/sCR and 91% MRD-negativity in a 12-patient r/r multiple myeloma cohort (CaMMouflage phase 1, EHA 2026).",
+      "source_urls": ["https://investor.cariboubio.com/news-releases/news-release-details/caribou-biosciences-reports-dose-escalation-durability-data-cb"],
+      "payload": {"name": "Caribou CB-011 allogeneic CRISPR CAR-T", "description": "CRISPR-edited allogeneic anti-BCMA CAR-T immune-cloaked via B2M-knockout/HLA-E-fusion; 92% ORR, 83% CR/sCR, 91% MRD-negativity in a 12-patient r/r multiple myeloma cohort, 50% still in CR at 15 months (CaMMouflage phase 1, EHA 2026).", "examples": [], "source_url": "https://investor.cariboubio.com/news-releases/news-release-details/caribou-biosciences-reports-dose-escalation-durability-data-cb", "subtheme_ids": ["bio__engineered_cell_therapies__allogeneic_in_vivo_cell_engineering"], "venue": "EHA 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "crispr_therapies",
+      "title": "CRISPR-edited TCR-T shows early efficacy in solid tumors (ASCO 2026)",
+      "detail": "AstraZeneca/Neogene's NT-175, a CRISPR-edited (TCR + TGFβR2 knockout) autologous T-cell therapy targeting the shared TP53 R175H neoantigen, showed acceptable safety and early anti-tumor signals in a phase 1 across pancreatic, colorectal and breast tumors (ASCO 2026, Abstract 2506).",
+      "source_urls": ["https://dailynews.ascopubs.org/do/acceptable-safety-early-efficacy-t-cell-receptor-therapy-tp53-mutated-solid-tumors"],
+      "payload": {"name": "AstraZeneca/Neogene NT-175 CRISPR TCR-T (solid tumors)", "description": "CRISPR-edited (TCR + TGFβR2 knockout) autologous T-cell therapy targeting the shared TP53 R175H neoantigen; acceptable safety and early anti-tumor efficacy signals in a phase 1 across pancreatic, colorectal and breast tumors (ASCO 2026, Abstract 2506).", "examples": [], "source_url": "https://dailynews.ascopubs.org/do/acceptable-safety-early-efficacy-t-cell-receptor-therapy-tp53-mutated-solid-tumors", "subtheme_ids": ["bio__engineered_cell_therapies__car_t_for_solid_tumors"], "venue": "ASCO 2026", "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Oral GLP-1 orforglipron beats oral semaglutide head-to-head (ACHIEVE-3)",
+      "detail": "In the 1,698-patient, 52-week ACHIEVE-3 phase 3, Lilly's oral orforglipron cut A1C 1.9%/2.2% and weight 6.7%/9.2% vs 1.1%/1.4% A1C and 3.7%/5.3% weight with oral semaglutide — the first head-to-head phase 3 of two oral GLP-1s in T2D (ADA 2026; Lancet).",
+      "source_urls": ["https://investor.lilly.com/news-releases/news-release-details/lillys-oral-glp-1-foundayo-orforglipron-delivered-superior-a1c"],
+      "payload": {"field": "oral_glp1_head_to_head", "new_value": "orforglipron superior to oral semaglutide on A1C and weight in ACHIEVE-3 (n=1,698; A1C 1.9/2.2% vs 1.1/1.4%; weight 6.7/9.2% vs 3.7/5.3%)", "previous_value": "no head-to-head oral-vs-oral phase 3 reported", "source_url": "https://investor.lilly.com/news-releases/news-release-details/lillys-oral-glp-1-foundayo-orforglipron-delivered-superior-a1c", "subtheme_ids": ["bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"], "venue": "ADA 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Nathan Benaich's compute index becomes AI's go-to GPU gauge",
+      "detail": "Air Street Capital's Nathan Benaich (State of AI Report author) saw his standalone State of AI Compute Index cited this week on the '95% of Grace-Blackwell GPUs undeployed' data point shaping the compute-glut debate.",
+      "source_urls": ["https://press.airstreet.com/p/state-of-ai-compute-index-june-2026", "https://www.stateof.ai/compute"],
+      "payload": {"name": "Nathan Benaich", "role": "Founder/GP, Air Street Capital; co-author, State of AI Report", "focus": "AI compute/hardware supply chains, industry & geopolitics", "follow_url": "https://www.stateof.ai/", "twitter": "@nathanbenaich", "youtube": null, "newsletter": "https://nathanbenaich.substack.com/", "notes": "Compute Index (refreshed June 2026 with Zeta Alpha) is newly the reference source other tracked voices cite on GPU deployment vs demand.", "tags": ["compute", "hardware", "industry analysis", "geopolitics"]},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "AI capex boom collides with a compute-utilization reality check",
+      "detail": "Meta's move to resell 'excess' AI compute sparked bubble fears and a semiconductor selloff, even as record grid-demand data suggests physical scarcity rather than a glut.",
+      "source_urls": ["https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/", "https://www.exponentialview.co/p/data-to-start-your-week-6-july-2026"],
+      "payload": {"thesis": "AI infrastructure spending is outrunning verified utilization: hyperscaler 'excess compute' admissions and >95% GPU non-deployment collide with record grid power demand, splitting analysts on glut-vs-scarcity.", "examples": ["Meta plans a 'Meta Compute' cloud to resell excess AI capacity, sending semiconductor ETFs down 6%+ (TechCrunch, Jul 1)", "Azeem Azhar (Exponential View, Jul 6): >95% of Grace-Blackwell GPUs remain undeployed despite shipping since Dec 2024"], "spotted_at": "2026-07-06"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "AI agents start doing real, economically valuable work",
+      "detail": "Independent developments this week point to agents crossing from chat into autonomous execution of real-world tasks (freelance deliverables, physical lab science, robot manipulation), though most output still falls short of professional quality.",
+      "source_urls": ["https://safe.ai/blog/significant-increase-in-digital-labor-automation", "https://www.rdworldonline.com/openai-and-molecule-one-report-a-near-autonomous-ai-chemist-that-improved-a-stubborn-coupling-reaction/"],
+      "payload": {"thesis": "AI agents are moving from conversational assistance to autonomous execution of economically valuable real-world work across freelance labor, physical-science experimentation and robotics.", "examples": ["CAIS/Scale Remote Labor Index: best model completes 15.8% of real freelance projects at pro quality, ~2x prior best", "OpenAI + Molecule.one 'Maria' ran 10,080 real wet-lab reactions near-autonomously, lifting Chan-Lam yields 16.6%->25.2%"], "spotted_at": "2026-07-06"},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Dubai certifies world's first purpose-built eVTOL vertiport",
+      "detail": "The UAE GCAA certified Skyports' VDX vertiport near Dubai International Airport for eVTOL air-taxi operations; it will anchor Dubai's planned air-taxi network ahead of a launch expected before year-end.",
+      "source_urls": ["https://www.thenationalnews.com/news/uae/2026/07/07/dubais-air-taxis-primed-for-lift-off-after-approval-for-first-vertiport/", "https://verticalmag.com/press-releases/uae-gcaa-certifies-landmark-purpose-built-vertiport-in-dubai/amp/"],
+      "payload": {"candidate_area": "eVTOL / advanced air mobility", "detail": "GCAA certification of Skyports' VDX, a purpose-built commercial vertiport, as the hub of Dubai's air-taxi network (launch expected before year-end).", "source_url": "https://www.thenationalnews.com/news/uae/2026/07/07/dubais-air-taxis-primed-for-lift-off-after-approval-for-first-vertiport/"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "XAG — autonomous agricultural drone & farm-robotics platform",
+      "detail": "Entity reconciliation: the company behind this week's X Series launch; a leading agricultural-robotics/drone player and the first item activating the ag-robotics gap.",
+      "source_urls": ["https://www.chinadaily.com.cn/a/202607/07/WS6a4cf086a310986e2b463fec.html"],
+      "payload": {"name": "XAG", "org": "XAG (agricultural robotics & drones)", "type": "COMPANY", "why": "Entity reconciliation: maker of this week's X Series drone+dock+refill system; a leading agricultural-robotics/drone player and the first item activating the ag-robotics gap sub-theme.", "funding": "", "source_url": "https://www.chinadaily.com.cn/a/202607/07/WS6a4cf086a310986e2b463fec.html", "subtheme_ids": ["robotics__field_specialized_robotics__agricultural_robotics_drones"], "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Alsym Energy — non-lithium (sodium-ion) cell maker behind ESS Bridge",
+      "detail": "Entity reconciliation: Alsym's sodium-ion cells are the dependency powering ESS's new Bridge BESS; a notable non-lithium chemistry supplier targeting data-center/commercial storage.",
+      "source_urls": ["https://pv-magazine-usa.com/2026/07/08/ess-introduces-sodium-ion-battery-targeted-at-data-centers-and-other-commercial-users/"],
+      "payload": {"name": "Alsym Energy", "org": "Alsym Energy (non-lithium/sodium-ion cells)", "type": "STARTUP", "why": "Entity reconciliation: Alsym's sodium-ion cells are the dependency powering ESS's new Bridge BESS; a notable non-lithium chemistry supplier targeting data-center/commercial storage.", "funding": "", "source_url": "https://pv-magazine-usa.com/2026/07/08/ess-introduces-sodium-ion-battery-targeted-at-data-centers-and-other-commercial-users/", "subtheme_ids": ["energy__battery_cost_collapse_cell_chemistry__sodium_ion_at_scale"], "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "fusion",
+      "title": "Realta Fusion — magnetic-mirror fusion + direct energy conversion",
+      "detail": "Entity reconciliation: UW-Madison spinout (WHAM machine) that just demonstrated first-of-kind direct plasma-to-electricity conversion; a distinct mirror-confinement approach vs tokamak/inertial peers.",
+      "source_urls": ["https://www.prnewswire.com/news-releases/realta-fusion-becomes-first-commercial-fusion-company-to-convert-plasma-energy-into-electricity-302813632.html"],
+      "payload": {"name": "Realta Fusion", "org": "Realta Fusion (magnetic-mirror fusion)", "type": "STARTUP", "why": "Entity reconciliation: UW-Madison spinout (WHAM machine) that just demonstrated first-of-kind direct plasma-to-electricity conversion; a distinct mirror-confinement approach vs tokamak/inertial peers.", "funding": "", "source_url": "https://www.prnewswire.com/news-releases/realta-fusion-becomes-first-commercial-fusion-company-to-convert-plasma-energy-into-electricity-302813632.html", "subtheme_ids": ["energy__fusion_energy__alternative_confinement_direct_electricity"], "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Caribou Biosciences — allogeneic CRISPR-edited CAR-T developer",
+      "detail": "Entity reconciliation: developer of CB-011 (off-the-shelf, immune-cloaked anti-BCMA CAR-T); a lead player in the allogeneic/in-vivo cell-engineering gap theme.",
+      "source_urls": ["https://investor.cariboubio.com/news-releases/news-release-details/caribou-biosciences-reports-dose-escalation-durability-data-cb"],
+      "payload": {"name": "Caribou Biosciences", "org": "Caribou Biosciences (allogeneic CRISPR CAR-T)", "type": "COMPANY", "why": "Entity reconciliation: developer of CB-011 (off-the-shelf, immune-cloaked anti-BCMA CAR-T); a lead player in the allogeneic/in-vivo cell-engineering gap theme.", "funding": "", "source_url": "https://investor.cariboubio.com/news-releases/news-release-details/caribou-biosciences-reports-dose-escalation-durability-data-cb", "subtheme_ids": ["bio__engineered_cell_therapies__allogeneic_in_vivo_cell_engineering"], "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    }
+  ]
+}

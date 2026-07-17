@@ -1,0 +1,346 @@
+{
+  "week_ending": "2026-07-17",
+  "summary": "The open-weight model race dominated the week: Moonshot's Kimi K3 (2.8T-param MoE) and Mira Murati's Thinking Machines Inkling (975B) both landed, while ICML 2026 in Seoul gave all three Outstanding Paper awards to diffusion-model work led by 'The Flexibility Trap.' In bio, Doudna's lab used AI to design synthetic CRISPR nucleases with no natural counterpart (Science) and Intellia's lonvo-z posted the first Phase 3 in vivo CRISPR readout (87% HAE-attack reduction, NEJM). Physical-science milestones: Lazard's 19th LCOE+ report showed battery-storage costs RISING for the first time in years on tariffs, General Fusion became the first pure-play fusion company on Nasdaq, and NVIDIA's AI QEC decoder cut color-code logical error rates up to 347x. Trends cohered around video-native 'World Action Models' as the successor to VLAs, and a looming regulatory cliff for open-weight models; new voices include Anthropic interpretability lead Jack Lindsey, synthetic-cell pioneer Kate Adamala, and ICML awardee Sarah Ball.",
+  "highlights": [
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Moonshot AI releases Kimi K3, 2.8T-param open-weight MoE model",
+      "detail": "Moonshot AI released Kimi K3 on July 16, 2026, a 2.8-trillion-parameter open-weight MoE model (16 of 896 experts active, 1M-token context) using new Kimi Delta Attention and Attention Residuals; Moonshot claims ~2.5x better scaling efficiency than Kimi K2, with full weights to follow July 27.",
+      "source_urls": ["https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/", "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html"],
+      "payload": {"name": "Kimi K3", "description": "2.8T-parameter open-weight MoE LLM from Moonshot AI, among the largest open models released to date", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models", "ai__architecture_efficiency__moe_sparse_attention_long_context"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Thinking Machines ships Inkling, its first open-weight 975B model",
+      "detail": "Mira Murati's Thinking Machines Lab released Inkling on July 15, 2026: a 975B-param MoE (41B active) pretrained on 45T multimodal tokens, with weights on Hugging Face and fine-tuning via its Tinker platform; it reportedly matches Nemotron 3 Ultra on Terminal Bench 2.1 using ~1/3 the tokens.",
+      "source_urls": ["https://thinkingmachines.ai/news/introducing-inkling/"],
+      "payload": {"name": "Inkling", "description": "975B-param open-weight multimodal MoE model from Thinking Machines Lab", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Ring-Zero scales zero-RL reasoning training to 1 trillion parameters",
+      "detail": "Researchers from Ant Group, Renmin University, Tsinghua and Zhejiang (arXiv, July 14, 2026) trained Ring-2.5-1T-Zero, showing zero-RL (RLVR without human-annotated CoT) scales to 1T params and spontaneously yields self-verification, parallel reasoning, and 'context anxiety' compute-budget management.",
+      "source_urls": ["https://arxiv.org/abs/2607.12395"],
+      "payload": {"subtheme_ids": ["ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"], "venue": "", "new_category": false},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "ICML 2026 Outstanding Paper: token order hurts RL in diffusion LMs",
+      "detail": "'The Flexibility Trap' (Ni, Wang, Yue et al., Tsinghua/Alibaba) won an ICML 2026 Outstanding Paper Award for showing diffusion LMs' arbitrary-order generation skips high-uncertainty reasoning tokens during RL; its fix, JustGRPO, constrains RL to left-to-right order and reaches 89.1% on GSM8K.",
+      "source_urls": ["https://arxiv.org/abs/2601.15165", "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/", "https://github.com/LeapLabTHU/JustGRPO"],
+      "payload": {"subtheme_ids": ["ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play", "ai__architecture_efficiency__diffusion_language_models"], "venue": "ICML 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "diffusion_models",
+      "title": "Video diffusion models shown to be general-purpose vision learners",
+      "detail": "A July 2026 paper introduces GenCeption, reporting that a pretrained text-to-video diffusion backbone matches or beats specialized vision models on depth, pose and segmentation using 7-500x less training data.",
+      "source_urls": ["https://arxiv.org/abs/2607.09024"],
+      "payload": {"subtheme_ids": ["ai__multimodal_generative_media__video_generation", "ai__multimodal_generative_media__world_models_neural_simulation"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Hyundai to take full ownership of Boston Dynamics as SoftBank exits",
+      "detail": "Hyundai announced July 16, 2026 that SoftBank exercised a put option to sell its remaining ~9.65% stake in Boston Dynamics, moving the company to full Hyundai-affiliate ownership as Atlas humanoids head toward 2028 parts-sequencing work at Hyundai's Georgia Metaplant.",
+      "source_urls": ["https://www.koreaherald.com/article/10811183"],
+      "payload": {"field": "Boston Dynamics ownership", "new_value": "SoftBank exercised put on remaining ~9.65%; full ownership moving to Hyundai affiliates + Chairman Chung Euisun", "previous_value": "Hyundai affiliates ~90.35%, SoftBank ~9.65%", "subtheme_ids": ["robotics__humanoid_robots__industrial_commercial_humanoids"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Unitree IPO prospectus shows 60% margins ahead of STAR Market debut",
+      "detail": "Unitree's STAR Market prospectus (the SSE listing committee cleared it June 1 after a record 73-day review; CSRC approved the ~$618-619M raise July 3) discloses FY2025 core gross margin of 60.27%, revenue ~RMB1.699B (~$250M) and net profit RMB278M, driven by in-house quasi-direct-drive actuators; listing expected as early as late July 2026.",
+      "source_urls": ["https://www.techtimes.com/articles/320711/20260716/unitree-robotics-nears-shanghai-ipo-profitable-actuators-exposed-chinas-spy-law.htm", "https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html"],
+      "payload": {"field": "Unitree IPO status/financials", "new_value": "CSRC-approved ~$619M STAR Market IPO; FY2025 gross margin 60.27%, revenue ~$250M, net profit RMB278M", "previous_value": "IPO registration pending Shanghai Stock Exchange review", "subtheme_ids": ["robotics__humanoid_robots__industrial_commercial_humanoids"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "self_driving",
+      "title": "NHTSA presses AV makers on first-responder interference; meets Jul 31",
+      "detail": "NHTSA issued a July 8, 2026 directive to AV developers calling repeated interference with ambulances, firefighters and emergency scenes a 'functional insufficiency,' and will convene meetings with AV developers by July 31, 2026 to hear proposed solutions, following incidents where officers physically moved Waymo vehicles from active emergency scenes.",
+      "source_urls": ["https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-07/ADS-developers-letter-july-2026.pdf", "https://techcrunch.com/2026/07/08/feds-demand-autonomous-vehicle-companies-stop-interfering-with-first-responders/"],
+      "payload": {"subtheme_ids": ["ai__autonomy_embodiment_ai__self_driving_robotaxis"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Salesforce launches pay-per-resolution AI customer-service agent",
+      "detail": "Salesforce announced (June 25, 2026) its Agentforce Help Agent with outcome-based pricing (reported by trade press at a flat $2 only when the agent autonomously resolves a case; no charge on escalation), building on 4.3M inquiries handled and a claimed 70% autonomous resolution rate on help.salesforce.com.",
+      "source_urls": ["https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"],
+      "payload": {"name": "Agentforce Help Agent", "description": "Prepackaged autonomous customer-service agent with outcome-based ($2/resolution) pricing", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__customer_support_cx_automation"], "venue": "", "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "AI designs functional CRISPR nucleases not found in nature",
+      "detail": "Jennifer Doudna's team used AI structure-based design to reverse-engineer synthetic TnpB/Cas12-family nucleases that edit genes more efficiently than natural variants; published in Science on July 16, 2026 (Skopintsev et al.).",
+      "source_urls": ["https://www.nature.com/articles/d41586-026-02217-w"],
+      "payload": {"description": "AI-guided de novo design of synthetic CRISPR nucleases (TnpB variants) with no natural counterpart", "subtheme_ids": ["bio__computational_protein_biomolecule_design__generative_de_novo_design"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "CRISPR-Cas12a2 DNA-shredding enzyme selectively kills cancer cells",
+      "detail": "Two Nature papers show the nuclease Cas12a2 can be programmed to detect disease-linked RNA (e.g., mutant KRAS/TP53) and trigger DNA-shredding cell death, eliminating tumor cells in mouse models while sparing healthy cells; spotlighted in Nature's July 14, 2026 News & Views.",
+      "source_urls": ["https://www.nature.com/articles/s41586-026-10466-y", "https://www.nature.com/articles/d41586-026-02122-2"],
+      "payload": {"description": "Cas12a2 RNA-triggered DNA/chromatin shredding for selective elimination of mutation-bearing cells", "subtheme_ids": [], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "glp1",
+      "title": "Oral GLP-1 pill aleniglipron shows 11.3% weight loss in Ph2 (Nat Med)",
+      "detail": "Structure Therapeutics' aleniglipron, a non-peptide oral small-molecule GLP-1 receptor agonist, produced placebo-adjusted weight loss of 11.3% at 36 weeks in the peer-reviewed Phase 2 ACCESS trial (Nature Medicine); a separate higher-dose trial reported up to 16.3% in as-yet-unpublished topline data; Phase 3 slated for 2H 2026.",
+      "source_urls": ["https://www.nature.com/articles/s41591-026-04476-6", "https://ir.structuretx.com/news-releases/news-release-details/structure-therapeutics-reports-positive-topline-data-phase-2"],
+      "payload": {"name": "Structure Therapeutics", "description": "Oral small-molecule GLP-1 receptor agonist (aleniglipron/GSBR-1290) for obesity", "subtheme_ids": ["bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"], "venue": "ADA 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "bci",
+      "title": "Neuralink debuts transdural implant technique, skips dura removal",
+      "detail": "Neuralink performed its first transdural BCI implant, threading electrode threads through the intact dura with a thicker-needle robotic technique rather than removing it, in an ALS patient (a Vancouver, BC police sergeant; surgery performed in Toronto) who became the first Canadian ALS recipient and roughly the 26th Neuralink participant globally.",
+      "source_urls": ["https://www.cbc.ca/news/canada/british-columbia/vancouver-neuralink-patient-als-vpd-sergeant-9.7253579"],
+      "payload": {"subtheme_ids": ["bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"], "venue": "", "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "mRNA vaccines prime T cells via unexpected cDC2 cross-dressing route",
+      "detail": "WashU researchers show mRNA-LNP vaccines do not require cDC1 cells for CD8+ T-cell priming as long assumed; a redundant, interferon-dependent cDC2 'cross-dressing' pathway also drives strong anti-tumor T-cell responses (Nature), with implications for mRNA cancer-vaccine design.",
+      "source_urls": ["https://www.nature.com/articles/s41586-026-10353-6"],
+      "payload": {"subtheme_ids": ["bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"], "venue": "", "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "NVIDIA AI decoder cuts color-code QEC logical error rate up to 347x",
+      "detail": "NVIDIA's open-source Ising Decoder ColorCode 1 Fast, a ~2.9M-param 3D-CNN pre-decoder, cut logical error rates up to 347.7x and ran 7.3x faster than the Chromobius decoder at code distance 31, benchmarked on a DGX GB300 system.",
+      "source_urls": ["https://developer.nvidia.com/blog/nvidia-ising-decoding-cuts-color-code-logical-error-rates-by-over-300x/", "https://thequantuminsider.com/2026/07/15/nvidia-says-ai-decoder-achieved-up-to-347-x-cut-in-quantum-logical-error-rates/"],
+      "payload": {"name": "NVIDIA Ising Decoder ColorCode 1 Fast", "description": "Open-source AI pre-decoder that simplifies error syndromes for color-code QEC ahead of the Chromobius decoder", "subtheme_ids": ["quantum__error_correction_logical_qubits__real_time_decoding", "quantum__error_correction_logical_qubits__below_threshold_codes"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "EU launches EUR50M Q-PLANET pilot line for neutral-atom quantum chips",
+      "detail": "The Chips Joint Undertaking and Pasqal kicked off Q-PLANET on July 8-9, 2026: a EUR50M pilot production line with 28 partners across 11 EU states to industrialize neutral-atom quantum hardware (laser sources, atom chips, vapor cells) via open design kits, targeting TRL4-to-6.",
+      "source_urls": ["https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/"],
+      "payload": {"name": "Q-PLANET", "description": "Pasqal-coordinated EU Chips JU pilot manufacturing line for neutral-atom quantum chip components", "subtheme_ids": ["quantum__qubit_modality_race__neutral_atom_arrays"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Rocket Lab completes full-duration hot fire of Neutron's AVac engine",
+      "detail": "On July 13, 2026 Rocket Lab ran a ~5.5-minute full-duration static fire of the Archimedes Vacuum (AVac) second-stage engine at NASA Stennis, a key qualification milestone ahead of the partially-reusable Neutron rocket's targeted late-2026 debut.",
+      "source_urls": ["https://www.space.com/space-exploration/watch-archimedes-burn-rocket-lab-fires-up-engine-for-its-powerful-next-gen-neutron-launcher-video"],
+      "payload": {"name": "Rocket Lab Neutron AVac engine", "description": "Second-stage engine full-duration qualification hot fire ahead of Neutron debut", "subtheme_ids": ["space__reusable_launch__operational_partial_reuse_falcon_class"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Rocket Lab launches LOXSAT for cryogenic depot refueling demo",
+      "detail": "Rocket Lab targeted mid-July 2026 (around July 16) to launch an Electron carrying LOXSAT, a NASA/Eta Space cryogenic fluid-management satellite that will run 11 liquid-oxygen transfer demonstrations over 9 months to inform Eta's planned 2030 Cryo-Dock propellant depot.",
+      "source_urls": ["https://rocketlabcorp.com/missions/launches/loxsat/", "https://www.techtimes.com/articles/320566/20260715/rocket-labs-loxsat-mission-targets-thursday-fill-orbital-refueling-data-gap.htm"],
+      "payload": {"name": "LOXSAT", "description": "NASA Tipping Point-funded, Eta Space-built cryogenic LOX fluid-management demo on a Rocket Lab bus", "subtheme_ids": ["space__reusable_launch__booster_catch_orbital_refueling"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Lazard's 2026 LCOE+: storage costs reverse decline on Li-ion tariffs",
+      "detail": "Lazard's 19th annual LCOE+ report (July 13, 2026) found unsubsidized renewables still the cheapest new-build generation, but standalone battery-storage costs rose for the first time in years as tariffs and FEOC rules curtailed low-cost Chinese Li-ion access, while new-build gas LCOE hit a 15-year high.",
+      "source_urls": ["https://www.lazard.com/news-announcements/lazard-releases-2026-levelized-cost-of-energyplus-report-pr/"],
+      "payload": {"field": "standalone battery storage cost trend (LCOS)", "new_value": "rising in 2026, reversing prior-year decline, on Li-ion import tariffs/FEOC rules", "previous_value": "declining in 2025", "subtheme_ids": ["energy__battery_cost_collapse_cell_chemistry__li_ion_price_decline_lfp_dominance", "energy__renewable_generation_frontier__solar_deployment_lcoe_leadership"], "venue": "Lazard LCOE+ 2026", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Eos Energy's zinc LDES batteries picked for Golden Dome",
+      "detail": "Eos Energy announced July 15, 2026 a Department of War contract to deploy its non-flammable Z3 zinc-based long-duration battery (~91% domestic content) as an initial prototype supporting Golden Dome missile-defense power infrastructure.",
+      "source_urls": ["https://www.globenewswire.com/news-release/2026/07/15/3328154/0/en/Eos-Energy-Enterprises-Selected-to-Deliver-Mission-Ready-Power-for-Golden-Dome-for-America.html"],
+      "payload": {"name": "Eos Energy Z3", "description": "Non-flammable aqueous zinc-chemistry (Znyth) long-duration battery, ~91% domestic content, made in Pittsburgh", "subtheme_ids": ["energy__long_duration_grid_scale_storage__ldes_market_scale_up"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "fusion",
+      "title": "General Fusion becomes first fusion company listed on Nasdaq (GFUZ)",
+      "detail": "General Fusion began trading on Nasdaq as GFUZ on July 13, 2026 after closing its SPAC merger with Spring Valley Acquisition Corp. III, entering public markets with ~$150M cash to fund its Magnetized Target Fusion (LM26) program toward Lawson-criterion milestones targeted for 2028.",
+      "source_urls": ["https://generalfusion.com/post/general-fusion-becomes-first-publicly-listed-fusion-company/"],
+      "payload": {"name": "General Fusion", "description": "Vancouver-based magnetized target fusion company; first pure-play fusion company to go public (SPAC, ~$1B pro-forma equity value)", "subtheme_ids": ["energy__fusion_energy__fusion_commercialization_offtake"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Cerebras to scale wafer-scale AI inference to 200MW in Europe",
+      "detail": "Cerebras announced July 9, 2026 its first international data-center build-out: an initial European CS-3 wafer-scale site online by end of 2026, scaling to 200MW across France, Norway and Finland by end of 2027, partly serving OpenAI inference workloads.",
+      "source_urls": ["https://investors.cerebras.ai/news-releases/news-release-details/cerebras-systems-accelerates-european-expansion-200mw-ai-compute"],
+      "payload": {"name": "Cerebras Systems", "description": "Wafer-scale AI accelerator (CS-3/WSE-3) maker expanding European inference capacity", "subtheme_ids": ["hardware__novel_compute_architectures__wafer_scale_engines"], "venue": "", "new_category": false},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Jack Lindsey — Anthropic lead behind Claude's 'global workspace'",
+      "detail": "Anthropic interpretability researcher leading the 'Model Psych' team; co-led a July 6, 2026 paper finding a small internal workspace in Claude that functions like a neuroscience global workspace, drawing heavy press this week.",
+      "source_urls": ["https://www.anthropic.com/research/global-workspace", "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/"],
+      "payload": {"name": "Jack Lindsey", "role": "AI interpretability researcher; leads Anthropic's 'Model Psych' team", "focus": "Mechanistic interpretability of higher-order LLM cognition — introspection, persona vectors, global-workspace-style internal structure", "follow_url": "https://jlindsey15.github.io/", "twitter": "@Jack_W_Lindsey", "youtube": "", "newsletter": "", "notes": "Co-lead author of Anthropic's global-workspace interpretability work (Transformer Circuits, July 2026); PhD computational neuroscience, Columbia. Covered by MIT Tech Review, VentureBeat, Forbes.", "tags": ["AI safety", "interpretability", "Anthropic"]},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Kate Adamala — built the first synthetic cell with a full life cycle",
+      "detail": "University of Minnesota synthetic biologist who led 'SpudCell,' a synthetic cell built from non-living components that can feed, grow, replicate, divide and undergo selection; now launching Biotic, a public-benefit org to open the platform to other labs.",
+      "source_urls": ["https://twin-cities.umn.edu/news-events/worlds-first-synthetic-cell-complete-life-cycle-could-revolutionize-biological", "https://www.science.org/content/article/lab-created-spudcell-marks-major-step-toward-building-life-scratch"],
+      "payload": {"name": "Kate Adamala", "role": "Associate Professor of Genetics, Cell Biology & Development, University of Minnesota", "focus": "Bottom-up synthetic cell engineering; founder of Biotic (public-benefit synthetic-cell org)", "follow_url": "https://biotic.org/research/spudcell/", "twitter": "", "youtube": "", "newsletter": "", "notes": "Led the SpudCell team (36 purified enzymes, ~90kb genome across 9 plasmids, lipid membrane) — a bottom-up synthetic cell shown to feed, grow, replicate, divide and undergo selection. Coverage in Science, UMN.", "tags": ["synthetic biology", "synthetic cell", "biotech"]},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Sarah Ball — ICML 2026 award for AI-alignment dual-use critique",
+      "detail": "MCML/LMU Munich PhD researcher who won an ICML 2026 Outstanding Position Paper Award (with Phil Hackemann) for arguing that alignment tooling like RLHF and Constitutional AI is dual-use infrastructure governments can repurpose for censorship.",
+      "source_urls": ["https://mcml.ai/news/2026-07-08-ball-award-best-paper-icml/", "https://openreview.net/forum?id=dy2HwmOvFX"],
+      "payload": {"name": "Sarah Ball", "role": "PhD researcher, Munich Center for Machine Learning (MCML) / LMU Munich", "focus": "AI alignment dual-use risk and AI policy", "follow_url": "https://s-ball-10.github.io/", "twitter": "", "youtube": "", "newsletter": "", "notes": "Co-authored 'Position: The Alignment Community is Unintentionally Building a Censor's Toolkit'; named ICML 2026 Outstanding Position Paper.", "tags": ["AI alignment", "AI policy", "ICML 2026"]},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "World Action Models converge as the successor to VLAs",
+      "detail": "Multiple independent voices are converging on video-native 'World Action Models' as the successor to LLM-bolted-on VLA architectures for embodied AI, with fresh papers this week delivering on the thesis.",
+      "source_urls": ["https://icml.cc/virtual/2026/poster/67241", "https://arxiv.org/abs/2607.13017", "https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/"],
+      "payload": {"thesis": "Embodied AI is converging on video-native World Action Models (WAMs) as the successor to Vision-Language-Action models bolted onto LLMs.", "examples": ["Jim Fan (NVIDIA) argues VLAs are brittle because they bolt actions onto LLMs, pushing World Action Models on video world models", "Sherry Yang (NYU/DeepMind) ICML 2026 position paper on world models as an intermediary between agents and the real world", "Yann LeCun's AMI venture is an explicit world-models-over-LLM-scaling bet", "In-window: FlowWAM (arXiv, July 14 2026) trending on alphaXiv"], "spotted_at": "2026-07-14"},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Open-weight models face a near-term regulatory cliff",
+      "detail": "Interconnects' Nathan Lambert argues open-weight AI faces its most serious regulatory threat yet, pointing to reported US policy discussions that could restrict or delay frontier-capable open models; the same 'closing window' theme surfaced on the Sharp China podcast.",
+      "source_urls": ["https://www.interconnects.ai/p/6-months-to-live-for-open-models"],
+      "payload": {"thesis": "Open-weight AI models face the most serious policy threat to date: reported US discussions could restrict or indefinitely delay frontier-capability open models, conflating anti-distillation fears with frontier-capability fears.", "examples": ["Nathan Lambert (Interconnects, July 12, 2026), '6 months to live for open models'", "Sharp China podcast (Andrew Sharp & Bill Bishop, on Stratechery's network), July 2026: 'Closing Window for Open Source AI?'"], "spotted_at": "2026-07-12"},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Airhive-Carbyon deal signals a DAC industry consolidation phase",
+      "detail": "London DAC startup Airhive acquired Dutch rival Carbyon on July 14, 2026, forming one of Europe's largest integrated direct-air-capture companies as financing pressure pushes carbon removal from scattered R&D toward consolidation and scale-up.",
+      "source_urls": ["https://www.bloomberg.com/news/articles/2026-07-14/london-startup-acquires-dutch-competitor-in-carbon-capture-deal"],
+      "payload": {"candidate_area": "Climate tech beyond batteries — direct air capture", "detail": "Airhive (London) acquired Carbyon (Netherlands) to form one of Europe's biggest integrated DAC companies, a sign the sector is shifting from dispersed pilots to shakeout/scale-up amid high ($400-600/ton) costs.", "source_url": "https://www.bloomberg.com/news/articles/2026-07-14/london-startup-acquires-dutch-competitor-in-carbon-capture-deal"},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "2D topological crystalline insulator realized; room-temp projected",
+      "detail": "Physicists at Jyvaskyla and Aalto fabricated the first real 2D topological crystalline insulator predicted over a decade ago — a two-layer tin-telluride film on niobium diselenide whose band gap implies its conducting edge states should remain stable at room temperature (the STM measurements were made at low temperature).",
+      "source_urls": ["https://www.sciencedaily.com/releases/2026/07/260711010123.htm"],
+      "payload": {"candidate_area": "Novel / quantum materials", "detail": "A two-layer SnTe film on NbSe2 produced a 2D topological crystalline insulator with strain-controllable edge states; its band gap implies room-temperature stability (measurements were at low temperature), a path toward room-temperature quantum electronics.", "source_url": "https://www.sciencedaily.com/releases/2026/07/260711010123.htm"},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Derek Lowe: sickle-cell gene therapy uptake far below targets",
+      "detail": "In the Pipeline's Derek Lowe reports Bluebird Bio treated only ~100 sickle-cell patients last year despite three approved gene therapies (now claiming a path to 1,000/year by 2030) while Vertex's Casgevy treated just 64 — manufacturing, patient-finding and hospital capacity, not science, are the bottleneck.",
+      "source_urls": ["https://www.science.org/content/blog-post/battle-sickle-cell"],
+      "payload": {"subtheme_ids": ["bio__genetic_medicine_in_vivo_next_gen_editing__ex_vivo_edited_cell_therapies"], "venue": "", "new_category": false, "notes": "Published July 15, 2026; real-world uptake gap for approved gene therapies driven by cell-collection/manufacturing/hospital-capacity constraints. (Bluebird bio reportedly rebranded Genetix Biotherapeutics in 2025.)"},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "transformers_llms",
+      "title": "Moonshot AI — frontier open-weight LLM lab behind Kimi K3",
+      "detail": "Beijing-based Moonshot AI (Alibaba/Tencent-backed) has become a leading open-weight frontier lab; its Kimi K3 (2.8T MoE) is among the largest open models released. Added via entity reconciliation to track the lab itself, not just the model.",
+      "source_urls": ["https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html"],
+      "payload": {"name": "Moonshot AI", "description": "Chinese frontier lab shipping the Kimi open-weight model family (K2, K3)", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "transformers_llms",
+      "title": "Thinking Machines Lab — Murati's lab shipping open weights + Tinker",
+      "detail": "Founded by ex-OpenAI CTO Mira Murati, Thinking Machines Lab released its first open-weight model, Inkling (975B), and the Tinker fine-tuning platform in July 2026. Added via entity reconciliation as an under-tracked frontier player.",
+      "source_urls": ["https://thinkingmachines.ai/news/introducing-inkling/"],
+      "payload": {"name": "Thinking Machines Lab", "description": "Frontier lab founded by Mira Murati; open-weight models (Inkling) + Tinker fine-tuning platform", "subtheme_ids": ["ai__frontier_platforms_applied_ai_economics__open_weight_models"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Eos Energy Enterprises — US zinc long-duration battery maker (LDES)",
+      "detail": "Nasdaq-listed Pittsburgh maker of non-flammable aqueous-zinc (Znyth) long-duration storage; its Golden Dome prototype contract makes it a domestic non-lithium LDES player. Added via entity reconciliation to fill the LDES-market gap with a tracked company.",
+      "source_urls": ["https://www.globenewswire.com/news-release/2026/07/15/3328154/0/en/Eos-Energy-Enterprises-Selected-to-Deliver-Mission-Ready-Power-for-Golden-Dome-for-America.html"],
+      "payload": {"name": "Eos Energy Enterprises", "description": "US aqueous zinc-chemistry long-duration battery manufacturer (Znyth/Z3), ~91% domestic content", "subtheme_ids": ["energy__long_duration_grid_scale_storage__ldes_market_scale_up"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Eta Space — cryogenic propellant-depot startup behind LOXSAT",
+      "detail": "Florida startup building cryogenic fluid-management technology; its NASA Tipping Point-funded LOXSAT demo (launched on Rocket Lab) runs 11 liquid-oxygen transfer tests to inform a planned 2030 Cryo-Dock orbital propellant depot. Added via entity reconciliation to track the orbital-refueling gap.",
+      "source_urls": ["https://rocketlabcorp.com/missions/launches/loxsat/"],
+      "payload": {"name": "Eta Space", "description": "Cryogenic fluid-management / orbital propellant-depot startup (LOXSAT, Cryo-Dock)", "subtheme_ids": ["space__reusable_launch__booster_catch_orbital_refueling"], "venue": "", "new_category": false},
+      "confidence": "high",
+      "backfill": false
+    }
+  ]
+}

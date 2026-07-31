@@ -1,0 +1,226 @@
+{
+  "week_ending": "2026-07-31",
+  "summary": "Big moves in AI infrastructure and safety this week: the Model Context Protocol shipped its largest revision (stateless core, MRTR, RFC 9207 auth) and Anthropic's Claude Opus 5 posted new coding/agentic SOTA, even as a Princeton/AISI/Stanford study showed frontier agents still fail at open-ended research judgment and a US push to restrict open-weight models gained steam. Physical sciences delivered: IBM/U Chicago claimed verifiable quantum advantage on logical circuits, Starship Flight 13 deployed the first Starlink V3 sats and survived reentry, LONGi hit a 35.5% tandem-cell record, and two gap sub-themes flipped active (iron-air storage via Ore Energy's 1 GWh deal; co-packaged optics via a silicon-photonics mass-production inflection). Bio saw an experiment-guided AlphaFold3 for structural ensembles, a CRISPR RNA-editing immuno-oncology result, and Moderna's mRNA-1010 flu vaccine heading to an Aug 5 FDA decision. New voice: Sayash Kapoor (Princeton, 'AI Snake Oil'); broad-scan adjacents surged in DAC, geothermal, and SMRs.",
+  "highlights": [
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "MCP ships 2026-07-28 spec: stateless core, MRTR, auth hardening",
+      "detail": "The Model Context Protocol's biggest revision to date went live July 28, 2026, replacing the stateful session model with a stateless request/response core, adding Multi Round-Trip Requests, header-based routing, cacheable list results, and RFC 9207 auth hardening; all Tier 1 SDKs (TS, Python, Go, C#) updated same day.",
+      "source_urls": ["https://blog.modelcontextprotocol.io/posts/2026-07-28/"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Anthropic launches Claude Opus 5, new SOTA on coding/agentic evals",
+      "detail": "Released July 24, 2026, Opus 5 tops Frontier-Bench, CursorBench, ARC-AGI-3 and OSWorld 2.0 at roughly half Fable 5's cost, with a 1M-token context and 'xhigh' reasoning effort; Anthropic also reports it as its most aligned model to date.",
+      "source_urls": ["https://www.anthropic.com/news/claude-opus-5"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "Agility Robotics advances SPAC listing, opens Fremont Physical-AI hub",
+      "detail": "Agility Robotics' merger with Churchill Capital Corp XI (pre-money ~$2.5B) is progressing toward a 2026 public listing; the company opened a 60,000 sq ft Fremont Physical AI hub, and Digit has logged 65,000+ operating hours across nine customer sites with $300M+ in multi-year orders.",
+      "source_urls": ["https://www.globenewswire.com/news-release/2026/07/28/3333986/0/en/Humanoid-Global-Provides-Update-on-Agility-Robotics-Public-Listing-Opens-Silicon-Valley-AI-Hub-to-Scale-Digit-Deployments.html"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "IIHS: Waymo driverless crash rate 68% lower than human drivers",
+      "detail": "A new IIHS study (published July 23, 2026) comparing 50M driverless miles to 222B human miles across Phoenix, SF, LA and Austin found Waymo's crash-involvement rate 68% lower overall (85% lower for single-vehicle crashes, 81% lower for injury crashes), while flagging federal crash-reporting data is not yet adequate for monitoring large-scale AV expansion.",
+      "source_urls": ["https://www.iihs.org/news/detail/waymos-driverless-cars-crash-less-often-than-people"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "FCC adds foreign humanoid/quadruped robots to import Covered List",
+      "detail": "On July 28, 2026 the FCC added foreign-produced advanced robotic devices (humanoids and quadrupeds) and connected power inverters to its Covered List, blocking equipment authorization for new imports over supply-chain/cybersecurity risk; a Department of War national-security review can grant conditional approval.",
+      "source_urls": ["https://www.fcc.gov/document/fcc-adds-foreign-produced-power-inverters-and-robots-covered-list-0"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "CRISPR RNA-editing tool restores MHC-I, boosts immunotherapy in prostate cancer",
+      "detail": "A CRISPR/dCas13-based 3'UTR engineering system reversed SPSB1-driven MHC-I loss in prostate tumors, restoring CD8 T-cell infiltration and sensitizing tumors to checkpoint therapy in mice; published in Nature Biomedical Engineering and covered the week of July 26, 2026.",
+      "source_urls": ["https://www.nature.com/articles/s41551-026-01720-9", "https://www.sciencedaily.com/releases/2026/07/260726015250.htm"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "China's Neuracle performs first commercial invasive BCI implant",
+      "detail": "Neuracle Technology implanted its NMPA-approved NEO epidural BCI in a paralyzed patient at Huashan Hospital on July 13, 2026, giving him robotic-glove control via an epidural electrode array.",
+      "source_urls": ["https://www.scmp.com/tech/big-tech/article/3360684/china-completes-worlds-first-commercial-brain-computer-interface-implant"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "mRNA melanoma vaccine sustains 49% recurrence-risk cut at 5-year mark",
+      "detail": "Five-year follow-up of KEYNOTE-942 showed intismeran autogene (mRNA-4157/V940) plus pembrolizumab maintained a 49% reduction in recurrence/death risk versus pembrolizumab alone in resected high-risk melanoma; published in Journal of Clinical Oncology.",
+      "source_urls": ["https://ascopubs.org/doi/10.1200/JCO-26-00835"],
+      "payload": {"venue": "ASCO 2026", "new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "First mRNA flu vaccine (Moderna mRNA-1010) awaits FDA decision Aug 5",
+      "detail": "FDA's VRBPAC voted 9-0 (adults 50-64 and 65+) that Moderna's mRNA-1010 seasonal flu vaccine benefits outweigh risks; the PDUFA date is August 5, 2026, which would make it the first licensed mRNA seasonal flu vaccine in the US.",
+      "source_urls": ["https://www.biopharmadive.com/news/moderna-mflusiva-mrna-flu-vaccine-fda-committee-vote/823275/"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "Experiment-guided AlphaFold3 resolves protein structural ensembles",
+      "detail": "ISTA researchers extended AlphaFold3 to be guided by NMR, X-ray, and cryo-EM data simultaneously, overcoming its single-conformation limitation and producing measurement-consistent protein structural ensembles; published in Nature Biotechnology and highlighted July 27, 2026.",
+      "source_urls": ["https://www.nature.com/articles/s41587-026-03166-5", "https://aihub.org/2026/07/27/towards-experiment-guided-alphafold/"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "IBM & U Chicago claim verifiable quantum advantage on logical circuits",
+      "detail": "IBM and University of Chicago researchers ran thousands of logical two-qubit operations across error-corrected logical qubits, completing a task claimed infeasible for classical simulation while providing a verifiability criterion combining hardness and result-checking.",
+      "source_urls": ["https://newsroom.ibm.com/2026-07-30-ibm-and-the-university-of-chicago-demonstrate-quantum-advantage,-establishing-trusted-quantum-computation-on-logical-circuits", "https://arxiv.org/abs/2607.25941"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Starship Flight 13 deploys first Starlink V3 sats, upper stage survives reentry",
+      "detail": "SpaceX's 13th Starship test flight (late July 2026) deployed Starlink V3 satellites and returned an intact upper stage after reentry, yielding heat-shield performance data under elevated dynamic pressure.",
+      "source_urls": ["https://phys.org/news/2026-07-lucky-starship-deploys-starlink-satellites.html", "https://www.theregister.com/science/2026/07/27/spacex-just-about-nails-starship-test-flight-13/"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "LONGi sets 35.5% efficiency record for silicon-perovskite tandem cell",
+      "detail": "LONGi's crystalline silicon-perovskite tandem cell hit an ESTI-certified 35.5% conversion efficiency, announced July 14, 2026, up from 35.2% two months earlier, edging toward the tandem theoretical limit.",
+      "source_urls": ["https://www.pv-magazine.com/2026/07/15/longi-sets-new-world-record-with-35-5-efficient-perovskite-silicon-tandem-cell/"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Silicon photonics foundries hit mass-production inflection for co-packaged optics",
+      "detail": "TrendForce (July 30, 2026) reports UMC/SILITH shipped first mass-produced 12-inch silicon photonics wafers and TSMC's COUPE platform entered production, scaling co-packaged optics to relieve interconnect bandwidth limits for AI accelerators.",
+      "source_urls": ["https://www.trendforce.com/news/2026/07/30/news-mass-production-and-capacity-expansion-accelerate-reshaping-the-foundry-landscape-in-silicon-photonics/"],
+      "payload": {"new_category": false, "subtheme_ids": ["hardware__interconnect_networking__co_packaged_optics_silicon_photonics"]},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Ore Energy signs 1 GWh iron-air multi-day storage deal with Dutch utility",
+      "detail": "Ore Energy and Budget Thuis announced continental Europe's largest iron-air storage offtake, up to 1 GWh with a 400-MWh first phase for 2028 delivery, targeting multi-day discharge lithium-ion cannot economically match.",
+      "source_urls": ["https://www.energy-storage.news/multi-day-energy-storage-startup-ore-energy-signs-1gwh-iron-air-battery-deal-with-dutch-utility/"],
+      "payload": {"new_category": false, "subtheme_ids": ["energy__long_duration_grid_scale_storage__iron_air_metal_air_batteries"]},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "LLNL/Pacific Fusion Sirius pulser hits 3,000-shot reliability milestone",
+      "detail": "Lawrence Livermore National Lab and Pacific Fusion surpassed 3,000 shots on the Sirius impedance-matched Marx generator, advancing pulsed-power inertial-fusion driver technology under their CRADA.",
+      "source_urls": ["https://www.llnl.gov/article/54696/llnl-pacific-fusion-partnership-advances-next-generation-pulsed-power-technology"],
+      "payload": {"new_category": false, "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Study: frontier AI agents fail at genuine open-ended research judgment",
+      "detail": "Princeton/UK AISI/Stanford researchers gave frontier AI agents six days and thousands of dollars of compute to pursue two unpublished papers; the agents completed the engineering but were rejected by the original human authors for poor judgment, uncreative problem-solving, and weak backtracking.",
+      "source_urls": ["https://arxiv.org/abs/2607.27191"],
+      "payload": {"subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Sayash Kapoor — Princeton AI researcher gaining traction on agent evals",
+      "detail": "Co-author of 'AI Snake Oil' and of the new study on whether AI agents can conduct real open-ended research; his empirically-grounded critiques of agent capability claims are spreading fast this week.",
+      "source_urls": ["https://www.cs.princeton.edu/~sayashk/", "https://arxiv.org/abs/2607.27191"],
+      "payload": {"name": "Sayash Kapoor", "role": "PhD candidate, Princeton CITP; Mozilla Senior Fellow", "focus": "Empirical evaluation of AI agent capability claims, reproducibility, AI policy", "follow_url": "https://www.cs.princeton.edu/~sayashk/", "twitter": "https://x.com/sayashk", "youtube": null, "newsletter": "https://www.aisnakeoil.com/", "notes": "Co-author of 'AI Snake Oil'; this week's paper on AI agents' failure at open-ended research judgment went viral.", "tags": ["ai-evals", "ai-policy", "agents"], "subtheme_ids": []},
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Germany's largest direct air capture facility comes online in Berlin",
+      "detail": "Siemens and Ucaneo's electrochemical DAC plant, inspired by the human lung, began operating in Berlin, delivering CO2 at over 99.9% purity as DAC deployment activity accelerates.",
+      "source_urls": ["https://www.chemeurope.com/en/news/1189062/siemens-and-ucaneo-partner-to-scale-direct-air-capture.html"],
+      "payload": {"candidate_area": "direct air capture", "detail": "Electrochemical lung-inspired DAC process commissioned at Germany's largest DAC facility (inaugurated Jul 2, 2026).", "source_url": "https://www.chemeurope.com/en/news/1189062/siemens-and-ucaneo-partner-to-scale-direct-air-capture.html", "subtheme_ids": []},
+      "confidence": "low",
+      "backfill": true
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Next-gen geothermal starts undercutting nuclear on installed cost",
+      "detail": "Fervo's Cape Station Phase 2 is tracking toward roughly $5,500/kW installed while Quaise Energy closed a $134M Series B tranche for superhot-rock geothermal, signaling geothermal's cost trajectory closing in on advanced nuclear.",
+      "source_urls": ["https://oilprice.com/Alternative-Energy/Geothermal-Energy/Two-Geothermal-Bets-Are-Starting-to-Undercut-Nuclear-on-Cost.html"],
+      "payload": {"candidate_area": "geothermal energy", "detail": "Fervo and Quaise cost/funding milestones positioning advanced geothermal below nuclear installed cost.", "source_url": "https://oilprice.com/Alternative-Energy/Geothermal-Energy/Two-Geothermal-Bets-Are-Starting-to-Undercut-Nuclear-on-Cost.html", "subtheme_ids": []},
+      "confidence": "low",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "SMR nuclear stocks surge on industry momentum (Oklo, NuScale, X-Energy)",
+      "detail": "Shares in Oklo, NuScale, and X-Energy each jumped more than 10% on July 30 amid positive small-modular-reactor news, including Holtec's NRC-approved plan to build four SMRs at the Oyster Creek site.",
+      "source_urls": ["https://www.tipranks.com/news/oklo-smr-xe-why-are-nuclear-stocks-soaring-today-july-30-2026"],
+      "payload": {"candidate_area": "small modular reactors", "detail": "Nuclear/SMR momentum tied to regulatory and partnership milestones.", "source_url": "https://www.tipranks.com/news/oklo-smr-xe-why-are-nuclear-stocks-soaring-today-july-30-2026", "subtheme_ids": []},
+      "confidence": "low",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Ore Energy — iron-air multi-day storage startup (Delft spinout)",
+      "detail": "Dutch iron-air 'rust battery' startup targeting 24-100h multi-day discharge; just signed continental Europe's largest iron-air offtake (up to 1 GWh) with utility Budget Thuis, making it a notable player in the long-duration storage gap.",
+      "source_urls": ["https://www.energy-storage.news/multi-day-energy-storage-startup-ore-energy-signs-1gwh-iron-air-battery-deal-with-dutch-utility/", "https://ore.energy/"],
+      "payload": {"new_category": false, "subtheme_ids": ["energy__long_duration_grid_scale_storage__iron_air_metal_air_batteries"]},
+      "confidence": "medium",
+      "backfill": false
+    }
+  ]
+}

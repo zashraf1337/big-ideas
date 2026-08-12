@@ -1,0 +1,979 @@
+{
+  "week_ending": "2026-08-07",
+  "summary": "Heavy week. On AI/agents: OpenAI's internal Astra produced Lean-verified solutions to ten long-open math problems, Alibaba shipped the 2.4T-param Qwen3.8-Max, Meta entered the coding-agent race with Muse Code, and ACL/RSS best-paper results landed. We also caught up a real blind spot the tracker had missed: spec-driven / 'prompt-less' development (GitHub Spec Kit, Amazon Kiro, Tessl) is now a named 2026 movement, added as a curated sub-theme with watch-list players. Bio was eventful: FDA approved Moderna's mRNA flu shot (mFLUSIVA), CagriSema missed HbA1c non-inferiority vs tirzepatide, a second delayed child-death disclosure hit China's CRISPR/DMD trial, and Doudna's Aurora Therapeutics scrapped its lead program. Physical: CFS crossed $4B raised, ITER passed two-thirds of its core, Blue Origin traced the New Glenn explosion to a BE-4 valve, and Hot Chips previews Google's 8th-gen TPU and OpenAI's first in-house chip. Cross-cutting trend: frontier labs are racing to build their own silicon (Anthropic, Tesla/SpaceX Terafab, AMD/Taalas), and AI 'slop' is outpacing the gatekeeping meant to catch it.",
+  "highlights": [
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "OpenAI's Astra solves 10 open math problems with Lean-verified proofs",
+      "detail": "An internal Astra model produced Lean 4-verified solutions to ten math/CS problems unsolved for a decade or more (including the first explicit non-sofic group) for roughly $2,000 of inference compute; OpenAI published a 249-page report and machine-checkable certificates on GitHub Aug 1, 2026.",
+      "source_urls": [
+        "https://cdn.openai.com/pdf/ten-proofs-oai.pdf",
+        "https://github.com/openai/ten-proofs"
+      ],
+      "payload": {
+        "claim": "OpenAI's internal Astra model produced Lean 4-verified solutions to ten decade-plus-open math/CS problems for ~$2,000 of inference compute, with machine-checkable certificates published Aug 1, 2026.",
+        "source_url": "https://cdn.openai.com/pdf/ten-proofs-oai.pdf",
+        "subtheme_ids": [
+          "ai__reasoning_test_time_compute__formal_verification_provable_reasoning",
+          "ai__ai_for_science__autonomous_research_hypothesis_generation",
+          "ai__reasoning_test_time_compute__test_time_inference_compute_scaling"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "transformers_llms",
+      "title": "Alibaba launches Qwen3.8-Max, 2.4T-param MoE, open weights imminent",
+      "detail": "Released Aug 3, 2026, Qwen3.8-Max is a 2.4T-parameter MoE (95B active) with 1M-token context, priced well below GPT-5.6 ($2/$6 vs $5/$30 per M tokens, ~1/4 the cost); Alibaba says open weights plus a 27B sibling follow within a week.",
+      "source_urls": [
+        "https://qwen.ai/blog?id=qwen3.8",
+        "https://www.alibabacloud.com/blog/qwen3-8-max-a-new-bar-for-coding-and-cowork_603421"
+      ],
+      "payload": {
+        "claim": "Alibaba released Qwen3.8-Max (Aug 3, 2026), a 2.4T-param MoE (95B active) with 1M-token context at ~1/4 GPT-5.6 pricing ($2/$6 vs $5/$30 per M tokens), with open weights and a 27B sibling promised within a week.",
+        "source_url": "https://qwen.ai/blog?id=qwen3.8",
+        "subtheme_ids": [
+          "ai__architecture_efficiency__moe_sparse_attention_long_context",
+          "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Meta ships Muse Code, its first coding agent, with Muse Spark 1.2",
+      "detail": "Meta Superintelligence Labs released Muse Code (Aug 5, 2026), a terminal-based coding agent with persistent background sub-agents and a replay-exact event log, paired with the coding-tuned Muse Spark 1.2 model.",
+      "source_urls": [
+        "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
+      ],
+      "payload": {
+        "name": "Meta Muse Code + Muse Spark 1.2",
+        "description": "Meta's first coding agent: terminal-based, persistent async background sub-agents, replay-exact event log, paired with a coding-tuned model trained on whole-repo long-horizon tasks.",
+        "examples": [
+          "Muse Code CLI",
+          "Muse Spark 1.2 model"
+        ],
+        "source_url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__coding_agents"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "RSS 2026 finalist OAT enables anytime, coarse-to-fine robot actions",
+      "detail": "'Ordered Action Tokenization' (RSS 2026 Outstanding Paper finalist) tokenizes robot action chunks into a causally-ordered, prefix-decodable sequence so a VLA policy can act on the first few tokens for a fast coarse action or wait for a refined one; a companion paper (arXiv:2607.21670) validates it across three backbones and 60+ tasks.",
+      "source_urls": [
+        "https://roboticsconference.org/program/awards/",
+        "https://arxiv.org/abs/2602.04215",
+        "https://arxiv.org/abs/2607.21670"
+      ],
+      "payload": {
+        "name": "Ordered Action Tokenization (OAT)",
+        "description": "Prefix-decodable causally-ordered action tokens let a VLA policy trade latency for precision at inference; RSS 2026 Outstanding Paper finalist, validated on 3 policy backbones and 60+ tasks.",
+        "examples": [
+          "OAT (RSS 2026)"
+        ],
+        "source_url": "https://arxiv.org/abs/2602.04215",
+        "subtheme_ids": [
+          "ai__autonomy_embodiment_ai__vision_language_action_vla_models",
+          "robotics__robot_foundation_models__vision_language_action_policies"
+        ],
+        "venue": "RSS 2026"
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "self_driving",
+      "title": "Zoox to charge fares for driverless robotaxi rides, a US first",
+      "detail": "Amazon's Zoox announced Aug 5, 2026 it will charge for rides in Las Vegas from Aug 10 — the first paid US service for a purpose-built robotaxi with no steering wheel or pedals — priced 20-40% above UberX comfort under a temporary federal exemption; Uber app integration follows later in 2026.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/05/zoox-to-start-charging-for-robotaxi-rides-in-las-vegas/"
+      ],
+      "payload": {
+        "field": "Zoox commercialization",
+        "new_value": "Begins charging for driverless rides in Las Vegas Aug 10, 2026 — first paid US service for a purpose-built no-wheel robotaxi",
+        "previous_value": "Free/early-rider Las Vegas service only",
+        "source_url": "https://techcrunch.com/2026/08/05/zoox-to-start-charging-for-robotaxi-rides-in-las-vegas/",
+        "subtheme_ids": [
+          "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "humanoid_robotics",
+      "title": "BYD to debut 'Xiao Di,' a service humanoid, at dealer showrooms",
+      "detail": "BYD confirmed it will unveil its first humanoid, 'Xiao Di' (1.61m, 58.5kg, speaks six Chinese dialects plus six foreign languages), at its Zhengzhou Di Space in early August, planning 2-3 units per dealer showroom for greeting, vehicle demos and sales.",
+      "source_urls": [
+        "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+        "https://xpert.digital/en/the-humanoid-robot-xiao-di-by-byd/"
+      ],
+      "payload": {
+        "name": "BYD 'Xiao Di' service humanoid",
+        "description": "BYD's first humanoid robot for dealer showrooms (greeting, demos, sales), 2-3 units per showroom; signals automaker vertical entry into commercial humanoids.",
+        "examples": [
+          "Xiao Di"
+        ],
+        "source_url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/",
+        "subtheme_ids": [
+          "robotics__humanoid_robots__industrial_commercial_humanoids"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Microsoft's Agent Framework Harness reaches GA, governs agent fleets",
+      "detail": "Microsoft's Agent Framework Harness and Foundry Hosted Agents hit GA (reported Aug 3, 2026), shipping a supported runtime with planning, history persistence, approvals and OpenTelemetry on by default, plus GitHub Copilot SDK and Claude Agent SDK connectors so third-party agents run under one governance layer.",
+      "source_urls": [
+        "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+        "https://www.infoq.com/news/2026/08/agent-framework-harness-ga/"
+      ],
+      "payload": {
+        "field": "Microsoft Agent Framework Harness",
+        "new_value": "GA (Aug 2026): supported runtime with planning/history/approvals/OpenTelemetry, plus GitHub Copilot SDK & Claude Agent SDK connectors",
+        "previous_value": "Preview",
+        "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+          "ai__agents_developer_ecosystem__multi_agent_orchestration"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "transformers_llms",
+      "title": "Meta's GEM/Andromeda ad stack lifts clicks 8.3%, crosses $75B run-rate",
+      "detail": "On its Jul 29, 2026 Q2 call, Meta said new user-understanding models on its GEM generative-ads ranking model and Andromeda retrieval drove an 8.3% rise in Facebook ad clicks and 15.7% higher conversions, while Advantage+ automation crossed a $75B annual revenue run-rate.",
+      "source_urls": [
+        "https://www.digitalapplied.com/blog/meta-q2-2026-earnings-ad-strength-capex-selloff"
+      ],
+      "payload": {
+        "field": "AI advertising & recommendation (Meta GEM/Andromeda)",
+        "new_value": "GEM/Andromeda + new user-understanding models: +8.3% FB ad clicks, +15.7% conversions; Advantage+ >$75B run-rate (Q2 2026)",
+        "previous_value": "Not tracked",
+        "source_url": "https://www.digitalapplied.com/blog/meta-q2-2026-earnings-ad-strength-capex-selloff",
+        "subtheme_ids": [
+          "ai__frontier_platforms_applied_ai_economics__ai_advertising_recommendation"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "transformers_llms",
+      "title": "Yahoo's Claude-powered 'Scout' answer engine expands across products",
+      "detail": "Yahoo's AI answer engine Scout — Claude-based with a Bing grounding API — has grown from its Jan 27, 2026 beta into a personalized MyScout homepage and dedicated Sports/Finance answer products, positioning Yahoo as a challenger to Google AI Mode and Perplexity.",
+      "source_urls": [
+        "https://www.yahooinc.com/press/introducing-yahoo-scout-a-new-ai-answer-engine"
+      ],
+      "payload": {
+        "name": "Yahoo Scout (AI answer engine)",
+        "description": "Claude-powered answer engine with Bing grounding; MyScout personalized homepage plus Sports/Finance verticals; fills the AI-search/answer-engine category.",
+        "examples": [
+          "Yahoo Scout",
+          "MyScout"
+        ],
+        "source_url": "https://www.yahooinc.com/press/introducing-yahoo-scout-a-new-ai-answer-engine",
+        "subtheme_ids": [
+          "ai__frontier_platforms_applied_ai_economics__ai_search_answer_engines"
+        ],
+        "venue": ""
+      },
+      "confidence": "low",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Spec-driven development goes mainstream via GitHub Spec Kit",
+      "detail": "Spec-driven development (SDD) — writing a structured spec as the source of truth before an agent generates code — became a named 2026 movement; GitHub's open-source Spec Kit now works with 30+ AI coding agents (CLI and IDE), with maturity levels spec-first -> spec-anchored -> spec-as-source.",
+      "source_urls": [
+        "https://github.com/github/spec-kit",
+        "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html"
+      ],
+      "payload": {
+        "name": "Spec-driven development (GitHub Spec Kit)",
+        "description": "A structured spec — not ad-hoc prompts — becomes the durable source of truth; agents compile/verify code from it. GitHub Spec Kit is the open-source reference toolkit, compatible with 30+ coding agents.",
+        "examples": [
+          "GitHub Spec Kit",
+          "Claude Code Skills as spec artifacts",
+          "Martin Fowler / Thoughtworks SDD writeups"
+        ],
+        "source_url": "https://github.com/github/spec-kit",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__spec_driven_prompt_less_development",
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Tessl bets on a spec-centric 'AI-native' development platform",
+      "detail": "Tessl, founded by Snyk founder Guy Podjarny, is building a spec-centric development platform and 'spec registry' where specifications are the primary artifact and code is generated/regenerated from them — a leading commercial bet on prompt-less, spec-driven engineering.",
+      "source_urls": [
+        "https://tessl.io/",
+        "https://tessl.io/blog/a-look-at-spec-kit-githubs-spec-driven-development-toolkit"
+      ],
+      "payload": {
+        "name": "Tessl",
+        "org": "Tessl",
+        "type": "STARTUP",
+        "why": "Commercial spec-centric / 'AI-native' dev platform and spec registry; a lead bet on the prompt-less/spec-driven paradigm from a proven founder.",
+        "funding": "Founded by Guy Podjarny (founder of Snyk). Prior funding ~$125M ($25M seed + $100M Series A, Nov 2024; Index Ventures, Accel, GV, boldstart), reported ~$500-750M valuation; no 2026 round found.",
+        "source_url": "https://tessl.io/",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__spec_driven_prompt_less_development"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "ai_dev_ecosystem",
+      "title": "Amazon Kiro is a spec-driven agentic IDE",
+      "detail": "Amazon's Kiro is an agentic IDE built around spec-driven development — it turns a prompt into requirements, design and task specs before implementing, positioning AWS in the prompt-less/spec-first tooling race alongside GitHub Spec Kit.",
+      "source_urls": [
+        "https://kiro.dev/",
+        "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html"
+      ],
+      "payload": {
+        "name": "Amazon Kiro",
+        "org": "Amazon Web Services",
+        "type": "STARTUP",
+        "why": "Spec-driven agentic IDE from AWS; generates requirements/design/task specs before code — a hyperscaler entrant in spec-first tooling.",
+        "funding": "Amazon (AWS) product",
+        "source_url": "https://kiro.dev/",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__spec_driven_prompt_less_development"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "The spec, not the prompt, is becoming the source of truth",
+      "detail": "Across GitHub, AWS, Tessl and Thoughtworks, a 'prompt-less' consensus is forming: durable structured specifications — not throwaway prompts — should be the artifact engineers maintain, with agents compiling code from them.",
+      "source_urls": [
+        "https://github.com/github/spec-kit",
+        "https://kiro.dev/",
+        "https://tessl.io/",
+        "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html"
+      ],
+      "payload": {
+        "thesis": "Spec-driven ('prompt-less') development is consolidating: a structured spec becomes the durable source of truth and agents compile/verify code from it, replacing ad-hoc prompting and 'vibe coding.'",
+        "examples": [
+          "GitHub Spec Kit (open-source, 30+ agents)",
+          "Amazon Kiro spec-driven IDE",
+          "Tessl spec-centric platform (Guy Podjarny)",
+          "Martin Fowler/Thoughtworks SDD maturity levels; OpenReview 'spec-first -> spec-anchored -> spec-as-source'"
+        ],
+        "spotted_at": "2026-08, multiple independent tool/vendor sources",
+        "subtheme_ids": [
+          "ai__agents_developer_ecosystem__spec_driven_prompt_less_development"
+        ]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "mrna_vaccines",
+      "title": "FDA approves Moderna's mRNA flu shot mFLUSIVA, first of its kind",
+      "detail": "FDA approved mRNA-1010 (mFLUSIVA) on Aug 5, 2026 for adults 50+: full approval for 50-64 and accelerated approval for 65+ pending a confirmatory trial. Phase 3 (FLUENT) showed 26.6% relative efficacy vs standard-dose flu vaccine, resolving the prior refuse-to-file setback.",
+      "source_urls": [
+        "https://www.biopharmadive.com/news/moderna-fda-approve-mflusiva-seasonal-influenza/826864/",
+        "https://www.biospace.com/fda/modernas-flu-shot-crosses-fda-finish-line-bouncing-back-from-regulatory-roadblock"
+      ],
+      "payload": {
+        "field": "regulatory_status",
+        "new_value": "FDA-approved Aug 5, 2026 (full approval 50-64; accelerated approval 65+ with confirmatory trial); first mRNA seasonal flu vaccine",
+        "previous_value": "FDA decision pending (~Aug 5, 2026) after earlier refuse-to-file",
+        "source_url": "https://www.biopharmadive.com/news/moderna-fda-approve-mflusiva-seasonal-influenza/826864/",
+        "subtheme_ids": [
+          "bio__rna_nucleic_acid_therapeutics__prophylactic_mrna_vaccines"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Second undisclosed child death surfaces in China CRISPR/DMD trial",
+      "detail": "HuidaGene disclosed on Aug 5, 2026 that a boy in its investigator-initiated HG302 CRISPR trial for Duchenne muscular dystrophy died in Aug 2025 from AAV-triggered ARDS/cytokine activation, revealed roughly 12 months later — the second delayed fatality disclosure from a China investigator-led gene-editing trial in two weeks.",
+      "source_urls": [
+        "https://www.statnews.com/2026/08/05/china-clinical-trial-fatality-safety-questions-investigator-led-studies/"
+      ],
+      "payload": {
+        "name": "HuidaGene HG302 DMD trial fatality disclosure",
+        "description": "Delayed disclosure of a 2025 death in an investigator-led CRISPR/DMD trial (AAV-triggered ARDS/cytokine), intensifying transparency/oversight scrutiny of China's investigator-initiated gene-editing studies.",
+        "examples": [
+          "HuidaGene HG302"
+        ],
+        "source_url": "https://www.statnews.com/2026/08/05/china-clinical-trial-fatality-safety-questions-investigator-led-studies/",
+        "subtheme_ids": [
+          "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Doudna's Aurora Therapeutics scraps bespoke CRISPR program 7 months in",
+      "detail": "Aurora Therapeutics, the Jennifer Doudna/Fyodor Urnov startup formed to scale personalized 'Baby KJ'-style CRISPR editing, abandoned its lead PKU program and cut staff on Aug 5, 2026, after being outpaced by Beam Therapeutics' rival base-editing program (BEAM-304).",
+      "source_urls": [
+        "https://www.biospace.com/business/bespoke-gene-editing-outfit-abandons-lead-program-cuts-several-employees"
+      ],
+      "payload": {
+        "field": "Aurora Therapeutics program_status",
+        "new_value": "Abandoned lead PKU gene-editing program and cut staff, Aug 5, 2026, citing competitive pressure",
+        "previous_value": "Launched Jan 2026 to scale personalized CRISPR editing, lead indication PKU",
+        "source_url": "https://www.biospace.com/business/bespoke-gene-editing-outfit-abandons-lead-program-cuts-several-employees",
+        "subtheme_ids": [
+          "bio__genetic_medicine_in_vivo_next_gen_editing__base_editing",
+          "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "crispr_therapies",
+      "title": "Intellia finds HLA variant tied to liver risk from CRISPR nex-z",
+      "detail": "Intellia's Q2 2026 update (Aug 6) reported that genomic analysis of 600+ trial patients found the highest liver transaminase elevations from its in vivo CRISPR ATTR therapy nex-z clustered in carriers of one HLA allele — a pharmacogenomic safety signal now shared with FDA as Phase 3 enrollment resumes.",
+      "source_urls": [
+        "https://www.biospace.com/press-releases/intellia-therapeutics-announces-second-quarter-2026-financial-results-and-business-updates"
+      ],
+      "payload": {
+        "name": "Intellia nex-z HLA pharmacogenomic signal",
+        "description": "HLA-allele carriers showed the highest liver enzyme elevations from in vivo CRISPR ATTR therapy nex-z; a pharmacogenomic safety signal shared with FDA as Phase 3 resumes.",
+        "examples": [
+          "nex-z (NTLA-2001)"
+        ],
+        "source_url": "https://www.biospace.com/press-releases/intellia-therapeutics-announces-second-quarter-2026-financial-results-and-business-updates",
+        "subtheme_ids": [
+          "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "CagriSema misses HbA1c non-inferiority vs tirzepatide in REIMAGINE 4",
+      "detail": "Novo Nordisk's Q2 2026 report (Aug 5) disclosed CagriSema matched tirzepatide on weight loss (15.2% vs 15.8%) but failed to prove HbA1c non-inferiority (1.9 vs 2.2 points) in the head-to-head REIMAGINE 4 type 2 diabetes trial.",
+      "source_urls": [
+        "https://www.biopharmadive.com/news/lilly-novo-earnings-2q-2026-wegovy-pill-foundayo-obesity/827027/"
+      ],
+      "payload": {
+        "field": "CagriSema REIMAGINE 4 topline",
+        "new_value": "Weight loss non-inferior (15.2% vs 15.8%) but HbA1c non-inferiority NOT met (1.9 vs 2.2 pts) vs tirzepatide, reported Aug 5, 2026",
+        "previous_value": "Head-to-head glycemic result vs tirzepatide unreported",
+        "source_url": "https://www.biopharmadive.com/news/lilly-novo-earnings-2q-2026-wegovy-pill-foundayo-obesity/827027/",
+        "subtheme_ids": [
+          "bio__metabolic_incretin_therapeutics__injectable_multi_agonists",
+          "bio__metabolic_incretin_therapeutics__indication_expansion"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "glp1",
+      "title": "Lilly-FDA fight over retatrutide's 'biologic' status nears a decision point",
+      "detail": "As Lilly nears a Q1 2027 filing, its dispute with FDA over whether the 41-amino-acid triple agonist retatrutide qualifies as a biologic (12-yr exclusivity) versus a drug (5-yr) came to a head, with billions in exclusivity value at stake.",
+      "source_urls": [
+        "https://www.biospace.com/fda/lilly-fda-retatrutide-biologic-dispute-comes-to-a-head-as-submission-nears"
+      ],
+      "payload": {
+        "name": "Retatrutide biologic-vs-drug exclusivity dispute",
+        "description": "Whether retatrutide (41-aa triple agonist) is regulated as a biologic (12-yr exclusivity) or a drug (5-yr); courts returned the 'analogous to a protein' question to FDA as Lilly's filing nears.",
+        "examples": [
+          "retatrutide"
+        ],
+        "source_url": "https://www.biospace.com/fda/lilly-fda-retatrutide-biologic-dispute-comes-to-a-head-as-submission-nears",
+        "subtheme_ids": [
+          "bio__metabolic_incretin_therapeutics__injectable_multi_agonists"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "glp1",
+      "title": "Lilly widens early access to unapproved obesity drug retatrutide",
+      "detail": "Eli Lilly confirmed Aug 3, 2026 that a defined group of severely obese patients with serious complications can now apply for pre-approval retatrutide access, expanding a program that began with a single compassionate-use grant after physician pressure.",
+      "source_urls": [
+        "https://www.ajmc.com/view/lilly-expands-retatrutide-access-amid-doctor-pushback"
+      ],
+      "payload": {
+        "field": "Retatrutide expanded access",
+        "new_value": "Defined multi-patient expanded/compassionate-access pathway opened Aug 3, 2026",
+        "previous_value": "Single-patient special access exemption only (April 2026)",
+        "source_url": "https://www.ajmc.com/view/lilly-expands-retatrutide-access-amid-doctor-pushback",
+        "subtheme_ids": [
+          "bio__metabolic_incretin_therapeutics__indication_expansion"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "alphafold_protein_design",
+      "title": "DeepMind restructures AlphaFold team amid Jumper move to Anthropic",
+      "detail": "Multiple outlets (Jul 29-30, 2026; Financial Times, Scientific American, others) reported Google DeepMind dissolved its dedicated AlphaFold team, reassigning researchers to Gemini and Isomorphic Labs, as Nobel laureate John Jumper and colleagues departed for Anthropic.",
+      "source_urls": [
+        "https://www.engadget.com/2225849/google-shuts-down-alphafold/"
+      ],
+      "payload": {
+        "field": "AlphaFold org structure",
+        "new_value": "Dedicated AlphaFold team dissolved at Google DeepMind; John Jumper + colleagues departed to Anthropic (Jul 29-30, 2026), per FT/Scientific American and others",
+        "previous_value": "Dedicated AlphaFold team at Google DeepMind led by John Jumper",
+        "source_url": "https://www.engadget.com/2225849/google-shuts-down-alphafold/",
+        "subtheme_ids": [
+          "bio__ai_x_bio_convergence__biological_foundation_models",
+          "bio__computational_protein_biomolecule_design__structure_prediction_complexes"
+        ]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "bci",
+      "title": "At-home speech BCI logs ~1.96M words over ~2 years (92% real-world)",
+      "detail": "A Nature Medicine study (BrainGate2, UC Davis) reported a paralyzed ALS participant used an intracortical speech BCI unsupervised at home for ~2 years, sending ~1.96M words at 92% self-rated real-world accuracy; a separate controlled lab test (125k-word vocabulary) reached >99% word accuracy.",
+      "source_urls": [
+        "https://www.nature.com/articles/s41591-026-04414-6"
+      ],
+      "payload": {
+        "claim": "Nature Medicine (BrainGate2/UC Davis): a paralyzed ALS participant used an intracortical speech BCI unsupervised at home ~2 years, ~1.96M words at 92% self-rated real-world accuracy (>99% in separate 125k-vocab lab testing).",
+        "source_url": "https://www.nature.com/articles/s41591-026-04414-6",
+        "subtheme_ids": [
+          "bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis",
+          "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "quantum_error_correction",
+      "title": "Caltech 'mitten codes': high-rate qLDPC family with surgery gadgets",
+      "detail": "Caltech researchers described 'mitten codes,' a qLDPC code family with a high (~20%) encoding rate and a fault-tolerant instruction set from reusable surgery gadgets, with a fast decoder and modeled neutral-atom/superconducting layouts (arXiv:2607.28795, Jul 30, 2026).",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.28795",
+        "https://postquantum.com/quantum-research/mitten-codes-qldpc-processor/"
+      ],
+      "payload": {
+        "name": "Mitten codes (qLDPC)",
+        "description": "High-rate (~20%) qLDPC code family with fault-tolerant surgery gadgets and a fast decoder (Caltech, arXiv:2607.28795, Jul 30 2026).",
+        "examples": [
+          "mitten codes"
+        ],
+        "source_url": "https://arxiv.org/abs/2607.28795",
+        "subtheme_ids": [
+          "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "Commonwealth Fusion Systems raises another $1B, total to $4B",
+      "detail": "CFS's new $1B equity round brings total capital raised to $4B and marks the first direct pension-fund and sovereign-wealth-fund investment in a fusion company, backing SPARC final assembly and the ARC plant in Virginia.",
+      "source_urls": [
+        "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/"
+      ],
+      "payload": {
+        "field": "CFS total capital raised",
+        "new_value": "$4 billion (new $1B round; first pension/SWF direct fusion investment)",
+        "previous_value": "$3 billion",
+        "source_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+        "subtheme_ids": [
+          "energy__fusion_energy__fusion_commercialization_offtake"
+        ]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "fusion",
+      "title": "ITER installs 6th of 9 tokamak sector modules, two-thirds of core in place",
+      "detail": "ITER lowered its sixth ~1,100-tonne vacuum-vessel sector module into the pit on Jul 28, ~six months ahead of schedule, bringing two-thirds of the torus core into place; final-module installation moved up from Dec 2027 to mid-2027.",
+      "source_urls": [
+        "https://www.iter.org/two-thirds-iter-tokamak-core-now-place"
+      ],
+      "payload": {
+        "field": "ITER tokamak assembly",
+        "new_value": "6 of 9 sector modules installed (two-thirds of core); final module retargeted to mid-2027",
+        "previous_value": "5 of 9; final module targeted Dec 2027",
+        "source_url": "https://www.iter.org/two-thirds-iter-tokamak-core-now-place",
+        "subtheme_ids": [
+          "energy__fusion_energy__magnetic_confinement_tokamak_scale_up"
+        ]
+      },
+      "confidence": "high",
+      "backfill": true
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Blue Origin pins New Glenn pad explosion on a BE-4 oxygen valve",
+      "detail": "CEO Dave Limp said inspections traced the May 28 New Glenn static-fire explosion to the main oxygen valve on a BE-4 engine; retrofit hardware will be ready by end of August, and Blue Origin still targets return-to-flight before year-end 2026.",
+      "source_urls": [
+        "https://spaceflightnow.com/2026/08/06/blue-origin-identifies-engine-issue-behind-new-glenn-explosion/"
+      ],
+      "payload": {
+        "field": "New Glenn return-to-flight",
+        "new_value": "Root cause = BE-4 main oxygen valve; retrofit ready end-August; RTF still targeted before year-end 2026",
+        "previous_value": "Cause under investigation since May 28 pad explosion",
+        "source_url": "https://spaceflightnow.com/2026/08/06/blue-origin-identifies-engine-issue-behind-new-glenn-explosion/",
+        "subtheme_ids": [
+          "space__reusable_launch__operational_partial_reuse_falcon_class"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "reusable_rockets",
+      "title": "SpaceX says Starship heat-shield tile problem is now 'solved'",
+      "detail": "On an Aug 4 investor call, Elon Musk said Starship's ~18,000-tile heat shield problem is now solved based on Flight 13 tile-retention data, calling it the biggest technical obstacle cleared toward rapid reuse. FLAG: single trade source; frame as an unverified company claim.",
+      "source_urls": [
+        "https://www.teslarati.com/spacex-starship-solved-biggest-challenge-elon-musk/"
+      ],
+      "payload": {
+        "field": "Starship heat-shield status (company claim)",
+        "new_value": "Musk (Aug 4, 2026) says tile problem 'solved' per Flight 13 data — company claim, not independently verified",
+        "previous_value": "Tile detachment an open risk to rapid reuse",
+        "source_url": "https://www.teslarati.com/spacex-starship-solved-biggest-challenge-elon-musk/",
+        "subtheme_ids": [
+          "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+        ]
+      },
+      "confidence": "low",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Rocket Lab wins $397M Space Force deal, Neutron's first defense mission",
+      "detail": "The US Space Force's SB-AMTI award gives Rocket Lab's still-unflown, partially reusable Neutron rocket its first publicly confirmed national-security customer, with Rocket Lab building, launching and operating a constellation of AI-processing tracking satellites under a pre-2028 deadline.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/08/04/3338977/0/en/rocket-lab-awarded-397-million-contract-to-build-and-launch-flatellites-for-u-s-space-force-s-space-based-airborne-moving-target-indicator-program.html"
+      ],
+      "payload": {
+        "claim": "US Space Force SB-AMTI awarded Rocket Lab $397M to build/launch/operate a Neutron-launched tracking-satellite constellation — Neutron's first national-security customer, pre-2028 deadline.",
+        "source_url": "https://www.globenewswire.com/news-release/2026/08/04/3338977/0/en/rocket-lab-awarded-397-million-contract-to-build-and-launch-flatellites-for-u-s-space-force-s-space-based-airborne-moving-target-indicator-program.html",
+        "subtheme_ids": [
+          "space__reusable_launch__operational_partial_reuse_falcon_class",
+          "space__satellite_mega_constellations_connectivity__mega_constellation_deployment"
+        ],
+        "venue": ""
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_PERSON",
+      "breakthrough_id": "reusable_rockets",
+      "title": "Varda adds biopharma veteran Mikael Dolsten to its board",
+      "detail": "Varda Space Industries named biopharma R&D leader Mikael Dolsten (ex-Pfizer) to its board as it works toward manufacturing pharmaceuticals in orbit — a credibility signal for the emerging in-space drug-manufacturing sector.",
+      "source_urls": [
+        "https://www.biospace.com/press-releases/varda-announces-biopharma-leader-mikael-dolsten-will-join-board-as-space-based-pharmaceutical-manufacturing-accelerates"
+      ],
+      "payload": {
+        "name": "Mikael Dolsten",
+        "role": "Board director, Varda Space Industries (former Pfizer Chief Scientific Officer)",
+        "affiliation": "Varda Space Industries",
+        "org_type": "BUSINESS",
+        "prizes": [],
+        "source_url": "https://www.biospace.com/press-releases/varda-announces-biopharma-leader-mikael-dolsten-will-join-board-as-space-based-pharmaceutical-manufacturing-accelerates",
+        "subtheme_ids": [
+          "space__in_space_manufacturing_orbital_economy__microgravity_pharma_manufacturing"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "UPDATED_FACT",
+      "breakthrough_id": "renewables_batteries",
+      "title": "Samsung SDI's US LFP cell line undergoes mass-production validation, output starts October",
+      "detail": "Samsung SDI says its US prismatic LFP cell line for stationary storage is in mass-production quality validation, with cell output starting October 2026; FEOC rules barring Chinese-made cells from US tax credits are pushing Korean makers to build non-Chinese LFP supply amid AI-datacenter battery demand.",
+      "source_urls": [
+        "https://www.energy-storage.news/samsung-sdi-on-track-with-us-lfp-cell-production-expects-demand-to-outstrip-production/"
+      ],
+      "payload": {
+        "field": "Samsung SDI US LFP production",
+        "new_value": "Mass-production validation underway; cell output begins October 2026, SBB 2.0 deliveries by year-end",
+        "previous_value": "US LFP/BESS line announced without confirmed start date",
+        "source_url": "https://www.energy-storage.news/samsung-sdi-on-track-with-us-lfp-cell-production-expects-demand-to-outstrip-production/",
+        "subtheme_ids": [
+          "energy__battery_cost_collapse_cell_chemistry__li_ion_price_decline_lfp_dominance"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_SUB_IDEA",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Samsung previews zHBM: HBM stacked directly atop the accelerator die",
+      "detail": "At FMS 2026, Samsung unveiled zHBM and zNAND-O concept memory that vertically stack HBM directly above the AI accelerator (not beside it), plus a 400+ layer V10 NAND; Samsung projects zHBM could deliver ~8x performance and >10x density of HBM5 via wafer-bonding.",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure"
+      ],
+      "payload": {
+        "name": "Samsung zHBM (3D-stacked memory)",
+        "description": "Concept memory that stacks HBM directly atop the AI accelerator via wafer-bonding; projected ~8x perf / >10x density vs HBM5, targeting the memory-bandwidth wall.",
+        "examples": [
+          "zHBM",
+          "zNAND-O"
+        ],
+        "source_url": "https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure",
+        "subtheme_ids": [
+          "hardware__memory_advanced_packaging__hbm_the_memory_wall"
+        ],
+        "venue": "FMS 2026"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Hot Chips 2026 program: Google's 8th-gen TPU and OpenAI's first chip talk",
+      "detail": "The Hot Chips 2026 (Aug 24-25, Stanford) advance program lists Google disclosing its 8th-gen TPU family as separate training vs serving chips, OpenAI's first public in-house-silicon talk, and deep-dives on AMD MI400, Meta's custom silicon and Microsoft MAIA 200. FLAG: verify against the published program.",
+      "source_urls": [
+        "https://hotchips.org/"
+      ],
+      "payload": {
+        "claim": "Hot Chips 2026 advance program lists Google's 8th-gen TPU (split training/serving), OpenAI's first in-house silicon talk, AMD MI400, Meta custom silicon and Microsoft MAIA 200 — verify against program.",
+        "source_url": "https://hotchips.org/",
+        "subtheme_ids": [
+          "hardware__ai_accelerators__hyperscaler_custom_silicon",
+          "hardware__ai_accelerators__merchant_training_inference_gpus"
+        ],
+        "venue": "Hot Chips 2026"
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "Frontier AI players are racing to build their own silicon",
+      "detail": "Within days, Anthropic (chip-design team), Tesla/SpaceX ($16.8B 'Terafab' factory) and AMD (Taalas acquisition) each moved to cut dependence on merchant GPUs, following OpenAI's Broadcom chip and Google's TPUs.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
+        "https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/",
+        "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344"
+      ],
+      "payload": {
+        "thesis": "Frontier AI labs and hyperscalers are vertically integrating custom silicon design/fabrication, treating chip supply as a strategic bottleneck rather than buying merchant GPUs.",
+        "examples": [
+          "Anthropic building a custom-silicon/chip-design team",
+          "Tesla & SpaceX $16.8B 'Terafab' factory in Texas",
+          "AMD acquires Taalas to 'etch models into silicon' for inference"
+        ],
+        "spotted_at": "2026-08-04 to 2026-08-06",
+        "subtheme_ids": [
+          "hardware__ai_accelerators__hyperscaler_custom_silicon"
+        ]
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "TRENDING_IDEA",
+      "breakthrough_id": null,
+      "title": "AI 'slop' is outpacing the gatekeeping meant to catch it",
+      "detail": "Several independent reports show gamed AI benchmarks and AI-generated ('slop') vulnerability/CVE reports slipping past ML leaderboards and CVE databases faster than institutions adapt.",
+      "source_urls": [
+        "https://arxiv.org/abs/2602.16763",
+        "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+        "https://cacm.acm.org/blogcacm/goodharts-law-comes-for-every-benchmark-you-trust/"
+      ],
+      "payload": {
+        "thesis": "AI-generated content (gamed benchmarks, junk CVE/vulnerability reports) is infiltrating the institutions meant to catch it — ML leaderboards and CVE databases — faster than those gatekeepers adapt.",
+        "examples": [
+          "Benchmark-saturation study (arXiv 2602.16763)",
+          "JFrog: LLM-generated SQLite CVE submissions",
+          "ACM: 'Goodhart's Law comes for every benchmark'"
+        ],
+        "spotted_at": "2026-07-31 to 2026-08-04 (HN front page)"
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "Systematic study finds AI benchmark saturation across leaderboards",
+      "detail": "'When AI Benchmarks Plateau' argues many widely-cited AI benchmarks are saturating, undermining claimed SOTA progress; it re-surged to Hacker News' front page (103 pts) this week.",
+      "source_urls": [
+        "https://arxiv.org/abs/2602.16763"
+      ],
+      "payload": {
+        "claim": "'When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation' finds widely-cited AI benchmarks are systematically saturating, making reported SOTA gains less meaningful.",
+        "source_url": "https://arxiv.org/abs/2602.16763",
+        "subtheme_ids": [
+          "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation"
+        ],
+        "venue": "arXiv"
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "'Position: LLMs Can't Jump' trends on OpenReview/HN",
+      "detail": "A position paper arguing LLMs have a structural blind spot for a class of 'jump' reasoning tasks regardless of scale hit OpenReview and the HN front page (295 pts, 207 comments) this week.",
+      "source_urls": [
+        "https://openreview.net/forum?id=klU4737opt"
+      ],
+      "payload": {
+        "claim": "'Position: LLMs Can't Jump' argues LLMs have a structural inability to solve a class of 'jump' reasoning tasks regardless of scale — trending on OpenReview/HN.",
+        "source_url": "https://openreview.net/forum?id=klU4737opt",
+        "subtheme_ids": [
+          "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation",
+          "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+        ],
+        "venue": "OpenReview"
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_FRONTIER",
+      "breakthrough_id": "reasoning_models",
+      "title": "AI verification startup Refine adopted by AEA, Econometric Society",
+      "detail": "Tyler Cowen flagged that Refine's AI-assisted technical/mathematical verification tool is now used in the American Economic Association's and Econometric Society's publication pipelines — an institutional response to gamed peer review.",
+      "source_urls": [
+        "https://marginalrevolution.com/marginalrevolution/2026/08/solve-for-the-refine-equilibrium.html"
+      ],
+      "payload": {
+        "claim": "Refine's AI-assisted technical verification is now part of the publication process at the AEA and the Econometric Society (flagged by Tyler Cowen).",
+        "source_url": "https://marginalrevolution.com/marginalrevolution/2026/08/solve-for-the-refine-equilibrium.html",
+        "subtheme_ids": [
+          "ai__reasoning_test_time_compute__formal_verification_provable_reasoning"
+        ],
+        "venue": ""
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Lilian Weng — agent harness engineering & self-improvement",
+      "detail": "Former OpenAI VP of Research and Thinking Machines Lab co-founder Lilian Weng's essay on 'harness engineering for self-improvement' hit HN's front page (325 pts); her long-running ML blog is a must-follow for agent-training practice.",
+      "source_urls": [
+        "https://lilianweng.github.io/posts/2026-07-04-harness/"
+      ],
+      "payload": {
+        "name": "Lilian Weng",
+        "role": "Co-founder, Thinking Machines Lab (formerly VP of Research, OpenAI)",
+        "focus": "Agentic AI self-improvement, RL, model safety/evaluation",
+        "follow_url": "https://lilianweng.github.io/",
+        "twitter": "https://twitter.com/lilianweng",
+        "youtube": null,
+        "newsletter": null,
+        "notes": "'Harness engineering for self-improvement' (2026-07) reached HN front page (325 pts); deep, practitioner-grade writing on agent harnesses.",
+        "tags": [
+          "agents",
+          "self-improvement",
+          "RL",
+          "AI-safety"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": true
+    },
+    {
+      "kind": "NEW_VOICE",
+      "breakthrough_id": null,
+      "title": "Simon Willison — MCP/agent-tooling practitioner consensus",
+      "detail": "Independent LLM-tools blogger Simon Willison's essay on stateless MCP design reached HN's front page (383 pts), reflecting his outsized influence on practitioner consensus around agent/MCP architecture.",
+      "source_urls": [
+        "https://simonwillison.net/2026/Jul/31/stateless-mcp/"
+      ],
+      "payload": {
+        "name": "Simon Willison",
+        "role": "Independent engineer/blogger; creator of Datasette; prolific LLM-tooling commentator",
+        "focus": "LLM application patterns, agent tooling, Model Context Protocol",
+        "follow_url": "https://simonwillison.net/",
+        "twitter": "https://twitter.com/simonw",
+        "youtube": null,
+        "newsletter": null,
+        "notes": "'Stateless MCP has recaptured my interest' (2026-07-31) hit HN front page (383 pts); shapes MCP/agent-tooling consensus, directly feeding the ai_dev_ecosystem beat.",
+        "tags": [
+          "MCP",
+          "agents",
+          "dev-tools"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Valar Atomics raises $1B Series B for factory-built SMRs",
+      "detail": "Sequoia-led $1B round (~$6B valuation) plus a $200M credit line for small modular reactors; Valar's Ward 250 SMR already powers an Nvidia Blackwell cluster, and the raise funds serial reactor manufacturing.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/"
+      ],
+      "payload": {
+        "candidate_area": "advanced_nuclear_SMR",
+        "detail": "Valar Atomics raised $1B (Sequoia-led, ~$6B valuation) + $200M credit line; its Ward 250 SMR already powers an Nvidia Blackwell AI system; funds fleet-scale reactor manufacturing.",
+        "source_url": "https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Horizon3 hits $2B valuation on $250M round for autonomous AI pentesting",
+      "detail": "Cybersecurity startup Horizon3 raised a $250M Series E at a $2B valuation as enterprises shift from annual human pentests to continuous, autonomous AI-driven penetration testing; NodeZero has run 310,000 production tests.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/"
+      ],
+      "payload": {
+        "candidate_area": "ai_cybersecurity_products",
+        "detail": "Horizon3 (NodeZero) raised $250M Series E at a $2B valuation; continuous autonomous AI pentesting, explicitly citing autonomous-breach incidents as a demand driver.",
+        "source_url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Court lets Minnesota's first-in-US 'nudify' app ban take effect",
+      "detail": "A federal judge denied xAI's bid to block Minnesota's ban on AI apps generating non-consensual nude images, letting the law take effect Aug 1 while xAI's First Amendment challenge continues.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"
+      ],
+      "payload": {
+        "candidate_area": "ai_regulation_deepfakes",
+        "detail": "US District Judge denied xAI's TRO against Minnesota's nudify-app ban (first US law of its kind); took effect Aug 1, 2026 while the suit proceeds.",
+        "source_url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "BROAD_SCAN",
+      "breakthrough_id": null,
+      "title": "Snap concedes mass AR-glasses adoption is years off at $2,195",
+      "detail": "Snap CEO Evan Spiegel told investors mass-market adoption of its $2,195 Specs AR glasses won't arrive until near decade's end, needing lower weight/cost first, ahead of a September launch.",
+      "source_urls": [
+        "https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/"
+      ],
+      "payload": {
+        "candidate_area": "ar_vr_smart_glasses",
+        "detail": "Snap's Specs (September launch, $2,195): CEO says mass adoption unlikely before the late 2020s vs Meta's ~$350 Ray-Bans and Apple's Vision Pro.",
+        "source_url": "https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/"
+      },
+      "confidence": "high",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "reasoning_models",
+      "title": "Refine — AI-assisted technical verification for academic publishing",
+      "detail": "Refine builds AI tooling that machine-checks the technical/mathematical correctness of papers; now embedded in the AEA and Econometric Society publication pipelines, an institutional answer to gamed peer review.",
+      "source_urls": [
+        "https://marginalrevolution.com/marginalrevolution/2026/08/solve-for-the-refine-equilibrium.html"
+      ],
+      "payload": {
+        "name": "Refine",
+        "org": "Refine",
+        "type": "STARTUP",
+        "why": "Verification infrastructure for research integrity — AI-checked technical correctness, adopted by two major economics societies; rides the 'verifiable outputs' wave.",
+        "funding": "(verify current stage/investors)",
+        "source_url": "https://marginalrevolution.com/marginalrevolution/2026/08/solve-for-the-refine-equilibrium.html",
+        "subtheme_ids": [
+          "ai__reasoning_test_time_compute__formal_verification_provable_reasoning"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    },
+    {
+      "kind": "NEW_WATCH",
+      "breakthrough_id": "ai_accelerators",
+      "title": "Taalas — 'etch the model into silicon' inference chips (AMD-acquired)",
+      "detail": "Taalas builds chips that hardwire a specific model directly into silicon for extreme inference efficiency; AMD is acquiring it to boost inference performance, a notable bet on model-specific ASICs.",
+      "source_urls": [
+        "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344"
+      ],
+      "payload": {
+        "name": "Taalas",
+        "org": "Taalas (being acquired by AMD)",
+        "type": "STARTUP",
+        "why": "Model-specific silicon — etches a model into the chip for extreme inference efficiency; AMD acquisition validates the inference-ASIC thesis.",
+        "funding": "Being acquired by AMD (Aug 2026)",
+        "source_url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+        "subtheme_ids": [
+          "hardware__ai_accelerators__inference_specialized_asics"
+        ]
+      },
+      "confidence": "medium",
+      "backfill": false
+    }
+  ]
+}

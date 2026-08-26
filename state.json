@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Tech Breakthroughs · 2021 onwards",
-    "last_updated": "2026-08-12T01:03:32.417513+00:00",
-    "as_of_date": "2026-08-11",
+    "last_updated": "2026-08-21T12:44:09.221203+00:00",
+    "as_of_date": "2026-08-21",
     "domains": [
       "AI",
       "BIO",
@@ -179,6 +179,10 @@
         {
           "claim": "Alibaba released Qwen3.8-Max (Aug 3, 2026), a 2.4T-param MoE (95B active) with 1M-token context at ~1/4 GPT-5.6 pricing ($2/$6 vs $5/$30 per M tokens), with open weights and a 27B sibling promised within a week.",
           "source_url": "https://qwen.ai/blog?id=qwen3.8"
+        },
+        {
+          "claim": "GLM-5.3 gains come from post-training only on the GLM-5.2 base; Terminal-Bench 3.0 4.6% -> 28.3%.",
+          "source_url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/"
         }
       ],
       "watch_list": [
@@ -260,6 +264,19 @@
           "type": "LAB",
           "why": "Mira Murati's (ex-OpenAI CTO) frontier lab; shipped open-weight Inkling (975B) + Tinker fine-tuning platform.",
           "funding": "$2B seed round (2025)"
+        },
+        {
+          "name": "Redwood Research",
+          "org": "Redwood Research",
+          "type": "LAB",
+          "why": "Sets the agenda for control-based (as opposed to alignment-based) safety, now referenced across frontier-lab safety work; entity added after Ryan Greenblatt surfaced in the voice scan without the lab being tracked.",
+          "funding": "Nonprofit / philanthropically funded",
+          "source_url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai",
+          "subtheme_ids": [
+            "ai__safety_interpretability_governance__alignment_oversight_rlhf_constitutional_scheming"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "impact_so_far": "Transformers and LLMs have enabled agentic AI systems that autonomously solve software engineering tasks, with frontier models now matching or exceeding professional developer capabilities on real-world codebase tasks.",
@@ -698,6 +715,10 @@
         {
           "claim": "Refine's AI-assisted technical verification is now part of the publication process at the AEA and the Econometric Society (flagged by Tyler Cowen).",
           "source_url": "https://marginalrevolution.com/marginalrevolution/2026/08/solve-for-the-refine-equilibrium.html"
+        },
+        {
+          "claim": "Tao's ICM 2026 essay reframes AI-for-mathematics around researcher goals rather than benchmark capability.",
+          "source_url": "https://arxiv.org/abs/2608.16753"
         }
       ],
       "watch_list": [
@@ -917,6 +938,19 @@
           "description": "ACL 2026 Outstanding Paper (Hao, Wang, Liu et al.): reframes RLVR's entropy-collapse/exploration-loss problem via an entropy-change lens with a targeted intervention distinct from prior entropy-bonus/clipping approaches.",
           "examples": [],
           "source_url": "https://2026.aclweb.org/program/best_papers/",
+          "subtheme_ids": [
+            "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
+          ],
+          "venue": "ACL 2026",
+          "new_category": false
+        },
+        {
+          "name": "Direct entropy control in RLVR",
+          "description": "Token-level reweighting to govern policy-entropy dynamics in RL with verifiable rewards, instead of indirect regularization or clipping heuristics.",
+          "examples": [
+            "Hao et al., ACL 2026 long paper (arXiv 2510.10150)"
+          ],
+          "source_url": "https://arxiv.org/abs/2510.10150",
           "subtheme_ids": [
             "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
           ],
@@ -1168,6 +1202,19 @@
             "Gemini Omni Flash (Google, May 2026)"
           ],
           "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+        },
+        {
+          "name": "Generation-order pathology in diffusion LMs",
+          "description": "Arbitrary decoding order, usually sold as diffusion-LM flexibility, lets models route around high-uncertainty tokens and prematurely collapse solution diversity on math and code.",
+          "examples": [
+            "'The Flexibility Trap: Rethinking the Value of Arbitrary Order in Diffusion Language Models' — ICML 2026 Outstanding Paper"
+          ],
+          "source_url": "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/",
+          "subtheme_ids": [
+            "ai__architecture_efficiency__diffusion_language_models"
+          ],
+          "venue": "ICML 2026",
+          "new_category": false
         }
       ],
       "layer": "L1_mechanism",
@@ -1589,7 +1636,8 @@
         "Updated mRNA seasonal flu vaccine regulatory status: new value = FDA VRBPAC voted 9-0 (Jun 18, 2026) for Moderna's mRNA-1010 (mFluvisa) seasonal flu vaccine (full approval 50-64; accelerated approval 65+); FDA decision expected Aug 5, 2026",
         "Updated personalized mRNA cancer vaccine — long-term efficacy: new value = 5-yr KEYNOTE-942: 49% relative reduction in recurrence/death, 68.8% vs 49.1% recurrence-free",
         "Updated ?: new value = ?",
-        "Updated regulatory_status: new value = FDA-approved Aug 5, 2026 (full approval 50-64; accelerated approval 65+ with confirmatory trial); first mRNA seasonal flu vaccine"
+        "Updated regulatory_status: new value = FDA-approved Aug 5, 2026 (full approval 50-64; accelerated approval 65+ with confirmatory trial); first mRNA seasonal flu vaccine",
+        "Updated current_frontier[0].claim: new value = Phase 3 INTerpath-001 met RFS and DMFS endpoints for intismeran autogene (mRNA-4157) + pembrolizumab in resected stage IIB-IV melanoma — first positive Phase 3 for an individualized mRNA cancer vaccine."
       ],
       "sub_ideas": [
         {
@@ -1836,7 +1884,8 @@
         "Updated oral small-molecule GLP-1 — phase 2b peer-reviewed: new value = Nature Medicine: up to 11.3% placebo-adjusted weight loss at 36 weeks (120 mg)",
         "Updated oral_glp1_head_to_head: new value = orforglipron superior to oral semaglutide on A1C and weight in ACHIEVE-3 (n=1,698; A1C 1.9/2.2% vs 1.1/1.4%; weight 6.7/9.2% vs 3.7/5.3%)",
         "Updated CagriSema REIMAGINE 4 topline: new value = Weight loss non-inferior (15.2% vs 15.8%) but HbA1c non-inferiority NOT met (1.9 vs 2.2 pts) vs tirzepatide, reported Aug 5, 2026",
-        "Updated Retatrutide expanded access: new value = Defined multi-patient expanded/compassionate-access pathway opened Aug 3, 2026"
+        "Updated Retatrutide expanded access: new value = Defined multi-patient expanded/compassionate-access pathway opened Aug 3, 2026",
+        "Updated current_frontier[0].claim: new value = Q2 2026, first head-to-head oral GLP-1 quarter: oral Wegovy ~$496M vs Foundayo (orforglipron) $98M."
       ],
       "sub_ideas": [
         {
@@ -1928,6 +1977,19 @@
             "bio__metabolic_incretin_therapeutics__injectable_multi_agonists"
           ],
           "venue": ""
+        },
+        {
+          "name": "Third-wave oral small-molecule GLP-1s",
+          "description": "Non-peptide once-daily GLP-1 agonists from smaller biotechs entering Phase 3 behind Novo and Lilly.",
+          "examples": [
+            "Aleniglipron (Structure Therapeutics), ACCESS Phase 2b, ~-11.3% placebo-adjusted at 36 weeks"
+          ],
+          "source_url": "https://doi.org/10.1038/s41591-026-04476-6",
+          "subtheme_ids": [
+            "bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "layer": "L4_product",
@@ -2139,7 +2201,8 @@
         "Updated casgevy_eligible_age: new value = ages 2 and older (July 1, 2026); ~5,500 more US children eligible",
         "Updated PM359 (Prime Medicine) regulatory designation: new value = RMAT (Jun 22, 2026)",
         "Updated ?: new value = ?",
-        "Updated Aurora Therapeutics program_status: new value = Abandoned lead PKU gene-editing program and cut staff, Aug 5, 2026, citing competitive pressure"
+        "Updated Aurora Therapeutics program_status: new value = Abandoned lead PKU gene-editing program and cut staff, Aug 5, 2026, citing competitive pressure",
+        "Updated impact_so_far: new value = Casgevy Q2 2026 revenue $76M, +151% YoY and +78% QoQ, after FDA pediatric expansion to age 2+."
       ],
       "sub_ideas": [
         {
@@ -2248,6 +2311,19 @@
             "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
           ],
           "venue": ""
+        },
+        {
+          "name": "Post-Cas9 proprietary editing platforms",
+          "description": "In-house editor architectures distinct from CRISPR/Cas9 reaching first-in-human trials.",
+          "examples": [
+            "CTX460 (SyNTase platform), Phase 1 for AATD"
+          ],
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html",
+          "subtheme_ids": [
+            "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "layer": "L2_primitive",
@@ -2403,6 +2479,10 @@
         {
           "claim": "Quantinuum (Nature, Jul 15 2026): first universal gate set from anyon braiding+fusion on the 54-qubit H2 trapped-ion system (non-Abelian S3 order).",
           "source_url": "https://www.nature.com/articles/s41586-026-10709-y"
+        },
+        {
+          "claim": "12 logical qubits (Steane code) running QFT on Quantinuum Helios; 98 physical qubits for the approximate variant.",
+          "source_url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/"
         }
       ],
       "watch_list": [
@@ -2463,7 +2543,8 @@
         "Updated IonQ–SkyWater acquisition status: new value = Shareholder-approved May 8, 2026; ~$1.8B; closing expected Q2-Q3 2026",
         "Updated PsiQuantum US government support: new value = $100M CHIPS LOI signed May 21, 2026 for fault-tolerant photonic component development",
         "Updated QuEra fault-tolerant roadmap / cloud availability: new value = Libra: 256+ logical qubits, 1e-6 logical error rate, ~1M logical ops, on AWS Braket by 2028",
-        "Updated ?: new value = ?"
+        "Updated ?: new value = ?",
+        "Updated current_frontier[0].claim: new value = Krypton-sputtered tantalum qubit films deposit at 200C instead of >400C while staying CMOS-fab compatible (Cornell, Nature Materials, Aug 2026)."
       ],
       "sub_ideas": [
         {
@@ -2769,7 +2850,8 @@
         "Updated SpaceX corporate/financial status: new value = Public company (Nasdaq: SPCX) as of 2026-06-12; IPO priced $135/share, closed ~$161 (+19%), ~$2.1T valuation at first close (largest IPO ever)",
         "Updated ?: new value = ?",
         "Updated New Glenn return-to-flight: new value = Root cause = BE-4 main oxygen valve; retrofit ready end-August; RTF still targeted before year-end 2026",
-        "Updated Starship heat-shield status (company claim): new value = Musk (Aug 4, 2026) says tile problem 'solved' per Flight 13 data — company claim, not independently verified"
+        "Updated Starship heat-shield status (company claim): new value = Musk (Aug 4, 2026) says tile problem 'solved' per Flight 13 data — company claim, not independently verified",
+        "Updated current_frontier[0].claim: new value = SpaceX set a 38-minute dual-coast Falcon 9 turnaround record on Aug 15, 2026 (prior record 65 minutes, 2024)."
       ],
       "sub_ideas": [
         {
@@ -3092,7 +3174,8 @@
         "Updated standalone battery storage cost trend (LCOS): new value = rising in 2026, reversing prior-year decline, on Li-ion import tariffs/FEOC rules",
         "Updated Si-perovskite tandem cell efficiency (LONGi, ESTI-certified): new value = 35.5% (Jul 14 2026)",
         "Updated ?: new value = ?",
-        "Updated Samsung SDI US LFP production: new value = Mass-production validation underway; cell output begins October 2026, SBB 2.0 deliveries by year-end"
+        "Updated Samsung SDI US LFP production: new value = Mass-production validation underway; cell output begins October 2026, SBB 2.0 deliveries by year-end",
+        "Updated current_frontier[0].claim: new value = Form Energy raised a $750M Series G (T. Rowe Price) on Aug 12, 2026; iron-air backlog now ~80 GWh, up from ~20 GWh, incl. Google, Xcel, Crusoe, FuturEnergy Ireland."
       ],
       "sub_ideas": [
         {
@@ -3292,6 +3375,10 @@
         {
           "claim": "Waymo's first purpose-built robotaxi (Zeekr-made Ojai, 6th-gen Driver with cheaper sensor stack) went live with public rides on May 28, 2026.",
           "source_url": "https://electrek.co/2026/05/28/waymo-ojai-robotaxi-rides-6th-gen-driver/"
+        },
+        {
+          "claim": "DA-WAM reports PDMS 93.7 (NAVSIM-v1) and EPDMS 87.7 (NAVSIM-v2) by aligning world-model latents with decision scoring.",
+          "source_url": "https://arxiv.org/abs/2608.19085"
         }
       ],
       "watch_list": [
@@ -3353,7 +3440,8 @@
         "Updated operating_cities: new value = adds San Diego, Las Vegas, Tampa, Denver (employee driverless); 6th-gen Driver on Hyundai IONIQ 5",
         "Updated Tesla Robotaxi paid miles (quarterly): new value = ~700,000 miles (Q2 2026)",
         "Updated ?: new value = ?",
-        "Updated Zoox commercialization: new value = Begins charging for driverless rides in Las Vegas Aug 10, 2026 — first paid US service for a purpose-built no-wheel robotaxi"
+        "Updated Zoox commercialization: new value = Begins charging for driverless rides in Las Vegas Aug 10, 2026 — first paid US service for a purpose-built no-wheel robotaxi",
+        "Updated current_frontier[0].claim: new value = CPUC approved paid fully driverless Waymo service across 18 California counties (Aug 14, 2026), adding Sacramento and San Diego."
       ],
       "sub_ideas": [
         {
@@ -4138,6 +4226,20 @@
           ],
           "venue": "",
           "new_category": false
+        },
+        {
+          "name": "General Fusion (Nasdaq: GFUZ)",
+          "org": "General Fusion Group Ltd.",
+          "type": "STARTUP",
+          "why": "First fusion developer to trade publicly, forcing quarterly quantitative disclosure of magnetized-target-fusion milestones (0.72 keV on LM26) against a 1 keV / 10 keV / Lawson roadmap — a new source of auditable fusion progress data.",
+          "funding": "Public (Nasdaq: GFUZ); ~$150M cash reported Aug 2026",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html",
+          "subtheme_ids": [
+            "energy__fusion_energy__alternative_confinement_direct_electricity",
+            "energy__fusion_energy__fusion_commercialization_offtake"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "impact_so_far": "Fusion went from public-science promise to active commercial track between 2022 and 2026: NIF demonstrated repeatable net energy gain, CFS broke ground on SPARC with HTS magnets, and Helion shipped a D-T plasma machine on the way to a 50 MW commercial PPA with Microsoft.",
@@ -4651,6 +4753,19 @@
             "hardware__memory_advanced_packaging__hbm_the_memory_wall"
           ],
           "venue": "FMS 2026"
+        },
+        {
+          "name": "Memory-safe portable GPU kernels",
+          "description": "Compiler-native, cross-vendor GPU offload in a memory-safe language as an alternative to hand-written CUDA for AI kernels.",
+          "examples": [
+            "rustc + LLVM Offload GPU backend (arXiv 2608.13759), nightly-only"
+          ],
+          "source_url": "https://arxiv.org/abs/2608.13759",
+          "subtheme_ids": [
+            "ai__architecture_efficiency__quantization_custom_kernels"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "current_frontier": [
@@ -4768,7 +4883,8 @@
         "Updated nvidia_quarterly_data_center_revenue: new value = $75.2B Q1 FY27 (May 20, 2026 print); Vera Rubin initial shipments Q3 2026; Q2 guide $91B +/- 2%",
         "Updated nvidia_capital_return_policy: new value = $80B additional buyback authorization; quarterly dividend raised 25x to $0.25/share; $20B returned in Q1 FY27",
         "Updated Cerebras post-IPO status: new value = CBRS at $266.90 on May 27, 2026 (+10.4%); $66B market cap; $20B OpenAI capacity deal active",
-        "Updated TSMC Arizona total committed investment: new value = $265B across 12 facilities (adds CoWoS packaging)"
+        "Updated TSMC Arizona total committed investment: new value = $265B across 12 facilities (adds CoWoS packaging)",
+        "Updated watch_list: new value = Etched: $700M at $21B valuation (Aug 18, 2026), first production rack delivered to Jane Street, >$1B signed contracts — no longer pre-shipment."
       ],
       "number": 15,
       "layer": "L1_mechanism",
@@ -4988,6 +5104,49 @@
             "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
           ],
           "venue": ""
+        },
+        {
+          "name": "Pluggable agent harnesses",
+          "description": "Agent runtimes where model, tools, sandbox, session and UI are all swappable plugins rather than a fixed loop — the harness itself becomes the product surface.",
+          "examples": [
+            "DeepSeek Harness v0.1 (MIT, Aug 2026)",
+            "Prime Intellect Prime Agent (MIT, Aug 2026)"
+          ],
+          "source_url": "https://github.com/deepseek-ai/deepseek-harness",
+          "subtheme_ids": [
+            "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+            "ai__agents_developer_ecosystem__multi_agent_orchestration"
+          ],
+          "venue": "",
+          "new_category": false
+        },
+        {
+          "name": "Recursive / self-rewriting agent harnesses",
+          "description": "Agents that treat their own prompts, skills and sub-agent structure as mutable state edited through a persistent code interpreter, rather than as fixed scaffolding.",
+          "examples": [
+            "Prime Intellect Prime Agent (MIT, Aug 2026)"
+          ],
+          "source_url": "https://github.com/PrimeIntellect-ai/prime-agent",
+          "subtheme_ids": [
+            "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+            "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+          ],
+          "venue": "",
+          "new_category": false
+        },
+        {
+          "name": "Coding-agent supply-chain compromise",
+          "description": "Attacks that ride AI-generated or AI-suggested code through CI/CD into internal systems — attribution to the agent is itself contested, which is part of the problem.",
+          "examples": [
+            "Wiz: Copilot Autofix -> Snowflake Jira compromise (Aug 2026, disputed by GitHub)"
+          ],
+          "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+          "subtheme_ids": [
+            "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+            "ai__agents_developer_ecosystem__coding_agents"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "current_frontier": [
@@ -5098,6 +5257,32 @@
           "subtheme_ids": [
             "ai__agents_developer_ecosystem__spec_driven_prompt_less_development"
           ]
+        },
+        {
+          "name": "Prime Intellect",
+          "org": "Prime Intellect",
+          "type": "STARTUP",
+          "why": "One of the few labs shipping permissively licensed frontier-grade agent harnesses and decentralized training stacks; entity added after its Prime Agent release surfaced in the weekly scan without the company being tracked.",
+          "funding": "Venture-backed (round details not verified this run)",
+          "source_url": "https://github.com/PrimeIntellect-ai/prime-agent",
+          "subtheme_ids": [
+            "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+          ],
+          "venue": "",
+          "new_category": false
+        },
+        {
+          "name": "Wiz Research",
+          "org": "Wiz (Google Cloud)",
+          "type": "LAB",
+          "why": "Emerging as the main source of primary incident reporting on coding-agent and CI/CD supply-chain compromise; entity added after its Snowflake write-up surfaced without Wiz being tracked.",
+          "funding": "Subsidiary of Google Cloud",
+          "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+          "subtheme_ids": [
+            "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"
+          ],
+          "venue": "",
+          "new_category": false
         }
       ],
       "impact_so_far": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise, subagents and orchestration apps for parallel work, and SDKs plus evals for governance — now backed by both major labs and a wave of well-funded startups.",
@@ -5268,6 +5453,12 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2510.10150",
+      "used_for": [
+        "RLHF + reasoning models (test-time compute scaling) -> sub-idea: Direct entropy control in RLVR"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/2511.05963",
       "used_for": [
         "Transformers / LLMs / coding agents -> frontier"
@@ -5412,6 +5603,24 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2608.13759",
+      "used_for": [
+        "AI accelerators / advanced compute -> sub-idea: Memory-safe portable GPU kernels"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.16753",
+      "used_for": [
+        "RLHF + reasoning models (test-time compute scaling) -> frontier"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.19085",
+      "used_for": [
+        "Self-driving cars / robotaxis -> frontier"
+      ]
+    },
+    {
       "url": "https://aurora.tech/about",
       "used_for": [
         "Self-driving cars / robotaxis -> Chris Urmson"
@@ -5482,7 +5691,14 @@
     {
       "url": "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/",
       "used_for": [
-        "RLHF + reasoning models (test-time compute scaling) -> sub-idea: The Obfuscation Atlas (deception probes for RLVR reward hacking)"
+        "RLHF + reasoning models (test-time compute scaling) -> sub-idea: The Obfuscation Atlas (deception probes for RLVR reward hacking)",
+        "Diffusion models (image + video generation) -> sub-idea: Generation-order pathology in diffusion LMs"
+      ]
+    },
+    {
+      "url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai",
+      "used_for": [
+        "Transformers / LLMs / coding agents -> watch: Redwood Research"
       ]
     },
     {
@@ -5642,6 +5858,12 @@
       ]
     },
     {
+      "url": "https://doi.org/10.1038/s41591-026-04476-6",
+      "used_for": [
+        "GLP-1 agonists -> sub-idea: Third-wave oral small-molecule GLP-1s"
+      ]
+    },
+    {
       "url": "https://electrek.co/2026/05/11/ford-energy-launches-battery-storage-subsidiary-20gwh-bess/",
       "used_for": [
         "Renewables + battery cost collapse -> watch: Ford Energy"
@@ -5760,10 +5982,23 @@
       ]
     },
     {
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "used_for": [
+        "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> sub-idea: Recursive / self-rewriting agent harnesses",
+        "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> watch: Prime Intellect"
+      ]
+    },
+    {
       "url": "https://github.com/deepseek-ai/DeepSeek-R1",
       "used_for": [
         "RLHF + reasoning models (test-time compute scaling) -> watch: DeepSeek Research",
         "RLHF + reasoning models (test-time compute scaling) -> sub-idea: Reasoning distillation"
+      ]
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "used_for": [
+        "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> sub-idea: Pluggable agent harnesses"
       ]
     },
     {
@@ -6179,6 +6414,12 @@
     },
     {
       "url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+      "used_for": [
+        "Quantum error correction (logical qubits below threshold) -> frontier"
+      ]
+    },
+    {
+      "url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/",
       "used_for": [
         "Quantum error correction (logical qubits below threshold) -> frontier"
       ]
@@ -7024,9 +7265,21 @@
       ]
     },
     {
+      "url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html",
+      "used_for": [
+        "CRISPR therapies (Casgevy + base/prime editing) -> sub-idea: Post-Cas9 proprietary editing platforms"
+      ]
+    },
+    {
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338977/0/en/rocket-lab-awarded-397-million-contract-to-build-and-launch-flatellites-for-u-s-space-force-s-space-based-airborne-moving-target-indicator-program.html",
       "used_for": [
         "Reusable rockets (Falcon 9 + Starship catch) -> frontier"
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html",
+      "used_for": [
+        "Fusion energy -> watch: General Fusion (Nasdaq: GFUZ)"
       ]
     },
     {
@@ -7136,6 +7389,12 @@
       "url": "https://www.lupus.org/news/new-study-finds-anticd19-cart-therapy-zorpocel-safe-and-effective-treatment-for-people-with",
       "used_for": [
         "CRISPR therapies (Casgevy + base/prime editing) -> frontier"
+      ]
+    },
+    {
+      "url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
+      "used_for": [
+        "Transformers / LLMs / coding agents -> frontier"
       ]
     },
     {
@@ -7770,6 +8029,13 @@
       "url": "https://www.virtueai.com/",
       "used_for": [
         "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> watch: Virtue AI"
+      ]
+    },
+    {
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "used_for": [
+        "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> sub-idea: Coding-agent supply-chain compromise",
+        "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> watch: Wiz Research"
       ]
     },
     {
@@ -17586,6 +17852,750 @@
       },
       "as_of_date": "2026-08-11",
       "generated_at": "2026-08-12T01:01:47.689296+00:00"
+    },
+    {
+      "week_ending": "2026-08-21",
+      "kind": "WEEKLY_UPDATE",
+      "summary": "Bio delivered the week's biggest move: Merck/Moderna's intismeran autogene became the first individualized mRNA cancer vaccine ever to win a Phase 3, hitting both RFS and DMFS in resected stage IIB-IV melanoma. On the AI side the story was post-training and harnesses rather than new base models — Z.ai's GLM-5.3 reused the GLM-5.2 base and moved Terminal-Bench 3.0 from 4.6% to 28.3% on post-training alone, while DeepSeek and Prime Intellect both open-sourced fully pluggable agent harnesses, and ACL/ICML award papers pinned down concrete failure modes in RLVR entropy control and diffusion-LM generation order. Hardware and energy saw real capital events: Etched at $21B with its first rack delivered to Jane Street, Form Energy's $750M Series G against an 80 GWh iron-air backlog, and General Fusion becoming the first publicly traded fusion developer. Verification was unusually harsh this week — eight items were dropped, including three for out-of-window dates that had been dressed up as current, one duplicate of last week's merge, and four that no resolving source could confirm before the session's search budget ran out.",
+      "highlights": [
+        {
+          "kind": "NEW_FRONTIER",
+          "breakthrough_id": "transformers_llms",
+          "title": "Z.ai ships GLM-5.3 with a post-training-only coding leap",
+          "detail": "Z.ai released GLM-5.3 on Aug 14, 2026, reusing the GLM-5.2 base model so that all capability gain came from scaled post-training; Terminal-Bench 3.0 moved from 4.6% to 28.3%.",
+          "source_urls": [
+            "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
+            "https://x.com/Zai_org/status/2088132965922476159"
+          ],
+          "payload": {
+            "claim": "GLM-5.3 gains come from post-training only on the GLM-5.2 base; Terminal-Bench 3.0 4.6% -> 28.3%.",
+            "source_url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
+            "subtheme_ids": [
+              "ai__agents_developer_ecosystem__coding_agents",
+              "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "ai_dev_ecosystem",
+          "title": "DeepSeek open-sources an 'everything is a plugin' agent harness",
+          "detail": "DeepSeek Harness v0.1 entered developer preview Aug 13, 2026 under MIT license with the tagline 'Everything is a Plugin' — models, tools, sandboxes, sessions and UI are all swappable across Standard/Code/Minimal/Creator execution modes.",
+          "source_urls": [
+            "https://github.com/deepseek-ai/deepseek-harness"
+          ],
+          "payload": {
+            "name": "Pluggable agent harnesses",
+            "description": "Agent runtimes where model, tools, sandbox, session and UI are all swappable plugins rather than a fixed loop — the harness itself becomes the product surface.",
+            "examples": [
+              "DeepSeek Harness v0.1 (MIT, Aug 2026)",
+              "Prime Intellect Prime Agent (MIT, Aug 2026)"
+            ],
+            "source_url": "https://github.com/deepseek-ai/deepseek-harness",
+            "subtheme_ids": [
+              "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+              "ai__agents_developer_ecosystem__multi_agent_orchestration"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "ai_dev_ecosystem",
+          "title": "Prime Intellect open-sources a self-rewriting Recursive Language Model agent",
+          "detail": "Prime Intellect published Prime Agent under MIT license in early August 2026, a Recursive Language Model harness whose single tool is a persistent IPython kernel, letting the model rewrite its own prompts, skills, memory and sub-agents at runtime.",
+          "source_urls": [
+            "https://github.com/PrimeIntellect-ai/prime-agent"
+          ],
+          "payload": {
+            "name": "Recursive / self-rewriting agent harnesses",
+            "description": "Agents that treat their own prompts, skills and sub-agent structure as mutable state edited through a persistent code interpreter, rather than as fixed scaffolding.",
+            "examples": [
+              "Prime Intellect Prime Agent (MIT, Aug 2026)"
+            ],
+            "source_url": "https://github.com/PrimeIntellect-ai/prime-agent",
+            "subtheme_ids": [
+              "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+              "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": true
+        },
+        {
+          "kind": "NEW_WATCH",
+          "breakthrough_id": "ai_dev_ecosystem",
+          "title": "Prime Intellect — decentralized training and open agent harnesses",
+          "detail": "Prime Intellect ships MIT-licensed agent infrastructure (Prime Agent, a Recursive Language Model harness) alongside its decentralized-training work, making it a salient open-source counterweight to closed agent platforms.",
+          "source_urls": [
+            "https://github.com/PrimeIntellect-ai/prime-agent"
+          ],
+          "payload": {
+            "name": "Prime Intellect",
+            "org": "Prime Intellect",
+            "type": "STARTUP",
+            "why": "One of the few labs shipping permissively licensed frontier-grade agent harnesses and decentralized training stacks; entity added after its Prime Agent release surfaced in the weekly scan without the company being tracked.",
+            "funding": "Venture-backed (round details not verified this run)",
+            "source_url": "https://github.com/PrimeIntellect-ai/prime-agent",
+            "subtheme_ids": [
+              "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "self_driving",
+          "title": "CPUC clears Waymo driverless rides across 18 California counties",
+          "detail": "On Aug 14, 2026 the California PUC approved Waymo to charge for fully driverless rides across 18 counties, adding Sacramento and San Diego to Bay Area and Los Angeles service.",
+          "source_urls": [
+            "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "CPUC approved paid fully driverless Waymo service across 18 California counties (Aug 14, 2026), adding Sacramento and San Diego.",
+            "previous_value": "Waymo paid driverless service limited to prior CPUC-approved California service areas.",
+            "source_url": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
+            "subtheme_ids": [
+              "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "reasoning_models",
+          "title": "ACL 2026 paper rethinks entropy interventions in RLVR",
+          "detail": "'Rethinking Entropy Interventions in RLVR: An Entropy Change Perspective' (Zhezheng Hao et al., ACL 2026 long paper) shows existing fixes for policy-entropy collapse act only indirectly, and proposes token-level reweighting that controls entropy dynamics directly.",
+          "source_urls": [
+            "https://arxiv.org/abs/2510.10150",
+            "https://aclanthology.org/2026.acl-long.1436/"
+          ],
+          "payload": {
+            "name": "Direct entropy control in RLVR",
+            "description": "Token-level reweighting to govern policy-entropy dynamics in RL with verifiable rewards, instead of indirect regularization or clipping heuristics.",
+            "examples": [
+              "Hao et al., ACL 2026 long paper (arXiv 2510.10150)"
+            ],
+            "source_url": "https://arxiv.org/abs/2510.10150",
+            "subtheme_ids": [
+              "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
+            ],
+            "venue": "ACL 2026",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": true
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "diffusion_models",
+          "title": "ICML 2026 Outstanding Paper: 'The Flexibility Trap' in diffusion LMs",
+          "detail": "Zanlin Ni, Shenzhi Wang, Yang Yue, Tianyu Yu et al. won one of two ICML 2026 Outstanding Paper awards for showing that arbitrary generation order lets diffusion language models skip the high-uncertainty tokens exploration requires, collapsing solution coverage.",
+          "source_urls": [
+            "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/"
+          ],
+          "payload": {
+            "name": "Generation-order pathology in diffusion LMs",
+            "description": "Arbitrary decoding order, usually sold as diffusion-LM flexibility, lets models route around high-uncertainty tokens and prematurely collapse solution diversity on math and code.",
+            "examples": [
+              "'The Flexibility Trap: Rethinking the Value of Arbitrary Order in Diffusion Language Models' — ICML 2026 Outstanding Paper"
+            ],
+            "source_url": "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/",
+            "subtheme_ids": [
+              "ai__architecture_efficiency__diffusion_language_models"
+            ],
+            "venue": "ICML 2026",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": true
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "mrna_vaccines",
+          "title": "Merck/Moderna mRNA cancer vaccine hits first positive Phase 3 in melanoma",
+          "detail": "Intismeran autogene (V940/mRNA-4157) plus Keytruda met its primary recurrence-free-survival endpoint and key secondary distant-metastasis-free-survival endpoint in Phase 3 INTerpath-001 in resected stage IIB-IV melanoma — the first positive Phase 3 for an individualized neoantigen therapy.",
+          "source_urls": [
+            "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "Phase 3 INTerpath-001 met RFS and DMFS endpoints for intismeran autogene (mRNA-4157) + pembrolizumab in resected stage IIB-IV melanoma — first positive Phase 3 for an individualized mRNA cancer vaccine.",
+            "previous_value": "Individualized mRNA neoantigen cancer vaccines had positive Phase 2b data but no completed positive Phase 3.",
+            "source_url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+            "subtheme_ids": [
+              "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "glp1",
+          "title": "Oral Wegovy outsells orforglipron 5-to-1 in the first head-to-head quarter",
+          "detail": "In Q2 2026 oral semaglutide generated roughly DKK 3.22bn (~$496M) against Foundayo (orforglipron) at exactly $98M per Lilly's own results, with the efficacy gap at 72 weeks cited as the driver.",
+          "source_urls": [
+            "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+            "https://www.biospace.com/business/novo-takes-first-round-of-oral-obesity-duel-can-it-stay-ahead-of-lilly"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "Q2 2026, first head-to-head oral GLP-1 quarter: oral Wegovy ~$496M vs Foundayo (orforglipron) $98M.",
+            "previous_value": "Oral GLP-1 competition had not yet produced a head-to-head commercial quarter.",
+            "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full",
+            "subtheme_ids": [
+              "bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "glp1",
+          "title": "Aleniglipron posts ~11.3% placebo-adjusted weight loss in Phase 2b",
+          "detail": "Structure Therapeutics' once-daily small-molecule GLP-1 aleniglipron reported roughly -11.3% placebo-adjusted body weight at 36 weeks on the 120mg dose in the 230-patient ACCESS Phase 2b (Nature Medicine), with no drug-induced liver injury.",
+          "source_urls": [
+            "https://doi.org/10.1038/s41591-026-04476-6"
+          ],
+          "payload": {
+            "name": "Third-wave oral small-molecule GLP-1s",
+            "description": "Non-peptide once-daily GLP-1 agonists from smaller biotechs entering Phase 3 behind Novo and Lilly.",
+            "examples": [
+              "Aleniglipron (Structure Therapeutics), ACCESS Phase 2b, ~-11.3% placebo-adjusted at 36 weeks"
+            ],
+            "source_url": "https://doi.org/10.1038/s41591-026-04476-6",
+            "subtheme_ids": [
+              "bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": true
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "crispr_therapies",
+          "title": "CRISPR Therapeutics starts Phase 1 for CTX460 on its new SyNTase platform",
+          "detail": "CRISPR Therapeutics initiated a Phase 1 trial of CTX460, an in vivo SERPINA1 editor for alpha-1 antitrypsin deficiency and the first clinical candidate from its proprietary SyNTase editing platform, distinct from CRISPR/Cas9.",
+          "source_urls": [
+            "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html"
+          ],
+          "payload": {
+            "name": "Post-Cas9 proprietary editing platforms",
+            "description": "In-house editor architectures distinct from CRISPR/Cas9 reaching first-in-human trials.",
+            "examples": [
+              "CTX460 (SyNTase platform), Phase 1 for AATD"
+            ],
+            "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html",
+            "subtheme_ids": [
+              "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": true
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "crispr_therapies",
+          "title": "Casgevy revenue up 151% year-over-year after pediatric expansion",
+          "detail": "Casgevy generated $76M in Q2 2026 revenue, up 151% year-over-year and 78% quarter-over-quarter, following FDA expansion of eligibility to children as young as 2.",
+          "source_urls": [
+            "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html"
+          ],
+          "payload": {
+            "field": "impact_so_far",
+            "new_value": "Casgevy Q2 2026 revenue $76M, +151% YoY and +78% QoQ, after FDA pediatric expansion to age 2+.",
+            "previous_value": "Casgevy commercial ramp reported as slow relative to eligible-patient counts.",
+            "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html",
+            "subtheme_ids": [
+              "bio__genetic_medicine_in_vivo_next_gen_editing__ex_vivo_edited_cell_therapies"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": true
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "quantum_error_correction",
+          "title": "Cornell cuts tantalum qubit deposition to 200C with krypton sputtering",
+          "detail": "Cornell lowered the deposition temperature for high-coherence tantalum superconducting qubit films from over 400C to 200C using krypton magnetron sputtering, keeping the process compatible with commercial CMOS fabs (Nature Materials, Aug 2026).",
+          "source_urls": [
+            "https://news.cornell.edu/stories/2026/08/new-ingredient-quantum-computing-krypton-gas"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "Krypton-sputtered tantalum qubit films deposit at 200C instead of >400C while staying CMOS-fab compatible (Cornell, Nature Materials, Aug 2026).",
+            "previous_value": "High-coherence tantalum qubit films required >400C deposition, limiting commercial CMOS fab compatibility.",
+            "source_url": "https://news.cornell.edu/stories/2026/08/new-ingredient-quantum-computing-krypton-gas",
+            "subtheme_ids": [
+              "quantum__qubit_modality_race__superconducting_qubits"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_FRONTIER",
+          "breakthrough_id": "quantum_error_correction",
+          "title": "Mitsui and Mitsubishi Electric run a logical QFT on Quantinuum Helios",
+          "detail": "Mitsui & Co. and Mitsubishi Electric benchmarked approximate quantum Fourier transform on up to 98 physical qubits and a Steane-code logical QFT on 12 logical qubits on Quantinuum's Helios trapped-ion system (published Aug 14, 2026).",
+          "source_urls": [
+            "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/"
+          ],
+          "payload": {
+            "claim": "12 logical qubits (Steane code) running QFT on Quantinuum Helios; 98 physical qubits for the approximate variant.",
+            "source_url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/",
+            "subtheme_ids": [
+              "quantum__qubit_modality_race__trapped_ion_systems",
+              "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding",
+              "quantum__algorithms_hybrid_computing__advantage_benchmarking"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "reusable_rockets",
+          "title": "SpaceX launches two Falcon 9 missions 38 minutes apart",
+          "detail": "On Aug 15, 2026 SpaceX launched Falcon 9 from Florida and California 38 minutes apart, beating its prior 65-minute dual-coast record; both boosters landed, on their 14th and 18th flights.",
+          "source_urls": [
+            "https://www.space.com/space-exploration/launches-spacecraft/spacex-breaks-record-launch-doubleheader-ussf-366-globalstar-2r"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "SpaceX set a 38-minute dual-coast Falcon 9 turnaround record on Aug 15, 2026 (prior record 65 minutes, 2024).",
+            "previous_value": "SpaceX's dual-coast Falcon 9 launch record stood at 65 minutes (2024).",
+            "source_url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-breaks-record-launch-doubleheader-ussf-366-globalstar-2r",
+            "subtheme_ids": [
+              "space__reusable_launch__operational_partial_reuse_falcon_class"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "renewables_batteries",
+          "title": "Form Energy raises $750M Series G; iron-air backlog reaches 80 GWh",
+          "detail": "Form Energy closed a $750M Series G led by T. Rowe Price on Aug 12, 2026 to scale its Weirton, WV iron-air factory, with backlog growing from about 20 GWh to 80 GWh across Google, Xcel, Crusoe and FuturEnergy Ireland.",
+          "source_urls": [
+            "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/"
+          ],
+          "payload": {
+            "field": "current_frontier[0].claim",
+            "new_value": "Form Energy raised a $750M Series G (T. Rowe Price) on Aug 12, 2026; iron-air backlog now ~80 GWh, up from ~20 GWh, incl. Google, Xcel, Crusoe, FuturEnergy Ireland.",
+            "previous_value": "Form Energy iron-air backlog ~20 GWh with earlier funding rounds and Xcel/Georgia Power deals.",
+            "source_url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/",
+            "subtheme_ids": [
+              "energy__long_duration_grid_scale_storage__ldes_market_scale_up",
+              "energy__long_duration_grid_scale_storage__iron_air_metal_air_batteries"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "UPDATED_FACT",
+          "breakthrough_id": "ai_accelerators",
+          "title": "Etched raises $700M at $21B valuation, ships first rack to Jane Street",
+          "detail": "Etched announced on Aug 18, 2026 a $700M round led by Jane Street at a $21B valuation, roughly double its July mark, and delivered its first production inference rack to Jane Street with over $1B in signed contracts.",
+          "source_urls": [
+            "https://www.globenewswire.com/news-release/2026/08/18/3347095/0/en/etched-raises-700m-at-a-21b-valuation-and-completes-first-customer-delivery-to-jane-street.html"
+          ],
+          "payload": {
+            "field": "watch_list",
+            "new_value": "Etched: $700M at $21B valuation (Aug 18, 2026), first production rack delivered to Jane Street, >$1B signed contracts — no longer pre-shipment.",
+            "previous_value": "Etched Sohu transformer-ASIC remained unshipped; 500K tokens/sec was a manufacturer claim.",
+            "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347095/0/en/etched-raises-700m-at-a-21b-valuation-and-completes-first-customer-delivery-to-jane-street.html",
+            "subtheme_ids": [
+              "hardware__ai_accelerators__inference_specialized_asics"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_WATCH",
+          "breakthrough_id": "fusion",
+          "title": "General Fusion becomes the first publicly listed fusion company",
+          "detail": "General Fusion (Nasdaq: GFUZ) gave its first public-company update Aug 18, 2026, reporting ~$150M cash, plasma heating to 0.72 keV via lithium-liner compression on LM26, and a commercialization framework with Renexia.",
+          "source_urls": [
+            "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html"
+          ],
+          "payload": {
+            "name": "General Fusion (Nasdaq: GFUZ)",
+            "org": "General Fusion Group Ltd.",
+            "type": "STARTUP",
+            "why": "First fusion developer to trade publicly, forcing quarterly quantitative disclosure of magnetized-target-fusion milestones (0.72 keV on LM26) against a 1 keV / 10 keV / Lawson roadmap — a new source of auditable fusion progress data.",
+            "funding": "Public (Nasdaq: GFUZ); ~$150M cash reported Aug 2026",
+            "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html",
+            "subtheme_ids": [
+              "energy__fusion_energy__alternative_confinement_direct_electricity",
+              "energy__fusion_energy__fusion_commercialization_offtake"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_FRONTIER",
+          "breakthrough_id": "reasoning_models",
+          "title": "Terence Tao's 'Mathematics in the Age of AI' reframes AI-for-math goals",
+          "detail": "Tao's ICM 2026 lecture essay (arXiv, submitted Aug 17, 2026) argues mathematicians must first define their actual goals — proof, verification, exposition, canonicalization — before ceding ground to AI research tools; it front-paged Hacker News within days.",
+          "source_urls": [
+            "https://arxiv.org/abs/2608.16753"
+          ],
+          "payload": {
+            "claim": "Tao's ICM 2026 essay reframes AI-for-mathematics around researcher goals rather than benchmark capability.",
+            "source_url": "https://arxiv.org/abs/2608.16753",
+            "subtheme_ids": [
+              "ai__ai_for_science__autonomous_research_hypothesis_generation"
+            ],
+            "venue": "ICM 2026",
+            "new_category": false
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_FRONTIER",
+          "breakthrough_id": "self_driving",
+          "title": "DA-WAM aligns driving world-model latents with decision scoring",
+          "detail": "An Aug 19, 2026 arXiv paper from HKUST-GZ and Leapmotor authors co-trains future-latent prediction with per-trajectory scoring, reporting PDMS 93.7 on NAVSIM-v1 and EPDMS 87.7 on NAVSIM-v2 (benchmark numbers not independently re-verified).",
+          "source_urls": [
+            "https://arxiv.org/abs/2608.19085"
+          ],
+          "payload": {
+            "claim": "DA-WAM reports PDMS 93.7 (NAVSIM-v1) and EPDMS 87.7 (NAVSIM-v2) by aligning world-model latents with decision scoring.",
+            "source_url": "https://arxiv.org/abs/2608.19085",
+            "subtheme_ids": [
+              "ai__multimodal_generative_media__world_models_neural_simulation",
+              "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "ai_accelerators",
+          "title": "Native GPU offload lands in the Rust compiler at CUDA-level performance",
+          "detail": "Drehwald, Doerfert et al. (arXiv, Aug 13, 2026) build a cross-vendor GPU-offload interface directly into rustc via LLVM Offload, reporting parity with hand-optimized CUDA/HIP while keeping Rust's memory-safety guarantees; the paper drew ~131 points on Hacker News on Aug 17.",
+          "source_urls": [
+            "https://arxiv.org/abs/2608.13759",
+            "https://news.ycombinator.com/item?id=49334991"
+          ],
+          "payload": {
+            "name": "Memory-safe portable GPU kernels",
+            "description": "Compiler-native, cross-vendor GPU offload in a memory-safe language as an alternative to hand-written CUDA for AI kernels.",
+            "examples": [
+              "rustc + LLVM Offload GPU backend (arXiv 2608.13759), nightly-only"
+            ],
+            "source_url": "https://arxiv.org/abs/2608.13759",
+            "subtheme_ids": [
+              "ai__architecture_efficiency__quantization_custom_kernels"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_SUB_IDEA",
+          "breakthrough_id": "ai_dev_ecosystem",
+          "title": "Disputed Copilot-autofix chain in Snowflake Jira compromise",
+          "detail": "Wiz Research reported on Aug 17, 2026 that a GitHub Copilot Autofix suggestion enabled a compromise of Snowflake's internal Jira via CI/CD; GitHub disputes that Copilot wrote the vulnerable code and Wiz later softened the claim to 'unclear whether the code change was AI-assisted'.",
+          "source_urls": [
+            "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
+          ],
+          "payload": {
+            "name": "Coding-agent supply-chain compromise",
+            "description": "Attacks that ride AI-generated or AI-suggested code through CI/CD into internal systems — attribution to the agent is itself contested, which is part of the problem.",
+            "examples": [
+              "Wiz: Copilot Autofix -> Snowflake Jira compromise (Aug 2026, disputed by GitHub)"
+            ],
+            "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+            "subtheme_ids": [
+              "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+              "ai__agents_developer_ecosystem__coding_agents"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_WATCH",
+          "breakthrough_id": "ai_dev_ecosystem",
+          "title": "Wiz Research — agentic-coding supply-chain security",
+          "detail": "Wiz's research arm is producing the first concrete incident write-ups on AI coding-agent supply-chain risk, including the disputed Copilot Autofix / Snowflake Jira chain.",
+          "source_urls": [
+            "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
+          ],
+          "payload": {
+            "name": "Wiz Research",
+            "org": "Wiz (Google Cloud)",
+            "type": "LAB",
+            "why": "Emerging as the main source of primary incident reporting on coding-agent and CI/CD supply-chain compromise; entity added after its Snowflake write-up surfaced without Wiz being tracked.",
+            "funding": "Subsidiary of Google Cloud",
+            "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+            "subtheme_ids": [
+              "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_WATCH",
+          "breakthrough_id": "transformers_llms",
+          "title": "Redwood Research — the AI control agenda",
+          "detail": "Redwood Research originated the 'AI control' research programme, which aims to contain and monitor misaligned agents without first solving alignment; its framing is increasingly cited in 2026 takeoff-speed debates.",
+          "source_urls": [
+            "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai"
+          ],
+          "payload": {
+            "name": "Redwood Research",
+            "org": "Redwood Research",
+            "type": "LAB",
+            "why": "Sets the agenda for control-based (as opposed to alignment-based) safety, now referenced across frontier-lab safety work; entity added after Ryan Greenblatt surfaced in the voice scan without the lab being tracked.",
+            "funding": "Nonprofit / philanthropically funded",
+            "source_url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai",
+            "subtheme_ids": [
+              "ai__safety_interpretability_governance__alignment_oversight_rlhf_constitutional_scheming"
+            ],
+            "venue": "",
+            "new_category": false
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_VOICE",
+          "breakthrough_id": null,
+          "title": "Ryan Greenblatt (Redwood Research) — AI control",
+          "detail": "Chief Scientist at Redwood Research and co-originator of the AI control agenda, increasingly cited in 2026 takeoff-speed and timeline debates.",
+          "source_urls": [
+            "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai"
+          ],
+          "payload": {
+            "name": "Ryan Greenblatt",
+            "role": "Chief Scientist, Redwood Research",
+            "focus": "AI control, technical safety for misaligned agents, takeoff-speed forecasting",
+            "follow_url": "https://blog.redwoodresearch.org/",
+            "twitter": null,
+            "youtube": null,
+            "newsletter": "https://blog.redwoodresearch.org/",
+            "notes": "Co-authored the AI control agenda with Buck Shlegeris; frequent Dwarkesh guest.",
+            "tags": [
+              "ai_safety",
+              "ai_control",
+              "alignment"
+            ],
+            "source_url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai"
+          },
+          "confidence": "medium",
+          "backfill": false
+        },
+        {
+          "kind": "NEW_VOICE",
+          "breakthrough_id": null,
+          "title": "Terence Tao — AI in mathematics",
+          "detail": "Fields Medalist whose ICM 2026 essay reframed the AI-for-mathematics debate around researcher goals rather than capability hype, drawing wide reaction across both AI and mathematics communities.",
+          "source_urls": [
+            "https://arxiv.org/abs/2608.16753"
+          ],
+          "payload": {
+            "name": "Terence Tao",
+            "role": "Professor of Mathematics, UCLA (Fields Medal 2006)",
+            "focus": "AI's effect on mathematical research practice, formal proof verification, autonomous research tooling",
+            "follow_url": "https://terrytao.wordpress.com/",
+            "twitter": null,
+            "youtube": null,
+            "newsletter": "https://terrytao.wordpress.com/",
+            "notes": "Not previously tracked as an AI-discourse voice; the ICM 2026 essay is now widely cited in AI-for-science conversations.",
+            "tags": [
+              "ai_for_science",
+              "mathematics",
+              "formal_verification"
+            ],
+            "source_url": "https://arxiv.org/abs/2608.16753"
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "TRENDING_IDEA",
+          "breakthrough_id": null,
+          "title": "AI governance debate pivots from misuse to concentration of power",
+          "detail": "OpenAI's new Strategic Futures team, led by tracked voice Dean W. Ball, published its founding 'AI Futures' essay on Aug 20, 2026 arguing AI-driven force projection and automated revenue could let states or firms hold power without broad human cooperation.",
+          "source_urls": [
+            "https://openai.com/index/introducing-ai-futures/"
+          ],
+          "payload": {
+            "thesis": "AI policy discourse is shifting its central risk frame from misuse and misalignment toward concentration of political and economic power enabled by AI substituting for human cooperation.",
+            "examples": [
+              "Dean W. Ball, 'Introducing AI Futures' (OpenAI, Aug 20, 2026)"
+            ],
+            "spotted_at": "2026-08-20",
+            "source_url": "https://openai.com/index/introducing-ai-futures/"
+          },
+          "confidence": "high",
+          "backfill": false
+        },
+        {
+          "kind": "BROAD_SCAN",
+          "breakthrough_id": null,
+          "title": "Penn State DNA-perovskite hybrid memory claims 100x lower power",
+          "detail": "Penn State researchers combined synthetic DNA with crystalline perovskite to build a bio-hybrid device that stores and processes data in place at roughly 100x lower power than conventional memory (Advanced Functional Materials, Aug 17, 2026).",
+          "source_urls": [
+            "https://www.sciencedaily.com/releases/2026/08/260816044853.htm"
+          ],
+          "payload": {
+            "candidate_area": "DNA storage / novel materials / in-memory compute",
+            "detail": "Bio-hybrid DNA-perovskite in-memory compute device moves DNA storage beyond archival toward active compute-adjacent memory.",
+            "source_url": "https://www.sciencedaily.com/releases/2026/08/260816044853.htm"
+          },
+          "confidence": "medium",
+          "backfill": false
+        }
+      ],
+      "additions": {
+        "new_breakthroughs": [],
+        "new_sub_ideas": [
+          "ai_dev_ecosystem/Pluggable agent harnesses",
+          "ai_dev_ecosystem/Recursive / self-rewriting agent harnesses",
+          "reasoning_models/Direct entropy control in RLVR",
+          "diffusion_models/Generation-order pathology in diffusion LMs",
+          "glp1/Third-wave oral small-molecule GLP-1s",
+          "crispr_therapies/Post-Cas9 proprietary editing platforms",
+          "ai_accelerators/Memory-safe portable GPU kernels",
+          "ai_dev_ecosystem/Coding-agent supply-chain compromise"
+        ],
+        "new_frontier": [
+          "transformers_llms/frontier",
+          "quantum_error_correction/frontier",
+          "reasoning_models/frontier",
+          "self_driving/frontier"
+        ],
+        "new_watch": [
+          "ai_dev_ecosystem/watch:Prime Intellect",
+          "fusion/watch:General Fusion (Nasdaq: GFUZ)",
+          "ai_dev_ecosystem/watch:Wiz Research",
+          "transformers_llms/watch:Redwood Research"
+        ],
+        "new_people": [],
+        "new_voices": [
+          "voice:Ryan Greenblatt",
+          "voice:Terence Tao"
+        ],
+        "trending_ideas": [
+          "trending:AI governance debate pivots from misuse to concentration of "
+        ],
+        "updates": [
+          "self_driving/update:current_frontier[0].claim",
+          "mrna_vaccines/update:current_frontier[0].claim",
+          "glp1/update:current_frontier[0].claim",
+          "crispr_therapies/update:impact_so_far",
+          "quantum_error_correction/update:current_frontier[0].claim",
+          "reusable_rockets/update:current_frontier[0].claim",
+          "renewables_batteries/update:current_frontier[0].claim",
+          "ai_accelerators/update:watch_list"
+        ],
+        "broad_scan": [
+          "broad_scan:DNA storage / novel materials / in-memor"
+        ],
+        "skipped_dedupe": [],
+        "routed_subthemes": [
+          "ai__agents_developer_ecosystem__coding_agents",
+          "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+          "ai__agents_developer_ecosystem__multi_agent_orchestration",
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+          "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+          "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+          "ai__autonomy_embodiment_ai__self_driving_robotaxis",
+          "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play",
+          "ai__architecture_efficiency__diffusion_language_models",
+          "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines",
+          "bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1",
+          "bio__metabolic_incretin_therapeutics__oral_small_molecule_glp_1",
+          "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing",
+          "bio__genetic_medicine_in_vivo_next_gen_editing__ex_vivo_edited_cell_therapies",
+          "quantum__qubit_modality_race__superconducting_qubits",
+          "quantum__qubit_modality_race__trapped_ion_systems",
+          "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding",
+          "quantum__algorithms_hybrid_computing__advantage_benchmarking",
+          "space__reusable_launch__operational_partial_reuse_falcon_class",
+          "energy__long_duration_grid_scale_storage__ldes_market_scale_up",
+          "energy__long_duration_grid_scale_storage__iron_air_metal_air_batteries",
+          "hardware__ai_accelerators__inference_specialized_asics",
+          "energy__fusion_energy__alternative_confinement_direct_electricity",
+          "energy__fusion_energy__fusion_commercialization_offtake",
+          "ai__ai_for_science__autonomous_research_hypothesis_generation",
+          "ai__multimodal_generative_media__world_models_neural_simulation",
+          "ai__autonomy_embodiment_ai__self_driving_robotaxis",
+          "ai__architecture_efficiency__quantization_custom_kernels",
+          "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+          "ai__agents_developer_ecosystem__coding_agents",
+          "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+          "ai__safety_interpretability_governance__alignment_oversight_rlhf_constitutional_scheming",
+          "hardware__ai_datacenter_power_cooling__datacenter_power_energy_density",
+          "ai__safety_interpretability_governance__ai_governance_safety_incidents",
+          "robotics__robot_learning_data_simulation__synthetic_data_sim_to_real",
+          "hardware__memory_advanced_packaging__advanced_packaging_cowos_sow",
+          "hardware__ai_datacenter_power_cooling__datacenter_power_energy_density"
+        ],
+        "auto_expanded_subthemes": []
+      },
+      "as_of_date": "2026-08-21",
+      "generated_at": "2026-08-21T12:44:04.704311+00:00"
     }
   ],
   "voices": [
@@ -18139,11 +19149,47 @@
       ],
       "added_by": "weekly_task",
       "added_at": "2026-08-11"
+    },
+    {
+      "name": "Ryan Greenblatt",
+      "role": "Chief Scientist, Redwood Research",
+      "focus": "AI control, technical safety for misaligned agents, takeoff-speed forecasting",
+      "follow_url": "https://blog.redwoodresearch.org/",
+      "twitter": null,
+      "youtube": null,
+      "newsletter": "https://blog.redwoodresearch.org/",
+      "notes": "Co-authored the AI control agenda with Buck Shlegeris; frequent Dwarkesh guest.",
+      "tags": [
+        "ai_safety",
+        "ai_control",
+        "alignment"
+      ],
+      "source_url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai",
+      "added_by": "weekly_task",
+      "added_at": "2026-08-21"
+    },
+    {
+      "name": "Terence Tao",
+      "role": "Professor of Mathematics, UCLA (Fields Medal 2006)",
+      "focus": "AI's effect on mathematical research practice, formal proof verification, autonomous research tooling",
+      "follow_url": "https://terrytao.wordpress.com/",
+      "twitter": null,
+      "youtube": null,
+      "newsletter": "https://terrytao.wordpress.com/",
+      "notes": "Not previously tracked as an AI-discourse voice; the ICM 2026 essay is now widely cited in AI-for-science conversations.",
+      "tags": [
+        "ai_for_science",
+        "mathematics",
+        "formal_verification"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.16753",
+      "added_by": "weekly_task",
+      "added_at": "2026-08-21"
     }
   ],
   "taxonomy": {
     "version": 1,
-    "generated_at": "2026-08-12T01:02:01.670325+00:00",
+    "generated_at": "2026-08-21T12:44:09.221192+00:00",
     "tracks": [
       "RND",
       "PRODUCT",
@@ -18176,13 +19222,8 @@
                 },
                 "example": "Absolute Zero (zero-data self-play)",
                 "source_url": "https://arxiv.org/abs/2505.03335",
-                "item_count": 6,
+                "item_count": 7,
                 "recent_items": [
-                  {
-                    "title": "Mythos 5 generates novel scientific hypotheses autonomously",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
-                  },
                   {
                     "title": "AlphaZero-style self-play to train LLM reasoning with zero human data",
                     "kind": "TRENDING_IDEA",
@@ -18202,6 +19243,11 @@
                     "title": "ICML 2026 Outstanding Paper: token order hurts RL in diffusion LMs",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://arxiv.org/abs/2601.15165"
+                  },
+                  {
+                    "title": "ACL 2026 paper rethinks entropy interventions in RLVR",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://arxiv.org/abs/2510.10150"
                   }
                 ]
               },
@@ -18297,13 +19343,8 @@
                 },
                 "example": "Long-horizon agentic benchmarks",
                 "source_url": "https://arxiv.org/abs/2603.25681",
-                "item_count": 8,
+                "item_count": 9,
                 "recent_items": [
-                  {
-                    "title": "Karpathy's autoresearch: agent-driven autonomous ML experimentation harness",
-                    "kind": "NEW_FRONTIER",
-                    "source_url": "https://github.com/karpathy/autoresearch"
-                  },
                   {
                     "title": "Berkeley 'Agents' Last Exam': frontier agents average just 2.6%",
                     "kind": "NEW_FRONTIER",
@@ -18323,6 +19364,11 @@
                     "title": "'Position: LLMs Can't Jump' trends on OpenReview/HN",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://openreview.net/forum?id=klU4737opt"
+                  },
+                  {
+                    "title": "Prime Intellect open-sources a self-rewriting Recursive Language Model agent",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://github.com/PrimeIntellect-ai/prime-agent"
                   }
                 ]
               }
@@ -18396,7 +19442,7 @@
                 },
                 "example": "Transformer Lab fused INT8 for diffusion (RTX 3090)",
                 "source_url": "https://arxiv.org/abs/2606.14598",
-                "item_count": 3,
+                "item_count": 4,
                 "recent_items": [
                   {
                     "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
@@ -18412,6 +19458,11 @@
                     "title": "2D topological crystalline insulator realized; room-temp projected",
                     "kind": "BROAD_SCAN",
                     "source_url": "https://www.sciencedaily.com/releases/2026/07/260711010123.htm"
+                  },
+                  {
+                    "title": "Native GPU offload lands in the Rust compiler at CUDA-level performance",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://arxiv.org/abs/2608.13759"
                   }
                 ]
               },
@@ -18451,7 +19502,7 @@
                 },
                 "example": "Survey on parallel text generation",
                 "source_url": "https://arxiv.org/abs/2508.08712",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "DiffusionGemma: Google open-weight text-diffusion LLM, 1000+ tok/s on one H100",
@@ -18462,6 +19513,11 @@
                     "title": "ICML 2026 Outstanding Paper: token order hurts RL in diffusion LMs",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://arxiv.org/abs/2601.15165"
+                  },
+                  {
+                    "title": "ICML 2026 Outstanding Paper: 'The Flexibility Trap' in diffusion LMs",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://blog.icml.cc/2026/07/05/announcing-the-icml-2026-awards/"
                   }
                 ]
               }
@@ -18549,7 +19605,7 @@
                 },
                 "example": "NVIDIA Cosmos 3; Google Genie 3",
                 "source_url": "https://www.nvidia.com/en-us/ai/cosmos/",
-                "item_count": 5,
+                "item_count": 6,
                 "recent_items": [
                   {
                     "title": "World models, not LLM scaling, are the path to physical/embodied intelligence",
@@ -18570,6 +19626,11 @@
                     "title": "Stanford/Harvard unify robot world models via Masked Visual Actions",
                     "kind": "NEW_SUB_IDEA",
                     "source_url": "https://arxiv.org/abs/2607.19343"
+                  },
+                  {
+                    "title": "DA-WAM aligns driving world-model latents with decision scoring",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://arxiv.org/abs/2608.19085"
                   }
                 ]
               },
@@ -18735,12 +19796,17 @@
                 },
                 "example": "Stress-testing deliberative alignment",
                 "source_url": "https://arxiv.org/pdf/2509.15541",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "ICML 2026 position paper warns alignment tools enable censorship",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://s-ball-10.github.io/censors-toolkit/"
+                  },
+                  {
+                    "title": "Redwood Research — the AI control agenda",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://blog.redwoodresearch.org/p/my-picture-of-the-present-in-ai"
                   }
                 ]
               },
@@ -18755,13 +19821,8 @@
                 },
                 "example": "International AI Safety Report 2026",
                 "source_url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
-                "item_count": 10,
+                "item_count": 11,
                 "recent_items": [
-                  {
-                    "title": "SF mayor demands tougher AV rules after Waymo gridlock, blackout",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://techcrunch.com/2026/07/19/techcrunch-mobility-the-battle-over-robotaxi-rules/"
-                  },
                   {
                     "title": "OpenAI model autonomously breached Hugging Face during cyber eval",
                     "kind": "BROAD_SCAN",
@@ -18781,6 +19842,11 @@
                     "title": "Dawn Song — AI-security leader building agent red-teaming/guardrail tools",
                     "kind": "NEW_PERSON",
                     "source_url": "https://dawnsong.io/"
+                  },
+                  {
+                    "title": "AI governance debate pivots from misuse to concentration of power",
+                    "kind": "TRENDING_IDEA",
+                    "source_url": "https://openai.com/index/introducing-ai-futures/"
                   }
                 ]
               },
@@ -18795,18 +19861,8 @@
                 },
                 "example": "Industrialization of cyber offense",
                 "source_url": "https://arxiv.org/html/2605.06713v1",
-                "item_count": 13,
+                "item_count": 15,
                 "recent_items": [
-                  {
-                    "title": "OpenAI opens government-gated preview of GPT-5.6 Sol/Terra/Luna",
-                    "kind": "NEW_FRONTIER",
-                    "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/"
-                  },
-                  {
-                    "title": "Autonomous AI cyber incidents drive kill-switch regulation",
-                    "kind": "TRENDING_IDEA",
-                    "source_url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/"
-                  },
                   {
                     "title": "Dawn Song — AI-security leader building agent red-teaming/guardrail tools",
                     "kind": "NEW_PERSON",
@@ -18821,6 +19877,16 @@
                     "title": "Horizon3 hits $2B valuation on $250M round for autonomous AI pentesting",
                     "kind": "BROAD_SCAN",
                     "source_url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/"
+                  },
+                  {
+                    "title": "Disputed Copilot-autofix chain in Snowflake Jira compromise",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
+                  },
+                  {
+                    "title": "Wiz Research — agentic-coding supply-chain security",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
                   }
                 ]
               }
@@ -18844,13 +19910,8 @@
                 },
                 "example": "Mythos autonomous hypotheses",
                 "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-                "item_count": 9,
+                "item_count": 10,
                 "recent_items": [
-                  {
-                    "title": "Nobel laureate John Jumper leaves Google DeepMind for Anthropic",
-                    "kind": "NEW_PERSON",
-                    "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
-                  },
                   {
                     "title": "Agon: autonomous omnidisciplinary research orchestrator ('machine scales, human steers')",
                     "kind": "NEW_FRONTIER",
@@ -18870,6 +19931,11 @@
                     "title": "OpenAI's Astra solves 10 open math problems with Lean-verified proofs",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://cdn.openai.com/pdf/ten-proofs-oai.pdf"
+                  },
+                  {
+                    "title": "Terence Tao's 'Mathematics in the Age of AI' reframes AI-for-math goals",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://arxiv.org/abs/2608.16753"
                   }
                 ]
               },
@@ -18933,18 +19999,8 @@
                 },
                 "example": "Cursor; Cognition/Devin",
                 "source_url": "https://www.cursor.com/",
-                "item_count": 10,
+                "item_count": 12,
                 "recent_items": [
-                  {
-                    "title": "Local open-weight coding agents pitched as viable Claude Code / Codex alternative",
-                    "kind": "TRENDING_IDEA",
-                    "source_url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents"
-                  },
-                  {
-                    "title": "Berkeley 'Agents' Last Exam': frontier agents average just 2.6%",
-                    "kind": "NEW_FRONTIER",
-                    "source_url": "https://arxiv.org/abs/2606.05405"
-                  },
                   {
                     "title": "Google DeepMind ships Gemini 3.6 Flash",
                     "kind": "NEW_SUB_IDEA",
@@ -18959,6 +20015,16 @@
                     "title": "Meta ships Muse Code, its first coding agent, with Muse Spark 1.2",
                     "kind": "NEW_SUB_IDEA",
                     "source_url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
+                  },
+                  {
+                    "title": "Z.ai ships GLM-5.3 with a post-training-only coding leap",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/"
+                  },
+                  {
+                    "title": "Disputed Copilot-autofix chain in Snowflake Jira compromise",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"
                   }
                 ]
               },
@@ -18975,23 +20041,8 @@
                 },
                 "example": "Model Context Protocol; Agent Skills",
                 "source_url": "https://modelcontextprotocol.io/",
-                "item_count": 11,
+                "item_count": 14,
                 "recent_items": [
-                  {
-                    "title": "Alibaba Cloud launches Agent-Native Cloud suite at WAIC 2026",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://www.alibabacloud.com/blog/alibaba-cloud-unveils-agent-native-innovations-at-waic-2026_603377"
-                  },
-                  {
-                    "title": "Virtue AI — AI-native red-teaming & guardrails for agents",
-                    "kind": "NEW_WATCH",
-                    "source_url": "https://www.virtueai.com/"
-                  },
-                  {
-                    "title": "MCP ships 2026-07-28 spec: stateless core, MRTR, auth hardening",
-                    "kind": "UPDATED_FACT",
-                    "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
-                  },
                   {
                     "title": "Microsoft's Agent Framework Harness reaches GA, governs agent fleets",
                     "kind": "UPDATED_FACT",
@@ -19001,6 +20052,21 @@
                     "title": "Spec-driven development goes mainstream via GitHub Spec Kit",
                     "kind": "NEW_SUB_IDEA",
                     "source_url": "https://github.com/github/spec-kit"
+                  },
+                  {
+                    "title": "DeepSeek open-sources an 'everything is a plugin' agent harness",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://github.com/deepseek-ai/deepseek-harness"
+                  },
+                  {
+                    "title": "Prime Intellect open-sources a self-rewriting Recursive Language Model agent",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://github.com/PrimeIntellect-ai/prime-agent"
+                  },
+                  {
+                    "title": "Prime Intellect — decentralized training and open agent harnesses",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://github.com/PrimeIntellect-ai/prime-agent"
                   }
                 ]
               },
@@ -19017,13 +20083,8 @@
                 },
                 "example": "Conductor; LangGraph; CrewAI; Microsoft AutoGen",
                 "source_url": "https://www.langchain.com/",
-                "item_count": 7,
+                "item_count": 8,
                 "recent_items": [
-                  {
-                    "title": "Coinbase ships MCP server for agentic trading and x402 payments",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/"
-                  },
                   {
                     "title": "Programming with AI agents is like playing a real-time strategy game",
                     "kind": "TRENDING_IDEA",
@@ -19043,6 +20104,11 @@
                     "title": "Microsoft's Agent Framework Harness reaches GA, governs agent fleets",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/"
+                  },
+                  {
+                    "title": "DeepSeek open-sources an 'everything is a plugin' agent harness",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://github.com/deepseek-ai/deepseek-harness"
                   }
                 ]
               },
@@ -19177,13 +20243,8 @@
                 },
                 "example": "MiniMax M3; DeepSeek; MolmoAct2",
                 "source_url": "https://huggingface.co/",
-                "item_count": 15,
+                "item_count": 16,
                 "recent_items": [
-                  {
-                    "title": "Open-weight models face a near-term regulatory cliff",
-                    "kind": "TRENDING_IDEA",
-                    "source_url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models"
-                  },
                   {
                     "title": "Moonshot AI — frontier open-weight LLM lab behind Kimi K3",
                     "kind": "NEW_WATCH",
@@ -19203,6 +20264,11 @@
                     "title": "Alibaba launches Qwen3.8-Max, 2.4T-param MoE, open weights imminent",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://qwen.ai/blog?id=qwen3.8"
+                  },
+                  {
+                    "title": "Z.ai ships GLM-5.3 with a post-training-only coding leap",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/"
                   }
                 ]
               },
@@ -19436,18 +20502,8 @@
                 },
                 "example": "Waymo; Tesla; Chinese operators",
                 "source_url": "https://waymo.com/",
-                "item_count": 10,
+                "item_count": 12,
                 "recent_items": [
-                  {
-                    "title": "NHTSA presses AV makers on first-responder interference; meets Jul 31",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-07/ADS-developers-letter-july-2026.pdf"
-                  },
-                  {
-                    "title": "Tesla robotaxi paid miles fell ~36% in Q2 despite city expansion",
-                    "kind": "UPDATED_FACT",
-                    "source_url": "https://techcrunch.com/2026/07/23/teslas-robotaxis-are-moving-in-reverse/"
-                  },
                   {
                     "title": "SF mayor demands tougher AV rules after Waymo gridlock, blackout",
                     "kind": "NEW_SUB_IDEA",
@@ -19462,6 +20518,16 @@
                     "title": "Zoox to charge fares for driverless robotaxi rides, a US first",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://techcrunch.com/2026/08/05/zoox-to-start-charging-for-robotaxi-rides-in-las-vegas/"
+                  },
+                  {
+                    "title": "CPUC clears Waymo driverless rides across 18 California counties",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/"
+                  },
+                  {
+                    "title": "DA-WAM aligns driving world-model latents with decision scoring",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://arxiv.org/abs/2608.19085"
                   }
                 ]
               },
@@ -19638,13 +20704,8 @@
                 },
                 "example": "First bespoke in vivo CRISPR (CPS1 infant, 2025)",
                 "source_url": "https://innovativegenomics.org/news/crispr-clinical-trials-2025/",
-                "item_count": 6,
+                "item_count": 7,
                 "recent_items": [
-                  {
-                    "title": "Intellia lonvo-z: first positive pivotal Phase 3 for in vivo CRISPR (HAE), NEJM",
-                    "kind": "NEW_FRONTIER",
-                    "source_url": "https://www.stocktitan.net/news/NTLA/intellia-therapeutics-reports-additional-positive-phase-3-results-afks73wvycew.html"
-                  },
                   {
                     "title": "CRISPR RNA-editing tool restores MHC-I, boosts immunotherapy in prostate cancer",
                     "kind": "UPDATED_FACT",
@@ -19664,6 +20725,11 @@
                     "title": "Intellia finds HLA variant tied to liver risk from CRISPR nex-z",
                     "kind": "NEW_SUB_IDEA",
                     "source_url": "https://www.biospace.com/press-releases/intellia-therapeutics-announces-second-quarter-2026-financial-results-and-business-updates"
+                  },
+                  {
+                    "title": "CRISPR Therapeutics starts Phase 1 for CTX460 on its new SyNTase platform",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html"
                   }
                 ]
               },
@@ -19747,7 +20813,7 @@
                 },
                 "example": "Casgevy (exa-cel)",
                 "source_url": "https://innovativegenomics.org/news/crispr-clinical-trials-2025/",
-                "item_count": 5,
+                "item_count": 6,
                 "recent_items": [
                   {
                     "title": "CASGEVY CRISPR therapy expanded to children as young as 2",
@@ -19768,6 +20834,11 @@
                     "title": "CRISPR RNA-editing tool restores MHC-I, boosts immunotherapy in prostate cancer",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://www.nature.com/articles/s41551-026-01720-9"
+                  },
+                  {
+                    "title": "Casgevy revenue up 151% year-over-year after pediatric expansion",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://www.globenewswire.com/news-release/2026/08/03/3337896/0/en/crispr-therapeutics-provides-business-update-and-reports-second-quarter-2026-financial-results.html"
                   }
                 ]
               },
@@ -19848,13 +20919,8 @@
                 },
                 "example": "mRNA-4157/V940 + Keytruda",
                 "source_url": "https://www.merck.com/news/",
-                "item_count": 6,
+                "item_count": 7,
                 "recent_items": [
-                  {
-                    "title": "Moderna intismeran mRNA melanoma vaccine: 5-year KEYNOTE-942 data at ASCO",
-                    "kind": "UPDATED_FACT",
-                    "source_url": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.9500"
-                  },
                   {
                     "title": "mRNA vaccines prime T cells via unexpected cDC2 cross-dressing route",
                     "kind": "NEW_FRONTIER",
@@ -19874,6 +20940,11 @@
                     "title": "First mRNA flu vaccine (Moderna mRNA-1010) awaits FDA decision Aug 5",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://www.biopharmadive.com/news/moderna-mflusiva-mrna-flu-vaccine-fda-committee-vote/823275/"
+                  },
+                  {
+                    "title": "Merck/Moderna mRNA cancer vaccine hits first positive Phase 3 in melanoma",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/"
                   }
                 ]
               },
@@ -19954,18 +21025,8 @@
                 },
                 "example": "Orforglipron (Foundayo)",
                 "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898445/",
-                "item_count": 11,
+                "item_count": 13,
                 "recent_items": [
-                  {
-                    "title": "Structure Therapeutics' oral GLP-1 aleniglipron: phase 2b in Nature Medicine",
-                    "kind": "UPDATED_FACT",
-                    "source_url": "https://www.nature.com/articles/s41591-026-04476-6"
-                  },
-                  {
-                    "title": "Structure Therapeutics — oral small-molecule GLP-1 developer (entity reconciliation)",
-                    "kind": "NEW_WATCH",
-                    "source_url": "https://ir.structuretx.com/news-releases/news-release-details/structure-therapeutics-announces-publication-nature-medicine"
-                  },
                   {
                     "title": "Oral GLP-1 orforglipron beats oral semaglutide head-to-head (ACHIEVE-3)",
                     "kind": "UPDATED_FACT",
@@ -19980,6 +21041,16 @@
                     "title": "Oral dual GLP-1/GIP ribupatide hits 12.1% weight loss in Phase 2",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://www.biospace.com/press-releases/kailera-therapeutics-and-hengrui-pharma-report-positive-topline-data-from-phase-2-obesity-trial-of-oral-ribupatide"
+                  },
+                  {
+                    "title": "Oral Wegovy outsells orforglipron 5-to-1 in the first head-to-head quarter",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
+                  },
+                  {
+                    "title": "Aleniglipron posts ~11.3% placebo-adjusted weight loss in Phase 2b",
+                    "kind": "NEW_SUB_IDEA",
+                    "source_url": "https://doi.org/10.1038/s41591-026-04476-6"
                   }
                 ]
               },
@@ -20578,13 +21649,8 @@
                 },
                 "example": "Helion (Microsoft offtake 2028)",
                 "source_url": "https://pdpspectra.com/blog/fusion-energy-2026-commonwealth-helion/",
-                "item_count": 8,
+                "item_count": 9,
                 "recent_items": [
-                  {
-                    "title": "Type One Energy — stellarator commercialization player (entity reconciliation)",
-                    "kind": "NEW_WATCH",
-                    "source_url": "https://www.businesswire.com/news/home/20260616529841/en/Type-One-Energy-Appoints-Bernard-Looney-to-Board-of-Directors"
-                  },
                   {
                     "title": "Realta Fusion demos direct plasma-to-electricity conversion",
                     "kind": "NEW_FRONTIER",
@@ -20604,6 +21670,11 @@
                     "title": "LLNL/Pacific Fusion Sirius pulser hits 3,000-shot reliability milestone",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://www.llnl.gov/article/54696/llnl-pacific-fusion-partnership-advances-next-generation-pulsed-power-technology"
+                  },
+                  {
+                    "title": "General Fusion becomes the first publicly listed fusion company",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html"
                   }
                 ]
               },
@@ -20657,13 +21728,8 @@
                 },
                 "example": "DOE Fusion S&T Roadmap (2026)",
                 "source_url": "https://www.energy.gov/articles/energy-department-releases-finalized-fusion-science-and-technology-roadmap-accelerate",
-                "item_count": 8,
+                "item_count": 9,
                 "recent_items": [
-                  {
-                    "title": "Helion secures world-first regulatory licenses for a fusion power plant",
-                    "kind": "NEW_FRONTIER",
-                    "source_url": "https://www.helionenergy.com/newsroom/helion-clears-key-regulatory-milestone-on-the-path-to-building-and-operating-the-worlds-first-fusion-power-plant"
-                  },
                   {
                     "title": "General Fusion becomes first fusion company listed on Nasdaq (GFUZ)",
                     "kind": "NEW_WATCH",
@@ -20683,6 +21749,11 @@
                     "title": "Commonwealth Fusion Systems raises another $1B, total to $4B",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/"
+                  },
+                  {
+                    "title": "General Fusion becomes the first publicly listed fusion company",
+                    "kind": "NEW_WATCH",
+                    "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347219/0/en/general-fusion-provides-first-public-company-business-update.html"
                   }
                 ]
               }
@@ -20704,7 +21775,7 @@
                 },
                 "example": "Form Energy Great River pilot",
                 "source_url": "https://www.utilitydive.com/news/long-duration-energy-storage-deployments-rose-49-in-2025-woodmac/814336/",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "Ore Energy signs 1 GWh iron-air multi-day storage deal with Dutch utility",
@@ -20715,6 +21786,11 @@
                     "title": "Ore Energy — iron-air multi-day storage startup (Delft spinout)",
                     "kind": "NEW_WATCH",
                     "source_url": "https://www.energy-storage.news/multi-day-energy-storage-startup-ore-energy-signs-1gwh-iron-air-battery-deal-with-dutch-utility/"
+                  },
+                  {
+                    "title": "Form Energy raises $750M Series G; iron-air backlog reaches 80 GWh",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/"
                   }
                 ]
               },
@@ -20729,7 +21805,7 @@
                 },
                 "example": "WoodMac: LDES +49% in 2025",
                 "source_url": "https://www.utilitydive.com/news/long-duration-energy-storage-deployments-rose-49-in-2025-woodmac/814336/",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "Eos Energy's zinc LDES batteries picked for Golden Dome",
@@ -20740,6 +21816,11 @@
                     "title": "Eos Energy Enterprises — US zinc long-duration battery maker (LDES)",
                     "kind": "NEW_WATCH",
                     "source_url": "https://www.globenewswire.com/news-release/2026/07/15/3328154/0/en/Eos-Energy-Enterprises-Selected-to-Deliver-Mission-Ready-Power-for-Golden-Dome-for-America.html"
+                  },
+                  {
+                    "title": "Form Energy raises $750M Series G; iron-air backlog reaches 80 GWh",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/"
                   }
                 ]
               }
@@ -20924,13 +22005,8 @@
                 },
                 "example": "Falcon 9 B1067 35th flight",
                 "source_url": "https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/",
-                "item_count": 6,
+                "item_count": 7,
                 "recent_items": [
-                  {
-                    "title": "Falcon 9 booster B1067 sets reuse record with 35th flight",
-                    "kind": "UPDATED_FACT",
-                    "source_url": "https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/"
-                  },
                   {
                     "title": "SpaceX completes IPO; SPCX debuts on Nasdaq at a ~$2.1T valuation",
                     "kind": "UPDATED_FACT",
@@ -20950,6 +22026,11 @@
                     "title": "Rocket Lab wins $397M Space Force deal, Neutron's first defense mission",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://www.globenewswire.com/news-release/2026/08/04/3338977/0/en/rocket-lab-awarded-397-million-contract-to-build-and-launch-flatellites-for-u-s-space-force-s-space-based-airborne-moving-target-indicator-program.html"
+                  },
+                  {
+                    "title": "SpaceX launches two Falcon 9 missions 38 minutes apart",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-breaks-record-launch-doubleheader-ussf-366-globalstar-2r"
                   }
                 ]
               },
@@ -21236,13 +22317,8 @@
                 },
                 "example": "Quantinuum Helios 48 logical; IQM barbell codes",
                 "source_url": "https://www.nature.com/articles/s41586-026-10628-y",
-                "item_count": 7,
+                "item_count": 8,
                 "recent_items": [
-                  {
-                    "title": "IQM 'barbell codes' — qLDPC codes with ~1000x lower logical error",
-                    "kind": "NEW_SUB_IDEA",
-                    "source_url": "https://www.businesswire.com/news/home/20260609533201/en/IQM-Announces-Novel-Quantum-Error-Correction-Approach-Toward-Fault-Tolerant-Quantum-Computing"
-                  },
                   {
                     "title": "IQM 'directional tile' codes cut logical error rate up to 1,000x on current hardware",
                     "kind": "NEW_FRONTIER",
@@ -21262,6 +22338,11 @@
                     "title": "Caltech 'mitten codes': high-rate qLDPC family with surgery gadgets",
                     "kind": "NEW_SUB_IDEA",
                     "source_url": "https://arxiv.org/abs/2607.28795"
+                  },
+                  {
+                    "title": "Mitsui and Mitsubishi Electric run a logical QFT on Quantinuum Helios",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/"
                   }
                 ]
               },
@@ -21343,7 +22424,7 @@
                 },
                 "example": "Quantinuum Helios",
                 "source_url": "https://en.wikipedia.org/wiki/Quantinuum",
-                "item_count": 3,
+                "item_count": 4,
                 "recent_items": [
                   {
                     "title": "Sandia + Quantinuum publish 98-qubit Helios results in Nature",
@@ -21359,6 +22440,11 @@
                     "title": "Quantinuum: universal gate set from anyon braiding+fusion (Nature)",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://www.nature.com/articles/s41586-026-10709-y"
+                  },
+                  {
+                    "title": "Mitsui and Mitsubishi Electric run a logical QFT on Quantinuum Helios",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/"
                   }
                 ]
               },
@@ -21373,7 +22459,7 @@
                 },
                 "example": "Google Willow",
                 "source_url": "https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip/",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "D-Wave pivots to dual-rail gate-model FT roadmap (100 logical qubits by 2032)",
@@ -21384,6 +22470,11 @@
                     "title": "IBM Nighthawk r2 cuts qubit reset to 25ns, ~25x throughput gain",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/"
+                  },
+                  {
+                    "title": "Cornell cuts tantalum qubit deposition to 200C with krypton sputtering",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://news.cornell.edu/stories/2026/08/new-ingredient-quantum-computing-krypton-gas"
                   }
                 ]
               }
@@ -21430,7 +22521,7 @@
                 },
                 "example": "Capability-assessment (2026)",
                 "source_url": "https://arxiv.org/pdf/2604.04761",
-                "item_count": 2,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "Sandia + Quantinuum publish 98-qubit Helios results in Nature",
@@ -21441,6 +22532,11 @@
                     "title": "Open-weight models face a near-term regulatory cliff",
                     "kind": "TRENDING_IDEA",
                     "source_url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models"
+                  },
+                  {
+                    "title": "Mitsui and Mitsubishi Electric run a logical QFT on Quantinuum Helios",
+                    "kind": "NEW_FRONTIER",
+                    "source_url": "https://quantumcomputingreport.com/mitsui-co-and-mitsubishi-electric-benchmark-approximate-and-logical-qft-on-quantinuum-helios/"
                   }
                 ]
               }
@@ -21644,7 +22740,7 @@
                 },
                 "example": "Etched Sohu; Groq LPU",
                 "source_url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
-                "item_count": 5,
+                "item_count": 6,
                 "recent_items": [
                   {
                     "title": "OpenAI + Broadcom unveil 'Jalapeño' custom LLM-inference ASIC",
@@ -21665,6 +22761,11 @@
                     "title": "Taalas — 'etch the model into silicon' inference chips (AMD-acquired)",
                     "kind": "NEW_WATCH",
                     "source_url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344"
+                  },
+                  {
+                    "title": "Etched raises $700M at $21B valuation, ships first rack to Jane Street",
+                    "kind": "UPDATED_FACT",
+                    "source_url": "https://www.globenewswire.com/news-release/2026/08/18/3347095/0/en/etched-raises-700m-at-a-21b-valuation-and-completes-first-customer-delivery-to-jane-street.html"
                   }
                 ]
               }
@@ -21783,12 +22884,17 @@
                 },
                 "example": "TSMC CoWoS sold out through 2026",
                 "source_url": "https://markets.financialcontent.com/wral/article/tokenring-2025-12-26-tsmc-boosts-cowos-capacity-as-nvidia-dominates-advanced-packaging-orders-through-2027",
-                "item_count": 1,
+                "item_count": 2,
                 "recent_items": [
                   {
                     "title": "TSMC adds $100B Arizona CoWoS capacity after record AI quarter",
                     "kind": "UPDATED_FACT",
                     "source_url": "https://www.techtimes.com/articles/320841/20260717/tsmc-lifts-arizona-265-billion-after-record-quarter-four-fabs-target-ai-packaging-bottleneck.htm"
+                  },
+                  {
+                    "title": "Penn State DNA-perovskite hybrid memory claims 100x lower power",
+                    "kind": "BROAD_SCAN",
+                    "source_url": "https://www.sciencedaily.com/releases/2026/08/260816044853.htm"
                   }
                 ]
               }
@@ -21887,12 +22993,22 @@
                 },
                 "example": "300kW racks (2026) trend",
                 "source_url": "https://www.coresite.com/blog/data-center-outlook-2026-power-and-cooling-challenges-and-solutions-are-top-of-mind",
-                "item_count": 1,
+                "item_count": 3,
                 "recent_items": [
                   {
                     "title": "OpenAI + Broadcom unveil 'Jalapeño' custom LLM-inference ASIC",
                     "kind": "NEW_FRONTIER",
                     "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+                  },
+                  {
+                    "title": "AI governance debate pivots from misuse to concentration of power",
+                    "kind": "TRENDING_IDEA",
+                    "source_url": "https://openai.com/index/introducing-ai-futures/"
+                  },
+                  {
+                    "title": "Penn State DNA-perovskite hybrid memory claims 100x lower power",
+                    "kind": "BROAD_SCAN",
+                    "source_url": "https://www.sciencedaily.com/releases/2026/08/260816044853.htm"
                   }
                 ]
               }
@@ -22203,7 +23319,7 @@
                 },
                 "example": "NVIDIA Isaac GR00T Blueprint",
                 "source_url": "https://developer.nvidia.com/blog/building-a-synthetic-motion-generation-pipeline-for-humanoid-robot-learning",
-                "item_count": 4,
+                "item_count": 5,
                 "recent_items": [
                   {
                     "title": "Dwarkesh Patel: data, not algorithms, is the 'black hole' driving AI",
@@ -22224,6 +23340,11 @@
                     "title": "Holiday Robotics — RSS 2026 Best Paper for fast humanoid RL",
                     "kind": "NEW_WATCH",
                     "source_url": "https://en.sedaily.com/technology/2026/07/22/holiday-robotics-wins-best-paper-award-at-worlds-top"
+                  },
+                  {
+                    "title": "Penn State DNA-perovskite hybrid memory claims 100x lower power",
+                    "kind": "BROAD_SCAN",
+                    "source_url": "https://www.sciencedaily.com/releases/2026/08/260816044853.htm"
                   }
                 ]
               },

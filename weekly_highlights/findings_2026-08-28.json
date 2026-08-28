@@ -1,0 +1,824 @@
+{
+ "week_ending": "2026-08-28",
+ "summary": "Hot Chips 2026 (Aug 23-25) dominated the week: Nvidia detailed Rubin/Vera, AMD detailed MI400/MI455X and the Helios rack, and OpenAI publicly unveiled Jalapeno, its first Broadcom-built custom inference ASIC. Two long-standing hardware gap sub-themes finally got real items from the same venue - photonic/optical compute (Opticore's homodyne tensor crossbar) and consumer/edge NPUs (UC Berkeley's Gemmelos). In bio, FDA approved Mounjaro for cardiovascular risk reduction, Moderna/Merck posted the first-ever positive Phase 3 for an individualized mRNA cancer vaccine, and Charite published a six-patient CAR-T reversal of refractory rheumatoid arthritis in Nature Medicine. The week's dominant thesis across voices was that the AI build-out's binding constraint has moved from chip supply to power, skilled labor, and capital. Verification: 29 passed, 5 fixed (a fabricated 16% all-cause-mortality figure on Mounjaro, a wrong Starship Flight 14 date, a stale Dwarkesh URL, a backfill flag), 0 dropped. Entity reconciliation added 7 players we were tracking the news about but not the player behind it - Opticore, Charite Berlin, BindCraft/EPFL, Beijing Humanoid Robot Innovation Center, Inherent, Inertia Enterprises, and Quantum Circuits Inc (the Yale spinout whose dual-rail qubit D-Wave's Nature result actually rests on).",
+ "highlights": [
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Nvidia discloses Rubin GPU + Vera CPU architecture at Hot Chips 2026",
+   "detail": "Nvidia publicly detailed the Rubin GPU and Vera CPU for the first time, claiming Vera Rubin NVL72 delivers 10x-30x more tokens per megawatt than GB300 NVL72 on SemiAnalysis' AgentX benchmark at high interactivity.",
+   "source_urls": [
+    "https://hc2026.hotchips.org/assets/program/conference/day1/FINAL_NV_HC2026_Rubin.pdf",
+    "https://blogs.nvidia.com/blog/vera-rubin/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__merchant_training_inference_gpus",
+     "hardware__ai_datacenter_power_cooling__datacenter_power_energy_density"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "claim": "Nvidia publicly detailed the Rubin GPU and Vera CPU for the first time, claiming Vera Rubin NVL72 delivers 10x-30x more tokens per megawatt than GB300 NVL72 on SemiAnalysis' AgentX benchmark at high interactivity.",
+    "source_url": "https://hc2026.hotchips.org/assets/program/conference/day1/FINAL_NV_HC2026_Rubin.pdf",
+    "extra_source_urls": [
+     "https://blogs.nvidia.com/blog/vera-rubin/"
+    ]
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "AMD details MI455X (432GB HBM4) and 2.9-exaflop Helios rack at Hot Chips",
+   "detail": "AMD disclosed MI455X with 432GB of HBM4 at 23.3TB/s and 40.26 PFLOPS MXFP4; the 72-GPU Helios rack delivers 2.9 exaflops, 31TB HBM4 and 1.7PB/s of bandwidth, shipping Q3 2026.",
+   "source_urls": [
+    "https://hc2026.hotchips.org/assets/program/conference/day1/FINAL_AMD%20Instinct%20MI400%20GPU%20Architecture_HotChips.pdf",
+    "https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__merchant_training_inference_gpus",
+     "hardware__memory_advanced_packaging__hbm_the_memory_wall"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "claim": "AMD disclosed MI455X with 432GB of HBM4 at 23.3TB/s and 40.26 PFLOPS MXFP4; the 72-GPU Helios rack delivers 2.9 exaflops, 31TB HBM4 and 1.7PB/s of bandwidth, shipping Q3 2026.",
+    "source_url": "https://hc2026.hotchips.org/assets/program/conference/day1/FINAL_AMD%20Instinct%20MI400%20GPU%20Architecture_HotChips.pdf",
+    "extra_source_urls": [
+     "https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/"
+    ]
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "OpenAI unveils Jalapeno, its first custom inference ASIC, with Broadcom",
+   "detail": "OpenAI presented Jalapeno at Hot Chips 2026 - a Broadcom-built inference ASIC designed in nine months with AI-assisted design, scaling to a 2,048-chip domain over Tomahawk6 switches, claiming ~50% better cost-efficiency than merchant GPUs with volume production in 2027.",
+   "source_urls": [
+    "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+    "https://www.servethehome.com/openai-jalapeno-asic-at-hot-chips-2026/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__hyperscaler_custom_silicon",
+     "hardware__ai_accelerators__inference_specialized_asics",
+     "ai__frontier_platforms_applied_ai_economics__ai_compute_economics"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "claim": "OpenAI presented Jalapeno at Hot Chips 2026 - a Broadcom-built inference ASIC designed in nine months with AI-assisted design, scaling to a 2,048-chip domain over Tomahawk6 switches, claiming ~50% better cost-efficiency than merchant GPUs with volume production in 2027.",
+    "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+    "extra_source_urls": [
+     "https://www.servethehome.com/openai-jalapeno-asic-at-hot-chips-2026/"
+    ]
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Opticore shows photonic tensor crossbar at Hot Chips - fills photonics gap",
+   "detail": "Startup Opticore presented a large-scale homodyne photonic crossbar for AI tensor processing, claiming up to 100x the energy efficiency and 25x the compute density of leading GPUs on standard foundry processes, with a scaled system demo targeted for 2026.",
+   "source_urls": [
+    "https://hc2026.hotchips.org/assets/program/posters/Opticore_Hotchipsposter.pdf",
+    "https://www.opticore.ai/signal/opticore-at-hot-chips-2026"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__novel_compute_architectures__photonic_optical_compute"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "claim": "Startup Opticore presented a large-scale homodyne photonic crossbar for AI tensor processing, claiming up to 100x the energy efficiency and 25x the compute density of leading GPUs on standard foundry processes, with a scaled system demo targeted for 2026.",
+    "source_url": "https://hc2026.hotchips.org/assets/program/posters/Opticore_Hotchipsposter.pdf",
+    "extra_source_urls": [
+     "https://www.opticore.ai/signal/opticore-at-hot-chips-2026"
+    ]
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "ai_accelerators",
+   "title": "UC Berkeley Gemmelos dual-chip edge AI SoC - fills consumer-NPU gap",
+   "detail": "UC Berkeley presented Gemmelos, a two-chip Intel 16nm platform for multimodal edge AI inference, one of several on-device accelerator disclosures at Hot Chips 2026 alongside KU Leuven's ETHEREAL and Harvard/Lockheed's Pistil.",
+   "source_urls": [
+    "https://hc2026.hotchips.org/assets/program/posters/UC%20Berkeley%20Gemmelos%20Poster%20HotChips26.pdf",
+    "https://hc2026.hotchips.org/program/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__edge_on_device_silicon__consumer_npus"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "name": "UC Berkeley Gemmelos dual-chip edge AI SoC - fills consumer-NPU gap",
+    "description": "UC Berkeley presented Gemmelos, a two-chip Intel 16nm platform for multimodal edge AI inference, one of several on-device accelerator disclosures at Hot Chips 2026 alongside KU Leuven's ETHEREAL and Harvard/Lockheed's Pistil.",
+    "source_url": "https://hc2026.hotchips.org/assets/program/posters/UC%20Berkeley%20Gemmelos%20Poster%20HotChips26.pdf",
+    "extra_source_urls": [
+     "https://hc2026.hotchips.org/program/"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "glp1",
+   "title": "FDA approves Mounjaro for cardiovascular risk reduction in type 2 diabetes",
+   "detail": "FDA approved tirzepatide on Aug 28, 2026 to reduce major adverse cardiovascular events in adults with T2D at high CV risk, based on SURPASS-CVOT (13,299 patients) showing an 8% lower rate of CV death, heart attack or stroke vs. dulaglutide (HR 0.92) - the first GIP/GLP-1 dual agonist with a CV label.",
+   "source_urls": [
+    "https://www.prnewswire.com/news-releases/fda-approves-lillys-mounjaro-tirzepatide-to-reduce-cardiovascular-risk-in-adults-with-type-2-diabetes-302862415.html"
+   ],
+   "payload": {
+    "field": "tirzepatide_fda_label",
+    "new_value": "FDA-approved for MACE risk reduction in T2D (Aug 28, 2026; SURPASS-CVOT HR 0.92)",
+    "previous_value": "Approved for glycemic control and chronic weight management only",
+    "source_url": "https://www.prnewswire.com/news-releases/fda-approves-lillys-mounjaro-tirzepatide-to-reduce-cardiovascular-risk-in-adults-with-type-2-diabetes-302862415.html",
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__indication_expansion"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "mrna_vaccines",
+   "title": "First positive Phase 3 for an individualized mRNA cancer vaccine (melanoma)",
+   "detail": "Moderna/Merck's intismeran autogene (mRNA-4157/V940) plus pembrolizumab met both recurrence-free and distant metastasis-free survival endpoints in Phase 3 INTerpath-001 in resected stage IIB-IV melanoma - the first positive Phase 3 for a personalized neoantigen mRNA therapy.",
+   "source_urls": [
+    "https://news.modernatx.com/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-plus-keytruda-met-endpoints-of-rfs-and-dmfs-in-melanoma"
+   ],
+   "payload": {
+    "field": "intismeran_autogene_phase3_status",
+    "new_value": "Phase 3 INTerpath-001 met RFS and DMFS endpoints (Aug 19, 2026)",
+    "previous_value": "Phase 2b positive, Phase 3 pending",
+    "source_url": "https://news.modernatx.com/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-plus-keytruda-met-endpoints-of-rfs-and-dmfs-in-melanoma",
+    "subtheme_ids": [
+     "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "crispr_therapies",
+   "title": "CD19 CAR-T reverses refractory rheumatoid arthritis in Nature Medicine",
+   "detail": "Charite Berlin's phase 1 COMPARE trial treated 6 RA patients refractory to up to 8 prior therapies; all six showed markedly reduced disease activity and three were in sustained drug-free remission at up to one year.",
+   "source_urls": [
+    "https://www.nature.com/articles/s41591-026-04603-3"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__engineered_cell_therapies__car_t_for_autoimmune_disease"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "CD19 CAR-T reverses refractory rheumatoid arthritis in Nature Medicine",
+    "description": "Charite Berlin's phase 1 COMPARE trial treated 6 RA patients refractory to up to 8 prior therapies; all six showed markedly reduced disease activity and three were in sustained drug-free remission at up to one year.",
+    "source_url": "https://www.nature.com/articles/s41591-026-04603-3"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "crispr_therapies",
+   "title": "smACGmax base editor edits three nucleotides (A/C/G) simultaneously",
+   "detail": "A Cas9-nickase editor fusing engineered adenine/cytosine deaminases with alkyladenine DNA glycosylases achieved simultaneous triple-base editing at 5.7-41% efficiency at endogenous human sites, with up to 3.2x more allelic diversity than dual A-C editors.",
+   "source_urls": [
+    "https://crisprmedicinenews.com/news/triple-base-editor-diversifies-three-nucleotides-at-once/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__genetic_medicine_in_vivo_next_gen_editing__base_editing"
+    ],
+    "venue": "",
+    "new_category": false,
+    "claim": "A Cas9-nickase editor fusing engineered adenine/cytosine deaminases with alkyladenine DNA glycosylases achieved simultaneous triple-base editing at 5.7-41% efficiency at endogenous human sites, with up to 3.2x more allelic diversity than dual A-C editors.",
+    "source_url": "https://crisprmedicinenews.com/news/triple-base-editor-diversifies-three-nucleotides-at-once/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "bci",
+   "title": "Paradromics BCI cleared to connect to patients' own phones and laptops",
+   "detail": "FDA approved an expansion on Aug 26, 2026 letting Paradromics' investigational Connexus BCI connect via its Convey interface to compatible personal laptops, tablets and phones in the Connect-One study without per-device sign-off.",
+   "source_urls": [
+    "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-bci-access-to-personal-computing-devices-in-connect-one-clinical-study/"
+   ],
+   "payload": {
+    "field": "paradromics_connexus_device_compatibility",
+    "new_value": "FDA-approved to interface with personal computing devices (Aug 26, 2026)",
+    "previous_value": "Restricted to company-provided computing environment",
+    "source_url": "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-bci-access-to-personal-computing-devices-in-connect-one-clinical-study/",
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "alphafold_protein_design",
+   "title": "Human Bindome: 306,146 designed binders covering 41% of the proteome",
+   "detail": "A bioRxiv preprint used an accelerated BindCraft-based pipeline to generate 306,146 designed binder candidates against 8,296 human proteins, each with predicted structure and confidence metrics, released as a queryable web resource.",
+   "source_urls": [
+    "https://www.biorxiv.org/content/10.64898/2026.07.30.741542v1"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__computational_protein_biomolecule_design__atomistic_binder_design_at_scale"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Human Bindome: 306,146 designed binders covering 41% of the proteome",
+    "description": "A bioRxiv preprint used an accelerated BindCraft-based pipeline to generate 306,146 designed binder candidates against 8,296 human proteins, each with predicted structure and confidence metrics, released as a queryable web resource.",
+    "source_url": "https://www.biorxiv.org/content/10.64898/2026.07.30.741542v1"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Z.ai releases GLM-5.3-Flash: 320B-A18B MIT-licensed multimodal MoE",
+   "detail": "Z.ai confirmed its anonymously-tested 'Ox Alpha' model is GLM-5.3-Flash - a 320B-parameter (18B active) natively multimodal MoE with 1M-token context, released under MIT license on Aug 26, 2026 at roughly one-tenth the price of GLM-5.2.",
+   "source_urls": [
+    "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+     "ai__architecture_efficiency__moe_sparse_attention_long_context"
+    ],
+    "venue": "",
+    "new_category": false,
+    "claim": "Z.ai confirmed its anonymously-tested 'Ox Alpha' model is GLM-5.3-Flash - a 320B-parameter (18B active) natively multimodal MoE with 1M-token context, released under MIT license on Aug 26, 2026 at roughly one-tenth the price of GLM-5.2.",
+    "source_url": "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "self_driving",
+   "title": "Nevada approves Tesla, Waymo, Uber for up to 8,000 robotaxis in Clark County",
+   "detail": "The Nevada Transportation Authority unanimously approved permits on Aug 20, 2026 allowing Tesla (5,000-vehicle cap), Waymo (1,000) and Uber (1,000) to run commercial robotaxis in Las Vegas over 12 months; Tesla testified it expects only ~2,500 deployed by next year.",
+   "source_urls": [
+    "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/"
+   ],
+   "payload": {
+    "field": "nevada_robotaxi_permits",
+    "new_value": "Tesla 5,000 / Waymo 1,000 / Uber 1,000 approved (Aug 20, 2026)",
+    "previous_value": "Tesla limited to 10 vehicles under interim order",
+    "source_url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "Tiangong Ultra humanoid runs 100m in 8.64s at World Humanoid Robot Games",
+   "detail": "Beijing Humanoid Robot Innovation Center's Tiangong Ultra clocked 8.86s in the 100m semifinal on Aug 26 and 8.64s in the final, improving on its own 9.39s mark set Aug 22 - both faster than the 9.58s human world record.",
+   "source_urls": [
+    "https://news.cgtn.com/news/2026-08-26/Chinese-humanoid-robot-sprints-100m-in-8-86-seconds-breaks-own-record-1PV0aSpZ91S/p.html",
+    "https://www.globaltimes.cn/page/202608/1369085.shtml"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__humanoid_robots__locomotion_whole_body_control"
+    ],
+    "venue": "World Humanoid Robot Games 2026",
+    "new_category": false,
+    "claim": "Beijing Humanoid Robot Innovation Center's Tiangong Ultra clocked 8.86s in the 100m semifinal on Aug 26 and 8.64s in the final, improving on its own 9.39s mark set Aug 22 - both faster than the 9.58s human world record.",
+    "source_url": "https://news.cgtn.com/news/2026-08-26/Chinese-humanoid-robot-sprints-100m-in-8-86-seconds-breaks-own-record-1PV0aSpZ91S/p.html",
+    "extra_source_urls": [
+     "https://www.globaltimes.cn/page/202608/1369085.shtml"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "RSS 2026 Outstanding Paper: FlashSAC cuts sim-to-real humanoid RL to minutes",
+   "detail": "FlashSAC, an off-policy SAC variant bounding weight/feature/gradient norms, beat PPO and other baselines across 60+ tasks in 10 simulators and cut sim-to-real humanoid locomotion training from hours to minutes.",
+   "source_urls": [
+    "https://arxiv.org/abs/2604.04539"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__robot_learning_data_simulation__synthetic_data_sim_to_real",
+     "robotics__humanoid_robots__locomotion_whole_body_control"
+    ],
+    "venue": "RSS 2026",
+    "new_category": false,
+    "name": "RSS 2026 Outstanding Paper: FlashSAC cuts sim-to-real humanoid RL to minutes",
+    "description": "FlashSAC, an off-policy SAC variant bounding weight/feature/gradient norms, beat PPO and other baselines across 60+ tasks in 10 simulators and cut sim-to-real humanoid locomotion training from hours to minutes.",
+    "source_url": "https://arxiv.org/abs/2604.04539"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "reasoning_models",
+   "title": "ICML 2026 Outstanding Paper: order flexibility hurts diffusion-LLM reasoning",
+   "detail": "'The Flexibility Trap' showed diffusion language models' arbitrary-order generation lets them skip high-uncertainty tokens and collapse solution coverage; the authors' JustGRPO fix constrains RL exploration to left-to-right order.",
+   "source_urls": [
+    "https://arxiv.org/abs/2601.15165"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__architecture_efficiency__diffusion_language_models",
+     "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
+    ],
+    "venue": "ICML 2026",
+    "new_category": false,
+    "name": "ICML 2026 Outstanding Paper: order flexibility hurts diffusion-LLM reasoning",
+    "description": "'The Flexibility Trap' showed diffusion language models' arbitrary-order generation lets them skip high-uncertainty tokens and collapse solution coverage; the authors' JustGRPO fix constrains RL exploration to left-to-right order.",
+    "source_url": "https://arxiv.org/abs/2601.15165"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "reasoning_models",
+   "title": "Inherent's 27B agent Faraday beats frontier models at reproducing research",
+   "detail": "London startup Inherent, founded by DeepMind alumni with a $50M seed, said on Aug 22, 2026 that its Qwen3.6-based 27B-parameter agent Faraday outperformed Claude Opus 4.8 and GPT-5.5 at independently reproducing published paper findings without being given the answers.",
+   "source_urls": [
+    "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__ai_for_science__autonomous_research_hypothesis_generation",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+    ],
+    "venue": "",
+    "new_category": false,
+    "claim": "London startup Inherent, founded by DeepMind alumni with a $50M seed, said on Aug 22, 2026 that its Qwen3.6-based 27B-parameter agent Faraday outperformed Claude Opus 4.8 and GPT-5.5 at independently reproducing published paper findings without being given the answers.",
+    "source_url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "MCP publishes 2026 roadmap: agent identity, HTTP transport, task primitives",
+   "detail": "On Aug 22, 2026 MCP maintainers published an updated roadmap with five priorities - messaging primitives, HTTP transport options, agent identity, improved core primitives, SDK experience - building on the stateless-core spec shipped July 28.",
+   "source_urls": [
+    "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/"
+   ],
+   "payload": {
+    "name": "Model Context Protocol",
+    "org": "Agentic AI Foundation / Anthropic",
+    "why": "Defines the trajectory of the tool-calling infrastructure underlying most agent products",
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Google's A2A protocol joins the Agentic AI Foundation alongside MCP",
+   "detail": "Google's Agent2Agent protocol formally moved under the Linux Foundation-backed Agentic AI Foundation (250+ member orgs incl. AWS, Anthropic, Microsoft, OpenAI), consolidating the two dominant agent-interoperability standards under one neutral body.",
+   "source_urls": [
+    "https://www.forbes.com/sites/janakirammsv/2026/08/19/agent2agent-joins-the-agentic-ai-foundation-alongside-mcp/"
+   ],
+   "payload": {
+    "name": "Agentic AI Foundation (AAIF)",
+    "org": "Linux Foundation",
+    "why": "Now hosts both A2A and MCP, the two leading agent/tool interoperability standards",
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__multi_agent_orchestration",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.forbes.com/sites/janakirammsv/2026/08/19/agent2agent-joins-the-agentic-ai-foundation-alongside-mcp/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Starship Ship 41 completes 6-engine static fire ahead of Flight 14",
+   "detail": "SpaceX's Ship 41 completed a full-duration 60-second six-engine static fire on Aug 21 after a single-engine deorbit-burn simulation on Aug 19 - its final qualification milestone before Flight 14, internally targeted NET Sept 15, with the first orbital payload deployments planned.",
+   "source_urls": [
+    "https://www.nasaspaceflight.com/2026/08/ship-41-engine-testing-flight-14/"
+   ],
+   "payload": {
+    "field": "starship_flight_14_status",
+    "new_value": "Ship 41 six-engine static fire complete Aug 21; Flight 14 NET Sept 15",
+    "previous_value": "Ship 41 in pre-flight qualification",
+    "source_url": "https://www.nasaspaceflight.com/2026/08/ship-41-engine-testing-flight-14/",
+    "subtheme_ids": [
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "fusion",
+   "title": "Inertia + LLNL cut cryogenic fusion fuel-layer production from days to hours",
+   "detail": "Inertia Enterprises and LLNL developed a process producing a cryogenic D-T ice fuel layer within design tolerances in 2-3 hours versus up to a week for NIF, verified with LLNL design codes and targeting sub-hour cycles with Inertia's 10 MJ laser.",
+   "source_urls": [
+    "https://www.ans.org/news/2026-08-25/article-8335/inertia-and-llnl-accelerate-fusion-fuel-manufacturing/"
+   ],
+   "payload": {
+    "field": "dt_fuel_layer_production_time",
+    "new_value": "2-3 hours",
+    "previous_value": "up to ~1 week (NIF process)",
+    "source_url": "https://www.ans.org/news/2026-08-25/article-8335/inertia-and-llnl-accelerate-fusion-fuel-manufacturing/",
+    "subtheme_ids": [
+     "energy__fusion_energy__compact_inertial_novel_approaches"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "renewables_batteries",
+   "title": "HZB reaches 30.3% perovskite-silicon tandem via CsCl seed layer",
+   "detail": "Helmholtz-Zentrum Berlin added an ultra-thin cesium-chloride seed layer between perovskite and silicon sub-cells in a solvent-free co-evaporation process, reaching 30.3% efficiency with fewer defects and larger perovskite grains; published in Joule Aug 26, 2026.",
+   "source_urls": [
+    "https://techxplore.com/news/2026-08-cesium-chloride-seed-layer-vacuum.html"
+   ],
+   "payload": {
+    "field": "co_evaporated_tandem_efficiency",
+    "new_value": "30.3%",
+    "previous_value": "n/a (new process variant)",
+    "source_url": "https://techxplore.com/news/2026-08-cesium-chloride-seed-layer-vacuum.html",
+    "subtheme_ids": [
+     "energy__renewable_generation_frontier__perovskite_silicon_tandem_solar"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "D-Wave demonstrates dual-rail erasure-qubit entangling gate in Nature",
+   "detail": "A Swap-Wait-Swap CZ gate between dual-rail cavity qubits reached ~99.9% two-qubit fidelity at ~500ns with ~0.5% erasure rate and post-selected residual Pauli errors below 0.1% - a hardware step toward efficient error-corrected gate-model quantum computing.",
+   "source_urls": [
+    "https://www.nature.com/articles/s41586-026-10822-y",
+    "https://www.dwavequantum.com/learn/blog/posts/why-d-wave-s-new-two-qubit-gate-is-a-breakthrough-for-quantum-error-correction/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__error_correction_logical_qubits__below_threshold_codes",
+     "quantum__qubit_modality_race__superconducting_qubits"
+    ],
+    "venue": "",
+    "new_category": false,
+    "claim": "A Swap-Wait-Swap CZ gate between dual-rail cavity qubits reached ~99.9% two-qubit fidelity at ~500ns with ~0.5% erasure rate and post-selected residual Pauli errors below 0.1% - a hardware step toward efficient error-corrected gate-model quantum computing.",
+    "source_url": "https://www.nature.com/articles/s41586-026-10822-y",
+    "extra_source_urls": [
+     "https://www.dwavequantum.com/learn/blog/posts/why-d-wave-s-new-two-qubit-gate-is-a-breakthrough-for-quantum-error-correction/"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "reasoning_models",
+   "title": "'Mind viruses': self-propagating goals spread between agents via prompt files",
+   "detail": "Anthropic/EPFL researchers showed self-propagating payloads can jump between AI agents through editable persistent-identity system-prompt files, with a one-paragraph warning cutting spread to near zero; the Cloud Security Alliance issued a research note on Aug 27.",
+   "source_urls": [
+    "https://arxiv.org/abs/2608.10218",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-mind-viruses-agent-contagion-20260827-c/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "ai__safety_interpretability_governance__alignment_oversight_rlhf_constitutional_scheming"
+    ],
+    "venue": "",
+    "new_category": false,
+    "claim": "Anthropic/EPFL researchers showed self-propagating payloads can jump between AI agents through editable persistent-identity system-prompt files, with a one-paragraph warning cutting spread to near zero; the Cloud Security Alliance issued a research note on Aug 27.",
+    "source_url": "https://arxiv.org/abs/2608.10218",
+    "extra_source_urls": [
+     "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-mind-viruses-agent-contagion-20260827-c/"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "ToolHazard scales adversarial testing for LLM agent tool-use security",
+   "detail": "ToolHazard synthesizes adversarial tool-use environments to evaluate and align LLM agents against indirect prompt injection; trending on arXiv and Hugging Face papers this week as agentic-security benchmarking scales. (arXiv submission Aug 12, 2026; logged on this week's traction surge.)",
+   "source_urls": [
+    "https://arxiv.org/abs/2608.11878"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "ToolHazard scales adversarial testing for LLM agent tool-use security",
+    "description": "ToolHazard synthesizes adversarial tool-use environments to evaluate and align LLM agents against indirect prompt injection; trending on arXiv and Hugging Face papers this week as agentic-security benchmarking scales. (arXiv submission Aug 12, 2026; logged on this week's traction surge.)",
+    "source_url": "https://arxiv.org/abs/2608.11878"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_VOICE",
+   "breakthrough_id": null,
+   "title": "Dylan Patel (SemiAnalysis) - reference voice on AI compute economics",
+   "detail": "SemiAnalysis founder Dylan Patel appeared on Dwarkesh on Aug 25 laying out how compute, power and capex constraints will shape frontier AI, arguing Anthropic and OpenAI are on track to control most of the world's usable compute.",
+   "source_urls": [
+    "https://semianalysis.com",
+    "https://www.dwarkesh.com/p/dylan-patel-3"
+   ],
+   "payload": {
+    "name": "Dylan Patel",
+    "role": "Founder, SemiAnalysis",
+    "focus": "AI compute and semiconductor supply-chain economics, capex, power constraints",
+    "follow_url": "https://semianalysis.com",
+    "twitter": "@dylan522p",
+    "youtube": "",
+    "newsletter": "https://semianalysis.com",
+    "notes": "Recurring guest on compute bottlenecks and hyperscaler capex; the Aug 25 2026 Dwarkesh episode argued Anthropic/OpenAI will hold most of the world's usable compute by 2028. Our AgentX/Rubin perf-per-watt figures trace to his benchmark.",
+    "tags": [
+     "ai_compute_economics",
+     "ai_accelerators"
+    ],
+    "extra_source_urls": [
+     "https://www.dwarkesh.com/p/dylan-patel-3"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "AI's binding constraint moves from chips to power, labor and capital",
+   "detail": "Multiple independent voices converged this week on the thesis that the frontier-AI build-out is now limited by power delivery, skilled construction labor and capex financing rather than GPU supply or model capability.",
+   "source_urls": [
+    "https://stratechery.com/2026/apple-updates-mini-and-studio-ai-computers-openai-jalapeno/",
+    "https://www.theregister.com/systems/2026/08/25/openais-upcoming-jalapeno-chip-looks-like-itll-be-an-inference-beast/5292052",
+    "https://www.dwarkesh.com/p/dylan-patel-3"
+   ],
+   "payload": {
+    "thesis": "The AI build-out's real constraint has moved past raw GPU/chip supply to power, skilled trade labor, and capital financing.",
+    "examples": [
+     "Dwarkesh x Dylan Patel (Aug 25) on compute/capex bottlenecks and debt-crisis risk",
+     "Ben Thompson, Stratechery (Aug 26): Apple and OpenAI hardware moves both aim to cut Nvidia dependence",
+     "OpenAI's Jalapeno pitched explicitly on tokens-per-dollar and perf-per-watt"
+    ],
+    "spotted_at": "2026-08-28",
+    "extra_source_urls": [
+     "https://www.theregister.com/systems/2026/08/25/openais-upcoming-jalapeno-chip-looks-like-itll-be-an-inference-beast/5292052",
+     "https://www.dwarkesh.com/p/dylan-patel-3"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Krypton sputtering drops tantalum-qubit fab temperature from 400C to 200C",
+   "detail": "Cornell researchers swapped argon for krypton during sputtering of tantalum films for superconducting qubits, cutting required deposition temperature to 200C and hitting internal quality factors up to 16.9 million - easing compatibility with standard semiconductor fabs.",
+   "source_urls": [
+    "https://www.nature.com/articles/s41563-026-02718-z"
+   ],
+   "payload": {
+    "candidate_area": "Quantum-chip manufacturing / BEOL-compatible superconducting qubit fabrication",
+    "detail": "A manufacturing unlock for scaling superconducting quantum chips in commercial CMOS fabs rather than bespoke lines.",
+    "source_url": "https://www.nature.com/articles/s41563-026-02718-z"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Holtec SMR-300 one-third-scale test facility taking shape at Idaho National Lab",
+   "detail": "Holtec is fabricating the HI-TEST facility at INL under DOE's Advanced Reactor Demonstration Program to validate SMR-300 design margins under steady-state and transient conditions ahead of power-uprate licensing.",
+   "source_urls": [
+    "https://www.world-nuclear-news.org/articles/holtecs-smr-300-test-facility-taking-shape-at-inl"
+   ],
+   "payload": {
+    "candidate_area": "Advanced nuclear / small modular reactors",
+    "detail": "Moves SMR-300 from paper design to physical hardware validation; energy__advanced_nuclear_geothermal__small_modular_reactors_smrs is tracked but thinly.",
+    "source_url": "https://www.world-nuclear-news.org/articles/holtecs-smr-300-test-facility-taking-shape-at-inl"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Opticore: photonic AI-chip startup behind the Hot Chips crossbar",
+   "detail": "Venture-backed (Origin Ventures, Jetha Global, Neotribe) startup building a homodyne photonic tensor-processing chip claiming up to 100x GPU energy efficiency and 25x compute density, with a scaled 2026 demo targeted.",
+   "source_urls": [
+    "https://www.opticore.ai/signal/opticore-at-hot-chips-2026"
+   ],
+   "payload": {
+    "name": "Opticore",
+    "org": "Opticore Inc.",
+    "why": "First disclosed photonic AI-accelerator startup at Hot Chips 2026; fills the long-open photonic/optical-compute gap",
+    "subtheme_ids": [
+     "hardware__novel_compute_architectures__photonic_optical_compute"
+    ],
+    "venue": "Hot Chips 2026",
+    "new_category": false,
+    "source_url": "https://www.opticore.ai/signal/opticore-at-hot-chips-2026"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "crispr_therapies",
+   "title": "Charite Berlin: CD19 CAR-T lab behind the rheumatoid-arthritis reversal",
+   "detail": "German academic medical center whose Phase 1 COMPARE trial delivered the first published CD19 CAR-T reversal of refractory rheumatoid arthritis, extending its earlier lupus CAR-T work into a broader autoimmune program.",
+   "source_urls": [
+    "https://www.nature.com/articles/s41591-026-04603-3"
+   ],
+   "payload": {
+    "name": "Charite - Universitatsmedizin Berlin",
+    "org": "Charite - Universitatsmedizin Berlin",
+    "why": "Leading academic driver of CAR-T-for-autoimmune-disease trials, generalizing from lupus to rheumatoid arthritis",
+    "subtheme_ids": [
+     "bio__engineered_cell_therapies__car_t_for_autoimmune_disease"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.nature.com/articles/s41591-026-04603-3"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "alphafold_protein_design",
+   "title": "BindCraft (Bruno Correia / EPFL LPDI): open-source binder-design engine",
+   "detail": "AlphaFold2-based open-source pipeline from Bruno Correia's EPFL lab for one-shot de novo binder design; now the underlying engine behind proteome-scale efforts like the 306,146-binder Human Bindome.",
+   "source_urls": [
+    "https://www.nature.com/articles/s41586-025-09429-6",
+    "https://actu.epfl.ch/news/an-open-source-ai-platform-to-democratize-protein-/"
+   ],
+   "payload": {
+    "name": "BindCraft",
+    "org": "EPFL Laboratory of Protein Design & Immunoengineering (Bruno Correia lab)",
+    "why": "Foundational open-source binder-design dependency that other groups now build on top of",
+    "subtheme_ids": [
+     "bio__computational_protein_biomolecule_design__atomistic_binder_design_at_scale"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.nature.com/articles/s41586-025-09429-6",
+    "extra_source_urls": [
+     "https://actu.epfl.ch/news/an-open-source-ai-platform-to-democratize-protein-/"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "Beijing Humanoid Robot Innovation Center: state-backed maker of Tiangong",
+   "detail": "State/Xiaomi/UBTech-backed consortium (est. 2023) behind the Tiangong and Tiangong Ultra humanoid platform, which set multiple human-beating sprint and jump records at the 2026 World Humanoid Robot Games.",
+   "source_urls": [
+    "https://news.cgtn.com/news/2026-08-27/Tiangong-Ultra-sets-100m-record-as-World-Humanoid-Robot-Games-close-1PWx9LjZDC8/p.html"
+   ],
+   "payload": {
+    "name": "Beijing Humanoid Robot Innovation Center",
+    "org": "Beijing Humanoid Robot Innovation Center",
+    "why": "Distinct from Unitree/ROBOTERA - a state-backed national humanoid platform racking up human-beating locomotion records",
+    "subtheme_ids": [
+     "robotics__humanoid_robots__locomotion_whole_body_control"
+    ],
+    "venue": "World Humanoid Robot Games 2026",
+    "new_category": false,
+    "source_url": "https://news.cgtn.com/news/2026-08-27/Tiangong-Ultra-sets-100m-record-as-World-Humanoid-Robot-Games-close-1PWx9LjZDC8/p.html"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "reasoning_models",
+   "title": "Inherent: London AI-for-science lab behind the Faraday research agent",
+   "detail": "DeepMind-alumni-founded London lab ($50M seed) building Faraday, a 27B-parameter Qwen3.6-based agent it says outperformed Claude Opus 4.8 and GPT-5.5 at independently reproducing published research findings.",
+   "source_urls": [
+    "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+    "https://tech.eu/2026/05/29/london-based-ai-lab-inherent-emerges-from-stealth-with-50m-raise/"
+   ],
+   "payload": {
+    "name": "Inherent",
+    "org": "Inherent (Faraday)",
+    "why": "Well-funded new AI-for-science agent lab claiming to beat frontier labs at autonomous research reproduction",
+    "subtheme_ids": [
+     "ai__ai_for_science__autonomous_research_hypothesis_generation"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+    "extra_source_urls": [
+     "https://tech.eu/2026/05/29/london-based-ai-lab-inherent-emerges-from-stealth-with-50m-raise/"
+    ]
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "fusion",
+   "title": "Inertia Enterprises: LLNL-partnered inertial-confinement fusion startup",
+   "detail": "Bay Area fusion startup with an exclusive integrated public-private partnership with LLNL, building a 10 MJ laser and a NIF-style ICF target-manufacturing pipeline toward a commercial pilot plant.",
+   "source_urls": [
+    "https://www.llnl.gov/article/54261/llnl-partners-inertia-develop-fusion-energy-technology"
+   ],
+   "payload": {
+    "name": "Inertia Enterprises",
+    "org": "Inertia Enterprises Inc.",
+    "why": "Only private company with an exclusive integrated fusion-technology partnership with LLNL/NIF; ICF target manufacturing is central to laser-fusion economics",
+    "subtheme_ids": [
+     "energy__fusion_energy__compact_inertial_novel_approaches"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.llnl.gov/article/54261/llnl-partners-inertia-develop-fusion-energy-technology"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "Quantum Circuits Inc: Yale spinout behind D-Wave's dual-rail qubit",
+   "detail": "New Haven Yale spinout that pioneered the dual-rail erasure-qubit architecture; acquired by D-Wave for $550M (closed Jan 2026) and now the technical basis of D-Wave's first peer-reviewed gate-model result.",
+   "source_urls": [
+    "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits-inc-establishing-world-s-leading-quantum-computing-company/"
+   ],
+   "payload": {
+    "name": "Quantum Circuits Inc (QCI)",
+    "org": "Quantum Circuits Inc (acquired by D-Wave, Jan 2026)",
+    "why": "Originated the dual-rail erasure-qubit modality now central to D-Wave's gate-model roadmap - the dependency entity behind this week's Nature result",
+    "subtheme_ids": [
+     "quantum__qubit_modality_race__superconducting_qubits",
+     "quantum__error_correction_logical_qubits__below_threshold_codes"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-to-acquire-quantum-circuits-inc-establishing-world-s-leading-quantum-computing-company/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  }
+ ]
+}

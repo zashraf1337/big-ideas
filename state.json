@@ -24904,7 +24904,7 @@
   "ceiling": {
     "meta": {
       "title": "Ceiling / Bets — B / 10B / T value-creation tiers",
-      "generated": "2026-09-01",
+      "generated": "2026-09-02",
       "refresh": "monthly (big-ideas-ceiling-refresh task) + re-rendered every weekly dashboard build",
       "scale": {
         "T": "Trillion-scale: could anchor a $1T+ company or reshape a multi-trillion slice of the economy.",
@@ -25230,7 +25230,7 @@
             "name": "Physical Intelligence",
             "tracked": true,
             "tier": "10B",
-            "why": "robot foundation models (the 'brain' layer); ~$1.07B raised, reported to be raising again"
+            "why": "robot foundation models (the 'brain' layer); ~$1.07B raised through the $600M Series B at $5.6B. Reports (Bloomberg, Mar 2026 onward) put a ~$1B raise at >$11B in advanced talks with Founders Fund/Lightspeed/Thrive/Lux — FLAG: reported, not confirmed closed by the company"
           },
           {
             "name": "Agility Robotics",
@@ -25558,7 +25558,7 @@
         "name": "Anduril (defense AI / autonomy)",
         "area": "Defense & government AI",
         "tier": "T",
-        "why": "Software-defined defense prime; last confirmed mark is $61B (May 2026, $5B Series H led by Thrive/a16z). Reports in July 2026 describe talks toward a ~$100B valuation, possibly in a two-stage structure — FLAG: reported, not finalized or confirmed by the company. Still the clearest credible trillion-scale path outside the 16."
+        "why": "Software-defined defense prime; last confirmed primary mark is still $61B (May 2026, $5B Series H led by Thrive/a16z). The ~$100B figure circulating since July 2026 is reported talks plus secondary-market implied pricing, not a closed primary round — FLAG: re-checked Sep 2026, still unconfirmed by the company. Still the clearest credible trillion-scale path outside the 16."
       },
       {
         "name": "AI-for-science / autonomous R&D",

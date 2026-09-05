@@ -24904,7 +24904,7 @@
   "ceiling": {
     "meta": {
       "title": "Ceiling / Bets — B / 10B / T value-creation tiers",
-      "generated": "2026-09-02",
+      "generated": "2026-09-05",
       "refresh": "monthly (big-ideas-ceiling-refresh task) + re-rendered every weekly dashboard build",
       "scale": {
         "T": "Trillion-scale: could anchor a $1T+ company or reshape a multi-trillion slice of the economy.",
@@ -24930,19 +24930,19 @@
         "horizon": "near",
         "tam_note": "Frontier models + the coding-agent layer sit on top of nearly all knowledge work.",
         "capture": "Concentrated: a few labs + whoever owns the agent/IDE layer; open weights compress margins.",
-        "rationale": "The clearest 'next-OpenAI' arena — a single frontier lab or winning agent layer can reach trillion-scale, and this month the revenue caught up to the valuations: Anthropic reported ~$11.5B of Q2 2026 revenue against OpenAI's ~$6.7B (its first quarter ahead) on a ~$65B run-rate exiting July, with an October 2026 listing targeted off the ~$965B Series H mark. Open weights keep compressing the price floor (Alibaba's 2.4T-param Qwen3.8-Max at ~1/4 GPT-5.6 pricing; GLM-5.3 gaining on post-training alone), but the agent layer is consolidating rather than commoditizing after SpaceX's $60B all-stock buy of Cursor/Anysphere.",
+        "rationale": "The clearest 'next-OpenAI' arena — a single frontier lab or winning agent layer can reach trillion-scale, and the revenue has caught up to the valuations: Anthropic reported ~$11.5B of Q2 2026 revenue against OpenAI's ~$6.7B (its first quarter ahead) on a ~$65B run-rate exiting July, and on Sep 1 shipped Claude Fable 5.1 / Mythos 5.1 with a gated capability tier (Mythos restricted to US cyber and life-sciences verification programs) ahead of an October listing that Bloomberg/Fortune report is being pitched at ~$2T — FLAG: reported target, last confirmed primary mark is the ~$965B Series H-1. OpenAI's CFO now says 'public company in 2027'. Open weights keep compressing the price floor (Qwen3.8-Max at ~1/4 GPT-5.6 pricing; GLM-5.3 gaining on post-training alone), but the layer above the models is consolidating: SpaceX bought Cursor for $60B and NVIDIA agreed to buy Hugging Face for $12.93B (Sep 3).",
         "bets": [
           {
             "name": "OpenAI",
             "tracked": true,
             "tier": "T",
-            "why": "consumer + API scale; ~$852B mark, S-1 filed; ~$6.7B Q2 2026 revenue"
+            "why": "consumer + API scale; ~$852B mark, S-1 filed, CFO guides to a 2027 listing; ~$6.7B Q2 2026 revenue; GPT-6 Astra rollout began Sep 3"
           },
           {
             "name": "Anthropic",
             "tracked": true,
             "tier": "T",
-            "why": "~$965B, S-1 filed, Oct 2026 listing targeted; passed OpenAI on quarterly revenue (~$11.5B Q2)"
+            "why": "~$965B Series H-1, S-1 filed, Oct 2026 listing targeted (~$2T reported, unconfirmed); passed OpenAI on quarterly revenue (~$11.5B Q2); Fable 5.1 / Mythos 5.1 shipped Sep 1"
           },
           {
             "name": "Google DeepMind",
@@ -24972,19 +24972,19 @@
         "horizon": "near",
         "tam_note": "Reasoning is a capability multiplier on the same frontier-lab franchises.",
         "capture": "Accrues to the #01 frontier labs; the method (RLVR) itself is diffuse/replicable.",
-        "rationale": "Verifiable rewards are turning into real scientific output: OpenAI's internal Astra published Lean-4-verified solutions to ten decade-plus-open math/CS problems for ~$2,000 of inference compute (Aug 1, 2026), with machine-checkable certificates — the strongest evidence yet that reasoning models generate value rather than just benchmark scores. Small challengers are also landing punches (Inherent's 27B Faraday agent claims to beat frontier models at reproducing published research), but the value still accrues to the same trillion-scale labs rather than a separate company.",
+        "rationale": "Verifiable rewards are turning into real scientific output: OpenAI's internal Astra published Lean-4-verified solutions to ten decade-plus-open math/CS problems for ~$2,000 of inference compute (Aug 1, 2026), with machine-checkable certificates — the strongest evidence yet that reasoning models generate value rather than just benchmark scores. Small challengers are also landing punches (Inherent's 27B Faraday agent claims to beat frontier models at reproducing published research), but the value still accrues to the same trillion-scale labs rather than a separate company. New this month: the frontier is now being released behind capability gates — OpenAI began a phased rollout of GPT-6 Astra on Sep 3 as the first model to hit its internal 'Critical' cyber threshold (access first via the Daybreak program), and Anthropic's Mythos 5.1 is restricted to verified cyber/life-sciences programs. Gating shifts value toward the labs that can clear regulators, and away from open replication.",
         "bets": [
           {
             "name": "OpenAI o-series / Astra",
             "tracked": true,
             "tier": "T",
-            "why": "reasoning leader; 10 Lean-verified open-problem solutions for ~$2k compute (Aug 2026)"
+            "why": "reasoning leader; 10 Lean-verified open-problem solutions for ~$2k compute (Aug 2026); GPT-6 Astra phased rollout from Sep 3 under 'Critical' cyber gating"
           },
           {
             "name": "Anthropic (RL/reasoning)",
             "tracked": true,
             "tier": "T",
-            "why": "long-horizon agentic reasoning; Opus 5"
+            "why": "long-horizon agentic reasoning; Opus 5 → Fable 5.1 (Sep 1), gated Mythos 5.1 tier"
           },
           {
             "name": "xAI Grok",
@@ -25014,7 +25014,7 @@
         "horizon": "near",
         "tam_note": "The compute substrate for all of AI — a multi-hundred-billion and rising annual spend.",
         "capture": "Strongly captured: NVIDIA + a handful of custom-silicon and packaging players.",
-        "rationale": "Already a trillion-scale arena — NVIDIA is ~$5.25T and detailed Rubin/Vera at Hot Chips 2026 — but the interesting move is the custom-silicon flank: Broadcom guided to ~$56B of FY2026 AI semiconductor revenue (~180% growth) and built OpenAI's first in-house inference ASIC (Jalapeno, volume 2027), while Anthropic, Tesla/SpaceX ('Terafab') and AMD (Taalas) all moved to cut merchant-GPU dependence. Every model winner still pays this layer.",
+        "rationale": "Already a trillion-scale arena — NVIDIA is ~$5.25T and detailed Rubin/Vera at Hot Chips 2026 — but the interesting move is the custom-silicon flank: Broadcom guided to ~$56B of FY2026 AI semiconductor revenue (~180% growth) and built OpenAI's first in-house inference ASIC (Jalapeno, volume 2027), while Anthropic, Tesla/SpaceX ('Terafab') and AMD (Taalas) all moved to cut merchant-GPU dependence. Every model winner still pays this layer — and the capital is now piling into the neocloud/datacenter tier just above it: Crusoe raised $3B at $30B (Atreides/Valor, Sep 2026, ~3x in under a year) and Fluidstack $1.5B at $18B (Jane Street) in the same week. NVIDIA is also buying up the software layer (Hugging Face $12.93B; ~$6B Poolside license — the latter reported, not company-confirmed).",
         "bets": [
           {
             "name": "NVIDIA",
@@ -25169,8 +25169,8 @@
         "tier": "10B",
         "horizon": "near",
         "tam_note": "The orchestration/standards layer for agents (MCP, skills, SDKs, agentic commerce).",
-        "capture": "Capture uncertain — could be a platform ('AWS of agents') or commoditized by model labs/clouds.",
-        "rationale": "The 'own the standard' path narrowed this month: Google's A2A joined MCP under the Linux Foundation-backed Agentic AI Foundation (250+ members incl. AWS, Anthropic, Microsoft, OpenAI), so agent interoperability is becoming a neutral commons rather than a proprietary toll road — and DeepSeek and Prime Intellect both open-sourced fully pluggable agent harnesses. Value increasingly diffuses to the model labs and clouds; 10B base case with the T-case now materially weaker.",
+        "capture": "Capture uncertain — the standards are a neutral commons, and the incumbents (NVIDIA, clouds, model labs) are buying the surfaces on top of them.",
+        "rationale": "The 'own the standard' path is closed — MCP and Google's A2A both sit under the Linux Foundation-backed Agentic AI Foundation, and DeepSeek and Prime Intellect open-sourced fully pluggable harnesses — but the 'own the surface' path just got a price tag: NVIDIA agreed to buy Hugging Face for $12.93B (Sep 3, 2026; 18M developers, 3M models) and reportedly paid ~$6B to license Poolside's coding-model factory plus $1B at a $12B pre-money (Aug 21 — FLAG: reported by Newcomer, not company-confirmed). Add SpaceX's $60B Cursor deal and the pattern is clear: developer platforms get absorbed by compute/model incumbents at 10B-scale rather than growing into independent T-scale companies.",
         "bets": [
           {
             "name": "Agent platform/standard winner",
@@ -25182,7 +25182,13 @@
             "name": "Cursor / Cognition (agents)",
             "tracked": true,
             "tier": "10B",
-            "why": "coding-agent surface owners — the durable capture point is the surface, not the protocol"
+            "why": "coding-agent surface owners — the durable capture point is the surface, not the protocol; exits so far are acquisitions (Cursor→SpaceX $60B)"
+          },
+          {
+            "name": "Hugging Face (→ NVIDIA) / Poolside",
+            "tracked": false,
+            "tier": "10B",
+            "why": "NEW BET: the open-model hub sold to NVIDIA for $12.93B (Sep 3) — proof that the dev layer is worth 10B, and that it gets bought, not IPO'd"
           },
           {
             "name": "Hyperscaler agent runtimes (MSFT Agent Framework, AWS, Alibaba)",
@@ -25191,16 +25197,16 @@
             "why": "Microsoft's Agent Framework Harness hit GA with governance/telemetry defaults; clouds monetize agents as managed infrastructure"
           },
           {
-            "name": "Open agent harnesses (DeepSeek, Prime Intellect)",
-            "tracked": true,
-            "tier": "B",
-            "why": "MIT-licensed pluggable/self-rewriting harnesses compress the value of proprietary scaffolding; influence >> capture"
-          },
-          {
             "name": "Agentic-commerce rails (x402-style)",
             "tracked": true,
             "tier": "10B",
             "why": "agents that transact = payment take-rate"
+          },
+          {
+            "name": "Open agent harnesses (DeepSeek, Prime Intellect)",
+            "tracked": true,
+            "tier": "B",
+            "why": "MIT-licensed pluggable/self-rewriting harnesses compress the value of proprietary scaffolding; influence >> capture"
           }
         ]
       },
@@ -25209,16 +25215,16 @@
         "name": "Humanoid robotics",
         "domain": "ROBOTICS",
         "tier": "10B",
-        "horizon": "long",
+        "horizon": "mid",
         "tam_note": "General-purpose physical labor is the largest TAM of all — if it actually works.",
-        "capture": "Very unproven; whoever cracks the foundation model + manufacturing scale could be enormous.",
-        "rationale": "T-upside (labor automation is civilization-scale) but still unproven. CORRECTION from last month's refresh: Agility has NOT completed a public listing — its $2.5B Churchill Capital XI merger was announced Jun 24, 2026 (ticker AGLT, Foxconn-led PIPE, >$620M expected proceeds) and remains subject to shareholder approval and SEC review. The other new variable is protectionist: on Jul 28 the FCC added foreign-produced humanoids and quadrupeds to its Covered List, blocking equipment authorization for new imports — which shelters US players and caps Unitree's US path.",
+        "capture": "Still unproven at scale, but public markets are now pricing the category: whoever cracks the foundation model + manufacturing could be enormous.",
+        "rationale": "HORIZON MOVED long→mid. T-upside (labor automation is civilization-scale) and the category just got its first public-market price: Unitree raised $904M on Shanghai's STAR Market (Aug 19, 2026), closed day one +460% at ~342B yuan (~$47B) after an 8,000x-oversubscribed book — the first listed humanoid pure-play anywhere. Supply-chain reports (unconfirmed by Tesla) say Optimus suppliers were told to reach 1,000 units/week by September and 2,000–2,500/week by year-end, with 2026 output for internal use only. Agility's $2.5B Churchill XI SPAC (AGLT) is still pending. The protectionist variable stands: the FCC's Jul 28 Covered List blocks new US imports of foreign humanoids, sheltering US players and capping Unitree's US path.",
         "bets": [
           {
             "name": "Tesla Optimus",
             "tracked": false,
             "tier": "T",
-            "why": "manufacturing + fleet data; T only if it works"
+            "why": "manufacturing + fleet data; T only if it works — reported supplier guidance of 1,000/wk by Sep 2026 (FLAG: unconfirmed by Tesla; 2026 units are internal-use)"
           },
           {
             "name": "Figure AI",
@@ -25242,7 +25248,7 @@
             "name": "Unitree",
             "tracked": true,
             "tier": "10B",
-            "why": "low-cost hardware leader and China scale, but the FCC Covered List now blocks new US imports"
+            "why": "now PUBLIC (Shanghai STAR, Aug 19 2026): $904M raised, ~$47B market cap at day-one close — the category's first liquid price; low-cost hardware leader, but the FCC Covered List blocks new US imports"
           }
         ]
       },
@@ -25518,7 +25524,7 @@
         "horizon": "near",
         "tam_note": "Energy is a multi-trillion cost base, and solar+storage is now the cheapest power.",
         "capture": "Brutal capture: commoditized, thin margins, Chinese manufacturing dominance.",
-        "rationale": "The MARKET is trillion-scale and capture is normally punishing (commoditized cells, Chinese scale) — but two forces are carving out defensible niches: AI-datacenter demand for long-duration storage, and FEOC rules barring Chinese-made cells from US tax credits, which is pulling Korean and US manufacturers into a protected supply chain (Samsung SDI's US LFP line starts output in October). Efficiency records also keep moving (HZB's 30.3% perovskite-silicon tandem via a CsCl seed layer, Joule, Aug 2026).",
+        "rationale": "The MARKET is trillion-scale and capture is normally punishing (commoditized cells, Chinese scale) — but three forces are carving out defensible niches: AI-datacenter demand for long-duration storage, FEOC rules barring Chinese-made cells from US tax credits (pulling Korean and US manufacturers into a protected supply chain; Samsung SDI's US LFP line starts output in October), and the battery-as-utility model — Base Power closed a $1B Series D at $13B (Aug 3, 2026; Ribbit, Addition, Valor, JPMorgan SIG) selling retail electricity bundled with a 39.2 kWh home battery, so the margin sits in the service, not the cell. Efficiency records also keep moving (HZB's 30.3% perovskite-silicon tandem, Joule, Aug 2026).",
         "bets": [
           {
             "name": "CATL",
@@ -25539,6 +25545,12 @@
             "why": "RETIERED B→10B: $750M Series G (T. Rowe Price-led, Aug 2026) against an iron-air backlog that grew from ~20 GWh to 80 GWh — Google, Xcel, Crusoe; multi-day storage is where a US player can actually escape the commodity trap"
           },
           {
+            "name": "Base Power (battery-as-utility)",
+            "tracked": false,
+            "tier": "10B",
+            "why": "NEW BET: $1B Series D at $13B (Aug 2026) — distributed home batteries sold as a Texas retail-electricity plan; escapes cell commoditization by owning the customer and the grid-services revenue"
+          },
+          {
             "name": "QuantumScape",
             "tracked": true,
             "tier": "B",
@@ -25552,13 +25564,13 @@
         "name": "Firm power for AI datacenters (EGS + SMRs)",
         "area": "Energy x AI build-out",
         "tier": "T",
-        "why": "PROMOTED 10B→T. The dominant thesis across tracked voices this month is that the AI build-out's binding constraint has moved from chip supply to power — and firm, clean, sited-anywhere generation is now a financeable business, not a demo. Fervo IPO'd on Nasdaq (FRVO) in May 2026 at $27/share on an upsized 70M-share offering, has a 3 GW framework with Google, and expects Cape Station's first 100 MW on the grid in October 2026; Valar Atomics raised $1B (Sequoia-led, ~$6B) for factory-built SMRs already powering an Nvidia Blackwell cluster. Whoever supplies datacenter-grade firm power is selling into a trillion-scale capex cycle."
+        "why": "PROMOTED 10B→T. The dominant thesis across tracked voices this month is that the AI build-out's binding constraint has moved from chip supply to power — and firm, clean, sited-anywhere generation is now a financeable business, not a demo. Fervo IPO'd on Nasdaq (FRVO) in May 2026 at $27/share on an upsized 70M-share offering, has a 3 GW framework with Google, and expects Cape Station's first 100 MW on the grid in October 2026; Valar Atomics raised $1B (Sequoia-led, ~$6B) for factory-built SMRs already powering an Nvidia Blackwell cluster. The buyers are now financed at scale too — Crusoe (an AI-datacenter builder and Form Energy customer) raised $3B at $30B and Fluidstack $1.5B at $18B in the first week of September. Whoever supplies datacenter-grade firm power is selling into a trillion-scale capex cycle."
       },
       {
         "name": "Anduril (defense AI / autonomy)",
         "area": "Defense & government AI",
         "tier": "T",
-        "why": "Software-defined defense prime; last confirmed primary mark is still $61B (May 2026, $5B Series H led by Thrive/a16z). The ~$100B figure circulating since July 2026 is reported talks plus secondary-market implied pricing, not a closed primary round — FLAG: re-checked Sep 2026, still unconfirmed by the company. Still the clearest credible trillion-scale path outside the 16."
+        "why": "Software-defined defense prime; last confirmed primary mark is still $61B (May 2026, $5B Series H led by Thrive/a16z). The ~$100B figure circulating since July 2026 is reported talks plus secondary-market implied pricing, not a closed primary round — FLAG: re-checked Sep 5, 2026, still unconfirmed by the company. Still the clearest credible trillion-scale path outside the 16."
       },
       {
         "name": "AI-for-science / autonomous R&D",

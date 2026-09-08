@@ -24904,7 +24904,7 @@
   "ceiling": {
     "meta": {
       "title": "Ceiling / Bets — B / 10B / T value-creation tiers",
-      "generated": "2026-09-05",
+      "generated": "2026-09-08",
       "refresh": "monthly (big-ideas-ceiling-refresh task) + re-rendered every weekly dashboard build",
       "scale": {
         "T": "Trillion-scale: could anchor a $1T+ company or reshape a multi-trillion slice of the economy.",
@@ -24978,7 +24978,7 @@
             "name": "OpenAI o-series / Astra",
             "tracked": true,
             "tier": "T",
-            "why": "reasoning leader; 10 Lean-verified open-problem solutions for ~$2k compute (Aug 2026); GPT-6 Astra phased rollout from Sep 3 under 'Critical' cyber gating"
+            "why": "reasoning leader; 10 Lean-verified open-problem solutions for ~$2k compute (Aug 2026); GPT-6 Astra phased rollout from Sep 3 under 'Critical' cyber gating, priced $10/$50 per M tokens (~2.5x GPT-5.6) — gated frontier capability now sells at a premium"
           },
           {
             "name": "Anthropic (RL/reasoning)",
@@ -25035,10 +25035,10 @@
             "why": "enormous value but captured inside the parent cloud or lab, not sold as a franchise"
           },
           {
-            "name": "Etched / Groq / Cerebras / SambaNova (inference ASICs)",
-            "tracked": false,
+            "name": "Etched / Cerebras / SambaNova (inference ASICs; Groq → NVIDIA)",
+            "tracked": true,
             "tier": "10B",
-            "why": "Etched $700M at $21B (Aug 2026, Jane Street-led), first rack delivered, >$1B signed; SambaNova $11B — real revenue, capture still uncertain"
+            "why": "Etched $700M at $21B (Aug 2026, Jane Street-led), first rack delivered, >$1B signed; SambaNova $11B; NVIDIA bought Groq's assets for ~$20B (Dec 2025) — the exit path for this cohort is being acquired by the incumbent"
           },
           {
             "name": "Lightmatter / Opticore (photonic)",
@@ -25092,13 +25092,13 @@
         "horizon": "near",
         "tam_note": "Launch cost collapse unlocks satellite internet, defense, and an orbital economy.",
         "capture": "One dominant winner (SpaceX) captures most value; others fight for second.",
-        "rationale": "SpaceX's first post-IPO numbers validated the flywheel and repriced it upward: Q2 2026 revenue $7.8B (+92%), Starlink $4.29B (+66%) with 12M subscribers and a $1.66B segment operating profit, and a ~$1.95T market cap as of Aug 31 (vs ~$1.77T at the Jun 12 debut). Starlink is also the only profitable segment while the AI unit absorbed $15.8B of capex — the launch business is now funding an AI bet, which is the real thing to watch.",
+        "rationale": "SpaceX's first post-IPO numbers validated the flywheel and repriced it upward: Q2 2026 revenue $7.8B (+92%), Starlink $4.29B (+66%) with 12M subscribers and a $1.66B segment operating profit, and a market cap that crossed ~$2.0T on Sep 8 (vs ~$1.77T at the Jun 12 debut). Next catalyst: Starship Flight 14 (FCC filing points to NET Sep 15) is the first true orbital profile, carrying ~20 Starlink V3 satellites to operational orbit. Starlink is also the only profitable segment while the AI unit absorbed $15.8B of capex — the launch business is now funding an AI bet, which is the real thing to watch.",
         "bets": [
           {
             "name": "SpaceX",
             "tracked": true,
             "tier": "T",
-            "why": "Falcon/Starship + Starlink (+ xAI/Cursor); ~$1.95T public; Starlink at 12M subs is the profit engine"
+            "why": "Falcon/Starship + Starlink (+ xAI/Cursor); ~$2.0T public (Sep 8); Starlink at 12M subs is the profit engine; Flight 14 (NET Sep 15) is Starship's first orbital Starlink V3 delivery"
           },
           {
             "name": "Blue Origin",
@@ -25128,25 +25128,25 @@
         "horizon": "near",
         "tam_note": "Autonomous mobility addresses a multi-trillion transport + logistics market.",
         "capture": "Concentrated around a few stacks; capital-intensive, regulated, winner-take-most per region.",
-        "rationale": "HORIZON MOVED mid→near: the binding constraint this quarter was regulatory permission, and it broke open — CPUC cleared Waymo to charge across 18 California counties (Aug 14), Nevada approved up to 8,000 robotaxis in Clark County across Tesla/Waymo/Uber (Aug 20), and Zoox began charging for rides in a purpose-built vehicle with no steering wheel (a US first). An IIHS study across 50M driverless miles found Waymo's crash-involvement rate 68% lower than human drivers, which is the evidence base regulators were waiting for.",
+        "rationale": "HORIZON MOVED mid→near: the binding constraint this quarter was regulatory permission, and it broke open — CPUC cleared Waymo to charge across 18 California counties (Aug 14), Nevada approved up to 8,000 robotaxis in Clark County across Tesla/Waymo/Uber (Aug 20), and Zoox began charging for rides in a purpose-built vehicle with no steering wheel (a US first). An IIHS study across 50M driverless miles found Waymo's crash-involvement rate 68% lower than human drivers, which is the evidence base regulators were waiting for. Since then the gap widened on the ground: Waymo opened Denver, San Diego and Tampa on Sep 1 (14 US cities, >4,000 vehicles, Ojai-only in two of them), while Tesla put production Cybercabs — no steering wheel or pedals — into paid Austin service on Sep 4 and drew an NHTSA audit query (AQ26002) the same morning over its FMVSS self-certification, the same process that slowed Zoox by roughly three years.",
         "bets": [
           {
             "name": "Waymo (Alphabet)",
             "tracked": true,
             "tier": "T",
-            "why": "clear leader; 18 CA counties cleared, 68% lower crash rate over 50M driverless miles (IIHS)"
+            "why": "clear leader; 14 US cities and >4,000 vehicles after the Sep 1 Denver/San Diego/Tampa launch; 68% lower crash rate over 50M driverless miles (IIHS); London and Munich next"
           },
           {
             "name": "Tesla autonomy",
-            "tracked": false,
+            "tracked": true,
             "tier": "10B",
-            "why": "RETIERED T→10B: paid Robotaxi miles fell ~36% QoQ (1.1M→~700k) even as cities were added; permission is no longer the bottleneck, so the shortfall is the stack"
+            "why": "held at 10B: Cybercab entered paid Austin service Sep 4 with no manual controls, but NHTSA opened an FMVSS audit query (AQ26002) hours later — the Zoox precedent says that process costs years; cumulative unsupervised miles (~380k as of July) remain <0.2% of Waymo's"
           },
           {
             "name": "Zoox (Amazon)",
             "tracked": false,
             "tier": "10B",
-            "why": "first US paid service in a purpose-built no-controls vehicle (Las Vegas, Aug 2026); Amazon balance sheet, Uber integration coming"
+            "why": "first US paid service in a purpose-built no-controls vehicle (Las Vegas, Aug 2026) under a Part 555 exemption capped at 2,500 added vehicles/yr for two years; Amazon balance sheet, Uber integration coming"
           },
           {
             "name": "Wayve",
@@ -25170,7 +25170,7 @@
         "horizon": "near",
         "tam_note": "The orchestration/standards layer for agents (MCP, skills, SDKs, agentic commerce).",
         "capture": "Capture uncertain — the standards are a neutral commons, and the incumbents (NVIDIA, clouds, model labs) are buying the surfaces on top of them.",
-        "rationale": "The 'own the standard' path is closed — MCP and Google's A2A both sit under the Linux Foundation-backed Agentic AI Foundation, and DeepSeek and Prime Intellect open-sourced fully pluggable harnesses — but the 'own the surface' path just got a price tag: NVIDIA agreed to buy Hugging Face for $12.93B (Sep 3, 2026; 18M developers, 3M models) and reportedly paid ~$6B to license Poolside's coding-model factory plus $1B at a $12B pre-money (Aug 21 — FLAG: reported by Newcomer, not company-confirmed). Add SpaceX's $60B Cursor deal and the pattern is clear: developer platforms get absorbed by compute/model incumbents at 10B-scale rather than growing into independent T-scale companies.",
+        "rationale": "The 'own the standard' path is closed — MCP and Google's A2A both sit under the Linux Foundation-backed Agentic AI Foundation, and DeepSeek and Prime Intellect open-sourced fully pluggable harnesses — but the 'own the surface' path just got a price tag: NVIDIA confirmed it will buy Hugging Face for $12.93B (Sep 3, 2026 — ~$11.9B cash plus up to $1B staff equity retention; 18M developers, 3M models) and reportedly paid ~$6B to license Poolside's coding-model factory plus $1B at a $12B pre-money (Aug 21 — FLAG: reported by Newcomer, not company-confirmed). Add SpaceX's $60B Cursor deal and the pattern is clear: developer platforms get absorbed by compute/model incumbents at 10B-scale rather than growing into independent T-scale companies.",
         "bets": [
           {
             "name": "Agent platform/standard winner",
@@ -25224,13 +25224,13 @@
             "name": "Tesla Optimus",
             "tracked": false,
             "tier": "T",
-            "why": "manufacturing + fleet data; T only if it works — reported supplier guidance of 1,000/wk by Sep 2026 (FLAG: unconfirmed by Tesla; 2026 units are internal-use)"
+            "why": "manufacturing + fleet data; T only if it works — Tesla's Q2 letter (Jul 22) says Fremont Optimus lines are being installed with production 'anticipated later this year'; no start date, unit count or price disclosed, early builds internal-only (FLAG: supplier 1,000/wk reports unconfirmed by Tesla)"
           },
           {
             "name": "Figure AI",
             "tracked": true,
             "tier": "10B",
-            "why": "best-funded US pure-play (~$39.5B); Helix VLA + production push"
+            "why": "best-funded US pure-play; last primary mark $39B (Series C, Sep 2025, Parkway-led) — no new priced round in 12 months, secondary quotes only; Helix VLA + production push"
           },
           {
             "name": "Physical Intelligence",
@@ -25416,7 +25416,7 @@
             "name": "Neuralink",
             "tracked": true,
             "tier": "10B",
-            "why": "highest-bandwidth implant; T-upside if consumer"
+            "why": "highest-bandwidth implant; $650M Series E (Apr 2026, ~$1.85B raised to date) funds a 2026 volume-production push; T-upside if consumer"
           },
           {
             "name": "Synchron",
@@ -25458,7 +25458,7 @@
             "name": "Helion",
             "tracked": true,
             "tier": "10B",
-            "why": "direct-electricity FRC; $15.5B val, Microsoft 50MW PPA, first plant licenses"
+            "why": "direct-electricity FRC; $465M Series G at $15.5B post (Thrive-led, Jun 2026; $1.5B raised total); Polaris ran D-T fuel at 150M°C; Orion 50MW plant for Microsoft targets 2028"
           },
           {
             "name": "Proxima Fusion",
@@ -25473,10 +25473,10 @@
             "why": "NEW BET: first publicly traded fusion developer, but ~$150M cash and 0.72 keV plasma heating is a long way from a plant — a liquidity event, not a physics one"
           },
           {
-            "name": "Tokamak Energy",
+            "name": "Inertia Enterprises",
             "tracked": true,
             "tier": "B",
-            "why": "spherical tokamak + HTS magnets"
+            "why": "NEW BET (replaces Tokamak Energy): NIF-ignition team spinout, $450M Series A (Bessemer-led, with GV; Feb 2026) — laser inertial fusion with the only ignition-proven physics, but a 4-year design phase before a demo plant"
           }
         ]
       },
@@ -25500,7 +25500,7 @@
             "name": "Quantinuum",
             "tracked": true,
             "tier": "10B",
-            "why": "48 logical qubits on 98-qubit Helios at ~99.921% 2Q fidelity; first universal gate set via anyon braiding (Nature); Oracle Cloud distribution"
+            "why": "now PUBLIC (Nasdaq, Jun 4 2026): $1.68B upsized IPO at $60, ~$15.7B debut market cap — the category's first liquid pure-play price; 48 logical qubits on 98-qubit Helios at ~99.921% 2Q fidelity; Oracle Cloud distribution"
           },
           {
             "name": "QuEra",

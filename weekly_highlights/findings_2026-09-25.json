@@ -1,0 +1,551 @@
+{
+ "week_ending": "2026-09-25",
+ "summary": "Frontier AI repriced this week: Anthropic's Claude Opus 5.5 and OpenAI's GPT-6 Sol/Luna shipped the same day (Sep 22) at lower price points, and Willison/Zvi framed it as a fresh price war, while Meta Connect put Muse Spark into a $249-$1,299 glasses/VR lineup. In bio, Prime Medicine got FDA IND clearance for in vivo prime editor PM647 (AATD), Precision Neuroscience raised a $250M Series D, and AlphaFold DB added 8,000+ viral complexes; Lilly staged retatrutide TRIUMPH-2 for EASD. Physical: IonQ showed a real-time QEC decoder on a CPU, Starship Flight 14 slipped to Sep 28, and Inversion Space's NASA aerocapture contract filled the last gap sub-theme (reentry-as-a-service). Trends: backlash to last week's 'pace the frontier' push (Thompson, TechCrunch, Fortune) and Noam Brown's case that AI is starting to automate math research.",
+ "highlights": [
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "OpenAI ships GPT-6 Sol and Luna, cheaper tiers with Astra-level gains",
+   "detail": "OpenAI released GPT-6 Sol ($2/$10 per MTok) and GPT-6 Luna ($0.10/$0.50) on Sep 22, 2026, bringing Astra-era coding/factuality gains to cheaper tiers, with Sol making about half as many mistakes as GPT-5.6 Sol.",
+   "source_urls": [
+    "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+    "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "GPT-6 Sol / GPT-6 Luna",
+    "description": "Cheaper GPT-6 tiers inheriting GPT-6 Astra-derived reasoning, coding and factuality improvements at sharply lower API prices.",
+    "source_url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Anthropic launches Claude Opus 5.5 at 40% lower cost, faster output",
+   "detail": "Anthropic released Claude Opus 5.5 on Sep 22, 2026, matching Fable 5.1 on most work while cutting default-mode cost 40% versus Opus 5 ($4/$20 per MTok) and boosting output speed over 30%; Claude Code v2.1.280 made it the default Opus model.",
+   "source_urls": [
+    "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/",
+    "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Claude Opus 5.5",
+    "description": "Anthropic's first Opus 5.5-family model, 40% cheaper and 30%+ faster than Opus 5 at similar quality to Fable 5.1.",
+    "source_url": "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Cursor Projects debuts coordinator agent dispatching cloud subagent fleets",
+   "detail": "Cursor launched Projects in beta on Sep 10, 2026: a persistent coordinator agent that plans large bodies of work and delegates coding to parallel cloud subagents running for months; early data shows Projects users merging up to 6x more PRs.",
+   "source_urls": [
+    "https://cursor.com/blog/projects",
+    "https://pondero.ai/news/2026-09-11-cursor-projects/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__multi_agent_orchestration",
+     "ai__agents_developer_ecosystem__coding_agents"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Cursor Projects",
+    "description": "Coordinator-agent product that decomposes long-horizon coding work and dispatches it to a tree of cloud-hosted subagents, persisting context over months.",
+    "source_url": "https://cursor.com/blog/projects"
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "XPeng's IRON humanoid autonomously walks off its own production line",
+   "detail": "XPeng commissioned IRON humanoid production lines in Guangzhou on Sep 7-8, 2026, with the first completed unit walking off the line under its own power; over 80% of core processes are automated. Additional in-house deployment scenarios will be verified in Q4 2026, with initial external customer deliveries in China and overseas markets targeted for 2027, not end of 2026 as originally stated.",
+   "source_urls": [
+    "https://cleantechnica.com/2026/09/08/xpeng-iron-autonomously-walks-off-production-line/",
+    "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__humanoid_robots__industrial_commercial_humanoids"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "XPeng IRON humanoid",
+    "description": "XPeng commissioned IRON humanoid production lines in Guangzhou on Sep 7-8, 2026, with the first completed unit walking off the line under its own power; over 80% of core processes are automated. Additional in-house deployment scenarios will be verified in Q4 2026, with initial external customer deliveries in China and overseas markets targeted for 2027, not end of 2026 as originally stated.",
+    "source_url": "https://cleantechnica.com/2026/09/08/xpeng-iron-autonomously-walks-off-production-line/"
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "self_driving",
+   "title": "Pony.ai and Verne start fully driverless robotaxi rides in Zagreb",
+   "detail": "Pony.ai and Verne began fully driverless passenger test rides on public roads in Zagreb, Croatia on Sep 10, 2026 (a European first), on a 22km route to the airport; the joint Verne/Uber-distributed fleet has logged 200,000+ km and a 4.7/5 rating since its April 2026 launch.",
+   "source_urls": [
+    "https://www.unite.ai/pony-ai-starts-fully-driverless-robotaxi-passenger-tests-in-zagreb/",
+    "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-verne-kick-fully-driverless-robotaxi-test-rides"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Pony.ai x Verne Zagreb robotaxi",
+    "description": "First fully driverless robotaxi passenger rides on European public roads, part of a Pony.ai/Verne/Uber joint deployment model.",
+    "source_url": "https://www.unite.ai/pony-ai-starts-fully-driverless-robotaxi-passenger-tests-in-zagreb/"
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "reasoning_models",
+   "title": "Planned Test-Time Scaling coordinates reasoning branches for pass@k gains",
+   "detail": "A Sep 23, 2026 arXiv paper (UCLA) proposes Planned Test-Time Scaling, replacing independent repeated sampling with a planner-executor scheme that steers parallel reasoning branches toward distinct paths, lifting pass@64 on math benchmarks by up to 13.4 points over repeated sampling with Qwen3 models.",
+   "source_urls": [
+    "https://arxiv.org/abs/2609.27374"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__reasoning_test_time_compute__test_time_inference_compute_scaling"
+    ],
+    "venue": "arXiv preprint",
+    "new_category": false,
+    "name": "Planned Test-Time Scaling (PTTS)",
+    "description": "Coordinated joint planner-executor policy for test-time compute scaling that improves coverage of complementary reasoning paths over independent repeated sampling.",
+    "source_url": "https://arxiv.org/abs/2609.27374"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "alphafold_protein_design",
+   "title": "AlphaFold Database adds 8,000+ viral protein complexes for pandemic prep",
+   "detail": "On Sep 24-25, 2026, EMBL-EBI, Google DeepMind, NVIDIA and partners (CEPI, WEF, Univ. of Glasgow, SNU, SKKU, SIB) added AI-predicted structures for 8,000+ protein complexes across 2,800+ viral proteomes to the AlphaFold Database, timed to the Sep 25 UN pandemic-preparedness summit; roughly 30% of the predicted interactions are novel to science.",
+   "source_urls": [
+    "https://www.embl.org/news/science-technology/alphafold-database-adds-viral-protein-complexes-to-support-pandemic-preparedness/",
+    "https://www.nature.com/articles/d41586-026-03022-1"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__computational_protein_biomolecule_design__structure_prediction_complexes"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "AlphaFold Database viral protein complex release",
+    "description": "Bulk release of AlphaFold2/NVIDIA BioNeMo-generated structures for viral protein complexes across 2,800+ virus proteomes, aimed at accelerating vaccine and countermeasure design for pandemic preparedness.",
+    "source_url": "https://www.embl.org/news/science-technology/alphafold-database-adds-viral-protein-complexes-to-support-pandemic-preparedness/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "bci",
+   "title": "Precision Neuroscience closes $250M Series D at $1B+ valuation",
+   "detail": "On Sep 24, 2026, Precision Neuroscience closed an oversubscribed $250M Series D led by Pershing Square Inc. and the Ackman Oxman Institute, bringing total capital raised to $430M, to scale its non-penetrating Layer 7 Cortical Interface BCI.",
+   "source_urls": [
+    "https://www.globenewswire.com/news-release/2026/09/24/3368254/0/en/precision-neuroscience-closes-oversubscribed-250m-series-d-led-by-pershing-square-inc-the-ackman-oxman-institute-and-a-leading-life-sciences-investment-fund.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"
+    ],
+    "venue": "",
+    "new_category": false,
+    "org_type": "startup",
+    "why": "Large late-stage raise (broad investor base spanning sovereign wealth, VC and family offices) signals conviction in non-penetrating, surface-electrode BCI as a distinct category competing with Neuralink and Paradromics.",
+    "funding": "$250M Series D; $430M total raised to date",
+    "name": "Precision Neuroscience",
+    "description": "NY-based BCI company developing the Layer 7 Cortical Interface, a thin flexible surface electrode array that records neural activity without penetrating brain tissue.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/09/24/3368254/0/en/precision-neuroscience-closes-oversubscribed-250m-series-d-led-by-pershing-square-inc-the-ackman-oxman-institute-and-a-leading-life-sciences-investment-fund.html"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "crispr_therapies",
+   "title": "FDA clears IND for Prime Medicine's in vivo prime editor PM647 in AATD",
+   "detail": "On Sep 24, 2026, the FDA cleared Prime Medicine's IND for PM647, an LNP-delivered in vivo prime editor correcting the SERPINA1 PiZ mutation, for alpha-1 antitrypsin deficiency (AATD); a global Phase 1/2 first-in-human trial will begin, with initial data expected in 2027.",
+   "source_urls": [
+    "https://www.globenewswire.com/news-release/2026/09/24/3368730/0/en/prime-medicine-announces-u-s-fda-clearance-of-investigational-new-drug-application-for-pm647-in-alpha-1-antitrypsin-deficiency.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__genetic_medicine_in_vivo_next_gen_editing__prime_editing"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "PM647",
+    "description": "In vivo, LNP-delivered prime editor correcting the SERPINA1 PiZ mutation to restore functional alpha-1 antitrypsin protein, addressing both lung and liver manifestations of AATD.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/09/24/3368730/0/en/prime-medicine-announces-u-s-fda-clearance-of-investigational-new-drug-application-for-pm647-in-alpha-1-antitrypsin-deficiency.html"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "glp1",
+   "title": "Lilly previews retatrutide TRIUMPH-2 Phase 3 data ahead of EASD 2026",
+   "detail": "Lilly's Sep 15, 2026 release ahead of EASD 2026 (Milan, Sep 28-Oct 2) discloses retatrutide TRIUMPH-2 Phase 3 results: adults with obesity/overweight and type 2 diabetes lost up to an average 20.8% (49.6 lb) body weight and 1.6-point A1C at 80 weeks; full data presents at an EASD symposium Sep 30.",
+   "source_urls": [
+    "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-foundayo-retatrutide-and-eloratzp-easd"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__injectable_multi_agonists"
+    ],
+    "venue": "EASD 2026",
+    "new_category": false,
+    "field": "retatrutide TRIUMPH-2 weight/A1C reduction (obesity + T2D)",
+    "new_value": "up to 20.8% (49.6 lb) weight loss and 1.6-point A1C reduction at 80 weeks",
+    "previous_value": "48-week Phase 2 data showed up to 24.2% weight loss in non-diabetic obesity cohort",
+    "source_url": "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-foundayo-retatrutide-and-eloratzp-easd"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "crispr_therapies",
+   "title": "SNIPR Biome expands CRISPR-armed phage trial to Phase 2, 66 patients",
+   "detail": "On Sep 17, 2026, SNIPR Biome enrolled the first patient in the Phase 2 portion of its Phase 1b/2a trial of SNIPR001, a CRISPR-Cas-armed bacteriophage therapeutic to prevent E. coli bloodstream infections in hematopoietic stem-cell transplant recipients, expanding the study to 66 patients.",
+   "source_urls": [
+    "https://www.globenewswire.com/news-release/2026/09/17/3363725/0/en/snipr-enrolls-first-patient-in-phase-2-portion-of-snipr001-trial-expanding-study-to-66-patients.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__genetic_medicine_in_vivo_next_gen_editing__in_vivo_somatic_editing"
+    ],
+    "venue": "",
+    "new_category": false,
+    "org_type": "biotech",
+    "why": "Extends CRISPR gene-editing tools beyond human genome correction into precision antimicrobial phage therapy, a distinct application vector for editing platforms; CARB-X backed.",
+    "funding": "CARB-X supported",
+    "name": "SNIPR Biome",
+    "description": "Danish biotech developing CRISPR-Cas-armed bacteriophage therapeutics that selectively target specific bacterial pathogens.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/09/17/3363725/0/en/snipr-enrolls-first-patient-in-phase-2-portion-of-snipr001-trial-expanding-study-to-66-patients.html"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "IonQ runs real-time QEC decoder for 408 logical qubits on a laptop CPU",
+   "detail": "On Sep 22, 2026 IonQ demonstrated the industry's first end-to-end real-time quantum error decoder running on a single commodity CPU (Apple M4 Max), handling simulated circuits with up to 408 logical qubits and 31.5M quantum operations with only ~0.02% added processing overhead.",
+   "source_urls": [
+    "https://www.ionq.com/news/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder",
+    "https://thequantuminsider.com/2026/09/23/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__error_correction_logical_qubits__real_time_decoding"
+    ],
+    "venue": "IEEE QCE 2026 follow-on / IonQ research disclosure",
+    "new_category": false,
+    "name": "IonQ real-time CPU-based quantum error decoder",
+    "description": "First demonstration of real-time quantum error correction decoding for a trapped-ion fault-tolerant architecture running entirely on a standard off-the-shelf CPU rather than custom FPGA/ASIC hardware, removing a key scaling bottleneck for logical-qubit systems.",
+    "source_url": "https://www.ionq.com/news/ionq-demonstrates-industrys-first-end-to-end-real-time-quantum-error-decoder"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Starship Flight 14 slips again to Sep 28, first attempted orbital insertion",
+   "detail": "SpaceX completed Starship Ship 41's wet dress rehearsal on Sep 24, 2026 and reset the Flight 14 target to no earlier than Sep 28, aiming for six orbits at 275 km, deployment of 26 V3 Starlink satellites, and a Pacific splashdown \u2014 its first attempt at orbital insertion.",
+   "source_urls": [
+    "https://www.teslaoracle.com/2026/09/22/starship-flight-14-gets-delayed-spacex-moves-booster-21-to-starbase-launch-pad/",
+    "https://spaceflightnow.com/launch/starship-flight-14/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Starship Flight 14 target launch date / mission profile",
+    "new_value": "NET Sep 28, 2026 \u2014 wet dress rehearsal complete Sep 24; first orbital-insertion attempt with 26 V3 Starlink sats deployed",
+    "previous_value": "NET Sep 22, 2026 (per Sep 18 update)",
+    "source_url": "https://www.teslaoracle.com/2026/09/22/starship-flight-14-gets-delayed-spacex-moves-booster-21-to-starbase-launch-pad/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Inversion Space wins NASA study contract for Earth aerocapture using its Arc reentry vehicle",
+   "detail": "In September 2026 NASA awarded Inversion Space a $350K contract to study using its Arc lifting-body reentry capsule for the first-ever Earth-based aerocapture flight demonstration, running through June 2027 \u2014 a step beyond its SpaceWERX-funded 2026 cargo-reentry demo flights.",
+   "source_urls": [
+    "https://payloadspace.com/inversion-space-wins-nasa-contract-to-study-aerocapture-flight/",
+    "https://www.prnewswire.com/news-releases/inversion-selected-by-nasa-to-advance-aerocapture-technology-for-future-interplanetary-missions-302874697.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__in_space_manufacturing_orbital_economy__reentry_hypersonics_as_a_service"
+    ],
+    "org_type": "startup",
+    "why": "Fills the reentry/hypersonics-as-a-service gap sub-theme: Inversion is racing Varda and Outpost to commercialize point-to-point cargo reentry, and this NASA study extends its Arc vehicle toward aerocapture for interplanetary use.",
+    "funding": "$350K NASA study contract (on top of a $71M SpaceWERX/Space Force reentry-demo contract)",
+    "name": "Inversion Space",
+    "description": "Reentry-as-a-service startup developing the Arc lifting-body capsule for rapid cargo return from orbit, now also studying Earth aerocapture demonstrations for NASA.",
+    "source_url": "https://payloadspace.com/inversion-space-wins-nasa-contract-to-study-aerocapture-flight/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "renewables_batteries",
+   "title": "Soochow University/LONGi nano-scaffold pushes perovskite-silicon tandem to 34.0%",
+   "detail": "Published Sep 10, 2026 in Science Bulletin, a ZrO2 nano-scaffold interfacial design from Soochow University and LONGi's Central R&D Institute lifted a perovskite-silicon tandem cell to 34.0% lab efficiency (33.5% certified steady-state) with a record 2.014V open-circuit voltage, retaining 84% efficiency after 2,000 hours.",
+   "source_urls": [
+    "http://www.pv-magazine.com/2026/09/10/longi-soochow-university-unveil-34-0-perovskite-silicon-tandem-solar-cell-based-on-dual-anchored-interfacial-design/",
+    "https://www.eurekalert.org/news-releases/1144549"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "energy__renewable_generation_frontier__perovskite_silicon_tandem_solar"
+    ],
+    "venue": "Science Bulletin",
+    "new_category": false,
+    "name": "ZrO2 nano-scaffold interfacial perovskite-silicon tandem cell",
+    "description": "New interfacial engineering approach (discrete monoclinic ZrO2 nanoparticle layer between TCO and SAM) that reduces recombination/leakage in perovskite-silicon tandems, setting a new efficiency and voltage record just weeks after HZB's 30.3% CsCl seed-layer result.",
+    "source_url": "http://www.pv-magazine.com/2026/09/10/longi-soochow-university-unveil-34-0-perovskite-silicon-tandem-solar-cell-based-on-dual-anchored-interfacial-design/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Meta Connect 2026: Muse Spark multimodal AI powers camera-free glasses, VR Glasses, Muse Charm",
+   "detail": "Zuckerberg unveiled a $249-$1,299 AI hardware lineup at Meta Connect 2026 (Sep 23-24) built around Muse Spark, Meta Superintelligence Labs' multimodal AI model (first introduced in April 2026, now extended across devices): camera-free Ray-Ban Meta Audio (43g, 12hr battery), Gen 3 Ray-Ban Meta with Dolby Atmos capture, $1,299 'Meta VR Glasses' with hand/eye tracking and hologram calling, and a pocket 'Muse Charm' voice companion shipping for the holidays.",
+   "source_urls": [
+    "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/",
+    "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__consumer_ai_assistants_companions"
+    ],
+    "venue": "Meta Connect 2026",
+    "new_category": false,
+    "name": "Muse Spark + Meta AI glasses/VR Glasses lineup",
+    "description": "Zuckerberg unveiled a $249-$1,299 AI hardware lineup at Meta Connect 2026 (Sep 23-24) built around Muse Spark, Meta Superintelligence Labs' multimodal AI model (first introduced in April 2026, now extended across devices): camera-free Ray-Ban Meta Audio (43g, 12hr battery), Gen 3 Ray-Ban Meta with Dolby Atmos capture, $1,299 'Meta VR Glasses' with hand/eye tracking and hologram calling, and a pocket 'Muse Charm' voice companion shipping for the holidays.",
+    "source_url": "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/"
+   },
+   "confidence": "high - confirmed via live-blog coverage of the keynote",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Gothenburg team synthesizes 'diamondiyne', a 35-years-predicted porous diamond carbon allotrope",
+   "detail": "Researchers at University of Gothenburg (with Stockholm University and Chalmers) bonded carbon atoms via triple bonds into diamondiyne, a tetrahedral, metal-free porous diamond-like lattice first theorized 35 years ago, made with inexpensive equipment as a thin film at a liquid-liquid interface.",
+   "source_urls": [
+    "https://www.gu.se/en/news/researchers-created-new-porous-diamond",
+    "https://www.chemistryworld.com/news/meet-diamondiyne-the-new-diamond-like-carbon-allotrope-predicted-35-years-ago/4024239.article"
+   ],
+   "payload": {
+    "subtheme_ids": [],
+    "venue": "",
+    "new_category": true,
+    "candidate_area": "Advanced materials / novel carbon allotropes",
+    "detail": "First synthesis of diamondiyne, a porous diamond-like carbon material with potential gas storage/catalysis applications, published in Angewandte Chemie.",
+    "source_url": "https://www.gu.se/en/news/researchers-created-new-porous-diamond"
+   },
+   "confidence": "high - university press release plus independent trade coverage",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Deep Sky One gets Sylvera's first-ever pre-issuance AAA-A rating for a DAC project",
+   "detail": "Sylvera issued its first pre-issuance integrity rating for a direct air capture project, grading Deep Sky One's Alberta facility AAA-A on carbon accounting, additionality, permanence and delivery risk -- a new due-diligence framework meant to let buyers assess DAC projects before offtake commitments.",
+   "source_urls": [
+    "https://esgnews.com/deep-sky-one-secures-aaa-a-rating-for-dac-project/",
+    "https://www.sylvera.com/blog/deep-sky-aaa-pre-issuance-rating-direct-air-capture"
+   ],
+   "payload": {
+    "subtheme_ids": [],
+    "venue": "",
+    "new_category": true,
+    "candidate_area": "Direct air capture (DAC)",
+    "detail": "First-of-its-kind pre-issuance credit rating for a DAC project signals maturing carbon-removal financing infrastructure.",
+    "source_url": "https://esgnews.com/deep-sky-one-secures-aaa-a-rating-for-dac-project/"
+   },
+   "confidence": "high - confirmed by ESG News and Sylvera's own blog",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "Willison, Zvi, and others flag a fresh AI price war as Claude Opus 5.5, GPT-6 Sol/Luna ship together",
+   "detail": "Simon Willison's Sept 22 post on Claude Opus 5.5 and OpenAI's GPT-6 Sol/Luna frames this week's near-simultaneous frontier-model drops as the opening of a new price war among labs, a thesis echoed across AI-commentary circles tracking frontier tiering.",
+   "source_urls": [
+    "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+    "https://thezvi.substack.com/p/monthly-roundup-46-september-2026"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars"
+    ],
+    "venue": "",
+    "new_category": false,
+    "thesis": "Simultaneous frontier-tier releases (Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna) mark the start of an intensifying price war across labs.",
+    "examples": [
+     "https://simonwillison.net/2026/Sep/22/",
+     "https://thezvi.substack.com/p/monthly-roundup-46-september-2026"
+    ],
+    "spotted_at": "2026-09-22",
+    "source_url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
+   },
+   "confidence": "medium - based on Willison's post; broader corroboration limited to indirect mentions",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": "reasoning_models",
+   "title": "Dwarkesh x Noam Brown: math's 'explosion' this year signals AI is starting to automate its own research",
+   "detail": "In a Sept 17 Dwarkesh Podcast episode, OpenAI's Noam Brown discusses multi-agent systems and the year's burst of formalized math progress (including agent-swarm work on Navier-Stokes) as early evidence that frontier labs are automating parts of AI research itself.",
+   "source_urls": [
+    "https://www.dwarkesh.com/p/noam-brown",
+    "https://simonwillison.net/2026/Sep/8/some-thoughts-on-the-navier-stokes-millennium-prize-problem/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__ai_for_science__autonomous_research_hypothesis_generation",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+    ],
+    "venue": "",
+    "new_category": false,
+    "thesis": "This year's rapid formal-math progress, driven by multi-agent systems, is an early signal of AI automating its own research pipeline.",
+    "examples": [
+     "https://www.dwarkesh.com/podcast/archive"
+    ],
+    "spotted_at": "2026-09-17",
+    "source_url": "https://www.dwarkesh.com/p/noam-brown"
+   },
+   "confidence": "medium - episode confirmed via search, direct transcript not fetched",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "Backlash builds against 'pace the frontier': critics say a slowdown deal entrenches incumbents",
+   "detail": "A week after Amodei, Altman, Musk, Hassabis and Nadella converged on pacing AI progress, Ben Thompson's Stratechery ('Doomforce'), TechCrunch, and Fortune independently pushed back, arguing a pacing agreement is politically motivated, lacks enforcement teeth, and would freeze in place today's biggest labs at smaller players' expense.",
+   "source_urls": [
+    "https://stratechery.com/2026/doomforce/",
+    "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+    "https://fortune.com/2026/09/22/ai-pacing-debate-how-fast-slow-wrong-debate-frontier/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents"
+    ],
+    "venue": "",
+    "new_category": false,
+    "thesis": "The 'pace the frontier' consensus among AI lab CEOs is drawing pushback from independent commentators who call it unenforceable and structurally favorable to incumbents.",
+    "examples": [
+     "https://stratechery.com/2026/doomforce/",
+     "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+     "https://fortune.com/2026/09/22/ai-pacing-debate-how-fast-slow-wrong-debate-frontier/"
+    ],
+    "spotted_at": "2026-09-22"
+   },
+   "confidence": "high - three independent outlets/voices corroborate within the same week",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "'Memory Attention' paper: token-indexed memory can replace attention's value projection",
+   "detail": "Jiale Kang's 'Memory Attention' (arXiv 2609.28399), trending #1 on alphaXiv on Sept 23, shows a token-indexed memory mechanism can replace the value projection in transformer attention while improving language-modeling and average benchmark scores under matched training-token budgets.",
+   "source_urls": [
+    "https://www.alphaxiv.org/abs/2609.28399"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__architecture_efficiency__moe_sparse_attention_long_context"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Memory Attention",
+    "description": "Token-indexed memory replaces attention's value projection, improving LM quality at matched compute -- a candidate architectural efficiency gain trending on alphaXiv.",
+    "source_url": "https://www.alphaxiv.org/abs/2609.28399"
+   },
+   "confidence": "high - verified directly on alphaXiv trending page",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "XPeng \u2014 Chinese EV maker now mass-building IRON humanoids in-house",
+   "detail": "XPeng opened a >80%-automated IRON humanoid production line in Guangzhou on Sep 7-8, 2026; external deliveries targeted for 2027. Added via entity reconciliation (the company behind this week's IRON item).",
+   "source_urls": [
+    "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__humanoid_robots__industrial_commercial_humanoids"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "XPeng",
+    "org_type": "BUSINESS",
+    "why": "Vertically integrated EV/autonomy stack applied to humanoids; one of few players with a dedicated automated humanoid line.",
+    "funding": "Public (NYSE: XPEV / HKEX: 9868)",
+    "description": "EV maker building IRON humanoid robots on its own automated line.",
+    "source_url": "https://cnevpost.com/2026/09/08/xpeng-opens-iron-humanoid-robot-production-line/"
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_PERSON",
+   "breakthrough_id": "reasoning_models",
+   "title": "Noam Brown \u2014 OpenAI reasoning researcher (o1 lead) on AI-automated math",
+   "detail": "OpenAI's Noam Brown, a lead on the o-series reasoning models, argued on Dwarkesh Patel's podcast this month that 2026's math results signal AI beginning to automate research. Added via entity reconciliation.",
+   "source_urls": [
+    "https://www.dwarkesh.com/p/noam-brown"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__reasoning_test_time_compute__test_time_inference_compute_scaling"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Noam Brown",
+    "affiliation": "OpenAI",
+    "org_type": "BUSINESS",
+    "role": "Research scientist, reasoning (o1/o-series); previously Libratus/Pluribus poker AIs at CMU/Meta",
+    "description": "Reasoning-model researcher at OpenAI.",
+    "source_url": "https://www.dwarkesh.com/p/noam-brown"
+   },
+   "confidence": "high",
+   "backfill": false
+  }
+ ]
+}

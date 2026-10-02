@@ -1,0 +1,564 @@
+{
+ "week_ending": "2026-10-02",
+ "summary": "OpenAI DevDay (Sep 29) led the week. GPT-6.1 Sol arrived at about one-fifth of Astra's price, alongside always-on 'Dots' agents and a hosted Agents API with computer use. Commentary read the event as OpenAI turning into an agent-and-distribution platform, and an FTC probe of OpenAI and Anthropic marks a turn from voluntary pacing toward formal oversight. EASD in Milan produced a dense incretin readout: retatrutide TRIUMPH-2 in full (-20.8%, Lancet), Lilly's eloraTZP amylin combination (-23.3%), and survodutide SYNCHRONIZE-2 (-13.1%, NEJM). In the physical domains, Starship Flight 14 reached orbit for the first time and deployed 26 Starlink V3s, Infleqtion reported 30 error-detected logical qubits as Microsoft and Qolab proposed a stricter 'scalable logical qubit' bar, CFS placed a record HTS-tape order with Fujikura, and the NRC issued the first US utility SMR construction permit (TVA BWRX-300). New voice: Cal Newport.",
+ "highlights": [
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "OpenAI GPT-6.1 Sol: near-Astra quality at one-fifth the price",
+   "detail": "Launched at DevDay on 2026-09-29 at $2/$10 per M input/output tokens, compared with $10/$50 for GPT-6 Astra (about one-fifth). It is tuned for agentic coding and computer use and nearly matches Astra on several evals (for example DeepSWE v1.1 and OSWorld 2.0). An 'Ultrafast' tier was previewed.",
+   "source_urls": [
+    "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "https://www.infoq.com/news/2026/10/openai-devday-2026/",
+    "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__frontier_platforms_applied_ai_economics__ai_compute_economics"
+    ],
+    "venue": "OpenAI DevDay 2026",
+    "name": "GPT-6.1 Sol",
+    "description": "Mid-tier OpenAI model approaching flagship Astra at about 20% of the price.",
+    "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "OpenAI Agents API adds hosted computer use, multi-agent and MCP Events",
+   "detail": "DevDay 2026: the Agents API now offers computer use, Codex-style multi-agent orchestration, tool search and context compaction on OpenAI-managed execution. Codex gained cloud environments and an /agents delegation UI. A proposed MCP Events spec lets plugins trigger on events.",
+   "source_urls": [
+    "https://www.infoq.com/news/2026/10/openai-devday-2026/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration",
+     "ai__agents_developer_ecosystem__coding_agents"
+    ],
+    "venue": "OpenAI DevDay 2026",
+    "name": "OpenAI Agents API (computer use, multi-agent) + Codex cloud",
+    "description": "Hosted agent runtime with computer use and multi-agent support; Codex cloud environments.",
+    "source_url": "https://www.infoq.com/news/2026/10/openai-devday-2026/",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "OpenAI 'Dots': persistent always-on agents inside ChatGPT",
+   "detail": "Unveiled at DevDay on 2026-09-29. Dots are always-on, Astra-powered assistants that take assigned tasks, connect to apps and keep working in the background. They launched alongside ChatGPT Space, a shared workspace for teams and agents.",
+   "source_urls": [
+    "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol",
+    "https://openai.com/index/introducing-dots/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__consumer_ai_assistants_companions",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+     "ai__frontier_platforms_applied_ai_economics__enterprise_agentic_platforms"
+    ],
+    "venue": "OpenAI DevDay 2026",
+    "name": "Dots",
+    "description": "Persistent background agents in ChatGPT.",
+    "source_url": "https://openai.com/index/introducing-dots/",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "IROS 2026 award finalist: VTAP visuo-tactile active-palm gripper",
+   "detail": "Purdue and Columbia's VTAP gripper is listed in the IROS 2026 Best Paper / Best Student Paper session. It pairs tactile fingertip arrays with an actuated visuo-tactile palm and handles 3 mm object singulation, in-hand syringe reorientation and peg-in-hole insertion.",
+   "source_urls": [
+    "https://arxiv.org/abs/2607.15448",
+    "https://2026.ieee-iros.org/program/awards/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__dexterous_manipulation_tactile__tactile_sensing_dexterous_hands",
+     "robotics__dexterous_manipulation_tactile__contact_rich_manipulation_learning"
+    ],
+    "venue": "IROS 2026",
+    "name": "VTAP Gripper",
+    "description": "Tactile-reactive gripper with active visuo-tactile palm.",
+    "source_url": "https://arxiv.org/abs/2607.15448",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "glp1",
+   "title": "Retatrutide TRIUMPH-2 full data at EASD: 20.8% weight loss at 80 weeks in T2D",
+   "detail": "Presented at EASD on 29 Sep 2026 and published in The Lancet. In 1,152 adults with T2D and obesity, retatrutide 12 mg cut weight 20.8% (placebo 4.0%) and A1C by 1.5 points. 34.9% of patients lost at least 25% of body weight. Lilly plans a US filing in Q1 2027.",
+   "source_urls": [
+    "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-delivered-substantial-weight-loss-and-a1c-reduction-underscoring-its-potential-promise-for-people-with-obesity-and-type-2-diabetes-302891798.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__injectable_multi_agonists",
+     "bio__metabolic_incretin_therapeutics__indication_expansion"
+    ],
+    "venue": "EASD 2026",
+    "field": "retatrutide TRIUMPH-2",
+    "new_value": "-20.8% at 80 wk (12 mg) in T2D+obesity; Lancet; US filing Q1 2027",
+    "previous_value": "Topline preview only",
+    "source_url": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-delivered-substantial-weight-loss-and-a1c-reduction-underscoring-its-potential-promise-for-people-with-obesity-and-type-2-diabetes-302891798.html",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "glp1",
+   "title": "Lilly eloraTZP (amylin + tirzepatide) hits 23.3% in Ph2b; Ph3 starts Q4",
+   "detail": "At EASD on 30 Sep 2026, eloralintide plus tirzepatide gave 23.3% weight loss at 48 weeks in 367 adults with T2D and obesity, versus 14.8% for tirzepatide alone. A1C fell up to 2.9 points, and Phase 3 starts in Q4 2026.",
+   "source_urls": [
+    "https://www.biospace.com/drug-development/superior-weight-loss-blood-sugar-control-propel-lillys-amylin-gip-glp-1-combo-into-phase-3"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__amylin_muscle_preserving_combos",
+     "bio__metabolic_incretin_therapeutics__injectable_multi_agonists"
+    ],
+    "venue": "EASD 2026",
+    "name": "eloraTZP",
+    "description": "Amylin + GIP/GLP-1 combination.",
+    "source_url": "https://www.biospace.com/drug-development/superior-weight-loss-blood-sugar-control-propel-lillys-amylin-gip-glp-1-combo-into-phase-3",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "glp1",
+   "title": "Survodutide SYNCHRONIZE-2: up to 13.1% weight loss in T2D (NEJM)",
+   "detail": "Boehringer presented the Phase 3 trial at EASD on 1 Oct 2026, with simultaneous NEJM publication. In 755 adults with T2D, the glucagon/GLP-1 dual agonist cut weight by up to 13.1% at 76 weeks (placebo 3.1%). That trails triple agonists such as retatrutide.",
+   "source_urls": [
+    "https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__injectable_multi_agonists"
+    ],
+    "venue": "EASD 2026",
+    "name": "Survodutide SYNCHRONIZE-2",
+    "description": "Ph3 glucagon/GLP-1 in T2D.",
+    "source_url": "https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "crispr_therapies",
+   "title": "Epicrispr Biotechnologies: EPI-321, first clinical AAV epigenome editor (FSHD)",
+   "detail": "Interim data from June 2026: 9 FSHD patients dosed with no serious adverse events, and about 370 mL average lean-muscle gain at 6 months in the first 3 evaluable patients. A 6-patient update was slated for World Muscle Society 2026.",
+   "source_urls": [
+    "https://epicrispr.com/epicrispr-reports-first-clinical-evidence-of-increased-lean-muscle-volume-in-patients-with-fshd-following-treatment-with-epi-321/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__genetic_medicine_in_vivo_next_gen_editing__epigenome_editing"
+    ],
+    "venue": "World Muscle Society 2026",
+    "name": "Epicrispr Biotechnologies",
+    "org_type": "BUSINESS",
+    "why": "First clinical evidence for an AAV-delivered epigenetic silencer (DUX4); could validate editing without DNA cuts.",
+    "source_url": "https://epicrispr.com/epicrispr-reports-first-clinical-evidence-of-increased-lean-muscle-volume-in-patients-with-fshd-following-treatment-with-epi-321/",
+    "traction": "WMS 2026 presentation; fills epigenome-editing coverage",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Starship Flight 14 reaches orbit for the first time and deploys 26 Starlink V3",
+   "detail": "Flew 2026-09-28 from Starbase. Ship 41 reached orbit despite one Raptor out, deployed 26 Starlink V3 satellites and splashed down intact in the North Pacific after a mission cut to about 3 hours. Booster 21 splashed down in the Gulf rather than being caught.",
+   "source_urls": [
+    "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class",
+     "space__satellite_mega_constellations_connectivity__mega_constellation_deployment"
+    ],
+    "field": "Starship Flight 14 status",
+    "new_value": "Flew 2026-09-28: first orbit, 26 Starlink V3 deployed, ship splashdown intact; mission shortened; booster Gulf splashdown",
+    "previous_value": "NET Sep 28, first attempted orbital insertion",
+    "source_url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "Infleqtion entangles 30 error-detected logical qubits from 80 neutral atoms",
+   "detail": "Announced 24 Sep at Quantum World Congress. Infleqtion used 10 blocks of the distance-2 [[8,3,2]] code on its Sqale system with post-selection, which is error detection rather than full correction. Infleqtion says its 100-logical-qubit target for 2028 is on track.",
+   "source_urls": [
+    "https://infleqtion.com/infleqtion-achieves-30-entangled-logical-qubits-on-its-sqale-quantum-computer/",
+    "https://postquantum.com/industry-news/infleqtion-30-logical-qubits/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding",
+     "quantum__qubit_modality_race__neutral_atom_arrays"
+    ],
+    "venue": "Quantum World Congress 2026",
+    "name": "Infleqtion 30 logical qubits",
+    "description": "30 error-detected logical qubits on Sqale.",
+    "source_url": "https://infleqtion.com/infleqtion-achieves-30-entangled-logical-qubits-on-its-sqale-quantum-computer/",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "Microsoft/Qolab propose four-condition test for a 'scalable logical qubit'",
+   "detail": "Troyer, Nayak and Martinis set four conditions: repeated QEC, universal fault-tolerant gates with real-time decoding, logical error falling with code size, and a path to large qubit counts. Error-detected 'logical qubit' counts would fail the bar.",
+   "source_urls": [
+    "https://quantum.microsoft.com/en-us/insights/blogs/scalable-logical-qubits"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__error_correction_logical_qubits__below_threshold_codes",
+     "quantum__error_correction_logical_qubits__real_time_decoding",
+     "quantum__algorithms_hybrid_computing__advantage_benchmarking"
+    ],
+    "name": "Scalable logical qubit definition",
+    "description": "Proposed grading standard for logical-qubit claims.",
+    "source_url": "https://quantum.microsoft.com/en-us/insights/blogs/scalable-logical-qubits",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Google launches 4 TPUs to orbit on Project Suncatcher prototype satellite",
+   "detail": "Google's Planet-built Suncatcher prototype was set to launch on SpaceX Transporter-18 from Vandenberg on 1 Oct 2026, carrying four TPUs and about 1 kW of solar power. It is a technology-validation mission rather than an operational orbital data center. A two-satellite optical-link test is planned for 2027.",
+   "source_urls": [
+    "https://convergedigest.com/google-project-suncatcher-orbital-ai-data-center-tpu/",
+    "https://financefeeds.com/google-project-suncatcher-4-tpus-orbit-transporter-18/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__hyperscaler_custom_silicon",
+     "hardware__ai_datacenter_power_cooling__datacenter_power_energy_density"
+    ],
+    "name": "Project Suncatcher MVP",
+    "description": "First data-centre-class TPUs in orbit.",
+    "source_url": "https://convergedigest.com/google-project-suncatcher-orbital-ai-data-center-tpu/",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Cerebras to supply Gimlet Labs with 100 MW of CS-4 inference capacity",
+   "detail": "Announced 30 Sep. Cerebras will deploy CS-4 wafer-scale systems for Gimlet's cloud over one to two years, with service starting in 2027. General Compute signed a multi-year Cerebras deal a day earlier.",
+   "source_urls": [
+    "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826",
+    "https://futurumgroup.com/insights/two-clouds-pick-cerebras-in-one-week-to-make-multi-silicon-inference-fast/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__novel_compute_architectures__wafer_scale_engines",
+     "hardware__ai_accelerators__inference_specialized_asics"
+    ],
+    "name": "Cerebras-Gimlet 100 MW deal",
+    "description": "Wafer-scale inference capacity deal.",
+    "source_url": "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "fusion",
+   "title": "CFS places largest-ever HTS tape order (10,000+ km) with Fujikura for ARC",
+   "detail": "Commonwealth Fusion Systems ordered more than 10,000 km of high-temperature-superconducting tape from Fujikura for ARC magnets, starting with the Virginia plant. CFS is ordering ahead of SPARC reaching Q>1.",
+   "source_urls": [
+    "https://cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+    "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-places-largest-single-purchase-order-of-hts-tape-with-fujikura-to-accelerate-development-of-arc-power-plants-302893652.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "energy__fusion_energy__magnetic_confinement_tokamak_scale_up",
+     "energy__fusion_energy__fusion_commercialization_offtake"
+    ],
+    "name": "CFS-Fujikura HTS tape order",
+    "description": "Largest HTS tape order to date.",
+    "source_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-places-largest-single-purchase-order-of-hts-tape-with-fujikura-to-accelerate-development-of-arc-power-plants-302893652.html",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "DevDay 2026: OpenAI pivots from chatbot vendor to always-on agent platform",
+   "detail": "Commentary converged on Dots, Spaces, Marketplace and Sign in with ChatGPT as a platform-and-distribution play. Altman also said OpenAI will not IPO in 2026 and tied the timing to safety confidence.",
+   "source_urls": [
+    "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+    "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html",
+    "https://gizmodo.com/no-openai-ipo-until-the-ai-stops-going-rogue-ceo-sam-altman-says-2000819194"
+   ],
+   "payload": {
+    "thesis": "OpenAI is repositioning from model vendor to agent-and-distribution platform, while tying IPO and capability pace to safety confidence.",
+    "examples": [
+     {
+      "voice": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/"
+     },
+     {
+      "voice": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html"
+     },
+     {
+      "voice": "Gizmodo",
+      "url": "https://gizmodo.com/no-openai-ipo-until-the-ai-stops-going-rogue-ceo-sam-altman-says-2000819194"
+     }
+    ],
+    "spotted_at": "2026-09-29",
+    "venue": "OpenAI DevDay 2026",
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__enterprise_agentic_platforms",
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents"
+    ],
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "Accountability turn: FTC probes AI labs as Newport urges a Congressional inquiry",
+   "detail": "Reuters reports the FTC is investigating OpenAI and Anthropic over possible consumer risks. Cal Newport's 'It's time to investigate the AI labs' drew wide HN discussion. The debate is moving from voluntary pacing to formal oversight.",
+   "source_urls": [
+    "https://www.usnews.com/news/technology/articles/2026-09-30/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers",
+    "https://calnewport.com/its-time-to-investigate-the-ai-labs/"
+   ],
+   "payload": {
+    "thesis": "Scrutiny of frontier labs is shifting from voluntary pacing to investigation and enforcement.",
+    "examples": [
+     {
+      "voice": "Cal Newport",
+      "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/"
+     },
+     {
+      "voice": "Reuters/US News",
+      "url": "https://www.usnews.com/news/technology/articles/2026-09-30/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers"
+     }
+    ],
+    "spotted_at": "2026-09-30",
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Context Language Models: the model edits its own context as a file",
+   "detail": "Shao et al. (with Nathan Lambert, Zettlemoyer and Koh) propose models that rewrite their own context as a file. They report +11.4% accuracy at 21.5% fewer FLOPs on BrowseComp-Plus and large gains on a 24-hour multi-repo agent-swarm task.",
+   "source_urls": [
+    "https://arxiv.org/abs/2609.37725"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__data_memory_evaluation_foundations__memory_continual_learning",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration"
+    ],
+    "name": "Context Language Models (CLMs)",
+    "description": "Model-native context management for long-horizon agents.",
+    "source_url": "https://arxiv.org/abs/2609.37725",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "NRC grants TVA first US utility SMR construction permit (BWRX-300, Clinch River)",
+   "detail": "On 29 Sep 2026 the NRC approved a construction permit for TVA's 300 MW GE Vernova Hitachi BWRX-300 near Oak Ridge. The NRC says the review finished ahead of schedule and offers a repeatable licensing path.",
+   "source_urls": [
+    "https://www.prnewswire.com/news-releases/tva-first-us-utility-to-receive-construction-permit-for-bwrx-300-advanced-nuclear-reactor-302893324.html",
+    "https://interestingengineering.com/energy/first-small-nuclear-reactor-in-us"
+   ],
+   "payload": {
+    "candidate_area": "Small modular reactors / licensing",
+    "detail": "First US utility SMR construction permit.",
+    "source_url": "https://www.prnewswire.com/news-releases/tva-first-us-utility-to-receive-construction-permit-for-bwrx-300-advanced-nuclear-reactor-302893324.html",
+    "subtheme_ids": [
+     "energy__advanced_nuclear_geothermal__small_modular_reactors_smrs"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Nvidia Open Agent Safety Platform: out-of-band 'Sentry' watchdog on BlueField-4",
+   "detail": "Nvidia announced OpenShell, an open runtime, and Sentry, a watchdog that runs on separate DPU silicon and can quarantine an agent in milliseconds. It is pitched as a hardware response to rogue-agent incidents.",
+   "source_urls": [
+    "https://mixed-news.com/en/nvidia-open-agent-safety-platform-sentry-bluefield/",
+    "https://www.pbs.org/newshour/world/nvidia-announced-a-software-tool-to-stop-rogue-ai-how-would-it-work"
+   ],
+   "payload": {
+    "candidate_area": "Hardware-enforced agent containment",
+    "detail": "Out-of-band agent monitoring silicon.",
+    "source_url": "https://mixed-news.com/en/nvidia-open-agent-safety-platform-sentry-bluefield/",
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "ai__safety_interpretability_governance__alignment_oversight_rlhf_constitutional_scheming"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Gimlet Labs: multi-silicon inference cloud buying 100 MW of Cerebras",
+   "detail": "Gimlet Labs is an inference-cloud startup that routes workloads across heterogeneous silicon (Cerebras wafer-scale processors plus GPUs). Its 100 MW Cerebras CS-4 commitment, with service starting in 2027, is a large wafer-scale deployment for a startup. Price terms were not disclosed.",
+   "source_urls": [
+    "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826",
+    "https://futurumgroup.com/insights/two-clouds-pick-cerebras-in-one-week-to-make-multi-silicon-inference-fast/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__inference_specialized_asics"
+    ],
+    "name": "Gimlet Labs",
+    "org_type": "BUSINESS",
+    "why": "Tests whether multi-silicon inference clouds can break NVIDIA lock-in at scale.",
+    "source_url": "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "fusion",
+   "title": "Fujikura: HTS tape supplier scaling capacity for CFS's ARC fusion plants",
+   "detail": "Japanese cable maker Fujikura won the largest single HTS-tape order to date (more than 10,000 km) from CFS and is expanding production. HTS tape supply is a key bottleneck for compact tokamaks.",
+   "source_urls": [
+    "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-places-largest-single-purchase-order-of-hts-tape-with-fujikura-to-accelerate-development-of-arc-power-plants-302893652.html"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "energy__fusion_energy__magnetic_confinement_tokamak_scale_up"
+    ],
+    "name": "Fujikura",
+    "org_type": "BUSINESS",
+    "why": "HTS tape supply is a gating input for high-field fusion magnets.",
+    "source_url": "https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-places-largest-single-purchase-order-of-hts-tape-with-fujikura-to-accelerate-development-of-arc-power-plants-302893652.html",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_PERSON",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "John Martinis (Qolab): co-author of the scalable-logical-qubit standard",
+   "detail": "John Martinis is a 2025 Physics Nobel laureate who led Google's 2019 quantum-supremacy experiment and is now CTO of Qolab. He co-authored the four-condition definition of a scalable logical qubit with Microsoft's Troyer and Nayak.",
+   "source_urls": [
+    "https://quantum.microsoft.com/en-us/insights/blogs/scalable-logical-qubits",
+    "https://qolab.ai/qolab-cofounder-and-cto-john-m-martinis-awarded-2025-nobel-prize-in-physics/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__qubit_modality_race__superconducting_qubits"
+    ],
+    "name": "John Martinis",
+    "affiliation": "Qolab",
+    "role": "Co-founder & CTO",
+    "org_type": "CROSS",
+    "awards": "Nobel Prize in Physics 2025",
+    "source_url": "https://qolab.ai/qolab-cofounder-and-cto-john-m-martinis-awarded-2025-nobel-prize-in-physics/",
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_VOICE",
+   "breakthrough_id": null,
+   "title": "Cal Newport: computer scientist pushing for formal oversight of AI labs",
+   "detail": "Cal Newport, a Georgetown CS professor and author of Deep Work, wrote 'It's time to investigate the AI labs', which drew wide HN discussion as the FTC probe surfaced.",
+   "source_urls": [
+    "https://calnewport.com/its-time-to-investigate-the-ai-labs/"
+   ],
+   "payload": {
+    "name": "Cal Newport",
+    "role": "Professor of Computer Science, Georgetown; author",
+    "focus": "AI's impact on work; accountability of AI labs",
+    "follow_url": "https://calnewport.com/",
+    "twitter": "",
+    "youtube": "",
+    "newsletter": "https://calnewport.com/blog/",
+    "notes": "Sceptic-leaning mainstream voice with a large non-technical audience.",
+    "tags": [
+     "governance",
+     "ai-and-work"
+    ],
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents"
+    ],
+    "venue": "",
+    "new_category": false
+   },
+   "confidence": "medium",
+   "backfill": false
+  }
+ ],
+ "verification": "29 checked: 21 passed, 5 fixed, 3 dropped (2 out-of-window, 1 unverifiable figures); 3 more trimmed for volume. Entities: 4 players added (Gimlet Labs, Fujikura, John Martinis, Cal Newport) plus Epicrispr."
+}

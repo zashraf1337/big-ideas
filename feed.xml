@@ -6,7 +6,14 @@
   <atom:link href="https://zashraf1337.github.io/big-ideas/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Weekly updates to a tracker of major AI, biotech, energy, space, quantum and robotics breakthroughs — new frontier results, people, labs and startups to watch.</description>
   <language>en</language>
-  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Weekly update — 2026-10-02</title>
+    <link>https://zashraf1337.github.io/big-ideas/</link>
+    <guid isPermaLink="false">https://zashraf1337.github.io/big-ideas/#week-2026-10-02</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>OpenAI DevDay (Sep 29) led the week. GPT-6.1 Sol arrived at about one-fifth of Astra's price, alongside always-on 'Dots' agents and a hosted Agents API with computer use. Commentary read the event as OpenAI turning into an agent-and-distribution platform, and an FTC probe of OpenAI and Anthropic marks a turn from voluntary pacing toward formal oversight. EASD in Milan produced a dense incretin readout: retatrutide TRIUMPH-2 in full (-20.8%, Lancet), Lilly's eloraTZP amylin combination (-23.3%), and survodutide SYNCHRONIZE-2 (-13.1%, NEJM). In the physical domains, Starship Flight 14 reached orbit for the first time and deployed 26 Starlink V3s, Infleqtion reported 30 error-detected logical qubits as Microsoft and Qolab proposed a stricter 'scalable logical qubit' bar, CFS placed a record HTS-tape order with Fujikura, and the NRC issued the first US utility SMR construction permit (TVA BWRX-300). New voice: Cal Newport.</p><ul><li>OpenAI GPT-6.1 Sol: near-Astra quality at one-fifth the price</li><li>OpenAI Agents API adds hosted computer use, multi-agent and MCP Events</li><li>OpenAI 'Dots': persistent always-on agents inside ChatGPT</li><li>IROS 2026 award finalist: VTAP visuo-tactile active-palm gripper</li><li>Retatrutide TRIUMPH-2 full data at EASD: 20.8% weight loss at 80 weeks in T2D</li><li>Lilly eloraTZP (amylin + tirzepatide) hits 23.3% in Ph2b; Ph3 starts Q4</li><li>Survodutide SYNCHRONIZE-2: up to 13.1% weight loss in T2D (NEJM)</li><li>Epicrispr Biotechnologies: EPI-321, first clinical AAV epigenome editor (FSHD)</li><li>Starship Flight 14 reaches orbit for the first time and deploys 26 Starlink V3</li><li>Infleqtion entangles 30 error-detected logical qubits from 80 neutral atoms</li><li>Microsoft/Qolab propose four-condition test for a 'scalable logical qubit'</li><li>Google launches 4 TPUs to orbit on Project Suncatcher prototype satellite</li><li>Cerebras to supply Gimlet Labs with 100 MW of CS-4 inference capacity</li><li>CFS places largest-ever HTS tape order (10,000+ km) with Fujikura for ARC</li><li>DevDay 2026: OpenAI pivots from chatbot vendor to always-on agent platform</li><li>Accountability turn: FTC probes AI labs as Newport urges a Congressional inquiry</li><li>Context Language Models: the model edits its own context as a file</li><li>NRC grants TVA first US utility SMR construction permit (BWRX-300, Clinch River)</li><li>Nvidia Open Agent Safety Platform: out-of-band 'Sentry' watchdog on BlueField-4</li><li>Gimlet Labs: multi-silicon inference cloud buying 100 MW of Cerebras</li><li>Fujikura: HTS tape supplier scaling capacity for CFS's ARC fusion plants</li><li>John Martinis (Qolab): co-author of the scalable-logical-qubit standard</li><li>Cal Newport: computer scientist pushing for formal oversight of AI labs</li></ul>]]></description>
+  </item>
   <item>
     <title>Weekly update — 2026-09-25</title>
     <link>https://zashraf1337.github.io/big-ideas/</link>
@@ -209,13 +216,6 @@
     <guid isPermaLink="false">https://zashraf1337.github.io/big-ideas/#week-2026-05-08</guid>
     <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<p>Base set extended with four new breakthroughs: added humanoid robotics (#12), fusion energy (#13), brain-computer interfaces (#14), AI accelerators / advanced compute (#15). Two new domains introduced (ROBOTICS, HARDWARE).</p><ul><li>Added breakthrough: Humanoid robotics</li><li>Added breakthrough: Fusion energy</li><li>Added breakthrough: Brain-computer interfaces</li><li>Added breakthrough: AI accelerators / advanced compute</li></ul>]]></description>
-  </item>
-  <item>
-    <title>Weekly update — 2026-05-08</title>
-    <link>https://zashraf1337.github.io/big-ideas/</link>
-    <guid isPermaLink="false">https://zashraf1337.github.io/big-ideas/#week-2026-05-08</guid>
-    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<p>Initial base-truth capture across 11 breakthroughs: 62 named people, 56 sub-ideas, 55 frontier bullets, 39 watch-list picks, 150 unique source URLs.</p><ul><li>All 11 breakthroughs captured (10 from spec + self-driving as #11)</li></ul>]]></description>
   </item>
 </channel>
 </rss>

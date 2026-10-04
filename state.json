@@ -29623,7 +29623,7 @@
   "ceiling": {
     "meta": {
       "title": "Ceiling / Bets — B / 10B / T value-creation tiers",
-      "generated": "2026-09-15",
+      "generated": "2026-10-04",
       "refresh": "monthly (big-ideas-ceiling-refresh task) + re-rendered every weekly dashboard build",
       "scale": {
         "T": "Trillion-scale: could anchor a $1T+ company or reshape a multi-trillion slice of the economy.",
@@ -29649,19 +29649,19 @@
         "horizon": "near",
         "tam_note": "Frontier models + the coding-agent layer sit on top of nearly all knowledge work.",
         "capture": "Concentrated: a few labs + whoever owns the agent/IDE layer; open weights compress margins.",
-        "rationale": "The clearest 'next-OpenAI' arena — a single frontier lab or winning agent layer can reach trillion-scale, and the revenue has caught up to the valuations: Anthropic reported ~$11.5B of Q2 2026 revenue against OpenAI's ~$6.7B (its first quarter ahead) on a ~$65B run-rate exiting July, and on Sep 1 shipped Claude Fable 5.1 / Mythos 5.1 with a gated capability tier (Mythos restricted to US cyber and life-sciences verification programs) ahead of an October listing that Bloomberg/Fortune report is being pitched at ~$2T — FLAG: reported target, last confirmed primary mark is the ~$965B Series H-1. OpenAI's CFO now says 'public company in 2027'. Open weights keep compressing the price floor (Qwen3.8-Max at ~1/4 GPT-5.6 pricing; GLM-5.3 gaining on post-training alone), but the layer above the models is consolidating: SpaceX bought Cursor for $60B and NVIDIA agreed to buy Hugging Face for $12.93B (Sep 3).",
+        "rationale": "The clearest 'next-OpenAI' arena — a single frontier lab or winning agent layer can reach trillion-scale, and the revenue has caught up to the valuations: Anthropic reported ~$11.5B of Q2 2026 revenue against OpenAI's ~$6.7B (its first quarter ahead) on a ~$65B run-rate exiting July, and on Sep 1 shipped Claude Fable 5.1 / Mythos 5.1 with a gated capability tier (Mythos restricted to US cyber and life-sciences verification programs) ahead of a listing that investors are pitching at ~$2T, with marketing reported to start as early as mid-October — FLAG (re-checked Oct 4, 2026): no public prospectus, price range or ticker yet; the $2T figure is investor talk, last confirmed primary mark is the ~$965B Series H-1. OpenAI is staying private longer — Altman said at DevDay (Sep 29) it will not IPO in 2026 — while it reprices downmarket: GPT-6.1 Sol delivers near-Astra quality at $2/$10 per M tokens, about one-fifth of Astra. Open weights keep compressing the price floor (Qwen3.8-Max at ~1/4 GPT-5.6 pricing; GLM-5.3 gaining on post-training alone), but the layer above the models is consolidating: SpaceX bought Cursor for $60B and NVIDIA agreed to buy Hugging Face for $12.93B (Sep 3).",
         "bets": [
           {
             "name": "OpenAI",
             "tracked": true,
             "tier": "T",
-            "why": "consumer + API scale; ~$852B mark, S-1 filed, CFO guides to a 2027 listing; ~$6.7B Q2 2026 revenue; GPT-6 Astra rollout began Sep 3"
+            "why": "consumer + API scale; ~$852B mark, S-1 filed, CFO guides to a 2027 listing; ~$6.7B Q2 2026 revenue; GPT-6 Astra rollout began Sep 3; GPT-6.1 Sol at ~1/5 Astra price (DevDay, Sep 29); Altman: no IPO in 2026"
           },
           {
             "name": "Anthropic",
             "tracked": true,
             "tier": "T",
-            "why": "~$965B Series H-1, S-1 filed, Oct 2026 listing targeted (~$2T reported, unconfirmed); passed OpenAI on quarterly revenue (~$11.5B Q2); Fable 5.1 / Mythos 5.1 shipped Sep 1"
+            "why": "~$965B Series H-1, S-1 filed, listing marketing reported from mid-Oct 2026 (~$2T investor target, no prospectus/price range yet — unconfirmed); passed OpenAI on quarterly revenue (~$11.5B Q2); Fable 5.1 / Mythos 5.1 shipped Sep 1; Opus 5.5 at 40% lower cost (Sep 22)"
           },
           {
             "name": "Google DeepMind",
@@ -29781,7 +29781,7 @@
             "name": "Eli Lilly",
             "tracked": true,
             "tier": "T",
-            "why": "tirzepatide (now with a CV-risk-reduction label, Aug 2026) + retatrutide (28.3%, TRIUMPH); FDA fight over retatrutide's biologic status is worth billions in exclusivity"
+            "why": "tirzepatide (now with a CV-risk-reduction label, Aug 2026) + retatrutide (28.3%, TRIUMPH; TRIUMPH-2 in obesity+T2D: −20.8% at 80 wks and up to 40% reaching normal A1C, EASD/Lancet Sep 2026); FDA fight over retatrutide's biologic status is worth billions in exclusivity"
           },
           {
             "name": "Novo Nordisk",
@@ -29811,13 +29811,13 @@
         "horizon": "near",
         "tam_note": "Launch cost collapse unlocks satellite internet, defense, and an orbital economy.",
         "capture": "One dominant winner (SpaceX) captures most value; others fight for second.",
-        "rationale": "SpaceX's first post-IPO numbers validated the flywheel and repriced it upward: Q2 2026 revenue $7.8B (+92%), Starlink $4.29B (+66%) with 12M subscribers and a $1.66B segment operating profit, and a market cap that crossed ~$2.0T on Sep 8 (vs ~$1.77T at the Jun 12 debut). Next catalyst: Starship Flight 14 (Booster 21 / Ship 41) is the first true orbital profile, carrying ~20 Starlink V3 satellites to operational orbit; the FCC filing targeted NET Sep 15 but launch trackers now show NET Sep 22 pending FAA approval (FLAG: date from secondary launch-schedule sites, not a SpaceX statement). Starlink is also the only profitable segment while the AI unit absorbed $15.8B of capex — the launch business is now funding an AI bet, which is the real thing to watch.",
+        "rationale": "SpaceX's first post-IPO numbers validated the flywheel and repriced it upward: Q2 2026 revenue $7.8B (+92%), Starlink $4.29B (+66%) with 12M subscribers and a $1.66B segment operating profit, and a market cap that crossed ~$2.0T on Sep 8 (vs ~$1.77T at the Jun 12 debut). Then the catalyst landed: Starship Flight 14 reached orbit for the first time on Sep 28, 2026 and deployed 26 Starlink V3 satellites (~10x the capacity of a V2 Mini each, too large for a Falcon 9 fairing) despite one upper-stage Raptor shutting down early; the stock rose ~2.6% to roughly $2.1T. The second-place fight also got funded: Stoke Space raised a $1B Series E (Point72 Ventures + Spark Capital co-lead; $2.3B raised total) for its fully reusable Nova, though first flight slipped to early 2027. Starlink is also the only profitable segment while the AI unit absorbed $15.8B of capex — the launch business is now funding an AI bet, which is the real thing to watch.",
         "bets": [
           {
             "name": "SpaceX",
             "tracked": true,
             "tier": "T",
-            "why": "Falcon/Starship + Starlink (+ xAI/Cursor); ~$2.0T public (Sep 8); Starlink at 12M subs is the profit engine; Flight 14 (slipped to NET ~Sep 22) is Starship's first orbital Starlink V3 delivery"
+            "why": "Falcon/Starship + Starlink (+ xAI/Cursor); ~$2.1T public after Flight 14; Starlink at 12M subs is the profit engine; Starship reached orbit and deployed 26 Starlink V3s on Sep 28, 2026 — the V3 constellation economics are now live, not hypothetical"
           },
           {
             "name": "Blue Origin",
@@ -29834,8 +29834,8 @@
           {
             "name": "Stoke Space",
             "tracked": true,
-            "tier": "B",
-            "why": "fully-reusable upper stage; early but ambitious"
+            "tier": "10B",
+            "why": "RETIERED B→10B: $1B Series E (Sep 8, 2026; Point72 Ventures + Spark Capital co-lead; $2.3B raised total) funds Nova Pathfinder (first flight slipped to early 2027) and a 15-t-to-LEO Nova Block 2 — the only funded fully-reusable challenger; still unflown, so this is a ceiling, not a forecast"
           }
         ]
       },
@@ -30081,7 +30081,7 @@
             "name": "Prime Medicine",
             "tracked": true,
             "tier": "B",
-            "why": "first in vivo prime-editing trial (PM577a, Wilson); early"
+            "why": "first in vivo prime-editing trial (PM577a, Wilson); FDA cleared the PM647 IND for AATD (Sep 24, 2026) — but it enters a field where BEAM-302 already has 18-month data; first PM647 data 2027"
           }
         ]
       },
@@ -30138,10 +30138,10 @@
             "why": "highest-bandwidth implant; $650M Series E (Apr 2026, ~$1.85B raised to date) funds a 2026 volume-production push; T-upside if consumer"
           },
           {
-            "name": "Synchron",
+            "name": "Synchron / Precision Neuroscience (less-invasive)",
             "tracked": true,
             "tier": "B",
-            "why": "endovascular, less invasive; faster regulatory path"
+            "why": "endovascular (Synchron) and surface-film (Precision Layer 7) implants trade bandwidth for an easier regulatory path; Precision closed a $250M Series D (Sep 24, 2026; Pershing Square + Ackman Oxman Institute co-led; $430M raised, ~$1B+ valuation per NYT — FLAG: valuation reported, not company-stated)"
           },
           {
             "name": "Neuracle (NEO)",
@@ -30289,13 +30289,13 @@
         "name": "Firm power for AI datacenters (EGS + SMRs)",
         "area": "Energy x AI build-out",
         "tier": "T",
-        "why": "PROMOTED 10B→T. The dominant thesis across tracked voices this month is that the AI build-out's binding constraint has moved from chip supply to power — and firm, clean, sited-anywhere generation is now a financeable business, not a demo. Fervo IPO'd on Nasdaq (FRVO) in May 2026 at $27/share on an upsized 70M-share offering, has a 3 GW framework with Google, expects Cape Station's first 100 MW on the grid in October 2026, and on Sep 1 signed the largest enhanced-geothermal PPA on record — 396 MW / 15 years with Google for Cape Station Phase 2 (online 2028) with an option for ~600 MW more by mid-2030; Valar Atomics raised $1B (Sequoia-led, ~$6B) for factory-built SMRs already powering an Nvidia Blackwell cluster. The buyers are now financed at scale too — Crusoe (an AI-datacenter builder and Form Energy customer) raised $3B at $30B and Fluidstack $1.5B at $18B in the first week of September. Whoever supplies datacenter-grade firm power is selling into a trillion-scale capex cycle."
+        "why": "PROMOTED 10B→T. The dominant thesis across tracked voices this month is that the AI build-out's binding constraint has moved from chip supply to power — and firm, clean, sited-anywhere generation is now a financeable business, not a demo. Fervo IPO'd on Nasdaq (FRVO) in May 2026 at $27/share on an upsized 70M-share offering, has a 3 GW framework with Google, hit First Power at Cape Station on Sep 24, 2026 (the first utility-scale EGS project anywhere to do so) and declared commercial operation of its first 33 MW GeoBlock on Oct 1 (two more due by Jan 1, 2027; ~900 MW of contracted offtake), and on Sep 1 signed the largest enhanced-geothermal PPA on record — 396 MW / 15 years with Google for Cape Station Phase 2 (online 2028) with an option for ~600 MW more by mid-2030; Valar Atomics raised $1B (Sequoia-led, ~$6B) for factory-built SMRs already powering an Nvidia Blackwell cluster, and on Sep 29 the NRC issued TVA the first US construction permit for a commercial SMR (GE Vernova Hitachi BWRX-300 at Clinch River, 4 months ahead of schedule; operation targeted early 2030s). The buyers are now financed at scale too — Crusoe (an AI-datacenter builder and Form Energy customer) raised $3B at $30B and Fluidstack $1.5B at $18B in the first week of September. Whoever supplies datacenter-grade firm power is selling into a trillion-scale capex cycle."
       },
       {
         "name": "Anduril (defense AI / autonomy)",
         "area": "Defense & government AI",
         "tier": "T",
-        "why": "Software-defined defense prime; last confirmed primary mark is still $61B (May 2026, $5B Series H led by Thrive/a16z). The ~$100B figure circulating since July 2026 is reported talks plus secondary-market implied pricing, not a closed primary round — FLAG: re-checked Sep 15, 2026, still unconfirmed by the company. Still the clearest credible trillion-scale path outside the 16."
+        "why": "Software-defined defense prime; last confirmed primary mark is still $61B (May 2026, $5B Series H led by Thrive/a16z). The ~$100B figure circulating since July 2026 is reported talks plus secondary-market implied pricing, not a closed primary round — FLAG: re-checked Oct 4, 2026, still unconfirmed by the company; secondary-market (Forge) implied pricing has drifted above ~$110B, which is a quote, not a round. Still the clearest credible trillion-scale path outside the 16."
       },
       {
         "name": "AI-for-science / autonomous R&D",

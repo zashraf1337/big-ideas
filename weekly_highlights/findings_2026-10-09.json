@@ -1,0 +1,609 @@
+{
+ "week_ending": "2026-10-09",
+ "summary": "Open-weight and price competition led AI: Reflection AI's 501B Beam and Mistral Large 4 landed alongside Anthropic's $0.10/M Claude Haiku 5.5, and Google previewed a persistent enterprise Gemini agent. OpenAI's release of 372 AI-generated math result families (and withdrawal of three Hodge papers) sparked a 'Math 2.0' debate led by Terence Tao, with Daniel Litt as a new voice. In bio, Novartis paid $575M upfront for Abogen's mRNA-encoded T-cell engager, the Nobel in Medicine went to optogenetics, Paradromics reported 4+ years of stable recording, and Kyverna neared the first autoimmune CAR-T BLA. Waymo closed a $5B debt raise, Boston Dynamics named Rohit Prasad CEO, and a J\u00fclich benchmark put Quantinuum ahead on QEC-style mid-circuit measurement.",
+ "highlights": [
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Reflection AI debuts Beam: 501B open-weight MoE, 23B active",
+   "detail": "Oct 5, 2026: Reflection AI announced Beam, a 501B-total/23B-active sparse MoE trained on 23.8T tokens plus large-scale RL on 10,500 GB300s; self-reported 80.9 SWE-Bench Verified. Weights and tech report promised later in October (claims unverified).",
+   "source_urls": [
+    "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+     "ai__architecture_efficiency__moe_sparse_attention_long_context",
+     "ai__agents_developer_ecosystem__coding_agents"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f",
+    "claim": "Reflection AI debuts Beam: 501B open-weight MoE, 23B active \u2014 Oct 5, 2026: Reflection AI announced Beam, a 501B-total/23B-active sparse MoE trained on 23.8T tokens plus large-scale RL on 10,500 GB300s; self-reported 80.9 SWE-Bench Verified. Weights and tech report promised later in October (claims unverified)."
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Mistral Large 4: open-weight 1.05T MoE, 49B active, 1M context",
+   "detail": "Oct 6, 2026: Mistral released Large 4, an open-weight multimodal MoE (1.05T total / 49B active, 1M-token context), API priced ~$1.36/$4.18 per M tokens.",
+   "source_urls": [
+    "https://llmgateway.io/models/mistral-large-4"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+     "ai__architecture_efficiency__moe_sparse_attention_long_context",
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://llmgateway.io/models/mistral-large-4",
+    "claim": "Mistral Large 4: open-weight 1.05T MoE, 49B active, 1M context \u2014 Oct 6, 2026: Mistral released Large 4, an open-weight multimodal MoE (1.05T total / 49B active, 1M-token context), API priced ~$1.36/$4.18 per M tokens."
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context",
+   "detail": "Oct 7, 2026: Anthropic released Haiku 5.5 for high-volume routing/subagent work at $0.10/$0.50 per M tokens (\u2264100K context); Simon Willison measured ~1.25x more tokens from the new tokenizer. Anthropic also added monthly API credits to Max/Team plans.",
+   "source_urls": [
+    "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+    "https://llmgateway.io/models/claude-haiku-5-5"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__architecture_efficiency__small_on_device_edge_models",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+    "claim": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context \u2014 Oct 7, 2026: Anthropic released Haiku 5.5 for high-volume routing/subagent work at $0.10/$0.50 per M tokens (\u2264100K context); Simon Willison measured ~1.25x more tokens from the new tokenizer. Anthropic also added monthly API credits to Max/Team plans."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Google previews persistent Gemini agent across Workspace and Cloud",
+   "detail": "Oct 8, 2026 (Gemini at Work): Google previewed a persistent enterprise Gemini agent with memory and skills spanning Gmail, Drive, Docs, Sheets, Calendar and the CLI, for multi-hour/day tasks; private preview.",
+   "source_urls": [
+    "https://letsdatascience.com/news/google-introduces-gemini-agent-for-enterprise-work-53007f2c"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__enterprise_agentic_platforms",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://letsdatascience.com/news/google-introduces-gemini-agent-for-enterprise-work-53007f2c",
+    "name": "Google previews persistent Gemini agent across Workspace and Cloud",
+    "description": "Oct 8, 2026 (Gemini at Work): Google previewed a persistent enterprise Gemini agent with memory and skills spanning Gmail, Drive, Docs, Sheets, Calendar and the CLI, for multi-hour/day tasks; private preview."
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Claude Code 'mods': TypeScript middleware that rewrites the agent loop",
+   "detail": "Oct 1, 2026: Anthropic launched Claude Code mods \u2014 plugin-shipped TypeScript functions that rewrite prompts, gate/retry tool calls and redact secrets; unsandboxed, with a built-in 'sec-default' mod on Team/Enterprise. Backfill: launched one day before the window; widely covered within 24h.",
+   "source_urls": [
+    "https://aiweekly.co/alerts/anthropic-launches-claude-code-mods-typescript-agent-hooks"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://aiweekly.co/alerts/anthropic-launches-claude-code-mods-typescript-agent-hooks",
+    "name": "Claude Code 'mods': TypeScript middleware that rewrites the agent loop",
+    "description": "Oct 1, 2026: Anthropic launched Claude Code mods \u2014 plugin-shipped TypeScript functions that rewrite prompts, gate/retry tool calls and redact secrets; unsandboxed, with a built-in 'sec-default' mod on Team/Enterprise. Backfill: launched one day before the window; widely covered within 24h."
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "self_driving",
+   "title": "Waymo closes first-ever $5B debt financing; now in 15 markets",
+   "detail": "Oct 8, 2026: Waymo closed a $5B loan (PIMCO, Blackstone, Sixth Street; Goldman lead bookrunner), its first debt raise, to fund US/Europe/Japan expansion; TechCrunch says it operates in 15 markets.",
+   "source_urls": [
+    "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Waymo financing",
+    "new_value": "$5B debt facility (Oct 2026); 15 markets",
+    "previous_value": "$16B equity at $126B (Feb 2026)",
+    "source_url": "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "self_driving",
+   "title": "Tesla registers 150 more Cybercabs in Texas; total reaches 319",
+   "detail": "Oct 8, 2026: Tesla added 150 Cybercabs to the Texas AV registry (319 of 739 registered Tesla vehicles, up from 45 on Sep 3); registration \u2260 passenger service, and NHTSA's Special Order response is due Oct 30.",
+   "source_urls": [
+    "https://eletric-vehicles.com/tesla/tesla-adds-150-cybercabs-in-texas-nearly-doubling-its-registered-count"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Tesla Cybercabs registered in Texas",
+    "new_value": "319",
+    "previous_value": "45 (Sep 3, 2026)",
+    "source_url": "https://eletric-vehicles.com/tesla/tesla-adds-150-cybercabs-in-texas-nearly-doubling-its-registered-count"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_PERSON",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "Rohit Prasad, ex-Amazon AI chief, becomes Boston Dynamics CEO",
+   "detail": "Announced Oct 6, 2026, effective Oct 7: former Amazon Senior VP and Head Scientist for AI and Alexa takes over Boston Dynamics as the company targets 30,000 humanoids by 2028.",
+   "source_urls": [
+    "https://gizmodo.com/amid-its-big-humanoid-robot-rollout-an-ex-amazon-ai-chief-will-now-lead-boston-dynamics-2000822625"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__humanoid_robots__industrial_commercial_humanoids"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Rohit Prasad",
+    "affiliation": "Boston Dynamics",
+    "role": "CEO",
+    "org_type": "BUSINESS",
+    "source_url": "https://gizmodo.com/amid-its-big-humanoid-robot-rollout-an-ex-amazon-ai-chief-will-now-lead-boston-dynamics-2000822625",
+    "why": "Announced Oct 6, 2026, effective Oct 7: former Amazon Senior VP and Head Scientist for AI and Alexa takes over Boston Dynamics as the company targets 30,000 humanoids by 2028."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "World-action models surge on alphaXiv: LeCun's H-JEPA and NVIDIA Long-WAM",
+   "detail": "Week of Oct 5, 2026: H-JEPA (NYU/AMI Labs/Inria/Brown, LeCun co-author; arXiv 2610.06805) learns hierarchical latent world models, lifting Visual AntMaze success from 18% to 73% with less planner compute (341 alphaXiv saves by Oct 13). NVIDIA/MIT Long-WAM (arXiv 2610.10528, Oct 7) scales world-action-model context (RoboCasa GR-1 63.3%\u219278.7%).",
+   "source_urls": [
+    "https://www.alphaxiv.org/abs/2610.06805",
+    "https://www.alphaxiv.org/abs/2610.10528"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__multimodal_generative_media__world_models_neural_simulation",
+     "robotics__robot_foundation_models__world_models_for_robotics",
+     "ai__autonomy_embodiment_ai__vision_language_action_vla_models"
+    ],
+    "venue": "",
+    "new_category": false,
+    "traction": "alphaXiv trending Oct 9",
+    "source_url": "https://www.alphaxiv.org/abs/2610.06805",
+    "claim": "World-action models surge on alphaXiv: LeCun's H-JEPA and NVIDIA Long-WAM \u2014 Week of Oct 5, 2026: H-JEPA (NYU/AMI Labs/Inria/Brown, LeCun co-author; arXiv 2610.06805) learns hierarchical latent world models, lifting Visual AntMaze success from 18% to 73% with less planner compute (341 alphaXiv saves by Oct 13). NVIDIA/MIT Long-WAM (arXiv 2610.10528, Oct 7) scales world-action-model context (RoboCasa GR-1 63.3%\u219278.7%)."
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "reasoning_models",
+   "title": "OpenAI posts 372 AI-math result families, withdraws 3 Hodge papers",
+   "detail": "Oct 6, 2026: OpenAI released 722 manuscripts (372 families) produced by an unreleased model; on Oct 7 it withdrew three Hodge-conjecture manuscripts over a sign error. Roughly 42% of top-line results carry Lean proofs.",
+   "source_urls": [
+    "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/",
+    "https://www.implicator.ai/openai-posts-372-ai-math-results-then-withdraws-three-papers-over-a-sign-error/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__reasoning_test_time_compute__formal_verification_provable_reasoning",
+     "ai__ai_for_science__autonomous_research_hypothesis_generation",
+     "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/",
+    "claim": "OpenAI posts 372 AI-math result families, withdraws 3 Hodge papers \u2014 Oct 6, 2026: OpenAI released 722 manuscripts (372 families) produced by an unreleased model; on Oct 7 it withdrew three Hodge-conjecture manuscripts over a sign error. Roughly 42% of top-line results carry Lean proofs."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "'Math 2.0': mathematicians say mass AI problem-solving forces a rethink",
+   "detail": "Oct 6-8, 2026: Terence Tao said OpenAI's mass release ends 'Math 1.0' and called for a 'Math 2.0' valuing exposition and community; Daniel Litt was optimistic; an Association for Human Mathematics letter urged mathematicians to stop working with OpenAI; Tristan Buckmaster questioned due diligence and Andrew Sutherland said single-agent claims are unverified.",
+   "source_urls": [
+    "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/",
+    "https://www.implicator.ai/openai-posts-372-ai-math-results-then-withdraws-three-papers-over-a-sign-error/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__reasoning_test_time_compute__formal_verification_provable_reasoning",
+     "ai__ai_for_science__autonomous_research_hypothesis_generation"
+    ],
+    "venue": "",
+    "new_category": false,
+    "thesis": "When AI can mass-solve open problems, math must re-value exposition and direction-setting, and labs need disclosure norms (prompts, compute, formalization).",
+    "examples": [
+     "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/",
+     "https://www.implicator.ai/openai-posts-372-ai-math-results-then-withdraws-three-papers-over-a-sign-error/"
+    ],
+    "spotted_at": "2026-10-08",
+    "source_url": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_VOICE",
+   "breakthrough_id": null,
+   "title": "Daniel Litt: Toronto mathematician, the optimist on AI-driven math",
+   "detail": "Oct 7, 2026: quoted in Fortune as the pro-release counterweight to Tao \u2014 AI will make mathematicians 'way more productive' but rewards and PhD training must change.",
+   "source_urls": [
+    "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__reasoning_test_time_compute__formal_verification_provable_reasoning"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Daniel Litt",
+    "role": "Professor of mathematics, University of Toronto",
+    "focus": "AI and mathematics; evaluating AI-generated proofs",
+    "follow_url": "https://www.daniellitt.com/",
+    "twitter": "",
+    "youtube": "",
+    "newsletter": "",
+    "notes": "Handles unverified",
+    "tags": [
+     "ai-math",
+     "formal-verification"
+    ],
+    "source_url": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "mrna_vaccines",
+   "title": "Novartis pays $575M upfront for Abogen's mRNA-encoded CD19xCD3 engager",
+   "detail": "Oct 2, 2026: Novartis licensed ABO2203, an in vivo mRNA-encoded T-cell engager, for $575M upfront and up to ~$7.2B in milestones; early B-NHL data showed no CRS/ICANS and rising response by dose.",
+   "source_urls": [
+    "https://www.biospace.com/deals/novartis-bets-up-to-7-8b-for-an-mrna-encoded-t-cell-engager-from-chinas-abogen"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__rna_nucleic_acid_therapeutics__lnp_delivery_engineering",
+     "bio__engineered_cell_therapies__allogeneic_in_vivo_cell_engineering",
+     "bio__engineered_cell_therapies__car_t_for_autoimmune_disease"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.biospace.com/deals/novartis-bets-up-to-7-8b-for-an-mrna-encoded-t-cell-engager-from-chinas-abogen",
+    "claim": "Novartis pays $575M upfront for Abogen's mRNA-encoded CD19xCD3 engager \u2014 Oct 2, 2026: Novartis licensed ABO2203, an in vivo mRNA-encoded T-cell engager, for $575M upfront and up to ~$7.2B in milestones; early B-NHL data showed no CRS/ICANS and rising response by dose."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "mrna_vaccines",
+   "title": "Abogen Biosciences: Suzhou mRNA platform pivoting to RNA-encoded biologics",
+   "detail": "Founded 2019, raised >$1B in 2021; now licensing its mRNA design/formulation platform to Novartis (Oct 2, 2026).",
+   "source_urls": [
+    "https://www.biospace.com/deals/opinion-how-abogen-went-from-covid-hype-to-a-7-8b-novartis-deal"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__rna_nucleic_acid_therapeutics__lnp_delivery_engineering"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Abogen Biosciences",
+    "org_type": "BUSINESS",
+    "stage": "Clinical; Novartis partnership",
+    "why": "Evidence mRNA platforms are being re-valued for in vivo cell-engager therapies incl. autoimmune.",
+    "source_url": "https://www.biospace.com/deals/opinion-how-abogen-went-from-covid-hype-to-a-7-8b-novartis-deal"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "bci",
+   "title": "Paradromics Connexus: 4+ years of stable neural recording in sheep",
+   "detail": "Oct 8, 2026: Paradromics reported more than four years of stable neural recording and decoding in two sheep with no array migration (company-reported, preclinical); it is advancing its first-in-human Connect-One early feasibility study.",
+   "source_urls": [
+    "https://www.biospace.com/press-releases/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants",
+     "bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Paradromics longest preclinical stable recording",
+    "new_value": ">4 years (sheep)",
+    "previous_value": "not tracked",
+    "source_url": "https://www.biospace.com/press-releases/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "bci",
+   "title": "Neuralink pretrained decoders set 11.32 bps cursor record",
+   "detail": "Oct 1, 2026 Neuralink blog, widely summarized Oct 2-3 (backfill: new record for clinical BCI cursor control drew broad coverage): pretrained decoders on 50,000+ hours of neural data reached 11.32 bits/s (prior 10.39) and cut weekly calibration from ~55 to ~10 min for some users. Company-reported; single-participant models.",
+   "source_urls": [
+    "https://explainx.ai/blog/neuralink-pretraining-50000-hours-bci-foundation-model-2026"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants",
+     "bio__ai_x_bio_convergence__biological_foundation_models"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Neuralink record cursor bandwidth",
+    "new_value": "11.32 bps",
+    "previous_value": "10.39 bps",
+    "source_url": "https://explainx.ai/blog/neuralink-pretraining-50000-hours-bci-foundation-model-2026"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "glp1",
+   "title": "Petrelintide ZUPREME-2: up to 9.2% weight loss at 28 wks in T2D",
+   "detail": "Oct 7, 2026: Zealand/Roche's amylin analog met its primary endpoint (up to 9.2% vs 2% placebo, n=220) but A1C fell only up to 0.65%, underwhelming analysts; a 7,000-patient Ph3a program is underway.",
+   "source_urls": [
+    "https://www.biospace.com/drug-development/despite-zealand-assets-intriguing-weight-loss-analysts-underwhelmed-by-blood-sugar-numbers"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__metabolic_incretin_therapeutics__amylin_muscle_preserving_combos"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.biospace.com/drug-development/despite-zealand-assets-intriguing-weight-loss-analysts-underwhelmed-by-blood-sugar-numbers",
+    "name": "Petrelintide ZUPREME-2: up to 9.2% weight loss at 28 wks in T2D",
+    "description": "Oct 7, 2026: Zealand/Roche's amylin analog met its primary endpoint (up to 9.2% vs 2% placebo, n=220) but A1C fell only up to 0.65%, underwhelming analysts; a 7,000-patient Ph3a program is underway."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "crispr_therapies",
+   "title": "Kyverna miv-cel nears first autoimmune CAR-T BLA as rivals pause",
+   "detail": "BioSpace (Oct 5, 2026): Kyverna's 1-year KYSA-8 data in 26 stiff-person-syndrome patients showed no high-grade CRS/ICANS or IEC-HS; rolling BLA due by end-2026, while Novartis and BMS paused autoimmune CAR-T trials after safety events.",
+   "source_urls": [
+    "https://www.biospace.com/drug-development/weighing-the-risks-of-car-t-in-autoimmune-disease-as-kyverna-nears-the-market"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__engineered_cell_therapies__car_t_for_autoimmune_disease"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "First autoimmune CAR-T BLA",
+    "new_value": "Kyverna miv-cel rolling BLA by end-2026",
+    "previous_value": "none",
+    "source_url": "https://www.biospace.com/drug-development/weighing-the-risks-of-car-t-in-autoimmune-disease-as-kyverna-nears-the-market"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "bci",
+   "title": "Nobel Medicine 2026 to Deisseroth, Hegemann, Nagel for optogenetics",
+   "detail": "Oct 5, 2026: the Nobel Assembly honored light-gated ion channels and optogenetics, the foundational tool for switching neurons on/off with light that underpins modern neurotech and BCI research.",
+   "source_urls": [
+    "https://www.wunc.org/2026-10-05/nobel-medicine-prize-goes-to-3-scientists-for-research-into-brain-activity",
+    "https://www.nobelprize.org/prizes/medicine/2026/prize-announcement/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.wunc.org/2026-10-05/nobel-medicine-prize-goes-to-3-scientists-for-research-into-brain-activity",
+    "claim": "Nobel Medicine 2026 to Deisseroth, Hegemann, Nagel for optogenetics \u2014 Oct 5, 2026: the Nobel Assembly honored light-gated ion channels and optogenetics, the foundational tool for switching neurons on/off with light that underpins modern neurotech and BCI research."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_PERSON",
+   "breakthrough_id": "bci",
+   "title": "Karl Deisseroth (Stanford/HHMI): 2026 Nobel laureate for optogenetics",
+   "detail": "Shares the Oct 5, 2026 Nobel in Physiology or Medicine with Peter Hegemann and Georg Nagel.",
+   "source_urls": [
+    "https://www.nobelprize.org/prizes/medicine/2026/prize-announcement/",
+    "https://www.wunc.org/2026-10-05/nobel-medicine-prize-goes-to-3-scientists-for-research-into-brain-activity"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Karl Deisseroth",
+    "affiliation": "Stanford University",
+    "role": "Professor; optogenetics pioneer; Nobel 2026",
+    "org_type": "ACADEMIA",
+    "source_url": "https://www.nobelprize.org/prizes/medicine/2026/prize-announcement/",
+    "why": "Shares the Oct 5, 2026 Nobel in Physiology or Medicine with Peter Hegemann and Georg Nagel."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "J\u00fclich benchmark: Quantinuum Helios-1 stands out on QEC-style mid-circuit measurement",
+   "detail": "Preprint arXiv 2610.05928 (J\u00fclich Supercomputing Centre; covered Oct 8, 2026) compared 10 Quantinuum/IBM/IQM processors: IBM measurement-based circuits showed ~10x higher effective error, while Helios-1 stayed above random up to 81 (surface) and 91 (color) data qubits; the 30-qubit chain comparison was inconclusive. Not a QEC demonstration; not peer reviewed.",
+   "source_urls": [
+    "https://arxiv.org/pdf/2610.05928",
+    "https://thequantuminsider.com/2026/10/08/quantinuum-processors-stand-out-in-study-of-quantum-error-correction-operations/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__algorithms_hybrid_computing__advantage_benchmarking",
+     "quantum__qubit_modality_race__trapped_ion_systems",
+     "quantum__error_correction_logical_qubits__logical_qubit_scaling_efficient_encoding"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://arxiv.org/pdf/2610.05928",
+    "claim": "J\u00fclich benchmark: Quantinuum Helios-1 stands out on QEC-style mid-circuit measurement \u2014 Preprint arXiv 2610.05928 (J\u00fclich Supercomputing Centre; covered Oct 8, 2026) compared 10 Quantinuum/IBM/IQM processors: IBM measurement-based circuits showed ~10x higher effective error, while Helios-1 stayed above random up to 81 (surface) and 91 (color) data qubits; the 30-qubit chain comparison was inconclusive. Not a QEC demonstration; not peer reviewed."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "quantum_error_correction",
+   "title": "Pasqal asked by French state to lead neutral-atom FTQC programme",
+   "detail": "Reported Oct 5, 2026: after leaving defense PROQCIMA, Pasqal was invited by SGPI/DGE to propose and lead a national neutral-atom fault-tolerant QC R&D programme (proposal stage, no budget named).",
+   "source_urls": [
+    "https://quantumzeitgeist.com/quantum-zeitgeist-digest-october-3"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "quantum__qubit_modality_race__neutral_atom_arrays"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Pasqal FTQC national programme",
+    "org_type": "CROSS",
+    "stage": "Proposal",
+    "why": "Civil state funding for neutral-atom fault tolerance in Europe.",
+    "source_url": "https://quantumzeitgeist.com/quantum-zeitgeist-digest-october-3"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Blue Origin eyes eventual IPO after first ~$10B outside round",
+   "detail": "Oct 7-9, 2026: Bezos said a Blue Origin IPO makes sense 'several years from now', after the company's first ~$10B outside raise (valuation reported at $130B in July, $140B in September). New Glenn's Apr 19 NG-3 flight left its payload in the wrong orbit and a May pad explosion followed; flights resume in December.",
+   "source_urls": [
+    "https://www.manilatimes.net/2026/10/09/business/foreign-business/blue-origin-to-pursue-ipo-in-the-future-bezos/2442064",
+    "https://spaceflightnow.com/2026/04/20/blue-origin-launches-third-new-glenn-rocket-but-payload-ends-up-in-wrong-orbit/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Blue Origin",
+    "org_type": "BUSINESS",
+    "stage": "Private; IPO under consideration",
+    "why": "Capital and IPO signals for the main Starship competitor.",
+    "source_url": "https://www.manilatimes.net/2026/10/09/business/foreign-business/blue-origin-to-pursue-ipo-in-the-future-bezos/2442064"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Nobel Chemistry 2026: Kagan and Soai for asymmetric autocatalysis",
+   "detail": "Oct 7, 2026: prize for non-linear effects and autocatalysis in asymmetric synthesis \u2014 chirality amplification relevant to single-enantiomer drug manufacture; adjacent to drug design.",
+   "source_urls": [
+    "https://www.nobelprize.org/prizes/chemistry/2026/prize-announcement/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__ai_x_bio_convergence__ai_native_drug_discovery"
+    ],
+    "venue": "",
+    "new_category": false,
+    "candidate_area": "Asymmetric catalysis / chirality amplification",
+    "source_url": "https://www.nobelprize.org/prizes/chemistry/2026/prize-announcement/",
+    "detail": "Nobel Chemistry 2026 to Henri Kagan and Kenso Soai."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "transformers_llms",
+   "title": "Reflection AI: US open-weight frontier lab (Beam)",
+   "detail": "Entity reconciliation: Reflection AI shipped Beam (Oct 5, 2026), a 501B open-weight MoE positioned as the Western answer to Chinese open models.",
+   "source_urls": [
+    "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Reflection AI",
+    "org_type": "BUSINESS",
+    "stage": "Venture-backed",
+    "why": "One of few US labs releasing frontier-scale open weights.",
+    "source_url": "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "crispr_therapies",
+   "title": "Kyverna Therapeutics: first autoimmune CAR-T heading to BLA",
+   "detail": "Entity reconciliation: Kyverna's miv-cel (stiff person syndrome) rolling BLA expected by end-2026.",
+   "source_urls": [
+    "https://www.biospace.com/drug-development/weighing-the-risks-of-car-t-in-autoimmune-disease-as-kyverna-nears-the-market"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__engineered_cell_therapies__car_t_for_autoimmune_disease"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Kyverna Therapeutics",
+    "org_type": "BUSINESS",
+    "stage": "Public (KYTX); BLA filing",
+    "why": "Likely first FDA-approved CAR-T for autoimmune disease.",
+    "source_url": "https://www.biospace.com/drug-development/weighing-the-risks-of-car-t-in-autoimmune-disease-as-kyverna-nears-the-market"
+   },
+   "confidence": "high",
+   "backfill": false
+  }
+ ],
+ "verification": "verification: 18 passed, 8 fixed, 1 dropped \u00b7 entities: 2 players added (Reflection AI, Kyverna) + Abogen, Rohit Prasad, Karl Deisseroth surfaced by agents"
+}

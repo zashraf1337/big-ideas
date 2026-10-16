@@ -476,8 +476,8 @@
 const STATE = {
  "meta": {
   "title": "Tech Breakthroughs · 2021 onwards",
-  "last_updated": "2026-10-13T17:05:12.761171+00:00",
-  "as_of_date": "2026-10-09",
+  "last_updated": "2026-10-16T12:24:12.705266+00:00",
+  "as_of_date": "2026-10-16",
   "domains": [
    "AI",
    "BIO",
@@ -722,6 +722,18 @@ const STATE = {
     {
      "claim": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context — Oct 7, 2026: Anthropic released Haiku 5.5 for high-volume routing/subagent work at $0.10/$0.50 per M tokens (≤100K context); Simon Willison measured ~1.25x more tokens from the new tokenizer. Anthropic also added monthly API credits to Max/Team plans.",
      "source_url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+    },
+    {
+     "claim": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens — Oct 12, 2026: Meta Superintelligence Labs released Muse Wonder (API, $4/$20 per M tokens) and Muse Wonder Full (Muse Code subscribers), claiming parity with Fable 5.1 and GPT-6 Astra and leading on its MemoryBench 'active memory' eval (self-reported).",
+     "source_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+    },
+    {
+     "claim": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December — Oct 13, 2026: Gemini 4 Argon, Google's long-horizon reasoning model, became broadly available via the Gemini API, AI Studio and Antigravity (Ultra tier) plus the Gemini app for Pro/Ultra subscribers; introductory pricing is $2/$10 per M tokens through Nov 30, doubling in December. A less-restricted cyber variant requires separate approval for vetted defenders.",
+     "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/"
+    },
+    {
+     "claim": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL — Oct 8, 2026 (backfill, one day before window): JetBrains released Mellum2.1 under Apache-2.0, a 12B-parameter (~2.5B active) MoE for coding agents, post-trained with RL in real repo environments using shell/file-edit tools and test-based rewards; 47.0% SWE-bench Verified (self-reported).",
+     "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
     }
    ],
    "watch_list": [
@@ -1071,6 +1083,20 @@ const STATE = {
       "ai__frontier_platforms_applied_ai_economics__ai_search_answer_engines"
      ],
      "venue": ""
+    },
+    {
+     "subtheme_ids": [
+      "ai__architecture_efficiency__small_on_device_edge_models",
+      "ai__agents_developer_ecosystem__multi_agent_orchestration"
+     ],
+     "venue": "",
+     "new_category": false,
+     "source_url": "https://infoq.com/news/2026/10/clef-decision-models",
+     "name": "Decision models (open models that score fixed choices)",
+     "description": "Small open-weight models (e.g. Cloudflare Clef) that return calibrated probabilities over a typed schema of allowed answers instead of generating text; used for routing/verification in agent pipelines.",
+     "examples": [
+      "Cloudflare Clef / Clef-flash"
+     ]
     }
    ],
    "layer": "L1_mechanism",
@@ -1329,6 +1355,10 @@ const STATE = {
     {
      "claim": "OpenAI posts 372 AI-math result families, withdraws 3 Hodge papers — Oct 6, 2026: OpenAI released 722 manuscripts (372 families) produced by an unreleased model; on Oct 7 it withdrew three Hodge-conjecture manuscripts over a sign error. Roughly 42% of top-line results carry Lean proofs.",
      "source_url": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/"
+    },
+    {
+     "claim": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis — Oct 2026: 'What do Language Models Learn and When? The Implicit Curriculum Hypothesis' (arXiv 2604.08510), on the order in which capabilities emerge during pretraining, was reported as a COLM 2026 outstanding paper in a post by Graham Neubig (relayed via Digg; no official COLM announcement found yet).",
+     "source_url": "https://arxiv.org/abs/2604.08510"
     }
    ],
    "watch_list": [
@@ -1759,6 +1789,10 @@ const STATE = {
     {
      "claim": "ICML 2026 Outstanding Paper: First-Order Rejection Sampling reaches delta-error in polylog(1/delta) steps from only L2 score estimates (Chen/Chewi/Daskalakis/Rakhlin).",
      "source_url": "https://arxiv.org/abs/2602.01338"
+    },
+    {
+     "claim": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio — Oct 2026: Noiz AI and HKUST previewed Helix World, a real-time interactive audio-visual world model that generates video plus spatial stereo audio from a start image, steered by keyboard (WASD/look keys; reported 24 fps on one H800); preview checkpoint, paper and code released (developer-reported results).",
+     "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
     }
    ],
    "watch_list": [
@@ -1805,6 +1839,21 @@ const STATE = {
       "ai__multimodal_generative_media__diffusion_transformers_image",
       "ai__frontier_platforms_applied_ai_economics__open_weight_models"
      ]
+    },
+    {
+     "subtheme_ids": [
+      "ai__multimodal_generative_media__world_models_neural_simulation"
+     ],
+     "venue": "",
+     "new_category": false,
+     "name": "Noiz AI",
+     "org": "Noiz AI",
+     "org_type": "BUSINESS",
+     "type": "BUSINESS",
+     "why": "Startup (with HKUST) behind Helix World, an open interactive audio-visual world model.",
+     "stage": "Startup",
+     "funding": "",
+     "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
     }
    ],
    "impact_so_far": "Diffusion transformers have democratized high-quality image and video generation, enabling consumer-accessible creative tools that generate photorealistic content at scale while emerging world models show potential for physics-aware simulation applicable to autonomous systems and robotics.",
@@ -2315,6 +2364,10 @@ const STATE = {
     {
      "claim": "Novartis pays $575M upfront for Abogen's mRNA-encoded CD19xCD3 engager — Oct 2, 2026: Novartis licensed ABO2203, an in vivo mRNA-encoded T-cell engager, for $575M upfront and up to ~$7.2B in milestones; early B-NHL data showed no CRS/ICANS and rising response by dose.",
      "source_url": "https://www.biospace.com/deals/novartis-bets-up-to-7-8b-for-an-mrna-encoded-t-cell-engager-from-chinas-abogen"
+    },
+    {
+     "claim": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14% — Oct 9, 2026: NYT reported a ~$200M public-private Therapeutic Cancer Vaccines Initiative run by FNIH and NCI to build shared trial networks for treatment vaccines, expected to launch in December; Moderna closed up ~14% (coinciding with its Nasdaq-100 re-entry; no direct funding to Moderna confirmed).",
+     "source_url": "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines"
     }
    ],
    "watch_list": [
@@ -2354,6 +2407,21 @@ const STATE = {
      "why": "Evidence mRNA platforms are being re-valued for in vivo cell-engager therapies incl. autoimmune.",
      "source_url": "https://www.biospace.com/deals/opinion-how-abogen-went-from-covid-hype-to-a-7-8b-novartis-deal",
      "org": "Abogen Biosciences",
+     "type": "BUSINESS"
+    },
+    {
+     "subtheme_ids": [
+      "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+     ],
+     "venue": "",
+     "new_category": false,
+     "name": "BioNTech (autogene cevumeran)",
+     "org_type": "BUSINESS",
+     "why": "Bellwether for individualized neoantigen vaccines; pipeline contraction vs Moderna",
+     "stage": "Public",
+     "investors": "",
+     "source_url": "https://eu.36kr.com/en/p/3973977346126087",
+     "org": "BioNTech (autogene cevumeran)",
      "type": "BUSINESS"
     }
    ],
@@ -3923,7 +3991,11 @@ const STATE = {
     "Updated starship_flight_14_status: new value = Ship 41 six-engine static fire complete Aug 21; Flight 14 NET Sept 15",
     "Updated Starship Flight 14 target launch date: new value = NET September 22, 2026",
     "Updated Starship Flight 14 target launch date / mission profile: new value = NET Sep 28, 2026 — wet dress rehearsal complete Sep 24; first orbital-insertion attempt with 26 V3 Starlink sats deployed",
-    "Updated Starship Flight 14 status: new value = Flew 2026-09-28: first orbit, 26 Starlink V3 deployed, ship splashdown intact; mission shortened; booster Gulf splashdown"
+    "Updated Starship Flight 14 status: new value = Flew 2026-09-28: first orbit, 26 Starlink V3 deployed, ship splashdown intact; mission shortened; booster Gulf splashdown",
+    "Updated Neutron first launch: new value = 2027",
+    "Updated Starship Flight 15 plan: new value = Ship tower-catch attempt, ~late Nov 2026",
+    "Updated B1088 flights: new value = 20",
+    "Updated New Glenn return to flight: new value = Dec 2026 target"
    ],
    "sub_ideas": [
     {
@@ -4521,6 +4593,10 @@ const STATE = {
     {
      "claim": "",
      "source_url": "https://www.unite.ai/pony-ai-starts-fully-driverless-robotaxi-passenger-tests-in-zagreb/"
+    },
+    {
+     "claim": "Uber and Pony.ai to start Gen-7 robotaxi testing in London — Oct 8, 2026 (backfill, one day before window): Uber and Pony.ai plan to begin road testing Pony.ai Gen-7 robotaxis in London within weeks, part of a 2,000+ European robotaxi push; no passenger-service date yet. Uber separately has a London service planned with Wayve.",
+     "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
     }
    ],
    "watch_list": [
@@ -4566,6 +4642,21 @@ const STATE = {
      "subtheme_ids": [
       "ai__autonomy_embodiment_ai__self_driving_robotaxis"
      ]
+    },
+    {
+     "subtheme_ids": [
+      "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+     ],
+     "venue": "",
+     "new_category": false,
+     "name": "Pony.ai",
+     "org": "Pony.ai",
+     "org_type": "BUSINESS",
+     "type": "BUSINESS",
+     "why": "Chinese robotaxi operator expanding into Europe via Uber (Zagreb live, London Gen-7 testing).",
+     "stage": "Public (NASDAQ/HKEX)",
+     "funding": "",
+     "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
     }
    ],
    "impact_so_far": "Robotaxis crossed from pilot to scaled commercial reality between 2023–2025 — Waymo passing 4M paid driverless trips with peer-reviewed safety data, Tesla launching FSD-based robotaxis, and Aurora running fully driverless freight — finally validating a 15-year capital cycle.",
@@ -5208,7 +5299,8 @@ const STATE = {
     "Updated Boston Dynamics ownership: new value = SoftBank exercised put on remaining ~9.65%; full ownership moving to Hyundai affiliates + Chairman Chung Euisun",
     "Updated Unitree IPO status/financials: new value = CSRC-approved ~$619M STAR Market IPO; FY2025 gross margin 60.27%, revenue ~$250M, net profit RMB278M",
     "Updated ?: new value = ?",
-    "Updated watch_list[Unitree Robotics].status: new value = Public (SSE STAR Market, listed Aug 19, 2026; $904M IPO; ~$47B day-one market cap)"
+    "Updated watch_list[Unitree Robotics].status: new value = Public (SSE STAR Market, listed Aug 19, 2026; $904M IPO; ~$47B day-one market cap)",
+    "Updated XPeng IRON commercial sales start: new value = H2 2027 (internal pilots from early 2027)"
    ],
    "number": 12,
    "layer": "L4_product",
@@ -5947,7 +6039,8 @@ const STATE = {
     "Updated neuralink_surgical_robot_capability: new value = Next-gen R1 robot can implant in any brain region (motor + non-motor); threads through intact dura; real-time motion compensation",
     "Updated paradromics_connexus_device_compatibility: new value = FDA-approved to interface with personal computing devices (Aug 26, 2026)",
     "Updated Paradromics longest preclinical stable recording: new value = >4 years (sheep)",
-    "Updated Neuralink record cursor bandwidth: new value = 11.32 bps"
+    "Updated Neuralink record cursor bandwidth: new value = 11.32 bps",
+    "Updated Paradromics human implants: new value = First human Connexus implant (Jun 17, 2026; Connect-One EFS)"
    ],
    "number": 14,
    "layer": "L3_platform",
@@ -6264,6 +6357,10 @@ const STATE = {
     {
      "claim": "",
      "source_url": "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826"
+    },
+    {
+     "claim": "Microsoft unveils Maia 300 as its primary in-house inference chip — Oct 12, 2026 (OCP Global Summit): Microsoft's third-gen Maia 300 (TSMC N2P, 288 GB HBM4) becomes its main inference platform, deploying from 2027 at multi-GW scale; Microsoft claims 40% more tokens per MW than leading GPU systems (vendor figures).",
+     "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300"
     }
    ],
    "watch_list": [
@@ -6740,6 +6837,10 @@ const STATE = {
     {
      "claim": "",
      "source_url": "https://arxiv.org/abs/2609.37725"
+    },
+    {
+     "claim": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day — Oct 13, 2026: Anthropic's engineering blog says merged changes rose from ~2,500/day (May) to 30,000+/day (Sep), forcing a custom server-centric source-control system (Scion) with an AI-assisted review tool (Antique), migrated in ~five months; Scion reportedly uses 200x less CPU/memory than the git mirror fleet (vendor-reported).",
+     "source_url": "https://www.anthropic.com/engineering/redesigning-source-control"
     }
    ],
    "watch_list": [
@@ -6869,6 +6970,22 @@ const STATE = {
      "source_url": "https://www.forbes.com/sites/janakirammsv/2026/08/19/agent2agent-joins-the-agentic-ai-foundation-alongside-mcp/",
      "type": "LAB",
      "funding": "n/a"
+    },
+    {
+     "subtheme_ids": [
+      "ai__frontier_platforms_applied_ai_economics__customer_support_cx_automation",
+      "ai__agents_developer_ecosystem__agentic_commerce"
+     ],
+     "venue": "",
+     "new_category": false,
+     "name": "Sierra",
+     "org": "Sierra",
+     "org_type": "BUSINESS",
+     "type": "BUSINESS",
+     "why": "Agentic CX company co-leading the Personal Agent Protocol with Meta for agent-to-business access.",
+     "stage": "Venture-backed",
+     "funding": "",
+     "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
     }
    ],
    "impact_so_far": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise, subagents and orchestration apps for parallel work, and SDKs plus evals for governance — now backed by both major labs and a wave of well-funded startups.",
@@ -7110,6 +7227,12 @@ const STATE = {
    "used_for": [
     "Humanoid robotics -> frontier",
     "Humanoid robotics -> sub-idea: RSS 2026 Outstanding Paper: FlashSAC cuts sim-to-real humanoid RL to minutes"
+   ]
+  },
+  {
+   "url": "https://arxiv.org/abs/2604.08510",
+   "used_for": [
+    "RLHF + reasoning models (test-time compute scaling) -> frontier"
    ]
   },
   {
@@ -7371,6 +7494,12 @@ const STATE = {
    "used_for": [
     "RLHF + reasoning models (test-time compute scaling) -> sub-idea: The Obfuscation Atlas (deception probes for RLVR reward hacking)",
     "Diffusion models (image + video generation) -> sub-idea: Generation-order pathology in diffusion LMs"
+   ]
+  },
+  {
+   "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
    ]
   },
   {
@@ -7686,6 +7815,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://eu.36kr.com/en/p/3973977346126087",
+   "used_for": [
+    "mRNA vaccines + LNP delivery -> watch: BioNTech (autogene cevumeran)"
+   ]
+  },
+  {
    "url": "https://fortune.com/2025/11/11/who-is-yann-lecun-career-meta-ai-chief-scientist-nyu-turing/",
    "used_for": [
     "Transformers / LLMs / coding agents -> Yann LeCun",
@@ -7867,6 +8002,12 @@ const STATE = {
    "url": "https://infleqtion.com/infleqtion-and-cisco-announce-collaboration-to-advance-networked-quantum-technology/",
    "used_for": [
     "Quantum error correction (logical qubits below threshold) -> watch: Infleqtion (x Cisco quantum networking)"
+   ]
+  },
+  {
+   "url": "https://infoq.com/news/2026/10/clef-decision-models",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> sub-idea: "
    ]
   },
   {
@@ -8110,6 +8251,13 @@ const STATE = {
    "used_for": [
     "Quantum error correction (logical qubits below threshold) -> watch: Anderon",
     "Quantum error correction (logical qubits below threshold) -> frontier"
+   ]
+  },
+  {
+   "url": "https://noiz.ai/lp/blog/meet-helix-world",
+   "used_for": [
+    "Diffusion models (image + video generation) -> frontier",
+    "Diffusion models (image + video generation) -> watch: Noiz AI"
    ]
   },
   {
@@ -8626,6 +8774,19 @@ const STATE = {
    ]
   },
   {
+   "url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/",
+   "used_for": [
+    "Self-driving cars / robotaxis -> frontier",
+    "Self-driving cars / robotaxis -> watch: Pony.ai"
+   ]
+  },
+  {
+   "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
+   ]
+  },
+  {
    "url": "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/",
    "used_for": [
     "Transformers / LLMs / coding agents -> frontier"
@@ -8817,6 +8978,12 @@ const STATE = {
    "used_for": [
     "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> frontier",
     "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> sub-idea: Agent Skills (Claude Skills / portable skills)"
+   ]
+  },
+  {
+   "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+   "used_for": [
+    "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> frontier"
    ]
   },
   {
@@ -9147,6 +9314,12 @@ const STATE = {
    ]
   },
   {
+   "url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/",
+   "used_for": [
+    "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration) -> watch: Sierra"
+   ]
+  },
+  {
    "url": "https://www.chinadaily.com.cn/a/202607/07/WS6a4cf086a310986e2b463fec.html",
    "used_for": [
     "Humanoid robotics -> sub-idea: XAG X Series autonomous farm-robotics system",
@@ -9177,6 +9350,12 @@ const STATE = {
    "url": "https://www.datacamp.com/blog/claude-opus-4-7-vs-gemini-3-1-pro",
    "used_for": [
     "Transformers / LLMs / coding agents -> frontier"
+   ]
+  },
+  {
+   "url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300",
+   "used_for": [
+    "AI accelerators / advanced compute -> frontier"
    ]
   },
   {
@@ -9443,6 +9622,12 @@ const STATE = {
    "url": "https://www.hpcwire.com/aiwire/2026/01/14/cerebras-lands-major-openai-deal-to-scale-ai-inference/",
    "used_for": [
     "AI accelerators / advanced compute -> frontier"
+   ]
+  },
+  {
+   "url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/",
+   "used_for": [
+    "Transformers / LLMs / coding agents -> frontier"
    ]
   },
   {
@@ -10257,6 +10442,12 @@ const STATE = {
    "url": "https://www.therobotreport.com/tutor-intelligence-builds-data-factory-to-train-robot-ai-in-the-real-world/",
    "used_for": [
     "Humanoid robotics -> sub-idea: Data factories & teleoperation scaling"
+   ]
+  },
+  {
+   "url": "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines",
+   "used_for": [
+    "mRNA vaccines + LNP delivery -> frontier"
    ]
   },
   {
@@ -25687,6 +25878,647 @@ const STATE = {
    },
    "as_of_date": "2026-10-09",
    "generated_at": "2026-10-13T17:05:06.881063+00:00"
+  },
+  {
+   "week_ending": "2026-10-16",
+   "kind": "WEEKLY_UPDATE",
+   "summary": "A model-heavy week: Meta shipped Muse Wonder, its first frontier-class model, Google opened Gemini 4 Argon to developers, and Microsoft unveiled Maia 300 as its main in-house inference chip at OCP. Anthropic disclosed it replaced Git (Scion/Antique) after merges hit 30k/day, while Karpathy's 'capability funnel' post framed how unevenly frontier ability is felt. Space news was mostly schedule slips (Neutron to 2027, New Glenn targeting December) plus a planned Starship ship-catch on Flight 15; bio was quiet apart from a reported FNIH/NCI $200M cancer-vaccine initiative. Verification: 25 checked, 9 passed, 12 fixed, 4 dropped; 3 entities added.",
+   "highlights": [
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens",
+     "detail": "Oct 12, 2026: Meta Superintelligence Labs released Muse Wonder (API, $4/$20 per M tokens) and Muse Wonder Full (Muse Code subscribers), claiming parity with Fable 5.1 and GPT-6 Astra and leading on its MemoryBench 'active memory' eval (self-reported).",
+     "source_urls": [
+      "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+       "ai__data_memory_evaluation_foundations__memory_continual_learning"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "claim": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens — Oct 12, 2026: Meta Superintelligence Labs released Muse Wonder (API, $4/$20 per M tokens) and Muse Wonder Full (Muse Code subscribers), claiming parity with Fable 5.1 and GPT-6 Astra and leading on its MemoryBench 'active memory' eval (self-reported)."
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+     "detail": "Oct 13, 2026: Gemini 4 Argon, Google's long-horizon reasoning model, became broadly available via the Gemini API, AI Studio and Antigravity (Ultra tier) plus the Gemini app for Pro/Ultra subscribers; introductory pricing is $2/$10 per M tokens through Nov 30, doubling in December. A less-restricted cyber variant requires separate approval for vetted defenders.",
+     "source_urls": [
+      "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/",
+      "https://letsdatascience.com/news/google-releases-gemini-4-argon-for-scientific-computing-644a49ff"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+       "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+       "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+       "ai__agents_developer_ecosystem__coding_agents"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/",
+      "claim": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December — Oct 13, 2026: Gemini 4 Argon, Google's long-horizon reasoning model, became broadly available via the Gemini API, AI Studio and Antigravity (Ultra tier) plus the Gemini app for Pro/Ultra subscribers; introductory pricing is $2/$10 per M tokens through Nov 30, doubling in December. A less-restricted cyber variant requires separate approval for vetted defenders."
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "transformers_llms",
+     "title": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL",
+     "detail": "Oct 8, 2026 (backfill, one day before window): JetBrains released Mellum2.1 under Apache-2.0, a 12B-parameter (~2.5B active) MoE for coding agents, post-trained with RL in real repo environments using shell/file-edit tools and test-based rewards; 47.0% SWE-bench Verified (self-reported).",
+     "source_urls": [
+      "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__agents_developer_ecosystem__coding_agents",
+       "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+       "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
+      "claim": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL — Oct 8, 2026 (backfill, one day before window): JetBrains released Mellum2.1 under Apache-2.0, a 12B-parameter (~2.5B active) MoE for coding agents, post-trained with RL in real repo environments using shell/file-edit tools and test-based rewards; 47.0% SWE-bench Verified (self-reported)."
+     },
+     "confidence": "medium",
+     "backfill": true
+    },
+    {
+     "kind": "NEW_SUB_IDEA",
+     "breakthrough_id": "transformers_llms",
+     "title": "'Decision models': Cloudflare's open-weight Clef scores fixed choices, not text",
+     "detail": "Oct 1, 2026 (backfill): Cloudflare released open-weight (Apache-2.0) Clef (27B) and Clef-flash (9B), which take a state plus a schema of typed questions and return probabilities over allowed answers; similar 'decision' models reported from Liquid AI and Microsoft point to a small-model class for routing/verification in agent pipelines (vendor claims).",
+     "source_urls": [
+      "https://infoq.com/news/2026/10/clef-decision-models"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__architecture_efficiency__small_on_device_edge_models",
+       "ai__agents_developer_ecosystem__multi_agent_orchestration"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://infoq.com/news/2026/10/clef-decision-models"
+     },
+     "confidence": "low",
+     "backfill": true
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "diffusion_models",
+     "title": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio",
+     "detail": "Oct 2026: Noiz AI and HKUST previewed Helix World, a real-time interactive audio-visual world model that generates video plus spatial stereo audio from a start image, steered by keyboard (WASD/look keys; reported 24 fps on one H800); preview checkpoint, paper and code released (developer-reported results).",
+     "source_urls": [
+      "https://noiz.ai/lp/blog/meet-helix-world"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__multimodal_generative_media__world_models_neural_simulation",
+       "ai__multimodal_generative_media__video_generation"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://noiz.ai/lp/blog/meet-helix-world",
+      "claim": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio — Oct 2026: Noiz AI and HKUST previewed Helix World, a real-time interactive audio-visual world model that generates video plus spatial stereo audio from a start image, steered by keyboard (WASD/look keys; reported 24 fps on one H800); preview checkpoint, paper and code released (developer-reported results)."
+     },
+     "confidence": "low",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "ai_dev_ecosystem",
+     "title": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day",
+     "detail": "Oct 13, 2026: Anthropic's engineering blog says merged changes rose from ~2,500/day (May) to 30,000+/day (Sep), forcing a custom server-centric source-control system (Scion) with an AI-assisted review tool (Antique), migrated in ~five months; Scion reportedly uses 200x less CPU/memory than the git mirror fleet (vendor-reported).",
+     "source_urls": [
+      "https://www.anthropic.com/engineering/redesigning-source-control",
+      "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__agents_developer_ecosystem__coding_agents",
+       "ai__agents_developer_ecosystem__multi_agent_orchestration"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "claim": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day — Oct 13, 2026: Anthropic's engineering blog says merged changes rose from ~2,500/day (May) to 30,000+/day (Sep), forcing a custom server-centric source-control system (Scion) with an AI-assisted review tool (Antique), migrated in ~five months; Scion reportedly uses 200x less CPU/memory than the git mirror fleet (vendor-reported)."
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "self_driving",
+     "title": "Uber and Pony.ai to start Gen-7 robotaxi testing in London",
+     "detail": "Oct 8, 2026 (backfill, one day before window): Uber and Pony.ai plan to begin road testing Pony.ai Gen-7 robotaxis in London within weeks, part of a 2,000+ European robotaxi push; no passenger-service date yet. Uber separately has a London service planned with Wayve.",
+     "source_urls": [
+      "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/",
+      "claim": "Uber and Pony.ai to start Gen-7 robotaxi testing in London — Oct 8, 2026 (backfill, one day before window): Uber and Pony.ai plan to begin road testing Pony.ai Gen-7 robotaxis in London within weeks, part of a 2,000+ European robotaxi push; no passenger-service date yet. Uber separately has a London service planned with Wayve."
+     },
+     "confidence": "high",
+     "backfill": true
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "humanoid_robotics",
+     "title": "XPeng: IRON humanoid goes on sale H2 2027 after in-store pilots",
+     "detail": "Oct 12, 2026: XPeng president Brian Gu told the Forbes Global CEO Conference IRON will be sold from H2 2027, after working as store sales assistants/receptionists from early 2027; it runs on XPeng's in-house Turing chip.",
+     "source_urls": [
+      "https://www.forbes.com/sites/janeho/2026/10/12/forbes-global-ceo-conference-2026-chinese-ev-maker-xpeng-to-launch-humanoid-robots/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "robotics__humanoid_robots__industrial_commercial_humanoids"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "XPeng IRON commercial sales start",
+      "new_value": "H2 2027 (internal pilots from early 2027)",
+      "previous_value": "mass production 2026, no sales date",
+      "source_url": "https://www.forbes.com/sites/janeho/2026/10/12/forbes-global-ceo-conference-2026-chinese-ev-maker-xpeng-to-launch-humanoid-robots/"
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "reasoning_models",
+     "title": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis",
+     "detail": "Oct 2026: 'What do Language Models Learn and When? The Implicit Curriculum Hypothesis' (arXiv 2604.08510), on the order in which capabilities emerge during pretraining, was reported as a COLM 2026 outstanding paper in a post by Graham Neubig (relayed via Digg; no official COLM announcement found yet).",
+     "source_urls": [
+      "https://arxiv.org/abs/2604.08510",
+      "https://digg.com/ai/c5o9n5cf"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation"
+      ],
+      "venue": "COLM 2026",
+      "new_category": false,
+      "source_url": "https://arxiv.org/abs/2604.08510",
+      "claim": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis — Oct 2026: 'What do Language Models Learn and When? The Implicit Curriculum Hypothesis' (arXiv 2604.08510), on the order in which capabilities emerge during pretraining, was reported as a COLM 2026 outstanding paper in a post by Graham Neubig (relayed via Digg; no official COLM announcement found yet)."
+     },
+     "confidence": "low",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "mrna_vaccines",
+     "title": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14%",
+     "detail": "Oct 9, 2026: NYT reported a ~$200M public-private Therapeutic Cancer Vaccines Initiative run by FNIH and NCI to build shared trial networks for treatment vaccines, expected to launch in December; Moderna closed up ~14% (coinciding with its Nasdaq-100 re-entry; no direct funding to Moderna confirmed).",
+     "source_urls": [
+      "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+      ],
+      "venue": "",
+      "new_category": false,
+      "source_url": "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines",
+      "claim": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14% — Oct 9, 2026: NYT reported a ~$200M public-private Therapeutic Cancer Vaccines Initiative run by FNIH and NCI to build shared trial networks for treatment vaccines, expected to launch in December; Moderna closed up ~14% (coinciding with its Nasdaq-100 re-entry; no direct funding to Moderna confirmed)."
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "mrna_vaccines",
+     "title": "BioNTech's individualized cancer-vaccine program narrows to pancreatic Ph2",
+     "detail": "Oct 2026: Analysis notes BioNTech/Genentech terminated the Ph2 ctDNA+ colorectal autogene cevumeran trial (Aug 28) after a DSMB flagged an OS imbalance, and the Ph2 IMcode004 urothelial trial was discontinued earlier in 2026, leaving pancreatic IMcode003 as the main active study, in contrast to Moderna/Merck's Ph3 intismeran (full data at ESMO Oct 24).",
+     "source_urls": [
+      "https://eu.36kr.com/en/p/3973977346126087"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+      ],
+      "venue": "",
+      "new_category": false,
+      "name": "BioNTech (autogene cevumeran)",
+      "org_type": "BUSINESS",
+      "why": "Bellwether for individualized neoantigen vaccines; pipeline contraction vs Moderna",
+      "stage": "Public",
+      "investors": "",
+      "source_url": "https://eu.36kr.com/en/p/3973977346126087",
+      "org": "BioNTech (autogene cevumeran)",
+      "type": "BUSINESS"
+     },
+     "confidence": "low",
+     "backfill": false
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "bci",
+     "title": "Paradromics Connexus: first human implant in Connect-One study (backfill)",
+     "detail": "Jun 17, 2026 (backfill): Paradromics and U-Michigan Health completed the first Connexus implant in the FDA-approved Connect-One early feasibility study (ALS/motor neuron disease; speech/text goal), complementing this month's sheep-durability data.",
+     "source_urls": [
+      "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants",
+       "bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "Paradromics human implants",
+      "new_value": "First human Connexus implant (Jun 17, 2026; Connect-One EFS)",
+      "previous_value": "preclinical durability data",
+      "source_url": "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
+     },
+     "confidence": "medium",
+     "backfill": true
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "Rocket Lab pushes Neutron's first launch to 2027",
+     "detail": "Oct 14, 2026: Rocket Lab announced an adjusted Neutron development schedule, moving the reusable medium-lift rocket's inaugural launch into 2027.",
+     "source_urls": [
+      "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "space__reusable_launch__operational_partial_reuse_falcon_class"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "Neutron first launch",
+      "new_value": "2027",
+      "previous_value": "2026",
+      "source_url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "Starship Flight 15 to attempt first ship tower catch ~late November",
+     "detail": "Oct 11, 2026: Musk said Flight 15 will try to catch the Starship upper stage with the tower, roughly four to six weeks out, with Flight 16 targeting booster and ship reflight.",
+     "source_urls": [
+      "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "space__reusable_launch__booster_catch_orbital_refueling",
+       "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "Starship Flight 15 plan",
+      "new_value": "Ship tower-catch attempt, ~late Nov 2026",
+      "previous_value": "Flight 15 ~Oct 19",
+      "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "Falcon 9 booster B1088 flies its 20th mission",
+     "detail": "Oct 12, 2026: B1088 flew its 20th flight (Starlink 15-25 from Vandenberg) and landed on OCISLY.",
+     "source_urls": [
+      "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "space__reusable_launch__operational_partial_reuse_falcon_class"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "B1088 flights",
+      "new_value": "20",
+      "previous_value": "19",
+      "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "UPDATED_FACT",
+     "breakthrough_id": "reusable_rockets",
+     "title": "Blue Origin targets December for New Glenn return to flight",
+     "detail": "Oct 7-9, 2026 (backfill): Bezos said Blue Origin is targeting December for New Glenn's return to flight with Blue Ring aboard; the vehicle has been grounded since the Apr 19, 2026 flight-3 upper-stage anomaly. December is a target, not a confirmed date.",
+     "source_urls": [
+      "https://newspaceeconomy.ca/2026/10/09/what-does-blue-origins-december-2026-target-mean-for-new-glenns-return-to-flight/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+      ],
+      "venue": "",
+      "new_category": false,
+      "field": "New Glenn return to flight",
+      "new_value": "Dec 2026 target",
+      "previous_value": "grounded since May 28",
+      "source_url": "https://newspaceeconomy.ca/2026/10/09/what-does-blue-origins-december-2026-target-mean-for-new-glenns-return-to-flight/"
+     },
+     "confidence": "low",
+     "backfill": true
+    },
+    {
+     "kind": "NEW_FRONTIER",
+     "breakthrough_id": "ai_accelerators",
+     "title": "Microsoft unveils Maia 300 as its primary in-house inference chip",
+     "detail": "Oct 12, 2026 (OCP Global Summit): Microsoft's third-gen Maia 300 (TSMC N2P, 288 GB HBM4) becomes its main inference platform, deploying from 2027 at multi-GW scale; Microsoft claims 40% more tokens per MW than leading GPU systems (vendor figures).",
+     "source_urls": [
+      "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300",
+      "https://hpcwire.com/off-the-wire/microsoft-announces-maia-300-its-next-gen-custom-ai-chip"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "hardware__ai_accelerators__hyperscaler_custom_silicon",
+       "hardware__ai_accelerators__inference_specialized_asics",
+       "hardware__memory_advanced_packaging__hbm_the_memory_wall"
+      ],
+      "venue": "OCP Global Summit 2026",
+      "new_category": false,
+      "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300",
+      "claim": "Microsoft unveils Maia 300 as its primary in-house inference chip — Oct 12, 2026 (OCP Global Summit): Microsoft's third-gen Maia 300 (TSMC N2P, 288 GB HBM4) becomes its main inference platform, deploying from 2027 at multi-GW scale; Microsoft claims 40% more tokens per MW than leading GPU systems (vendor figures)."
+     },
+     "confidence": "high",
+     "backfill": false
+    },
+    {
+     "kind": "TRENDING_IDEA",
+     "breakthrough_id": null,
+     "title": "Karpathy: LLM capability perception is now a steep 'funnel'",
+     "detail": "Oct 11, 2026: Karpathy argued awareness of LLM capability forms a funnel, from billions with little exposure to ~thousands with frontier-internal access, driven by task horizon, verifiable domains and paid/internal access tiers.",
+     "source_urls": [
+      "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening",
+      "https://pasqualepillitteri.it/en/news/23106/karpathy-llm-capability-gap-widening"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+       "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+      ],
+      "venue": "",
+      "new_category": false,
+      "thesis": "Frontier capability is concentrating among a tiny set of users in verifiable domains; free-tier experience badly understates what agents can do.",
+      "examples": [
+       "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
+      ],
+      "spotted_at": "2026-10-11",
+      "source_url": "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Nvidia commits $250M of compute to UK agentic-AI safety research",
+     "detail": "Oct 14, 2026: Nvidia pledged ~$50M/yr of compute for five years for UK research on AI-agent security and open-model vulnerabilities (Imperial College among recipients).",
+     "source_urls": [
+      "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years",
+      "https://www.channelinsider.com/channel-business/news-nvidia-250-million-uk-ai-safety-research-emea/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__safety_interpretability_governance__ai_governance_safety_incidents",
+       "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"
+      ],
+      "venue": "",
+      "new_category": false,
+      "candidate_area": "AI safety / agent security funding",
+      "detail": "Oct 14, 2026: Nvidia pledged ~$50M/yr of compute for five years for UK research on AI-agent security and open-model vulnerabilities (Imperial College among recipients).",
+      "source_url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Fervo's Cape Station first 33 MW GeoBlock reaches commercial operation",
+     "detail": "Sep 30-Oct 1, 2026 (backfill): Fervo declared commercial operation of the first 33 MW GeoBlock at Cape Station, Utah, one day ahead of its contractual deadline; Phase 1 is ~100 MW across three GeoBlocks (remaining two expected by Jan 1, 2027), with a later phase targeted for 2028.",
+     "source_urls": [
+      "https://www.energyglobal.com/other-renewables/05102026/fervo-energy-declares-commercial-operation-at-cape-station-ahead-of-schedule/amp/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "energy__advanced_nuclear_geothermal__enhanced_geothermal_egs"
+      ],
+      "venue": "",
+      "new_category": false,
+      "candidate_area": "Enhanced geothermal",
+      "detail": "Sep 30-Oct 1, 2026 (backfill): Fervo declared commercial operation of the first 33 MW GeoBlock at Cape Station, Utah, one day ahead of its contractual deadline; Phase 1 is ~100 MW across three GeoBlocks (remaining two expected by Jan 1, 2027), with a later phase targeted for 2028.",
+      "source_url": "https://www.energyglobal.com/other-renewables/05102026/fervo-energy-declares-commercial-operation-at-cape-station-ahead-of-schedule/amp/"
+     },
+     "confidence": "medium",
+     "backfill": true
+    },
+    {
+     "kind": "BROAD_SCAN",
+     "breakthrough_id": null,
+     "title": "Sierra and Meta launch open Personal Agent Protocol with retail backers",
+     "detail": "Oct 6, 2026 (backfill): Sierra and Meta, with Walmart, Shopify, Stripe, Genesys and others, announced the Personal Agent Protocol, an open standard for businesses to identify customers' AI agents and grant scoped OAuth access; v0.1 spec due later in October, payments out of scope for v1.",
+     "source_urls": [
+      "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/",
+      "https://thenextweb.com/news/personal-agent-protocol-sierra-meta"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__agents_developer_ecosystem__agentic_commerce",
+       "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+      ],
+      "venue": "",
+      "new_category": false,
+      "candidate_area": "Agent-to-business interoperability standards",
+      "detail": "Oct 6, 2026 (backfill): Sierra and Meta, with Walmart, Shopify, Stripe, Genesys and others, announced the Personal Agent Protocol, an open standard for businesses to identify customers' AI agents and grant scoped OAuth access; v0.1 spec due later in October, payments out of scope for v1.",
+      "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+     },
+     "confidence": "medium",
+     "backfill": true
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "self_driving",
+     "title": "Pony.ai: Chinese robotaxi operator expanding into Europe via Uber",
+     "detail": "Chinese robotaxi operator expanding into Europe via Uber (Zagreb live, London Gen-7 testing).",
+     "source_urls": [
+      "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+      ],
+      "venue": "",
+      "new_category": false,
+      "name": "Pony.ai",
+      "org": "Pony.ai",
+      "org_type": "BUSINESS",
+      "type": "BUSINESS",
+      "why": "Chinese robotaxi operator expanding into Europe via Uber (Zagreb live, London Gen-7 testing).",
+      "stage": "Public (NASDAQ/HKEX)",
+      "funding": "",
+      "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "ai_dev_ecosystem",
+     "title": "Sierra: agentic-CX firm co-leading the Personal Agent Protocol",
+     "detail": "Agentic CX company co-leading the Personal Agent Protocol with Meta for agent-to-business access.",
+     "source_urls": [
+      "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__frontier_platforms_applied_ai_economics__customer_support_cx_automation",
+       "ai__agents_developer_ecosystem__agentic_commerce"
+      ],
+      "venue": "",
+      "new_category": false,
+      "name": "Sierra",
+      "org": "Sierra",
+      "org_type": "BUSINESS",
+      "type": "BUSINESS",
+      "why": "Agentic CX company co-leading the Personal Agent Protocol with Meta for agent-to-business access.",
+      "stage": "Venture-backed",
+      "funding": "",
+      "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+     },
+     "confidence": "medium",
+     "backfill": false
+    },
+    {
+     "kind": "NEW_WATCH",
+     "breakthrough_id": "diffusion_models",
+     "title": "Noiz AI: startup behind the Helix World interactive world model",
+     "detail": "Startup (with HKUST) behind Helix World, an open interactive audio-visual world model.",
+     "source_urls": [
+      "https://noiz.ai/lp/blog/meet-helix-world"
+     ],
+     "payload": {
+      "subtheme_ids": [
+       "ai__multimodal_generative_media__world_models_neural_simulation"
+      ],
+      "venue": "",
+      "new_category": false,
+      "name": "Noiz AI",
+      "org": "Noiz AI",
+      "org_type": "BUSINESS",
+      "type": "BUSINESS",
+      "why": "Startup (with HKUST) behind Helix World, an open interactive audio-visual world model.",
+      "stage": "Startup",
+      "funding": "",
+      "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
+     },
+     "confidence": "medium",
+     "backfill": false
+    }
+   ],
+   "additions": {
+    "new_breakthroughs": [],
+    "new_sub_ideas": [
+     "transformers_llms/None"
+    ],
+    "new_frontier": [
+     "transformers_llms/frontier",
+     "transformers_llms/frontier",
+     "transformers_llms/frontier",
+     "diffusion_models/frontier",
+     "ai_dev_ecosystem/frontier",
+     "self_driving/frontier",
+     "reasoning_models/frontier",
+     "mrna_vaccines/frontier",
+     "ai_accelerators/frontier"
+    ],
+    "new_watch": [
+     "mrna_vaccines/watch:BioNTech (autogene cevumeran)",
+     "self_driving/watch:Pony.ai",
+     "ai_dev_ecosystem/watch:Sierra",
+     "diffusion_models/watch:Noiz AI"
+    ],
+    "new_people": [],
+    "new_voices": [],
+    "trending_ideas": [
+     "trending:Karpathy: LLM capability perception is now a steep 'funnel'"
+    ],
+    "updates": [
+     "humanoid_robotics/update:XPeng IRON commercial sales start",
+     "bci/update:Paradromics human implants",
+     "reusable_rockets/update:Neutron first launch",
+     "reusable_rockets/update:Starship Flight 15 plan",
+     "reusable_rockets/update:B1088 flights",
+     "reusable_rockets/update:New Glenn return to flight"
+    ],
+    "broad_scan": [
+     "broad_scan:AI safety / agent security funding",
+     "broad_scan:Enhanced geothermal",
+     "broad_scan:Agent-to-business interoperability stand"
+    ],
+    "skipped_dedupe": [],
+    "routed_subthemes": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__data_memory_evaluation_foundations__memory_continual_learning",
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+     "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play",
+     "ai__architecture_efficiency__small_on_device_edge_models",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration",
+     "ai__multimodal_generative_media__world_models_neural_simulation",
+     "ai__multimodal_generative_media__video_generation",
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration",
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis",
+     "robotics__humanoid_robots__industrial_commercial_humanoids",
+     "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation",
+     "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines",
+     "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines",
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants",
+     "bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis",
+     "space__reusable_launch__operational_partial_reuse_falcon_class",
+     "space__reusable_launch__booster_catch_orbital_refueling",
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class",
+     "space__reusable_launch__operational_partial_reuse_falcon_class",
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class",
+     "hardware__ai_accelerators__hyperscaler_custom_silicon",
+     "hardware__ai_accelerators__inference_specialized_asics",
+     "hardware__memory_advanced_packaging__hbm_the_memory_wall",
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents",
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "energy__advanced_nuclear_geothermal__enhanced_geothermal_egs",
+     "ai__agents_developer_ecosystem__agentic_commerce",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks",
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis",
+     "ai__frontier_platforms_applied_ai_economics__customer_support_cx_automation",
+     "ai__agents_developer_ecosystem__agentic_commerce",
+     "ai__multimodal_generative_media__world_models_neural_simulation"
+    ],
+    "auto_expanded_subthemes": []
+   },
+   "as_of_date": "2026-10-16",
+   "generated_at": "2026-10-16T12:24:12.593777+00:00"
   }
  ],
  "voices": [
@@ -26429,7 +27261,7 @@ const STATE = {
  ],
  "taxonomy": {
   "version": 1,
-  "generated_at": "2026-10-13T17:05:12.761158+00:00",
+  "generated_at": "2026-10-16T12:24:12.705256+00:00",
   "tracks": [
    "RND",
    "PRODUCT",
@@ -26462,13 +27294,8 @@ const STATE = {
         },
         "example": "Absolute Zero (zero-data self-play)",
         "source_url": "https://arxiv.org/abs/2505.03335",
-        "item_count": 9,
+        "item_count": 10,
         "recent_items": [
-         {
-          "title": "Ring-Zero scales zero-RL reasoning training to 1 trillion parameters",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://arxiv.org/abs/2607.12395"
-         },
          {
           "title": "ICML 2026 Outstanding Paper: token order hurts RL in diffusion LMs",
           "kind": "NEW_FRONTIER",
@@ -26488,6 +27315,11 @@ const STATE = {
           "title": "Joby flies eVTOL into DFW airspace as Texas eIPP campaign kicks off",
           "kind": "BROAD_SCAN",
           "source_url": "https://ir.jobyaviation.com/news-events/press-releases/detail/191/joby-launches-eipp-flights-in-texas"
+         },
+         {
+          "title": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
          }
         ]
        },
@@ -26588,18 +27420,8 @@ const STATE = {
         },
         "example": "Long-horizon agentic benchmarks",
         "source_url": "https://arxiv.org/abs/2603.25681",
-        "item_count": 15,
+        "item_count": 17,
         "recent_items": [
-         {
-          "title": "Shanghai AI Lab open-sources Atria Dawn Preview, a 744B agentic MoE",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://huggingface.co/internlm/Atria-Dawn-Preview"
-         },
-         {
-          "title": "Dwarkesh x Noam Brown: math's 'explosion' this year signals AI is starting to automate its own research",
-          "kind": "TRENDING_IDEA",
-          "source_url": "https://www.dwarkesh.com/p/noam-brown"
-         },
          {
           "title": "OpenAI 'Dots': persistent always-on agents inside ChatGPT",
           "kind": "NEW_FRONTIER",
@@ -26614,6 +27436,16 @@ const STATE = {
           "title": "Google previews persistent Gemini agent across Workspace and Cloud",
           "kind": "NEW_SUB_IDEA",
           "source_url": "https://letsdatascience.com/news/google-introduces-gemini-agent-for-enterprise-work-53007f2c"
+         },
+         {
+          "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/"
+         },
+         {
+          "title": "Karpathy: LLM capability perception is now a steep 'funnel'",
+          "kind": "TRENDING_IDEA",
+          "source_url": "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
          }
         ]
        }
@@ -26732,7 +27564,7 @@ const STATE = {
         },
         "example": "Phi / Qwen3-8B; >2B phones running local SLMs",
         "source_url": "https://www.dell.com/en-us/blog/the-power-of-small-edge-ai-predictions-for-2026/",
-        "item_count": 4,
+        "item_count": 5,
         "recent_items": [
          {
           "title": "Fused INT8 Triton kernel runs Ideogram 4.0 (DiT) on a single RTX 3090",
@@ -26753,6 +27585,11 @@ const STATE = {
           "title": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context",
           "kind": "NEW_FRONTIER",
           "source_url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+         },
+         {
+          "title": "'Decision models': Cloudflare's open-weight Clef scores fixed choices, not text",
+          "kind": "NEW_SUB_IDEA",
+          "source_url": "https://infoq.com/news/2026/10/clef-decision-models"
          }
         ]
        },
@@ -26848,7 +27685,7 @@ const STATE = {
         },
         "example": "Runway Gen-4.5; Sora 2",
         "source_url": "https://runwayml.com/research",
-        "item_count": 3,
+        "item_count": 4,
         "recent_items": [
          {
           "title": "Video diffusion models shown to be general-purpose vision learners",
@@ -26859,6 +27696,11 @@ const STATE = {
           "title": "Long prompts + Lean verification start closing 30-year math gaps",
           "kind": "TRENDING_IDEA",
           "source_url": "https://medium.com/@kerger.p/an-ai-assisted-breakthrough-in-convex-optimization-an-optimization-problem-dating-back-30-years-a-db5c631119de"
+         },
+         {
+          "title": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
          }
         ]
        },
@@ -26875,18 +27717,8 @@ const STATE = {
         },
         "example": "NVIDIA Cosmos 3; Google Genie 3",
         "source_url": "https://www.nvidia.com/en-us/ai/cosmos/",
-        "item_count": 8,
+        "item_count": 10,
         "recent_items": [
-         {
-          "title": "Video diffusion models shown to be general-purpose vision learners",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://arxiv.org/abs/2607.09024"
-         },
-         {
-          "title": "Stanford/Harvard unify robot world models via Masked Visual Actions",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://arxiv.org/abs/2607.19343"
-         },
          {
           "title": "DA-WAM aligns driving world-model latents with decision scoring",
           "kind": "NEW_FRONTIER",
@@ -26901,6 +27733,16 @@ const STATE = {
           "title": "World-action models surge on alphaXiv: LeCun's H-JEPA and NVIDIA Long-WAM",
           "kind": "NEW_FRONTIER",
           "source_url": "https://www.alphaxiv.org/abs/2610.06805"
+         },
+         {
+          "title": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
+         },
+         {
+          "title": "Noiz AI: startup behind the Helix World interactive world model",
+          "kind": "NEW_WATCH",
+          "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
          }
         ]
        },
@@ -26937,7 +27779,7 @@ const STATE = {
         },
         "example": "MemoryAgentBench (ICLR 2026)",
         "source_url": "https://arxiv.org/abs/2605.06716",
-        "item_count": 3,
+        "item_count": 4,
         "recent_items": [
          {
           "title": "Test-time-compute scaling fails for long-horizon coding agents; representation is the bottleneck",
@@ -26953,6 +27795,11 @@ const STATE = {
           "title": "Context Language Models: the model edits its own context as a file",
           "kind": "NEW_FRONTIER",
           "source_url": "https://arxiv.org/abs/2609.37725"
+         },
+         {
+          "title": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
          }
         ]
        },
@@ -26992,13 +27839,8 @@ const STATE = {
         },
         "example": "Humanity's Last Exam; benchmark-saturation study",
         "source_url": "https://arxiv.org/pdf/2602.16763",
-        "item_count": 7,
+        "item_count": 8,
         "recent_items": [
-         {
-          "title": "Systematic study finds AI benchmark saturation across leaderboards",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://arxiv.org/abs/2602.16763"
-         },
          {
           "title": "'Position: LLMs Can't Jump' trends on OpenReview/HN",
           "kind": "NEW_FRONTIER",
@@ -27018,6 +27860,11 @@ const STATE = {
           "title": "OpenAI posts 372 AI-math result families, withdraws 3 Hodge papers",
           "kind": "NEW_FRONTIER",
           "source_url": "https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/"
+         },
+         {
+          "title": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://arxiv.org/abs/2604.08510"
          }
         ]
        },
@@ -27126,13 +27973,8 @@ const STATE = {
         },
         "example": "International AI Safety Report 2026",
         "source_url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
-        "item_count": 19,
+        "item_count": 20,
         "recent_items": [
-         {
-          "title": "Kapoor & Narayanan: loss-of-control incidents fit a normal-technology frame",
-          "kind": "TRENDING_IDEA",
-          "source_url": "https://www.normaltech.ai/p/the-ai-as-normal-technology-view"
-         },
          {
           "title": "Base Labs launches open-weight AI safety partnership with HF and Goodfire",
           "kind": "BROAD_SCAN",
@@ -27152,6 +27994,11 @@ const STATE = {
           "title": "Accountability turn: FTC probes AI labs as Newport urges a Congressional inquiry",
           "kind": "TRENDING_IDEA",
           "source_url": "https://www.usnews.com/news/technology/articles/2026-09-30/ftc-is-investigating-openai-and-anthropic-over-possible-risks-to-consumers"
+         },
+         {
+          "title": "Nvidia commits $250M of compute to UK agentic-AI safety research",
+          "kind": "BROAD_SCAN",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
          }
         ]
        },
@@ -27166,18 +28013,8 @@ const STATE = {
         },
         "example": "Industrialization of cyber offense",
         "source_url": "https://arxiv.org/html/2605.06713v1",
-        "item_count": 21,
+        "item_count": 23,
         "recent_items": [
-         {
-          "title": "ToolHazard scales adversarial testing for LLM agent tool-use security",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://arxiv.org/abs/2608.11878"
-         },
-         {
-          "title": "OpenAI's GPT-6 Astra is first model to cross Critical cyber threshold",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://openai.com/index/safety-overview-gpt-6-astra/"
-         },
          {
           "title": "Google ships Gemini 3.8 Flash plus a defenders-only Cyber variant",
           "kind": "NEW_FRONTIER",
@@ -27192,6 +28029,16 @@ const STATE = {
           "title": "Nvidia Open Agent Safety Platform: out-of-band 'Sentry' watchdog on BlueField-4",
           "kind": "BROAD_SCAN",
           "source_url": "https://mixed-news.com/en/nvidia-open-agent-safety-platform-sentry-bluefield/"
+         },
+         {
+          "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/"
+         },
+         {
+          "title": "Nvidia commits $250M of compute to UK agentic-AI safety research",
+          "kind": "BROAD_SCAN",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
          }
         ]
        }
@@ -27304,23 +28151,8 @@ const STATE = {
         },
         "example": "Cursor; Cognition/Devin",
         "source_url": "https://www.cursor.com/",
-        "item_count": 17,
+        "item_count": 20,
         "recent_items": [
-         {
-          "title": "Anthropic ships Claude Fable 5.1 and trusted-access Mythos 5.1",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
-         },
-         {
-          "title": "Cursor Projects debuts coordinator agent dispatching cloud subagent fleets",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://cursor.com/blog/projects"
-         },
-         {
-          "title": "OpenAI Agents API adds hosted computer use, multi-agent and MCP Events",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://www.infoq.com/news/2026/10/openai-devday-2026/"
-         },
          {
           "title": "Reflection AI debuts Beam: 501B open-weight MoE, 23B active",
           "kind": "NEW_FRONTIER",
@@ -27330,6 +28162,21 @@ const STATE = {
           "title": "Claude Code 'mods': TypeScript middleware that rewrites the agent loop",
           "kind": "NEW_SUB_IDEA",
           "source_url": "https://aiweekly.co/alerts/anthropic-launches-claude-code-mods-typescript-agent-hooks"
+         },
+         {
+          "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/"
+         },
+         {
+          "title": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+         },
+         {
+          "title": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.anthropic.com/engineering/redesigning-source-control"
          }
         ]
        },
@@ -27346,13 +28193,8 @@ const STATE = {
         },
         "example": "Model Context Protocol; Agent Skills",
         "source_url": "https://modelcontextprotocol.io/",
-        "item_count": 21,
+        "item_count": 22,
         "recent_items": [
-         {
-          "title": "ToolHazard scales adversarial testing for LLM agent tool-use security",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://arxiv.org/abs/2608.11878"
-         },
          {
           "title": "Agentic AI Foundation launches first vendor-neutral MCP certification (MCPA)",
           "kind": "NEW_SUB_IDEA",
@@ -27372,6 +28214,11 @@ const STATE = {
           "title": "Claude Code 'mods': TypeScript middleware that rewrites the agent loop",
           "kind": "NEW_SUB_IDEA",
           "source_url": "https://aiweekly.co/alerts/anthropic-launches-claude-code-mods-typescript-agent-hooks"
+         },
+         {
+          "title": "Sierra and Meta launch open Personal Agent Protocol with retail backers",
+          "kind": "BROAD_SCAN",
+          "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
          }
         ]
        },
@@ -27388,18 +28235,8 @@ const STATE = {
         },
         "example": "Conductor; LangGraph; CrewAI; Microsoft AutoGen",
         "source_url": "https://www.langchain.com/",
-        "item_count": 17,
+        "item_count": 19,
         "recent_items": [
-         {
-          "title": "Sakana AI — Tokyo frontier lab behind the Fugu orchestrator models",
-          "kind": "NEW_WATCH",
-          "source_url": "https://en.wikipedia.org/wiki/Sakana_AI"
-         },
-         {
-          "title": "Cursor Projects debuts coordinator agent dispatching cloud subagent fleets",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://cursor.com/blog/projects"
-         },
          {
           "title": "OpenAI Agents API adds hosted computer use, multi-agent and MCP Events",
           "kind": "NEW_FRONTIER",
@@ -27414,6 +28251,16 @@ const STATE = {
           "title": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context",
           "kind": "NEW_FRONTIER",
           "source_url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+         },
+         {
+          "title": "'Decision models': Cloudflare's open-weight Clef scores fixed choices, not text",
+          "kind": "NEW_SUB_IDEA",
+          "source_url": "https://infoq.com/news/2026/10/clef-decision-models"
+         },
+         {
+          "title": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.anthropic.com/engineering/redesigning-source-control"
          }
         ]
        },
@@ -27467,7 +28314,7 @@ const STATE = {
         },
         "example": "Coinbase MCP + x402",
         "source_url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/",
-        "item_count": 4,
+        "item_count": 6,
         "recent_items": [
          {
           "title": "Coinbase ships MCP server for agentic trading and x402 payments",
@@ -27483,6 +28330,16 @@ const STATE = {
           "title": "AI capex boom collides with a compute-utilization reality check",
           "kind": "TRENDING_IDEA",
           "source_url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/"
+         },
+         {
+          "title": "Sierra and Meta launch open Personal Agent Protocol with retail backers",
+          "kind": "BROAD_SCAN",
+          "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+         },
+         {
+          "title": "Sierra: agentic-CX firm co-leading the Personal Agent Protocol",
+          "kind": "NEW_WATCH",
+          "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
          }
         ]
        }
@@ -27506,23 +28363,8 @@ const STATE = {
         },
         "example": "Claude Opus/Fable; GPT-5.5; Gemini 3.5",
         "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-        "item_count": 22,
+        "item_count": 25,
         "recent_items": [
-         {
-          "title": "Anthropic launches Claude Opus 5.5 at 40% lower cost, faster output",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/"
-         },
-         {
-          "title": "Willison, Zvi, and others flag a fresh AI price war as Claude Opus 5.5, GPT-6 Sol/Luna ship together",
-          "kind": "TRENDING_IDEA",
-          "source_url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
-         },
-         {
-          "title": "OpenAI GPT-6.1 Sol: near-Astra quality at one-fifth the price",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-         },
          {
           "title": "Mistral Large 4: open-weight 1.05T MoE, 49B active, 1M context",
           "kind": "NEW_FRONTIER",
@@ -27532,6 +28374,21 @@ const STATE = {
           "title": "Claude Haiku 5.5 ships at $0.10/$0.50 per M tokens with 1M context",
           "kind": "NEW_FRONTIER",
           "source_url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/"
+         },
+         {
+          "title": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+         },
+         {
+          "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/"
+         },
+         {
+          "title": "Karpathy: LLM capability perception is now a steep 'funnel'",
+          "kind": "TRENDING_IDEA",
+          "source_url": "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
          }
         ]
        },
@@ -27548,13 +28405,8 @@ const STATE = {
         },
         "example": "MiniMax M3; DeepSeek; MolmoAct2",
         "source_url": "https://huggingface.co/",
-        "item_count": 23,
+        "item_count": 24,
         "recent_items": [
-         {
-          "title": "Base Labs launches open-weight AI safety partnership with HF and Goodfire",
-          "kind": "BROAD_SCAN",
-          "source_url": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/"
-         },
          {
           "title": "Shanghai AI Laboratory — publisher of Atria Dawn Preview / InternLM",
           "kind": "NEW_WATCH",
@@ -27574,6 +28426,11 @@ const STATE = {
           "title": "Reflection AI: US open-weight frontier lab (Beam)",
           "kind": "NEW_WATCH",
           "source_url": "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+         },
+         {
+          "title": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
          }
         ]
        },
@@ -27643,12 +28500,17 @@ const STATE = {
         },
         "example": "Sierra; Decagon",
         "source_url": "https://sierra.ai/",
-        "item_count": 1,
+        "item_count": 2,
         "recent_items": [
          {
           "title": "Salesforce launches pay-per-resolution AI customer-service agent",
           "kind": "NEW_SUB_IDEA",
           "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/"
+         },
+         {
+          "title": "Sierra: agentic-CX firm co-leading the Personal Agent Protocol",
+          "kind": "NEW_WATCH",
+          "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
          }
         ]
        },
@@ -27842,18 +28704,8 @@ const STATE = {
         },
         "example": "Waymo; Tesla; Chinese operators",
         "source_url": "https://waymo.com/",
-        "item_count": 21,
+        "item_count": 23,
         "recent_items": [
-         {
-          "title": "Waymo, Nihon Kotsu, GO to launch Tokyo robotaxi service in 2027",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/"
-         },
-         {
-          "title": "Tesla shows driverless Cybercab in China while still lacking an operating permit",
-          "kind": "UPDATED_FACT",
-          "source_url": "https://www.techtimes.com/articles/327677/20260917/tesla-brings-driverless-cybercab-china-no-chinese-permit-operate.htm"
-         },
          {
           "title": "Pony.ai and Verne start fully driverless robotaxi rides in Zagreb",
           "kind": "NEW_FRONTIER",
@@ -27868,6 +28720,16 @@ const STATE = {
           "title": "Tesla registers 150 more Cybercabs in Texas; total reaches 319",
           "kind": "UPDATED_FACT",
           "source_url": "https://eletric-vehicles.com/tesla/tesla-adds-150-cybercabs-in-texas-nearly-doubling-its-registered-count"
+         },
+         {
+          "title": "Uber and Pony.ai to start Gen-7 robotaxi testing in London",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+         },
+         {
+          "title": "Pony.ai: Chinese robotaxi operator expanding into Europe via Uber",
+          "kind": "NEW_WATCH",
+          "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
          }
         ]
        },
@@ -28279,18 +29141,8 @@ const STATE = {
         },
         "example": "mRNA-4157/V940 + Keytruda",
         "source_url": "https://www.merck.com/news/",
-        "item_count": 8,
+        "item_count": 10,
         "recent_items": [
-         {
-          "title": "Moderna doses first patient with mRNA-4200 shared-antigen cancer therapy",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://www.biospace.com/press-releases/moderna-announces-first-participant-dosed-in-phase-1-clinical-trial-evaluating-investigational-tumor-targeted-cancer-antigen-therapy-in-solid-tumors"
-         },
-         {
-          "title": "mRNA melanoma vaccine sustains 49% recurrence-risk cut at 5-year mark",
-          "kind": "UPDATED_FACT",
-          "source_url": "https://ascopubs.org/doi/10.1200/JCO-26-00835"
-         },
          {
           "title": "First mRNA flu vaccine (Moderna mRNA-1010) awaits FDA decision Aug 5",
           "kind": "NEW_FRONTIER",
@@ -28305,6 +29157,16 @@ const STATE = {
           "title": "First positive Phase 3 for an individualized mRNA cancer vaccine (melanoma)",
           "kind": "UPDATED_FACT",
           "source_url": "https://news.modernatx.com/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-plus-keytruda-met-endpoints-of-rfs-and-dmfs-in-melanoma"
+         },
+         {
+          "title": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14%",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines"
+         },
+         {
+          "title": "BioNTech's individualized cancer-vaccine program narrows to pancreatic Ph2",
+          "kind": "NEW_WATCH",
+          "source_url": "https://eu.36kr.com/en/p/3973977346126087"
          }
         ]
        },
@@ -28530,13 +29392,8 @@ const STATE = {
         },
         "example": "Neuralink N1 (1,024 threads)",
         "source_url": "https://www.nature.com/articles/d41586-025-03849-0",
-        "item_count": 16,
+        "item_count": 17,
         "recent_items": [
-         {
-          "title": "Precision Neuroscience closes $250M Series D at $1B+ valuation",
-          "kind": "NEW_WATCH",
-          "source_url": "https://www.globenewswire.com/news-release/2026/09/24/3368254/0/en/precision-neuroscience-closes-oversubscribed-250m-series-d-led-by-pershing-square-inc-the-ackman-oxman-institute-and-a-leading-life-sciences-investment-fund.html"
-         },
          {
           "title": "Paradromics Connexus: 4+ years of stable neural recording in sheep",
           "kind": "UPDATED_FACT",
@@ -28556,6 +29413,11 @@ const STATE = {
           "title": "Karl Deisseroth (Stanford/HHMI): 2026 Nobel laureate for optogenetics",
           "kind": "NEW_PERSON",
           "source_url": "https://www.nobelprize.org/prizes/medicine/2026/prize-announcement/"
+         },
+         {
+          "title": "Paradromics Connexus: first human implant in Connect-One study (backfill)",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
          }
         ]
        },
@@ -28614,7 +29476,7 @@ const STATE = {
         },
         "example": "Paradromics FDA speech trial",
         "source_url": "https://www.statnews.com/2025/11/20/fda-approves-paradromics-bci-trial-for-speech-restoration/",
-        "item_count": 5,
+        "item_count": 6,
         "recent_items": [
          {
           "title": "Independent at-home speech+cursor BCI for ALS patient (UC Davis, Nature Medicine)",
@@ -28635,6 +29497,11 @@ const STATE = {
           "title": "Paradromics Connexus: 4+ years of stable neural recording in sheep",
           "kind": "UPDATED_FACT",
           "source_url": "https://www.biospace.com/press-releases/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone"
+         },
+         {
+          "title": "Paradromics Connexus: first human implant in Connect-One study (backfill)",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
          }
         ]
        }
@@ -29354,7 +30221,7 @@ const STATE = {
         },
         "example": "Fervo Cape Station",
         "source_url": "https://fervoenergy.com/fervo-secures-new-financing-to-accelerate-development/",
-        "item_count": 3,
+        "item_count": 4,
         "recent_items": [
          {
           "title": "PNNL, Nvidia & Fervo to build a public AI 'digital twin' of geothermal reservoirs",
@@ -29370,6 +30237,11 @@ const STATE = {
           "title": "Fervo signs record 396 MW enhanced-geothermal PPA with Google",
           "kind": "NEW_FRONTIER",
           "source_url": "https://ir.fervoenergy.com/news-releases/news-release-details/fervo-energy-and-google-sign-396-mw-ppa"
+         },
+         {
+          "title": "Fervo's Cape Station first 33 MW GeoBlock reaches commercial operation",
+          "kind": "BROAD_SCAN",
+          "source_url": "https://www.energyglobal.com/other-renewables/05102026/fervo-energy-declares-commercial-operation-at-cape-station-ahead-of-schedule/amp/"
          }
         ]
        }
@@ -29455,18 +30327,8 @@ const STATE = {
         },
         "example": "Starship V3 flight test",
         "source_url": "https://spaceflightnow.com/2026/05/21/live-coverage-spacex-to-launch-first-starship-version-3-rocket/",
-        "item_count": 12,
+        "item_count": 14,
         "recent_items": [
-         {
-          "title": "Stoke Space raises $1B Series E, unveils 15-ton Nova Block 2",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://www.stokespace.com/news/stoke-space-series-e"
-         },
-         {
-          "title": "Starship Flight 14 slips again, now no earlier than September 22",
-          "kind": "UPDATED_FACT",
-          "source_url": "https://en.wikipedia.org/wiki/Starship_flight_test_14"
-         },
          {
           "title": "Starship Flight 14 slips again to Sep 28, first attempted orbital insertion",
           "kind": "UPDATED_FACT",
@@ -29481,6 +30343,16 @@ const STATE = {
           "title": "Blue Origin eyes eventual IPO after first ~$10B outside round",
           "kind": "NEW_WATCH",
           "source_url": "https://www.manilatimes.net/2026/10/09/business/foreign-business/blue-origin-to-pursue-ipo-in-the-future-bezos/2442064"
+         },
+         {
+          "title": "Starship Flight 15 to attempt first ship tower catch ~late November",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+         },
+         {
+          "title": "Blue Origin targets December for New Glenn return to flight",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://newspaceeconomy.ca/2026/10/09/what-does-blue-origins-december-2026-target-mean-for-new-glenns-return-to-flight/"
          }
         ]
        },
@@ -29497,18 +30369,8 @@ const STATE = {
         },
         "example": "Falcon 9 B1067 35th flight",
         "source_url": "https://spaceflightnow.com/2026/06/07/live-coverage-spacex-to-launch-falcon-9-rocket-booster-on-record-breaking-35th-flight/",
-        "item_count": 7,
+        "item_count": 9,
         "recent_items": [
-         {
-          "title": "SpaceX completes IPO; SPCX debuts on Nasdaq at a ~$2.1T valuation",
-          "kind": "UPDATED_FACT",
-          "source_url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf"
-         },
-         {
-          "title": "Rocket Lab completes full-duration hot fire of Neutron's AVac engine",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://www.space.com/space-exploration/watch-archimedes-burn-rocket-lab-fires-up-engine-for-its-powerful-next-gen-neutron-launcher-video"
-         },
          {
           "title": "Blue Origin pins New Glenn pad explosion on a BE-4 oxygen valve",
           "kind": "UPDATED_FACT",
@@ -29523,6 +30385,16 @@ const STATE = {
           "title": "SpaceX launches two Falcon 9 missions 38 minutes apart",
           "kind": "UPDATED_FACT",
           "source_url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-breaks-record-launch-doubleheader-ussf-366-globalstar-2r"
+         },
+         {
+          "title": "Rocket Lab pushes Neutron's first launch to 2027",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+         },
+         {
+          "title": "Falcon 9 booster B1088 flies its 20th mission",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
          }
         ]
        },
@@ -29537,7 +30409,7 @@ const STATE = {
         },
         "example": "Starship propellant-transfer demo",
         "source_url": "https://en.wikipedia.org/wiki/Starship_Propellant_Transfer_Demonstration",
-        "item_count": 3,
+        "item_count": 4,
         "recent_items": [
          {
           "title": "Rocket Lab launches LOXSAT for cryogenic depot refueling demo",
@@ -29553,6 +30425,11 @@ const STATE = {
           "title": "AI 'slop' is outpacing the gatekeeping meant to catch it",
           "kind": "TRENDING_IDEA",
           "source_url": "https://arxiv.org/abs/2602.16763"
+         },
+         {
+          "title": "Starship Flight 15 to attempt first ship tower catch ~late November",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
          }
         ]
        }
@@ -30292,7 +31169,7 @@ const STATE = {
         },
         "example": "Google TPU v7; AWS Trainium3",
         "source_url": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html",
-        "item_count": 4,
+        "item_count": 5,
         "recent_items": [
          {
           "title": "Hot Chips 2026 program: Google's 8th-gen TPU and OpenAI's first chip talk",
@@ -30308,6 +31185,11 @@ const STATE = {
           "title": "Google launches 4 TPUs to orbit on Project Suncatcher prototype satellite",
           "kind": "NEW_FRONTIER",
           "source_url": "https://convergedigest.com/google-project-suncatcher-orbital-ai-data-center-tpu/"
+         },
+         {
+          "title": "Microsoft unveils Maia 300 as its primary in-house inference chip",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300"
          }
         ]
        },
@@ -30324,13 +31206,8 @@ const STATE = {
         },
         "example": "Etched Sohu; Groq LPU",
         "source_url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
-        "item_count": 8,
+        "item_count": 9,
         "recent_items": [
-         {
-          "title": "AMD+Cerebras disaggregated inference: up to 5x tokens/sec/watt",
-          "kind": "NEW_FRONTIER",
-          "source_url": "https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution"
-         },
          {
           "title": "Taalas — 'etch the model into silicon' inference chips (AMD-acquired)",
           "kind": "NEW_WATCH",
@@ -30350,6 +31227,11 @@ const STATE = {
           "title": "Gimlet Labs: multi-silicon inference cloud buying 100 MW of Cerebras",
           "kind": "NEW_WATCH",
           "source_url": "https://qz.com/cerebras-gimlet-labs-ai-chips-cloud-inference-092826"
+         },
+         {
+          "title": "Microsoft unveils Maia 300 as its primary in-house inference chip",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300"
          }
         ]
        }
@@ -30455,7 +31337,7 @@ const STATE = {
         },
         "example": "HBM4 (SK Hynix samples)",
         "source_url": "https://epoch.ai/data-insights/ai-chip-supply-chain-constraints",
-        "item_count": 4,
+        "item_count": 5,
         "recent_items": [
          {
           "title": "SK hynix ships 12-layer HBM4E samples ahead of schedule",
@@ -30476,6 +31358,11 @@ const STATE = {
           "title": "AMD details MI455X (432GB HBM4) and 2.9-exaflop Helios rack at Hot Chips",
           "kind": "NEW_FRONTIER",
           "source_url": "https://hc2026.hotchips.org/assets/program/conference/day1/FINAL_AMD%20Instinct%20MI400%20GPU%20Architecture_HotChips.pdf"
+         },
+         {
+          "title": "Microsoft unveils Maia 300 as its primary in-house inference chip",
+          "kind": "NEW_FRONTIER",
+          "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300"
          }
         ]
        },
@@ -30720,13 +31607,8 @@ const STATE = {
         },
         "example": "Figure 03 at BMW Spartanburg",
         "source_url": "https://newmarketpitch.com/blogs/news/humanoid-robotics-optimus-deployment-tracker",
-        "item_count": 13,
+        "item_count": 14,
         "recent_items": [
-         {
-          "title": "BYD to debut 'Xiao Di,' a service humanoid, at dealer showrooms",
-          "kind": "NEW_SUB_IDEA",
-          "source_url": "https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/"
-         },
          {
           "title": "Unitree IPO: $904M raise, ~$47B day-one valuation on Shanghai STAR",
           "kind": "UPDATED_FACT",
@@ -30746,6 +31628,11 @@ const STATE = {
           "title": "Rohit Prasad, ex-Amazon AI chief, becomes Boston Dynamics CEO",
           "kind": "NEW_PERSON",
           "source_url": "https://gizmodo.com/amid-its-big-humanoid-robot-rollout-an-ex-amazon-ai-chief-will-now-lead-boston-dynamics-2000822625"
+         },
+         {
+          "title": "XPeng: IRON humanoid goes on sale H2 2027 after in-store pilots",
+          "kind": "UPDATED_FACT",
+          "source_url": "https://www.forbes.com/sites/janeho/2026/10/12/forbes-global-ceo-conference-2026-chinese-ev-maker-xpeng-to-launch-humanoid-robots/"
          }
         ]
        },
@@ -32929,6 +33816,66 @@ const COVERAGE_HISTORY = [
       "gap": 0,
       "proposed": 0
     }
+  },
+  {
+    "date": "2026-10-16",
+    "as_of": "2026-10-16",
+    "domains": {
+      "AI": {
+        "coverage": 1.0,
+        "active": 41,
+        "gap": 0,
+        "proposed": 0,
+        "total": 41
+      },
+      "BIO": {
+        "coverage": 1.0,
+        "active": 25,
+        "gap": 0,
+        "proposed": 0,
+        "total": 25
+      },
+      "ENERGY": {
+        "coverage": 1.0,
+        "active": 15,
+        "gap": 0,
+        "proposed": 0,
+        "total": 15
+      },
+      "SPACE": {
+        "coverage": 1.0,
+        "active": 10,
+        "gap": 0,
+        "proposed": 0,
+        "total": 10
+      },
+      "QUANTUM": {
+        "coverage": 1.0,
+        "active": 12,
+        "gap": 0,
+        "proposed": 0,
+        "total": 12
+      },
+      "HARDWARE": {
+        "coverage": 1.0,
+        "active": 13,
+        "gap": 0,
+        "proposed": 0,
+        "total": 13
+      },
+      "ROBOTICS": {
+        "coverage": 1.0,
+        "active": 13,
+        "gap": 0,
+        "proposed": 0,
+        "total": 13
+      }
+    },
+    "totals": {
+      "active": 129,
+      "gap": 0,
+      "proposed": 0
+    }
   }
 ];
 // "new this week" = touched in the most recent weekly_history entry
@@ -33720,6 +34667,6 @@ renderTechTree();
 window.addEventListener('hashchange', applyUrlState);
 applyUrlState();
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Tech Breakthrough Ideas", "url": "https://zashraf1337.github.io/big-ideas/", "description": "Weekly tracker of AI, bio, energy, space, quantum & robotics breakthroughs — the people, labs, startups & open gaps behind each, for founders & investors.", "inLanguage": "en", "dateModified": "2026-10-09", "author": {"@type": "Person", "name": "Zubair Ashraf", "sameAs": ["https://ca.linkedin.com/in/zubairashraf", "https://x.com/zashraf1337"]}}, {"@type": "ItemList", "name": "Major technology breakthroughs tracked", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Transformers / LLMs / coding agents", "url": "https://zashraf1337.github.io/big-ideas/b/transformers-llms-coding-agents/", "description": "Transformers and LLMs have enabled agentic AI systems that autonomously solve software engineering tasks, with frontier models now matching or exceeding professional developer…"}, {"@type": "ListItem", "position": 2, "name": "RLHF + reasoning models (test-time compute scaling)", "url": "https://zashraf1337.github.io/big-ideas/b/rlhf-reasoning-models-test-time-compute-scaling/", "description": "Reasoning models with test-time compute scaling have fundamentally shifted AI capability distribution from training time to inference time, enabling smaller models to solve…"}, {"@type": "ListItem", "position": 3, "name": "Diffusion models (image + video generation)", "url": "https://zashraf1337.github.io/big-ideas/b/diffusion-models-image-video-generation/", "description": "Diffusion transformers have democratized high-quality image and video generation, enabling consumer-accessible creative tools that generate photorealistic content at scale…"}, {"@type": "ListItem", "position": 4, "name": "AlphaFold + computational protein design", "url": "https://zashraf1337.github.io/big-ideas/b/alphafold-computational-protein-design/", "description": "AlphaFold and computational design have accelerated protein engineering from random selection to intentional computational design, enabling discovery of novel therapeutics…"}, {"@type": "ListItem", "position": 5, "name": "mRNA vaccines + LNP delivery", "url": "https://zashraf1337.github.io/big-ideas/b/mrna-vaccines-lnp-delivery/", "description": "mRNA vaccines with LNP delivery have moved from basic science proof-of-concept (Karikó/Weissman 2005) to >13 billion COVID-19 doses and now expanding into personalized cancer…"}, {"@type": "ListItem", "position": 6, "name": "GLP-1 agonists", "url": "https://zashraf1337.github.io/big-ideas/b/glp-1-agonists/", "description": "GLP-1 agonists have revolutionized type 2 diabetes and obesity treatment, shifting paradigm from symptomatic glycemic control to weight loss-driven metabolic improvement, with…"}, {"@type": "ListItem", "position": 7, "name": "CRISPR therapies (Casgevy + base/prime editing)", "url": "https://zashraf1337.github.io/big-ideas/b/crispr-therapies-casgevy-base-prime-editing/", "description": "Casgevy approval (December 2023) marked first FDA-approved CRISPR therapy; 23+ clinical trials now active with base/prime editing showing efficacy in rare genetic diseases and…"}, {"@type": "ListItem", "position": 8, "name": "Quantum error correction (logical qubits below threshold)", "url": "https://zashraf1337.github.io/big-ideas/b/quantum-error-correction-logical-qubits-below-threshold/", "description": "Crossed theoretical threshold for scalable quantum computing; demonstrated exponential error suppression on real hardware for the first time, moving from physics milestone to…"}, {"@type": "ListItem", "position": 9, "name": "Reusable rockets (Falcon 9 + Starship catch)", "url": "https://zashraf1337.github.io/big-ideas/b/reusable-rockets-falcon-9-starship-catch/", "description": "Demonstrated booster reusability at scale (Falcon 9) and tower-catch recovery capability for heavy-lift (Starship/Mechazilla), reducing per-flight costs by 50%+ and enabling…"}, {"@type": "ListItem", "position": 10, "name": "Renewables + battery cost collapse", "url": "https://zashraf1337.github.io/big-ideas/b/renewables-battery-cost-collapse/", "description": "Battery costs collapsed 80% since 2010 ($1,200 to $108/kWh); solar & wind LCOE below fossil gas; renewable capacity additions accelerating; grid storage emerging as competitive…"}, {"@type": "ListItem", "position": 11, "name": "Self-driving cars / robotaxis", "url": "https://zashraf1337.github.io/big-ideas/b/self-driving-cars-robotaxis/", "description": "Robotaxis crossed from pilot to scaled commercial reality between 2023–2025 — Waymo passing 4M paid driverless trips with peer-reviewed safety data, Tesla launching FSD-based…"}, {"@type": "ListItem", "position": 12, "name": "Humanoid robotics", "url": "https://zashraf1337.github.io/big-ideas/b/humanoid-robotics/", "description": "Humanoid robotics moved from research demos to low-volume industrial production between late 2024 and May 2026 — Tesla and Boston Dynamics in factories, Figure on the BMW line…"}, {"@type": "ListItem", "position": 13, "name": "Fusion energy", "url": "https://zashraf1337.github.io/big-ideas/b/fusion-energy/", "description": "Fusion went from public-science promise to active commercial track between 2022 and 2026: NIF demonstrated repeatable net energy gain, CFS broke ground on SPARC with HTS…"}, {"@type": "ListItem", "position": 14, "name": "Brain-computer interfaces", "url": "https://zashraf1337.github.io/big-ideas/b/brain-computer-interfaces/", "description": "BCIs crossed from lab to early commercial reality between 2024 and 2026: Neuralink put 5+ patients on the Telepathy implant, Precision Neuroscience took home the first…"}, {"@type": "ListItem", "position": 15, "name": "AI accelerators / advanced compute", "url": "https://zashraf1337.github.io/big-ideas/b/ai-accelerators-advanced-compute/", "description": "GPU-dominated AI compute fractured into specialized lanes between 2024 and 2026 — wafer-scale (Cerebras), inference ASICs (Groq, Etched), photonic interconnect (Lightmatter)…"}, {"@type": "ListItem", "position": 16, "name": "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration)", "url": "https://zashraf1337.github.io/big-ideas/b/ai-dev-ecosystem-agent-primitives-mcp-skills-agents-orchestration/", "description": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise…"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Tech Breakthrough Ideas", "url": "https://zashraf1337.github.io/big-ideas/", "description": "Weekly tracker of AI, bio, energy, space, quantum & robotics breakthroughs — the people, labs, startups & open gaps behind each, for founders & investors.", "inLanguage": "en", "dateModified": "2026-10-16", "author": {"@type": "Person", "name": "Zubair Ashraf", "sameAs": ["https://ca.linkedin.com/in/zubairashraf", "https://x.com/zashraf1337"]}}, {"@type": "ItemList", "name": "Major technology breakthroughs tracked", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Transformers / LLMs / coding agents", "url": "https://zashraf1337.github.io/big-ideas/b/transformers-llms-coding-agents/", "description": "Transformers and LLMs have enabled agentic AI systems that autonomously solve software engineering tasks, with frontier models now matching or exceeding professional developer…"}, {"@type": "ListItem", "position": 2, "name": "RLHF + reasoning models (test-time compute scaling)", "url": "https://zashraf1337.github.io/big-ideas/b/rlhf-reasoning-models-test-time-compute-scaling/", "description": "Reasoning models with test-time compute scaling have fundamentally shifted AI capability distribution from training time to inference time, enabling smaller models to solve…"}, {"@type": "ListItem", "position": 3, "name": "Diffusion models (image + video generation)", "url": "https://zashraf1337.github.io/big-ideas/b/diffusion-models-image-video-generation/", "description": "Diffusion transformers have democratized high-quality image and video generation, enabling consumer-accessible creative tools that generate photorealistic content at scale…"}, {"@type": "ListItem", "position": 4, "name": "AlphaFold + computational protein design", "url": "https://zashraf1337.github.io/big-ideas/b/alphafold-computational-protein-design/", "description": "AlphaFold and computational design have accelerated protein engineering from random selection to intentional computational design, enabling discovery of novel therapeutics…"}, {"@type": "ListItem", "position": 5, "name": "mRNA vaccines + LNP delivery", "url": "https://zashraf1337.github.io/big-ideas/b/mrna-vaccines-lnp-delivery/", "description": "mRNA vaccines with LNP delivery have moved from basic science proof-of-concept (Karikó/Weissman 2005) to >13 billion COVID-19 doses and now expanding into personalized cancer…"}, {"@type": "ListItem", "position": 6, "name": "GLP-1 agonists", "url": "https://zashraf1337.github.io/big-ideas/b/glp-1-agonists/", "description": "GLP-1 agonists have revolutionized type 2 diabetes and obesity treatment, shifting paradigm from symptomatic glycemic control to weight loss-driven metabolic improvement, with…"}, {"@type": "ListItem", "position": 7, "name": "CRISPR therapies (Casgevy + base/prime editing)", "url": "https://zashraf1337.github.io/big-ideas/b/crispr-therapies-casgevy-base-prime-editing/", "description": "Casgevy approval (December 2023) marked first FDA-approved CRISPR therapy; 23+ clinical trials now active with base/prime editing showing efficacy in rare genetic diseases and…"}, {"@type": "ListItem", "position": 8, "name": "Quantum error correction (logical qubits below threshold)", "url": "https://zashraf1337.github.io/big-ideas/b/quantum-error-correction-logical-qubits-below-threshold/", "description": "Crossed theoretical threshold for scalable quantum computing; demonstrated exponential error suppression on real hardware for the first time, moving from physics milestone to…"}, {"@type": "ListItem", "position": 9, "name": "Reusable rockets (Falcon 9 + Starship catch)", "url": "https://zashraf1337.github.io/big-ideas/b/reusable-rockets-falcon-9-starship-catch/", "description": "Demonstrated booster reusability at scale (Falcon 9) and tower-catch recovery capability for heavy-lift (Starship/Mechazilla), reducing per-flight costs by 50%+ and enabling…"}, {"@type": "ListItem", "position": 10, "name": "Renewables + battery cost collapse", "url": "https://zashraf1337.github.io/big-ideas/b/renewables-battery-cost-collapse/", "description": "Battery costs collapsed 80% since 2010 ($1,200 to $108/kWh); solar & wind LCOE below fossil gas; renewable capacity additions accelerating; grid storage emerging as competitive…"}, {"@type": "ListItem", "position": 11, "name": "Self-driving cars / robotaxis", "url": "https://zashraf1337.github.io/big-ideas/b/self-driving-cars-robotaxis/", "description": "Robotaxis crossed from pilot to scaled commercial reality between 2023–2025 — Waymo passing 4M paid driverless trips with peer-reviewed safety data, Tesla launching FSD-based…"}, {"@type": "ListItem", "position": 12, "name": "Humanoid robotics", "url": "https://zashraf1337.github.io/big-ideas/b/humanoid-robotics/", "description": "Humanoid robotics moved from research demos to low-volume industrial production between late 2024 and May 2026 — Tesla and Boston Dynamics in factories, Figure on the BMW line…"}, {"@type": "ListItem", "position": 13, "name": "Fusion energy", "url": "https://zashraf1337.github.io/big-ideas/b/fusion-energy/", "description": "Fusion went from public-science promise to active commercial track between 2022 and 2026: NIF demonstrated repeatable net energy gain, CFS broke ground on SPARC with HTS…"}, {"@type": "ListItem", "position": 14, "name": "Brain-computer interfaces", "url": "https://zashraf1337.github.io/big-ideas/b/brain-computer-interfaces/", "description": "BCIs crossed from lab to early commercial reality between 2024 and 2026: Neuralink put 5+ patients on the Telepathy implant, Precision Neuroscience took home the first…"}, {"@type": "ListItem", "position": 15, "name": "AI accelerators / advanced compute", "url": "https://zashraf1337.github.io/big-ideas/b/ai-accelerators-advanced-compute/", "description": "GPU-dominated AI compute fractured into specialized lanes between 2024 and 2026 — wafer-scale (Cerebras), inference ASICs (Groq, Etched), photonic interconnect (Lightmatter)…"}, {"@type": "ListItem", "position": 16, "name": "AI dev ecosystem & agent primitives (MCP, skills, agents, orchestration)", "url": "https://zashraf1337.github.io/big-ideas/b/ai-dev-ecosystem-agent-primitives-mcp-skills-agents-orchestration/", "description": "In roughly 18 months the AI-agent stack produced a set of durable, fast-standardizing developer primitives — MCP for connectivity, Agent Skills for portable expertise…"}]}]}</script>
 </body>
 </html>

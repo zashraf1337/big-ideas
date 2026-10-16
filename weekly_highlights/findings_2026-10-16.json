@@ -1,0 +1,555 @@
+{
+ "week_ending": "2026-10-16",
+ "summary": "A model-heavy week: Meta shipped Muse Wonder, its first frontier-class model, Google opened Gemini 4 Argon to developers, and Microsoft unveiled Maia 300 as its main in-house inference chip at OCP. Anthropic disclosed it replaced Git (Scion/Antique) after merges hit 30k/day, while Karpathy's 'capability funnel' post framed how unevenly frontier ability is felt. Space news was mostly schedule slips (Neutron to 2027, New Glenn targeting December) plus a planned Starship ship-catch on Flight 15; bio was quiet apart from a reported FNIH/NCI $200M cancer-vaccine initiative. Verification: 25 checked, 9 passed, 12 fixed, 4 dropped; 3 entities added.",
+ "highlights": [
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens",
+   "detail": "Oct 12, 2026: Meta Superintelligence Labs released Muse Wonder (API, $4/$20 per M tokens) and Muse Wonder Full (Muse Code subscribers), claiming parity with Fable 5.1 and GPT-6 Astra and leading on its MemoryBench 'active memory' eval (self-reported).",
+   "source_urls": [
+    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__data_memory_evaluation_foundations__memory_continual_learning"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "claim": "Meta ships Muse Wonder, its first frontier-class model, at $4/$20 per M tokens \u2014 Oct 12, 2026: Meta Superintelligence Labs released Muse Wonder (API, $4/$20 per M tokens) and Muse Wonder Full (Muse Code subscribers), claiming parity with Fable 5.1 and GPT-6 Astra and leading on its MemoryBench 'active memory' eval (self-reported)."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December",
+   "detail": "Oct 13, 2026: Gemini 4 Argon, Google's long-horizon reasoning model, became broadly available via the Gemini API, AI Studio and Antigravity (Ultra tier) plus the Gemini app for Pro/Ultra subscribers; introductory pricing is $2/$10 per M tokens through Nov 30, doubling in December. A less-restricted cyber variant requires separate approval for vetted defenders.",
+   "source_urls": [
+    "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/",
+    "https://letsdatascience.com/news/google-releases-gemini-4-argon-for-scientific-computing-644a49ff"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy",
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense",
+     "ai__agents_developer_ecosystem__coding_agents"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/",
+    "claim": "Google opens Gemini 4 Argon to developers at $2/$10; prices double in December \u2014 Oct 13, 2026: Gemini 4 Argon, Google's long-horizon reasoning model, became broadly available via the Gemini API, AI Studio and Antigravity (Ultra tier) plus the Gemini app for Pro/Ultra subscribers; introductory pricing is $2/$10 per M tokens through Nov 30, doubling in December. A less-restricted cyber variant requires separate approval for vetted defenders."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "transformers_llms",
+   "title": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL",
+   "detail": "Oct 8, 2026 (backfill, one day before window): JetBrains released Mellum2.1 under Apache-2.0, a 12B-parameter (~2.5B active) MoE for coding agents, post-trained with RL in real repo environments using shell/file-edit tools and test-based rewards; 47.0% SWE-bench Verified (self-reported).",
+   "source_urls": [
+    "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__frontier_platforms_applied_ai_economics__open_weight_models",
+     "ai__reasoning_test_time_compute__rl_with_verifiable_rewards_self_play"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
+    "claim": "JetBrains open-sources Mellum2.1, a 12B MoE coding-agent model trained with RL \u2014 Oct 8, 2026 (backfill, one day before window): JetBrains released Mellum2.1 under Apache-2.0, a 12B-parameter (~2.5B active) MoE for coding agents, post-trained with RL in real repo environments using shell/file-edit tools and test-based rewards; 47.0% SWE-bench Verified (self-reported)."
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_SUB_IDEA",
+   "breakthrough_id": "transformers_llms",
+   "title": "'Decision models': Cloudflare's open-weight Clef scores fixed choices, not text",
+   "detail": "Oct 1, 2026 (backfill): Cloudflare released open-weight (Apache-2.0) Clef (27B) and Clef-flash (9B), which take a state plus a schema of typed questions and return probabilities over allowed answers; similar 'decision' models reported from Liquid AI and Microsoft point to a small-model class for routing/verification in agent pipelines (vendor claims).",
+   "source_urls": [
+    "https://infoq.com/news/2026/10/clef-decision-models"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__architecture_efficiency__small_on_device_edge_models",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://infoq.com/news/2026/10/clef-decision-models",
+    "name": "Decision models (open models that score fixed choices)",
+    "description": "Oct 1, 2026 (backfill): Cloudflare released open-weight (Apache-2.0) Clef (27B) and Clef-flash (9B), which take a state plus a schema of typed questions and return probabilities over allowed answers; similar 'decision' models reported from Liquid AI and Microsoft point to a small-model class for routing/verification in agent pipelines (vendor claims).",
+    "examples": [
+     "Cloudflare Clef / Clef-flash"
+    ]
+   },
+   "confidence": "low",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "diffusion_models",
+   "title": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio",
+   "detail": "Oct 2026: Noiz AI and HKUST previewed Helix World, a real-time interactive audio-visual world model that generates video plus spatial stereo audio from a start image, steered by keyboard (WASD/look keys; reported 24 fps on one H800); preview checkpoint, paper and code released (developer-reported results).",
+   "source_urls": [
+    "https://noiz.ai/lp/blog/meet-helix-world"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__multimodal_generative_media__world_models_neural_simulation",
+     "ai__multimodal_generative_media__video_generation"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://noiz.ai/lp/blog/meet-helix-world",
+    "claim": "Noiz AI / HKUST preview Helix World: interactive world model with stereo audio \u2014 Oct 2026: Noiz AI and HKUST previewed Helix World, a real-time interactive audio-visual world model that generates video plus spatial stereo audio from a start image, steered by keyboard (WASD/look keys; reported 24 fps on one H800); preview checkpoint, paper and code released (developer-reported results)."
+   },
+   "confidence": "low",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day",
+   "detail": "Oct 13, 2026: Anthropic's engineering blog says merged changes rose from ~2,500/day (May) to 30,000+/day (Sep), forcing a custom server-centric source-control system (Scion) with an AI-assisted review tool (Antique), migrated in ~five months; Scion reportedly uses 200x less CPU/memory than the git mirror fleet (vendor-reported).",
+   "source_urls": [
+    "https://www.anthropic.com/engineering/redesigning-source-control",
+    "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__coding_agents",
+     "ai__agents_developer_ecosystem__multi_agent_orchestration"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+    "claim": "Anthropic replaces Git with in-house Scion/Antique as merges hit 30k/day \u2014 Oct 13, 2026: Anthropic's engineering blog says merged changes rose from ~2,500/day (May) to 30,000+/day (Sep), forcing a custom server-centric source-control system (Scion) with an AI-assisted review tool (Antique), migrated in ~five months; Scion reportedly uses 200x less CPU/memory than the git mirror fleet (vendor-reported)."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "self_driving",
+   "title": "Uber and Pony.ai to start Gen-7 robotaxi testing in London",
+   "detail": "Oct 8, 2026 (backfill, one day before window): Uber and Pony.ai plan to begin road testing Pony.ai Gen-7 robotaxis in London within weeks, part of a 2,000+ European robotaxi push; no passenger-service date yet. Uber separately has a London service planned with Wayve.",
+   "source_urls": [
+    "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/",
+    "claim": "Uber and Pony.ai to start Gen-7 robotaxi testing in London \u2014 Oct 8, 2026 (backfill, one day before window): Uber and Pony.ai plan to begin road testing Pony.ai Gen-7 robotaxis in London within weeks, part of a 2,000+ European robotaxi push; no passenger-service date yet. Uber separately has a London service planned with Wayve."
+   },
+   "confidence": "high",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "humanoid_robotics",
+   "title": "XPeng: IRON humanoid goes on sale H2 2027 after in-store pilots",
+   "detail": "Oct 12, 2026: XPeng president Brian Gu told the Forbes Global CEO Conference IRON will be sold from H2 2027, after working as store sales assistants/receptionists from early 2027; it runs on XPeng's in-house Turing chip.",
+   "source_urls": [
+    "https://www.forbes.com/sites/janeho/2026/10/12/forbes-global-ceo-conference-2026-chinese-ev-maker-xpeng-to-launch-humanoid-robots/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "robotics__humanoid_robots__industrial_commercial_humanoids"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "XPeng IRON commercial sales start",
+    "new_value": "H2 2027 (internal pilots from early 2027)",
+    "previous_value": "mass production 2026, no sales date",
+    "source_url": "https://www.forbes.com/sites/janeho/2026/10/12/forbes-global-ceo-conference-2026-chinese-ev-maker-xpeng-to-launch-humanoid-robots/"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "reasoning_models",
+   "title": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis",
+   "detail": "Oct 2026: 'What do Language Models Learn and When? The Implicit Curriculum Hypothesis' (arXiv 2604.08510), on the order in which capabilities emerge during pretraining, was reported as a COLM 2026 outstanding paper in a post by Graham Neubig (relayed via Digg; no official COLM announcement found yet).",
+   "source_urls": [
+    "https://arxiv.org/abs/2604.08510",
+    "https://digg.com/ai/c5o9n5cf"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__data_memory_evaluation_foundations__evaluation_science_benchmark_saturation"
+    ],
+    "venue": "COLM 2026",
+    "new_category": false,
+    "source_url": "https://arxiv.org/abs/2604.08510",
+    "claim": "COLM 2026 outstanding paper: the Implicit Curriculum Hypothesis \u2014 Oct 2026: 'What do Language Models Learn and When? The Implicit Curriculum Hypothesis' (arXiv 2604.08510), on the order in which capabilities emerge during pretraining, was reported as a COLM 2026 outstanding paper in a post by Graham Neubig (relayed via Digg; no official COLM announcement found yet)."
+   },
+   "confidence": "low",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "mrna_vaccines",
+   "title": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14%",
+   "detail": "Oct 9, 2026: NYT reported a ~$200M public-private Therapeutic Cancer Vaccines Initiative run by FNIH and NCI to build shared trial networks for treatment vaccines, expected to launch in December; Moderna closed up ~14% (coinciding with its Nasdaq-100 re-entry; no direct funding to Moderna confirmed).",
+   "source_urls": [
+    "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+    ],
+    "venue": "",
+    "new_category": false,
+    "source_url": "https://www.tikr.com/blog/moderna-stock-soared-14-as-nih-plans-covid-style-push-for-cancer-vaccines",
+    "claim": "FNIH/NCI $200M Therapeutic Cancer Vaccines Initiative reported; Moderna +14% \u2014 Oct 9, 2026: NYT reported a ~$200M public-private Therapeutic Cancer Vaccines Initiative run by FNIH and NCI to build shared trial networks for treatment vaccines, expected to launch in December; Moderna closed up ~14% (coinciding with its Nasdaq-100 re-entry; no direct funding to Moderna confirmed)."
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "mrna_vaccines",
+   "title": "BioNTech's individualized cancer-vaccine program narrows to pancreatic Ph2",
+   "detail": "Oct 2026: Analysis notes BioNTech/Genentech terminated the Ph2 ctDNA+ colorectal autogene cevumeran trial (Aug 28) after a DSMB flagged an OS imbalance, and the Ph2 IMcode004 urothelial trial was discontinued earlier in 2026, leaving pancreatic IMcode003 as the main active study, in contrast to Moderna/Merck's Ph3 intismeran (full data at ESMO Oct 24).",
+   "source_urls": [
+    "https://eu.36kr.com/en/p/3973977346126087"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__rna_nucleic_acid_therapeutics__personalized_mrna_cancer_vaccines"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "BioNTech (autogene cevumeran)",
+    "org_type": "BUSINESS",
+    "why": "Bellwether for individualized neoantigen vaccines; pipeline contraction vs Moderna",
+    "stage": "Public",
+    "investors": "",
+    "source_url": "https://eu.36kr.com/en/p/3973977346126087"
+   },
+   "confidence": "low",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "bci",
+   "title": "Paradromics Connexus: first human implant in Connect-One study (backfill)",
+   "detail": "Jun 17, 2026 (backfill): Paradromics and U-Michigan Health completed the first Connexus implant in the FDA-approved Connect-One early feasibility study (ALS/motor neuron disease; speech/text goal), complementing this month's sheep-durability data.",
+   "source_urls": [
+    "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "bio__neurotech_brain_computer_interfaces__high_bandwidth_cortical_implants",
+     "bio__neurotech_brain_computer_interfaces__speech_neuroprosthesis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Paradromics human implants",
+    "new_value": "First human Connexus implant (Jun 17, 2026; Connect-One EFS)",
+    "previous_value": "preclinical durability data",
+    "source_url": "https://paradromics.com/news/paradromics-completes-first-human-brain-computer-interface-bci-implantation/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Rocket Lab pushes Neutron's first launch to 2027",
+   "detail": "Oct 14, 2026: Rocket Lab announced an adjusted Neutron development schedule, moving the reusable medium-lift rocket's inaugural launch into 2027.",
+   "source_urls": [
+    "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__operational_partial_reuse_falcon_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Neutron first launch",
+    "new_value": "2027",
+    "previous_value": "2026",
+    "source_url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Starship Flight 15 to attempt first ship tower catch ~late November",
+   "detail": "Oct 11, 2026: Musk said Flight 15 will try to catch the Starship upper stage with the tower, roughly four to six weeks out, with Flight 16 targeting booster and ship reflight.",
+   "source_urls": [
+    "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__booster_catch_orbital_refueling",
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "Starship Flight 15 plan",
+    "new_value": "Ship tower-catch attempt, ~late Nov 2026",
+    "previous_value": "Flight 15 ~Oct 19",
+    "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Falcon 9 booster B1088 flies its 20th mission",
+   "detail": "Oct 12, 2026: B1088 flew its 20th flight (Starlink 15-25 from Vandenberg) and landed on OCISLY.",
+   "source_urls": [
+    "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__operational_partial_reuse_falcon_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "B1088 flights",
+    "new_value": "20",
+    "previous_value": "19",
+    "source_url": "https://keeptrack.space/x-report/spacex-brief-2026-10-13"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "UPDATED_FACT",
+   "breakthrough_id": "reusable_rockets",
+   "title": "Blue Origin targets December for New Glenn return to flight",
+   "detail": "Oct 7-9, 2026 (backfill): Bezos said Blue Origin is targeting December for New Glenn's return to flight with Blue Ring aboard; the vehicle has been grounded since the Apr 19, 2026 flight-3 upper-stage anomaly. December is a target, not a confirmed date.",
+   "source_urls": [
+    "https://newspaceeconomy.ca/2026/10/09/what-does-blue-origins-december-2026-target-mean-for-new-glenns-return-to-flight/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "space__reusable_launch__full_reuse_heavy_lift_starship_class"
+    ],
+    "venue": "",
+    "new_category": false,
+    "field": "New Glenn return to flight",
+    "new_value": "Dec 2026 target",
+    "previous_value": "grounded since May 28",
+    "source_url": "https://newspaceeconomy.ca/2026/10/09/what-does-blue-origins-december-2026-target-mean-for-new-glenns-return-to-flight/"
+   },
+   "confidence": "low",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_FRONTIER",
+   "breakthrough_id": "ai_accelerators",
+   "title": "Microsoft unveils Maia 300 as its primary in-house inference chip",
+   "detail": "Oct 12, 2026 (OCP Global Summit): Microsoft's third-gen Maia 300 (TSMC N2P, 288 GB HBM4) becomes its main inference platform, deploying from 2027 at multi-GW scale; Microsoft claims 40% more tokens per MW than leading GPU systems (vendor figures).",
+   "source_urls": [
+    "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300",
+    "https://hpcwire.com/off-the-wire/microsoft-announces-maia-300-its-next-gen-custom-ai-chip"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "hardware__ai_accelerators__hyperscaler_custom_silicon",
+     "hardware__ai_accelerators__inference_specialized_asics",
+     "hardware__memory_advanced_packaging__hbm_the_memory_wall"
+    ],
+    "venue": "OCP Global Summit 2026",
+    "new_category": false,
+    "source_url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300",
+    "claim": "Microsoft unveils Maia 300 as its primary in-house inference chip \u2014 Oct 12, 2026 (OCP Global Summit): Microsoft's third-gen Maia 300 (TSMC N2P, 288 GB HBM4) becomes its main inference platform, deploying from 2027 at multi-GW scale; Microsoft claims 40% more tokens per MW than leading GPU systems (vendor figures)."
+   },
+   "confidence": "high",
+   "backfill": false
+  },
+  {
+   "kind": "TRENDING_IDEA",
+   "breakthrough_id": null,
+   "title": "Karpathy: LLM capability perception is now a steep 'funnel'",
+   "detail": "Oct 11, 2026: Karpathy argued awareness of LLM capability forms a funnel, from billions with little exposure to ~thousands with frontier-internal access, driven by task horizon, verifiable domains and paid/internal access tiers.",
+   "source_urls": [
+    "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening",
+    "https://pasqualepillitteri.it/en/news/23106/karpathy-llm-capability-gap-widening"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__frontier_model_tiers_price_wars",
+     "ai__reasoning_test_time_compute__agentic_reasoning_long_horizon_autonomy"
+    ],
+    "venue": "",
+    "new_category": false,
+    "thesis": "Frontier capability is concentrating among a tiny set of users in verifiable domains; free-tier experience badly understates what agents can do.",
+    "examples": [
+     "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
+    ],
+    "spotted_at": "2026-10-11",
+    "source_url": "https://www.kucoin.com/news/flash/karpathy-llm-capability-perception-gap-widening"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Nvidia commits $250M of compute to UK agentic-AI safety research",
+   "detail": "Oct 14, 2026: Nvidia pledged ~$50M/yr of compute for five years for UK research on AI-agent security and open-model vulnerabilities (Imperial College among recipients).",
+   "source_urls": [
+    "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years",
+    "https://www.channelinsider.com/channel-business/news-nvidia-250-million-uk-ai-safety-research-emea/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__safety_interpretability_governance__ai_governance_safety_incidents",
+     "ai__safety_interpretability_governance__ai_for_cybersecurity_offense_defense"
+    ],
+    "venue": "",
+    "new_category": false,
+    "candidate_area": "AI safety / agent security funding",
+    "detail": "Oct 14, 2026: Nvidia pledged ~$50M/yr of compute for five years for UK research on AI-agent security and open-model vulnerabilities (Imperial College among recipients).",
+    "source_url": "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Fervo's Cape Station first 33 MW GeoBlock reaches commercial operation",
+   "detail": "Sep 30-Oct 1, 2026 (backfill): Fervo declared commercial operation of the first 33 MW GeoBlock at Cape Station, Utah, one day ahead of its contractual deadline; Phase 1 is ~100 MW across three GeoBlocks (remaining two expected by Jan 1, 2027), with a later phase targeted for 2028.",
+   "source_urls": [
+    "https://www.energyglobal.com/other-renewables/05102026/fervo-energy-declares-commercial-operation-at-cape-station-ahead-of-schedule/amp/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "energy__advanced_nuclear_geothermal__enhanced_geothermal_egs"
+    ],
+    "venue": "",
+    "new_category": false,
+    "candidate_area": "Enhanced geothermal",
+    "detail": "Sep 30-Oct 1, 2026 (backfill): Fervo declared commercial operation of the first 33 MW GeoBlock at Cape Station, Utah, one day ahead of its contractual deadline; Phase 1 is ~100 MW across three GeoBlocks (remaining two expected by Jan 1, 2027), with a later phase targeted for 2028.",
+    "source_url": "https://www.energyglobal.com/other-renewables/05102026/fervo-energy-declares-commercial-operation-at-cape-station-ahead-of-schedule/amp/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "BROAD_SCAN",
+   "breakthrough_id": null,
+   "title": "Sierra and Meta launch open Personal Agent Protocol with retail backers",
+   "detail": "Oct 6, 2026 (backfill): Sierra and Meta, with Walmart, Shopify, Stripe, Genesys and others, announced the Personal Agent Protocol, an open standard for businesses to identify customers' AI agents and grant scoped OAuth access; v0.1 spec due later in October, payments out of scope for v1.",
+   "source_urls": [
+    "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/",
+    "https://thenextweb.com/news/personal-agent-protocol-sierra-meta"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__agents_developer_ecosystem__agentic_commerce",
+     "ai__agents_developer_ecosystem__agent_primitives_mcp_skills_sdks"
+    ],
+    "venue": "",
+    "new_category": false,
+    "candidate_area": "Agent-to-business interoperability standards",
+    "detail": "Oct 6, 2026 (backfill): Sierra and Meta, with Walmart, Shopify, Stripe, Genesys and others, announced the Personal Agent Protocol, an open standard for businesses to identify customers' AI agents and grant scoped OAuth access; v0.1 spec due later in October, payments out of scope for v1.",
+    "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+   },
+   "confidence": "medium",
+   "backfill": true
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "self_driving",
+   "title": "Pony.ai: Chinese robotaxi operator expanding into Europe via Uber",
+   "detail": "Chinese robotaxi operator expanding into Europe via Uber (Zagreb live, London Gen-7 testing).",
+   "source_urls": [
+    "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__autonomy_embodiment_ai__self_driving_robotaxis"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Pony.ai",
+    "org": "Pony.ai",
+    "org_type": "BUSINESS",
+    "type": "BUSINESS",
+    "why": "Chinese robotaxi operator expanding into Europe via Uber (Zagreb live, London Gen-7 testing).",
+    "stage": "Public (NASDAQ/HKEX)",
+    "funding": "",
+    "source_url": "https://techcrunch.com/2026/10/08/uber-and-chinas-pony-ai-plan-to-launch-robotaxis-in-london/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "ai_dev_ecosystem",
+   "title": "Sierra: agentic-CX firm co-leading the Personal Agent Protocol",
+   "detail": "Agentic CX company co-leading the Personal Agent Protocol with Meta for agent-to-business access.",
+   "source_urls": [
+    "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__frontier_platforms_applied_ai_economics__customer_support_cx_automation",
+     "ai__agents_developer_ecosystem__agentic_commerce"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Sierra",
+    "org": "Sierra",
+    "org_type": "BUSINESS",
+    "type": "BUSINESS",
+    "why": "Agentic CX company co-leading the Personal Agent Protocol with Meta for agent-to-business access.",
+    "stage": "Venture-backed",
+    "funding": "",
+    "source_url": "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+   },
+   "confidence": "medium",
+   "backfill": false
+  },
+  {
+   "kind": "NEW_WATCH",
+   "breakthrough_id": "diffusion_models",
+   "title": "Noiz AI: startup behind the Helix World interactive world model",
+   "detail": "Startup (with HKUST) behind Helix World, an open interactive audio-visual world model.",
+   "source_urls": [
+    "https://noiz.ai/lp/blog/meet-helix-world"
+   ],
+   "payload": {
+    "subtheme_ids": [
+     "ai__multimodal_generative_media__world_models_neural_simulation"
+    ],
+    "venue": "",
+    "new_category": false,
+    "name": "Noiz AI",
+    "org": "Noiz AI",
+    "org_type": "BUSINESS",
+    "type": "BUSINESS",
+    "why": "Startup (with HKUST) behind Helix World, an open interactive audio-visual world model.",
+    "stage": "Startup",
+    "funding": "",
+    "source_url": "https://noiz.ai/lp/blog/meet-helix-world"
+   },
+   "confidence": "medium",
+   "backfill": false
+  }
+ ]
+}
